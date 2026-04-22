@@ -29,39 +29,49 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-primary-dark to-[#0D2B4A] text-white py-16 md:py-24">
-        <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yLjIgMS44LTQgNC00czQgMS44IDQgNC0xLjggNC00IDQtNC0xLjgtNC00eiIvPjwvZz48L2c+PC9zdmc+')] bg-repeat"></div>
-        <div className="relative max-w-5xl mx-auto px-4 text-center">
-          <div className="flex justify-center gap-3 mb-6">
-            <span className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
-              ⚡ 24時間365日対応
-            </span>
-            <span className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
-              🚗 最短15分到着
-            </span>
+      <section className="relative text-white overflow-hidden">
+        <img
+          src="/images/kv-top.jpg"
+          alt="鍵交換の作業シーン"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/90 via-[#0a1628]/70 to-[#0a1628]/40" />
+        <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-32">
+          <div className="max-w-2xl">
+            <div className="flex flex-wrap gap-3 mb-6">
+              <span className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
+                🔑 24時間365日対応
+              </span>
+              <span className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
+                ⚡ 最短15分到着
+              </span>
+              <span className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
+                🛡️ 厳選5社比較
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              鍵のトラブル、<br className="md:hidden" />今すぐ解決。
+            </h2>
+            <p className="text-lg md:text-xl text-white/80 mb-8">
+              深夜でも早朝でも、鍵のプロが駆けつけます。<br />
+              全国対応・料金明示の優良業者だけを厳選比較。
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#trouble"
+                className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl btn-emergency transition-colors"
+              >
+                🔓 今すぐ業者を探す
+              </a>
+              <a
+                href="tel:0120-000-000"
+                className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-gray-100 transition-colors"
+              >
+                📞 無料相談する
+              </a>
+            </div>
+            <p className="mt-4 text-white/60 text-sm">※ 相談・見積もり無料。料金に納得いただけなければキャンセルOK</p>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            鍵のトラブル、<br className="md:hidden" />今すぐ解決。
-          </h2>
-          <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            深夜でも早朝でも、鍵のプロが駆けつけます。<br />
-            全国対応・料金明示の優良業者だけを厳選比較。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#trouble"
-              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl btn-emergency transition-colors"
-            >
-              🔓 今すぐ業者を探す
-            </a>
-            <a
-              href="tel:0120-000-000"
-              className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-gray-100 transition-colors"
-            >
-              📞 無料相談する
-            </a>
-          </div>
-          <p className="mt-4 text-white/60 text-sm">※ 相談・見積もり無料。料金に納得いただけなければキャンセルOK</p>
         </div>
       </section>
 
