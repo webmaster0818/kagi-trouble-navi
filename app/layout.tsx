@@ -10,7 +10,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kagi-trouble-navi.pages.dev"),
+  metadataBase: new URL("https://kagi-trouble-navi.com"),
   title: "鍵トラブルナビ｜鍵開け・鍵交換の業者比較【2026年最新】24時間対応",
   description:
     "鍵のトラブルを今すぐ解決。鍵開け・鍵交換・鍵修理の料金相場や優良業者を比較。24時間365日対応、最短15分で到着。ぼったくり対策情報も掲載。",
