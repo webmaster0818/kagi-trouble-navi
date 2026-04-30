@@ -514,8 +514,9 @@ export default function Home() {
               <ul className="space-y-2 text-sm">
                 <li>運営: 株式会社MediaX</li>
                 <li>所在地: 東京都渋谷区</li>
-                <li><a href="#" className="hover:text-white transition-colors">プライバシーポリシー</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">利用規約</a></li>
+                <li><a href="/terms/" className="hover:text-white transition-colors">利用規約</a></li>
+                <li><a href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</a></li>
+                <li><a href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</a></li>
               </ul>
             </div>
           </div>
