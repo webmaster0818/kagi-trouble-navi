@@ -24,4 +24,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url><loc>https://kagi-trouble-navi.com/agents/</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/agents/kagi110ban/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/agents/jbr/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/agents/seikatsu-kyukyusha/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/agents/kagi-rescue/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/agents/kagizaru/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
 </urlset>
