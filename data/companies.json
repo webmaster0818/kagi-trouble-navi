@@ -36,7 +36,8 @@
     "speed": "最短15分到着",
     "priceRange": "8,800円〜",
     "officialUrl": "https://www.seikatsu110.jp/key/",
-    "affiliate": "A8"
+    "affiliate": "A8",
+    "hasStaticPage": true
   },
   {
     "id": "jbr",
@@ -74,7 +75,8 @@
     "speed": "最短20分到着",
     "priceRange": "8,800円〜",
     "officialUrl": "https://www.jbr.co.jp/",
-    "affiliate": "直接提携"
+    "affiliate": "直接提携",
+    "hasStaticPage": true
   },
   {
     "id": "seikatsu-kyukyusha",
@@ -113,7 +115,8 @@
     "speed": "最短15分到着",
     "priceRange": "7,700円〜",
     "officialUrl": "https://sq.jbr.co.jp/",
-    "affiliate": "直接提携"
+    "affiliate": "直接提携",
+    "hasStaticPage": true
   },
   {
     "id": "kagi-rescue",
@@ -189,6 +192,7 @@
     "speed": "最短15分到着",
     "priceRange": "5,500円〜",
     "officialUrl": "https://kagizaru.com/",
-    "affiliate": "直接提携"
+    "affiliate": "直接提携",
+    "hasStaticPage": true
   }
 ]
