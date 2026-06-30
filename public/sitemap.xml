@@ -30,4 +30,5 @@
   <url><loc>https://kagi-trouble-navi.com/agents/seikatsu-kyukyusha/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/agents/kagi-rescue/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/agents/kagizaru/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/ryokin/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
 </urlset>

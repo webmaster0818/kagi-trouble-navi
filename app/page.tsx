@@ -293,6 +293,11 @@ export default function Home() {
           <p className="text-xs text-text-muted mt-4 text-center">
             ※ 上記は目安です。鍵の種類・時間帯・地域によって変動します。必ず事前見積もりを取りましょう。
           </p>
+          <div className="text-center mt-6">
+            <a href="/ryokin/" className="inline-flex items-center gap-1.5 bg-primary text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-primary/90 transition-colors">
+              鍵開け・鍵交換の料金相場を詳しく見る →
+            </a>
+          </div>
         </div>
       </section>
 
