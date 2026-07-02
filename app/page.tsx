@@ -89,16 +89,16 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { icon: "🚪", title: "鍵の閉じ込め", desc: "家・部屋に入れない", urgency: true },
-              { icon: "💔", title: "鍵が折れた", desc: "鍵穴の中で折れた", urgency: true },
-              { icon: "🔧", title: "鍵穴が回らない", desc: "鍵が回りにくい・動かない", urgency: false },
-              { icon: "😰", title: "鍵をなくした", desc: "鍵を紛失・防犯が心配", urgency: true },
-              { icon: "🚗", title: "車のインロック", desc: "車内に鍵を閉じ込めた", urgency: true },
-              { icon: "🔐", title: "金庫が開かない", desc: "暗証番号忘れ・故障", urgency: false },
+              { icon: "🚪", title: "鍵の閉じ込め", desc: "家・部屋に入れない", urgency: true, href: "/shimedashi/" },
+              { icon: "💔", title: "鍵が折れた", desc: "鍵穴の中で折れた", urgency: true, href: "#compare" },
+              { icon: "🔧", title: "鍵穴が回らない", desc: "鍵が回りにくい・動かない", urgency: false, href: "#compare" },
+              { icon: "😰", title: "鍵をなくした", desc: "鍵を紛失・防犯が心配", urgency: true, href: "/kagi-funshitsu/" },
+              { icon: "🚗", title: "車のインロック", desc: "車内に鍵を閉じ込めた", urgency: true, href: "#compare" },
+              { icon: "🔐", title: "金庫が開かない", desc: "暗証番号忘れ・故障", urgency: false, href: "/kinko-kaijo/" },
             ].map((item) => (
               <a
                 key={item.title}
-                href="#compare"
+                href={item.href}
                 className={`group relative flex items-center gap-4 p-5 rounded-xl border-2 transition-all hover:shadow-lg hover:-translate-y-0.5 ${
                   item.urgency
                     ? "border-accent/30 bg-white hover:border-accent"
