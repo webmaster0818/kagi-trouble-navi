@@ -8,7 +8,7 @@ const UPDATED = "2026年6月20日";
 
 export const metadata: Metadata = {
   title: { absolute: "鍵の生活救急車の口コミ・評判は？料金・対応スピード・実績を徹底調査【2026年最新】｜鍵トラブルナビ" },
-  description: "鍵の生活救急車（JBR運営）の口コミ・評判を徹底調査。鍵開け8,800円〜の料金、最短15分の駆けつけ、全国2,270拠点・施工240万件以上の実績、利用者の良い評判・気になる評判まで編集部が中立的にまとめました。",
+  description: "鍵の生活救急車（運営：株式会社生活救急車）の口コミ・評判を徹底調査。鍵開け8,800円〜の料金、最短15分の駆けつけ、全国2,270拠点・施工240万件以上の実績、利用者の良い評判・気になる評判まで編集部が中立的にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title: "鍵の生活救急車の口コミ・評判は？料金・対応スピード・実績を徹底調査【2026年最新】",
@@ -50,7 +50,7 @@ const faqs = [
     {"q": "支払いにクレジットカードは使えますか", "a": "現金のほかクレジットカード（VISA/Master/JCB等）に対応するとされていますが、対応店舗・エリアによって利用可否が異なる場合があるため、事前に確認しましょう。"}
   ];
 
-const sources = [["鍵の生活救急車 公式（料金）", "https://kagi-seikatsukyukyusya.com/price/"], ["生活救急車 公式（JBR運営）", "https://sq.jbr.co.jp/"], ["EPARKくらしのレスキュー（料金・実績）", "https://rescue.epark.jp/detail/950"], ["みん評（利用者の口コミ）", "https://minhyo.jp/jbr-kagi"]];
+const sources = [["鍵の生活救急車 公式（料金）", "https://kagi-seikatsukyukyusya.com/price/"], ["国税庁法人番号公表サイト（株式会社生活救急車）", "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8180001153391"], ["EPARKくらしのレスキュー（料金・実績）", "https://rescue.epark.jp/detail/950"], ["みん評（利用者の口コミ）", "https://minhyo.jp/jbr-kagi"]];
 
 export default function SeikatsuKyukyushaPage() {
   const articleSchema = {
@@ -101,7 +101,7 @@ export default function SeikatsuKyukyushaPage() {
           <div className="mx-auto max-w-4xl px-4 py-12 md:py-16">
             <p className="text-sm tracking-widest text-amber-300 mb-3">鍵トラブル業者レビュー</p>
             <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">鍵の生活救急車の口コミ・評判は？<br className="hidden md:block" />料金・対応スピードを徹底調査</h1>
-            <p className="text-slate-200 leading-relaxed max-w-2xl">東証上場のJBRが運営する「鍵の生活救急車」。最短15分の駆けつけと全国2,270拠点の実績をうたう鍵トラブルサービスの料金・対応・評価を編集部が中立的に調査しました。</p>
+            <p className="text-slate-200 leading-relaxed max-w-2xl">全国2,270拠点の実績をうたう「鍵の生活救急車」（運営：株式会社生活救急車）。最短15分の駆けつけをうたう鍵トラブルサービスの料金・対応・評価を編集部が中立的に調査しました。</p>
             <div className="mt-6 flex flex-wrap gap-2">
               <span className="badge badge-lg bg-white/15 border-0 text-white">鍵開け 8,800円〜</span>
               <span className="badge badge-lg bg-white/15 border-0 text-white">最短15分駆けつけ</span>
@@ -132,7 +132,7 @@ export default function SeikatsuKyukyushaPage() {
 
           <section id="about" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">鍵の生活救急車とはどんなサービスか</h2>
-            <p className="leading-loose mb-4 text-slate-700">鍵の生活救急車は、東証上場のジャパンベストレスキューシステム株式会社（証券コード2453）が「生活救急車」ブランドで運営する鍵トラブル解決サービスです。鍵開け・鍵交換・鍵作成・鍵修理に加え、金庫や車・バイクの鍵まで全国の拠点で対応しています。</p>
+            <p className="leading-loose mb-4 text-slate-700">鍵の生活救急車は、株式会社生活救急車（本社：名古屋市、法人番号8180001153391）が運営する鍵トラブル解決サービスです。もともとはジャパンベストレスキューシステム（JBR）のブランドでしたが、2022年12月に事業がJBRから現運営会社へ承継されています（国税庁法人番号公表サイトの変更履歴で確認・2026年7月4日時点）。鍵開け・鍵交換・鍵作成・鍵修理に加え、金庫や車・バイクの鍵まで全国の拠点で対応しています。</p>
             <p className="leading-loose mb-4 text-slate-700">出張費・見積もり・キャンセルはすべて無料で、全国統一の料金表をもとに作業前に料金を説明し、同意を得てから作業する明朗会計を掲げています。施工対応数240万件以上、全国2,270拠点という規模が、緊急時の駆けつけ体制を支えています。</p>
             <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200">
               <Image src="/images/seikatsu-kyukyusha-features.png" alt="鍵の生活救急車の特徴" width={1200} height={500} className="w-full h-auto" />
@@ -201,7 +201,7 @@ export default function SeikatsuKyukyushaPage() {
                 <ul className="space-y-2 text-sm text-slate-700">
                   <li>最短15分の駆けつけをうたうスピード対応</li>
                   <li>全国2,270拠点・施工240万件以上の実績</li>
-                  <li>東証上場企業の運営による安心感</li>
+                  <li>全国2,270拠点の対応ネットワーク</li>
                   <li>出張・見積もり・キャンセル無料の明朗会計</li>
                   <li>鍵から金庫・車の鍵まで幅広く対応</li>
                 </ul>
@@ -258,7 +258,7 @@ export default function SeikatsuKyukyushaPage() {
             <p className="leading-loose mb-4 text-slate-700">本記事の事実情報・口コミの傾向は、以下の公式サイトおよび口コミ・比較サイトを参照し、編集部が確認・要約しています（確認日：{UPDATED}）。</p>
             <ul className="space-y-2 text-sm">
               <li><a href="https://kagi-seikatsukyukyusya.com/price/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">鍵の生活救急車 公式（料金）</a></li>
-              <li><a href="https://sq.jbr.co.jp/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">生活救急車 公式（JBR運営）</a></li>
+              <li><a href="https://kagi-seikatsukyukyusya.com/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">カギの生活救急車 公式サイト</a></li>
               <li><a href="https://rescue.epark.jp/detail/950" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">EPARKくらしのレスキュー（料金・実績）</a></li>
               <li><a href="https://minhyo.jp/jbr-kagi" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">みん評（利用者の口コミ）</a></li>
             </ul>
@@ -266,7 +266,7 @@ export default function SeikatsuKyukyushaPage() {
 
           <section id="summary" className="scroll-mt-20">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">まとめ</h2>
-            <p className="leading-loose mb-4 text-slate-700">鍵の生活救急車は、東証上場のJBRが運営する鍵トラブル解決サービスです。最短15分の駆けつけ、全国2,270拠点・施工240万件以上の実績、出張・見積もり・キャンセル無料の明朗会計が評価されています。</p>
+            <p className="leading-loose mb-4 text-slate-700">鍵の生活救急車は、株式会社生活救急車が運営する鍵トラブル解決サービスです（2022年12月にJBRから事業承継）。最短15分の駆けつけ、全国2,270拠点の実績、出張・見積もり・キャンセル無料の明朗会計が評価されています。</p>
             <p className="leading-loose mb-4 text-slate-700">一方で、料金が割高に感じるという声や、支払い方法の制限には注意が必要です。作業前に部材費を含む総額を確認し、複数社の見積もりを比較すると安心です。まずは無料見積もりから検討してみてください。</p>
             <div className="rounded-2xl bg-slate-800 text-white p-6 text-center mt-6">
               <p className="font-bold text-lg mb-2">鍵のトラブルでお困りの方へ</p>

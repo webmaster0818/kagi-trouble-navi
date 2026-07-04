@@ -12,7 +12,7 @@ export const metadata: Metadata = {
       "カギ110番の口コミ・評判は？料金・対応スピード・メリットを徹底調査【2026年最新】｜鍵トラブルナビ",
   },
   description:
-    "カギ110番の口コミ・評判を徹底調査。8,800円からの明朗会計、全国47都道府県24時間365日対応、最短5分手配の対応スピード、加盟店ネットワークの強みと注意点、利用者のリアルな良い口コミ・悪い口コミまで編集部が中立的にまとめました。",
+    "カギ110番の口コミ・評判を徹底調査。鍵開け6,600円〜（公式表示・2026年7月4日確認）、全国47都道府県24時間365日対応、最短5分手配の対応スピード、加盟店ネットワークの強みと注意点、利用者のリアルな良い口コミ・悪い口コミまで編集部が中立的にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title: "カギ110番の口コミ・評判は？料金・対応スピード・メリットを徹底調査【2026年最新】",
@@ -48,7 +48,7 @@ const badReviews = [
 ];
 
 const faqs = [
-  { q: "カギ110番の料金はいくらからですか", a: "料金は8,800円(税込)からが目安です。出張費・作業費・部材費を含めた事前見積もりを提示してくれるため、見積もり後の追加料金が発生しにくい明朗会計が特徴です。作業内容や鍵の種類によって金額は変動します。" },
+  { q: "カギ110番の料金はいくらからですか", a: "公式サイトの表示は鍵開け6,600円(税込)〜です(2026年7月4日確認)。ただし公式にも「対応エリア・加盟店により記載価格や条件では対応できない場合がある」と明記されており、実際の金額は現地見積もりで確定します。相談・見積もりは無料ですが、交通費やお客様都合のキャンセル料は別途発生する場合がある旨も公式に記載されているため、依頼時に確認しましょう。" },
   { q: "見積もりや出張は無料ですか", a: "カギ110番は見積もりが無料です。金額に納得したうえで依頼できるため、まずは無料見積もりで費用を確認するのがおすすめです。" },
   { q: "どのくらいの時間で来てくれますか", a: "電話一本で最短5分での手配が可能とされています。全国47都道府県の加盟店ネットワークにより、近隣の業者が駆けつける仕組みです。ただし繁忙期や地域によっては到着まで時間がかかる場合があります。" },
   { q: "どんな鍵トラブルに対応していますか", a: "玄関などの鍵開け・鍵交換・鍵修理に加え、金庫、車の鍵、バイクの鍵まで幅広く対応しています。対応可否が不明な場合は問い合わせ時に確認しましょう。" },
@@ -111,7 +111,7 @@ export default function Kagi110banPage() {
               全国47都道府県の加盟店ネットワークで、24時間365日・最短5分手配をうたうカギ110番。実際の料金や対応スピード、利用者の評価を編集部が中立的に調査しました。
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
-              <span className="badge badge-lg bg-white/15 border-0 text-white">料金 8,800円〜</span>
+              <span className="badge badge-lg bg-white/15 border-0 text-white">鍵開け 6,600円〜（公式表示）</span>
               <span className="badge badge-lg bg-white/15 border-0 text-white">24時間365日</span>
               <span className="badge badge-lg bg-white/15 border-0 text-white">最短5分手配</span>
               <span className="badge badge-lg bg-white/15 border-0 text-white">全国47都道府県</span>
@@ -143,7 +143,7 @@ export default function Kagi110banPage() {
           <section id="about" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">カギ110番とはどんなサービスか</h2>
             <p className="leading-loose mb-4 text-slate-700">
-              カギ110番は、生活110番が運営する全国対応の鍵トラブル解決サービスです。自社で職人を抱えるのではなく、全国47都道府県の加盟店ネットワークを通じて、依頼者の近隣にいる鍵業者を手配する仕組みになっています。これにより、地域を問わず鍵開け・鍵交換などの依頼に対応できるのが特徴です。
+              カギ110番は、東証グロース上場のシェアリングテクノロジー株式会社（証券コード3989・本社：名古屋市、法人番号2180001061708。「生活110番」と同じ運営会社）が運営する全国対応の鍵トラブル解決サービスです。自社で職人を抱えるのではなく、全国47都道府県の加盟店ネットワークを通じて、依頼者の近隣にいる鍵業者を手配する仕組みになっています。これにより、地域を問わず鍵開け・鍵交換などの依頼に対応できるのが特徴です。
             </p>
             <p className="leading-loose text-slate-700">
               24時間365日受付で、電話一本から最短5分での手配が可能とされており、深夜や早朝、年末年始などの緊急時にも相談しやすい体制です。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
@@ -172,9 +172,9 @@ export default function Kagi110banPage() {
               <table className="table w-full border border-slate-200">
                 <thead><tr className="bg-slate-100 text-slate-700"><th>項目</th><th>料金の目安</th><th>備考</th></tr></thead>
                 <tbody>
-                  <tr className="border-b border-slate-200"><td className="font-medium">基本料金</td><td className="font-bold text-amber-700">8,800円〜（税込）</td><td className="text-sm text-slate-600">最小構成の目安</td></tr>
+                  <tr className="border-b border-slate-200"><td className="font-medium">鍵開け（公式表示）</td><td className="font-bold text-amber-700">6,600円〜（税込）</td><td className="text-sm text-slate-600">2026年7月4日公式サイト確認。加盟店・エリアにより異なる場合あり</td></tr>
                   <tr className="border-b border-slate-200"><td className="font-medium">鍵開け・鍵交換など</td><td className="font-bold text-amber-700">作業内容により変動</td><td className="text-sm text-slate-600">出張費・作業費・部材費込みで提示</td></tr>
-                  <tr><td className="font-medium">会計方式</td><td className="font-bold text-amber-700">事前見積もり・明朗会計</td><td className="text-sm text-slate-600">見積もり後の追加料金が発生しにくい</td></tr>
+                  <tr><td className="font-medium">会計方式</td><td className="font-bold text-amber-700">相談・見積もり無料</td><td className="text-sm text-slate-600">交通費・お客様都合のキャンセル料は「別途発生する場合あり」と公式記載</td></tr>
                 </tbody>
               </table>
             </div>

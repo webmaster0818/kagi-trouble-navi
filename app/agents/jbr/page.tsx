@@ -7,12 +7,12 @@ const PATH = "/agents/jbr/";
 const UPDATED = "2026年6月20日";
 
 export const metadata: Metadata = {
-  title: { absolute: "ジャパンベストレスキュー（JBR）の鍵サービスの口コミ・評判は？料金・対応スピードを徹底調査【2026年最新】｜鍵トラブルナビ" },
-  description: "東証上場のジャパンベストレスキュー（JBR）が運営する鍵トラブル解決サービスの口コミ・評判を徹底調査。鍵開け8,800円〜の料金、全国対応・24時間受付、施工実績、利用者の良い評判・気になる評判まで編集部が中立的にまとめました。",
+  title: { absolute: "JBRの鍵サービス（生活救急車）はどうなった？運営会社の変更と現在の依頼先【2026年最新】｜鍵トラブルナビ" },
+  description: "「JBRの鍵サービス（生活救急車）」は2022年12月に事業がJBRから株式会社生活救急車へ承継され、JBR自体も2024年3月にMBOで上場廃止になりました。経緯と現在の運営会社、いま依頼する場合の窓口・料金を一次情報で解説します。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
-    title: "ジャパンベストレスキュー（JBR）の鍵サービスの口コミ・評判は？料金・対応スピードを徹底調査【2026年最新】",
-    description: "東証上場JBRの鍵サービスの料金・対応スピード・実績・利用者の口コミを中立的に調査。利用前のメリットと注意点を解説します。",
+    title: "JBRの鍵サービス（生活救急車）はどうなった？運営会社の変更と現在の依頼先【2026年最新】",
+    description: "JBRの鍵サービス（生活救急車）の運営移管の経緯と、現在の依頼先・料金を一次情報で解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
     images: ["/images/kv-top.jpg"],
@@ -35,7 +35,7 @@ const toc = [
 const goodReviews = [
     {"title": "緊急時にすぐ駆けつけてくれた", "body": "急ぎの鍵トラブルでスピーディに対応してくれたという評価が多く見られます。全国の拠点網により近隣から駆けつ��る体制が評価されています。", "meta": "対応スピードへの評価傾向"},
     {"title": "見積もり通りで安心して頼めた", "body": "出張・見積もり・キャンセルが無料で、提示された見積もり通りの金額で済んだという安心感を挙げる声があります。", "meta": "料金の明朗さへの評価傾向"},
-    {"title": "上場企業が運営していて信頼できた", "body": "東証上場の大手が運営しているため、初めてでも安心して依頼できたという評価傾向が見られます。", "meta": "信頼性への評価傾向"}
+    {"title": "大手ブランドとしての知名度", "body": "生活救急車ブランドの知名度と全国拠点網から、初めてでも依頼しやすかったという評価傾向が見られます（口コミにはJBR運営時代の投稿が含まれます）。", "meta": "信頼性への評価傾向"}
   ];
 
 const badReviews = [
@@ -44,13 +44,13 @@ const badReviews = [
   ];
 
 const faqs = [
-    {"q": "JBR（生活救急車）の鍵開けはいくらからですか", "a": "鍵開け（解錠）は8,800円（税込）からが目安です。住宅の刻みキーなどの最小構成の目安で、鍵の種類や作業内容によって金額は変動します。出張・見積もり・キャンセルは無料で、作業前に提示される見積書の金額で対応します。"},
+    {"q": "いま生活救急車に頼むと鍵開けはいくらからですか", "a": "現運営（株式会社生活救急車）の公式料金表では、刻みキーの鍵開け8,800円（税込）〜、ディンプルキーの解錠33,000円〜が目安です（2026年7月4日確認）。出張・見積もり・キャンセルは無料と公式に明記されています。特殊作業は別途料金が発生する場合があります。"},
     {"q": "見積もりや出張は無料ですか", "a": "出張費・見積もり・キャンセルはいずれも無料です。金額に納得したうえで依頼できるため、まずは無料見積もりで総額を確認するのがおすすめです。"},
     {"q": "対応エリアと受付時間は", "a": "全国対応で、24時間受付・年中無休をうたっています。全国約2,200拠点のネットワークにより、地域を問わず鍵トラブルに対応しています。"},
     {"q": "どんな鍵トラブルに対応していますか", "a": "鍵開け・鍵交換・鍵作成のほか、金庫、車・バイクの鍵まで幅広く対応しています。対応可否が不明な場合は問い合わせ時に確認しましょう。"}
   ];
 
-const sources = [["JBR公式（会社概要）", "https://www.jbr.co.jp/company/"], ["カギの生活救急車（公式サービスサイト）", "https://www.jbr.ne.jp/key/"], ["EPARKくらしのレスキュー（料金・実績）", "https://rescue.epark.jp/detail/950"], ["みん評（利用者の口コミ）", "https://minhyo.jp/jbr-kagi"]];
+const sources = [["カギの生活救急車 公式サイト", "https://kagi-seikatsukyukyusya.com/"], ["国税庁法人番号公表サイト（株式会社生活救急車の変更履歴）", "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8180001153391"], ["JPX 上場廃止等の決定（ジャパンベストレスキューシステム）", "https://www.jpx.co.jp/news/1023/20240222-11.html"], ["みん評（利用者の口コミ・JBR時代の投稿含む）", "https://minhyo.jp/jbr-kagi"]];
 
 export default function JbrPage() {
   const articleSchema = {
@@ -100,13 +100,13 @@ export default function JbrPage() {
         <header className="relative overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 text-white mt-4">
           <div className="mx-auto max-w-4xl px-4 py-12 md:py-16">
             <p className="text-sm tracking-widest text-amber-300 mb-3">鍵トラブル業者レビュー</p>
-            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">ジャパンベストレスキュー（JBR）の口コミ・評判は？<br className="hidden md:block" />料金・対応スピードを徹底調査</h1>
-            <p className="text-slate-200 leading-relaxed max-w-2xl">東証上場のジャパンベストレスキュー（JBR）が「生活救急車」ブランドで提供する鍵トラブル解決サービス。料金や対応スピード、利用者の評価を編集部が中立的に調査しました。</p>
+            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">JBRの鍵サービス（生活救急車）はどうなった？<br className="hidden md:block" />運営会社の変更と現在の依頼先</h1>
+            <p className="text-slate-200 leading-relaxed max-w-2xl">「生活救急車」はかつてJBR（ジャパンベストレスキューシステム）のブランドでしたが、2022年12月に事業が株式会社生活救急車へ承継され、JBR自体も2024年3月に上場廃止になっています。経緯と現在の依頼先を一次情報で整理しました。</p>
             <div className="mt-6 flex flex-wrap gap-2">
-              <span className="badge badge-lg bg-white/15 border-0 text-white">鍵開け 8,800円〜</span>
+              <span className="badge badge-lg bg-white/15 border-0 text-white">現運営：株式会社生活救急車</span>
               <span className="badge badge-lg bg-white/15 border-0 text-white">24時間受付</span>
               <span className="badge badge-lg bg-white/15 border-0 text-white">全国対応</span>
-              <span className="badge badge-lg bg-white/15 border-0 text-white">東証上場企業が運営</span>
+              <span className="badge badge-lg bg-white/15 border-0 text-white">2026年7月4日 一次確認</span>
             </div>
             <div className="mt-8 overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
               <Image src="/images/kv-top.jpg" alt="ジャパンベストレスキュー（JBR）の鍵トラブル解決サービス" width={1024} height={1024} className="w-full h-56 md:h-72 object-cover" priority />
@@ -132,8 +132,8 @@ export default function JbrPage() {
 
           <section id="about" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">ジャパンベストレスキュー（JBR）とはどんなサービスか</h2>
-            <p className="leading-loose mb-4 text-slate-700">ジャパンベストレスキュー（JBR）は、1997年創業の東京証券取引所 上場企業（証券コード2453・本社 名古屋市）が運営する生活トラブル解決サービスです。鍵のトラブルは「生活救急車」ブランドで提供されており、鍵開け・鍵交換・鍵作成などに全国の拠点ネットワークで対応しています。</p>
-            <p className="leading-loose mb-4 text-slate-700">出張費・見積もり・キャンセルはいずれも無料で、作業前に提示する見積書の金額で対応する明朗会計を掲げています。上場企業が運営している安心感があり、鍵だけでなく水まわり・ガラスなど他の生活トラブルもまとめて相談しやすいのが特徴です。</p>
+            <p className="leading-loose mb-4 text-slate-700">ジャパンベストレスキューシステム（JBR・1997年創業、本社 名古屋市）は「生活救急車」ブランドで鍵などの生活トラブル駆けつけサービスを展開していました。しかし<strong>2022年11月30日に駆けつけ事業を吸収分割で切り出し、2022年12月2日付で事業会社が「株式会社生活救急車」（法人番号8180001153391）に商号変更</strong>。現在の生活救急車はJBRではなくこの株式会社生活救急車が運営しています（国税庁法人番号公表サイトの変更履歴で確認）。さらに<strong>JBR自体も2024年3月25日にMBO（経営陣による買収）で東証上場廃止</strong>となりました（JPX公表情報）。</p>
+            <p className="leading-loose mb-4 text-slate-700">つまり「東証上場のJBRが運営する鍵サービス」という情報は現在は古い情報です。いま鍵トラブルで生活救急車に依頼する場合の窓口は株式会社生活救急車の公式サイトで、出張費・見積もり・キャンセル無料の会計方針は現在も公式に掲げられています。最新の料金・口コミは<a href="/agents/seikatsu-kyukyusha/" className="text-amber-700 underline">鍵の生活救急車の口コミ・評判ページ</a>で詳しく解説しています。</p>
             <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200">
               <Image src="/images/jbr-features.png" alt="ジャパンベストレスキュー（JBR）の特徴" width={1200} height={500} className="w-full h-auto" />
             </div>
@@ -156,7 +156,7 @@ export default function JbrPage() {
               <table className="table w-full border border-slate-200">
                 <thead><tr className="bg-slate-100 text-slate-700"><th>項目</th><th>料金の目安</th><th>備考</th></tr></thead>
                 <tbody>
-                  <tr className="border-b border-slate-200"><td className="font-medium">鍵開け（解錠）</td><td className="font-bold text-amber-700">8,800円〜（税込）</td><td className="text-sm text-slate-600">住宅・刻みキーの目安</td></tr>
+                  <tr className="border-b border-slate-200"><td className="font-medium">鍵開け（刻みキー・公式表示）</td><td className="font-bold text-amber-700">8,800円〜（税込）</td><td className="text-sm text-slate-600">現運営の公式料金表・2026年7月4日確認</td></tr>
                   <tr className="border-b border-slate-200"><td className="font-medium">鍵作製・鍵交換</td><td className="font-bold text-amber-700">14,300円〜／11,000円＋部品代〜</td><td className="text-sm text-slate-600">作業内容により変動</td></tr>
                   <tr className="border-b border-slate-200"><td className="font-medium">会計方式</td><td className="font-bold text-amber-700">出張・見積もり・キャンセル無料</td><td className="text-sm text-slate-600">作業前の見積書の価格で対応</td></tr>
                 </tbody>
@@ -199,7 +199,7 @@ export default function JbrPage() {
               <div className="rounded-2xl border-2 border-emerald-200 bg-emerald-50 p-6">
                 <h3 className="font-bold text-emerald-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-sm text-slate-700">
-                  <li>東証上場企業が運営する安心感</li>
+                  <li>全国2,270拠点の対応ネットワーク（現運営公式表記）</li>
                   <li>全国の拠点ネットワークで対応</li>
                   <li>24時間受付で緊急時も相談しやすい</li>
                   <li>出張・見積もり・キャンセル無料の明朗会計</li>
@@ -258,7 +258,7 @@ export default function JbrPage() {
             <p className="leading-loose mb-4 text-slate-700">本記事の事実情報・口コミの傾向は、以下の公式サイトおよび口コミ・比較サイトを参照し、編集部が確認・要約しています（確認日：{UPDATED}）。</p>
             <ul className="space-y-2 text-sm">
               <li><a href="https://www.jbr.co.jp/company/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">JBR公式（会社概要）</a></li>
-              <li><a href="https://www.jbr.ne.jp/key/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">カギの生活救急車（公式サービスサイト）</a></li>
+              <li><a href="https://kagi-seikatsukyukyusya.com/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">カギの生活救急車 公式サイト</a></li>
               <li><a href="https://rescue.epark.jp/detail/950" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">EPARKくらしのレスキュー（料金・実績）</a></li>
               <li><a href="https://minhyo.jp/jbr-kagi" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">みん評（利用者の口コミ）</a></li>
             </ul>
