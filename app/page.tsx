@@ -20,10 +20,10 @@ export default function Home() {
             <a href="#area" className="hover:text-secondary transition-colors">地域別</a>
           </nav>
           <a
-            href="tel:0120-000-000"
+            href="#compare"
             className="md:hidden bg-accent text-white px-4 py-2 rounded-full text-sm font-bold btn-emergency"
           >
-            📞 今すぐ電話
+            🔓 業者を探す
           </a>
         </div>
       </header>
@@ -53,7 +53,7 @@ export default function Home() {
               鍵のトラブル、<br className="md:hidden" />今すぐ解決。
             </h2>
             <p className="text-lg md:text-xl text-white/80 mb-8">
-              深夜でも早朝でも、鍵のプロが駆けつけます。<br />
+              呼ぶ前の5分で、料金相場と信頼できる業者がわかる。<br />
               全国対応・料金明示の優良業者だけを厳選比較。
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -64,13 +64,13 @@ export default function Home() {
                 🔓 今すぐ業者を探す
               </a>
               <a
-                href="tel:0120-000-000"
+                href="/ryokin/"
                 className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-gray-100 transition-colors"
               >
-                📞 無料相談する
+                💴 料金相場を先に見る
               </a>
             </div>
-            <p className="mt-4 text-white/60 text-sm">※ 相談・見積もり無料。料金に納得いただけなければキャンセルOK</p>
+            <p className="mt-4 text-white/60 text-sm">※ 当サイトは鍵業者ではなく、呼ぶ前の判断材料を提供する比較サイトです。掲載業者は相談・見積もり無料。</p>
           </div>
         </div>
       </section>
@@ -462,15 +462,15 @@ export default function Home() {
             鍵のトラブル、一人で悩まないでください
           </h3>
           <p className="text-white/80 mb-8 max-w-xl mx-auto">
-            24時間365日、プロのスタッフが対応します。<br />
-            まずは無料相談・お見積もりからお気軽にどうぞ。
+            24時間365日対応の業者を厳選して比較しています。<br />
+            まずは料金相場と各社の特徴を確認してからのご相談がおすすめです。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0120-000-000"
+              href="/agents/"
               className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl btn-emergency transition-colors"
             >
-              📞 0120-000-000（無料）
+              🔓 24時間対応の業者を比較する
             </a>
             <a
               href="#compare"
