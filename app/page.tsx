@@ -259,7 +259,7 @@ export default function Home() {
             <h3 className="text-2xl md:text-3xl font-bold text-foreground">
               サービス別の料金相場
             </h3>
-            <p className="text-text-muted mt-2">2026年最新の料金相場をまとめました</p>
+            <p className="text-text-muted mt-2">2026年7月時点の料金相場をまとめました</p>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-sm">

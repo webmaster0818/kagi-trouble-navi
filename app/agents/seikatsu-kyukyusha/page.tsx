@@ -7,11 +7,11 @@ const PATH = "/agents/seikatsu-kyukyusha/";
 const UPDATED = "2026年6月20日";
 
 export const metadata: Metadata = {
-  title: { absolute: "鍵の生活救急車の口コミ・評判は？料金・対応スピード・実績を徹底調査【2026年最新】｜鍵トラブルナビ" },
+  title: { absolute: "鍵の生活救急車の口コミ・評判は？料金・対応スピード・実績を徹底調査【2026年7月】｜鍵トラブルナビ" },
   description: "鍵の生活救急車（運営：株式会社生活救急車）の口コミ・評判を徹底調査。鍵開け8,800円〜の料金、最短15分の駆けつけ、全国2,270拠点・施工240万件以上の実績、利用者の良い評判・気になる評判まで編集部が中立的にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
-    title: "鍵の生活救急車の口コミ・評判は？料金・対応スピード・実績を徹底調査【2026年最新】",
+    title: "鍵の生活救急車の口コミ・評判は？料金・対応スピード・実績を徹底調査【2026年7月】",
     description: "鍵の生活救急車の料金・対応スピード・実績・利用者の口コミを中立的に調査。利用前のメリットと注意点を解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
@@ -56,7 +56,7 @@ export default function SeikatsuKyukyushaPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "鍵の生活救急車の口コミ・評判は？料金・対応スピード・実績を徹底調査【2026年最新】",
+    headline: "鍵の生活救急車の口コミ・評判は？料金・対応スピード・実績を徹底調査【2026年7月】",
     description: "鍵の生活救急車の料金・対応スピード・実績・利用者の口コミを中立的に調査。利用前のメリットと注意点を解説します。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-20T00:00:00+09:00",

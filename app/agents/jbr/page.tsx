@@ -7,11 +7,11 @@ const PATH = "/agents/jbr/";
 const UPDATED = "2026年6月20日";
 
 export const metadata: Metadata = {
-  title: { absolute: "JBRの鍵サービス（生活救急車）はどうなった？運営会社の変更と現在の依頼先【2026年最新】｜鍵トラブルナビ" },
+  title: { absolute: "JBRの鍵サービス（生活救急車）はどうなった？運営会社の変更と現在の依頼先【2026年7月】｜鍵トラブルナビ" },
   description: "「JBRの鍵サービス（生活救急車）」は2022年12月に事業がJBRから株式会社生活救急車へ承継され、JBR自体も2024年3月にMBOで上場廃止になりました。経緯と現在の運営会社、いま依頼する場合の窓口・料金を一次情報で解説します。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
-    title: "JBRの鍵サービス（生活救急車）はどうなった？運営会社の変更と現在の依頼先【2026年最新】",
+    title: "JBRの鍵サービス（生活救急車）はどうなった？運営会社の変更と現在の依頼先【2026年7月】",
     description: "JBRの鍵サービス（生活救急車）の運営移管の経緯と、現在の依頼先・料金を一次情報で解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
@@ -56,7 +56,7 @@ export default function JbrPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "ジャパンベストレスキュー（JBR）の鍵サービスの口コミ・評判は？料金・対応スピードを徹底調査【2026年最新】",
+    headline: "ジャパンベストレスキュー（JBR）の鍵サービスの口コミ・評判は？料金・対応スピードを徹底調査【2026年7月】",
     description: "東証上場JBRの鍵サービスの料金・対応スピード・実績・利用者の口コミを中立的に調査。利用前のメリットと注意点を解説します。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-20T00:00:00+09:00",

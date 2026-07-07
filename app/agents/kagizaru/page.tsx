@@ -7,11 +7,11 @@ const PATH = "/agents/kagizaru/";
 const UPDATED = "2026年6月20日";
 
 export const metadata: Metadata = {
-  title: { absolute: "鍵猿（かぎざる）の口コミ・評判は？料金・対応スピード・保証を徹底調査【2026年最新】｜鍵トラブルナビ" },
+  title: { absolute: "鍵猿（かぎざる）の口コミ・評判は？料金・対応スピード・保証を徹底調査【2026年7月】｜鍵トラブルナビ" },
   description: "鍵猿（SLS株式会社）の口コミ・評判を徹底調査。鍵開け8,800円〜の料金、最短15分到着、全国対応・1年保証、自社スタッフ施工、利用者の良い評判・気になる評判まで編集部が中立的にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
-    title: "鍵猿（かぎざる）の口コミ・評判は？料金・対応スピード・保証を徹底調査【2026年最新】",
+    title: "鍵猿（かぎざる）の口コミ・評判は？料金・対応スピード・保証を徹底調査【2026年7月】",
     description: "鍵猿の料金・対応スピード・保証・利用者の口コミを中立的に調査。利用前のメリットと注意点を解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
@@ -56,7 +56,7 @@ export default function KagizaruPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "鍵猿（かぎざる）の口コミ・評判は？料金・対応スピード・保証を徹底調査【2026年最新】",
+    headline: "鍵猿（かぎざる）の口コミ・評判は？料金・対応スピード・保証を徹底調査【2026年7月】",
     description: "鍵猿の料金・対応スピード・保証・利用者の口コミを中立的に調査。利用前のメリットと注意点を解説します。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-20T00:00:00+09:00",

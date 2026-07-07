@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "鍵開け・鍵交換の料金相場【2026年最新】｜出張費・深夜割増・安く抑えるコツ | 鍵トラブルナビ",
+  title: "鍵開け・鍵交換の料金相場【2026年7月】｜出張費・深夜割増・安く抑えるコツ | 鍵トラブルナビ",
   description:
-    "鍵開け・鍵交換の料金相場を作業別にまとめて解説。一般錠の鍵開けは8,000〜15,000円、ディンプルキーは15,000〜30,000円が目安。出張費・深夜割増などの追加料金、ぼったくりを避けるコツ、業者の選び方まで2026年最新情報で紹介します。",
+    "鍵開け・鍵交換の料金相場を作業別にまとめて解説。一般錠の鍵開けは8,000〜15,000円、ディンプルキーは15,000〜30,000円が目安。出張費・深夜割増などの追加料金、ぼったくりを避けるコツ、業者の選び方まで2026年7月時点の情報で紹介します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/ryokin/" },
 };
 
@@ -49,12 +49,12 @@ const breadcrumbLd = {
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "鍵開け・鍵交換の料金相場【2026年最新】",
+  headline: "鍵開け・鍵交換の料金相場【2026年7月】",
   description: "鍵開け・鍵交換の作業別料金相場と追加料金、安く抑えるコツを解説。",
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-06-30",
-  dateModified: "2026-06-30",
+  dateModified: "2026-07-07",
 };
 
 export default function RyokinPage() {
@@ -92,15 +92,24 @@ export default function RyokinPage() {
 
         <article className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
-            鍵開け・鍵交換の料金相場【2026年最新】
+            鍵開け・鍵交換の料金相場【2026年7月】
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年6月30日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年7月7日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
             <p className="font-bold text-primary mb-2">結論：鍵開け・鍵交換の料金相場</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               鍵開けの料金相場は、一般的な鍵で<strong>8,000〜15,000円</strong>、防犯性の高いディンプルキーで<strong>15,000〜30,000円</strong>が目安です。鍵交換はシリンダー交換で<strong>10,000〜25,000円</strong>（ディンプルキーは20,000〜40,000円）。これに出張費（3,000円前後）や深夜・早朝の割増が加わる場合があります。鍵の種類や状況で金額が変わるため、<strong>作業前に必ず総額の見積もりを確認</strong>するのが、ぼったくりを避ける最大のコツです。
+            </p>
+          </div>
+
+          {/* 一次確認版への導線 */}
+          <div className="bg-secondary/10 border border-secondary/30 rounded-2xl p-5 mb-8">
+            <p className="text-sm text-text-secondary leading-relaxed">
+              下記は一般的な<strong>相場の目安</strong>です。<strong>掲載業者の公式サイトに実際に表示されている料金</strong>を当サイトが確認・集計した業者別の一覧は、
+              <a href="/ryokin-index/" className="text-primary font-bold underline">鍵トラブル料金インデックス（業者×サービス別・確認日つき）</a>
+              にまとめています。
             </p>
           </div>
 
