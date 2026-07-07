@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/agents/jbr/";
-const UPDATED = "2026年6月20日";
+const UPDATED = "2026年7月7日";
 
 export const metadata: Metadata = {
   title: { absolute: "JBRの鍵サービス（生活救急車）はどうなった？運営会社の変更と現在の依頼先【2026年7月】｜鍵トラブルナビ" },
@@ -60,7 +60,7 @@ export default function JbrPage() {
     description: "東証上場JBRの鍵サービスの料金・対応スピード・実績・利用者の口コミを中立的に調査。利用前のメリットと注意点を解説します。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-20T00:00:00+09:00",
-    dateModified: "2026-06-20T00:00:00+09:00",
+    dateModified: "2026-07-07T00:00:00+09:00",
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` },
@@ -168,7 +168,8 @@ export default function JbrPage() {
           <section id="reviews" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">利用者のリアルな口コミ・評判</h2>
             <div className="rounded-2xl bg-amber-50 border border-amber-200 p-6 mb-6">
-              <p className="text-slate-700 text-sm leading-relaxed">Googleのクチコミや口コミ・比較サイト（みん評、EPARKくらしのレスキュー、トラブルブック等）を編集部が調査したところ、スピード対応と上場企業ならではの安心感を評価する声が目立ちました。一方で、表示料金より実際の請求が高く感じたという指摘や、支払い方法が地域・店舗で異なる点には慎重な声も見られました。</p>
+              <p className="text-slate-700 text-sm leading-relaxed">口コミ・比較サイト（みん評等）の公開口コミを編集部が調査しました（2026年7月時点）。<strong>好意的な傾向</strong>は「明細・料金を正確に提示するとの評価」「全国対応・上場企業の知名度と安心感」「水回り・鍵・害虫・リフォーム等をワンストップ対応」、<strong>否定的な傾向</strong>は「サイト掲載額と実見積りの乖離」「料金・品質のばらつき」「緊急ゆえ高額でも支払わざるを得ない状況になりやすい」です。</p>
+              <p className="text-slate-500 text-xs leading-relaxed mt-3">※ 出典：みん評ほか公開口コミ、調査時点2026年7月。<strong>重要な注意：</strong>JBR（ジャパンベストレスキューシステム株式会社）の「鍵（生活救急車）」事業は2022年11月に<strong>別法人「株式会社生活救急車」へ承継</strong>されています。現在のJBRブランドの鍵対応と、承継後の「鍵の生活救急車」を混同しないでください。また、JBR単体の口コミは水回りサービスや従業員の会社評価が混在し、鍵に限定した平均★・件数は確認できませんでした。</p>
             </div>
             <h3 className="font-bold text-lg mb-3">良い口コミの傾向</h3>
             <div className="space-y-4 mb-8">

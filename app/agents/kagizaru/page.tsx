@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/agents/kagizaru/";
-const UPDATED = "2026年6月20日";
+const UPDATED = "2026年7月7日";
 
 export const metadata: Metadata = {
   title: { absolute: "鍵猿（かぎざる）の口コミ・評判は？料金・対応スピード・保証を徹底調査【2026年7月】｜鍵トラブルナビ" },
@@ -60,7 +60,7 @@ export default function KagizaruPage() {
     description: "鍵猿の料金・対応スピード・保証・利用者の口コミを中立的に調査。利用前のメリットと注意点を解説します。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-20T00:00:00+09:00",
-    dateModified: "2026-06-20T00:00:00+09:00",
+    dateModified: "2026-07-07T00:00:00+09:00",
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` },
@@ -168,7 +168,8 @@ export default function KagizaruPage() {
           <section id="reviews" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">利用者のリアルな口コミ・評判</h2>
             <div className="rounded-2xl bg-amber-50 border border-amber-200 p-6 mb-6">
-              <p className="text-slate-700 text-sm leading-relaxed">Googleのクチコミや口コミ・比較サイト（みん評、セーフリー、専門家の相談室等）を編集部が調査したところ、最短15分の対応スピードと作業の丁寧さを評価する声が目立ちました。一方で、費用が想定より高いと感じたという声や、スタッフ対応にばらつきがあるという指摘も見られました。</p>
+              <p className="text-slate-700 text-sm leading-relaxed">口コミ・比較サイト（みん評、専門家の相談室等）の公開口コミを編集部が調査しました（2026年7月時点）。みん評には約52件の口コミが掲載されています。<strong>好意的な傾向</strong>は「到着・対応が早い（最短15分・深夜対応）で緊急時に安心」「スタッフの対応が丁寧」「鍵を壊さず開けてくれる技術力」、<strong>否定的な傾向</strong>は「料金が高い（多くは事前見積りをしていないケース）」「サイト表示料金と実額の差（夜間出張料等の加算）」「拠点・担当者による対応差」です。</p>
+              <p className="text-slate-500 text-xs leading-relaxed mt-3">※ 出典：みん評・専門家の相談室ほか公開口コミ、調査時点2026年7月。みん評に表示される「2.9」は当該カテゴリの平均値であり鍵猿単体の平均★ではありません。否定的な声の多くは「事前見積りを取らずに依頼し、現場で夜間出張料等が加算されて想定を超えた」ケースが中心です。作業前に総額の見積もりを確認することでミスマッチを避けられます。</p>
             </div>
             <h3 className="font-bold text-lg mb-3">良い口コミの傾向</h3>
             <div className="space-y-4 mb-8">

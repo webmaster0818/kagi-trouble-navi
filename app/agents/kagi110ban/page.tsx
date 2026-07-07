@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/agents/kagi110ban/";
-const UPDATED = "2026年6月10日";
+const UPDATED = "2026年7月7日";
 
 export const metadata: Metadata = {
   title: {
@@ -62,7 +62,7 @@ export default function Kagi110banPage() {
     description: "カギ110番の料金・対応スピード・加盟店ネットワーク・利用者の口コミを中立的に調査した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-10T00:00:00+09:00",
-    dateModified: "2026-06-10T00:00:00+09:00",
+    dateModified: "2026-07-07T00:00:00+09:00",
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` },
@@ -185,7 +185,8 @@ export default function Kagi110banPage() {
           <section id="reviews" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">利用者のリアルな口コミ・評判</h2>
             <div className="rounded-2xl bg-amber-50 border border-amber-200 p-6 mb-6">
-              <p className="text-slate-700 text-sm leading-relaxed">各種口コミサイトやGoogleのクチコミを編集部が調査したところ、対応の速さと料金の明確さを評価する声が目立ちました。一方で、加盟店によって対応に差が出る点や、繁忙期の到着時間については慎重な声も見られました。</p>
+              <p className="text-slate-700 text-sm leading-relaxed">口コミ・比較サイト（みん評、セーフリー等）の公開口コミを編集部が調査しました（2026年7月時点）。みん評には約51件の口コミが掲載され、セーフリーでは総合3.3/5（6件）でした。<strong>好意的な傾向</strong>は「到着・作業が早い」「コールセンター・現場の対応が丁寧」「上場企業運営の安心感」、<strong>否定的な傾向</strong>は「広告の“最短対応”と実際の到着時間に差を感じた」「料金が高い」「紹介される加盟店によって対応・品質にばらつき」です。カギ110番は加盟店紹介（仲介）型のため、低評価の多くは実際に対応した個別加盟店に起因する場合があります。</p>
+              <p className="text-slate-500 text-xs leading-relaxed mt-3">※ 出典：みん評・セーフリー（safely.co.jp）ほか公開口コミ、調査時点2026年7月。自社サイト公表の「満足度4.6/5」等は自社公表値で第三者検証ではありません。<strong>「カギ110番（kagi110ban.jp・シェアリングテクノロジー運営）」と、名称の似た別会社「鍵のレスキュー＝鍵の110番救急車（kagi110qq.co.jp）」は別会社</strong>です。口コミを見る際は混同にご注意ください。</p>
             </div>
             <h3 className="font-bold text-lg mb-3">良い口コミ</h3>
             <div className="space-y-4 mb-8">
