@@ -64,6 +64,8 @@ export default function KinkoKaijoPage() {
             <a href="/#trouble" className="hover:text-secondary transition-colors">トラブル別</a>
             <a href="/#service" className="hover:text-secondary transition-colors">サービス別</a>
             <a href="/ryokin/" className="hover:text-secondary transition-colors">料金相場</a>
+            <a href="/ryokin-index/" className="hover:text-secondary transition-colors">料金インデックス</a>
+            <a href="/kagi-koukan-timing/" className="hover:text-secondary transition-colors">交換の時期</a>
             <a href="/agents/" className="hover:text-secondary transition-colors">業者比較</a>
           </nav>
         </div>
