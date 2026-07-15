@@ -91,7 +91,7 @@ export default function Home() {
             {[
               { icon: "🚪", title: "鍵の閉じ込め", desc: "家・部屋に入れない", urgency: true, href: "/shimedashi/" },
               { icon: "💔", title: "鍵が折れた", desc: "鍵穴の中で折れた", urgency: true, href: "/kagi-ore/" },
-              { icon: "🔧", title: "鍵穴が回らない", desc: "鍵が回りにくい・動かない", urgency: false, href: "#compare" },
+              { icon: "🔧", title: "鍵穴が回らない", desc: "鍵が回りにくい・動かない", urgency: false, href: "/kagi-mawaranai/" },
               { icon: "😰", title: "鍵をなくした", desc: "鍵を紛失・防犯が心配", urgency: true, href: "/kagi-funshitsu/" },
               { icon: "🚗", title: "車のインロック", desc: "車内に鍵を閉じ込めた", urgency: true, href: "/car-inlock/" },
               { icon: "🔐", title: "金庫が開かない", desc: "暗証番号忘れ・故障", urgency: false, href: "/kinko-kaijo/" },
