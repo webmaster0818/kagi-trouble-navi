@@ -21,6 +21,8 @@ const faqs = [
   { q: "スマートキーなのになぜインロックが起きるのですか？", a: "スマートキーの電池残量低下で車が鍵の存在を検知できなくなるケースや、鍵を車内に置いたままドアハンドルのロック操作をしてしまうケースなどが典型です。電池は1〜2年を目安に交換し、降車時は鍵を身につける習慣が確実な予防策です。" },
   { q: "子どもやペットが車内に閉じ込められました。どうすれば？", a: "夏場の車内は短時間で命に関わる温度になります。ためらわず119番（緊急時は窓を割る判断を含めて消防が対応）に通報してください。JAFも子どもの閉じ込みは優先対応としています。業者の到着を待つより命を優先してください。" },
   { q: "鍵屋に頼むといくらかかりますか？", a: "国産車の一般的な鍵開けで8,000〜15,000円が相場の目安です。輸入車や特殊な防盗機構つきの車は15,000〜30,000円以上かかる場合があります。出張費・深夜割増の有無を含めた総額を作業前に必ず確認しましょう。" },
+  { q: "インロックでレッカー移動は必要ですか？", a: "通常は不要です。インロックの解錠はその場での作業で解決することがほとんどで、車を移動させる必要はありません。ただし、鍵の紛失でイモビライザーの再登録が必要になり現地で対応できない場合など、例外的にディーラーへの搬送が必要になるケースはあります。" },
+  { q: "スマートキーの電池が切れてドアが開きません。閉じ込みですか？", a: "鍵が手元にあるなら閉じ込みではなく電池切れの可能性が高いです。スマートキー本体に内蔵されたメカニカルキーを取り出し、運転席ドアの鍵穴で開けられる車種が多くあります。取り出し方は取扱説明書やメーカーサイトで確認できます。開けた後はエンジンの始動方法（電池切れ時の非常始動手順）も説明書で確認しましょう。" },
 ];
 
 const faqLd = {
@@ -118,6 +120,28 @@ export default function CarInlockPage() {
             ))}
           </ol>
 
+          {/* 呼ぶ先の優先順位 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">呼ぶ先の優先順位——どこに連絡すべきか</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            インロック時の連絡先は複数ありますが、<strong>費用を抑えられる順</strong>に確認していくのが基本です。あわてて最初に目についた業者へ電話する前に、次の順番で自分が使えるサービスを整理しましょう。
+          </p>
+          <div className="space-y-3 mb-10">
+            {[
+              { label: "a", title: "JAF会員ならまずJAF", desc: "JAF会員はキー閉じ込みの解錠が無料の会員特典に含まれます。家族の誰かが会員であれば適用できる場合もあるため、同乗者・家族の会員状況も確認しましょう。アプリや氏名照会で会員確認ができるので、会員証を持っていなくても諦める必要はありません。" },
+              { label: "b", title: "自動車保険のロードサービス", desc: "多くの任意保険には鍵開けサポートを含むロードサービスが付帯しています。契約内容は保険証券・契約者ページ・保険会社の公式アプリで確認できます。証券が手元になくても、保険会社名さえ分かれば緊急デスクの電話番号を検索して問い合わせが可能です。付帯していれば無料で対応してもらえるケースが多く、JAF非会員なら最優先で確認したい選択肢です。" },
+              { label: "c", title: "ディーラー・メーカー窓口（スマートキーの場合）", desc: "スマートキーや特殊な防盗機構つきの車は、購入したディーラーや自動車メーカーのカスタマー窓口に相談するのも有効です。鍵の紛失を伴う場合や、鍵の再作成・再登録が必要になりそうな場合は、最初からディーラー経由で進めたほうが結果的にスムーズなことがあります。営業時間内であれば対応方法や費用の目安を教えてもらえます。" },
+              { label: "d", title: "鍵の専門業者（鍵屋）", desc: "上記がいずれも使えない、または深夜・遠方でディーラーに頼れない場合の選択肢です。到着が早い一方で料金は業者・条件により幅があるため、後述の「業者に依頼する場合の選び方」を参考に、電話の時点で総額を確認してから依頼しましょう。" },
+            ].map((p, i) => (
+              <div key={i} className="flex gap-3 bg-white rounded-xl border border-black/10 p-4">
+                <span className="shrink-0 w-7 h-7 rounded-full bg-primary/10 text-primary font-bold text-sm flex items-center justify-center">{p.label}</span>
+                <div>
+                  <p className="font-bold text-text-primary text-sm mb-1">{p.title}</p>
+                  <p className="text-sm text-text-secondary leading-relaxed">{p.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
           {/* 依頼先比較 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">依頼先ごとの料金・特徴の比較</h2>
           <div className="overflow-x-auto mb-4 rounded-xl border border-black/10">
@@ -149,6 +173,32 @@ export default function CarInlockPage() {
             ※JAF料金はJAF公式サイト掲載の料金（2026年7月4日確認）。鍵業者の料金は一般的な相場の目安で、車種・時間帯により変動します。
           </p>
 
+          {/* スマートキー車の注意点 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">スマートキー車の注意点</h2>
+          <div className="space-y-4 mb-10">
+            <div className="bg-white rounded-xl border border-black/10 p-5">
+              <h3 className="font-bold text-text-primary text-sm mb-1.5">電池切れならメカニカルキー（内蔵キー）で開けられる場合がある</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                スマートキーの多くには、本体内部に金属製のメカニカルキー（内蔵キー・エマージェンシーキー）が収納されています。スマートキーの電池が切れてドアが反応しない場合でも、鍵が手元にあるなら、内蔵キーを取り出して運転席ドアの鍵穴に差し込めば開けられる車種が多くあります。鍵穴がカバーで隠れている車種もあるため、取扱説明書やメーカーサイトで内蔵キーの取り出し方と鍵穴の位置を一度確認しておくと、いざという時に業者を呼ばずに済みます。
+              </p>
+            </div>
+            <div className="bg-white rounded-xl border border-black/10 p-5">
+              <h3 className="font-bold text-text-primary text-sm mb-1.5">スマートキー紛失時はイモビライザーの再登録が必要</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                車内閉じ込みではなくスマートキー自体を紛失した場合は、単に鍵を開けるだけでは解決しません。現在の車の多くにはイモビライザー（電子的な盗難防止装置）が搭載されており、新しい鍵を使うには車両側への再登録作業が必要です。この作業はディーラーか、イモビライザー対応の設備を持つ一部の鍵業者しか行えないため、依頼前に「スマートキーの作成・再登録に対応しているか」を必ず電話で確認しましょう。対応できない業者に来てもらっても解決せず、出張費だけかかる恐れがあります。
+              </p>
+            </div>
+          </div>
+
+          {/* 子ども・ペットの閉じ込み */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">子ども・ペットの閉じ込みは「緊急対応」——ためらわず110番・119番</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-3">
+            車内に子どもやペットを残したままインロックした場合は、通常のインロックとは扱いを分けてください。夏場の車内温度は短時間で急上昇し、命に関わる状況になり得ます。晴れた日はもちろん、曇りの日や春・秋でも車内は想像以上に高温になることがあり、「業者の到着を待てば大丈夫」という判断は危険です。
+          </p>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            危険を感じたら<strong>110番・119番への通報もためらわない</strong>でください。緊急性が高い場合は、窓ガラスを割って救出する判断を含めて警察・消防が対応します。ガラスの交換費用より命が優先です。通報と並行してJAFや保険のロードサービスにも連絡し、状況（子ども・ペットが車内にいること）を必ず伝えると優先的に扱われやすくなります。
+          </p>
+
           {/* NG行動 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">やってはいけないNG行動</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
@@ -164,6 +214,31 @@ export default function CarInlockPage() {
               </div>
             ))}
           </div>
+
+          {/* 業者の選び方 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">業者に依頼する場合の選び方</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            鍵業者に依頼する場合は、<strong>電話の段階でどれだけ正確に情報を伝え、総額を確定させられるか</strong>がトラブル回避の分かれ目です。次のポイントを押さえて連絡しましょう。
+          </p>
+          <ul className="space-y-3 mb-6">
+            {[
+              { title: "車種・年式・鍵の種類を伝える", desc: "メーカー・車種・年式に加え、鍵のタイプ（通常の金属キー／リモコンキー／スマートキー）とイモビライザーの有無（分かる範囲で）を伝えましょう。鍵の種類によって作業の難易度と料金が大きく変わるため、これを伝えずに呼ぶと現地で見積もりが跳ね上がる原因になります。" },
+              { title: "出張費・作業費・キャンセル料込みの「総額」で見積もりを取る", desc: "「作業費◯◯円〜」だけでは総額は分かりません。出張費・見積もり後にキャンセルした場合の費用まで含めて、電話口で総額の目安を確認しましょう。総額を答えられない・現地でないと一切分からないという業者は避けたほうが無難です。" },
+              { title: "夜間・早朝の割増料金を確認する", desc: "深夜・早朝は割増料金を設定している業者が一般的です。時間帯による加算の有無と金額を事前に確認し、緊急でなければ日中の依頼に切り替えるのも節約手段です。" },
+              { title: "会社名・所在地が明記された業者を選ぶ", desc: "運営会社名・所在地・固定電話番号がサイトに明記されているかを確認しましょう。複数の業者に電話して比較する余裕があれば、相場から外れた請求を避けやすくなります。" },
+            ].map((c, i) => (
+              <li key={i} className="flex gap-3 bg-white rounded-xl border border-black/10 p-4">
+                <span className="shrink-0 text-primary font-bold text-sm mt-0.5">✓</span>
+                <div>
+                  <p className="font-bold text-text-primary text-sm mb-1">{c.title}</p>
+                  <p className="text-sm text-text-secondary leading-relaxed">{c.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            鍵開け料金の一般的な相場観は<a href="/ryokin/" className="text-primary underline hover:no-underline">料金相場のページ</a>で、業者ごとの特徴の比較は<a href="/agents/" className="text-primary underline hover:no-underline">業者比較のページ</a>で詳しく解説しています。
+          </p>
 
           {/* 業者選び・内部リンク */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 mb-10">
@@ -190,36 +265,6 @@ export default function CarInlockPage() {
         </article>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-primary text-white/70 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 py-10">
-          <div className="flex flex-col sm:flex-row justify-between gap-6 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-3 text-white">
-                <span className="text-2xl">🔑</span>
-                <span className="text-lg font-bold">鍵トラブルナビ</span>
-              </div>
-              <p className="text-sm max-w-sm">
-                鍵のトラブルでお困りの方に、信頼できる鍵業者を比較・紹介するサービスです。
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">運営情報</h4>
-              <ul className="space-y-2 text-sm">
-                <li>運営: 株式会社MediaX</li>
-                <li>所在地: 東京都渋谷区</li>
-                <li><a href="/terms/" className="hover:text-white transition-colors">利用規約</a></li>
-                <li><a href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</a></li>
-                <li><a href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8 text-center text-xs text-white/40">
-            <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。料金は2026年7月時点の一般的な相場で、実際の費用は各業者の見積もりによります。</p>
-            <p className="mt-2">&copy; 2026 株式会社MediaX All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

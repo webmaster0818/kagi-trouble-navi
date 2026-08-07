@@ -22,6 +22,25 @@ const faqs = [
   { q: "破壊して開けた金庫はまた使えますか？", a: "破壊解錠の方法によります。シリンダーのみの破壊なら部品交換で再使用できる場合がありますが、扉やロック機構ごと破壊した場合は再使用できません。買い替え前提になるか、非破壊で開けられるかを見積もり時に確認しましょう。" },
 ];
 
+const lockTypes = [
+  { title: "ダイヤル式", desc: "最も多いつまずきが「番号は合っているのに手順が違う」ケースです。ダイヤル錠は機種ごとに「右に4回以上回して1つ目の番号→左に3回回して2つ目→右に2回…」のように回転回数と方向が厳密に決まっており、1回でも回数を間違えると内部のリングが揃わず開きません。途中で行き過ぎた場合は戻さず、最初からやり直すのが基本です。正しい手順は取扱説明書または扉の型番からメーカーサイトで確認できます。手順どおりでも開かない場合は番号の記憶違いか内部機構の摩耗が考えられます。" },
+  { title: "テンキー式", desc: "開かない原因として最も多いのが電池切れです。液晶が表示されない・ボタンを押しても無反応・警告音が鳴るといった症状は、まず電池を疑ってください。電池ボックスは扉の表面（テンキーパネルの下部や側面のカバー内）や、非常用鍵穴のカバー内にある機種が一般的です。全ての電池を新品の同一銘柄に交換するのが基本で、多くの機種は電池を替えても設定番号はそのまま維持されます。交換後も反応しない場合は基板や配線の故障が考えられます。" },
+  { title: "指紋認証式", desc: "登録した指の状態が変わると認証率が下がります。指先の乾燥・ふやけ・傷・汚れ、センサー面の皮脂汚れが典型的な原因です。指を拭き、センサーを柔らかい布で軽く清掃してから再試行してください。多くの機種はテンキーや非常用鍵の代替解錠手段を備えているため、指紋が通らない場合はそちらを試すのが先決です。" },
+  { title: "鍵式（シリンダー式）", desc: "長年の使用で鍵の山が摩耗すると、内部ピンが正しい位置に揃わず回らなくなります。「奥まで差さるが回らない」「引っかかる」場合は、複製鍵ではなく購入時の元鍵（マスターキー）で試すと開くことがあります。無理に力をかけると鍵折れにつながるため、回りが渋い時点で使用を控えるのが安全です。" },
+];
+
+const selfChecks = [
+  { title: "型番・メーカー名を確認する", desc: "扉の表面・裏面や側面に銘板（プレートやシール）があり、メーカー名と型番が記載されています。型番がわかれば、メーカーサイトで取扱説明書・対処法・問い合わせ窓口を特定でき、業者へ依頼する場合も見積もり精度が上がります。まず銘板の写真を撮っておきましょう。" },
+  { title: "取扱説明書のリセット手順を確認する", desc: "テンキー式の多くは、説明書にエラー時のリセット手順（電池の入れ直し、一定時間の待機、非常用鍵との併用など）が記載されています。説明書を紛失していても、型番で検索するとメーカーがPDFを公開している場合があります。" },
+  { title: "外部電源端子の有無を確認する", desc: "テンキー式の一部機種は、内部電池が完全に切れた場合に備えて扉面に外部電源端子（9V電池を当てる端子やUSB端子）を備えています。端子があれば外から給電して操作できるため、扉面の小さなカバーや端子穴がないか確認してみてください。" },
+];
+
+const ngActions = [
+  { title: "バール等でのこじ開け", desc: "耐火金庫の扉と本体の隙間は数ミリしかなく、バールを差し込んでも開かないうえ、扉が変形するとロック機構が噛み込んで専門業者でも解錠難度が大きく上がります。耐火材が崩れて中の書類や貴重品を傷めるおそれもあり、修理不能になれば結局買い替えです。" },
+  { title: "ダイヤルやテンキーの分解", desc: "ダイヤル錠の内部は精密なリング機構で、素人が分解すると番号の照合位置が完全に失われ、開錠の手がかりがなくなります。テンキーの基板も同様で、分解後は業者でも破壊解錠しか選べなくなるケースがあります。" },
+  { title: "ドリルでの穴あけ・叩く・落とす", desc: "防盗性能のある金庫はドリル攻撃を想定した対策板が入っており、中途半端な穴あけはロックの噛み込みを招きます。衝撃で開くこともなく、内部機構の破損で状況が悪化するだけです。" },
+];
+
 const faqLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -154,6 +173,81 @@ export default function KinkoKaijoPage() {
             ))}
           </ol>
 
+          {/* タイプ別の原因 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">金庫のタイプ別の開かない原因</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            金庫は施錠方式によって「開かない理由」の傾向がはっきり分かれます。自分の金庫がどのタイプかを確認したうえで、該当する原因から順に潰していくのが最短ルートです。
+          </p>
+          <div className="space-y-4 mb-10">
+            {lockTypes.map((t, i) => (
+              <div key={i} className="bg-white rounded-xl border border-black/10 p-5">
+                <h3 className="font-bold text-text-primary mb-1.5">{t.title}</h3>
+                <p className="text-sm text-text-secondary leading-relaxed">{t.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* 自分で確認できること */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">業者を呼ぶ前に自分で確認できること</h2>
+          <div className="space-y-4 mb-10">
+            {selfChecks.map((s, i) => (
+              <div key={i} className="bg-surface-alt rounded-xl p-5">
+                <h3 className="font-bold text-text-primary mb-1.5">{i + 1}. {s.title}</h3>
+                <p className="text-sm text-text-secondary leading-relaxed">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* メーカー問い合わせ */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">メーカー・購入元への問い合わせという選択肢</h2>
+          <div className="bg-white rounded-xl border border-black/10 p-5 mb-10">
+            <p className="text-sm text-text-secondary leading-relaxed mb-3">
+              急がない場合は、メーカーや購入元への問い合わせも有力なルートです。多くの金庫メーカーは、<strong>型番と本人確認書類（購入証明や身分証など）</strong>を提示すると、ダイヤル番号の照会や合鍵の作成、開錠サービスに応じてくれる場合があります。所有者確認の手続きがあるため日数はかかりますが、金庫を壊さずに済む確実性の高い方法です。
+            </p>
+            <p className="text-sm text-text-secondary leading-relaxed">
+              一方、「今日中に中の書類が必要」など緊急性が高い場合は、出張対応の鍵業者に依頼するほうが現実的です。<strong>時間に余裕があればメーカー、急ぎなら鍵業者</strong>という使い分けを基本に考えましょう。
+            </p>
+          </div>
+
+          {/* NG行動 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">やってはいけないNG行動</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            開かない焦りから力ずくで開けようとすると、かえって解錠の難度が上がり、費用も高くつきます。次の行動は避けてください。
+          </p>
+          <div className="space-y-4 mb-10">
+            {ngActions.map((n, i) => (
+              <div key={i} className="bg-white rounded-xl border border-red-200 p-5">
+                <h3 className="font-bold text-red-600 mb-1.5">NG{i + 1}. {n.title}</h3>
+                <p className="text-sm text-text-secondary leading-relaxed">{n.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* 業者に依頼する場合 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">業者に依頼する場合のポイント</h2>
+          <div className="bg-surface-alt rounded-xl p-5 mb-10">
+            <p className="text-sm text-text-secondary leading-relaxed mb-3">
+              金庫の解錠は、タイプ・メーカー・防盗性能によって作業難度が大きく変わるため、鍵開けの中でも<strong>料金幅が特に大きい</strong>作業です。電話やメールの段階で「メーカー・型番・施錠方式（ダイヤル/テンキー/鍵式など）・開かなくなった経緯」を伝え、出張費や割増を含めた<strong>総額の見積もり</strong>を確認しましょう。型番が伝わるだけで、現地での追加料金トラブルをかなり減らせます。
+            </p>
+            <p className="text-sm text-text-secondary leading-relaxed mb-3">
+              あわせて必ず確認したいのが、<strong>非破壊解錠か破壊解錠か、開けた後に金庫を再利用できるか</strong>です。非破壊なら中身も金庫もそのまま、破壊解錠でもシリンダー交換で再使用できる場合と、扉ごと破壊して買い替えになる場合があります。この説明を見積もり時に明確にしてくれる業者は信頼しやすいと言えます。
+            </p>
+            <p className="text-sm text-text-secondary leading-relaxed">
+              料金の目安は本ページ上部の相場表のほか、<a href="/ryokin/" className="text-primary underline">料金相場ページ</a>で作業別に整理しています。業者選びの比較ポイントは<a href="/agents/" className="text-primary underline">業者比較ページ</a>をご覧ください。
+            </p>
+          </div>
+
+          {/* 相続・遺品の金庫 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">相続・遺品の金庫を開ける場合の注意点</h2>
+          <div className="bg-white rounded-xl border border-black/10 p-5 mb-10">
+            <p className="text-sm text-text-secondary leading-relaxed mb-3">
+              所有者が亡くなった金庫を開ける場合、業者やメーカーから<strong>依頼者が相続人であることを確認できる書類</strong>（戸籍関係の書類や、故人との関係を示せるものなど）の提示を求められることがあります。第三者の金庫を無断で開けることを防ぐための手続きなので、事前に「遺品の金庫であること」を伝え、必要書類を確認しておくとスムーズです。
+            </p>
+            <p className="text-sm text-text-secondary leading-relaxed">
+              また、中身が不明な金庫は<strong>開封時の記録を残す</strong>ことをおすすめします。現金や貴重品が入っていた場合、相続人間のトラブル防止や相続手続きの資料として役立つため、可能であれば複数の相続人が立ち会い、開封の様子や中身を写真・動画で記録しておくと安心です。重要書類（権利証・保険証券・遺言書など）が見つかった場合は、勝手に処分せず保管してください。
+            </p>
+          </div>
+
           {/* 業者選び・内部リンク */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 mb-10">
             <h2 className="text-lg font-bold text-text-primary mb-2">金庫の解錠に対応できる鍵業者を比較する</h2>
@@ -180,36 +274,6 @@ export default function KinkoKaijoPage() {
         </article>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-primary text-white/70 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 py-10">
-          <div className="flex flex-col sm:flex-row justify-between gap-6 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-3 text-white">
-                <span className="text-2xl">🔑</span>
-                <span className="text-lg font-bold">鍵トラブルナビ</span>
-              </div>
-              <p className="text-sm max-w-sm">
-                鍵のトラブルでお困りの方に、信頼できる鍵業者を比較・紹介するサービスです。
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">運営情報</h4>
-              <ul className="space-y-2 text-sm">
-                <li>運営: 株式会社MediaX</li>
-                <li>所在地: 東京都渋谷区</li>
-                <li><a href="/terms/" className="hover:text-white transition-colors">利用規約</a></li>
-                <li><a href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</a></li>
-                <li><a href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8 text-center text-xs text-white/40">
-            <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。料金は2026年7月時点の一般的な相場で、実際の費用は各業者の見積もりによります。</p>
-            <p className="mt-2">&copy; 2026 株式会社MediaX All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

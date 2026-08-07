@@ -23,6 +23,56 @@ const faqs = [
   { q: "冬に鍵が回らないのは凍結ですか？", a: "気温が氷点下になると鍵穴内部の水分が凍って回らなくなることがあります。お湯をかけると再凍結や部品の傷みの原因になるため避け、市販の解氷スプレーやカイロで鍵穴周辺を温める、温めた鍵をゆっくり挿すなどで対応します。凍結を繰り返す場合は鍵穴用の防水・潤滑ケアが有効です。" },
 ];
 
+const causeFlow = [
+  {
+    check: "スペアキー（合鍵）だと回らないが、純正キー（元鍵）なら回る",
+    cause: "鍵側の摩耗・変形が原因",
+    desc: "シリンダーは正常で、鍵そのものの山が摩耗・変形している可能性が高い状態です。合鍵は元鍵より精度が低く、複製を重ねるほど誤差が蓄積します。回る純正キーを元に、精度の高い合鍵を作り直すのが基本の対処です。摩耗した合鍵からさらに合鍵を作るのは避けましょう。",
+  },
+  {
+    check: "純正キーを含め、どの鍵を挿しても回らない・固い",
+    cause: "シリンダー側の汚れ・故障が原因",
+    desc: "鍵穴内部のホコリ詰まりや潤滑不足、内部ピンの摩耗・故障が疑われます。まずは掃除機で鍵穴の異物を吸い出し、鍵穴専用潤滑剤でケアします。それでも改善しない場合はシリンダー内部の故障の可能性が高く、分解せず専門業者への相談が安全です。",
+  },
+  {
+    check: "ドアを手前に引く・押しながらだと回る",
+    cause: "扉の建て付け・ラッチ（かんぬき）のずれが原因",
+    desc: "鍵やシリンダーではなく、扉の傾きでデッドボルトと受け座（ストライク）の位置がずれている状態です。蝶番のネジのゆるみや経年の歪みが典型的な原因で、放置するとずれが進行します。受け座の位置調整や蝶番の締め直しなど、建て付け側の調整で改善します。",
+  },
+  {
+    check: "梅雨や夏など、特定の季節だけ回りにくい",
+    cause: "湿気によるドア枠・扉の膨張が原因",
+    desc: "木製の扉やドア枠は湿気で膨張し、乾燥すると元に戻るため、季節によって症状が出たり消えたりします。冬だけ回らない場合は鍵穴内部の凍結も疑われます。毎年繰り返すようなら、建て付け調整や扉まわりのメンテナンスを検討しましょう。",
+  },
+];
+
+const maintenanceTips = [
+  {
+    title: "鍵本体を歯ブラシで清掃する",
+    desc: "使い古しの歯ブラシで、鍵の溝や刻み（ディンプルキーはくぼみ）に溜まった汚れをかき出します。ポケットや鞄の中の糸くず・皮脂汚れは意外と多く、これだけで滑りが戻ることがあります。仕上げに乾いた布で拭き取り、水洗いや洗剤は使わないのがポイントです。",
+  },
+  {
+    title: "鍵穴は掃除機でホコリを吸い出す",
+    desc: "鍵穴の入り口に掃除機のノズルを当て、内部のホコリや砂を吸い出します。息を吹き込むのは水分（湿気）が入るため逆効果です。エアダスターを使う場合は缶を立てて短く噴射し、液が出ないように注意します。",
+  },
+  {
+    title: "鍵穴専用パウダースプレーで潤滑する",
+    desc: "清掃後、鍵穴専用の潤滑剤（パウダー系・フッ素系）を少量スプレーし、鍵を数回抜き挿しして馴染ませます。「鍵穴用」と明記された製品を選ぶのが重要で、家庭用の潤滑油で代用してはいけません。",
+  },
+  {
+    title: "応急処置は鉛筆の黒鉛を鍵に塗る",
+    desc: "専用潤滑剤が手元にない時は、鉛筆（Bや2Bなど濃いもの）の芯を鍵の溝全体にこすりつけ、そのまま抜き挿しします。黒鉛（グラファイト）は昔から使われる乾式の潤滑成分で、ホコリを吸着しにくいのが利点です。あくまで応急処置なので、後日専用スプレーでケアしましょう。",
+  },
+];
+
+const proCases = [
+  "歯ブラシ清掃・掃除機・専用潤滑剤を試しても改善しない",
+  "鍵が途中までしか刺さらない・異物が詰まって取れない",
+  "鍵は回るのに空回りして施錠・解錠できない（内部部品の破損の疑い）",
+  "鍵穴の中で鍵が折れてしまった",
+  "扉の建て付け調整が必要で自分では直せない",
+];
+
 const faqLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -96,6 +146,24 @@ export default function KagiMawaranaiPage() {
             </p>
           </div>
 
+          {/* 原因の切り分けフローチャート */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">原因の切り分けフローチャート（4つのチェック）</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            対処の前に、まず「どこが悪いのか」を切り分けると無駄がありません。以下の4つを上から順に試し、当てはまった項目の原因から対処しましょう。切り分けには純正キー（元鍵）とスペアキーの両方があると確実です。
+          </p>
+          <div className="space-y-3 mb-10">
+            {causeFlow.map((c, i) => (
+              <div key={i} className="bg-white rounded-xl border border-black/10 p-4">
+                <p className="text-sm text-text-secondary mb-1.5">
+                  <span className="inline-block bg-surface-alt rounded px-2 py-0.5 text-xs font-bold text-text-primary mr-2">チェック{i + 1}</span>
+                  {c.check}
+                </p>
+                <p className="font-bold text-primary text-sm mb-1">→ {c.cause}</p>
+                <p className="text-sm text-text-secondary leading-relaxed">{c.desc}</p>
+              </div>
+            ))}
+          </div>
+
           {/* 手順 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">鍵が回らない時の対処手順（5ステップ）</h2>
           <ol className="space-y-3 mb-10">
@@ -109,6 +177,20 @@ export default function KagiMawaranaiPage() {
               </li>
             ))}
           </ol>
+
+          {/* 自分でできるメンテナンス */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">自分でできる鍵・鍵穴のメンテナンス</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            「回りにくい」段階なら、道具を使った簡単なメンテナンスで改善するケースが多くあります。いずれも一般的な手入れ方法で、特別な技術は不要です。半年〜1年に1回を目安に行うと、トラブルの予防にもなります。
+          </p>
+          <div className="space-y-3 mb-10">
+            {maintenanceTips.map((m, i) => (
+              <div key={i} className="bg-white rounded-xl border border-black/10 p-4">
+                <p className="font-bold text-text-primary text-sm mb-1">{m.title}</p>
+                <p className="text-sm text-text-secondary leading-relaxed">{m.desc}</p>
+              </div>
+            ))}
+          </div>
 
           {/* NG行動 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">やってはいけないNG行動</h2>
@@ -156,6 +238,36 @@ export default function KagiMawaranaiPage() {
             ※一般的な相場の目安です。鍵の種類・状況・時間帯により変動します。各社の公式料金は<a href="/ryokin-index/" className="text-primary underline">鍵トラブル料金インデックス</a>、相場の詳細は<a href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場</a>をご覧ください。
           </p>
 
+          {/* 放置のリスクと交換の判断 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">「回りにくい」を放置するリスクと交換の判断</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            「固いけれど一応回るから」と使い続けるのは危険です。回りにくさはシリンダー内部の摩耗や汚れが進行しているサインで、<strong>多くの場合は完全に回らなくなる故障の前兆</strong>です。ある日突然回らなくなれば、外出先から帰宅して家に入れない「締め出し」状態になりかねません。締め出された場合の対処は<a href="/shimedashi/" className="text-primary underline">家の鍵をなくして閉め出された時の対処法</a>で解説しています。また、固い鍵を毎日無理に回し続けると金属疲労が蓄積し、鍵穴の中で折れるリスクも高まります。折れてしまった場合は<a href="/kagi-ore/" className="text-primary underline">鍵が折れた時の対処法</a>を参照してください。
+          </p>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            交換を判断する目安として、シリンダー（錠前）の寿命は<strong>一般的に10年程度</strong>とされています（日本ロック工業会が錠前の耐用年数として広く案内している一般値）。10年前後使っていて回りにくさが出てきたなら、清掃で一時的に改善しても部品の摩耗は戻らないため、シリンダー交換を前向きに検討するタイミングです。防犯性能も年々進化しており、古い刻みキーからディンプルキーへ替えることでピッキング対策にもなります。
+          </p>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            「まだ使えるか」「替えるべきか」の詳しい判断基準は<a href="/kagi-koukan-timing/" className="text-primary underline">鍵交換のタイミングと目安</a>で解説しています。
+          </p>
+
+          {/* 業者に依頼すべきケースと選び方 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">業者に依頼すべきケースと選び方のポイント</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-3">次のような状態は自力での解決が難しく、悪化させる前に鍵の専門業者へ依頼するのが確実です。</p>
+          <ul className="space-y-2 mb-6">
+            {proCases.map((p, i) => (
+              <li key={i} className="flex gap-2 bg-white rounded-lg border border-black/10 px-4 py-3 text-sm text-text-secondary">
+                <span className="text-primary font-bold shrink-0">✓</span>
+                <span>{p}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            業者選びで最も重要なのは、<strong>作業を始める前に「出張費・部品代・作業費を含めた総額」の見積もりを確認する</strong>ことです。電話で伝えられる金額は最低料金であることが多く、現地で症状を見たうえでの総額提示と、追加料金の有無を必ず確認しましょう。見積もりに納得できなければ、その場で断って構いません。キャンセル料の条件も作業前に確認しておくと安心です。
+          </p>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            費用感を事前に把握しておきたい方は<a href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場</a>を、料金体系や対応エリアで業者を比べたい方は<a href="/agents/" className="text-primary underline">鍵トラブル業者の比較</a>をご覧ください。相場を知ったうえで見積もりを取れば、高すぎる請求にも気づけます。
+          </p>
+
           {/* 業者選び・内部リンク */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 mb-10">
             <h2 className="text-lg font-bold text-text-primary mb-2">直らない鍵は無理せず業者に相談</h2>
@@ -181,36 +293,6 @@ export default function KagiMawaranaiPage() {
         </article>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-primary text-white/70 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 py-10">
-          <div className="flex flex-col sm:flex-row justify-between gap-6 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-3 text-white">
-                <span className="text-2xl">🔑</span>
-                <span className="text-lg font-bold">鍵トラブルナビ</span>
-              </div>
-              <p className="text-sm max-w-sm">
-                鍵のトラブルでお困りの方に、信頼できる鍵業者を比較・紹介するサービスです。
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">運営情報</h4>
-              <ul className="space-y-2 text-sm">
-                <li>運営: 株式会社MediaX</li>
-                <li>所在地: 東京都渋谷区</li>
-                <li><a href="/terms/" className="hover:text-white transition-colors">利用規約</a></li>
-                <li><a href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</a></li>
-                <li><a href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8 text-center text-xs text-white/40">
-            <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。料金は2026年7月時点の一般的な相場で、実際の費用は各業者の見積もりによります。</p>
-            <p className="mt-2">&copy; 2026 株式会社MediaX All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

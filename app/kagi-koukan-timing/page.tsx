@@ -176,6 +176,69 @@ export default function TimingPage() {
             出典：警察庁「住宅対象侵入窃盗 手口別・侵入口別 認知件数」（令和6年／2024年）。数値は警察庁公表資料に基づく概数で、当サイトが{CHECKED}に確認しました。最新の年次データは警察庁の公表状況により更新されます。
           </p>
 
+          {/* 賃貸の費用負担 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">賃貸の鍵交換：費用負担の一般的な考え方</h2>
+          <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-3">
+            賃貸住宅で鍵交換を考えるとき、まず押さえたいのが<strong>「誰が費用を負担するのか」は契約内容によって異なる</strong>という点です。入居時の鍵交換については、国土交通省の「原状回復をめぐるトラブルとガイドライン」で、<strong>入居者の入れ替わりに伴う鍵交換は物件管理上の問題であり、貸主（大家）負担とするのが妥当</strong>という考え方が示されています。ただし実務では、賃貸借契約の特約で「鍵交換費用は借主負担」と定められているケースも多く、その場合は契約書の記載が優先されるのが一般的です。契約前・入居時に費用負担の条項を確認しておくと安心です。
+          </p>
+          <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-3">
+            一方、<strong>入居中に鍵を紛失した場合の交換費用は、借主負担となるのが一般的</strong>です。紛失は借主の管理責任の範囲と考えられるためで、あわせて拾得者による不正入室を防ぐ観点からも、紛失時は早めに管理会社へ連絡し、交換の要否を相談するのが基本です。
+          </p>
+          <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-10">
+            注意したいのは、<strong>借主が管理会社や大家に無断で鍵を交換すると契約違反になり得る</strong>ことです。賃貸の鍵は建物設備の一部であり、緊急時に管理側が立ち入れなくなる問題もあるため、防犯目的で交換したい場合でも、必ず先に管理会社・大家へ相談し、許可を得てから進めましょう。
+          </p>
+
+          {/* 鍵の種類別 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">鍵の種類別の防犯性と交換先の選び方</h2>
+          <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-4">
+            鍵交換の効果を高めるには、「どの鍵からどの鍵へ替えるか」が重要です。代表的な種類と防犯性の目安を押さえておきましょう。
+          </p>
+          <div className="space-y-3 mb-4">
+            <div className="bg-white rounded-xl border border-black/10 p-5">
+              <h3 className="font-bold text-primary mb-1.5">ディスクシリンダー錠（旧型）</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                鍵の両側にギザギザの刻みがある旧型のシリンダーで、古い住宅に多く残っています。構造が単純で<strong>ピッキングへの耐性が低い</strong>とされ、防犯上の観点からは交換を検討したい代表的な鍵です。長年このタイプを使っている場合は、時期を選んで計画的に交換するのがおすすめです。
+              </p>
+            </div>
+            <div className="bg-white rounded-xl border border-black/10 p-5">
+              <h3 className="font-bold text-primary mb-1.5">ディンプルキー（交換先の定番）</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                鍵の表面に深さの異なる複数のくぼみ（ディンプル）がある鍵で、ピンの組み合わせが複雑なため<strong>ピッキングに強く、合鍵の不正複製もされにくい</strong>とされます。古いディスクシリンダーからの交換先として定番の選択肢です。
+              </p>
+            </div>
+            <div className="bg-white rounded-xl border border-black/10 p-5">
+              <h3 className="font-bold text-primary mb-1.5">CP認定錠という「物差し」</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                どの製品を選べばよいか迷ったら、<strong>「CPマーク（防犯性能の高い建物部品）」の認定品かどうか</strong>が分かりやすい基準になります。CPマークは警察庁など官民合同会議の試験で、侵入に5分以上耐えると評価された建物部品に表示されるもので、錠前・シリンダー選びの客観的な物差しとして活用できます。
+              </p>
+            </div>
+          </div>
+          <p className="text-xs text-text-muted mb-10">
+            ※防犯性の評価は一般的な傾向であり、製品・設置状況により異なります。具体的な製品選定は鍵業者に相談してください。
+          </p>
+
+          {/* 防犯強化 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">交換とあわせて検討したい防犯強化</h2>
+          <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-3">
+            鍵交換のタイミングは、玄関まわりの防犯を全体的に見直すよい機会です。定番なのが<strong>補助錠の追加による「ワンドア・ツーロック」</strong>です。1つのドアに鍵を2つ設けることで解錠に必要な時間が単純に倍増し、侵入をあきらめさせる効果が期待できます。空き巣は侵入に時間がかかる家を避ける傾向があるとされるため、メイン錠の交換と補助錠の追加をセットで行うと効率的です。
+          </p>
+          <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-10">
+            また、ドアの内側のつまみ（サムターン）を外部から工具で回して開ける「サムターン回し」への対策として、<strong>サムターンカバーの取り付け</strong>も手軽な防犯強化策です。ドアスコープやドリルで開けた穴から工具を差し込む手口を物理的に妨げます。いずれも比較的低コストで導入でき、鍵交換と同時に依頼すれば出張の手間も一度で済みます。
+          </p>
+
+          {/* 業者依頼の流れ */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">交換を業者に頼む場合の流れ</h2>
+          <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-3">
+            鍵交換を業者に依頼する場合の一般的な流れは次のとおりです。まず<strong>①今付いている錠前の型番を確認</strong>します。多くはドア側面の金属プレート（フロント部分）にメーカー名と型番が刻印されており、これを伝えると見積もりがスムーズです。次に<strong>②見積もりを取り、「部品代＋作業費＋出張費」を含む総額で確認</strong>します。部品代だけの安い提示に見えても、作業費・出張費を合わせると想定より高くなることがあるため、必ず合計金額と追加料金の有無を電話の段階で確認しましょう。<strong>③作業自体は一般的なシリンダー交換であれば短時間で完了する</strong>ことが多いですが、錠前ごと交換する場合や特殊な鍵では時間がかかることもあります。
+          </p>
+          <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-4">
+            なお、<strong>同一型番のシリンダーへの交換であればDIYも不可能ではありません</strong>。ただし、型番の読み違いやドア厚・ビスピッチの採寸ミスで部品が合わず、買い直しになるケースもあります。防犯性を上げたい場合や型番が特定できない場合は、業者に相談するほうが確実です。料金の目安や業者選びは以下のページで詳しく解説しています。
+          </p>
+          <div className="flex flex-wrap gap-2 mb-10">
+            <a href="/ryokin/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">鍵交換の料金相場を見る</a>
+            <a href="/agents/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">鍵業者を比較する</a>
+          </div>
+
           {/* 内部リンク */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 mb-10">
             <h2 className="text-lg font-bold text-text-primary mb-2">鍵交換・防犯対策を業者に相談する</h2>
@@ -202,36 +265,6 @@ export default function TimingPage() {
         </article>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-primary text-white/70 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 py-10">
-          <div className="flex flex-col sm:flex-row justify-between gap-6 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-3 text-white">
-                <span className="text-2xl">🔑</span>
-                <span className="text-lg font-bold">鍵トラブルナビ</span>
-              </div>
-              <p className="text-sm max-w-sm">
-                鍵のトラブルでお困りの方に、信頼できる鍵業者を比較・紹介するサービスです。
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">運営情報</h4>
-              <ul className="space-y-2 text-sm">
-                <li>運営: 株式会社MediaX</li>
-                <li>所在地: 東京都渋谷区</li>
-                <li><a href="/terms/" className="hover:text-white transition-colors">利用規約</a></li>
-                <li><a href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</a></li>
-                <li><a href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8 text-center text-xs text-white/40">
-            <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。統計は警察庁の公表資料に基づき、料金は各業者の見積もりによります。</p>
-            <p className="mt-2">&copy; 2026 株式会社MediaX All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

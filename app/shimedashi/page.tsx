@@ -110,6 +110,38 @@ export default function ShimedashiPage() {
             ))}
           </ol>
 
+          {/* ケース別フロー */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">ケース別の対処フロー</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            締め出しと一口に言っても、状況によって最適な動き方は変わります。自分のケースに当てはまる項目から確認してください。
+          </p>
+          <div className="space-y-4 mb-10">
+            <div className="bg-white rounded-xl border border-black/10 p-5">
+              <h3 className="font-bold text-text-primary text-sm mb-1.5">（a）深夜・早朝に締め出された場合</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                まず同居家族や合鍵を持つ人に連絡し、数時間で合流できるなら待つのが最も安上がりです。待てない場合は24時間対応の鍵屋に依頼することになりますが、多くの業者で深夜・早朝は割増料金がかかります。電話の時点で「割増込みの総額」を確認し、金額に納得できないときは始発後・日中の依頼に切り替えるのも一つの判断です。近くにネットカフェや24時間営業の店があれば、朝まで安全に待機する選択肢も検討しましょう。
+              </p>
+            </div>
+            <div className="bg-white rounded-xl border border-black/10 p-5">
+              <h3 className="font-bold text-text-primary text-sm mb-1.5">（b）鍵は家の中にある場合（インキー・閉じ込み）</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                鍵を失くしたわけではないので、ドアを開けさえすれば解決します。家族・管理会社の合鍵で開けられればそれが最短、なければ鍵屋の解錠作業になります。鍵自体は手元に戻るため、原則として鍵交換までは不要なケースが多く、費用を抑えやすい状況です。依頼時に「鍵は室内にある」と伝えると、業者側も解錠のみの前提で正確な見積もりを出しやすくなります。
+              </p>
+            </div>
+            <div className="bg-white rounded-xl border border-black/10 p-5">
+              <h3 className="font-bold text-text-primary text-sm mb-1.5">（c）鍵を紛失している場合</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                外出先で落とした・どこで失くしたか分からない場合は、解錠して家に入るだけでは終わりません。拾った第三者に悪用されるリスクがあるため、警察への遺失届の提出と、状況に応じた鍵交換の検討が必要です。紛失時の探し方・届け出・交換判断の流れは<a href="/kagi-funshitsu/" className="text-primary underline">鍵を紛失した時の対処法</a>で詳しく解説しています。
+              </p>
+            </div>
+            <div className="bg-white rounded-xl border border-black/10 p-5">
+              <h3 className="font-bold text-text-primary text-sm mb-1.5">（d）オートロックマンションの場合</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                エントランスのオートロックは共用部のため、住人個人の依頼では鍵屋が作業できないことが多く、管理会社・管理人経由での対応が先になります。まず物件の管理会社（夜間なら緊急連絡先）に電話し、エントランスの開け方の案内を受けましょう。エントランスを通過できれば、自室ドアの解錠は通常の鍵開けと同じ扱いです。他の住人に続いて入る「共連れ」はトラブルの元になるため避けてください。
+              </p>
+            </div>
+          </div>
+
           {/* NG行動 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">やってはいけないNG行動</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
@@ -125,6 +157,27 @@ export default function ShimedashiPage() {
               </div>
             ))}
           </div>
+
+          {/* 賃貸の場合 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">賃貸の場合にまずやること</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            賃貸住宅の締め出しでは、いきなり鍵屋を呼ぶ前に次の3点を確認すると、無料または低コストで解決できる可能性があります。
+          </p>
+          <ol className="space-y-3 mb-10">
+            {[
+              { title: "管理会社・大家への連絡が最優先", desc: "管理会社や大家がマスターキー・スペアキーを保管していれば、鍵屋を呼ばずに開けてもらえる可能性があります。また賃貸の鍵は貸主の設備でもあるため、無断で解錠・交換を行うと原状回復や費用負担をめぐるトラブルの原因になります。まず連絡が原則です。" },
+              { title: "火災保険・共済の鍵開けサポート特約を確認", desc: "入居時に加入した火災保険や共済、入居者サポートサービスに「鍵開け駆けつけ」の特約が付いていることがあります。対象なら自己負担なし〜少額で対応してもらえるため、保険証券・契約書類・サポートアプリを確認してみましょう。" },
+              { title: "夜間・休日の緊急窓口を確認", desc: "管理会社の営業時間外でも、賃貸借契約書や物件エントランスの掲示板、家賃保証会社の書類に24時間の緊急連絡先が記載されていることがあります。深夜の締め出しでは、この緊急窓口の有無で選択肢が大きく変わります。" },
+            ].map((s, i) => (
+              <li key={i} className="flex gap-3 bg-white rounded-xl border border-black/10 p-4">
+                <span className="shrink-0 w-7 h-7 rounded-full bg-primary text-white font-bold text-sm flex items-center justify-center">{i + 1}</span>
+                <div>
+                  <p className="font-bold text-text-primary text-sm mb-1">{s.title}</p>
+                  <p className="text-sm text-text-secondary leading-relaxed">{s.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
 
           {/* 料金 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">鍵屋に頼んだ場合の料金目安</h2>
@@ -156,6 +209,31 @@ export default function ShimedashiPage() {
             ※一般的な相場の目安です。鍵の種類・建物の状況・時間帯により変動します。詳しくは<a href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場</a>をご覧ください。
           </p>
 
+          {/* 依頼前チェックリスト */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">業者を呼ぶ前のチェックリスト</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            締め出し時は焦って即決しがちですが、依頼前に次の4点を確認するだけで高額請求などのトラブルを大きく減らせます。
+          </p>
+          <ul className="space-y-3 mb-10">
+            {[
+              { title: "総額見積もりを「作業前」に確認する", desc: "基本料金・作業費・出張費・時間帯割増をすべて含んだ総額を、作業が始まる前に提示してもらいましょう。「開けてみないと分からない」の場合も、上限額の目安を確認してから依頼するのが安全です。" },
+              { title: "キャンセル料の有無を確認する", desc: "見積もり額に納得できなかった場合にキャンセルできるか、その際にキャンセル料や出張費が発生するかを電話の時点で確認しておくと、現地で断りづらくなる事態を避けられます。" },
+              { title: "身分証・名刺・会社情報を確認する", desc: "到着したスタッフの名刺や会社名・所在地を確認しましょう。正規の業者は依頼者側の本人確認も行います。会社情報の提示を渋る業者への依頼は避けたほうが無難です。" },
+              { title: "提示額が相場からかけ離れていないか確認する", desc: "提示された金額が一般的な相場と大きくずれていないかを冷静に照らし合わせましょう。作業別の相場は料金相場ページで確認できます。" },
+            ].map((c, i) => (
+              <li key={i} className="flex gap-3 bg-white rounded-xl border border-black/10 p-4">
+                <span className="shrink-0 w-7 h-7 rounded-full bg-primary/10 text-primary font-bold text-sm flex items-center justify-center">✓</span>
+                <div>
+                  <p className="font-bold text-text-primary text-sm mb-1">{c.title}</p>
+                  <p className="text-sm text-text-secondary leading-relaxed">{c.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            料金の妥当性は<a href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場</a>で、業者ごとの対応エリア・特徴は<a href="/agents/" className="text-primary underline">鍵トラブル業者の比較</a>でチェックできます。
+          </p>
+
           {/* 業者選び・内部リンク */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 mb-10">
             <h2 className="text-lg font-bold text-text-primary mb-2">今すぐ来てくれる鍵業者を比較する</h2>
@@ -181,36 +259,6 @@ export default function ShimedashiPage() {
         </article>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-primary text-white/70 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 py-10">
-          <div className="flex flex-col sm:flex-row justify-between gap-6 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-3 text-white">
-                <span className="text-2xl">🔑</span>
-                <span className="text-lg font-bold">鍵トラブルナビ</span>
-              </div>
-              <p className="text-sm max-w-sm">
-                鍵のトラブルでお困りの方に、信頼できる鍵業者を比較・紹介するサービスです。
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">運営情報</h4>
-              <ul className="space-y-2 text-sm">
-                <li>運営: 株式会社MediaX</li>
-                <li>所在地: 東京都渋谷区</li>
-                <li><a href="/terms/" className="hover:text-white transition-colors">利用規約</a></li>
-                <li><a href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</a></li>
-                <li><a href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8 text-center text-xs text-white/40">
-            <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。料金は2026年7月時点の一般的な相場で、実際の費用は各業者の見積もりによります。</p>
-            <p className="mt-2">&copy; 2026 株式会社MediaX All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

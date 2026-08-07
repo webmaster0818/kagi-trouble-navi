@@ -118,6 +118,18 @@ const faqs = [
     q: "表示価格どおりの金額で作業してもらえますか？",
     a: "表示は多くが「〜（最低価格）」で、実際の金額は鍵の種類・防犯性能・破壊解錠や部材交換の有無・エリア・時間帯で変動します。カギ110番のような加盟店紹介型では、対応する加盟店やエリアにより記載価格で対応できない場合がある旨も公式に記載されています。必ず作業前に総額の見積もりを確認してください。",
   },
+  {
+    q: "なぜ公式料金の表示がない会社があるのですか？",
+    a: "鍵業者のなかには、料金を公式サイトに公示せず「現地見積もりで提示」とする会社や、法人向け事業が中心で消費者向けの価格表を持たない会社があります。本ページは当サイトが公式サイト上で実際に確認できた表示のみを掲載する方針のため、公式に価格表示がない会社は「—」または非掲載としています。「—」は「高い」「怪しい」という意味ではなく、公式で確認できなかったという事実の記録です。",
+  },
+  {
+    q: "この表の金額だけで依頼先を決めてもよいですか？",
+    a: "おすすめしません。この表はあくまで各社の公式表示を横並びで確認するための「比較の起点」です。実際の請求額は鍵の種類・作業内容・出張距離・時間帯で変わるため、最低表示が安い会社が総額でも安いとは限りません。候補を2〜3社に絞ったうえで、同じ条件を伝えて総額の見積もりを取り、金額と説明の明瞭さで最終判断してください。",
+  },
+  {
+    q: "表に載っていない業者の料金はどこで確認できますか？",
+    a: "本ページは編集部が公式サイトで料金表示を一次確認できた主要業者に限定して掲載しています。掲載外の業者を検討する場合は、その業者の公式サイトの料金ページと運営会社情報を直接確認したうえで、作業前見積もりで総額を確かめてください。作業別のおおまかな相場観は当サイトの料金相場ページ（/ryokin/）でも解説しています。",
+  },
 ];
 
 const faqLd = {
@@ -202,6 +214,22 @@ export default function RyokinIndexPage() {
             </p>
           </div>
 
+          {/* 使い方ガイド */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">この表の使い方</h2>
+          <div className="text-sm text-text-secondary leading-relaxed space-y-3 mb-8">
+            <p>
+              下の表に並んでいる金額は、各社が公式サイトに表示している<strong>下限料金（最低額）</strong>です。「6,600円〜」の「〜」は「この金額から始まる」という意味であって、支払う総額ではありません。まずここを押さえたうえで、次の順番で使ってください。
+            </p>
+            <ol className="list-decimal pl-5 space-y-2">
+              <li><strong>横に見て「比較の起点」にする：</strong>同じサービス（鍵開けなら鍵開けの列）を横に見比べ、下限表示・出張費の扱い・割増の明記有無を確認して、候補を2〜3社に絞ります。</li>
+              <li><strong>下限額の差より「何が含まれるか」を見る：</strong>部材費込みか別か、見積もり・キャンセルが無料かどうかで、下限が同じでも総額は変わります。表の但し書きと出典URLまで確認してください。</li>
+              <li><strong>最終判断は必ず作業前見積もりで：</strong>この表で決め打ちせず、絞った候補に状況を伝えて総額の見積もりを取り、金額に納得してから作業を依頼します。見積もり金額と表示の差が大きい場合は、その理由の説明を求めましょう。</li>
+            </ol>
+            <p>
+              つまりこの表は「最安の会社を決める表」ではなく、<strong>見積もり前に相手の公式表示を知っておくための資料</strong>です。公式表示を知っていれば、現地で提示された金額が妥当かどうかを判断する物差しになります。
+            </p>
+          </div>
+
           {/* マトリクス */}
           <h2 className="text-xl font-bold text-text-primary mb-4">業者×サービス別 料金マトリクス（公式表示・{CHECKED}確認）</h2>
           <div className="overflow-x-auto mb-3 rounded-xl border border-black/10">
@@ -254,6 +282,39 @@ export default function RyokinIndexPage() {
             <li><strong>法人番号・古物商許可番号は5社とも公式非掲載：</strong>{CHECKED}時点で公式サイト上の明記を確認できませんでした。気になる場合は業者に直接確認を。</li>
           </ul>
 
+          {/* 変動要因 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">公式表示と実勢総額が違う理由</h2>
+          <div className="text-sm text-text-secondary leading-relaxed space-y-3 mb-8">
+            <p>
+              「公式には6,600円〜と書いてあったのに、請求は数万円だった」という声が生まれるのは、公式表示が<strong>もっとも簡単な条件で作業できた場合の下限</strong>だからです。実際の総額は、主に次の4つの要因で上下します。
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong>鍵の種類：</strong>ギザギザの刻みキーに比べ、ディンプルキーや特殊錠は解錠の難度が高く、料金も上がります。実際に生活救急車は鍵開け8,800円〜に対しディンプル33,000円〜、鍵猿はディンプルで〜27,500円と、公式表示の段階で差がついています。</li>
+              <li><strong>時間帯割増：</strong>深夜・早朝は割増を設ける業者があります。今回の確認では鍵猿が夜間（21:00〜7:59）5,500円を明記していましたが、明記がない業者でも現地で割増がかかる可能性はあり、事前確認が必要です。</li>
+              <li><strong>出張距離・エリア：</strong>拠点から現場までの距離やエリアによって出張費・交通費が加算される場合があります。「見積もり無料」でも交通費やキャンセル料は別、という条件の業者もあるため、無料の範囲を確認しましょう。</li>
+              <li><strong>部品代：</strong>鍵交換では作業費とは別にシリンダー等の部品代がかかります。部品のグレード（防犯性能）によって幅が大きく、総額を左右する最大の要因になりがちです。「部材費込み」か「＋部品代」かは表の表記で確認できます。</li>
+            </ul>
+            <p>
+              これらはどの業者にも共通する一般的な構造で、変動すること自体は不当ではありません。問題になるのは、<strong>変動の理由を説明しないまま高額請求する業者</strong>です。見積もり時に「何が・いくら加算されるのか」の内訳を確認することが自衛になります。
+            </p>
+          </div>
+
+          {/* 相見積もり */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">相見積もりの取り方</h2>
+          <div className="text-sm text-text-secondary leading-relaxed space-y-3 mb-8">
+            <p>
+              締め出しなどの緊急時でも、電話1〜2本の相見積もりは数分ででき、総額の妥当性を判断する材料になります。手順は次のとおりです。
+            </p>
+            <ol className="list-decimal pl-5 space-y-2">
+              <li><strong>2〜3社に同じ条件を伝える：</strong>鍵穴や鍵本体の写真、刻印されている型番、状況（締め出し・鍵折れ・紛失など）、住所のエリアを揃えて伝えます。条件が同じでないと金額を比較できません。</li>
+              <li><strong>電話で「総額レンジ」と「キャンセル料」を聞く：</strong>「最低いくらか」ではなく「うちのケースだと総額はいくらからいくらの幅か」を聞きます。あわせて、出張費・見積もり後に断った場合のキャンセル料の有無を必ず確認します。</li>
+              <li><strong>その場での即決を迫られたら保留する：</strong>現地で表示とかけ離れた金額を提示され「今決めれば安くする」と迫られた場合は、いったん保留して他社の見積もりと比べるのが安全です。誠実な業者は見積もり段階での保留を認めます。</li>
+            </ol>
+            <p>
+              電話口で総額レンジを一切答えない、キャンセル料の説明を濁す、といった対応が見られた場合は、その業者を候補から外す判断材料になります。
+            </p>
+          </div>
+
           {/* 企業構造の注意 */}
           <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-8">
             <p className="font-bold text-amber-900 mb-2">⚠️ 混同に注意：JBRと「生活救急車」</p>
@@ -269,6 +330,8 @@ export default function RyokinIndexPage() {
               {rows.filter((r) => r.reviewPath).map((r) => (
                 <a key={r.name} href={r.reviewPath} className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">{r.name}の評判・料金</a>
               ))}
+              <a href="/agents/kagi-kyukyusha/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">カギの救急車の評判・料金</a>
+              <a href="/agents/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">業者比較の一覧を見る</a>
               <a href="/ryokin/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">料金相場の考え方</a>
               <a href="/kagi-koukan-timing/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">鍵交換のベストタイミング</a>
             </div>
@@ -287,36 +350,6 @@ export default function RyokinIndexPage() {
         </article>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-primary text-white/70 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 py-10">
-          <div className="flex flex-col sm:flex-row justify-between gap-6 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-3 text-white">
-                <span className="text-2xl">🔑</span>
-                <span className="text-lg font-bold">鍵トラブルナビ</span>
-              </div>
-              <p className="text-sm max-w-sm">
-                鍵のトラブルでお困りの方に、信頼できる鍵業者を比較・紹介するサービスです。
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">運営情報</h4>
-              <ul className="space-y-2 text-sm">
-                <li>運営: 株式会社MediaX</li>
-                <li>所在地: 東京都渋谷区</li>
-                <li><a href="/terms/" className="hover:text-white transition-colors">利用規約</a></li>
-                <li><a href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</a></li>
-                <li><a href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8 text-center text-xs text-white/40">
-            <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。料金は各社公式サイトの表示を2026年7月7日に確認したもので、実際の費用は各業者の見積もりによります。</p>
-            <p className="mt-2">&copy; 2026 株式会社MediaX All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

@@ -110,6 +110,53 @@ export default function KagiFunshitsuPage() {
             ))}
           </ol>
 
+          {/* 警察への遺失届 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">警察への遺失届の出し方</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            探しても鍵が見つからないと判断したら、できるだけ早く警察へ<strong>遺失届（遺失物届）</strong>を提出します。遺失届は「鍵をなくした」という事実を公的な記録として残す手続きで、拾得物として鍵が警察に届けられた際に連絡を受け取れるほか、万が一鍵が悪用された場合に「事前に紛失を届け出ていた」という証明にもなります。手続きに費用はかからず、窓口では数分〜十数分程度で完了するのが一般的です。
+          </p>
+          <h3 className="text-base font-bold text-text-primary mb-2">提出先と持ち物</h3>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            遺失届は、最寄りの<strong>交番・駐在所・警察署</strong>のいずれでも提出できます。なくした場所の管轄でなくても受け付けてもらえるため、自宅や勤務先の近くなど行きやすい窓口で構いません。持ち物としては本人確認書類（運転免許証・マイナンバーカードなど）があるとスムーズです。窓口では「いつ・どこでなくしたか（わかる範囲で）」「鍵の特徴（メーカーの刻印・本数・キーホルダーの色や形など）」「連絡先」を聞かれます。鍵の写真がスマホに残っていれば、見せると特徴が正確に伝わり、照合の精度も上がります。
+          </p>
+          <h3 className="text-base font-bold text-text-primary mb-2">受理番号を必ず控える</h3>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            遺失届が受理されると<strong>受理番号</strong>が発行されます。この番号は、後日警察へ問い合わせる際の照会や、鍵の悪用被害が発生した場合の証明、火災保険・入居者サポートなどの補償手続きの確認で必要になることがあります。口頭で聞くだけで終わらせず、必ずメモやスマホに控えておきましょう。
+          </p>
+          <h3 className="text-base font-bold text-text-primary mb-2">オンライン申請に対応する都道府県もある</h3>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            都道府県警察によっては、遺失届の<strong>電子申請（オンライン届出）</strong>に対応している場合があります。窓口へ行く時間が取れないときは「お住まいの都道府県名＋遺失届 電子申請」で検索し、対応状況を確認してみてください。地域や届出内容によっては窓口での手続きを案内されることもあるため、あくまで補助的な手段として考えておくとよいでしょう。
+          </p>
+          <h3 className="text-base font-bold text-text-primary mb-2">鍵が見つかった場合の連絡の流れ</h3>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            拾得物として鍵が警察に届けられ、遺失届の内容と特徴が一致すると、届出時に登録した電話番号などへ警察から連絡が来ます。連絡を受けたら、指定された警察署や遺失物センターへ本人確認書類を持参して受け取りに行きます。拾得物には<strong>原則3か月の保管期間</strong>があり、期間を過ぎると受け取れなくなるため、連絡が来たら早めに引き取りましょう。逆に言えば、遺失届を出していないと、鍵が警察に届いていても持ち主として照合されず、連絡は来ません。「そのうち出てくるだろう」と届出を後回しにしないことが大切です。
+          </p>
+
+          {/* 悪用リスクと防犯対策 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">鍵紛失の悪用リスクと防犯対策</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            鍵の紛失で本当に警戒すべきなのは「家に入れないこと」よりも、<strong>拾った第三者に「住所」と「鍵」がセットで渡ってしまうこと</strong>です。ここでは、どんな状況が危険なのか、交換までの間に何ができるのかを整理します。
+          </p>
+          <h3 className="text-base font-bold text-text-primary mb-2">住所がわかるものと一緒に落とした場合は最も危険</h3>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            運転免許証・健康保険証・郵便物・宅配伝票・社員証・定期券など、<strong>住所や生活圏が特定できるもの</strong>と一緒に鍵をなくした場合、拾った人がその気になれば玄関まで到達できてしまいます。この状況では「見つかるかもしれない」と様子を見るのではなく、<strong>シリンダー交換を強くおすすめします</strong>。財布ごと・カバンごと紛失した場合も同様で、まずは中に入っていたものを書き出し、住所につながる情報が含まれていなかったかを冷静に整理しましょう。
+          </p>
+          <h3 className="text-base font-bold text-text-primary mb-2">「ピッキングに強い鍵」でも合鍵作製のリスクは残る</h3>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            ディンプルキーなどピッキング耐性の高い鍵を使っていても、<strong>鍵そのものが第三者の手に渡った状態</strong>では防犯性能は意味を持ちません。実物の鍵があれば合鍵を作製される可能性があり、後日鍵が手元に戻ってきたとしても、その間に複製されていないことは誰にも証明できません。時間が経ってから見つかった鍵をそのまま使い続けるのはリスクが残る、というのが防犯上の一般的な考え方です。
+          </p>
+          <h3 className="text-base font-bold text-text-primary mb-2">交換までの間にできる当面の防犯対策</h3>
+          <ul className="list-disc pl-5 space-y-1.5 text-sm text-text-secondary leading-relaxed mb-4">
+            <li>工事不要タイプの簡易補助錠を一時的に取り付け、鍵を1つ増やす</li>
+            <li>在宅時もドアガード（チェーン・U字ロック）と施錠を徹底する</li>
+            <li>郵便受けに住所・氏名のわかる郵便物をためない</li>
+            <li>玄関まわりにテープやマーキングなど不審な痕跡がないか確認する</li>
+            <li>集合住宅の場合は管理会社・大家にも状況を共有しておく</li>
+          </ul>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            これらはあくまで応急的な対策です。住所が特定されうる状況で紛失した場合は、シリンダー交換が根本的な解決策になります。
+          </p>
+
           {/* 交換判断 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">交換すべき？判断の目安</h2>
           <div className="overflow-x-auto mb-10 rounded-xl border border-black/10">
@@ -138,6 +185,55 @@ export default function KagiFunshitsuPage() {
             </table>
           </div>
 
+          {/* 交換判断の詳細基準 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">鍵交換すべきかの判断基準（3つの観点）</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            上の表を踏まえて、交換するかどうか迷ったときは次の3つの観点で考えると整理しやすくなります。
+          </p>
+          <div className="space-y-3 mb-4">
+            <div className="bg-white rounded-xl border border-black/10 p-4">
+              <p className="font-bold text-text-primary text-sm mb-1">（1）住所が特定できるものと同時に紛失した → 交換を推奨</p>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                免許証や郵便物など住所につながるものと一緒になくした場合は、第三者が自宅に到達できる状態です。鍵が戻ってくるかどうかにかかわらず、交換を前提に動くのが安全です。マンション名や部屋番号入りのキーホルダーを付けていた場合も同じ扱いで考えましょう。
+              </p>
+            </div>
+            <div className="bg-white rounded-xl border border-black/10 p-4">
+              <p className="font-bold text-text-primary text-sm mb-1">（2）外出先で鍵単体を紛失 → リスクを評価して判断</p>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                旅行先や通勤経路など自宅から離れた場所で、個人情報のない鍵単体を落とした場合、拾った人が自宅を特定するのは現実的には困難です。必ずしも交換必須ではありませんが、「自宅周辺で落とした可能性が捨てきれない」「行動範囲が推測されやすい」など特定につながる要素が少しでもあるなら交換を検討しましょう。不安を抱えたまま生活するストレスも、判断材料のひとつです。
+              </p>
+            </div>
+            <div className="bg-white rounded-xl border border-black/10 p-4">
+              <p className="font-bold text-text-primary text-sm mb-1">（3）賃貸住宅 → まず管理会社・大家に報告</p>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                賃貸では鍵が貸主の所有物であることが一般的で、紛失時の報告義務や交換の手順が賃貸借契約書に定められている場合が多くあります。自己判断で交換すると契約違反や退去時のトラブルにつながるおそれがあるため、交換の要否や業者の指定を含めて、必ず先に管理会社・大家へ連絡して指示を受けてください。オートロック付き物件では共用部のセキュリティにも関わるため、報告はいっそう重要です。
+              </p>
+            </div>
+          </div>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            交換のタイミングや鍵の種類ごとの考え方は、<a href="/kagi-koukan-timing/" className="text-primary underline hover:no-underline">鍵交換の時期・タイミングの解説ページ</a>で詳しく紹介しています。
+          </p>
+
+          {/* スペアキー有無別の動き方 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">スペアキーがある場合・ない場合の動き方</h2>
+          <h3 className="text-base font-bold text-text-primary mb-2">スペアキーがある場合：入れても「解決」ではない</h3>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            家族が持っているスペアや自宅に保管していたスペアで家に入れる場合、締め出しそのものは回避できます。ただし<strong>「家に入れた＝解決」ではありません</strong>。なくした鍵が第三者の手に渡っている可能性は残っているため、前述の判断基準に沿って悪用リスクを評価し、必要であればシリンダー交換を検討してください。また、スペアが残り1本になった状態は、次に紛失したら締め出しが確定する状態でもあります。落ち着いたら合鍵の作製やメーカー純正キーの取り寄せも検討しておくと安心です。
+          </p>
+          <h3 className="text-base font-bold text-text-primary mb-2">スペアキーがない場合：鍵開け業者への依頼を検討</h3>
+          <p className="text-sm text-text-secondary leading-relaxed mb-3">
+            スペアがなく家に入れない場合は、鍵の専門業者に解錠を依頼するのが現実的な選択肢です。依頼時は次のポイントを押さえるとトラブルを避けやすくなります。
+          </p>
+          <ul className="list-disc pl-5 space-y-1.5 text-sm text-text-secondary leading-relaxed mb-4">
+            <li>電話の時点で「鍵の種類・メーカー」「ドアや錠の状況」を伝え、概算を確認する</li>
+            <li>作業前に総額の見積もりを提示してもらい、内訳（作業費・出張費・時間帯割増など）を確認する</li>
+            <li>作業員による本人確認（身分証と住所の照合）は正規の手順なので協力する</li>
+            <li>見積もりに納得できなければ断ってよい。キャンセル料の条件は電話時に確認しておく</li>
+          </ul>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            賃貸の場合は、業者を手配する前に管理会社・大家への連絡を優先しましょう。夜間・早朝は割増料金が設定されていることが多いため、緊急でなければ日中に依頼するほうが費用を抑えやすくなります。解錠にかかる費用の考え方は<a href="/ryokin/" className="text-primary underline hover:no-underline">料金相場ページ</a>を、業者ごとの特徴や対応範囲は<a href="/agents/" className="text-primary underline hover:no-underline">業者比較ページ</a>を参考にしてください。
+          </p>
+
           {/* 業者選び・内部リンク */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 mb-10">
             <h2 className="text-lg font-bold text-text-primary mb-2">解錠・交換に対応できる鍵業者を比較する</h2>
@@ -164,36 +260,6 @@ export default function KagiFunshitsuPage() {
         </article>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-primary text-white/70 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 py-10">
-          <div className="flex flex-col sm:flex-row justify-between gap-6 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-3 text-white">
-                <span className="text-2xl">🔑</span>
-                <span className="text-lg font-bold">鍵トラブルナビ</span>
-              </div>
-              <p className="text-sm max-w-sm">
-                鍵のトラブルでお困りの方に、信頼できる鍵業者を比較・紹介するサービスです。
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">運営情報</h4>
-              <ul className="space-y-2 text-sm">
-                <li>運営: 株式会社MediaX</li>
-                <li>所在地: 東京都渋谷区</li>
-                <li><a href="/terms/" className="hover:text-white transition-colors">利用規約</a></li>
-                <li><a href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</a></li>
-                <li><a href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8 text-center text-xs text-white/40">
-            <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。料金は2026年7月時点の一般的な相場で、実際の費用は各業者の見積もりによります。</p>
-            <p className="mt-2">&copy; 2026 株式会社MediaX All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
