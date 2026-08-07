@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms/" },
   title: "利用規約 | 鍵トラブルナビ",
   description: "鍵トラブルナビの利用規約です。本サービスをご利用いただく前に必ずお読みください。",
 };
@@ -122,17 +123,6 @@ export default function TermsPage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-[#0D1B2A] text-white/70 py-8">
-        <div className="max-w-6xl mx-auto px-4 text-center text-sm">
-          <div className="flex flex-wrap justify-center gap-6 mb-4">
-            <Link href="/terms/" className="hover:text-white transition-colors">利用規約</Link>
-            <Link href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</Link>
-            <Link href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</Link>
-          </div>
-          <p className="text-xs text-white/40">&copy; 2026 株式会社MediaX All Rights Reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }

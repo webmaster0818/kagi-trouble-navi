@@ -1,4 +1,9 @@
+import type { Metadata } from "next";
 import companies from "@/data/companies.json";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   const top3 = companies.slice(0, 3);
@@ -483,56 +488,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#0D1B2A] text-white/70 py-12">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-xl">🔑</span>
-                <span className="text-lg font-bold text-white">鍵トラブルナビ</span>
-              </div>
-              <p className="text-sm">
-                鍵のトラブルでお困りの方に、信頼できる鍵業者を比較・紹介するサービスです。
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">トラブル別</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition-colors">鍵の閉じ込め</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">鍵が折れた</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">鍵をなくした</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">車のインロック</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">サービス別</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition-colors">鍵開け</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">鍵交換</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">鍵修理</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">金庫</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">運営情報</h4>
-              <ul className="space-y-2 text-sm">
-                <li>運営: 株式会社MediaX</li>
-                <li>所在地: 東京都渋谷区</li>
-                <li><a href="/terms/" className="hover:text-white transition-colors">利用規約</a></li>
-                <li><a href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</a></li>
-                <li><a href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8 text-center text-xs text-white/40">
-            <p>
-              当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。
-            </p>
-            <p className="mt-2">&copy; 2026 株式会社MediaX All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import Link from "next/link";
+import AgentCompareTable from "@/components/AgentCompareTable";
+import VerificationNote from "@/components/VerificationNote";
 import Image from "next/image";
 import type { Metadata } from "next";
 
@@ -274,6 +276,9 @@ export default function Kagi110banPage() {
               ))}
             </div>
           </section>
+
+                    <AgentCompareTable current="kagi110ban" />
+          <VerificationNote officialUrl="https://kagi110ban.jp/" officialLabel="カギ110番 公式サイト" checkedNote="2026年7月4日確認" />
 
           {/* summary */}
           <section id="summary" className="scroll-mt-20">

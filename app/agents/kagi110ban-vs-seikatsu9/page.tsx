@@ -196,36 +196,6 @@ export default function VsPage() {
         </article>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-primary text-white/70 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 py-10">
-          <div className="flex flex-col sm:flex-row justify-between gap-6 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-3 text-white">
-                <span className="text-2xl">🔑</span>
-                <span className="text-lg font-bold">鍵トラブルナビ</span>
-              </div>
-              <p className="text-sm max-w-sm">
-                鍵のトラブルでお困りの方に、信頼できる鍵業者を比較・紹介するサービスです。
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">運営情報</h4>
-              <ul className="space-y-2 text-sm">
-                <li>運営: 株式会社MediaX</li>
-                <li>所在地: 東京都渋谷区</li>
-                <li><a href="/terms/" className="hover:text-white transition-colors">利用規約</a></li>
-                <li><a href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</a></li>
-                <li><a href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8 text-center text-xs text-white/40">
-            <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。掲載情報は2026年7月4日時点の公式表記に基づきます。</p>
-            <p className="mt-2">&copy; 2026 株式会社MediaX All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

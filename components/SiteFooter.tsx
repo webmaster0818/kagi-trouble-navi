@@ -1,0 +1,64 @@
+import Link from "next/link";
+
+// 全ページ共通フッター。全21ページへの内部リンク網を保証する（孤立ページゼロ化）。
+export default function SiteFooter() {
+  return (
+    <footer className="bg-[#0D1B2A] text-white/70 mt-auto">
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div className="flex items-center gap-2 mb-3 text-white">
+              <span className="text-2xl">🔑</span>
+              <span className="text-lg font-bold">鍵トラブルナビ</span>
+            </div>
+            <p className="text-sm max-w-sm">
+              鍵のトラブルでお困りの方に、一次確認した情報だけで鍵業者を比較・紹介するサービスです。
+            </p>
+            <ul className="space-y-2 text-sm mt-4">
+              <li><Link href="/about/" className="hover:text-white transition-colors">運営者情報</Link></li>
+              <li><Link href="/terms/" className="hover:text-white transition-colors">利用規約</Link></li>
+              <li><Link href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</Link></li>
+              <li><Link href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-bold text-white mb-3">トラブル別ガイド</h4>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/shimedashi/" className="hover:text-white transition-colors">鍵の閉じ込め・締め出し</Link></li>
+              <li><Link href="/kagi-funshitsu/" className="hover:text-white transition-colors">鍵をなくした</Link></li>
+              <li><Link href="/kagi-ore/" className="hover:text-white transition-colors">鍵が折れた</Link></li>
+              <li><Link href="/kagi-mawaranai/" className="hover:text-white transition-colors">鍵が回らない</Link></li>
+              <li><Link href="/car-inlock/" className="hover:text-white transition-colors">車のインロック</Link></li>
+              <li><Link href="/kinko-kaijo/" className="hover:text-white transition-colors">金庫が開かない</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-bold text-white mb-3">料金・選び方</h4>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/ryokin/" className="hover:text-white transition-colors">鍵開け・鍵交換の料金相場</Link></li>
+              <li><Link href="/ryokin-index/" className="hover:text-white transition-colors">主要業者の料金一次確認まとめ</Link></li>
+              <li><Link href="/kagi-koukan-timing/" className="hover:text-white transition-colors">鍵交換のタイミング</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-bold text-white mb-3">業者を比較</h4>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/agents/" className="hover:text-white transition-colors">鍵業者一覧・比較</Link></li>
+              <li><Link href="/agents/kagi110ban/" className="hover:text-white transition-colors">カギ110番</Link></li>
+              <li><Link href="/agents/seikatsu-kyukyusha/" className="hover:text-white transition-colors">鍵の生活救急車</Link></li>
+              <li><Link href="/agents/jbr/" className="hover:text-white transition-colors">JBR</Link></li>
+              <li><Link href="/agents/kagizaru/" className="hover:text-white transition-colors">鍵猿</Link></li>
+              <li><Link href="/agents/kagi-rescue/" className="hover:text-white transition-colors">鍵のレスキュー</Link></li>
+              <li><Link href="/agents/kagi-kyukyusha/" className="hover:text-white transition-colors">カギの救急車</Link></li>
+              <li><Link href="/agents/kagi110ban-vs-seikatsu9/" className="hover:text-white transition-colors">カギ110番 vs 生活救急車</Link></li>
+            </ul>
+          </div>
+        </div>
+        <div className="border-t border-white/10 pt-8 text-center text-xs text-white/40">
+          <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。掲載料金は各社公式サイトの確認値または一般的な相場で、実際の費用は各業者の見積もりによります。</p>
+          <p className="mt-2">運営: 株式会社MediaX（東京都渋谷区） &copy; 2026 MediaX All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}

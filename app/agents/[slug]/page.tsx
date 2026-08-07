@@ -1,4 +1,6 @@
 import Link from "next/link";
+import AgentCompareTable from "@/components/AgentCompareTable";
+import VerificationNote from "@/components/VerificationNote";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { agents, getAgent } from "../agentsData";
@@ -239,6 +241,9 @@ export default async function AgentPage({ params }: Props) {
               ))}
             </div>
           </section>
+
+          <AgentCompareTable current={slug} />
+          <VerificationNote  />
 
           <section id="summary" className="scroll-mt-20">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">まとめ</h2>

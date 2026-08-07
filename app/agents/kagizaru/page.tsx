@@ -1,4 +1,6 @@
 import Link from "next/link";
+import AgentCompareTable from "@/components/AgentCompareTable";
+import VerificationNote from "@/components/VerificationNote";
 import Image from "next/image";
 import type { Metadata } from "next";
 
@@ -264,6 +266,9 @@ export default function KagizaruPage() {
               <li><a href="https://www.sodanshitsu.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">鍵猿 利用者の口コミ（専門家の相談室）</a></li>
             </ul>
           </section>
+
+          <AgentCompareTable current="kagizaru" />
+          <VerificationNote officialUrl="https://kagizaru.com/" officialLabel="鍵猿 公式サイト" />
 
           <section id="summary" className="scroll-mt-20">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">まとめ</h2>

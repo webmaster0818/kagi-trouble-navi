@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/content-policy/" },
   title: "記事の制作ポリシー | 鍵トラブルナビ",
   description: "鍵トラブルナビの記事制作ポリシーです。コンテンツの品質・正確性・透明性へのこだわりをご説明します。",
 };
@@ -139,17 +140,6 @@ export default function ContentPolicyPage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-[#0D1B2A] text-white/70 py-8">
-        <div className="max-w-6xl mx-auto px-4 text-center text-sm">
-          <div className="flex flex-wrap justify-center gap-6 mb-4">
-            <Link href="/terms/" className="hover:text-white transition-colors">利用規約</Link>
-            <Link href="/privacy/" className="hover:text-white transition-colors">プライバシーポリシー</Link>
-            <Link href="/content-policy/" className="hover:text-white transition-colors">記事の制作ポリシー</Link>
-          </div>
-          <p className="text-xs text-white/40">&copy; 2026 株式会社MediaX All Rights Reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }
