@@ -51,6 +51,7 @@ export default function SiteFooter() {
               <li><Link href="/agents/kagi-rescue/" className="hover:text-white transition-colors">鍵のレスキュー</Link></li>
               <li><Link href="/agents/kagi-kyukyusha/" className="hover:text-white transition-colors">カギの救急車</Link></li>
               <li><Link href="/agents/kagi110ban-vs-seikatsu9/" className="hover:text-white transition-colors">カギ110番 vs 生活救急車</Link></li>
+              <li><Link href="/area/tokyo/" className="hover:text-white transition-colors">エリア別: 東京の鍵業者</Link></li>
             </ul>
           </div>
         </div>
