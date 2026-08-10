@@ -745,6 +745,10 @@ export default function AreaOsakaPage() {
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kyoto/", label: "京都の鍵開け・鍵交換業者おすすめ6選" },
+                { href: "/area/kobe/", label: "神戸の鍵開け・鍵交換業者おすすめ6選" },
+                { href: "/area/fukuoka/", label: "福岡の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/sapporo/", label: "札幌の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
