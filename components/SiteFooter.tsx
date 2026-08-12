@@ -52,7 +52,10 @@ export default function SiteFooter() {
               <li><Link href="/agents/kagi-kyukyusha/" className="hover:text-white transition-colors">カギの救急車</Link></li>
               <li><Link href="/agents/kagi110ban-vs-seikatsu9/" className="hover:text-white transition-colors">カギ110番 vs 生活救急車</Link></li>
               <li>
-                エリア別: <Link href="/area/tokyo/" className="hover:text-white transition-colors">東京</Link>・<Link href="/area/osaka/" className="hover:text-white transition-colors">大阪</Link>・<Link href="/area/nagoya/" className="hover:text-white transition-colors">名古屋</Link>・<Link href="/area/yokohama/" className="hover:text-white transition-colors">横浜</Link>・<Link href="/area/fukuoka/" className="hover:text-white transition-colors">福岡</Link>・<Link href="/area/sapporo/" className="hover:text-white transition-colors">札幌</Link>・<Link href="/area/kyoto/" className="hover:text-white transition-colors">京都</Link>・<Link href="/area/kobe/" className="hover:text-white transition-colors">神戸</Link>
+                エリア別: <Link href="/area/tokyo/" className="hover:text-white transition-colors">東京</Link>・<Link href="/area/osaka/" className="hover:text-white transition-colors">大阪</Link>・<Link href="/area/nagoya/" className="hover:text-white transition-colors">名古屋</Link>・<Link href="/area/yokohama/" className="hover:text-white transition-colors">横浜</Link>・<Link href="/area/fukuoka/" className="hover:text-white transition-colors">福岡</Link>・<Link href="/area/sapporo/" className="hover:text-white transition-colors">札幌</Link>
+              </li>
+              <li>
+                <Link href="/area/kyoto/" className="hover:text-white transition-colors">京都</Link>・<Link href="/area/kobe/" className="hover:text-white transition-colors">神戸</Link>・<Link href="/area/saitama/" className="hover:text-white transition-colors">さいたま</Link>・<Link href="/area/chiba/" className="hover:text-white transition-colors">千葉</Link>・<Link href="/area/sendai/" className="hover:text-white transition-colors">仙台</Link>・<Link href="/area/hiroshima/" className="hover:text-white transition-colors">広島</Link>
               </li>
             </ul>
           </div>

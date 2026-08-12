@@ -698,6 +698,10 @@ export default function AreaTokyoPage() {
                 { href: "/area/sapporo/", label: "札幌の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kyoto/", label: "京都の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/kobe/", label: "神戸の鍵開け・鍵交換業者おすすめ6選" },
+                { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/chiba/", label: "千葉の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/sendai/", label: "仙台の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/hiroshima/", label: "広島の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
