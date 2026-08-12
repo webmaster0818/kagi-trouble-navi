@@ -767,6 +767,14 @@ export default function AreaKobePage() {
                 { href: "/area/okayama/", label: "岡山の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kumamoto/", label: "熊本の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/niigata/", label: "新潟の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kagoshima/", label: "鹿児島の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kanazawa/", label: "金沢の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/utsunomiya/", label: "宇都宮の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/matsuyama/", label: "松山の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/naha/", label: "那覇の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/takamatsu/", label: "高松の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/nagano/", label: "長野の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/gifu/", label: "岐阜の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

@@ -61,7 +61,10 @@ export default function SiteFooter() {
                 <Link href="/area/sakai/" className="hover:text-white transition-colors">堺</Link>・<Link href="/area/kawasaki/" className="hover:text-white transition-colors">川崎</Link>・<Link href="/area/kitakyushu/" className="hover:text-white transition-colors">北九州</Link>・<Link href="/area/hamamatsu/" className="hover:text-white transition-colors">浜松</Link>・<Link href="/area/shizuoka/" className="hover:text-white transition-colors">静岡</Link>
               </li>
               <li>
-                <Link href="/area/okayama/" className="hover:text-white transition-colors">岡山</Link>・<Link href="/area/kumamoto/" className="hover:text-white transition-colors">熊本</Link>・<Link href="/area/niigata/" className="hover:text-white transition-colors">新潟</Link>
+                <Link href="/area/okayama/" className="hover:text-white transition-colors">岡山</Link>・<Link href="/area/kumamoto/" className="hover:text-white transition-colors">熊本</Link>・<Link href="/area/niigata/" className="hover:text-white transition-colors">新潟</Link>・<Link href="/area/kagoshima/" className="hover:text-white transition-colors">鹿児島</Link>・<Link href="/area/kanazawa/" className="hover:text-white transition-colors">金沢</Link>
+              </li>
+              <li>
+                <Link href="/area/utsunomiya/" className="hover:text-white transition-colors">宇都宮</Link>・<Link href="/area/matsuyama/" className="hover:text-white transition-colors">松山</Link>・<Link href="/area/naha/" className="hover:text-white transition-colors">那覇</Link>・<Link href="/area/takamatsu/" className="hover:text-white transition-colors">高松</Link>・<Link href="/area/nagano/" className="hover:text-white transition-colors">長野</Link>・<Link href="/area/gifu/" className="hover:text-white transition-colors">岐阜</Link>
               </li>
             </ul>
           </div>
