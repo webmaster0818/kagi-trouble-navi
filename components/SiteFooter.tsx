@@ -57,6 +57,12 @@ export default function SiteFooter() {
               <li>
                 <Link href="/area/kyoto/" className="hover:text-white transition-colors">京都</Link>・<Link href="/area/kobe/" className="hover:text-white transition-colors">神戸</Link>・<Link href="/area/saitama/" className="hover:text-white transition-colors">さいたま</Link>・<Link href="/area/chiba/" className="hover:text-white transition-colors">千葉</Link>・<Link href="/area/sendai/" className="hover:text-white transition-colors">仙台</Link>・<Link href="/area/hiroshima/" className="hover:text-white transition-colors">広島</Link>
               </li>
+              <li>
+                <Link href="/area/sakai/" className="hover:text-white transition-colors">堺</Link>・<Link href="/area/kawasaki/" className="hover:text-white transition-colors">川崎</Link>・<Link href="/area/kitakyushu/" className="hover:text-white transition-colors">北九州</Link>・<Link href="/area/hamamatsu/" className="hover:text-white transition-colors">浜松</Link>・<Link href="/area/shizuoka/" className="hover:text-white transition-colors">静岡</Link>
+              </li>
+              <li>
+                <Link href="/area/okayama/" className="hover:text-white transition-colors">岡山</Link>・<Link href="/area/kumamoto/" className="hover:text-white transition-colors">熊本</Link>・<Link href="/area/niigata/" className="hover:text-white transition-colors">新潟</Link>
+              </li>
             </ul>
           </div>
         </div>

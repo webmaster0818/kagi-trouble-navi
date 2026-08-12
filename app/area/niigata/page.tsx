@@ -3,23 +3,23 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
-const PATH = "/area/yokohama/";
-const UPDATED = "2026年8月9日";
-const UPDATED_ISO = "2026-08-09";
+const PATH = "/area/niigata/";
+const UPDATED = "2026年8月12日";
+const UPDATED_ISO = "2026-08-12";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "【2026年最新】横浜の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較｜鍵トラブルナビ",
+      "【2026年最新】新潟の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較｜鍵トラブルナビ",
   },
   description:
-    "横浜で鍵開け・鍵交換を頼める鍵業者5社を一次確認値で比較。カギ110番（鍵開け6,600円〜）・鍵の生活救急車（最短15分）・JBR・鍵のレスキュー・カギの救急車の料金と受付時間、オートロックのマンションで業者を呼ぶ前に確認すべきことまで編集部が中立にまとめました。",
+    "新潟で鍵開け・鍵交換を頼める鍵業者5社を一次確認値で比較。カギ110番（鍵開け6,600円〜）・鍵の生活救急車（最短15分）・JBR・鍵のレスキュー・カギの救急車の料金と受付時間、冬の玄関と車それぞれの鍵の凍結予防と、やってはいけない解氷の方法まで編集部が中立にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title:
-      "【2026年最新】横浜の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
+      "【2026年最新】新潟の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
     description:
-      "横浜で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。オートロックの締め出し対策や賃貸で業者を呼ぶ前の確認事項も解説します。",
+      "新潟で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。冬の玄関と車それぞれの鍵の凍結予防と、やってはいけない解氷の方法も解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
     images: ["/images/kv-top.jpg"],
@@ -53,7 +53,7 @@ const agents: AreaAgent[] = [
         カギ110番は、東証グロース上場の
         <Hl>シェアリングテクノロジー株式会社が運営する加盟店紹介型の鍵トラブル解決サービス</Hl>
         です。<Hl>鍵開け6,600円〜（税込・公式表示）</Hl>
-        で、24時間365日受付・電話一本で最短5分の手配をうたっています。全国47都道府県の加盟店ネットワークが対象のため、横浜市内の依頼でも近隣の加盟店が手配される仕組みです。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
+        で、24時間365日受付・電話一本で最短5分の手配をうたっています。全国47都道府県の加盟店ネットワークが対象のため、新潟市内の依頼でも近隣の加盟店が手配される仕組みです。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
       </>
     ),
     recommend: [
@@ -65,7 +65,7 @@ const agents: AreaAgent[] = [
     table: [
       { k: "鍵開け料金", v: "6,600円〜（税込）", note: "公式表示・2026年7月4日確認。加盟店・エリアにより異なる場合あり" },
       { k: "受付時間", v: "24時間365日" },
-      { k: "対応エリア", v: "全国47都道府県（神奈川県対応）" },
+      { k: "対応エリア", v: "全国47都道府県（新潟県対応）" },
       { k: "見積もり", v: "無料", note: "交通費・キャンセル料は別途発生する場合ありと公式記載" },
       { k: "運営会社", v: "シェアリングテクノロジー株式会社" },
     ],
@@ -207,11 +207,13 @@ const compareRows = agents.map((a) => ({
   price:
     a.id === "kagi110ban"
       ? "6,600円〜（税込）"
-      : a.id === "kagi-rescue"
-        ? "8,000円〜"
-        : a.id === "kagi-kyukyusha"
-          ? "11,000〜44,000円（税込・目安）"
-          : "8,800円〜（税込）",
+      : a.id === "seikatsu-kyukyusha"
+        ? "8,800円〜（税込）"
+        : a.id === "jbr"
+          ? "8,800円〜（税込）"
+          : a.id === "kagi-rescue"
+            ? "8,000円〜"
+            : "11,000〜44,000円（税込・目安）",
   time:
     a.id === "seikatsu-kyukyusha"
       ? "最短15分駆けつけ"
@@ -233,11 +235,11 @@ const compareRows = agents.map((a) => ({
 const steps = [
   {
     t: "① 状況と鍵の種類を整理する",
-    b: "「開かない」「なくした」「折れた」など状況と、玄関・車・金庫といった対象、ディンプルキーなど鍵の種類をメモしておくと、電話での見積もり精度が上がります。オートロックのマンションなら、部屋の鍵とエントランスのどちらのトラブルかも伝えましょう。賃貸の場合は、業者より先に管理会社・大家への連絡が基本です。",
+    b: "「凍って入らない」「回らない」「なくした」など状況と、玄関・車・物置といった対象、鍵の種類をメモしておくと、電話での見積もり精度が上がります。凍結が疑われるときは、カイロ・ドライヤー・解氷スプレーでの対処を先に試したかどうかも伝えると、原因の切り分けが早く進みます。賃貸の場合は、業者より先に管理会社・大家への連絡が基本です。",
   },
   {
     t: "② 出張費・夜間料金を含めた総額の見積もりを取る",
-    b: "広告の「◯◯円〜」は最低価格で、実際は鍵の種類・出張距離・時間帯で変わります。作業前に、出張費・部材費・深夜割増まで含めた総額を必ず確認しましょう。見積もり無料・キャンセル無料の業者なら、金額を見てから断ることもできます。",
+    b: "広告の「◯◯円〜」は最低価格で、実際は鍵の種類・出張距離・時間帯で変わります。深夜に呼ぶ場合は、深夜割増の有無が総額を大きく左右します。作業前に、出張費・部材費・深夜割増まで含めた総額を必ず確認しましょう。見積もり無料・キャンセル無料の業者なら、金額を見てから断ることもできます。",
   },
   {
     t: "③ 運営会社を確認する",
@@ -245,26 +247,34 @@ const steps = [
   },
   {
     t: "④ 急ぎでなければ複数社を比較する",
-    b: "締め出しなどの緊急時以外は、2〜3社から見積もりを取って総額・条件を比較するのがおすすめです。金額に納得できない場合は、その場で契約せず一度断る選択肢もあります。",
+    b: "締め出しなどの緊急時以外は、2〜3社から見積もりを取って総額・条件を比較するのがおすすめです。凍結の予防用品（解氷スプレー・鍵穴専用潤滑剤）の準備や防犯目的の鍵交換のように急がない依頼なら、じっくり比較する価値があります。今回の5社はいずれも全国対応型で新潟から依頼できます。金額に納得できない場合は、その場で契約せず一度断る選択肢もあります。",
   },
 ];
 
 const faqs = [
   {
-    q: "横浜の鍵開け料金の相場はいくらですか？",
+    q: "新潟の鍵開け料金の相場はいくらですか？",
     a: "当サイトが一次確認した各社の公式表示では、鍵開けの基本料金はカギ110番6,600円〜、鍵のレスキュー8,000円〜、鍵の生活救急車・JBR8,800円〜（いずれも税込）、カギの救急車は公式目安11,000〜44,000円です。ただしこれは最低価格や目安で、鍵の種類（ディンプルキー等）・時間帯・出張距離で総額は変わります。作業前に総額の見積もりを取りましょう。詳しくは鍵開け・鍵交換の料金相場ページで解説しています。",
   },
   {
-    q: "深夜や早朝でも横浜に来てくれますか？",
+    q: "深夜や早朝でも新潟に来てくれますか？",
     a: "カギ110番・JBR・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし深夜帯は割増料金や到着時間の変動があり得るため、電話の際に深夜料金の有無と到着目安を確認してから依頼するのがおすすめです。",
   },
   {
-    q: "東京の記事で紹介されている業者と横浜の業者は違うのですか？",
-    a: "掲載している5社は同じです。いずれも全国対応のサービス（加盟店ネットワークまたは全国拠点網）のため、東京都でも神奈川県横浜市でも依頼できます。ただし実際に駆けつける加盟店・拠点は地域ごとに異なるため、到着目安や出張費は依頼時の電話で確認しましょう。東京版の比較記事もあわせてご覧ください。",
+    q: "凍った鍵穴にお湯をかけてもいいですか？",
+    a: "避けてください。お湯で一時的に氷が溶けても、内部に残った水分が再び凍って症状が悪化したり、錠前内部の故障につながったりする恐れがあります。カイロやドライヤーの温風で鍵と鍵穴周辺をゆっくり温めるか、解氷スプレーを使うのが安全です。ライターで鍵を炙る方法も、鍵の変形や樹脂部分の破損を招くためおすすめできません。",
   },
   {
-    q: "オートロックのマンションで締め出されたらどうすればいいですか？",
-    a: "オートロック付きマンションの締め出しは、まず管理会社・大家（分譲なら管理員・管理組合の窓口）に連絡するのが基本です。エントランスは他の住人の出入りに合わせて入れても、部屋の鍵は勝手に開けたり交換したりすると契約上のトラブルになる恐れがあります。管理会社に連絡がつかない場合に鍵業者を検討し、作業前に総額の見積もりを確認しましょう。",
+    q: "車のドアや鍵穴の凍結はどう防げばいいですか？",
+    a: "解氷スプレーを車内ではなく玄関や職場など車の外に常備しておくこと（車内に置くと取り出せません）、時間に余裕を持って出発準備をすることが基本です。凍り付いたドアを無理に引くとパッキンが破損する恐れがあり、お湯はガラスの破損や再凍結のもとになるため避けましょう。スマートキーの電池は低温で性能が落ちやすいので、冬前の交換も有効です。",
+  },
+  {
+    q: "賃貸マンションで勝手に鍵交換してもいいですか？",
+    a: "賃貸の鍵は大家・管理会社の管理物にあたるため、無断で交換すると契約違反となる恐れがあります。締め出しや紛失のときも、まず管理会社・大家に連絡しましょう。合鍵やマスターキーで開けてもらえる場合があり、費用がかからずに済むこともあります。交換が必要な場合も、必ず事前に許可を取ってから行いましょう。",
+  },
+  {
+    q: "悪質な鍵業者を見分けるにはどうすればいいですか？",
+    a: "広告の最低価格だけで選ばず、作業前に出張費・部材費まで含めた総額の見積もりを提示してもらうこと、承諾のない追加請求がない方針かを確認すること、運営会社名を確認すること（似た名前の別業者が複数あります）がポイントです。提示額に納得できない場合は、その場で即決せずに断り、複数社を比較しましょう。",
   },
 ];
 
@@ -303,16 +313,16 @@ function H4({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function AreaYokohamaPage() {
+export default function AreaNiigataPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "【2026年最新】横浜の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
+      "【2026年最新】新潟の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
     description:
-      "横浜で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較した記事です。",
+      "新潟で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
-    datePublished: "2026-08-09T00:00:00+09:00",
+    datePublished: "2026-08-12T00:00:00+09:00",
     dateModified: `${UPDATED_ISO}T00:00:00+09:00`,
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
@@ -332,16 +342,16 @@ export default function AreaYokohamaPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "鍵トラブルナビ", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "横浜の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
+      { "@type": "ListItem", position: 2, name: "新潟の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
     ],
   };
 
   const toc: { href: string; label: string; sub?: { href: string; label: string }[] }[] = [
     {
-      href: "#yokohama5",
-      label: "1｜横浜で人気のおすすめ・優良の鍵業者5選",
+      href: "#niigata5",
+      label: "1｜新潟で人気のおすすめ・優良の鍵業者5選",
       sub: [
-        { href: "#hikaku", label: "横浜の鍵業者を一覧表で徹底比較" },
+        { href: "#hikaku", label: "新潟の鍵業者を一覧表で徹底比較" },
         ...agents.map((a) => ({ href: `#${a.id}`, label: `${a.num}｜【${a.catch}】${a.name}` })),
       ],
     },
@@ -349,9 +359,9 @@ export default function AreaYokohamaPage() {
     { href: "#shinya", label: "3｜深夜・早朝のトラブルなら" },
     { href: "#meikaku", label: "4｜料金を事前に明確にしたいなら" },
     { href: "#jisha", label: "5｜自社スタッフ対応にこだわるなら" },
-    { href: "#yokohama-tips", label: "6｜横浜で鍵業者を呼ぶ前に確認したいこと" },
+    { href: "#niigata-tips", label: "6｜新潟で鍵業者を呼ぶ前に確認したいこと（玄関と車の凍結予防・解氷）" },
     { href: "#erabikata", label: "7｜失敗しない鍵業者の選び方" },
-    { href: "#faq", label: "8｜横浜の鍵業者でよくある質問" },
+    { href: "#faq", label: "8｜新潟の鍵業者でよくある質問" },
     { href: "#matome", label: "9｜まとめ" },
   ];
 
@@ -370,14 +380,14 @@ export default function AreaYokohamaPage() {
                 <Link href="/" className="hover:underline">鍵トラブルナビ</Link>
               </li>
               <li>/</li>
-              <li className="text-foreground">横浜の鍵開け・鍵交換業者おすすめ5選</li>
+              <li className="text-foreground">新潟の鍵開け・鍵交換業者おすすめ5選</li>
             </ol>
           </nav>
 
           {/* h1・更新日・タグchips */}
           <header className="grid gap-4">
             <h1 className="text-2xl md:text-[32px] font-bold leading-normal tracking-wide text-foreground">
-              【2026年最新】横浜の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較
+              【2026年最新】新潟の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較
             </h1>
             <div>
               <span className="inline-block rounded-[2px] bg-primary px-2 py-1 text-xs font-bold tracking-wide text-white">
@@ -391,7 +401,7 @@ export default function AreaYokohamaPage() {
               <span>PR掲載も含みます</span>
             </div>
             <ul className="flex flex-wrap gap-2">
-              {["横浜", "鍵開け", "鍵交換", "24時間対応", "業者比較"].map((t) => (
+              {["新潟", "鍵開け", "鍵交換", "24時間対応", "業者比較"].map((t) => (
                 <li
                   key={t}
                   className="rounded-[2px] border border-border bg-white px-3 py-1.5 text-xs md:text-sm font-bold tracking-wide text-foreground shadow-[0px_2px_2px_0px_rgba(0,0,0,0.12)]"
@@ -403,7 +413,7 @@ export default function AreaYokohamaPage() {
             <figure className="overflow-hidden rounded-[2px]">
               <Image
                 src="/images/kv-top.jpg"
-                alt="横浜の鍵開け・鍵交換業者の比較"
+                alt="新潟の鍵開け・鍵交換業者の比較"
                 width={1024}
                 height={1024}
                 className="w-full h-52 md:h-72 object-cover"
@@ -415,10 +425,10 @@ export default function AreaYokohamaPage() {
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
             <p className="mb-4">
-              「マンションのオートロックの外で鍵がないことに気づいた」「引っ越してきたばかりで鍵を交換したい」——横浜で鍵トラブルにあったとき、どの業者に頼めばよいか迷う方は多いはずです。横浜は駅周辺のマンションから郊外の戸建てまで住まいのかたちが幅広く、同じ「鍵開け」でも建物のタイプによって確認すべきことが変わります。また、鍵業者は料金体系や運営形態（自社対応か加盟店手配か）が各社で異なり、名前のよく似たサービスも複数あります。
+              「朝、出勤しようとしたら玄関の鍵穴に鍵が入らない」「車のドアが凍り付いて開かない」——冬の新潟では、玄関と車の両方で凍結による鍵トラブルが起こり得ます。凍結そのものは正しい手順で対処すれば解決できることが多い一方、お湯をかける・力ずくで回すといった誤った対処は、再凍結や部品の破損、鍵折れといった二次被害を招き、かえって業者を呼ぶ羽目になりがちです。
             </p>
             <p>
-              本記事では、横浜市内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報だけで比較しました。いずれも全国対応のサービスのため、隣接する東京と共通の5社構成です。急ぎ・深夜・料金重視といった目的別の選び方や、オートロックのマンションで業者を呼ぶ前に確認すべきこともまとめています。ぜひ鍵業者選びの参考にしてください。
+              本記事では、新潟市内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報だけで比較しました。玄関と車それぞれの凍結の予防策と、凍ってしまったときにやってはいけないこと・安全な解氷の手順もまとめています。ぜひ鍵業者選びの参考にしてください。
             </p>
           </div>
 
@@ -461,16 +471,16 @@ export default function AreaYokohamaPage() {
           </nav>
 
           {/* 1｜5選 */}
-          <H2 id="yokohama5" num="1">横浜で人気のおすすめ・優良の鍵業者5選</H2>
+          <H2 id="niigata5" num="1">新潟で人気のおすすめ・優良の鍵業者5選</H2>
           <p className="leading-loose mb-2">
-            横浜市内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
+            新潟市内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
           </p>
           <p className="text-sm text-text-muted mb-8">
-            ※東京・大阪・名古屋の業者比較は、<Link href="/area/tokyo/" className="text-primary underline">東京版</Link>・<Link href="/area/osaka/" className="text-primary underline">大阪版</Link>・<Link href="/area/nagoya/" className="text-primary underline">名古屋版</Link>をご覧ください。
+            ※他の都市の比較は、<Link href="/area/sendai/" className="text-primary underline">仙台版</Link>・<Link href="/area/sapporo/" className="text-primary underline">札幌版</Link>もご覧ください。
           </p>
 
           <h3 id="hikaku" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
-            横浜の鍵業者を一覧表で徹底比較
+            新潟の鍵業者を一覧表で徹底比較
             <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
           </h3>
           <div className="overflow-x-auto mb-4">
@@ -560,7 +570,7 @@ export default function AreaYokohamaPage() {
           ))}
 
           {/* 2｜急ぎ */}
-          <H2 id="isogi" num="2">横浜の鍵業者をとにかく急いで開けてほしいなら</H2>
+          <H2 id="isogi" num="2">新潟の鍵業者をとにかく急いで開けてほしいなら</H2>
           <p className="leading-loose mb-4">
             締め出しなどで一刻も早く開けてほしい場合は、駆けつけスピードの目安を公表している業者が候補になります。<Hl>鍵の生活救急車は最短15分の駆けつけと全国約2,270店の拠点網</Hl>をうたっており、拠点数の多さは到着スピードの裏付けになります。また、<Hl>カギ110番は電話一本で最短5分の手配</Hl>（全国47都道府県の加盟店ネットワークから近隣の業者を手配）を掲げています。
           </p>
@@ -571,7 +581,7 @@ export default function AreaYokohamaPage() {
           {/* 3｜深夜 */}
           <H2 id="shinya" num="3">深夜・早朝の鍵トラブルなら</H2>
           <p className="leading-loose mb-4">
-            深夜・早朝のトラブルでは、24時間受付かどうかがまず重要です。一次確認値では、<Hl>カギ110番・JBR・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。特にJBRは賠償責任保険に加入した大手グループで、夜間の緊急依頼でも相談しやすい体制です。
+            冷え込みが厳しい早朝の凍結や、雪の夜の締め出しで頼れるのは24時間受付の業者です。一次確認値では<Hl>カギ110番・JBR・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。特にJBRは賠償責任保険に加入した大手グループで、夜間の緊急依頼でも相談しやすい体制です。
           </p>
           <p className="leading-loose mb-4 text-sm text-text-muted">
             ※受付が24時間でも、深夜帯は割増料金や到着時間の変動があり得ます。電話時に深夜料金の有無と総額を確認してから依頼するのが安心です。
@@ -592,20 +602,20 @@ export default function AreaYokohamaPage() {
             鍵業者には、依頼を受けて加盟店を手配する「紹介型」と、自社のスタッフが直接対応する「自社対応型」があります。紹介型は対応範囲が広い一方、店舗によって技術・対応に差が出ることがあります。今回の5社では、<Hl>鍵のレスキューが全国約20拠点を自社社員で対応する自社対応型</Hl>で、女性スタッフの指名にも対応しています。担当者の所属まで気になる方は、依頼時に「自社スタッフか協力店か」を確認してみましょう。
           </p>
 
-          {/* 6｜横浜特有 */}
-          <H2 id="yokohama-tips" num="6">横浜で鍵業者を呼ぶ前に確認したいこと</H2>
+          {/* 6｜新潟特有 */}
+          <H2 id="niigata-tips" num="6">新潟で鍵業者を呼ぶ前に確認したいこと（玄関と車の凍結予防・解氷）</H2>
           <p className="leading-loose mb-4">
-            マンション・アパートなど賃貸にお住まいの場合、鍵は大家・管理会社の管理物にあたるため、<Hl>締め出しや紛失のときは、鍵業者より先に管理会社・大家へ連絡するのが基本</Hl>です。合鍵やマスターキーで開けてもらえれば費用がかからずに済む場合があり、無断で鍵を開けたり交換したりすると契約上のトラブルになる恐れもあります。詳しい手順は<Link href="/shimedashi/" className="text-primary underline">鍵の閉じ込め・締め出しの対処法</Link>で解説しています。
+            玄関の鍵穴の凍結は、内部に入り込んだ水分が凍って起こります。予防の基本は<Hl>雨や雪の日に鍵穴へ水分を持ち込まないことと、鍵穴専用の潤滑剤での定期的な手入れ</Hl>です（食用油や一般的な機械油はホコリを呼ぶため使わないでください）。凍ってしまったら、<Hl>お湯をかけるのは厳禁</Hl>——内部に残った水が再凍結し、錠前の故障につながります。ライターで鍵を炙るのも変形や樹脂部分の破損のもとです。カイロやドライヤーの温風で鍵と鍵穴周辺をゆっくり温めるか、解氷スプレーを使いましょう。詳しくは<Link href="/kagiana-touketsu/" className="text-primary underline">鍵穴凍結の対処法</Link>で解説しています。
           </p>
           <p className="leading-loose mb-4">
-            オートロック付きマンションの場合は、<Hl>部屋の鍵とエントランスのどちらで困っているかを整理してから連絡</Hl>すると話が早く進みます。オートロックの締め出しは仕組み上起こりやすいトラブルのため、予防策も知っておくと安心です。詳しくは<Link href="/autolock-shimedashi-yobou/" className="text-primary underline">オートロックの締め出し予防策</Link>をご覧ください。
+            車も同じ考え方です。ドアが凍り付いたときに<Hl>無理に引き開けるとドアパッキンが破損する恐れ</Hl>があり、窓ガラス付近へお湯をかけるのは急な温度変化によるガラス破損や路面・ドアの再凍結を招くため避けましょう。解氷スプレーを常備し、時間に余裕を持って溶かすのが安全です。また、<Hl>スマートキーの電池は低温下で性能が落ちやすい</Hl>ため、冬前の電池交換も有効な備えです。<Link href="/smart-key-denchi/" className="text-primary underline">スマートキーの電池切れ対処法</Link>も参考にしてください。
           </p>
           <p className="leading-loose mb-4">
-            鍵をなくした場合は、<Hl>最寄りの警察署・交番への遺失届の提出</Hl>も忘れずに行いましょう。届け出ておくと、鍵が拾得物として届いた際に連絡を受けられます。詳しくは<Link href="/kagi-funshitsu/" className="text-primary underline">鍵をなくしたときの対処法</Link>、依頼前の金額感は<Link href="/ryokin/" className="text-primary underline">料金相場</Link>で確認できます。
+            凍結した鍵穴に鍵を差し込んで<Hl>力ずくで回すと、鍵が折れて鍵穴に残る二次被害</Hl>につながります。折れてしまった場合の対処は<Link href="/kagi-ore/" className="text-primary underline">鍵が折れたときの対処法</Link>を、温めても改善しない場合は凍結ではなく経年劣化の可能性もあるため<Link href="/kagi-mawaranai/" className="text-primary underline">鍵が回らないときの対処法</Link>をご覧ください。自力で解決しない場合は業者へ。寒空の下で長時間待たずに済むよう、受付の電話で到着目安を必ず確認しましょう。
           </p>
 
           {/* 7｜選び方 */}
-          <H2 id="erabikata" num="7">横浜の鍵業者の失敗しない選び方</H2>
+          <H2 id="erabikata" num="7">新潟の鍵業者の失敗しない選び方</H2>
           <p className="leading-loose mb-6">
             鍵業者選びで後悔しないためには、次の4つのステップを踏むことが大切です。緊急時ほど「早く解決したいから」と即決しがちですが、数分の確認でトラブルの多くは防げます。
           </p>
@@ -620,7 +630,7 @@ export default function AreaYokohamaPage() {
           ))}
 
           {/* 8｜FAQ */}
-          <H2 id="faq" num="8">横浜の鍵業者でよくある質問</H2>
+          <H2 id="faq" num="8">新潟の鍵業者でよくある質問</H2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <div key={f.q} className="rounded-[2px] border border-border">
@@ -638,16 +648,22 @@ export default function AreaYokohamaPage() {
                         <Link href="/ryokin/" className="text-primary underline">料金相場の詳細はこちら</Link>
                       </>
                     )}
-                    {f.q.includes("東京") && (
+                    {f.q.includes("お湯") && (
                       <>
                         {" "}
-                        <Link href="/area/tokyo/" className="text-primary underline">東京の鍵業者比較はこちら</Link>
+                        <Link href="/kagiana-touketsu/" className="text-primary underline">鍵穴凍結の対処法はこちら</Link>
                       </>
                     )}
-                    {f.q.includes("オートロック") && (
+                    {f.q.includes("車のドア") && (
                       <>
                         {" "}
-                        <Link href="/autolock-shimedashi-yobou/" className="text-primary underline">オートロックの締め出し予防策はこちら</Link>
+                        <Link href="/smart-key-denchi/" className="text-primary underline">スマートキーの電池切れ対処法はこちら</Link>
+                      </>
+                    )}
+                    {f.q.includes("賃貸") && (
+                      <>
+                        {" "}
+                        <Link href="/shimedashi/" className="text-primary underline">締め出し時の対処法はこちら</Link>
                       </>
                     )}
                   </span>
@@ -659,10 +675,10 @@ export default function AreaYokohamaPage() {
           {/* 9｜まとめ */}
           <H2 id="matome" num="9">まとめ</H2>
           <p className="leading-loose mb-4">
-            横浜で鍵開け・鍵交換を頼める主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。スピード重視なら鍵の生活救急車やカギ110番、深夜・早朝ならカギ110番・JBR・鍵のレスキュー、料金の明確さ重視なら鍵のレスキュー、というように、目的によって向いている業者は変わります。
+            新潟で鍵開け・鍵交換を頼める主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。スピード重視なら鍵の生活救急車やカギ110番、冷え込む早朝や深夜のトラブルならカギ110番・JBR・鍵のレスキュー、料金の明確さ重視なら鍵のレスキュー、というように、目的によって向いている業者は変わります。
           </p>
           <p className="leading-loose mb-8">
-            どの業者を選ぶ場合も、賃貸やオートロック付きマンションならまず管理会社・大家への連絡、紛失なら警察への遺失届を済ませたうえで、作業前に総額の見積もりを確認することが失敗しないための共通ルールです。本記事の一次確認値を出発点に、状況に合った業者を選んでください。
+            冬の凍結トラブルは、玄関は鍵穴専用潤滑剤での手入れ、車は解氷スプレーの常備と時間の余裕という予防で多くを避けられます。凍ってしまってもお湯と力ずくは禁物です。安全な方法で温めても解決しないときに業者を呼び、作業前に総額の見積もりを確認することが失敗しないための共通ルールです。本記事の一次確認値を出発点に、状況に合った業者を選んでください。
           </p>
           <div className="rounded-[2px] bg-primary text-white p-6 text-center">
             <p className="font-bold text-lg mb-2">鍵のトラブルでお困りの方へ</p>
@@ -679,7 +695,7 @@ export default function AreaYokohamaPage() {
           <div className="mt-12">
             <p className="text-sm font-bold text-text-muted mb-3">タグ</p>
             <ul className="flex flex-wrap gap-2">
-              {["横浜", "鍵開け", "鍵交換", "24時間対応", "業者比較", "エリア別"].map((t) => (
+              {["新潟", "鍵開け", "鍵交換", "24時間対応", "業者比較", "エリア別"].map((t) => (
                 <li
                   key={t}
                   className="rounded-[2px] border border-border bg-white px-3 py-1.5 text-xs md:text-sm font-bold tracking-wide text-foreground shadow-[0px_2px_2px_0px_rgba(0,0,0,0.12)]"
@@ -698,6 +714,7 @@ export default function AreaYokohamaPage() {
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/fukuoka/", label: "福岡の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/sapporo/", label: "札幌の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kyoto/", label: "京都の鍵開け・鍵交換業者おすすめ6選" },
@@ -713,7 +730,6 @@ export default function AreaYokohamaPage() {
                 { href: "/area/shizuoka/", label: "静岡の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/okayama/", label: "岡山の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kumamoto/", label: "熊本の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/niigata/", label: "新潟の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
@@ -734,10 +750,10 @@ export default function AreaYokohamaPage() {
               {[
                 { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場" },
                 { href: "/ryokin-index/", label: "主要業者の料金一次確認まとめ" },
-                { href: "/shimedashi/", label: "鍵の閉じ込め・締め出しの対処法" },
-                { href: "/autolock-shimedashi-yobou/", label: "オートロックの締め出し予防策" },
+                { href: "/kagiana-touketsu/", label: "鍵穴が凍結したときの対処法" },
+                { href: "/kagi-ore/", label: "鍵が折れたときの対処法" },
+                { href: "/kagi-mawaranai/", label: "鍵が回らないときの対処法" },
                 { href: "/agents/", label: "鍵業者一覧・比較" },
-                { href: "/agents/kagi110ban-vs-seikatsu9/", label: "カギ110番 vs 生活救急車 徹底比較" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
