@@ -731,6 +731,14 @@ export default function AreaHiroshimaPage() {
                 { href: "/area/takamatsu/", label: "高松の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagano/", label: "長野の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/gifu/", label: "岐阜の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/mito/", label: "水戸の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/maebashi/", label: "前橋の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/toyama/", label: "富山の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/fukui/", label: "福井の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kofu/", label: "甲府の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/nagasaki/", label: "長崎の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/oita/", label: "大分の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/miyazaki/", label: "宮崎の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

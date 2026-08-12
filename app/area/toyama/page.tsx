@@ -3,23 +3,23 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
-const PATH = "/area/okayama/";
+const PATH = "/area/toyama/";
 const UPDATED = "2026年8月12日";
 const UPDATED_ISO = "2026-08-12";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "【2026年最新】岡山の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較｜鍵トラブルナビ",
+      "【2026年最新】富山の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較｜鍵トラブルナビ",
   },
   description:
-    "岡山で鍵開け・鍵交換を頼める鍵業者5社を一次確認値で比較。カギ110番（鍵開け6,600円〜）・鍵の生活救急車（最短15分）・JBR・鍵のレスキュー・カギの救急車の料金と受付時間、自転車・原付の鍵をなくしたときの頼み先、通学する子どもの鍵の持たせ方まで編集部が中立にまとめました。",
+    "富山で鍵開け・鍵交換を頼める鍵業者5社を一次確認値で比較。カギ110番（鍵開け6,600円〜）・鍵の生活救急車（最短15分）・JBR・鍵のレスキュー・カギの救急車の料金と受付時間、二世帯・親世帯の家の鍵の共有と交換を考えるタイミングまで編集部が中立にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title:
-      "【2026年最新】岡山の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
+      "【2026年最新】富山の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
     description:
-      "岡山で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。自転車・原付の鍵をなくしたときの頼み先や、通学する子どもの鍵の持たせ方も解説します。",
+      "富山で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。二世帯・親世帯の家の鍵を家族で共有するときの決めごとと、交換を考えるタイミングも解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
     images: ["/images/kv-top.jpg"],
@@ -53,7 +53,7 @@ const agents: AreaAgent[] = [
         カギ110番は、東証グロース上場の
         <Hl>シェアリングテクノロジー株式会社が運営する加盟店紹介型の鍵トラブル解決サービス</Hl>
         です。<Hl>鍵開け6,600円〜（税込・公式表示）</Hl>
-        で、24時間365日受付・電話一本で最短5分の手配をうたっています。全国47都道府県の加盟店ネットワークが対象のため、岡山市内の依頼でも近隣の加盟店が手配される仕組みです。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
+        で、24時間365日受付・電話一本で最短5分の手配をうたっています。全国47都道府県の加盟店ネットワークが対象のため、富山市内の依頼でも近隣の加盟店が手配される仕組みです。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
       </>
     ),
     recommend: [
@@ -65,7 +65,7 @@ const agents: AreaAgent[] = [
     table: [
       { k: "鍵開け料金", v: "6,600円〜（税込）", note: "公式表示・2026年7月4日確認。加盟店・エリアにより異なる場合あり" },
       { k: "受付時間", v: "24時間365日" },
-      { k: "対応エリア", v: "全国47都道府県（岡山県対応）" },
+      { k: "対応エリア", v: "全国47都道府県（富山県対応）" },
       { k: "見積もり", v: "無料", note: "交通費・キャンセル料は別途発生する場合ありと公式記載" },
       { k: "運営会社", v: "シェアリングテクノロジー株式会社" },
     ],
@@ -235,7 +235,7 @@ const compareRows = agents.map((a) => ({
 const steps = [
   {
     t: "① 状況と鍵の種類を整理する",
-    b: "「開かない」「なくした」「閉じ込めた」など状況と、玄関・自転車・原付といった対象、鍵の種類をメモしておくと、電話での見積もり精度が上がります。自転車・原付なら、その場から動かせるかどうかと車種も伝えましょう。子どもが鍵をなくした場合は、通学路や立ち寄り先の心当たりの確認と警察への遺失届も並行して進めます。賃貸の場合は、業者より先に管理会社・大家への連絡が基本です。",
+    b: "「開かない」「なくした」「実家の鍵を交換したい」など状況と、鍵の種類、渡している合鍵の本数をメモしておくと、電話での見積もり精度が上がります。親名義の家など自分が所有者でない家の鍵交換は、所有者の意向を確認してから進めましょう。賃貸の場合は、業者より先に管理会社・大家への連絡が基本です。",
   },
   {
     t: "② 出張費・夜間料金を含めた総額の見積もりを取る",
@@ -247,30 +247,30 @@ const steps = [
   },
   {
     t: "④ 急ぎでなければ複数社を比較する",
-    b: "締め出しなどの緊急時以外は、2〜3社から見積もりを取って総額・条件を比較するのがおすすめです。自転車や原付の鍵のように緊急度を選べるトラブルなら、鍵業者と自転車店・バイク店の費用を比べる余地もあります。今回の5社はいずれも全国対応型で岡山から依頼できます。金額に納得できない場合は、その場で契約せず一度断る選択肢もあります。",
+    b: "締め出しなどの緊急時以外は、2〜3社から見積もりを取って総額・条件を比較するのがおすすめです。同居の開始や家の引き継ぎにともなう鍵交換のように日程が読める依頼なら、じっくり比較する価値があります。今回の5社はいずれも全国対応型で富山から依頼できます。金額に納得できない場合は、その場で契約せず一度断る選択肢もあります。",
   },
 ];
 
 const faqs = [
   {
-    q: "岡山の鍵開け料金の相場はいくらですか？",
+    q: "富山の鍵開け料金の相場はいくらですか？",
     a: "当サイトが一次確認した各社の公式表示では、鍵開けの基本料金はカギ110番6,600円〜、鍵のレスキュー8,000円〜、鍵の生活救急車・JBR8,800円〜（いずれも税込）、カギの救急車は公式目安11,000〜44,000円です。ただしこれは最低価格や目安で、鍵の種類（ディンプルキー等）・時間帯・出張距離で総額は変わります。作業前に総額の見積もりを取りましょう。詳しくは鍵開け・鍵交換の料金相場ページで解説しています。",
   },
   {
-    q: "深夜や早朝でも岡山に来てくれますか？",
+    q: "深夜や早朝でも富山に来てくれますか？",
     a: "カギ110番・JBR・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし深夜帯は割増料金や到着時間の変動があり得るため、電話の際に深夜料金の有無と到着目安を確認してから依頼するのがおすすめです。",
   },
   {
-    q: "自転車の鍵をなくしたら、鍵業者と自転車店のどちらに頼むべきですか？",
-    a: "自宅まで押して帰れるなら、自転車店で錠前ごと交換するのが分かりやすい解決策です。外出先から動かせない・その場で開けたい場合は、出張対応の鍵業者が選択肢になります。リング錠は解錠または破壊して交換、ワイヤー錠は切断して買い替えが基本です。出張費を含めた総額と、錠前交換の費用を比べてから決めましょう。",
+    q: "親の家の合鍵を子世帯で持つときに気をつけることは？",
+    a: "本数と持ち主を親子の間で共有し、記録に残すことです。介護サービスの担当者など家族以外に渡している鍵も含めて数えましょう。渡した鍵が返ってきたときも、そのままにせず本数を確認し直すと、あいまいさを持ち越さずに済みます。",
   },
   {
-    q: "子どもに家の鍵を持たせるときはどんな点に注意すればいいですか？",
-    a: "鍵を外から見せないことが基本です。首から下げるのは避け、ランドセルや通学カバンの内側にリール式キーホルダーで固定する方法が定番です。なくしたときにすぐ親へ伝えるルールを決めておき、万一なくしたら通学路の心当たりを確認しつつ警察へ遺失届を出しましょう。見つからない場合は、拾った人に開けられるリスクを考えて鍵交換も検討します。",
+    q: "実家を相続したら鍵は交換すべきですか？",
+    a: "一律の正解はありませんが、長い年月の間に合鍵が何本作られたか分からない家では、シリンダー交換で「開けられる人」をリセットできます。空き家として管理する場合も、鍵の所在を整理してから管理を始めるとその後の判断がしやすくなります。",
   },
   {
-    q: "賃貸マンションで勝手に鍵交換してもいいですか？",
-    a: "賃貸の鍵は大家・管理会社の管理物にあたるため、無断で交換すると契約違反となる恐れがあります。締め出しや紛失のときも、まず管理会社・大家に連絡しましょう。合鍵やマスターキーで開けてもらえる場合があり、費用がかからずに済むこともあります。交換が必要な場合も、必ず事前に許可を取ってから行いましょう。",
+    q: "二世帯住宅の玄関の鍵を1つで共有しています。分けたほうがよいですか？",
+    a: "生活時間帯の違う世帯が1つの錠を共有する場合、本数を増やすほど管理はあいまいになります。誰が何本持つかの記録が前提ですが、番号やカードを世帯ごとに発行できる電子錠で出入りを管理する方法もあります。導入時は電池切れ・停電時の解錠手段を確認しましょう。",
   },
   {
     q: "悪質な鍵業者を見分けるにはどうすればいいですか？",
@@ -313,14 +313,14 @@ function H4({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function AreaOkayamaPage() {
+export default function AreaToyamaPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "【2026年最新】岡山の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
+      "【2026年最新】富山の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
     description:
-      "岡山で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較した記事です。",
+      "富山で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-08-12T00:00:00+09:00",
     dateModified: `${UPDATED_ISO}T00:00:00+09:00`,
@@ -342,16 +342,16 @@ export default function AreaOkayamaPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "鍵トラブルナビ", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "岡山の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
+      { "@type": "ListItem", position: 2, name: "富山の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
     ],
   };
 
   const toc: { href: string; label: string; sub?: { href: string; label: string }[] }[] = [
     {
-      href: "#okayama5",
-      label: "1｜岡山で人気のおすすめ・優良の鍵業者5選",
+      href: "#toyama5",
+      label: "1｜富山で人気のおすすめ・優良の鍵業者5選",
       sub: [
-        { href: "#hikaku", label: "岡山の鍵業者を一覧表で徹底比較" },
+        { href: "#hikaku", label: "富山の鍵業者を一覧表で徹底比較" },
         ...agents.map((a) => ({ href: `#${a.id}`, label: `${a.num}｜【${a.catch}】${a.name}` })),
       ],
     },
@@ -359,9 +359,9 @@ export default function AreaOkayamaPage() {
     { href: "#shinya", label: "3｜深夜・早朝のトラブルなら" },
     { href: "#meikaku", label: "4｜料金を事前に明確にしたいなら" },
     { href: "#jisha", label: "5｜自社スタッフ対応にこだわるなら" },
-    { href: "#okayama-tips", label: "6｜岡山で鍵業者を呼ぶ前に確認したいこと（自転車・原付の鍵、子どもの鍵）" },
+    { href: "#toyama-tips", label: "6｜富山で鍵業者を呼ぶ前に確認したいこと（二世帯・親世帯の家の鍵の共有と交換のタイミング）" },
     { href: "#erabikata", label: "7｜失敗しない鍵業者の選び方" },
-    { href: "#faq", label: "8｜岡山の鍵業者でよくある質問" },
+    { href: "#faq", label: "8｜富山の鍵業者でよくある質問" },
     { href: "#matome", label: "9｜まとめ" },
   ];
 
@@ -380,14 +380,14 @@ export default function AreaOkayamaPage() {
                 <Link href="/" className="hover:underline">鍵トラブルナビ</Link>
               </li>
               <li>/</li>
-              <li className="text-foreground">岡山の鍵開け・鍵交換業者おすすめ5選</li>
+              <li className="text-foreground">富山の鍵開け・鍵交換業者おすすめ5選</li>
             </ol>
           </nav>
 
           {/* h1・更新日・タグchips */}
           <header className="grid gap-4">
             <h1 className="text-2xl md:text-[32px] font-bold leading-normal tracking-wide text-foreground">
-              【2026年最新】岡山の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較
+              【2026年最新】富山の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較
             </h1>
             <div>
               <span className="inline-block rounded-[2px] bg-primary px-2 py-1 text-xs font-bold tracking-wide text-white">
@@ -401,7 +401,7 @@ export default function AreaOkayamaPage() {
               <span>PR掲載も含みます</span>
             </div>
             <ul className="flex flex-wrap gap-2">
-              {["岡山", "鍵開け", "鍵交換", "24時間対応", "業者比較"].map((t) => (
+              {["富山", "鍵開け", "鍵交換", "24時間対応", "業者比較"].map((t) => (
                 <li
                   key={t}
                   className="rounded-[2px] border border-border bg-white px-3 py-1.5 text-xs md:text-sm font-bold tracking-wide text-foreground shadow-[0px_2px_2px_0px_rgba(0,0,0,0.12)]"
@@ -413,7 +413,7 @@ export default function AreaOkayamaPage() {
             <figure className="overflow-hidden rounded-[2px]">
               <Image
                 src="/images/kv-top.jpg"
-                alt="岡山の鍵開け・鍵交換業者の比較"
+                alt="富山の鍵開け・鍵交換業者の比較"
                 width={1024}
                 height={1024}
                 className="w-full h-52 md:h-72 object-cover"
@@ -425,10 +425,10 @@ export default function AreaOkayamaPage() {
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
             <p className="mb-4">
-              「駐輪場で自転車の鍵をなくして帰れない」「通学中の子どもが家の鍵を落としてきた」——平坦な市街地で自転車移動が身近な岡山では、玄関の鍵だけでなく、自転車・原付の鍵や通学する子どもの鍵まで、家庭内の鍵トラブルの範囲が広くなりがちです。トラブルの種類ごとに適切な頼み先が異なるため、どこに何を頼めるのかを知っておくと、いざというとき遠回りせずに済みます。
+              「親の家の合鍵を持っているが、いつ作ったものか覚えていない」「二世帯住宅で玄関を共有しているのに、鍵の本数を数えたことがない」——親世帯との行き来が日常にある家庭では、1つの玄関の鍵を複数の世帯で分け合う場面が自然と生まれます。富山で暮らす家族にとっても、こうした「家族の間で共有する鍵」の管理は身近なテーマです。共有が長くなるほど本数と持ち主はあいまいになりやすく、意識して整理する機会が必要になります。
             </p>
             <p>
-              本記事では、岡山市内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報だけで比較しました。自転車・原付の鍵をなくしたときの頼み先や、通学する子どもに家の鍵を持たせるときの注意点もまとめています。ぜひ鍵業者選びの参考にしてください。
+              本記事では、富山市内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報だけで比較しました。あわせて、二世帯・親世帯の家の鍵を家族で共有するときの決めごとと、交換を考えるタイミングもまとめています。ぜひ鍵業者選びの参考にしてください。
             </p>
           </div>
 
@@ -471,16 +471,16 @@ export default function AreaOkayamaPage() {
           </nav>
 
           {/* 1｜5選 */}
-          <H2 id="okayama5" num="1">岡山で人気のおすすめ・優良の鍵業者5選</H2>
+          <H2 id="toyama5" num="1">富山で人気のおすすめ・優良の鍵業者5選</H2>
           <p className="leading-loose mb-2">
-            岡山市内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
+            富山市内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
           </p>
           <p className="text-sm text-text-muted mb-8">
-            ※他の都市の比較は、<Link href="/area/hiroshima/" className="text-primary underline">広島版</Link>・<Link href="/area/kobe/" className="text-primary underline">神戸版</Link>もご覧ください。
+            ※他の都市の比較は、<Link href="/area/kanazawa/" className="text-primary underline">金沢版</Link>・<Link href="/area/niigata/" className="text-primary underline">新潟版</Link>・<Link href="/area/nagano/" className="text-primary underline">長野版</Link>もご覧ください。
           </p>
 
           <h3 id="hikaku" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
-            岡山の鍵業者を一覧表で徹底比較
+            富山の鍵業者を一覧表で徹底比較
             <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
           </h3>
           <div className="overflow-x-auto mb-4">
@@ -570,7 +570,7 @@ export default function AreaOkayamaPage() {
           ))}
 
           {/* 2｜急ぎ */}
-          <H2 id="isogi" num="2">岡山の鍵業者をとにかく急いで開けてほしいなら</H2>
+          <H2 id="isogi" num="2">富山の鍵業者をとにかく急いで開けてほしいなら</H2>
           <p className="leading-loose mb-4">
             締め出しなどで一刻も早く開けてほしい場合は、駆けつけスピードの目安を公表している業者が候補になります。<Hl>鍵の生活救急車は最短15分の駆けつけと全国約2,270店の拠点網</Hl>をうたっており、拠点数の多さは到着スピードの裏付けになります。また、<Hl>カギ110番は電話一本で最短5分の手配</Hl>（全国47都道府県の加盟店ネットワークから近隣の業者を手配）を掲げています。
           </p>
@@ -581,7 +581,7 @@ export default function AreaOkayamaPage() {
           {/* 3｜深夜 */}
           <H2 id="shinya" num="3">深夜・早朝の鍵トラブルなら</H2>
           <p className="leading-loose mb-4">
-            深夜の帰宅時に玄関の鍵がない、夜の駐輪場で自転車の鍵が見当たらない——夜間の紛失や締め出しで頼れるのは24時間受付の業者です。一次確認値では<Hl>カギ110番・JBR・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。特にJBRは賠償責任保険に加入した大手グループで、夜間の緊急依頼でも相談しやすい体制です。
+            富山でも、深夜の締め出しや帰宅後に紛失へ気づくトラブルは起こり得ます。この時間帯に頼れるのは24時間受付の業者で、一次確認値では<Hl>カギ110番・JBR・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。特にJBRは賠償責任保険に加入した大手グループで、夜間の緊急依頼でも相談しやすい体制です。
           </p>
           <p className="leading-loose mb-4 text-sm text-text-muted">
             ※受付が24時間でも、深夜帯は割増料金や到着時間の変動があり得ます。電話時に深夜料金の有無と総額を確認してから依頼するのが安心です。
@@ -602,20 +602,20 @@ export default function AreaOkayamaPage() {
             鍵業者には、依頼を受けて加盟店を手配する「紹介型」と、自社のスタッフが直接対応する「自社対応型」があります。紹介型は対応範囲が広い一方、店舗によって技術・対応に差が出ることがあります。今回の5社では、<Hl>鍵のレスキューが全国約20拠点を自社社員で対応する自社対応型</Hl>で、女性スタッフの指名にも対応しています。担当者の所属まで気になる方は、依頼時に「自社スタッフか協力店か」を確認してみましょう。
           </p>
 
-          {/* 6｜岡山特有 */}
-          <H2 id="okayama-tips" num="6">岡山で鍵業者を呼ぶ前に確認したいこと（自転車・原付の鍵、子どもの鍵）</H2>
+          {/* 6｜富山特有 */}
+          <H2 id="toyama-tips" num="6">富山で鍵業者を呼ぶ前に確認したいこと（二世帯・親世帯の家の鍵の共有と交換のタイミング）</H2>
           <p className="leading-loose mb-4">
-            自転車の鍵をなくしたときの選択肢は、<Hl>鍵業者による解錠・破壊解錠と、自転車店での錠前交換</Hl>の大きく2つです。リング錠（馬蹄錠）は解錠か壊して交換、ワイヤー錠は切断して買い替えが基本になります。外出先で動かせないのか、自宅まで押して帰れるのかで、出張してもらう価値も変わります。判断の流れは<Link href="/jitensha-kagi/" className="text-primary underline">自転車の鍵をなくしたときの対処法</Link>で詳しく解説しています。
+            家族の間で鍵を共有する場合も、基本は<Hl>「誰が・どの家の鍵を・何本持っているか」を記録して共有する</Hl>ことです。子世帯が持つ実家の合鍵、親戚に預けている1本、介護サービスの担当者に渡している鍵など、長い年月の間に本数は静かに増えていきます。合鍵は純正キーから作るのが原則で、すり減った合鍵からの複製は不具合のもとです。<Link href="/aikagi/" className="text-primary underline">合鍵の解説記事</Link>で基礎を確認しておきましょう。
           </p>
           <p className="leading-loose mb-4">
-            原付・バイクの鍵は、<Hl>鍵をなくしてもシリンダーから鍵を作成できる場合があり、メットインへの閉じ込めにも鍵業者が対応</Hl>できます。ハンドルロックがかかったままだと押して移動するのも難しいため、現地への出張対応が前提になります。車種と状況を電話で伝えて、対応可否と概算を確認しましょう。詳しくは<Link href="/bike-kagi-funshitsu/" className="text-primary underline">バイクの鍵紛失の対処法</Link>をご覧ください。
+            交換を考える節目は、<Hl>「鍵を持つ人が変わったとき」と「錠そのものが寿命を迎えたとき」</Hl>の2つです。同居の開始、家の引き継ぎ、渡した鍵の行方が分からなくなったときは前者に当たります。また、長年使った錠は内部が摩耗し、抜き差しの引っかかりとして症状が現れます。判断の目安は<Link href="/kagi-koukan-timing/" className="text-primary underline">鍵交換のタイミング</Link>と<Link href="/kagi-jumyou/" className="text-primary underline">鍵の寿命の解説記事</Link>で詳しく説明しています。
           </p>
           <p className="leading-loose mb-4">
-            通学する子どもに家の鍵を持たせるなら、<Hl>ランドセルや通学カバンの内側にリール式キーホルダーで固定し、鍵を外から見せない</Hl>のが基本です。首から下げると外から見えて防犯上のリスクになるうえ、遊具などに引っかかる危険もあります。なくしたときに親へすぐ伝えるルールを決めておくことも大切です。持たせ方の工夫は<Link href="/kodomo-pet-kagi-taisaku/" className="text-primary underline">子ども・ペットの鍵対策</Link>、なくしたときの手順は<Link href="/kagi-funshitsu/" className="text-primary underline">鍵をなくしたときの対処法</Link>で解説しています。
+            離れて暮らす親世帯の家については、<Hl>物理鍵の予備を誰が持つかをあらかじめ決めておく</Hl>と、急な駆けつけの際に慌てません。暗証番号式や電子錠に切り替えて、番号の共有や合鍵機能で家族の出入りを管理する方法もありますが、電池切れ・停電時の解錠手段の確認が前提です。<Link href="/smart-lock/" className="text-primary underline">スマートロックの解説記事</Link>と<Link href="/denshijou-denchigire/" className="text-primary underline">電子錠の電池切れの解説記事</Link>もあわせてご覧ください。
           </p>
 
           {/* 7｜選び方 */}
-          <H2 id="erabikata" num="7">岡山の鍵業者の失敗しない選び方</H2>
+          <H2 id="erabikata" num="7">富山の鍵業者の失敗しない選び方</H2>
           <p className="leading-loose mb-6">
             鍵業者選びで後悔しないためには、次の4つのステップを踏むことが大切です。緊急時ほど「早く解決したいから」と即決しがちですが、数分の確認でトラブルの多くは防げます。
           </p>
@@ -630,7 +630,7 @@ export default function AreaOkayamaPage() {
           ))}
 
           {/* 8｜FAQ */}
-          <H2 id="faq" num="8">岡山の鍵業者でよくある質問</H2>
+          <H2 id="faq" num="8">富山の鍵業者でよくある質問</H2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <div key={f.q} className="rounded-[2px] border border-border">
@@ -648,22 +648,22 @@ export default function AreaOkayamaPage() {
                         <Link href="/ryokin/" className="text-primary underline">料金相場の詳細はこちら</Link>
                       </>
                     )}
-                    {f.q.includes("自転車") && (
+                    {f.q.includes("合鍵を子世帯で") && (
                       <>
                         {" "}
-                        <Link href="/jitensha-kagi/" className="text-primary underline">自転車の鍵の対処法はこちら</Link>
+                        <Link href="/aikagi/" className="text-primary underline">合鍵の基礎知識はこちら</Link>
                       </>
                     )}
-                    {f.q.includes("子ども") && (
+                    {f.q.includes("相続したら") && (
                       <>
                         {" "}
-                        <Link href="/kodomo-pet-kagi-taisaku/" className="text-primary underline">子どもの鍵対策はこちら</Link>
+                        <Link href="/kagi-koukan-timing/" className="text-primary underline">鍵交換のタイミングの解説はこちら</Link>
                       </>
                     )}
-                    {f.q.includes("賃貸") && (
+                    {f.q.includes("分けたほうが") && (
                       <>
                         {" "}
-                        <Link href="/shimedashi/" className="text-primary underline">締め出し時の対処法はこちら</Link>
+                        <Link href="/smart-lock/" className="text-primary underline">スマートロックの解説はこちら</Link>
                       </>
                     )}
                   </span>
@@ -675,10 +675,10 @@ export default function AreaOkayamaPage() {
           {/* 9｜まとめ */}
           <H2 id="matome" num="9">まとめ</H2>
           <p className="leading-loose mb-4">
-            岡山で鍵開け・鍵交換を頼める主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。スピード重視なら鍵の生活救急車やカギ110番、深夜・早朝のトラブルならカギ110番・JBR・鍵のレスキュー、料金の明確さ重視なら鍵のレスキュー、というように、目的によって向いている業者は変わります。
+            富山で鍵開け・鍵交換を頼める主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。スピード重視なら鍵の生活救急車やカギ110番、深夜・早朝のトラブルならカギ110番・JBR・鍵のレスキュー、料金の明確さ重視なら鍵のレスキュー、というように、目的によって向いている業者は変わります。
           </p>
           <p className="leading-loose mb-8">
-            自転車・原付の鍵は「動かせるかどうか」で鍵業者と自転車店・バイク店を使い分け、子どもの鍵は見せない持たせ方となくしたときのルールづくりで備えるのがポイントです。どの依頼でも、作業前に出張費まで含めた総額の見積もりを確認することが失敗しないための共通ルールです。本記事の一次確認値を出発点に、状況に合った業者を選んでください。
+            家族で共有する鍵は、本数と持ち主の記録が管理の土台です。同居の開始や家の引き継ぎ、渡した鍵の行方が分からなくなったときは、シリンダー交換で「開けられる人」を整理し直すことも検討しましょう。日程が読める依頼だからこそ、複数社から総額の見積もりを取って比較することが失敗しないためのポイントです。本記事の一次確認値を出発点に、状況に合った業者を選んでください。
           </p>
           <div className="rounded-[2px] bg-primary text-white p-6 text-center">
             <p className="font-bold text-lg mb-2">鍵のトラブルでお困りの方へ</p>
@@ -695,7 +695,7 @@ export default function AreaOkayamaPage() {
           <div className="mt-12">
             <p className="text-sm font-bold text-text-muted mb-3">タグ</p>
             <ul className="flex flex-wrap gap-2">
-              {["岡山", "鍵開け", "鍵交換", "24時間対応", "業者比較", "エリア別"].map((t) => (
+              {["富山", "鍵開け", "鍵交換", "24時間対応", "業者比較", "エリア別"].map((t) => (
                 <li
                   key={t}
                   className="rounded-[2px] border border-border bg-white px-3 py-1.5 text-xs md:text-sm font-bold tracking-wide text-foreground shadow-[0px_2px_2px_0px_rgba(0,0,0,0.12)]"
@@ -728,6 +728,7 @@ export default function AreaOkayamaPage() {
                 { href: "/area/kitakyushu/", label: "北九州の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/hamamatsu/", label: "浜松の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/shizuoka/", label: "静岡の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/okayama/", label: "岡山の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kumamoto/", label: "熊本の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/niigata/", label: "新潟の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kagoshima/", label: "鹿児島の鍵開け・鍵交換業者おすすめ5選" },
@@ -740,7 +741,6 @@ export default function AreaOkayamaPage() {
                 { href: "/area/gifu/", label: "岐阜の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/mito/", label: "水戸の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/maebashi/", label: "前橋の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/toyama/", label: "富山の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/fukui/", label: "福井の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kofu/", label: "甲府の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagasaki/", label: "長崎の鍵開け・鍵交換業者おすすめ5選" },
@@ -766,9 +766,9 @@ export default function AreaOkayamaPage() {
               {[
                 { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場" },
                 { href: "/ryokin-index/", label: "主要業者の料金一次確認まとめ" },
-                { href: "/jitensha-kagi/", label: "自転車の鍵をなくしたときの対処法" },
-                { href: "/bike-kagi-funshitsu/", label: "バイクの鍵紛失の対処法" },
-                { href: "/kodomo-pet-kagi-taisaku/", label: "子ども・ペットの鍵対策" },
+                { href: "/aikagi/", label: "合鍵の基礎知識" },
+                { href: "/kagi-koukan-timing/", label: "鍵交換のタイミング" },
+                { href: "/smart-lock/", label: "スマートロックの基礎知識" },
                 { href: "/agents/", label: "鍵業者一覧・比較" },
               ].map((l) => (
                 <li key={l.href}>
