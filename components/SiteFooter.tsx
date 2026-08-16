@@ -70,7 +70,10 @@ export default function SiteFooter() {
                 <Link href="/area/mito/" className="hover:text-white transition-colors">水戸</Link>・<Link href="/area/maebashi/" className="hover:text-white transition-colors">前橋</Link>・<Link href="/area/toyama/" className="hover:text-white transition-colors">富山</Link>・<Link href="/area/fukui/" className="hover:text-white transition-colors">福井</Link>・<Link href="/area/kofu/" className="hover:text-white transition-colors">甲府</Link>
               </li>
               <li>
-                <Link href="/area/nagasaki/" className="hover:text-white transition-colors">長崎</Link>・<Link href="/area/oita/" className="hover:text-white transition-colors">大分</Link>・<Link href="/area/miyazaki/" className="hover:text-white transition-colors">宮崎</Link>
+                <Link href="/area/nagasaki/" className="hover:text-white transition-colors">長崎</Link>・<Link href="/area/oita/" className="hover:text-white transition-colors">大分</Link>・<Link href="/area/miyazaki/" className="hover:text-white transition-colors">宮崎</Link>・<Link href="/area/morioka/" className="hover:text-white transition-colors">盛岡</Link>・<Link href="/area/akita/" className="hover:text-white transition-colors">秋田</Link>・<Link href="/area/yamagata/" className="hover:text-white transition-colors">山形</Link>
+              </li>
+              <li>
+                <Link href="/area/fukushima/" className="hover:text-white transition-colors">福島</Link>・<Link href="/area/tsu/" className="hover:text-white transition-colors">津</Link>・<Link href="/area/otsu/" className="hover:text-white transition-colors">大津</Link>・<Link href="/area/wakayama/" className="hover:text-white transition-colors">和歌山</Link>・<Link href="/area/tokushima/" className="hover:text-white transition-colors">徳島</Link>
               </li>
             </ul>
           </div>

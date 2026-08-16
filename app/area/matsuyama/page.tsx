@@ -746,6 +746,14 @@ export default function AreaMatsuyamaPage() {
                 { href: "/area/nagasaki/", label: "長崎の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/oita/", label: "大分の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/miyazaki/", label: "宮崎の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/morioka/", label: "盛岡の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/akita/", label: "秋田の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/yamagata/", label: "山形の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/fukushima/", label: "福島の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/tsu/", label: "津の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/otsu/", label: "大津の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/wakayama/", label: "和歌山の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/tokushima/", label: "徳島の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
