@@ -3,23 +3,23 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
-const PATH = "/area/tokyo/";
-const UPDATED = "2026年8月9日";
-const UPDATED_ISO = "2026-08-09";
+const PATH = "/area/shinagawa-ku/";
+const UPDATED = "2026年8月16日";
+const UPDATED_ISO = "2026-08-16";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "【2026年最新】東京の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較｜鍵トラブルナビ",
+      "【2026年最新】品川区の鍵開け・鍵交換業者おすすめ5選！単身赴任・転勤の入退去で慌てない鍵の段取りも分かる鍵屋比較｜鍵トラブルナビ",
   },
   description:
-    "東京で鍵開け・鍵交換を頼める鍵業者5社を一次確認値で比較。カギ110番（鍵開け6,600円〜）・鍵の生活救急車（最短15分）・JBR・鍵のレスキュー・カギの救急車の料金と受付時間、賃貸で業者を呼ぶ前に確認すべきこと、深夜対応や悪質業者の見分け方まで編集部が中立にまとめました。",
+    "品川区で鍵開け・鍵交換を頼める鍵業者5社を一次確認値で比較。カギ110番（鍵開け6,600円〜）・鍵の生活救急車（最短15分）・JBR・鍵のレスキュー・カギの救急車の料金と受付時間、単身赴任・転勤の入居から退去までの鍵の段取りまで編集部が中立にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title:
-      "【2026年最新】東京の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
+      "【2026年最新】品川区の鍵開け・鍵交換業者おすすめ5選！単身赴任・転勤の入退去で慌てない鍵の段取りも分かる鍵屋比較",
     description:
-      "東京で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。賃貸で業者を呼ぶ前の確認事項や深夜対応の鍵屋の探し方も解説します。",
+      "品川区で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。入居時の鍵交換の確認、入居中の合鍵管理、退去時の全本数返却まで、転勤族の鍵の段取りを時系列で解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
     images: ["/images/kv-top.jpg"],
@@ -41,6 +41,12 @@ interface AreaAgent {
   memoDate: string;
 }
 
+interface AreaFaq {
+  q: string;
+  a: string;
+  link?: { href: string; label: string };
+}
+
 const agents: AreaAgent[] = [
   {
     id: "kagi110ban",
@@ -53,7 +59,7 @@ const agents: AreaAgent[] = [
         カギ110番は、東証グロース上場の
         <Hl>シェアリングテクノロジー株式会社が運営する加盟店紹介型の鍵トラブル解決サービス</Hl>
         です。<Hl>鍵開け6,600円〜（税込・公式表示）</Hl>
-        で、24時間365日受付・電話一本で最短5分の手配をうたっています。全国47都道府県の加盟店ネットワークが対象のため、東京都内の依頼でも近隣の加盟店が手配される仕組みです。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
+        で、24時間365日受付・電話一本で最短5分の手配をうたっています。全国47都道府県の加盟店ネットワークが対象のため、品川区内の依頼でも近隣の加盟店が手配される仕組みです。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
       </>
     ),
     recommend: [
@@ -65,7 +71,7 @@ const agents: AreaAgent[] = [
     table: [
       { k: "鍵開け料金", v: "6,600円〜（税込）", note: "公式表示・2026年7月4日確認。加盟店・エリアにより異なる場合あり" },
       { k: "受付時間", v: "24時間365日" },
-      { k: "対応エリア", v: "全国47都道府県（東京都対応）" },
+      { k: "対応エリア", v: "全国47都道府県（東京都対応）", note: "東京都対応の一次確認値。品川区での詳細な対応可否・条件は依頼時に各社へ確認" },
       { k: "見積もり", v: "無料", note: "交通費・キャンセル料は別途発生する場合ありと公式記載" },
       { k: "運営会社", v: "シェアリングテクノロジー株式会社" },
     ],
@@ -235,11 +241,11 @@ const compareRows = agents.map((a) => ({
 const steps = [
   {
     t: "① 状況と鍵の種類を整理する",
-    b: "「開かない」「なくした」「折れた」など状況と、玄関・車・金庫といった対象、ディンプルキーなど鍵の種類をメモしておくと、電話での見積もり精度が上がります。賃貸の場合は、業者より先に管理会社・大家への連絡が基本です。",
+    b: "「入居する部屋の鍵を交換したい」「退去までに合鍵を揃えたい」など目的と期日、賃貸なら管理会社の連絡先をメモしておくと段取りがスムーズです。賃貸の鍵まわりの交換・変更は、業者より先に管理会社・大家への確認が基本です。",
   },
   {
     t: "② 出張費・夜間料金を含めた総額の見積もりを取る",
-    b: "広告の「◯◯円〜」は最低価格で、実際は鍵の種類・出張距離・時間帯で変わります。作業前に、出張費・部材費・深夜割増まで含めた総額を必ず確認しましょう。見積もり無料・キャンセル無料の業者なら、金額を見てから断ることもできます。",
+    b: "広告の「◯◯円〜」は最低価格で、実際は鍵の種類・出張距離・時間帯で変わります。深夜に呼ぶ場合は、深夜割増の有無が総額を大きく左右します。作業前に、出張費・部材費・深夜割増まで含めた総額を必ず確認しましょう。見積もり無料・キャンセル無料の業者なら、金額を見てから断ることもできます。",
   },
   {
     t: "③ 運営会社を確認する",
@@ -247,22 +253,34 @@ const steps = [
   },
   {
     t: "④ 急ぎでなければ複数社を比較する",
-    b: "締め出しなどの緊急時以外は、2〜3社から見積もりを取って総額・条件を比較するのがおすすめです。金額に納得できない場合は、その場で契約せず一度断る選択肢もあります。",
+    b: "締め出しなどの緊急時以外は、2〜3社から見積もりを取って総額・条件を比較するのがおすすめです。今回の5社はいずれも全国対応型で、品川区からも依頼できます（対応エリアは「東京都」としての一次確認値のため、詳細条件は各社へ確認を）。金額に納得できない場合は、その場で契約せず一度断る選択肢もあります。",
   },
 ];
 
-const faqs = [
+const faqs: AreaFaq[] = [
   {
-    q: "東京の鍵開け料金の相場はいくらですか？",
+    q: "品川区の鍵開け料金の相場はいくらですか？",
     a: "当サイトが一次確認した各社の公式表示では、鍵開けの基本料金はカギ110番6,600円〜、鍵のレスキュー8,000円〜、鍵の生活救急車・JBR8,800円〜（いずれも税込）、カギの救急車は公式目安11,000〜44,000円です。ただしこれは最低価格や目安で、鍵の種類（ディンプルキー等）・時間帯・出張距離で総額は変わります。作業前に総額の見積もりを取りましょう。詳しくは鍵開け・鍵交換の料金相場ページで解説しています。",
+    link: { href: "/ryokin/", label: "料金相場の詳細はこちら" },
   },
   {
-    q: "深夜や早朝でも東京に来てくれますか？",
-    a: "カギ110番・JBR・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし深夜帯は割増料金や到着時間の変動があり得るため、電話の際に深夜料金の有無と到着目安を確認してから依頼するのがおすすめです。",
+    q: "深夜や早朝でも品川区に来てくれますか？",
+    a: "カギ110番・JBR・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし深夜帯は割増料金や到着時間の変動があり得るため、電話の際に深夜料金の有無と到着目安を確認してから依頼するのがおすすめです。なお各社の対応エリアは「東京都」としての一次確認値のため、品川区での詳細は依頼時に各社へご確認ください。",
   },
   {
-    q: "賃貸マンションで勝手に鍵交換してもいいですか？",
-    a: "賃貸の鍵は大家・管理会社の管理物にあたるため、無断で交換すると契約違反となる恐れがあります。締め出しや紛失のときも、まず管理会社・大家に連絡しましょう。合鍵やマスターキーで開けてもらえる場合があり、費用がかからずに済むこともあります。交換が必要な場合も、必ず事前に許可を取ってから行いましょう。",
+    q: "入居時の鍵交換は必ず必要ですか？費用は誰の負担ですか？",
+    a: "法律で義務付けられているものではなく、実施の有無も費用負担も契約・物件によって異なります。前の入居者や出所の分からない合鍵のリスクを断つ意味で、交換されているかどうかを入居前に確認するのがおすすめです。交換費用を入居者負担とする契約も多いため、金額と内訳は契約書・重要事項説明で確認しましょう。",
+    link: { href: "/chintai-kagi-koukan-hiyou/", label: "賃貸の鍵交換費用はこちら" },
+  },
+  {
+    q: "転勤で退去しますが、合鍵を1本なくしたままです。どうすればいいですか？",
+    a: "隠さずに管理会社・大家へ申告するのが最善です。鍵が全数返却されない場合、防犯上の理由からシリンダー交換費用を請求されるのが一般的で、金額や負担割合は契約によります。退去立ち会いの当日に発覚すると精算がこじれやすいため、退去日が決まった時点で本数を確認し、早めに相談しましょう。",
+    link: { href: "/taikyo-kagi-trouble/", label: "退去時の鍵トラブルはこちら" },
+  },
+  {
+    q: "単身赴任先の合鍵を家族に渡しておきたいのですが、問題ありませんか？",
+    a: "賃貸では合鍵の作製に貸主・管理会社の承諾を求める契約が一般的なので、まず契約内容を確認しましょう。承諾を得て作る場合も、鍵番号が写った写真をSNSなどに載せない・渡した本数を把握しておく・退去時に全数回収する、の3点を守ると安心です。",
+    link: { href: "/aikagi/", label: "合鍵の基礎知識はこちら" },
   },
   {
     q: "悪質な鍵業者を見分けるにはどうすればいいですか？",
@@ -305,16 +323,16 @@ function H4({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function AreaTokyoPage() {
+export default function AreaShinagawaKuPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "【2026年最新】東京の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
+      "【2026年最新】品川区の鍵開け・鍵交換業者おすすめ5選！単身赴任・転勤の入退去で慌てない鍵の段取りも分かる鍵屋比較",
     description:
-      "東京で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較した記事です。",
+      "品川区で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
-    datePublished: "2026-08-09T00:00:00+09:00",
+    datePublished: "2026-08-16T00:00:00+09:00",
     dateModified: `${UPDATED_ISO}T00:00:00+09:00`,
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
@@ -334,16 +352,16 @@ export default function AreaTokyoPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "鍵トラブルナビ", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "東京の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
+      { "@type": "ListItem", position: 2, name: "品川区の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
     ],
   };
 
   const toc: { href: string; label: string; sub?: { href: string; label: string }[] }[] = [
     {
-      href: "#tokyo5",
-      label: "1｜東京で人気のおすすめ・優良の鍵業者5選",
+      href: "#top5",
+      label: "1｜品川区で人気のおすすめ・優良の鍵業者5選",
       sub: [
-        { href: "#hikaku", label: "東京の鍵業者を一覧表で徹底比較" },
+        { href: "#hikaku", label: "品川区の鍵業者を一覧表で徹底比較" },
         ...agents.map((a) => ({ href: `#${a.id}`, label: `${a.num}｜【${a.catch}】${a.name}` })),
       ],
     },
@@ -351,9 +369,9 @@ export default function AreaTokyoPage() {
     { href: "#shinya", label: "3｜深夜・早朝のトラブルなら" },
     { href: "#meikaku", label: "4｜料金を事前に明確にしたいなら" },
     { href: "#jisha", label: "5｜自社スタッフ対応にこだわるなら" },
-    { href: "#tokyo-tips", label: "6｜東京で鍵業者を呼ぶ前に確認したいこと" },
+    { href: "#tips", label: "6｜品川区で鍵業者を呼ぶ前に確認したいこと（単身赴任・転勤の入退去と鍵の段取り）" },
     { href: "#erabikata", label: "7｜失敗しない鍵業者の選び方" },
-    { href: "#faq", label: "8｜東京の鍵業者でよくある質問" },
+    { href: "#faq", label: "8｜品川区の鍵業者でよくある質問" },
     { href: "#matome", label: "9｜まとめ" },
   ];
 
@@ -372,14 +390,14 @@ export default function AreaTokyoPage() {
                 <Link href="/" className="hover:underline">鍵トラブルナビ</Link>
               </li>
               <li>/</li>
-              <li className="text-foreground">東京の鍵開け・鍵交換業者おすすめ5選</li>
+              <li className="text-foreground">品川区の鍵開け・鍵交換業者おすすめ5選</li>
             </ol>
           </nav>
 
           {/* h1・更新日・タグchips */}
           <header className="grid gap-4">
             <h1 className="text-2xl md:text-[32px] font-bold leading-normal tracking-wide text-foreground">
-              【2026年最新】東京の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較
+              【2026年最新】品川区の鍵開け・鍵交換業者おすすめ5選！単身赴任・転勤の入退去で慌てない鍵の段取りも分かる鍵屋比較
             </h1>
             <div>
               <span className="inline-block rounded-[2px] bg-primary px-2 py-1 text-xs font-bold tracking-wide text-white">
@@ -393,7 +411,7 @@ export default function AreaTokyoPage() {
               <span>PR掲載も含みます</span>
             </div>
             <ul className="flex flex-wrap gap-2">
-              {["東京", "鍵開け", "鍵交換", "24時間対応", "業者比較"].map((t) => (
+              {["品川区", "鍵開け", "鍵交換", "24時間対応", "業者比較"].map((t) => (
                 <li
                   key={t}
                   className="rounded-[2px] border border-border bg-white px-3 py-1.5 text-xs md:text-sm font-bold tracking-wide text-foreground shadow-[0px_2px_2px_0px_rgba(0,0,0,0.12)]"
@@ -405,7 +423,7 @@ export default function AreaTokyoPage() {
             <figure className="overflow-hidden rounded-[2px]">
               <Image
                 src="/images/kv-top.jpg"
-                alt="東京の鍵開け・鍵交換業者の比較"
+                alt="品川区の鍵開け・鍵交換業者の比較"
                 width={1024}
                 height={1024}
                 className="w-full h-52 md:h-72 object-cover"
@@ -417,10 +435,10 @@ export default function AreaTokyoPage() {
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
             <p className="mb-4">
-              「鍵をなくして家に入れない」「引っ越し先の鍵を交換したい」——東京で鍵トラブルにあったとき、どの業者に頼めばよいか迷う方は多いはずです。鍵業者は料金体系や受付時間、運営会社の形態（自社対応か加盟店手配か）がそれぞれ異なり、名前のよく似たサービスも複数あるため、比較せずに選ぶと後悔につながりかねません。
+              「辞令が出て、来月から単身赴任」「数年ごとの転勤で、入居と退去を繰り返している」——交通の便がよく、単身赴任や転勤にともなう住み替えの多い品川区では、入退去のたびに発生する鍵の段取りが悩みどころです。入居時の鍵交換、暮らしている間の合鍵、退去時の返却まで、節目ごとにやるべきことを押さえておくと、余計な出費とトラブルを防げます。
             </p>
             <p>
-              本記事では、東京都内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報だけで比較しました。急ぎ・深夜・料金重視といった目的別の選び方や、賃貸の多い東京ならではの「業者を呼ぶ前に確認すべきこと」もまとめています。ぜひ鍵業者選びの参考にしてください。
+              本記事では、品川区内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報だけで比較しました。あわせて、単身赴任・転勤の入居から退去までの鍵の段取りを時系列で整理しています。ぜひ鍵業者選びの参考にしてください。
             </p>
           </div>
 
@@ -463,16 +481,16 @@ export default function AreaTokyoPage() {
           </nav>
 
           {/* 1｜5選 */}
-          <H2 id="tokyo5" num="1">東京で人気のおすすめ・優良の鍵業者5選</H2>
+          <H2 id="top5" num="1">品川区で人気のおすすめ・優良の鍵業者5選</H2>
           <p className="leading-loose mb-2">
-            東京都内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
+            品川区内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。各社の対応エリアは「東京都」としての一次確認値のため、品川区での詳細な対応可否・条件は依頼時に各社へご確認ください。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
           </p>
           <p className="text-sm text-text-muted mb-8">
-            ※関西エリアの方は、関西中心に対応する<Link href="/agents/kagizaru/" className="text-primary underline">鍵猿</Link>も選択肢になります（<Link href="/area/osaka/" className="text-primary underline">大阪版の比較記事</Link>に掲載しています）。
+            ※<Link href="/area/tokyo/" className="text-primary underline">東京都全体の情報はこちら</Link>（東京都版では都内の主要5社を同じ一次確認値で比較しています）。
           </p>
 
           <h3 id="hikaku" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
-            東京の鍵業者を一覧表で徹底比較
+            品川区の鍵業者を一覧表で徹底比較
             <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
           </h3>
           <div className="overflow-x-auto mb-4">
@@ -562,7 +580,7 @@ export default function AreaTokyoPage() {
           ))}
 
           {/* 2｜急ぎ */}
-          <H2 id="isogi" num="2">東京の鍵業者をとにかく急いで開けてほしいなら</H2>
+          <H2 id="isogi" num="2">品川区の鍵業者をとにかく急いで開けてほしいなら</H2>
           <p className="leading-loose mb-4">
             締め出しなどで一刻も早く開けてほしい場合は、駆けつけスピードの目安を公表している業者が候補になります。<Hl>鍵の生活救急車は最短15分の駆けつけと全国約2,270店の拠点網</Hl>をうたっており、拠点数の多さは到着スピードの裏付けになります。また、<Hl>カギ110番は電話一本で最短5分の手配</Hl>（全国47都道府県の加盟店ネットワークから近隣の業者を手配）を掲げています。
           </p>
@@ -573,7 +591,7 @@ export default function AreaTokyoPage() {
           {/* 3｜深夜 */}
           <H2 id="shinya" num="3">深夜・早朝の鍵トラブルなら</H2>
           <p className="leading-loose mb-4">
-            深夜・早朝のトラブルでは、24時間受付かどうかがまず重要です。一次確認値では、<Hl>カギ110番・JBR・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。特にJBRは賠償責任保険に加入した大手グループで、夜間の緊急依頼でも相談しやすい体制です。
+            品川区でも、深夜の締め出しや帰宅後に紛失へ気づくトラブルは起こり得ます。この時間帯に頼れるのは24時間受付の業者で、一次確認値では<Hl>カギ110番・JBR・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。特にJBRは賠償責任保険に加入した大手グループで、夜間の緊急依頼でも相談しやすい体制です。
           </p>
           <p className="leading-loose mb-4 text-sm text-text-muted">
             ※受付が24時間でも、深夜帯は割増料金や到着時間の変動があり得ます。電話時に深夜料金の有無と総額を確認してから依頼するのが安心です。
@@ -594,20 +612,20 @@ export default function AreaTokyoPage() {
             鍵業者には、依頼を受けて加盟店を手配する「紹介型」と、自社のスタッフが直接対応する「自社対応型」があります。紹介型は対応範囲が広い一方、店舗によって技術・対応に差が出ることがあります。今回の5社では、<Hl>鍵のレスキューが全国約20拠点を自社社員で対応する自社対応型</Hl>で、女性スタッフの指名にも対応しています。担当者の所属まで気になる方は、依頼時に「自社スタッフか協力店か」を確認してみましょう。
           </p>
 
-          {/* 6｜東京特有 */}
-          <H2 id="tokyo-tips" num="6">東京で鍵業者を呼ぶ前に確認したいこと</H2>
+          {/* 6｜区特有 */}
+          <H2 id="tips" num="6">品川区で鍵業者を呼ぶ前に確認したいこと（単身赴任・転勤族の入退去と鍵の段取り）</H2>
           <p className="leading-loose mb-4">
-            東京は賃貸住宅の割合が高く、マンション・アパート住まいの方が多いエリアです。賃貸の鍵は大家・管理会社の管理物にあたるため、<Hl>締め出しや紛失のときは、鍵業者より先に管理会社・大家へ連絡するのが基本</Hl>です。合鍵やマスターキーで開けてもらえれば費用がかからずに済む場合があり、無断で鍵を開けたり交換したりすると契約上のトラブルになる恐れもあります。詳しい手順は<Link href="/shimedashi/" className="text-primary underline">鍵の閉じ込め・締め出しの対処法</Link>で解説しています。
+            入居時の出発点は、<Hl>鍵交換の実施の有無と費用負担を契約書で確認する</Hl>ことです。入居時の鍵交換は、前の入居者や出所の分からない合鍵のリスクを断つためのもので、実施の有無・負担者は物件によって異なります。交換されていない部屋を自費で交換したい場合も、必ず貸主・管理会社の承諾を得てから進めましょう。費用感は<Link href="/chintai-kagi-koukan-hiyou/" className="text-primary underline">賃貸の鍵交換費用</Link>、入居前後のやることは<Link href="/hikkoshi-kagi-checklist/" className="text-primary underline">引っ越しの鍵チェックリスト</Link>にまとめています。
           </p>
           <p className="leading-loose mb-4">
-            鍵をなくした場合は、<Hl>最寄りの警察署・交番への遺失届の提出</Hl>も忘れずに行いましょう。届け出ておくと、鍵が拾得物として届いた際に連絡を受けられます。防犯面から鍵交換を検討すべきケースなど、詳しくは<Link href="/kagi-funshitsu/" className="text-primary underline">鍵をなくしたときの対処法</Link>をご覧ください。
+            入居中は、<Hl>合鍵を勝手に増やさない</Hl>ことが大切です。賃貸の鍵は貸主からの貸与物で、複製に承諾を求める契約が一般的です。単身赴任で留守がちの住まいこそ、鍵をなくしたときは放置せず管理会社へ報告し、必要に応じて交換を相談しましょう。外出先で紛失したときの動き方は<Link href="/kagi-funshitsu/" className="text-primary underline">鍵をなくしたときの対処</Link>、合鍵の考え方は<Link href="/aikagi/" className="text-primary underline">合鍵の基礎知識</Link>を参考にしてください。
           </p>
           <p className="leading-loose mb-4">
-            また、業者に依頼する前に<Link href="/ryokin/" className="text-primary underline">料金相場</Link>をひと通り把握しておくと、見積もり金額が妥当かどうかを判断しやすくなります。
+            退去時は、<Hl>入居時に受け取った鍵と、承諾を得て作った合鍵を含む全本数の返却</Hl>が基本です。1本でも欠けていると、防犯上の理由からシリンダー交換費用を請求される場合があります。転勤の慌ただしさの中では、紛失に気づくのが退去直前になりがちです。退去日が決まったら、まず手元の鍵の本数を数えることから始めましょう。退去時に起きやすいトラブルと対処は<Link href="/taikyo-kagi-trouble/" className="text-primary underline">退去時の鍵トラブル</Link>で詳しく解説しています。
           </p>
 
           {/* 7｜選び方 */}
-          <H2 id="erabikata" num="7">東京の鍵業者の失敗しない選び方</H2>
+          <H2 id="erabikata" num="7">品川区の鍵業者の失敗しない選び方</H2>
           <p className="leading-loose mb-6">
             鍵業者選びで後悔しないためには、次の4つのステップを踏むことが大切です。緊急時ほど「早く解決したいから」と即決しがちですが、数分の確認でトラブルの多くは防げます。
           </p>
@@ -622,7 +640,7 @@ export default function AreaTokyoPage() {
           ))}
 
           {/* 8｜FAQ */}
-          <H2 id="faq" num="8">東京の鍵業者でよくある質問</H2>
+          <H2 id="faq" num="8">品川区の鍵業者でよくある質問</H2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <div key={f.q} className="rounded-[2px] border border-border">
@@ -634,16 +652,10 @@ export default function AreaTokyoPage() {
                   <span className="text-accent font-bold shrink-0">A.</span>
                   <span>
                     {f.a}
-                    {f.q.includes("相場") && (
+                    {f.link && (
                       <>
                         {" "}
-                        <Link href="/ryokin/" className="text-primary underline">料金相場の詳細はこちら</Link>
-                      </>
-                    )}
-                    {f.q.includes("賃貸") && (
-                      <>
-                        {" "}
-                        <Link href="/shimedashi/" className="text-primary underline">締め出し時の対処法はこちら</Link>
+                        <Link href={f.link.href} className="text-primary underline">{f.link.label}</Link>
                       </>
                     )}
                   </span>
@@ -655,10 +667,10 @@ export default function AreaTokyoPage() {
           {/* 9｜まとめ */}
           <H2 id="matome" num="9">まとめ</H2>
           <p className="leading-loose mb-4">
-            東京で鍵開け・鍵交換を頼める主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。スピード重視なら鍵の生活救急車やカギ110番、深夜・早朝ならカギ110番・JBR・鍵のレスキュー、料金の明確さ重視なら鍵のレスキュー、というように、目的によって向いている業者は変わります。
+            品川区で鍵開け・鍵交換を頼める主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。スピード重視なら鍵の生活救急車やカギ110番、深夜・早朝のトラブルならカギ110番・JBR・鍵のレスキュー、料金の明確さ重視なら鍵のレスキュー、というように、目的によって向いている業者は変わります。
           </p>
           <p className="leading-loose mb-8">
-            どの業者を選ぶ場合も、賃貸ならまず管理会社・大家への連絡、紛失なら警察への遺失届を済ませたうえで、作業前に総額の見積もりを確認することが失敗しないための共通ルールです。本記事の一次確認値を出発点に、状況に合った業者を選んでください。
+            単身赴任・転勤の住み替えは、入居時の「交換の有無と負担の確認」、入居中の「合鍵管理と紛失時の報告」、退去時の「全本数の返却」という3つの節目を押さえるだけで、鍵にまつわる出費とトラブルの多くを防げます。業者へ依頼する場面でも、賃貸では管理会社・大家への確認を先に。本記事の一次確認値を出発点に、状況に合った業者を選んでください。
           </p>
           <div className="rounded-[2px] bg-primary text-white p-6 text-center">
             <p className="font-bold text-lg mb-2">鍵のトラブルでお困りの方へ</p>
@@ -675,7 +687,7 @@ export default function AreaTokyoPage() {
           <div className="mt-12">
             <p className="text-sm font-bold text-text-muted mb-3">タグ</p>
             <ul className="flex flex-wrap gap-2">
-              {["東京", "鍵開け", "鍵交換", "24時間対応", "業者比較", "エリア別"].map((t) => (
+              {["品川区", "東京23区", "鍵開け", "鍵交換", "24時間対応", "エリア別"].map((t) => (
                 <li
                   key={t}
                   className="rounded-[2px] border border-border bg-white px-3 py-1.5 text-xs md:text-sm font-bold tracking-wide text-foreground shadow-[0px_2px_2px_0px_rgba(0,0,0,0.12)]"
@@ -686,11 +698,12 @@ export default function AreaTokyoPage() {
             </ul>
           </div>
 
-          {/* 東京23区 */}
+          {/* 他エリア */}
           <div className="mt-10">
-            <p className="text-sm font-bold text-text-muted mb-3">東京23区の鍵業者まとめ（区別の詳しい記事）</p>
+            <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選（東京都全体）" },
                 { href: "/area/shinjuku-ku/", label: "新宿区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/setagaya-ku/", label: "世田谷区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/ota-ku/", label: "大田区の鍵開け・鍵交換業者おすすめ5選" },
@@ -701,7 +714,6 @@ export default function AreaTokyoPage() {
                 { href: "/area/itabashi-ku/", label: "板橋区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/koto-ku/", label: "江東区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/katsushika-ku/", label: "葛飾区の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/shinagawa-ku/", label: "品川区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kita-ku/", label: "北区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nakano-ku/", label: "中野区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/toshima-ku/", label: "豊島区の鍵開け・鍵交換業者おすすめ5選" },
@@ -720,85 +732,17 @@ export default function AreaTokyoPage() {
             </ul>
           </div>
 
-          {/* 他エリア */}
-          <div className="mt-10">
-            <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
-            <ul className="grid gap-3 md:grid-cols-3">
-              {[
-                { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ6選" },
-                { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/fukuoka/", label: "福岡の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/sapporo/", label: "札幌の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kyoto/", label: "京都の鍵開け・鍵交換業者おすすめ6選" },
-                { href: "/area/kobe/", label: "神戸の鍵開け・鍵交換業者おすすめ6選" },
-                { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/chiba/", label: "千葉の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/sendai/", label: "仙台の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/hiroshima/", label: "広島の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/sakai/", label: "堺の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kawasaki/", label: "川崎の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kitakyushu/", label: "北九州の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/hamamatsu/", label: "浜松の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/shizuoka/", label: "静岡の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/okayama/", label: "岡山の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kumamoto/", label: "熊本の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/niigata/", label: "新潟の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kagoshima/", label: "鹿児島の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kanazawa/", label: "金沢の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/utsunomiya/", label: "宇都宮の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/matsuyama/", label: "松山の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/naha/", label: "那覇の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/takamatsu/", label: "高松の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/nagano/", label: "長野の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/gifu/", label: "岐阜の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/mito/", label: "水戸の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/maebashi/", label: "前橋の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/toyama/", label: "富山の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/fukui/", label: "福井の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kofu/", label: "甲府の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/nagasaki/", label: "長崎の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/oita/", label: "大分の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/miyazaki/", label: "宮崎の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/morioka/", label: "盛岡の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/akita/", label: "秋田の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/yamagata/", label: "山形の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/fukushima/", label: "福島の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/tsu/", label: "津の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/otsu/", label: "大津の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/wakayama/", label: "和歌山の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/tokushima/", label: "徳島の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/aomori/", label: "青森の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/nara/", label: "奈良の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/tottori/", label: "鳥取の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/matsue/", label: "松江の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/yamaguchi/", label: "山口の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kochi/", label: "高知の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/saga/", label: "佐賀の鍵開け・鍵交換業者おすすめ5選" },
-              ].map((l) => (
-                <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    className="block rounded-[2px] border border-border bg-white px-4 py-3 text-sm font-bold text-primary hover:bg-[#F5F8FC] transition-colors"
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* 関連記事 */}
           <div className="mt-10">
             <p className="text-sm font-bold text-text-muted mb-3">関連記事</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/hikkoshi-kagi-checklist/", label: "引っ越しの鍵チェックリスト" },
+                { href: "/chintai-kagi-koukan-hiyou/", label: "賃貸の鍵交換費用" },
+                { href: "/taikyo-kagi-trouble/", label: "退去時の鍵トラブル" },
+                { href: "/aikagi/", label: "合鍵の基礎知識" },
+                { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処" },
                 { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場" },
-                { href: "/ryokin-index/", label: "主要業者の料金一次確認まとめ" },
-                { href: "/shimedashi/", label: "鍵の閉じ込め・締め出しの対処法" },
-                { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処法" },
-                { href: "/agents/", label: "鍵業者一覧・比較" },
-                { href: "/agents/kagi110ban-vs-seikatsu9/", label: "カギ110番 vs 生活救急車 徹底比較" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
