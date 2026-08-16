@@ -3,23 +3,23 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
-const PATH = "/area/maebashi/";
-const UPDATED = "2026年8月12日";
-const UPDATED_ISO = "2026-08-12";
+const PATH = "/area/kochi/";
+const UPDATED = "2026年8月16日";
+const UPDATED_ISO = "2026-08-16";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "【2026年最新】前橋の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較｜鍵トラブルナビ",
+      "【2026年最新】高知の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較｜鍵トラブルナビ",
   },
   description:
-    "前橋で鍵開け・鍵交換を頼める鍵業者5社を一次確認値で比較。カギ110番（鍵開け6,600円〜）・鍵の生活救急車（最短15分）・JBR・鍵のレスキュー・カギの救急車の料金と受付時間、シャッター・ガレージ・物置まで含めた家全体の鍵の棚卸しの進め方まで編集部が中立にまとめました。",
+    "高知で鍵開け・鍵交換を頼める鍵業者5社を一次確認値で比較。カギ110番（鍵開け6,600円〜）・鍵の生活救急車（最短15分）・JBR・鍵のレスキュー・カギの救急車の料金と受付時間、台風・大雨のあとのドア建て付け・鍵の点検の手順まで編集部が中立にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title:
-      "【2026年最新】前橋の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
+      "【2026年最新】高知の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
     description:
-      "前橋で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。玄関だけでなくシャッター・ガレージ・物置まで含めた、家全体の鍵の棚卸しの進め方も解説します。",
+      "高知で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。台風・大雨が過ぎたあとに行うドアと鍵の点検手順、火災保険の確認ポイントも解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
     images: ["/images/kv-top.jpg"],
@@ -41,6 +41,12 @@ interface AreaAgent {
   memoDate: string;
 }
 
+interface AreaFaq {
+  q: string;
+  a: string;
+  link?: { href: string; label: string };
+}
+
 const agents: AreaAgent[] = [
   {
     id: "kagi110ban",
@@ -53,7 +59,7 @@ const agents: AreaAgent[] = [
         カギ110番は、東証グロース上場の
         <Hl>シェアリングテクノロジー株式会社が運営する加盟店紹介型の鍵トラブル解決サービス</Hl>
         です。<Hl>鍵開け6,600円〜（税込・公式表示）</Hl>
-        で、24時間365日受付・電話一本で最短5分の手配をうたっています。全国47都道府県の加盟店ネットワークが対象のため、前橋市内の依頼でも近隣の加盟店が手配される仕組みです。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
+        で、24時間365日受付・電話一本で最短5分の手配をうたっています。全国47都道府県の加盟店ネットワークが対象のため、高知市内の依頼でも近隣の加盟店が手配される仕組みです。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
       </>
     ),
     recommend: [
@@ -65,7 +71,7 @@ const agents: AreaAgent[] = [
     table: [
       { k: "鍵開け料金", v: "6,600円〜（税込）", note: "公式表示・2026年7月4日確認。加盟店・エリアにより異なる場合あり" },
       { k: "受付時間", v: "24時間365日" },
-      { k: "対応エリア", v: "全国47都道府県（群馬県対応）" },
+      { k: "対応エリア", v: "全国47都道府県（高知県対応）" },
       { k: "見積もり", v: "無料", note: "交通費・キャンセル料は別途発生する場合ありと公式記載" },
       { k: "運営会社", v: "シェアリングテクノロジー株式会社" },
     ],
@@ -235,7 +241,7 @@ const compareRows = agents.map((a) => ({
 const steps = [
   {
     t: "① 状況と鍵の種類を整理する",
-    b: "「開かない」「なくした」「物置の鍵を交換したい」など状況と、対象がどこの鍵か（玄関・シャッター・ガレージ・物置など）、その数を整理しておくと、電話での見積もり精度が上がります。複数箇所をまとめて頼む場合は一覧を作り、総額で見積もりを取りましょう。賃貸の場合は、業者より先に管理会社・大家への連絡が基本です。",
+    b: "「台風のあとから回りにくい」「ドアがこすれる」など症状が始まった時期と、ドアの開閉の引っかかり・丁番のゆるみの有無をメモしておくと、電話での見積もり精度が上がります。錠の不具合かドア本体の問題かを切り分ける材料になります。賃貸の場合は、業者より先に管理会社・大家への連絡が基本です。",
   },
   {
     t: "② 出張費・夜間料金を含めた総額の見積もりを取る",
@@ -247,30 +253,33 @@ const steps = [
   },
   {
     t: "④ 急ぎでなければ複数社を比較する",
-    b: "締め出しなどの緊急時以外は、2〜3社から見積もりを取って総額・条件を比較するのがおすすめです。シャッター錠や物置錠の交換のように日程が読める依頼なら、じっくり比較する価値があります。複数箇所をまとめて頼むと出張が1回で済む場合もあるため、一覧にして総額で見積もりを取りましょう。今回の5社はいずれも全国対応型で前橋から依頼できます。金額に納得できない場合は、その場で契約せず一度断る選択肢もあります。",
+    b: "締め出しなどの緊急時以外は、2〜3社から見積もりを取って総額・条件を比較するのがおすすめです。鍵の交換や合鍵の追加のように日程が読める依頼なら、じっくり比較する価値があります。今回の5社はいずれも全国対応型で高知から依頼できます。金額に納得できない場合は、その場で契約せず一度断る選択肢もあります。",
   },
 ];
 
-const faqs = [
+const faqs: AreaFaq[] = [
   {
-    q: "前橋の鍵開け料金の相場はいくらですか？",
+    q: "高知の鍵開け料金の相場はいくらですか？",
     a: "当サイトが一次確認した各社の公式表示では、鍵開けの基本料金はカギ110番6,600円〜、鍵のレスキュー8,000円〜、鍵の生活救急車・JBR8,800円〜（いずれも税込）、カギの救急車は公式目安11,000〜44,000円です。ただしこれは最低価格や目安で、鍵の種類（ディンプルキー等）・時間帯・出張距離で総額は変わります。作業前に総額の見積もりを取りましょう。詳しくは鍵開け・鍵交換の料金相場ページで解説しています。",
+    link: { href: "/ryokin/", label: "料金相場の詳細はこちら" },
   },
   {
-    q: "深夜や早朝でも前橋に来てくれますか？",
+    q: "深夜や早朝でも高知に来てくれますか？",
     a: "カギ110番・JBR・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし深夜帯は割増料金や到着時間の変動があり得るため、電話の際に深夜料金の有無と到着目安を確認してから依頼するのがおすすめです。",
   },
   {
-    q: "シャッターやガレージ、物置の鍵も今回の5社に頼めますか？",
-    a: "5社とも住宅の玄関以外の鍵にも対応しています。シャッター錠・物置・門扉などもまとめて相談できますが、製品や構造により対応範囲が異なるため、電話の時点で対象を具体的に伝えましょう。複数箇所を同時に頼むと出張が1回で済む場合もあります。",
+    q: "台風のあとから鍵が回りにくくなりました。どうすればよいですか？",
+    a: "吹き込んだ雨水や砂ぼこりが鍵穴に入っている可能性があります。力任せに回すと鍵折れにつながるため厳禁です。錠まわりの水分を乾いた布で拭き、油を差さずに様子を見て、改善しなければ業者に点検を依頼しましょう。",
+    link: { href: "/kagi-mawaranai/", label: "鍵が回らないときの対処はこちら" },
   },
   {
-    q: "物置の鍵をなくしてしまいました。開けられますか？",
-    a: "一般的な物置の錠は、鍵開けや錠ごとの交換で対応できることが多いです。メーカーによっては、本体の品番や鍵番号から純正のスペアキーを取り寄せられる場合もあるため、急がないなら先に説明書や購入記録を確認すると出費を抑えられることがあります。",
+    q: "強風でドアが歪んで閉まりにくくなりました。鍵業者に頼めますか？",
+    a: "錠前やストライク（受け座）の調整は鍵業者の領域ですが、ドア本体の歪みや丁番の交換は建具店・工務店の領域になることもあります。症状を伝えて見積もりの段階で切り分けてもらい、どちらに頼むべきか確認するとむだがありません。",
   },
   {
-    q: "家の鍵はどれくらいの頻度で見直せばよいですか？",
-    a: "決まった周期はありませんが、屋外の錠は玄関より劣化が早い傾向があります。鍵が差しにくい・回りにくいと感じた時点で放置しないことが大切です。引っ越しや家族構成の変化、鍵の紛失があったときは、家全体の鍵を棚卸しする良い機会です。",
+    q: "台風で壊れたドアや鍵の修理に火災保険は使えますか？",
+    a: "風災補償の付いた火災保険なら、台風による損傷が補償対象になる可能性があります。補償範囲・免責金額は契約次第のため、修理前に被害の写真を撮り、保険会社・代理店へ連絡して確認してから工事に進みましょう。",
+    link: { href: "/kasai-hoken-kagi/", label: "火災保険と鍵の解説はこちら" },
   },
   {
     q: "悪質な鍵業者を見分けるにはどうすればいいですか？",
@@ -313,16 +322,16 @@ function H4({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function AreaMaebashiPage() {
+export default function AreaKochiPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "【2026年最新】前橋の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
+      "【2026年最新】高知の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
     description:
-      "前橋で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較した記事です。",
+      "高知で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
-    datePublished: "2026-08-12T00:00:00+09:00",
+    datePublished: "2026-08-16T00:00:00+09:00",
     dateModified: `${UPDATED_ISO}T00:00:00+09:00`,
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
@@ -342,16 +351,16 @@ export default function AreaMaebashiPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "鍵トラブルナビ", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "前橋の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
+      { "@type": "ListItem", position: 2, name: "高知の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
     ],
   };
 
   const toc: { href: string; label: string; sub?: { href: string; label: string }[] }[] = [
     {
-      href: "#maebashi5",
-      label: "1｜前橋で人気のおすすめ・優良の鍵業者5選",
+      href: "#kochi5",
+      label: "1｜高知で人気のおすすめ・優良の鍵業者5選",
       sub: [
-        { href: "#hikaku", label: "前橋の鍵業者を一覧表で徹底比較" },
+        { href: "#hikaku", label: "高知の鍵業者を一覧表で徹底比較" },
         ...agents.map((a) => ({ href: `#${a.id}`, label: `${a.num}｜【${a.catch}】${a.name}` })),
       ],
     },
@@ -359,9 +368,9 @@ export default function AreaMaebashiPage() {
     { href: "#shinya", label: "3｜深夜・早朝のトラブルなら" },
     { href: "#meikaku", label: "4｜料金を事前に明確にしたいなら" },
     { href: "#jisha", label: "5｜自社スタッフ対応にこだわるなら" },
-    { href: "#maebashi-tips", label: "6｜前橋で鍵業者を呼ぶ前に確認したいこと（シャッター・ガレージ・物置まで含めた鍵の棚卸し）" },
+    { href: "#kochi-tips", label: "6｜高知で鍵業者を呼ぶ前に確認したいこと（台風・大雨のあとのドア・鍵の点検）" },
     { href: "#erabikata", label: "7｜失敗しない鍵業者の選び方" },
-    { href: "#faq", label: "8｜前橋の鍵業者でよくある質問" },
+    { href: "#faq", label: "8｜高知の鍵業者でよくある質問" },
     { href: "#matome", label: "9｜まとめ" },
   ];
 
@@ -380,14 +389,14 @@ export default function AreaMaebashiPage() {
                 <Link href="/" className="hover:underline">鍵トラブルナビ</Link>
               </li>
               <li>/</li>
-              <li className="text-foreground">前橋の鍵開け・鍵交換業者おすすめ5選</li>
+              <li className="text-foreground">高知の鍵開け・鍵交換業者おすすめ5選</li>
             </ol>
           </nav>
 
           {/* h1・更新日・タグchips */}
           <header className="grid gap-4">
             <h1 className="text-2xl md:text-[32px] font-bold leading-normal tracking-wide text-foreground">
-              【2026年最新】前橋の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較
+              【2026年最新】高知の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較
             </h1>
             <div>
               <span className="inline-block rounded-[2px] bg-primary px-2 py-1 text-xs font-bold tracking-wide text-white">
@@ -401,7 +410,7 @@ export default function AreaMaebashiPage() {
               <span>PR掲載も含みます</span>
             </div>
             <ul className="flex flex-wrap gap-2">
-              {["前橋", "鍵開け", "鍵交換", "24時間対応", "業者比較"].map((t) => (
+              {["高知", "鍵開け", "鍵交換", "24時間対応", "業者比較"].map((t) => (
                 <li
                   key={t}
                   className="rounded-[2px] border border-border bg-white px-3 py-1.5 text-xs md:text-sm font-bold tracking-wide text-foreground shadow-[0px_2px_2px_0px_rgba(0,0,0,0.12)]"
@@ -413,7 +422,7 @@ export default function AreaMaebashiPage() {
             <figure className="overflow-hidden rounded-[2px]">
               <Image
                 src="/images/kv-top.jpg"
-                alt="前橋の鍵開け・鍵交換業者の比較"
+                alt="高知の鍵開け・鍵交換業者の比較"
                 width={1024}
                 height={1024}
                 className="w-full h-52 md:h-72 object-cover"
@@ -425,10 +434,10 @@ export default function AreaMaebashiPage() {
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
             <p className="mb-4">
-              「玄関の鍵は気にかけてきたが、ガレージのシャッターは家を建てたときの鍵のまま」「物置の鍵は、どこにしまったか思い出せない」——戸建ての住まいには、玄関のほかにもシャッター・ガレージ・物置・門扉など、鍵の付いた場所が意外なほど多くあります。前橋で戸建ての防犯を考えるなら、玄関だけで完結させず、家全体の鍵を一度棚卸しして、状態と所在を確かめておくことが出発点になります。
+              「台風が過ぎてから、玄関の鍵が回りにくくなった気がする」「強風にドアが煽られてから、閉まりが悪い」——荒天のあとに現れるこうした症状は、放置すると固着や故障へ進むことがあります。台風や大雨のあとこそ、家じゅうの錠を実際に動かして点検するタイミングです。高知の住まいに向けて、荒天後のドア・鍵の点検手順を整理します。
             </p>
             <p>
-              本記事では、前橋市内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報だけで比較しました。あわせて、シャッター・ガレージ・物置まで含めた家全体の鍵を棚卸しする手順もまとめています。ぜひ鍵業者選びの参考にしてください。
+              本記事では、高知市内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報だけで比較しました。あわせて、台風・大雨のあとのドア建て付け・鍵の点検手順もまとめています。ぜひ鍵業者選びの参考にしてください。
             </p>
           </div>
 
@@ -471,16 +480,16 @@ export default function AreaMaebashiPage() {
           </nav>
 
           {/* 1｜5選 */}
-          <H2 id="maebashi5" num="1">前橋で人気のおすすめ・優良の鍵業者5選</H2>
+          <H2 id="kochi5" num="1">高知で人気のおすすめ・優良の鍵業者5選</H2>
           <p className="leading-loose mb-2">
-            前橋市内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
+            高知市内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
           </p>
           <p className="text-sm text-text-muted mb-8">
-            ※他の都市の比較は、<Link href="/area/utsunomiya/" className="text-primary underline">宇都宮版</Link>・<Link href="/area/saitama/" className="text-primary underline">さいたま版</Link>・<Link href="/area/mito/" className="text-primary underline">水戸版</Link>もご覧ください。
+            ※他の都市の比較は、<Link href="/area/takamatsu/" className="text-primary underline">高松版</Link>・<Link href="/area/matsuyama/" className="text-primary underline">松山版</Link>・<Link href="/area/tokushima/" className="text-primary underline">徳島版</Link>もご覧ください。
           </p>
 
           <h3 id="hikaku" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
-            前橋の鍵業者を一覧表で徹底比較
+            高知の鍵業者を一覧表で徹底比較
             <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
           </h3>
           <div className="overflow-x-auto mb-4">
@@ -570,7 +579,7 @@ export default function AreaMaebashiPage() {
           ))}
 
           {/* 2｜急ぎ */}
-          <H2 id="isogi" num="2">前橋の鍵業者をとにかく急いで開けてほしいなら</H2>
+          <H2 id="isogi" num="2">高知の鍵業者をとにかく急いで開けてほしいなら</H2>
           <p className="leading-loose mb-4">
             締め出しなどで一刻も早く開けてほしい場合は、駆けつけスピードの目安を公表している業者が候補になります。<Hl>鍵の生活救急車は最短15分の駆けつけと全国約2,270店の拠点網</Hl>をうたっており、拠点数の多さは到着スピードの裏付けになります。また、<Hl>カギ110番は電話一本で最短5分の手配</Hl>（全国47都道府県の加盟店ネットワークから近隣の業者を手配）を掲げています。
           </p>
@@ -581,7 +590,7 @@ export default function AreaMaebashiPage() {
           {/* 3｜深夜 */}
           <H2 id="shinya" num="3">深夜・早朝の鍵トラブルなら</H2>
           <p className="leading-loose mb-4">
-            前橋でも、深夜の締め出しや帰宅後に紛失へ気づくトラブルは起こり得ます。この時間帯に頼れるのは24時間受付の業者で、一次確認値では<Hl>カギ110番・JBR・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。特にJBRは賠償責任保険に加入した大手グループで、夜間の緊急依頼でも相談しやすい体制です。
+            高知でも、深夜の締め出しや帰宅後に紛失へ気づくトラブルは起こり得ます。この時間帯に頼れるのは24時間受付の業者で、一次確認値では<Hl>カギ110番・JBR・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。特にJBRは賠償責任保険に加入した大手グループで、夜間の緊急依頼でも相談しやすい体制です。
           </p>
           <p className="leading-loose mb-4 text-sm text-text-muted">
             ※受付が24時間でも、深夜帯は割増料金や到着時間の変動があり得ます。電話時に深夜料金の有無と総額を確認してから依頼するのが安心です。
@@ -602,20 +611,20 @@ export default function AreaMaebashiPage() {
             鍵業者には、依頼を受けて加盟店を手配する「紹介型」と、自社のスタッフが直接対応する「自社対応型」があります。紹介型は対応範囲が広い一方、店舗によって技術・対応に差が出ることがあります。今回の5社では、<Hl>鍵のレスキューが全国約20拠点を自社社員で対応する自社対応型</Hl>で、女性スタッフの指名にも対応しています。担当者の所属まで気になる方は、依頼時に「自社スタッフか協力店か」を確認してみましょう。
           </p>
 
-          {/* 6｜前橋特有 */}
-          <H2 id="maebashi-tips" num="6">前橋で鍵業者を呼ぶ前に確認したいこと（シャッター・ガレージ・物置まで含めた鍵の棚卸し）</H2>
+          {/* 6｜高知特有 */}
+          <H2 id="kochi-tips" num="6">高知で鍵業者を呼ぶ前に確認したいこと（台風・大雨のあとのドア・鍵の点検）</H2>
           <p className="leading-loose mb-4">
-            棚卸しの最初の一歩は、<Hl>鍵のかかる場所をすべて書き出す</Hl>ことです。玄関・勝手口だけでなく、シャッター・ガレージ・物置・門扉・窓と挙げていくと、戸建てには鍵の付いた場所が想像以上に多いことに気づきます。それぞれについて「鍵が手元にあるか」「実際に施錠して使っているか」を確認しましょう。錠の種類が分からない場所は、<Link href="/joumae-type-zukan/" className="text-primary underline">錠前タイプ図鑑</Link>と<Link href="/kagi-shurui-zukan/" className="text-primary underline">鍵の種類図鑑</Link>を見ながら照合すると整理しやすくなります。
+            荒天が過ぎたら、<Hl>玄関・勝手口・物置まで、全部の錠を一度ずつ実際に施解錠して感触を確かめる</Hl>ことから始めましょう。チェックするのは、鍵の差し込み・回転の感触が荒天前と変わっていないか、デッドボルト（かんぬき）が受け座にスムーズに収まるか、ドアの開閉時にこすれる音や引っかかりがないか、の3点です。強風でドアが繰り返し煽られたあとは、丁番のゆるみや建て付けのずれが出ていることがあります。
           </p>
           <p className="leading-loose mb-4">
-            シャッターや物置の錠は<Hl>屋外で風雨にさらされるため、玄関よりも劣化が進みやすい</Hl>傾向があります。動きが渋いまま力任せに回し続けると、鍵折れや錠の故障につながります。手入れには鍵穴専用の潤滑剤を使い、食用油などでの代用は固着の原因になるため避けましょう。症状別の対処は<Link href="/kagi-mawaranai/" className="text-primary underline">鍵が回らないときの解説記事</Link>を、交換を考える目安は<Link href="/kagi-jumyou/" className="text-primary underline">鍵の寿命の解説記事</Link>を参考にしてください。
+            症状が見つかったら原因を切り分けます。<Hl>吹き込んだ雨水や砂ぼこりが鍵穴に入った渋りは、力任せに回すのが最も危険</Hl>で、鍵折れにつながります。対処は<Link href="/kagi-mawaranai/" className="text-primary underline">鍵が回らないときの解説記事</Link>に従い、濡れた錠まわりは乾いた布で拭き、油は差さないでください。一方、ドア本体の歪みや丁番のゆるみは錠ではなく建具側の問題で、鍵業者ではなく建具店・工務店の領域になることもあります。どちらか判断がつかないときは、症状を伝えて見積もりの段階で切り分けてもらいましょう。放置した固着の行き着く先は<Link href="/kagi-jumyou/" className="text-primary underline">鍵の寿命の解説記事</Link>で解説しています。
           </p>
           <p className="leading-loose mb-4">
-            優先順位を付けるなら、<Hl>侵入経路になりやすい場所と、盗られて困る物がある場所から</Hl>手を入れるのが合理的です。ガレージや物置は住宅本体より警戒が緩みがちな一方、自転車や工具など換金しやすい物が収められていることが少なくありません。錠の交換だけでなく、補助錠の追加という選択肢もあります。<Link href="/hojo-jou/" className="text-primary underline">補助錠の選び方</Link>と<Link href="/akisu-shinnyu-teguchi/" className="text-primary underline">空き巣の侵入手口の解説記事</Link>もあわせてご覧ください。
+            修理費用の面では、<Hl>台風などの風災でドアや錠が壊れた場合、火災保険の風災補償の対象になる可能性</Hl>があります。補償の範囲や免責金額は契約によって異なるため、修理の前に被害状況を写真に残し、保険会社や代理店に確認してから工事に進むのが堅実です。詳しくは<Link href="/kasai-hoken-kagi/" className="text-primary underline">火災保険と鍵の解説記事</Link>を参照してください。交換まで行うなら、防犯性の底上げを兼ねる考え方も<Link href="/kagi-koukan-timing/" className="text-primary underline">鍵交換のタイミング</Link>で紹介しています。
           </p>
 
           {/* 7｜選び方 */}
-          <H2 id="erabikata" num="7">前橋の鍵業者の失敗しない選び方</H2>
+          <H2 id="erabikata" num="7">高知の鍵業者の失敗しない選び方</H2>
           <p className="leading-loose mb-6">
             鍵業者選びで後悔しないためには、次の4つのステップを踏むことが大切です。緊急時ほど「早く解決したいから」と即決しがちですが、数分の確認でトラブルの多くは防げます。
           </p>
@@ -630,7 +639,7 @@ export default function AreaMaebashiPage() {
           ))}
 
           {/* 8｜FAQ */}
-          <H2 id="faq" num="8">前橋の鍵業者でよくある質問</H2>
+          <H2 id="faq" num="8">高知の鍵業者でよくある質問</H2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <div key={f.q} className="rounded-[2px] border border-border">
@@ -642,28 +651,10 @@ export default function AreaMaebashiPage() {
                   <span className="text-accent font-bold shrink-0">A.</span>
                   <span>
                     {f.a}
-                    {f.q.includes("相場") && (
+                    {f.link && (
                       <>
                         {" "}
-                        <Link href="/ryokin/" className="text-primary underline">料金相場の詳細はこちら</Link>
-                      </>
-                    )}
-                    {f.q.includes("シャッターやガレージ") && (
-                      <>
-                        {" "}
-                        <Link href="/joumae-type-zukan/" className="text-primary underline">錠前タイプ図鑑はこちら</Link>
-                      </>
-                    )}
-                    {f.q.includes("物置の鍵をなくして") && (
-                      <>
-                        {" "}
-                        <Link href="/key-number-aikagi/" className="text-primary underline">鍵番号からの合鍵の解説はこちら</Link>
-                      </>
-                    )}
-                    {f.q.includes("見直せば") && (
-                      <>
-                        {" "}
-                        <Link href="/kagi-jumyou/" className="text-primary underline">鍵の寿命の解説はこちら</Link>
+                        <Link href={f.link.href} className="text-primary underline">{f.link.label}</Link>
                       </>
                     )}
                   </span>
@@ -675,10 +666,10 @@ export default function AreaMaebashiPage() {
           {/* 9｜まとめ */}
           <H2 id="matome" num="9">まとめ</H2>
           <p className="leading-loose mb-4">
-            前橋で鍵開け・鍵交換を頼める主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。スピード重視なら鍵の生活救急車やカギ110番、深夜・早朝のトラブルならカギ110番・JBR・鍵のレスキュー、料金の明確さ重視なら鍵のレスキュー、というように、目的によって向いている業者は変わります。
+            高知で鍵開け・鍵交換を頼める主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。スピード重視なら鍵の生活救急車やカギ110番、深夜・早朝のトラブルならカギ110番・JBR・鍵のレスキュー、料金の明確さ重視なら鍵のレスキュー、というように、目的によって向いている業者は変わります。
           </p>
           <p className="leading-loose mb-8">
-            戸建ての防犯は、玄関だけでなくシャッター・ガレージ・物置まで含めた棚卸しから始まります。鍵の所在と錠の状態を一覧にし、侵入経路になりやすい場所・盗られて困る物がある場所から優先的に手を入れましょう。複数箇所の交換をまとめて頼む場合は、一覧を渡して総額で比較すると判断しやすくなります。本記事の一次確認値を出発点に、状況に合った業者を選んでください。
+            台風や大雨のあとは、全部の錠を実際に動かして点検し、渋りがあれば無理に回さず原因を切り分ける——この習慣が、固着の進行や思わぬ締め出しを防ぎます。風災でドアや錠が壊れた場合は、修理前に写真を残して火災保険の適用可否を確認しましょう。修理・交換のように日程が読める依頼は、複数社から総額の見積もりを取って比較することが失敗しないためのポイントです。本記事の一次確認値を出発点に、状況に合った業者を選んでください。
           </p>
           <div className="rounded-[2px] bg-primary text-white p-6 text-center">
             <p className="font-bold text-lg mb-2">鍵のトラブルでお困りの方へ</p>
@@ -695,7 +686,7 @@ export default function AreaMaebashiPage() {
           <div className="mt-12">
             <p className="text-sm font-bold text-text-muted mb-3">タグ</p>
             <ul className="flex flex-wrap gap-2">
-              {["前橋", "鍵開け", "鍵交換", "24時間対応", "業者比較", "エリア別"].map((t) => (
+              {["高知", "鍵開け", "鍵交換", "24時間対応", "業者比較", "エリア別"].map((t) => (
                 <li
                   key={t}
                   className="rounded-[2px] border border-border bg-white px-3 py-1.5 text-xs md:text-sm font-bold tracking-wide text-foreground shadow-[0px_2px_2px_0px_rgba(0,0,0,0.12)]"
@@ -740,6 +731,7 @@ export default function AreaMaebashiPage() {
                 { href: "/area/nagano/", label: "長野の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/gifu/", label: "岐阜の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/mito/", label: "水戸の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/maebashi/", label: "前橋の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/toyama/", label: "富山の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/fukui/", label: "福井の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kofu/", label: "甲府の鍵開け・鍵交換業者おすすめ5選" },
@@ -759,7 +751,6 @@ export default function AreaMaebashiPage() {
                 { href: "/area/tottori/", label: "鳥取の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/matsue/", label: "松江の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yamaguchi/", label: "山口の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kochi/", label: "高知の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saga/", label: "佐賀の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
@@ -779,11 +770,11 @@ export default function AreaMaebashiPage() {
             <p className="text-sm font-bold text-text-muted mb-3">関連記事</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/kagi-mawaranai/", label: "鍵が回らないときの対処" },
+                { href: "/kagi-jumyou/", label: "鍵の寿命と交換の目安" },
+                { href: "/kasai-hoken-kagi/", label: "火災保険と鍵の修理" },
+                { href: "/kagi-koukan-timing/", label: "鍵交換のタイミング" },
                 { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場" },
-                { href: "/ryokin-index/", label: "主要業者の料金一次確認まとめ" },
-                { href: "/joumae-type-zukan/", label: "錠前タイプ図鑑" },
-                { href: "/kagi-jumyou/", label: "鍵の寿命" },
-                { href: "/hojo-jou/", label: "補助錠の選び方" },
                 { href: "/agents/", label: "鍵業者一覧・比較" },
               ].map((l) => (
                 <li key={l.href}>

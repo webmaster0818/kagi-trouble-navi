@@ -75,6 +75,9 @@ export default function SiteFooter() {
               <li>
                 <Link href="/area/fukushima/" className="hover:text-white transition-colors">福島</Link>・<Link href="/area/tsu/" className="hover:text-white transition-colors">津</Link>・<Link href="/area/otsu/" className="hover:text-white transition-colors">大津</Link>・<Link href="/area/wakayama/" className="hover:text-white transition-colors">和歌山</Link>・<Link href="/area/tokushima/" className="hover:text-white transition-colors">徳島</Link>
               </li>
+              <li>
+                <Link href="/area/aomori/" className="hover:text-white transition-colors">青森</Link>・<Link href="/area/nara/" className="hover:text-white transition-colors">奈良</Link>・<Link href="/area/tottori/" className="hover:text-white transition-colors">鳥取</Link>・<Link href="/area/matsue/" className="hover:text-white transition-colors">松江</Link>・<Link href="/area/yamaguchi/" className="hover:text-white transition-colors">山口</Link>・<Link href="/area/kochi/" className="hover:text-white transition-colors">高知</Link>・<Link href="/area/saga/" className="hover:text-white transition-colors">佐賀</Link>
+              </li>
             </ul>
           </div>
         </div>
