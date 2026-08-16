@@ -78,6 +78,9 @@ export default function SiteFooter() {
               <li>
                 <Link href="/area/aomori/" className="hover:text-white transition-colors">青森</Link>・<Link href="/area/nara/" className="hover:text-white transition-colors">奈良</Link>・<Link href="/area/tottori/" className="hover:text-white transition-colors">鳥取</Link>・<Link href="/area/matsue/" className="hover:text-white transition-colors">松江</Link>・<Link href="/area/yamaguchi/" className="hover:text-white transition-colors">山口</Link>・<Link href="/area/kochi/" className="hover:text-white transition-colors">高知</Link>・<Link href="/area/saga/" className="hover:text-white transition-colors">佐賀</Link>
               </li>
+              <li>
+                東京23区: <Link href="/area/shinjuku-ku/" className="hover:text-white transition-colors">新宿区</Link>・<Link href="/area/setagaya-ku/" className="hover:text-white transition-colors">世田谷区</Link>・<Link href="/area/ota-ku/" className="hover:text-white transition-colors">大田区</Link>・<Link href="/area/nerima-ku/" className="hover:text-white transition-colors">練馬区</Link>・<Link href="/area/edogawa-ku/" className="hover:text-white transition-colors">江戸川区</Link>・<Link href="/area/adachi-ku/" className="hover:text-white transition-colors">足立区</Link>・<Link href="/area/suginami-ku/" className="hover:text-white transition-colors">杉並区</Link>・<Link href="/area/itabashi-ku/" className="hover:text-white transition-colors">板橋区</Link>
+              </li>
             </ul>
           </div>
         </div>
