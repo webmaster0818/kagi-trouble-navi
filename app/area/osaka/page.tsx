@@ -737,6 +737,28 @@ export default function AreaOsakaPage() {
             </ul>
           </div>
 
+          {/* 市内の区 */}
+          <div className="mt-10">
+            <p className="text-sm font-bold text-text-muted mb-3">大阪市内の区別ページ</p>
+            <ul className="grid gap-3 md:grid-cols-2">
+              {[
+                { href: "/area/osaka-kita/", label: "大阪市北区の鍵開け・鍵交換業者おすすめ6選" },
+                { href: "/area/osaka-chuo/", label: "大阪市中央区の鍵開け・鍵交換業者おすすめ6選" },
+                { href: "/area/osaka-yodogawa/", label: "大阪市淀川区の鍵開け・鍵交換業者おすすめ6選" },
+                { href: "/area/osaka-hirano/", label: "大阪市平野区の鍵開け・鍵交換業者おすすめ6選" },
+              ].map((l) => (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    className="block rounded-[2px] border border-border bg-white px-4 py-3 text-sm font-bold text-primary hover:bg-[#F5F8FC] transition-colors"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* 他エリア */}
           <div className="mt-10">
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>

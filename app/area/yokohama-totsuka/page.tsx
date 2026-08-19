@@ -3,23 +3,23 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
-const PATH = "/area/yokohama/";
-const UPDATED = "2026年8月9日";
-const UPDATED_ISO = "2026-08-09";
+const PATH = "/area/yokohama-totsuka/";
+const UPDATED = "2026年8月19日";
+const UPDATED_ISO = "2026-08-19";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "【2026年最新】横浜の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較｜鍵トラブルナビ",
+      "【2026年最新】横浜市戸塚区の鍵開け・鍵交換業者おすすめ5選！通勤動線での鍵紛失と戸建ての防犯も分かる鍵屋比較｜鍵トラブルナビ",
   },
   description:
-    "横浜で鍵開け・鍵交換を頼める鍵業者5社を一次確認値で比較。カギ110番（鍵開け6,600円〜）・鍵の生活救急車（最短15分）・JBR・鍵のレスキュー・カギの救急車の料金と受付時間、オートロックのマンションで業者を呼ぶ前に確認すべきことまで編集部が中立にまとめました。",
+    "横浜市戸塚区で鍵開け・鍵交換を頼める鍵業者5社を一次確認値で比較。カギ110番（鍵開け6,600円〜）・鍵の生活救急車（最短15分）・JBR・鍵のレスキュー・カギの救急車の料金と受付時間、駅までの動線や駐輪場で鍵をなくしたときの探し方と、戸建てで鍵を隠さないための備え方まで編集部が中立にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title:
-      "【2026年最新】横浜の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
+      "【2026年最新】横浜市戸塚区の鍵開け・鍵交換業者おすすめ5選！通勤動線での鍵紛失と戸建ての防犯も分かる鍵屋比較",
     description:
-      "横浜で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。オートロックの締め出し対策や賃貸で業者を呼ぶ前の確認事項も解説します。",
+      "横浜市戸塚区で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。駅までの通勤動線や駐輪場で鍵をなくしたときの探し方と、戸建てで鍵を隠さないための備え方も解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
     images: ["/images/kv-top.jpg"],
@@ -41,6 +41,12 @@ interface AreaAgent {
   memoDate: string;
 }
 
+interface AreaFaq {
+  q: string;
+  a: string;
+  link?: { href: string; label: string };
+}
+
 const agents: AreaAgent[] = [
   {
     id: "kagi110ban",
@@ -53,7 +59,7 @@ const agents: AreaAgent[] = [
         カギ110番は、東証グロース上場の
         <Hl>シェアリングテクノロジー株式会社が運営する加盟店紹介型の鍵トラブル解決サービス</Hl>
         です。<Hl>鍵開け6,600円〜（税込・公式表示）</Hl>
-        で、24時間365日受付・電話一本で最短5分の手配をうたっています。全国47都道府県の加盟店ネットワークが対象のため、横浜市内の依頼でも近隣の加盟店が手配される仕組みです。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
+        で、24時間365日受付・電話一本で最短5分の手配をうたっています。全国47都道府県の加盟店ネットワークが対象のため、戸塚区内の依頼でも近隣の加盟店が手配される仕組みです。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
       </>
     ),
     recommend: [
@@ -65,7 +71,7 @@ const agents: AreaAgent[] = [
     table: [
       { k: "鍵開け料金", v: "6,600円〜（税込）", note: "公式表示・2026年7月4日確認。加盟店・エリアにより異なる場合あり" },
       { k: "受付時間", v: "24時間365日" },
-      { k: "対応エリア", v: "全国47都道府県（神奈川県対応）" },
+      { k: "対応エリア", v: "全国47都道府県（神奈川県対応）", note: "神奈川県対応の一次確認値。戸塚区での詳細な対応可否・条件は依頼時に各社へ確認" },
       { k: "見積もり", v: "無料", note: "交通費・キャンセル料は別途発生する場合ありと公式記載" },
       { k: "運営会社", v: "シェアリングテクノロジー株式会社" },
     ],
@@ -233,11 +239,11 @@ const compareRows = agents.map((a) => ({
 const steps = [
   {
     t: "① 状況と鍵の種類を整理する",
-    b: "「開かない」「なくした」「折れた」など状況と、玄関・車・金庫といった対象、ディンプルキーなど鍵の種類をメモしておくと、電話での見積もり精度が上がります。オートロックのマンションなら、部屋の鍵とエントランスのどちらのトラブルかも伝えましょう。賃貸の場合は、業者より先に管理会社・大家への連絡が基本です。",
+    b: "「どこで落としたか分からない」のか「家の前で入れないだけ」なのかで、必要な作業も費用も変わります。玄関がギザギザの鍵か、表面にくぼみのあるディンプルキーかも伝えられると、電話での見積もり精度が上がります。持ち家の戸建てであれば自分の判断で依頼できますが、賃貸なら管理会社・大家への連絡が先です。",
   },
   {
     t: "② 出張費・夜間料金を含めた総額の見積もりを取る",
-    b: "広告の「◯◯円〜」は最低価格で、実際は鍵の種類・出張距離・時間帯で変わります。作業前に、出張費・部材費・深夜割増まで含めた総額を必ず確認しましょう。見積もり無料・キャンセル無料の業者なら、金額を見てから断ることもできます。",
+    b: "広告の「◯◯円〜」は最低価格で、実際は鍵の種類・出張距離・時間帯で変わります。深夜に呼ぶ場合は、深夜割増の有無が総額を大きく左右します。作業前に、出張費・部材費・深夜割増まで含めた総額を必ず確認しましょう。見積もり無料・キャンセル無料の業者なら、金額を見てから断ることもできます。",
   },
   {
     t: "③ 運営会社を確認する",
@@ -245,26 +251,38 @@ const steps = [
   },
   {
     t: "④ 急ぎでなければ複数社を比較する",
-    b: "締め出しなどの緊急時以外は、2〜3社から見積もりを取って総額・条件を比較するのがおすすめです。金額に納得できない場合は、その場で契約せず一度断る選択肢もあります。",
+    b: "締め出しなどの緊急時以外は、2〜3社から見積もりを取って総額・条件を比較するのがおすすめです。今回の5社はいずれも全国対応型で、戸塚区からも依頼できます（対応エリアは「神奈川県」としての一次確認値のため、詳細条件は各社へ確認を）。鍵の交換までまとめて頼む場合は、解錠だけの場合との差額も聞いておくと判断しやすくなります。",
   },
 ];
 
-const faqs = [
+const faqs: AreaFaq[] = [
   {
-    q: "横浜の鍵開け料金の相場はいくらですか？",
+    q: "戸塚区の鍵開け料金の相場はいくらですか？",
     a: "当サイトが一次確認した各社の公式表示では、鍵開けの基本料金はカギ110番6,600円〜、鍵のレスキュー8,000円〜、鍵の生活救急車・JBR8,800円〜（いずれも税込）、カギの救急車は公式目安11,000〜44,000円です。ただしこれは最低価格や目安で、鍵の種類（ディンプルキー等）・時間帯・出張距離で総額は変わります。作業前に総額の見積もりを取りましょう。詳しくは鍵開け・鍵交換の料金相場ページで解説しています。",
+    link: { href: "/ryokin/", label: "料金相場の詳細はこちら" },
   },
   {
-    q: "深夜や早朝でも横浜に来てくれますか？",
-    a: "カギ110番・JBR・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし深夜帯は割増料金や到着時間の変動があり得るため、電話の際に深夜料金の有無と到着目安を確認してから依頼するのがおすすめです。",
+    q: "通勤中に鍵をなくしたかもしれません。どこから探せばいいですか？",
+    a: "最後に鍵を使った瞬間から順にたどり直すのが確実です。朝の施錠が起点になり、そこから駐輪場で自転車の鍵を出した、改札で鞄を開けた、といった鞄やポケットに手を入れた場面を思い出すと、落とした区間が絞れます。区間が絞れたら、自転車を停めた場所、バス事業者と鉄道事業者それぞれの遺失物窓口、立ち寄った店舗へ順に問い合わせ、見つからなければ警察に遺失届を出してください。",
+    link: { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処はこちら" },
   },
   {
-    q: "東京の記事で紹介されている業者と横浜の業者は違うのですか？",
-    a: "掲載している5社は同じです。いずれも全国対応のサービス（加盟店ネットワークまたは全国拠点網）のため、東京都でも神奈川県横浜市でも依頼できます。ただし実際に駆けつける加盟店・拠点は地域ごとに異なるため、到着目安や出張費は依頼時の電話で確認しましょう。東京版の比較記事もあわせてご覧ください。",
+    q: "戸建てで玄関の鍵を隠しておくのは危険ですか？",
+    a: "玄関マットの下・郵便受け・メーターボックス・植木鉢の下といった場所は定番であるがゆえに探されやすく、隠し場所としては勧められません。家族分の鍵を人数分そろえる、キーボックスを使う場合は暗証番号を定期的に変えるなど、代替策を決めておくほうが安全です。あわせて、玄関だけでなく勝手口や掃き出し窓の施錠も習慣にしておくと、住まい全体の備えとして安定します。",
+    link: { href: "/key-box-kanri/", label: "鍵の保管・キーボックス管理はこちら" },
   },
   {
-    q: "オートロックのマンションで締め出されたらどうすればいいですか？",
-    a: "オートロック付きマンションの締め出しは、まず管理会社・大家（分譲なら管理員・管理組合の窓口）に連絡するのが基本です。エントランスは他の住人の出入りに合わせて入れても、部屋の鍵は勝手に開けたり交換したりすると契約上のトラブルになる恐れがあります。管理会社に連絡がつかない場合に鍵業者を検討し、作業前に総額の見積もりを確認しましょう。",
+    q: "深夜や早朝でも戸塚区に来てくれますか？",
+    a: "カギ110番・JBR・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし深夜帯は割増料金や到着時間の変動があり得るため、電話の際に深夜料金の有無と到着目安を確認してから依頼するのがおすすめです。なお各社の対応エリアは「神奈川県」としての一次確認値のため、戸塚区での詳細は依頼時に各社へご確認ください。",
+  },
+  {
+    q: "鍵をなくしたら、開けてもらうだけでなく交換もしたほうがいいですか？",
+    a: "落とした場所の見当がつかない場合や、鍵と一緒に住所の分かるもの（免許証、宛名入りの郵便物など）を持ち歩いていた場合は、交換を前提に考えるほうが安全です。一方、家の中で見つかりそうな状況や、落とした場所が特定できて回収の見込みがある場合は、まず解錠だけで済ませて様子を見るという判断もあります。迷う場合は、業者に両方の見積もりを出してもらい、差額を見てから決めるとよいでしょう。",
+    link: { href: "/kagi-koukan-timing/", label: "鍵交換のタイミングはこちら" },
+  },
+  {
+    q: "悪質な鍵業者を見分けるにはどうすればいいですか？",
+    a: "広告の最低価格だけで選ばず、作業前に出張費・部材費まで含めた総額の見積もりを提示してもらうこと、承諾のない追加請求がない方針かを確認すること、運営会社名を確認すること（似た名前の別業者が複数あります）がポイントです。提示額に納得できない場合は、その場で即決せずに断り、複数社を比較しましょう。",
   },
 ];
 
@@ -303,16 +321,16 @@ function H4({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function AreaYokohamaPage() {
+export default function AreaYokohamaTotsukaPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "【2026年最新】横浜の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
+      "【2026年最新】横浜市戸塚区の鍵開け・鍵交換業者おすすめ5選！通勤動線での鍵紛失と戸建ての防犯も分かる鍵屋比較",
     description:
-      "横浜で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較した記事です。",
+      "横浜市戸塚区で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。駅までの通勤動線や駐輪場で鍵をなくしたときの探し方と、戸建てで鍵を隠さないための備え方も解説します。",
     image: `${SITE}/images/kv-top.jpg`,
-    datePublished: "2026-08-09T00:00:00+09:00",
+    datePublished: "2026-08-19T00:00:00+09:00",
     dateModified: `${UPDATED_ISO}T00:00:00+09:00`,
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
@@ -332,16 +350,17 @@ export default function AreaYokohamaPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "鍵トラブルナビ", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "横浜の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
+      { "@type": "ListItem", position: 2, name: "横浜の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}/area/yokohama/` },
+      { "@type": "ListItem", position: 3, name: "横浜市戸塚区の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
     ],
   };
 
   const toc: { href: string; label: string; sub?: { href: string; label: string }[] }[] = [
     {
-      href: "#yokohama5",
-      label: "1｜横浜で人気のおすすめ・優良の鍵業者5選",
+      href: "#top5",
+      label: "1｜横浜市戸塚区で人気のおすすめ・優良の鍵業者5選",
       sub: [
-        { href: "#hikaku", label: "横浜の鍵業者を一覧表で徹底比較" },
+        { href: "#hikaku", label: "横浜市戸塚区の鍵業者を一覧表で徹底比較" },
         ...agents.map((a) => ({ href: `#${a.id}`, label: `${a.num}｜【${a.catch}】${a.name}` })),
       ],
     },
@@ -349,9 +368,9 @@ export default function AreaYokohamaPage() {
     { href: "#shinya", label: "3｜深夜・早朝のトラブルなら" },
     { href: "#meikaku", label: "4｜料金を事前に明確にしたいなら" },
     { href: "#jisha", label: "5｜自社スタッフ対応にこだわるなら" },
-    { href: "#yokohama-tips", label: "6｜横浜で鍵業者を呼ぶ前に確認したいこと" },
+    { href: "#tips", label: "6｜戸塚区で鍵業者を呼ぶ前に確認したいこと（通勤動線での紛失と戸建ての備え）" },
     { href: "#erabikata", label: "7｜失敗しない鍵業者の選び方" },
-    { href: "#faq", label: "8｜横浜の鍵業者でよくある質問" },
+    { href: "#faq", label: "8｜戸塚区の鍵業者でよくある質問" },
     { href: "#matome", label: "9｜まとめ" },
   ];
 
@@ -370,14 +389,18 @@ export default function AreaYokohamaPage() {
                 <Link href="/" className="hover:underline">鍵トラブルナビ</Link>
               </li>
               <li>/</li>
-              <li className="text-foreground">横浜の鍵開け・鍵交換業者おすすめ5選</li>
+              <li>
+                <Link href="/area/yokohama/" className="hover:underline">横浜</Link>
+              </li>
+              <li>/</li>
+              <li className="text-foreground">横浜市戸塚区の鍵開け・鍵交換業者おすすめ5選</li>
             </ol>
           </nav>
 
           {/* h1・更新日・タグchips */}
           <header className="grid gap-4">
             <h1 className="text-2xl md:text-[32px] font-bold leading-normal tracking-wide text-foreground">
-              【2026年最新】横浜の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較
+              【2026年最新】横浜市戸塚区の鍵開け・鍵交換業者おすすめ5選！通勤動線での鍵紛失と戸建ての防犯も分かる鍵屋比較
             </h1>
             <div>
               <span className="inline-block rounded-[2px] bg-primary px-2 py-1 text-xs font-bold tracking-wide text-white">
@@ -391,7 +414,7 @@ export default function AreaYokohamaPage() {
               <span>PR掲載も含みます</span>
             </div>
             <ul className="flex flex-wrap gap-2">
-              {["横浜", "鍵開け", "鍵交換", "24時間対応", "業者比較"].map((t) => (
+              {["横浜市戸塚区", "戸建て", "鍵紛失", "駐輪場", "業者比較"].map((t) => (
                 <li
                   key={t}
                   className="rounded-[2px] border border-border bg-white px-3 py-1.5 text-xs md:text-sm font-bold tracking-wide text-foreground shadow-[0px_2px_2px_0px_rgba(0,0,0,0.12)]"
@@ -403,7 +426,7 @@ export default function AreaYokohamaPage() {
             <figure className="overflow-hidden rounded-[2px]">
               <Image
                 src="/images/kv-top.jpg"
-                alt="横浜の鍵開け・鍵交換業者の比較"
+                alt="横浜市戸塚区の鍵開け・鍵交換業者の比較"
                 width={1024}
                 height={1024}
                 className="w-full h-52 md:h-72 object-cover"
@@ -415,10 +438,10 @@ export default function AreaYokohamaPage() {
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
             <p className="mb-4">
-              「マンションのオートロックの外で鍵がないことに気づいた」「引っ越してきたばかりで鍵を交換したい」——横浜で鍵トラブルにあったとき、どの業者に頼めばよいか迷う方は多いはずです。横浜は駅周辺のマンションから郊外の戸建てまで住まいのかたちが幅広く、同じ「鍵開け」でも建物のタイプによって確認すべきことが変わります。また、鍵業者は料金体系や運営形態（自社対応か加盟店手配か）が各社で異なり、名前のよく似たサービスも複数あります。
+              「駐輪場で自転車の鍵を出したときに、家の鍵ごと落としたかもしれない」——駅まで自転車やバスで向かう暮らしが根づいている戸塚区では、家を出てから電車に乗るまでの短い区間に、鍵を落としやすいポイントがいくつも潜んでいます。帰宅してから気づくことが多いのもこの種の紛失の特徴で、時間が経つほど探せる範囲は狭まっていきます。
             </p>
             <p>
-              本記事では、横浜市内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報だけで比較しました。いずれも全国対応のサービスのため、隣接する東京と共通の5社構成です。急ぎ・深夜・料金重視といった目的別の選び方や、オートロックのマンションで業者を呼ぶ前に確認すべきこともまとめています。ぜひ鍵業者選びの参考にしてください。
+              本記事では、戸塚区内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報だけで比較しました。あわせて、通勤動線で鍵を落としたときに時間を無駄にせず探すための手順と、戸建てで「玄関まわりに鍵を隠さない」ための備え方も整理しています。ぜひ鍵業者選びの参考にしてください。
             </p>
           </div>
 
@@ -460,17 +483,17 @@ export default function AreaYokohamaPage() {
             </ol>
           </nav>
 
-          {/* 1｜5選 */}
-          <H2 id="yokohama5" num="1">横浜で人気のおすすめ・優良の鍵業者5選</H2>
+          {/* 1｜業者一覧 */}
+          <H2 id="top5" num="1">横浜市戸塚区で人気のおすすめ・優良の鍵業者5選</H2>
           <p className="leading-loose mb-2">
-            横浜市内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
+            横浜市戸塚区内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。各社の対応エリアは「神奈川県」としての一次確認値のため、戸塚区での詳細な対応可否・条件は依頼時に各社へご確認ください。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
           </p>
           <p className="text-sm text-text-muted mb-8">
-            ※東京・大阪・名古屋の業者比較は、<Link href="/area/tokyo/" className="text-primary underline">東京版</Link>・<Link href="/area/osaka/" className="text-primary underline">大阪版</Link>・<Link href="/area/nagoya/" className="text-primary underline">名古屋版</Link>をご覧ください。
+            ※<Link href="/area/yokohama/" className="text-primary underline">横浜全体の情報はこちら</Link>（横浜版では同じ一次確認値で5社を比較しています）。
           </p>
 
           <h3 id="hikaku" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
-            横浜の鍵業者を一覧表で徹底比較
+            横浜市戸塚区の鍵業者を一覧表で徹底比較
             <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
           </h3>
           <div className="overflow-x-auto mb-4">
@@ -560,9 +583,9 @@ export default function AreaYokohamaPage() {
           ))}
 
           {/* 2｜急ぎ */}
-          <H2 id="isogi" num="2">横浜の鍵業者をとにかく急いで開けてほしいなら</H2>
+          <H2 id="isogi" num="2">戸塚区の鍵業者をとにかく急いで開けてほしいなら</H2>
           <p className="leading-loose mb-4">
-            締め出しなどで一刻も早く開けてほしい場合は、駆けつけスピードの目安を公表している業者が候補になります。<Hl>鍵の生活救急車は最短15分の駆けつけと全国約2,270店の拠点網</Hl>をうたっており、拠点数の多さは到着スピードの裏付けになります。また、<Hl>カギ110番は電話一本で最短5分の手配</Hl>（全国47都道府県の加盟店ネットワークから近隣の業者を手配）を掲げています。
+            帰宅時に家の前で立ち往生している状況では、日が落ちるまでの時間も気になります。駆けつけスピードの目安を公表している業者としては、<Hl>鍵の生活救急車が最短15分の駆けつけと全国約2,270店の拠点網</Hl>をうたっており、拠点数の多さは到着スピードの裏付けになります。また、<Hl>カギ110番は電話一本で最短5分の手配</Hl>（全国47都道府県の加盟店ネットワークから近隣の業者を手配）を掲げています。
           </p>
           <p className="leading-loose mb-4 text-sm text-text-muted">
             ※いずれも「最短」の目安であり、拠点からの距離・交通状況・繁忙状況で到着時間は変わります。急ぎのときこそ、電話の際に到着目安を確認してから依頼しましょう。
@@ -571,7 +594,7 @@ export default function AreaYokohamaPage() {
           {/* 3｜深夜 */}
           <H2 id="shinya" num="3">深夜・早朝の鍵トラブルなら</H2>
           <p className="leading-loose mb-4">
-            深夜・早朝のトラブルでは、24時間受付かどうかがまず重要です。一次確認値では、<Hl>カギ110番・JBR・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。特にJBRは賠償責任保険に加入した大手グループで、夜間の緊急依頼でも相談しやすい体制です。
+            通勤で帰りが遅くなる日ほど、紛失に気づくのも遅い時間になりがちです。この時間帯に頼れるのは24時間受付の業者で、一次確認値では<Hl>カギ110番・JBR・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。特にJBRは賠償責任保険に加入した大手グループで、夜間の緊急依頼でも相談しやすい体制です。
           </p>
           <p className="leading-loose mb-4 text-sm text-text-muted">
             ※受付が24時間でも、深夜帯は割増料金や到着時間の変動があり得ます。電話時に深夜料金の有無と総額を確認してから依頼するのが安心です。
@@ -580,7 +603,7 @@ export default function AreaYokohamaPage() {
           {/* 4｜料金明確 */}
           <H2 id="meikaku" num="4">料金を事前に明確にしたいなら</H2>
           <p className="leading-loose mb-4">
-            鍵業者とのトラブルで多いのが「作業後に想定外の金額を請求された」というケースです。料金の透明性を重視するなら、<Hl>鍵のレスキューは料金をホームページで明示し、現場での追加費用がない</Hl>と掲げています（鍵開け8,000円〜＋出張料0円〜8,800円）。また、<Hl>鍵の生活救急車は出張・見積もり・キャンセルが無料</Hl>のため、提示された金額を見てから依頼するかどうかを判断できます。
+            解錠だけのつもりが交換まで必要になると、金額の想定は大きく変わります。料金の透明性を重視するなら、<Hl>鍵のレスキューは料金をホームページで明示し、現場での追加費用がない</Hl>と掲げています（鍵開け8,000円〜＋出張料0円〜8,800円）。また、<Hl>鍵の生活救急車は出張・見積もり・キャンセルが無料</Hl>のため、提示された金額を見てから依頼するかどうかを判断できます。
           </p>
           <p className="leading-loose mb-4">
             どの業者に頼む場合でも、作業前に出張費・部材費・深夜割増まで含めた総額の見積もりを確認することが大前提です。相場感は<Link href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場ページ</Link>で解説しています。
@@ -589,23 +612,26 @@ export default function AreaYokohamaPage() {
           {/* 5｜自社スタッフ */}
           <H2 id="jisha" num="5">自社スタッフ対応にこだわるなら</H2>
           <p className="leading-loose mb-4">
-            鍵業者には、依頼を受けて加盟店を手配する「紹介型」と、自社のスタッフが直接対応する「自社対応型」があります。紹介型は対応範囲が広い一方、店舗によって技術・対応に差が出ることがあります。今回の5社では、<Hl>鍵のレスキューが全国約20拠点を自社社員で対応する自社対応型</Hl>で、女性スタッフの指名にも対応しています。担当者の所属まで気になる方は、依頼時に「自社スタッフか協力店か」を確認してみましょう。
+            鍵業者には、依頼を受けて加盟店を手配する「紹介型」と、自社のスタッフが直接対応する「自社対応型」があります。紹介型は対応範囲が広い一方、店舗によって技術・対応に差が出ることがあります。今回の5社では、<Hl>鍵のレスキューが全国約20拠点を自社社員で対応する自社対応型</Hl>で、女性スタッフの指名にも対応しています。夜間に自宅へ来てもらう場面では、対応者の所属を確認できることが安心材料になります。
           </p>
 
-          {/* 6｜横浜特有 */}
-          <H2 id="yokohama-tips" num="6">横浜で鍵業者を呼ぶ前に確認したいこと</H2>
+          {/* 6｜区特有 */}
+          <H2 id="tips" num="6">戸塚区で鍵業者を呼ぶ前に確認したいこと（通勤動線での紛失は「たどり直し」が先）</H2>
           <p className="leading-loose mb-4">
-            マンション・アパートなど賃貸にお住まいの場合、鍵は大家・管理会社の管理物にあたるため、<Hl>締め出しや紛失のときは、鍵業者より先に管理会社・大家へ連絡するのが基本</Hl>です。合鍵やマスターキーで開けてもらえれば費用がかからずに済む場合があり、無断で鍵を開けたり交換したりすると契約上のトラブルになる恐れもあります。詳しい手順は<Link href="/shimedashi/" className="text-primary underline">鍵の閉じ込め・締め出しの対処法</Link>で解説しています。
+            通勤動線で鍵を落としたときは、闇雲に探すより<Hl>「最後に鍵を使った瞬間」から順にたどり直す</Hl>ほうが確実です。朝、玄関を施錠したところが起点になります。そこから駐輪場で自転車の鍵を出した、バス停で定期券を出した、駅の改札で鞄を開けた——といった、鞄やポケットに手を入れた場面を思い出していくと、落とした可能性のある区間が絞れます。区間が絞れたら、自転車を停めた場所、バス事業者と鉄道事業者それぞれの遺失物窓口、立ち寄った店舗へ順に問い合わせ、それでも出てこなければ警察に遺失届を出します。手順の詳細は<Link href="/kagi-funshitsu/" className="text-primary underline">鍵をなくしたときの対処</Link>にまとめています。
           </p>
           <p className="leading-loose mb-4">
-            オートロック付きマンションの場合は、<Hl>部屋の鍵とエントランスのどちらで困っているかを整理してから連絡</Hl>すると話が早く進みます。オートロックの締め出しは仕組み上起こりやすいトラブルのため、予防策も知っておくと安心です。詳しくは<Link href="/autolock-shimedashi-yobou/" className="text-primary underline">オートロックの締め出し予防策</Link>をご覧ください。
+            見落としやすいのが、<Hl>自転車そのものに鍵を置き忘れているケース</Hl>です。前カゴの底、サドルの下、荷台に掛けた袋の中など、自転車まわりは「置いたつもりのない場所」に鍵が残りやすいポイントです。駐輪場に戻る余裕があるなら、まずここを確認してから他の窓口へ動くと空振りが減ります。自転車の鍵自体を紛失した場合の対処は<Link href="/jitensha-kagi/" className="text-primary underline">自転車の鍵をなくしたときの対処</Link>で解説しています。
           </p>
           <p className="leading-loose mb-4">
-            鍵をなくした場合は、<Hl>最寄りの警察署・交番への遺失届の提出</Hl>も忘れずに行いましょう。届け出ておくと、鍵が拾得物として届いた際に連絡を受けられます。詳しくは<Link href="/kagi-funshitsu/" className="text-primary underline">鍵をなくしたときの対処法</Link>、依頼前の金額感は<Link href="/ryokin/" className="text-primary underline">料金相場</Link>で確認できます。
+            そもそも<Hl>家の鍵と自転車の鍵を同じキーホルダーに一括りにしていると、一度の紛失で失うものが増えます</Hl>。自転車には防犯登録がひもづいており、車体番号から所有者情報がたどれる仕組みがあります。家の鍵と自転車の鍵がまとまっていると、拾った人にとって情報が結びつきやすくなるという見方もできます。日常的に持ち歩くものだからこそ、家の鍵は別のリングに分ける、鍵に住所や氏名を書いたタグを付けないといった扱い方を決めておくと安心です。
+          </p>
+          <p className="leading-loose mb-4">
+            戸建てで避けたいのが、<Hl>玄関マットの下・郵便受け・メーターボックス・植木鉢の下といった定番の場所に鍵を隠しておく習慣</Hl>です。「家族が先に帰るかもしれないから」という理由で置かれがちですが、定番であるがゆえに真っ先に探される場所でもあります。家族分の鍵を人数分そろえる、キーボックスを使うなら暗証番号を定期的に変える、といった代替策を先に決めておきましょう。あわせて、玄関だけでなく勝手口や掃き出し窓の施錠も習慣にしておくと安心です。考え方は<Link href="/key-box-kanri/" className="text-primary underline">鍵の保管・キーボックス管理</Link>と<Link href="/katteguchi-mado-bouhan/" className="text-primary underline">勝手口・窓の防犯</Link>、締め忘れ対策は<Link href="/kagi-shimewasure-taisaku/" className="text-primary underline">鍵の締め忘れ対策</Link>を参考にしてください。
           </p>
 
           {/* 7｜選び方 */}
-          <H2 id="erabikata" num="7">横浜の鍵業者の失敗しない選び方</H2>
+          <H2 id="erabikata" num="7">戸塚区の鍵業者の失敗しない選び方</H2>
           <p className="leading-loose mb-6">
             鍵業者選びで後悔しないためには、次の4つのステップを踏むことが大切です。緊急時ほど「早く解決したいから」と即決しがちですが、数分の確認でトラブルの多くは防げます。
           </p>
@@ -620,7 +646,7 @@ export default function AreaYokohamaPage() {
           ))}
 
           {/* 8｜FAQ */}
-          <H2 id="faq" num="8">横浜の鍵業者でよくある質問</H2>
+          <H2 id="faq" num="8">戸塚区の鍵業者でよくある質問</H2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <div key={f.q} className="rounded-[2px] border border-border">
@@ -632,22 +658,10 @@ export default function AreaYokohamaPage() {
                   <span className="text-accent font-bold shrink-0">A.</span>
                   <span>
                     {f.a}
-                    {f.q.includes("相場") && (
+                    {f.link && (
                       <>
                         {" "}
-                        <Link href="/ryokin/" className="text-primary underline">料金相場の詳細はこちら</Link>
-                      </>
-                    )}
-                    {f.q.includes("東京") && (
-                      <>
-                        {" "}
-                        <Link href="/area/tokyo/" className="text-primary underline">東京の鍵業者比較はこちら</Link>
-                      </>
-                    )}
-                    {f.q.includes("オートロック") && (
-                      <>
-                        {" "}
-                        <Link href="/autolock-shimedashi-yobou/" className="text-primary underline">オートロックの締め出し予防策はこちら</Link>
+                        <Link href={f.link.href} className="text-primary underline">{f.link.label}</Link>
                       </>
                     )}
                   </span>
@@ -659,10 +673,10 @@ export default function AreaYokohamaPage() {
           {/* 9｜まとめ */}
           <H2 id="matome" num="9">まとめ</H2>
           <p className="leading-loose mb-4">
-            横浜で鍵開け・鍵交換を頼める主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。スピード重視なら鍵の生活救急車やカギ110番、深夜・早朝ならカギ110番・JBR・鍵のレスキュー、料金の明確さ重視なら鍵のレスキュー、というように、目的によって向いている業者は変わります。
+            横浜市戸塚区で鍵開け・鍵交換を頼める主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。スピード重視なら鍵の生活救急車やカギ110番、深夜・早朝のトラブルならカギ110番・JBR・鍵のレスキュー、料金の明確さ重視なら鍵のレスキュー、というように、目的によって向いている業者は変わります。
           </p>
           <p className="leading-loose mb-8">
-            どの業者を選ぶ場合も、賃貸やオートロック付きマンションならまず管理会社・大家への連絡、紛失なら警察への遺失届を済ませたうえで、作業前に総額の見積もりを確認することが失敗しないための共通ルールです。本記事の一次確認値を出発点に、状況に合った業者を選んでください。
+            駅まで自転車やバスで向かう暮らしが根づく戸塚区では、鍵の紛失は「どこで落としたか」をたどり直せるかどうかで結果が変わります。最後に鍵を使った瞬間から順に思い出し、駐輪場・交通事業者・店舗・警察の順に当たっていきましょう。日ごろの備えとしては、家の鍵を玄関まわりに隠さないこと、自転車の鍵と一括りにしないことの二つが効きます。そのうえで業者が必要になったら、本記事の一次確認値を出発点に選んでください。
           </p>
           <div className="rounded-[2px] bg-primary text-white p-6 text-center">
             <p className="font-bold text-lg mb-2">鍵のトラブルでお困りの方へ</p>
@@ -679,7 +693,7 @@ export default function AreaYokohamaPage() {
           <div className="mt-12">
             <p className="text-sm font-bold text-text-muted mb-3">タグ</p>
             <ul className="flex flex-wrap gap-2">
-              {["横浜", "鍵開け", "鍵交換", "24時間対応", "業者比較", "エリア別"].map((t) => (
+              {["横浜市戸塚区", "戸建て住宅", "通勤動線", "鍵紛失", "自転車の鍵", "エリア別"].map((t) => (
                 <li
                   key={t}
                   className="rounded-[2px] border border-border bg-white px-3 py-1.5 text-xs md:text-sm font-bold tracking-wide text-foreground shadow-[0px_2px_2px_0px_rgba(0,0,0,0.12)]"
@@ -690,83 +704,21 @@ export default function AreaYokohamaPage() {
             </ul>
           </div>
 
-          {/* 市内の区 */}
-          <div className="mt-10">
-            <p className="text-sm font-bold text-text-muted mb-3">横浜市内の区別ページ</p>
-            <ul className="grid gap-3 md:grid-cols-2">
-              {[
-                { href: "/area/yokohama-kohoku/", label: "横浜市港北区の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/yokohama-tsurumi/", label: "横浜市鶴見区の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/yokohama-totsuka/", label: "横浜市戸塚区の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/yokohama-aoba/", label: "横浜市青葉区の鍵開け・鍵交換業者おすすめ5選" },
-              ].map((l) => (
-                <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    className="block rounded-[2px] border border-border bg-white px-4 py-3 text-sm font-bold text-primary hover:bg-[#F5F8FC] transition-colors"
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* 他エリア */}
           <div className="mt-10">
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/yokohama-kohoku/", label: "横浜市港北区の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/yokohama-tsurumi/", label: "横浜市鶴見区の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/yokohama-aoba/", label: "横浜市青葉区の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kawasaki/", label: "川崎の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ6選" },
-                { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/fukuoka/", label: "福岡の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/sapporo/", label: "札幌の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kyoto/", label: "京都の鍵開け・鍵交換業者おすすめ6選" },
-                { href: "/area/kobe/", label: "神戸の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/chiba/", label: "千葉の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/sendai/", label: "仙台の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/hiroshima/", label: "広島の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/sakai/", label: "堺の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kawasaki/", label: "川崎の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kitakyushu/", label: "北九州の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/hamamatsu/", label: "浜松の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/shizuoka/", label: "静岡の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/okayama/", label: "岡山の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kumamoto/", label: "熊本の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/niigata/", label: "新潟の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kagoshima/", label: "鹿児島の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kanazawa/", label: "金沢の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/utsunomiya/", label: "宇都宮の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/matsuyama/", label: "松山の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/naha/", label: "那覇の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/takamatsu/", label: "高松の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/nagano/", label: "長野の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/gifu/", label: "岐阜の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/mito/", label: "水戸の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/maebashi/", label: "前橋の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/toyama/", label: "富山の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/fukui/", label: "福井の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kofu/", label: "甲府の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/nagasaki/", label: "長崎の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/oita/", label: "大分の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/miyazaki/", label: "宮崎の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/morioka/", label: "盛岡の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/akita/", label: "秋田の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/yamagata/", label: "山形の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/fukushima/", label: "福島の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/tsu/", label: "津の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/otsu/", label: "大津の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/wakayama/", label: "和歌山の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/tokushima/", label: "徳島の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/aomori/", label: "青森の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/nara/", label: "奈良の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/tottori/", label: "鳥取の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/matsue/", label: "松江の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/yamaguchi/", label: "山口の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/kochi/", label: "高知の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/saga/", label: "佐賀の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ6選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
@@ -785,12 +737,12 @@ export default function AreaYokohamaPage() {
             <p className="text-sm font-bold text-text-muted mb-3">関連記事</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処" },
+                { href: "/jitensha-kagi/", label: "自転車の鍵をなくしたときの対処" },
+                { href: "/key-box-kanri/", label: "鍵の保管・キーボックス管理" },
+                { href: "/katteguchi-mado-bouhan/", label: "勝手口・窓の防犯" },
+                { href: "/kagi-shimewasure-taisaku/", label: "鍵の締め忘れ対策" },
                 { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場" },
-                { href: "/ryokin-index/", label: "主要業者の料金一次確認まとめ" },
-                { href: "/shimedashi/", label: "鍵の閉じ込め・締め出しの対処法" },
-                { href: "/autolock-shimedashi-yobou/", label: "オートロックの締め出し予防策" },
-                { href: "/agents/", label: "鍵業者一覧・比較" },
-                { href: "/agents/kagi110ban-vs-seikatsu9/", label: "カギ110番 vs 生活救急車 徹底比較" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
