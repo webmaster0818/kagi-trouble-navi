@@ -696,6 +696,27 @@ export default function AreaFukuokaPage() {
             </ul>
           </div>
 
+          {/* 市内の区 */}
+          <div className="mt-10">
+            <p className="text-sm font-bold text-text-muted mb-3">福岡市内の区別ページ</p>
+            <ul className="grid gap-3 md:grid-cols-2">
+              {[
+                { href: "/area/fukuoka-chuo/", label: "福岡市中央区の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/fukuoka-hakata/", label: "福岡市博多区の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/fukuoka-nishi/", label: "福岡市西区の鍵開け・鍵交換業者おすすめ5選" },
+              ].map((l) => (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    className="block rounded-[2px] border border-border bg-white px-4 py-3 text-sm font-bold text-primary hover:bg-[#F5F8FC] transition-colors"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* 他エリア */}
           <div className="mt-10">
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
