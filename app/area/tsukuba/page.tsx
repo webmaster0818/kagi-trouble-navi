@@ -3,23 +3,23 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
-const PATH = "/area/morioka/";
-const UPDATED = "2026年8月16日";
-const UPDATED_ISO = "2026-08-16";
+const PATH = "/area/tsukuba/";
+const UPDATED = "2026年9月17日";
+const UPDATED_ISO = "2026-09-17";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "【2026年最新】盛岡の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較｜鍵トラブルナビ",
+      "【2026年最新】つくば市の鍵開け・鍵交換業者おすすめ5選！停電のとき自宅の錠がどう動くかの確かめ方も分かる鍵屋比較｜鍵トラブルナビ",
   },
   description:
-    "盛岡で鍵開け・鍵交換を頼める鍵業者5社を一次確認値で比較。カギ110番（鍵開け6,600円〜）・鍵の生活救急車（最短15分）・JBR・鍵のレスキュー・カギの救急車の料金と受付時間、玄関ドアの建て付けと鍵の不調の切り分け方まで編集部が中立にまとめました。",
+    "つくば市で鍵開け・鍵交換を頼める鍵業者5社を一次確認値で比較。カギ110番（鍵開け6,600円〜）・鍵の生活救急車（最短15分）・JBR・鍵のレスキュー・カギの救急車の料金と受付時間、停電したときに電気錠やオートロックがどう動くかの確かめ方と、避難するときの鍵の扱いまで編集部が中立にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title:
-      "【2026年最新】盛岡の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
+      "【2026年最新】つくば市の鍵開け・鍵交換業者おすすめ5選！停電のとき自宅の錠がどう動くかの確かめ方も分かる鍵屋比較",
     description:
-      "盛岡で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。ドアを閉めたときだけ鍵が固い場合の原因の見方と、建て付け・シリンダーどちらを疑うかの判断も解説します。",
+      "つくば市で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較。停電時に電気錠やオートロックがどう動くかの確かめ方と、避難するときの鍵の扱いも解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
     images: ["/images/kv-top.jpg"],
@@ -41,12 +41,6 @@ interface AreaAgent {
   memoDate: string;
 }
 
-interface AreaFaq {
-  q: string;
-  a: string;
-  link?: { href: string; label: string };
-}
-
 const agents: AreaAgent[] = [
   {
     id: "kagi110ban",
@@ -59,7 +53,7 @@ const agents: AreaAgent[] = [
         カギ110番は、東証グロース上場の
         <Hl>シェアリングテクノロジー株式会社が運営する加盟店紹介型の鍵トラブル解決サービス</Hl>
         です。<Hl>鍵開け6,600円〜（税込・公式表示）</Hl>
-        で、24時間365日受付・電話一本で最短5分の手配をうたっています。全国47都道府県の加盟店ネットワークが対象のため、盛岡市内の依頼でも近隣の加盟店が手配される仕組みです。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
+        で、24時間365日受付・電話一本で最短5分の手配をうたっています。全国47都道府県の加盟店ネットワークが対象のため、つくば市内の依頼でも近隣の加盟店が手配される仕組みです。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
       </>
     ),
     recommend: [
@@ -71,7 +65,7 @@ const agents: AreaAgent[] = [
     table: [
       { k: "鍵開け料金", v: "6,600円〜（税込）", note: "公式表示・2026年7月4日確認。加盟店・エリアにより異なる場合あり" },
       { k: "受付時間", v: "24時間365日" },
-      { k: "対応エリア", v: "全国47都道府県（岩手県対応）" },
+      { k: "対応エリア", v: "全国47都道府県（茨城県対応）", note: "茨城県対応の一次確認値。つくば市での詳細な対応可否・条件は依頼時に各社へ確認" },
       { k: "見積もり", v: "無料", note: "交通費・キャンセル料は別途発生する場合ありと公式記載" },
       { k: "運営会社", v: "シェアリングテクノロジー株式会社" },
     ],
@@ -241,7 +235,7 @@ const compareRows = agents.map((a) => ({
 const steps = [
   {
     t: "① 状況と鍵の種類を整理する",
-    b: "「開かない」「施錠しづらい」など状況と、鍵の種類をメモしておくと、電話での見積もり精度が上がります。施錠のしづらさが相談内容なら、「ドアを開けた状態なら鍵は回るか」「閉めた状態でだけ引っかかるか」まで伝えられると、業者側も原因を推測しやすくなります。賃貸の場合は、業者より先に管理会社・大家への連絡が基本です。",
+    b: "「開かない」「なくした」「停電のあとから動きがおかしい」など状況と、対象（玄関・勝手口・共用のエントランス）、その錠が電気で動くものかどうかをメモしておくと、電話での見積もり精度が上がります。電気錠や自動ドアは鍵業者の対応範囲外のことがあるため、製品の名称まで伝えて可否を先に確かめましょう。賃貸の場合は、業者より先に管理会社・大家への連絡が基本です。",
   },
   {
     t: "② 出張費・夜間料金を含めた総額の見積もりを取る",
@@ -253,33 +247,30 @@ const steps = [
   },
   {
     t: "④ 急ぎでなければ複数社を比較する",
-    b: "締め出しなどの緊急時以外は、2〜3社から見積もりを取って総額・条件を比較するのがおすすめです。建て付けに関わる調整やシリンダー交換のように日程が読める依頼なら、じっくり比較する価値があります。今回の5社はいずれも全国対応型で盛岡から依頼できます。金額に納得できない場合は、その場で契約せず一度断る選択肢もあります。",
+    b: "締め出しなどの緊急時以外は、2〜3社から見積もりを取って総額・条件を比較するのがおすすめです。非常用の鍵の追加作成や、防犯目的の鍵交換のように日程が読める依頼なら、じっくり比較する価値があります。今回の5社はいずれも全国対応型でつくば市から依頼できます（対応エリアは「茨城県」としての一次確認値のため、詳細条件は各社へ確認を）。金額に納得できない場合は、その場で契約せず一度断る選択肢もあります。",
   },
 ];
 
-const faqs: AreaFaq[] = [
+const faqs = [
   {
-    q: "盛岡の鍵開け料金の相場はいくらですか？",
+    q: "つくば市の鍵開け料金の相場はいくらですか？",
     a: "当サイトが一次確認した各社の公式表示では、鍵開けの基本料金はカギ110番6,600円〜、鍵のレスキュー8,000円〜、鍵の生活救急車・JBR8,800円〜（いずれも税込）、カギの救急車は公式目安11,000〜44,000円です。ただしこれは最低価格や目安で、鍵の種類（ディンプルキー等）・時間帯・出張距離で総額は変わります。作業前に総額の見積もりを取りましょう。詳しくは鍵開け・鍵交換の料金相場ページで解説しています。",
-    link: { href: "/ryokin/", label: "料金相場の詳細はこちら" },
   },
   {
-    q: "深夜や早朝でも盛岡に来てくれますか？",
-    a: "カギ110番・JBR・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし深夜帯は割増料金や到着時間の変動があり得るため、電話の際に深夜料金の有無と到着目安を確認してから依頼するのがおすすめです。",
+    q: "停電したら、オートロックのエントランスはどうなりますか？",
+    a: "建物によって異なります。電気が止まると解錠される仕組みのものもあれば、施錠したまま止まるものもあり、共用部と住戸の玄関で別々の仕組みになっていることもあります。管理規程や設備の説明書に書かれていることが多いので、停電が起きる前に管理会社へ確認しておきましょう。住戸の玄関が電気で動く錠なら、非常用の鍵の有無と置き場所もあわせて確かめておくと安心です。",
   },
   {
-    q: "ドアを開けた状態では鍵が回るのに、閉めると固くなります。原因は何ですか？",
-    a: "その症状は、シリンダーそのものよりも、デッドボルトと枠側のストライク（受け座）の位置ずれ、つまり建て付け側の可能性が高いサインです。丁番のねじの緩みやドアのわずかな下がりでも起こります。逆に、開けた状態でも鍵が重い・引っかかる場合はシリンダー内部の摩耗や汚れが疑われます。",
-    link: { href: "/kagi-mawaranai/", label: "鍵が回らないときの解説はこちら" },
+    q: "電気錠やスマートロックの不具合も鍵業者に頼めますか？",
+    a: "対応できるかは業者と製品によって分かれます。メーカーや施工業者、建物の管理会社が窓口になっていることもあり、その場合は鍵業者に来てもらっても対応の範囲外になります。電話の段階で「電気で動く錠である」ことと製品の名称を伝えて、可否と料金の区分を先に確かめてください。機械式の錠が併設されている場合は、そちらの作業なら対応できることもあります。",
   },
   {
-    q: "玄関ドアの建て付け調整は鍵業者に頼めますか？",
-    a: "ストライクの位置調整や錠ケースまわりの調整は、鍵業者が対応することの多い作業です。一方、ドア本体のゆがみや枠の補修が必要なケースでは、建具業者やドアメーカーの窓口が適していることもあります。まずは症状（いつから・どの状態で引っかかるか）を伝えて、対応範囲を確認してから依頼しましょう。",
+    q: "避難で家を空けるとき、鍵はどうすればいいですか？",
+    a: "施錠して出て、鍵は身につけて持つのが基本です。家族が別々の場所にいる状況では、誰が最後に出て施錠するのか、どこで落ち合うのかを平常時に決めておくと、当日の迷いが減ります。非常用の鍵をしまい込んでいる場合は、持ち出す荷物の中に一本入れておくと取り出しやすくなります。",
   },
   {
-    q: "施錠しづらい鍵を、だましだまし使い続けても大丈夫ですか？",
-    a: "おすすめできません。引っかかったまま力任せに回し続けると、鍵の根元が折れたり、錠ケースの内部部品が破損したりして、修理の規模が大きくなりがちです。鍵穴専用の潤滑剤で改善しない場合や、閉めた状態でだけ固い場合は、早めに原因の切り分けと調整を業者に相談しましょう。",
-    link: { href: "/kagi-ore/", label: "鍵が折れたときの解説はこちら" },
+    q: "深夜や早朝でもつくば市に来てくれますか？",
+    a: "カギ110番・JBR・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし深夜帯は割増料金や到着時間の変動があり得るため、電話の際に深夜料金の有無と到着目安を確認してから依頼するのがおすすめです。なお各社の対応エリアは「茨城県」としての一次確認値のため、つくば市での詳細な対応可否は依頼時にご確認ください。",
   },
   {
     q: "悪質な鍵業者を見分けるにはどうすればいいですか？",
@@ -322,16 +313,16 @@ function H4({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function AreaMoriokaPage() {
+export default function AreaTsukubaPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "【2026年最新】盛岡の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較",
+      "【2026年最新】つくば市の鍵開け・鍵交換業者おすすめ5選！停電のとき自宅の錠がどう動くかの確かめ方も分かる鍵屋比較",
     description:
-      "盛岡で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較した記事です。",
+      "つくば市で鍵開け・鍵交換を頼める鍵業者5社を、料金・受付時間の一次確認値で比較した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
-    datePublished: "2026-08-16T00:00:00+09:00",
+    datePublished: "2026-09-17T00:00:00+09:00",
     dateModified: `${UPDATED_ISO}T00:00:00+09:00`,
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
@@ -351,16 +342,16 @@ export default function AreaMoriokaPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "鍵トラブルナビ", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "盛岡の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
+      { "@type": "ListItem", position: 2, name: "つくば市の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
     ],
   };
 
   const toc: { href: string; label: string; sub?: { href: string; label: string }[] }[] = [
     {
-      href: "#morioka5",
-      label: "1｜盛岡で人気のおすすめ・優良の鍵業者5選",
+      href: "#tsukuba5",
+      label: "1｜つくば市で人気のおすすめ・優良の鍵業者5選",
       sub: [
-        { href: "#hikaku", label: "盛岡の鍵業者を一覧表で徹底比較" },
+        { href: "#hikaku", label: "つくば市の鍵業者を一覧表で徹底比較" },
         ...agents.map((a) => ({ href: `#${a.id}`, label: `${a.num}｜【${a.catch}】${a.name}` })),
       ],
     },
@@ -368,9 +359,9 @@ export default function AreaMoriokaPage() {
     { href: "#shinya", label: "3｜深夜・早朝のトラブルなら" },
     { href: "#meikaku", label: "4｜料金を事前に明確にしたいなら" },
     { href: "#jisha", label: "5｜自社スタッフ対応にこだわるなら" },
-    { href: "#morioka-tips", label: "6｜盛岡で鍵業者を呼ぶ前に確認したいこと（玄関ドアの建て付けと鍵の不調の切り分け）" },
+    { href: "#tsukuba-tips", label: "6｜つくば市で鍵業者を呼ぶ前に確認したいこと（停電したときに自宅の錠がどう動くかを平常時に確かめる）" },
     { href: "#erabikata", label: "7｜失敗しない鍵業者の選び方" },
-    { href: "#faq", label: "8｜盛岡の鍵業者でよくある質問" },
+    { href: "#faq", label: "8｜つくば市の鍵業者でよくある質問" },
     { href: "#matome", label: "9｜まとめ" },
   ];
 
@@ -389,14 +380,14 @@ export default function AreaMoriokaPage() {
                 <Link href="/" className="hover:underline">鍵トラブルナビ</Link>
               </li>
               <li>/</li>
-              <li className="text-foreground">盛岡の鍵開け・鍵交換業者おすすめ5選</li>
+              <li className="text-foreground">つくば市の鍵開け・鍵交換業者おすすめ5選</li>
             </ol>
           </nav>
 
           {/* h1・更新日・タグchips */}
           <header className="grid gap-4">
             <h1 className="text-2xl md:text-[32px] font-bold leading-normal tracking-wide text-foreground">
-              【2026年最新】盛岡の鍵開け・鍵交換業者おすすめ5選！24時間対応の鍵屋を徹底比較
+              【2026年最新】つくば市の鍵開け・鍵交換業者おすすめ5選！停電のとき自宅の錠がどう動くかの確かめ方も分かる鍵屋比較
             </h1>
             <div>
               <span className="inline-block rounded-[2px] bg-primary px-2 py-1 text-xs font-bold tracking-wide text-white">
@@ -410,7 +401,7 @@ export default function AreaMoriokaPage() {
               <span>PR掲載も含みます</span>
             </div>
             <ul className="flex flex-wrap gap-2">
-              {["盛岡", "鍵開け", "鍵交換", "24時間対応", "業者比較"].map((t) => (
+              {["つくば市", "電気錠", "停電の備え", "鍵開け", "業者比較"].map((t) => (
                 <li
                   key={t}
                   className="rounded-[2px] border border-border bg-white px-3 py-1.5 text-xs md:text-sm font-bold tracking-wide text-foreground shadow-[0px_2px_2px_0px_rgba(0,0,0,0.12)]"
@@ -422,7 +413,7 @@ export default function AreaMoriokaPage() {
             <figure className="overflow-hidden rounded-[2px]">
               <Image
                 src="/images/kv-top.jpg"
-                alt="盛岡の鍵開け・鍵交換業者の比較"
+                alt="つくば市の鍵開け・鍵交換業者の比較"
                 width={1024}
                 height={1024}
                 className="w-full h-52 md:h-72 object-cover"
@@ -434,10 +425,10 @@ export default function AreaMoriokaPage() {
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
             <p className="mb-4">
-              「鍵単体では滑らかに回るのに、ドアを閉めると引っかかって施錠しづらい」「扉を持ち上げるように引き寄せないとデッドボルトが出ない」——玄関の施錠がしづらくなったとき、原因が鍵（シリンダー）側にあるのか、ドア本体や枠の建て付け側にあるのかは、見た目だけでは判断しにくいものです。長く住み続けた戸建ても多い盛岡の暮らしで、経年によるドアの変化と鍵の不調が重なって起こることは珍しくありません。原因の切り分けを知っておくと、頼み先の判断も出費の見通しも立てやすくなります。
+              「停電したとき、マンションのエントランスは開くのだろうか」「電気で動く玄関の錠は、電気が止まったらどうなるのか」——ふだんは意識しませんが、電気を使う錠は停電したときの動きが製品や建物によって違います。つくば市は茨城県の南部にあり、研究機関や大学が集まる街で、電気錠やオートロックを備えた住まいも身近です。停電してから調べるのでは間に合わないため、平常時に確かめておきたい項目があります。
             </p>
             <p>
-              本記事では、盛岡市内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報だけで比較しました。あわせて、玄関ドアの建て付けと鍵の不調を切り分ける考え方もまとめています。ぜひ鍵業者選びの参考にしてください。
+              本記事では、つくば市内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報だけで比較しました。あわせて、停電したときに自宅の錠がどう動くかの確かめ方と、家を空けて避難するときの鍵の扱いを整理しています。ぜひ鍵業者選びの参考にしてください。
             </p>
           </div>
 
@@ -480,16 +471,16 @@ export default function AreaMoriokaPage() {
           </nav>
 
           {/* 1｜5選 */}
-          <H2 id="morioka5" num="1">盛岡で人気のおすすめ・優良の鍵業者5選</H2>
+          <H2 id="tsukuba5" num="1">つくば市で人気のおすすめ・優良の鍵業者5選</H2>
           <p className="leading-loose mb-2">
-            盛岡市内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
+            つくば市内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。各社の対応エリアは「茨城県」としての一次確認値のため、つくば市での詳細な対応可否・条件は依頼時に各社へご確認ください。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
           </p>
           <p className="text-sm text-text-muted mb-8">
-            ※他の都市の比較は、<Link href="/area/sendai/" className="text-primary underline">仙台版</Link>・<Link href="/area/akita/" className="text-primary underline">秋田版</Link>・<Link href="/area/yamagata/" className="text-primary underline">山形版</Link>もご覧ください。
+            ※他の都市の比較は、<Link href="/area/mito/" className="text-primary underline">水戸版</Link>・<Link href="/area/tokyo/" className="text-primary underline">東京版</Link>・<Link href="/area/saitama/" className="text-primary underline">さいたま版</Link>もご覧ください。
           </p>
 
           <h3 id="hikaku" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
-            盛岡の鍵業者を一覧表で徹底比較
+            つくば市の鍵業者を一覧表で徹底比較
             <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
           </h3>
           <div className="overflow-x-auto mb-4">
@@ -579,7 +570,7 @@ export default function AreaMoriokaPage() {
           ))}
 
           {/* 2｜急ぎ */}
-          <H2 id="isogi" num="2">盛岡の鍵業者をとにかく急いで開けてほしいなら</H2>
+          <H2 id="isogi" num="2">つくば市の鍵業者をとにかく急いで開けてほしいなら</H2>
           <p className="leading-loose mb-4">
             締め出しなどで一刻も早く開けてほしい場合は、駆けつけスピードの目安を公表している業者が候補になります。<Hl>鍵の生活救急車は最短15分の駆けつけと全国約2,270店の拠点網</Hl>をうたっており、拠点数の多さは到着スピードの裏付けになります。また、<Hl>カギ110番は電話一本で最短5分の手配</Hl>（全国47都道府県の加盟店ネットワークから近隣の業者を手配）を掲げています。
           </p>
@@ -590,7 +581,7 @@ export default function AreaMoriokaPage() {
           {/* 3｜深夜 */}
           <H2 id="shinya" num="3">深夜・早朝の鍵トラブルなら</H2>
           <p className="leading-loose mb-4">
-            盛岡でも、深夜の締め出しや帰宅後に紛失へ気づくトラブルは起こり得ます。この時間帯に頼れるのは24時間受付の業者で、一次確認値では<Hl>カギ110番・JBR・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。特にJBRは賠償責任保険に加入した大手グループで、夜間の緊急依頼でも相談しやすい体制です。
+            つくば市でも、深夜の締め出しや帰宅後に紛失へ気づくトラブルは起こり得ます。この時間帯に頼れるのは24時間受付の業者で、一次確認値では<Hl>カギ110番・JBR・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。特にJBRは賠償責任保険に加入した大手グループで、夜間の緊急依頼でも相談しやすい体制です。
           </p>
           <p className="leading-loose mb-4 text-sm text-text-muted">
             ※受付が24時間でも、深夜帯は割増料金や到着時間の変動があり得ます。電話時に深夜料金の有無と総額を確認してから依頼するのが安心です。
@@ -611,20 +602,23 @@ export default function AreaMoriokaPage() {
             鍵業者には、依頼を受けて加盟店を手配する「紹介型」と、自社のスタッフが直接対応する「自社対応型」があります。紹介型は対応範囲が広い一方、店舗によって技術・対応に差が出ることがあります。今回の5社では、<Hl>鍵のレスキューが全国約20拠点を自社社員で対応する自社対応型</Hl>で、女性スタッフの指名にも対応しています。担当者の所属まで気になる方は、依頼時に「自社スタッフか協力店か」を確認してみましょう。
           </p>
 
-          {/* 6｜盛岡特有 */}
-          <H2 id="morioka-tips" num="6">盛岡で鍵業者を呼ぶ前に確認したいこと（玄関ドアの建て付けと鍵の不調の切り分け）</H2>
+          {/* 6｜つくば市特有 */}
+          <H2 id="tsukuba-tips" num="6">つくば市で鍵業者を呼ぶ前に確認したいこと（停電したときに自宅の錠がどう動くかを平常時に確かめる）</H2>
           <p className="leading-loose mb-4">
-            切り分けの出発点は、<Hl>ドアを開けた状態で鍵を回してみる</Hl>ことです。開けた状態でデッドボルト（かんぬき）がスムーズに出入りするなら、シリンダーや錠ケースよりも、ドアと枠の位置関係——つまり建て付け側をまず疑います。閉めた状態でだけ引っかかるのは、デッドボルトが枠側のストライク（受け座）とずれているサインです。反対に、開けた状態でも鍵が重い・引っかかるなら、シリンダー内部の摩耗や汚れの可能性が高くなります。<Link href="/kagi-mawaranai/" className="text-primary underline">鍵が回らないときの解説記事</Link>もあわせてご覧ください。
+            電気で動く錠は、<Hl>停電したときの動きが製品や建物によって違います</Hl>。人が閉じ込められないよう電気が止まると解錠される仕組みのものもあれば、施錠したまま止まるものもあり、共用のエントランスと住戸の玄関で別々の仕組みになっていることもあります。つくば市は茨城県の南部にあり、研究機関や大学が集まる街で、電気錠やオートロックを備えた住まいも身近です。<Hl>自分の住まいがどちらなのかは、取扱説明書と、建物の管理規程や管理会社への確認でしか分かりません</Hl>。停電してから調べることではないので、平常時に確かめておきましょう。電気で動く錠の基本は<Link href="/denshijou-denchigire/" className="text-primary underline">電子錠の電池切れの対処</Link>と<Link href="/smart-lock/" className="text-primary underline">スマートロックの基礎知識</Link>で扱っています。
           </p>
           <p className="leading-loose mb-4">
-            建て付け側が疑わしいときに避けたいのは、<Hl>体重をかけて無理に施錠し続ける</Hl>ことです。引っかかりを力で越える使い方は、デッドボルトの変形・錠ケースの故障・鍵折れにつながります。丁番のねじの緩みやストライクの位置調整で改善するケースは多く、錠前まわりの調整は鍵業者が対応することの多い作業です。「いつから」「どの状態で引っかかるか」を伝えて相談しましょう。万一折れてしまったときの対処は<Link href="/kagi-ore/" className="text-primary underline">鍵が折れたときの解説記事</Link>で説明しています。
+            あわせて確かめたいのが、<Hl>非常時に使う物理の鍵がどこにあるか</Hl>です。電気で動く錠には非常用の鍵穴やシリンダーが併設されていることが多いのですが、その鍵は普段使わないぶん、しまい込んだまま所在があいまいになりがちです。家族の全員が置き場所を知っているか、いざというときに取り出せるかを確認してください。玄関のすぐ内側の見える場所に置くのは、防犯の面では勧められません。持ち出し用の荷物の中に一本入れておく、という備え方もあります。
           </p>
           <p className="leading-loose mb-4">
-            シリンダー側が疑わしいときは、<Hl>鍵穴専用の潤滑剤以外を差さない</Hl>のが鉄則です。食用油や一般的な潤滑スプレーは内部でほこりを固め、症状を悪化させます。一般に錠前の耐用年数は10年程度が目安とされており、長年使ったシリンダーの不調は、修理より交換のほうが結果的に安上がりなこともあります。<Link href="/kagi-jumyou/" className="text-primary underline">鍵の寿命の解説記事</Link>と<Link href="/kagi-koukan-timing/" className="text-primary underline">鍵交換のタイミング</Link>を参考に、交換も選択肢に入れて検討してください。
+            家を空けて避難するときは、<Hl>施錠して出る、鍵は身につけて持つ</Hl>のが基本です。あわてて出ると、最後に出た人が施錠したかどうか分からなくなります。家族が別々の場所にいるときに誰が施錠して出るのか、どこで落ち合うのかを、平常時に話しておきましょう。締め忘れが気になる人に向けた工夫は<Link href="/kagi-shimewasure-taisaku/" className="text-primary underline">鍵の閉め忘れ対策</Link>にまとめています。
+          </p>
+          <p className="leading-loose mb-4">
+            停電から復旧したあとに「前と動きが違う」と感じたら、<Hl>いつから・どの操作で起きるのかを書き留めてから相談します</Hl>。電気で動く錠や自動ドアは、鍵業者ではなくメーカーや施工業者、建物の管理会社が窓口になることがあり、来てもらっても対応の範囲外ということが起こり得ます。電話の段階で、電気錠であることと製品の名称を伝え、対応できるかを先に確かめてください。扉そのもののゆがみが原因のこともあるため、錠の問題か扉の問題かの切り分けは<Link href="/door-koukan-vs-kagi-koukan/" className="text-primary underline">ドア交換と鍵交換の違い</Link>が参考になります。
           </p>
 
           {/* 7｜選び方 */}
-          <H2 id="erabikata" num="7">盛岡の鍵業者の失敗しない選び方</H2>
+          <H2 id="erabikata" num="7">つくば市の鍵業者の失敗しない選び方</H2>
           <p className="leading-loose mb-6">
             鍵業者選びで後悔しないためには、次の4つのステップを踏むことが大切です。緊急時ほど「早く解決したいから」と即決しがちですが、数分の確認でトラブルの多くは防げます。
           </p>
@@ -639,7 +633,7 @@ export default function AreaMoriokaPage() {
           ))}
 
           {/* 8｜FAQ */}
-          <H2 id="faq" num="8">盛岡の鍵業者でよくある質問</H2>
+          <H2 id="faq" num="8">つくば市の鍵業者でよくある質問</H2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <div key={f.q} className="rounded-[2px] border border-border">
@@ -651,10 +645,28 @@ export default function AreaMoriokaPage() {
                   <span className="text-accent font-bold shrink-0">A.</span>
                   <span>
                     {f.a}
-                    {f.link && (
+                    {f.q.includes("相場") && (
                       <>
                         {" "}
-                        <Link href={f.link.href} className="text-primary underline">{f.link.label}</Link>
+                        <Link href="/ryokin/" className="text-primary underline">料金相場の詳細はこちら</Link>
+                      </>
+                    )}
+                    {f.q.includes("オートロックのエントランス") && (
+                      <>
+                        {" "}
+                        <Link href="/autolock-shimedashi-yobou/" className="text-primary underline">オートロックの締め出し予防はこちら</Link>
+                      </>
+                    )}
+                    {f.q.includes("スマートロック") && (
+                      <>
+                        {" "}
+                        <Link href="/smart-lock/" className="text-primary underline">スマートロックの基礎知識はこちら</Link>
+                      </>
+                    )}
+                    {f.q.includes("避難で家を空ける") && (
+                      <>
+                        {" "}
+                        <Link href="/kagi-shimewasure-taisaku/" className="text-primary underline">鍵の閉め忘れ対策はこちら</Link>
                       </>
                     )}
                   </span>
@@ -666,10 +678,10 @@ export default function AreaMoriokaPage() {
           {/* 9｜まとめ */}
           <H2 id="matome" num="9">まとめ</H2>
           <p className="leading-loose mb-4">
-            盛岡で鍵開け・鍵交換を頼める主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。スピード重視なら鍵の生活救急車やカギ110番、深夜・早朝のトラブルならカギ110番・JBR・鍵のレスキュー、料金の明確さ重視なら鍵のレスキュー、というように、目的によって向いている業者は変わります。
+            つくば市で鍵開け・鍵交換を頼める主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。スピード重視なら鍵の生活救急車やカギ110番、深夜・早朝のトラブルならカギ110番・JBR・鍵のレスキュー、料金の明確さ重視なら鍵のレスキュー、というように、目的によって向いている業者は変わります。
           </p>
           <p className="leading-loose mb-8">
-            玄関の施錠がしづらいときは、「ドアを開けた状態で回るか」を確かめるだけで、建て付け側かシリンダー側かのあたりを付けられます。引っかかりを力で越える使い方は鍵折れや錠の故障につながるため、症状に気づいたら早めに相談するのが結果的に出費を抑える近道です。調整や交換のように日程が読める依頼は、複数社から総額の見積もりを取って比較することが失敗しないためのポイントです。本記事の一次確認値を出発点に、状況に合った業者を選んでください。
+            電気で動く錠は、停電したときの動きが製品や建物で違います。自分の住まいがどちらの仕組みかを平常時に確かめる、非常用の物理の鍵の置き場所を家族で共有する、復旧後に動きが違うと感じたら症状を書き留めて窓口を選ぶ。この3点を押さえておけば、停電のたびに玄関先で立ち往生せずに済みます。鍵の作成や交換のように日程が読める依頼は、複数社から総額の見積もりを取って比較しましょう。本記事の一次確認値を出発点に、状況に合った業者を選んでください。
           </p>
           <div className="rounded-[2px] bg-primary text-white p-6 text-center">
             <p className="font-bold text-lg mb-2">鍵のトラブルでお困りの方へ</p>
@@ -686,7 +698,7 @@ export default function AreaMoriokaPage() {
           <div className="mt-12">
             <p className="text-sm font-bold text-text-muted mb-3">タグ</p>
             <ul className="flex flex-wrap gap-2">
-              {["盛岡", "鍵開け", "鍵交換", "24時間対応", "業者比較", "エリア別"].map((t) => (
+              {["つくば市", "電気錠", "停電の備え", "鍵開け", "業者比較", "エリア別"].map((t) => (
                 <li
                   key={t}
                   className="rounded-[2px] border border-border bg-white px-3 py-1.5 text-xs md:text-sm font-bold tracking-wide text-foreground shadow-[0px_2px_2px_0px_rgba(0,0,0,0.12)]"
@@ -702,7 +714,6 @@ export default function AreaMoriokaPage() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
-                { href: "/area/hachinohe/", label: "八戸市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ5選" },
@@ -731,7 +742,6 @@ export default function AreaMoriokaPage() {
                 { href: "/area/takamatsu/", label: "高松の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagano/", label: "長野の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/gifu/", label: "岐阜の鍵開け・鍵交換業者おすすめ5選" },
-                { href: "/area/mito/", label: "水戸の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/maebashi/", label: "前橋の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/toyama/", label: "富山の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/fukui/", label: "福井の鍵開け・鍵交換業者おすすめ5選" },
@@ -739,6 +749,7 @@ export default function AreaMoriokaPage() {
                 { href: "/area/nagasaki/", label: "長崎の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/oita/", label: "大分の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/miyazaki/", label: "宮崎の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/morioka/", label: "盛岡の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/akita/", label: "秋田の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yamagata/", label: "山形の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/fukushima/", label: "福島の鍵開け・鍵交換業者おすすめ5選" },
@@ -771,10 +782,10 @@ export default function AreaMoriokaPage() {
             <p className="text-sm font-bold text-text-muted mb-3">関連記事</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
-                { href: "/kagi-mawaranai/", label: "鍵が回らない" },
-                { href: "/kagi-ore/", label: "鍵が折れた" },
-                { href: "/kagi-jumyou/", label: "鍵の寿命と交換の目安" },
-                { href: "/kagi-koukan-timing/", label: "鍵交換のタイミング" },
+                { href: "/denshijou-denchigire/", label: "電子錠の電池切れの対処" },
+                { href: "/smart-lock/", label: "スマートロックの基礎知識" },
+                { href: "/kagi-shimewasure-taisaku/", label: "鍵の閉め忘れ対策" },
+                { href: "/shimedashi/", label: "締め出されたときの対処" },
                 { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場" },
                 { href: "/agents/", label: "鍵業者一覧・比較" },
               ].map((l) => (

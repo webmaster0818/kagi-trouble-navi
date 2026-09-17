@@ -711,6 +711,7 @@ export default function AreaNagaokaPage() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/joetsu/", label: "上越市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/niigata/", label: "新潟の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/toyama/", label: "富山の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kanazawa/", label: "金沢の鍵開け・鍵交換業者おすすめ5選" },

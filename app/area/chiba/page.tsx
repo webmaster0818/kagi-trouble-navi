@@ -714,6 +714,7 @@ export default function AreaChibaPage() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/tsukuba/", label: "つくば市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ5選" },

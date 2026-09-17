@@ -742,6 +742,7 @@ export default function AreaOsakaPage() {
             <p className="text-sm font-bold text-text-muted mb-3">大阪市内の区別ページ</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/area/neyagawa/", label: "寝屋川市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/osaka-kita/", label: "大阪市北区の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/osaka-chuo/", label: "大阪市中央区の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/osaka-yodogawa/", label: "大阪市淀川区の鍵開け・鍵交換業者おすすめ6選" },

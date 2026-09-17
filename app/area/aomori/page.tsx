@@ -702,6 +702,7 @@ export default function AreaAomoriPage() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/hachinohe/", label: "八戸市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ5選" },
