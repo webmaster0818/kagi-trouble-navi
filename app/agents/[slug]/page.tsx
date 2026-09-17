@@ -19,9 +19,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const a = getAgent(slug);
   if (!a) return {};
   const url = `${SITE}/agents/${slug}/`;
+  const title = a.discontinued
+    ? `${a.name}はサービス終了（${a.discontinued.endedOn}）｜現在の依頼先と経緯｜鍵トラブルナビ`
+    : a.metaTitle;
+  const desc = a.discontinued
+    ? `${a.name}は${a.discontinued.endedOn}で公式サイトが閉鎖され、サービスを終了しています。${a.discontinued.successor ? `鍵のトラブルは${a.discontinued.successor}へ引き継がれたと公式サイトで告知されています。` : ""}終了の経緯と、いま依頼する場合の考え方をまとめました。`
+    : a.metaDesc;
   return {
-    title: { absolute: a.metaTitle },
-    description: a.metaDesc,
+    title: { absolute: title },
+    description: desc,
     alternates: { canonical: url },
     openGraph: { title: a.metaTitle, description: a.metaDesc, url, type: "article", images: [a.image] },
   };
@@ -33,6 +39,8 @@ export default async function AgentPage({ params }: Props) {
   if (!a) {
     return <div className="max-w-4xl mx-auto px-4 py-20 text-center">業者が見つかりません。</div>;
   }
+
+  const notice = a.discontinued;
 
   const toc: [string, string][] = [
     ["about", `${a.name}とはどんなサービスか`],
@@ -94,11 +102,21 @@ export default async function AgentPage({ params }: Props) {
           <div className="mx-auto max-w-4xl px-4 py-12 md:py-16">
             <p className="text-sm tracking-widest text-amber-300 mb-3">鍵トラブル業者レビュー</p>
             <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">
-              {a.name}の口コミ・評判は？
-              <br className="hidden md:block" />
-              料金・対応・メリットを徹底調査
+              {notice ? (
+                <>
+                  {a.name}は{notice.endedOn}でサービス終了
+                  <br className="hidden md:block" />
+                  経緯と現在の依頼先
+                </>
+              ) : (
+                <>
+                  {a.name}の口コミ・評判は？
+                  <br className="hidden md:block" />
+                  料金・対応・メリットを徹底調査
+                </>
+              )}
             </h1>
-            <p className="text-slate-200 leading-relaxed max-w-2xl">{a.heroLead}</p>
+            <p className="text-slate-200 leading-relaxed max-w-2xl">{notice ? `${a.name}は公式サイトで閉鎖が告知され、現在は新規の受付を行っていません。以下は終了前の調査記録です。依頼先を探している方は、まず下の案内をご確認ください。` : a.heroLead}</p>
             <div className="mt-6 flex flex-wrap gap-2">
               {a.badges.map((b) => (
                 <span key={b} className="badge badge-lg bg-white/15 border-0 text-white">{b}</span>
@@ -111,7 +129,33 @@ export default async function AgentPage({ params }: Props) {
         </header>
 
         <div className="mx-auto max-w-4xl px-4 py-8 md:py-12">
-          <p className="text-sm text-slate-500 mb-8">最終更新日：{UPDATED}　／　鍵トラブルナビ編集部</p>
+          {notice && (
+            <div className="mb-8 rounded-2xl border-2 border-amber-400 bg-amber-50 p-6">
+              <p className="font-bold text-amber-900 mb-3 text-lg">このサービスは終了しています</p>
+              <p className="text-sm text-slate-800 leading-relaxed mb-3">
+                {a.name}の公式サイトには「本サイトは{notice.endedOn}を持ちまして閉鎖となりました」と掲載されています。
+                {notice.successor && (
+                  <>
+                    　鍵のトラブル駆けつけサービスについては
+                    <strong>{notice.successor}</strong>
+                    にて引き続き対応する旨が、あわせて告知されています。
+                  </>
+                )}
+              </p>
+              <p className="text-sm text-slate-800 leading-relaxed mb-3">
+                このページに記載している料金・受付時間・到着時間は、<strong>終了前に確認した内容</strong>です。現在の申し込み先としては使えません。
+                いま依頼先をお探しの場合は、
+                <Link href="/" className="text-amber-800 underline font-semibold">当サイトの業者比較</Link>
+                から、受付時間と料金の出し方を確認したうえで選んでください。
+              </p>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                出典：{a.name}公式サイトの告知（
+                <a href={notice.sourceUrl} rel="nofollow noopener noreferrer" target="_blank" className="underline">{notice.sourceUrl}</a>
+                ／2026年9月17日確認）
+              </p>
+            </div>
+          )}
+          <p className="text-sm text-slate-500 mb-8">最終更新日：{notice ? "2026年9月17日" : UPDATED}　／　鍵トラブルナビ編集部</p>
 
           <nav aria-label="目次" className="mb-12 rounded-2xl border border-slate-200 bg-slate-50 p-6">
             <p className="font-bold text-slate-800 mb-4">この記事の目次</p>

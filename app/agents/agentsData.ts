@@ -6,6 +6,8 @@ export interface AgentReview {
   slug: string;
   name: string;
   hasStaticPage?: boolean; // 既存の静的ページがある場合は[slug]で生成しない
+  /** サービスが終了している場合の告知。公式サイトの告知を一次情報として記載する。 */
+  discontinued?: { endedOn: string; successor?: string; successorUrl?: string; sourceUrl: string };
   image: string;
   featureImage?: string;
   metaTitle: string;
@@ -195,6 +197,12 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "kagi-rescue",
+    discontinued: {
+      endedOn: "2023年12月末",
+      successor: "鍵屋の鍵猿",
+      successorUrl: "https://sls.co.jp/kagizaru/",
+      sourceUrl: "http://kagi-rescue.com/",
+    },
     name: "鍵のレスキュー",
     image: "/images/kv-top.jpg",
     featureImage: "/images/kagi-rescue-features.png",
