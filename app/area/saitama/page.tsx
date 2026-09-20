@@ -714,6 +714,7 @@ export default function AreaSaitamaPage() {
             <p className="text-sm font-bold text-text-muted mb-3">さいたま市内の区別ページ</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/area/kasukabe/", label: "春日部市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saitama-omiya/", label: "さいたま市大宮区の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>

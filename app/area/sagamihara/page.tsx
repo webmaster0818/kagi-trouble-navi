@@ -701,6 +701,7 @@ export default function AreaPageSagamihara() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/atsugi/", label: "厚木市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kawasaki/", label: "川崎の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama-totsuka/", label: "横浜市戸塚区の鍵開け・鍵交換業者おすすめ5選" },

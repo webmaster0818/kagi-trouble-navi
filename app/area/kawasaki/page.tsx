@@ -711,6 +711,7 @@ export default function AreaKawasakiPage() {
             <p className="text-sm font-bold text-text-muted mb-3">川崎市内の区別ページ</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/area/atsugi/", label: "厚木市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kawasaki-kawasaki/", label: "川崎市川崎区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kawasaki-nakahara/", label: "川崎市中原区の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (

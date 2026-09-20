@@ -748,6 +748,7 @@ export default function AreaKobePage() {
             <p className="text-sm font-bold text-text-muted mb-3">神戸市内の区別ページ</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/area/kakogawa/", label: "加古川市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kobe-chuo/", label: "神戸市中央区の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/kobe-nada/", label: "神戸市灘区の鍵開け・鍵交換業者おすすめ6選" },
               ].map((l) => (

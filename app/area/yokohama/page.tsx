@@ -695,6 +695,7 @@ export default function AreaYokohamaPage() {
             <p className="text-sm font-bold text-text-muted mb-3">横浜市内の区別ページ</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/area/atsugi/", label: "厚木市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama-kohoku/", label: "横浜市港北区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama-tsurumi/", label: "横浜市鶴見区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama-totsuka/", label: "横浜市戸塚区の鍵開け・鍵交換業者おすすめ5選" },

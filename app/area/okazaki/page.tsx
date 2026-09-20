@@ -705,6 +705,7 @@ export default function AreaPageOkazaki() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/toyokawa/", label: "豊川市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/toyota/", label: "豊田市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya-naka/", label: "名古屋市中区の鍵開け・鍵交換業者おすすめ5選" },

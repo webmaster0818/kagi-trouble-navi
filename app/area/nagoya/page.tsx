@@ -689,6 +689,7 @@ export default function AreaNagoyaPage() {
             <p className="text-sm font-bold text-text-muted mb-3">名古屋市内の区別ページ</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/area/toyokawa/", label: "豊川市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya-naka/", label: "名古屋市中区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya-chikusa/", label: "名古屋市千種区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya-meito/", label: "名古屋市名東区の鍵開け・鍵交換業者おすすめ5選" },

@@ -691,6 +691,7 @@ export default function AreaTokyoPage() {
             <p className="text-sm font-bold text-text-muted mb-3">東京23区の鍵業者まとめ（区別の詳しい記事）</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/kasukabe/", label: "春日部市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/shinjuku-ku/", label: "新宿区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/setagaya-ku/", label: "世田谷区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/ota-ku/", label: "大田区の鍵開け・鍵交換業者おすすめ5選" },

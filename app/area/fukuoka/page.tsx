@@ -701,6 +701,7 @@ export default function AreaFukuokaPage() {
             <p className="text-sm font-bold text-text-muted mb-3">福岡市内の区別ページ</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/area/sasebo/", label: "佐世保市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/fukuoka-chuo/", label: "福岡市中央区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/fukuoka-hakata/", label: "福岡市博多区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/fukuoka-nishi/", label: "福岡市西区の鍵開け・鍵交換業者おすすめ5選" },
