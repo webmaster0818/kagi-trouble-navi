@@ -707,6 +707,7 @@ export default function AreaPageNishinomiya() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/takarazuka/", label: "宝塚市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kakogawa/", label: "加古川市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kobe/", label: "神戸の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/kobe-chuo/", label: "神戸市中央区の鍵開け・鍵交換業者おすすめ6選" },

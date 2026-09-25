@@ -702,6 +702,7 @@ export default function AreaAdachiKuPage() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/soka/", label: "草加市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選（東京都全体）" },
                 { href: "/area/shinjuku-ku/", label: "新宿区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/setagaya-ku/", label: "世田谷区の鍵開け・鍵交換業者おすすめ5選" },

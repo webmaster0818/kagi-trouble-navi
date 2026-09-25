@@ -705,6 +705,7 @@ export default function AreaPageKurashiki() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/kure/", label: "吳市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/okayama/", label: "岡山の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/hiroshima/", label: "広島の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/hiroshima-naka/", label: "広島市中区の鍵開け・鍵交換業者おすすめ5選" },

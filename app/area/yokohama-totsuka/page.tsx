@@ -709,6 +709,7 @@ export default function AreaYokohamaTotsukaPage() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/yokosuka/", label: "横須賀市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama-kohoku/", label: "横浜市港北区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama-tsurumi/", label: "横浜市鶴見区の鍵開け・鍵交換業者おすすめ5選" },

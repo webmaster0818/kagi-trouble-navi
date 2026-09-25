@@ -703,6 +703,7 @@ export default function AreaPageFunabashi() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/kashiwa/", label: "柏市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/chiba/", label: "千葉の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/matsudo/", label: "松戸市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/edogawa-ku/", label: "江戸川区の鍵開け・鍵交換業者おすすめ5選" },

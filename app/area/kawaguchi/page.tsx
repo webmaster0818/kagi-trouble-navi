@@ -703,6 +703,7 @@ export default function AreaPageKawaguchi() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/soka/", label: "草加市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kasukabe/", label: "春日部市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saitama-omiya/", label: "さいたま市大宮区の鍵開け・鍵交換業者おすすめ5選" },
