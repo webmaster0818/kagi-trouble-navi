@@ -760,6 +760,7 @@ export default function AreaOsakaYodogawaPage() {
                 { href: "/area/nara/", label: "奈良の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/itami/", label: "伊丹市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

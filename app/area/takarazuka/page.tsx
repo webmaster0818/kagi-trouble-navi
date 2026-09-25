@@ -714,6 +714,7 @@ export default function AreaPageTakarazuka() {
                 { href: "/area/kakogawa/", label: "加古川市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/toyonaka/", label: "豊中市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/itami/", label: "伊丹市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

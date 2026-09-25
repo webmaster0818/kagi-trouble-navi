@@ -712,6 +712,7 @@ export default function AreaPageIchikawa() {
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kawaguchi/", label: "川口市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/ichihara/", label: "市原市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

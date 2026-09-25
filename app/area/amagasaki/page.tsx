@@ -718,6 +718,7 @@ export default function AreaPageAmagasaki() {
                 { href: "/area/himeji/", label: "姫路市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/higashiosaka/", label: "東大阪市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kyoto/", label: "京都の鍵開け・鍵交換業者おすすめ6選" },
+                { href: "/area/itami/", label: "伊丹市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

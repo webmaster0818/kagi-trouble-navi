@@ -769,6 +769,7 @@ export default function AreaYokohamaPage() {
                 { href: "/area/yamaguchi/", label: "山口の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kochi/", label: "高知の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saga/", label: "佐賀の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/chigasaki/", label: "茅ヶ崎市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

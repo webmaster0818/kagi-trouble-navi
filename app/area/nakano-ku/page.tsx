@@ -718,6 +718,7 @@ export default function AreaNakanoKuPage() {
                 { href: "/area/toshima-ku/", label: "豊島区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/meguro-ku/", label: "目黒区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/bunkyo-ku/", label: "文京区の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/chofu/", label: "調布市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

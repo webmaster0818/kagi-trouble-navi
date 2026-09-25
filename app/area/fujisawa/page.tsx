@@ -715,6 +715,8 @@ export default function AreaPageFujisawa() {
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/hachioji/", label: "八王子市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/ota-ku/", label: "大田区の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/hiratsuka/", label: "平塚市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/chigasaki/", label: "茅ヶ崎市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

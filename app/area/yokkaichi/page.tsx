@@ -715,6 +715,7 @@ export default function AreaPageYokkaichi() {
                 { href: "/area/nara/", label: "奈良の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/wakayama/", label: "和歌山の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/hamamatsu/", label: "浜松の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/suzuka/", label: "鈴鹿市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

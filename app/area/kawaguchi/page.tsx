@@ -714,6 +714,7 @@ export default function AreaPageKawaguchi() {
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/funabashi/", label: "船橋市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/chiba/", label: "千葉の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/ageo/", label: "上尾市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

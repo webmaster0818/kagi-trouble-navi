@@ -717,6 +717,7 @@ export default function AreaPageHiroshimaNaka() {
                 { href: "/area/matsuyama/", label: "松山の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/fukuoka/", label: "福岡の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ6選" },
+                { href: "/area/higashihiroshima/", label: "東広島市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

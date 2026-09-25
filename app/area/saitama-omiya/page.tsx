@@ -718,6 +718,7 @@ export default function AreaPageSaitamaOmiya() {
                 { href: "/area/kawasaki-kawasaki/", label: "川崎市川崎区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/chiba/", label: "千葉の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/utsunomiya/", label: "宇都宮の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/ageo/", label: "上尾市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

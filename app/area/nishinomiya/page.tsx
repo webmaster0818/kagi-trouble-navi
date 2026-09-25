@@ -718,6 +718,7 @@ export default function AreaPageNishinomiya() {
                 { href: "/area/osaka-kita/", label: "大阪市北区の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/osaka-yodogawa/", label: "大阪市淀川区の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/kita-ku/", label: "北区の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/itami/", label: "伊丹市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

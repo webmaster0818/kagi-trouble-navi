@@ -710,6 +710,8 @@ export default function AreaPageMachida() {
                 { href: "/area/setagaya-ku/", label: "世田谷区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kawasaki-nakahara/", label: "川崎市中原区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama-kohoku/", label: "横浜市港北区の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/fuchu/", label: "府中市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/chofu/", label: "調布市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

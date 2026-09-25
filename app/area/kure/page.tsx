@@ -714,6 +714,7 @@ export default function AreaPageKure() {
                 { href: "/area/takamatsu/", label: "高松の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yamaguchi/", label: "山口の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/shimonoseki/", label: "下関市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/higashihiroshima/", label: "東広島市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

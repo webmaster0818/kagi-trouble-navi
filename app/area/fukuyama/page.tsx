@@ -714,6 +714,7 @@ export default function AreaPageFukuyama() {
                 { href: "/area/takamatsu/", label: "高松の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/matsue/", label: "松江の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kobe/", label: "神戸の鍵開け・鍵交換業者おすすめ6選" },
+                { href: "/area/higashihiroshima/", label: "東広島市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

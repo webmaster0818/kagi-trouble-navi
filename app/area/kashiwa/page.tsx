@@ -714,6 +714,7 @@ export default function AreaPageKashiwa() {
                 { href: "/area/katsushika-ku/", label: "葛飾区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/koshigaya/", label: "越谷市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saitama/", label: "さいたまの鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/ichihara/", label: "市原市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

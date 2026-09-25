@@ -720,6 +720,7 @@ export default function AreaYokohamaTotsukaPage() {
                 { href: "/area/chiba/", label: "千葉の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ6選" },
+                { href: "/area/hiratsuka/", label: "平塚市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
