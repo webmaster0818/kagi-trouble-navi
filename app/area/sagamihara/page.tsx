@@ -714,6 +714,8 @@ export default function AreaPageSagamihara() {
                 { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/hiratsuka/", label: "平塚市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/chigasaki/", label: "茅ヶ崎市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/odawara/", label: "小田原市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/yamato/", label: "大和市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

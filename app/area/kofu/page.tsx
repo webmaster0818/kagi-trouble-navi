@@ -762,6 +762,7 @@ export default function AreaKofuPage() {
                 { href: "/area/kochi/", label: "高知の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saga/", label: "佐賀の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/matsumoto/", label: "松本市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/fujinomiya/", label: "富士宮市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

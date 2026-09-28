@@ -714,6 +714,7 @@ export default function AreaPageIchinomiya() {
                 { href: "/area/nagoya-chikusa/", label: "名古屋市千種区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/tsu/", label: "津の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/hamamatsu/", label: "浜松の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/ogaki/", label: "大垣市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

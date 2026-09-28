@@ -767,6 +767,8 @@ export default function AreaChibaPage() {
                 { href: "/area/kochi/", label: "高知の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saga/", label: "佐賀の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/ichihara/", label: "市原市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/nagareyama/", label: "流山市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/urayasu/", label: "浦安市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

@@ -714,6 +714,7 @@ export default function AreaPageTakasaki() {
                 { href: "/area/nagano/", label: "長野の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/niigata/", label: "新潟の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kumagaya/", label: "熊谷市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

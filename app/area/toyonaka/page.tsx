@@ -718,6 +718,7 @@ export default function AreaPageToyonaka() {
                 { href: "/area/kobe/", label: "神戸の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/kyoto/", label: "京都の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/fukuoka-hakata/", label: "福岡市博多区の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kawanishi/", label: "川西市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

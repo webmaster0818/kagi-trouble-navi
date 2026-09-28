@@ -714,6 +714,7 @@ export default function AreaPageSoka() {
                 { href: "/area/katsushika-ku/", label: "葛飾区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/matsudo/", label: "松戸市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/tokorozawa/", label: "所沢市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/nagareyama/", label: "流山市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

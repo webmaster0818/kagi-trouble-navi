@@ -714,6 +714,8 @@ export default function AreaPageFunabashi() {
                 { href: "/area/kawaguchi/", label: "川口市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/ichihara/", label: "市原市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/nagareyama/", label: "流山市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/urayasu/", label: "浦安市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

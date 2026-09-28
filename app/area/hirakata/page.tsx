@@ -718,6 +718,7 @@ export default function AreaPageHirakata() {
                 { href: "/area/kyoto-fushimi/", label: "京都市伏見区の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/nara/", label: "奈良の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kawaguchi/", label: "川口市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/uji/", label: "宇治市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

@@ -762,6 +762,9 @@ export default function AreaNagoyaPage() {
                 { href: "/area/kochi/", label: "高知の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saga/", label: "佐賀の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/suzuka/", label: "鈴鹿市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/anjo/", label: "安城市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/ogaki/", label: "大垣市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kariya/", label: "刈谷市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

@@ -713,6 +713,8 @@ export default function AreaPageChofu() {
                 { href: "/area/nerima-ku/", label: "練馬区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/meguro-ku/", label: "目黒区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kawasaki/", label: "川崎の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/tachikawa/", label: "立川市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/musashino/", label: "武蔵野市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

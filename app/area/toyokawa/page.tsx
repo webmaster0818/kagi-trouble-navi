@@ -713,6 +713,7 @@ export default function AreaPageToyokawa() {
                 { href: "/area/nagoya-chikusa/", label: "名古屋市千種区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya-meito/", label: "名古屋市名東区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kasugai/", label: "春日井市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/anjo/", label: "安城市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

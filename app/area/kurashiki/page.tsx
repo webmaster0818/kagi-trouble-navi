@@ -715,6 +715,7 @@ export default function AreaPageKurashiki() {
                 { href: "/area/tottori/", label: "鳥取の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yamaguchi/", label: "山口の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kobe/", label: "神戸の鍵開け・鍵交換業者おすすめ6選" },
+                { href: "/area/onomichi/", label: "尾道市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

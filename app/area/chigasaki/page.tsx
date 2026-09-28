@@ -714,6 +714,8 @@ export default function AreaPageChigasaki() {
                 { href: "/area/yokosuka/", label: "横須賀市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/machida/", label: "町田市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kawasaki/", label: "川崎の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/odawara/", label: "小田原市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/yamato/", label: "大和市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

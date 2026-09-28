@@ -712,6 +712,8 @@ export default function AreaPageHigashihiroshima() {
                 { href: "/area/shimonoseki/", label: "下関市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yamaguchi/", label: "山口の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/matsuyama/", label: "松山の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/onomichi/", label: "尾道市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/hatsukaichi/", label: "廿日市市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

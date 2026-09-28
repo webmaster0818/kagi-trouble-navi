@@ -714,6 +714,8 @@ export default function AreaPageItami() {
                 { href: "/area/osaka-kita/", label: "大阪市北区の鍵開け・鍵交換業者おすすめ6選" },
                 { href: "/area/toyonaka/", label: "豊中市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/suita/", label: "吹田市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kawanishi/", label: "川西市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/sanda/", label: "三田市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

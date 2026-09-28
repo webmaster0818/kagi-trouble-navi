@@ -714,6 +714,7 @@ export default function AreaPageHachioji() {
                 { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/fuchu/", label: "府中市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/chofu/", label: "調布市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/tachikawa/", label: "立川市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

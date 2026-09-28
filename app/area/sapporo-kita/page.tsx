@@ -717,6 +717,7 @@ export default function AreaSapporoKitaPage() {
                 { href: "/area/niigata/", label: "新潟の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/tomakomai/", label: "苫小牧市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

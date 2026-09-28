@@ -715,6 +715,7 @@ export default function AreaPageToyohashi() {
                 { href: "/area/shizuoka/", label: "静岡の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/gifu/", label: "岐阜の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/tsu/", label: "津の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/anjo/", label: "安城市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

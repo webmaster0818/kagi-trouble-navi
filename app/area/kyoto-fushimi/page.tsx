@@ -759,6 +759,8 @@ export default function AreaPageKyotoFushimi() {
                 { href: "/area/otsu/", label: "大津の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nara/", label: "奈良の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/wakayama/", label: "和歌山の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/uji/", label: "宇治市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kusatsu/", label: "草津市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

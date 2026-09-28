@@ -727,6 +727,7 @@ export default function AreaFujiPage() {
                 { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ5選" },
 
+                { href: "/area/fujinomiya/", label: "富士宮市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

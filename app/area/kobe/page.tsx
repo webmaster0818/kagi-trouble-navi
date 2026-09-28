@@ -821,6 +821,7 @@ export default function AreaKobePage() {
                 { href: "/area/kochi/", label: "高知の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saga/", label: "佐賀の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/itami/", label: "伊丹市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kawanishi/", label: "川西市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

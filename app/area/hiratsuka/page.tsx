@@ -712,6 +712,7 @@ export default function AreaPageHiratsuka() {
                 { href: "/area/yokohama-totsuka/", label: "横浜市戸塚区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kawasaki/", label: "川崎の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/machida/", label: "町田市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/odawara/", label: "小田原市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

@@ -717,6 +717,8 @@ export default function AreaPageYao() {
                 { href: "/area/takatsuki/", label: "高槻市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nara/", label: "奈良の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kyoto/", label: "京都の鍵開け・鍵交換業者おすすめ6選" },
+                { href: "/area/kishiwada/", label: "岸和田市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/izumi/", label: "和泉市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

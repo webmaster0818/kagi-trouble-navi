@@ -752,6 +752,7 @@ export default function AreaKochiPage() {
                 { href: "/area/matsue/", label: "松江の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yamaguchi/", label: "山口の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saga/", label: "佐賀の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/imabari/", label: "今治市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

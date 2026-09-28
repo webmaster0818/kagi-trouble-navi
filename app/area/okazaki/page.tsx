@@ -716,6 +716,8 @@ export default function AreaPageOkazaki() {
                 { href: "/area/hamamatsu/", label: "浜松の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/shizuoka/", label: "静岡の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/suzuka/", label: "鈴鹿市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/anjo/", label: "安城市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kariya/", label: "刈谷市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

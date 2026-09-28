@@ -713,6 +713,7 @@ export default function AreaPageIwaki() {
                 { href: "/area/utsunomiya/", label: "宇都宮の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/takasaki/", label: "高崎市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/niigata/", label: "新潟の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/hitachi/", label: "日立市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

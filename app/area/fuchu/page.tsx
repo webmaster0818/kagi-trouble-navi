@@ -713,6 +713,8 @@ export default function AreaPageFuchu() {
                 { href: "/area/nakano-ku/", label: "中野区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/shinjuku-ku/", label: "新宿区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kawasaki/", label: "川崎の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/tachikawa/", label: "立川市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/musashino/", label: "武蔵野市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

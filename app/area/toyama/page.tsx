@@ -763,6 +763,7 @@ export default function AreaToyamaPage() {
                 { href: "/area/kochi/", label: "高知の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/saga/", label: "佐賀の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/matsumoto/", label: "松本市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/takaoka/", label: "高岡市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

@@ -714,6 +714,8 @@ export default function AreaPageAsahikawa() {
                 { href: "/area/sendai/", label: "仙台の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/yamagata/", label: "山形の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/niigata/", label: "新潟の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/tomakomai/", label: "苫小牧市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/kushiro/", label: "釧路市の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
