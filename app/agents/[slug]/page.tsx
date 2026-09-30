@@ -20,10 +20,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!a) return {};
   const url = `${SITE}/agents/${slug}/`;
   const title = a.discontinued
-    ? `${a.name}はサービス終了（${a.discontinued.endedOn}）｜現在の依頼先と経緯｜鍵トラブルナビ`
+    ? `${a.name}の評判・口コミは？${a.discontinued.endedOn}でサービス終了・現在の依頼先｜鍵トラブルナビ`
     : a.metaTitle;
   const desc = a.discontinued
-    ? `${a.name}は${a.discontinued.endedOn}で公式サイトが閉鎖され、サービスを終了しています。${a.discontinued.successor ? `鍵のトラブルは${a.discontinued.successor}へ引き継がれたと公式サイトで告知されています。` : ""}終了の経緯と、いま依頼する場合の考え方をまとめました。`
+    ? `「${a.name}」の評判・口コミを調べている方へ。${a.name}は${a.discontinued.endedOn}に公式サイトが閉鎖され、サービスを終了しています（現在は新規の依頼を受け付けていません）。${a.discontinued.successor ? `公式サイトでは、鍵のトラブルを${a.discontinued.successor}へ引き継いだと告知されていました。` : ""}終了の経緯と、いま同じ条件で頼める鍵屋の選び方をまとめました。`
     : a.metaDesc;
   return {
     title: { absolute: title },

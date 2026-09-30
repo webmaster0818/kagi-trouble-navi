@@ -17,8 +17,9 @@ const taglines: Record<string, string> = {
   kagi110ban: "全国47都道府県・24時間365日・最短5分手配",
   jbr: "全国対応の大手レスキューグループ・賠償責任保険加入",
   "seikatsu-kyukyusha": "最短15分到着・年間10万件以上の実績",
-  "kagi-rescue": "料金をHPで明示・追加費用なし・女性スタッフ指名可",
-  kagizaru: "関西中心・自社施工で低価格・防犯設備士在籍",
+  "kagi-rescue": "2023年12月末でサービス終了・経緯と現在の依頼先",
+  kagizaru: "鍵屋の鍵猿（SLS株式会社）・全国47都道府県・最短15分・1年保証",
+  "kagi-kyukyusha": "加盟店ネットワーク型・運営会社と似た名前の別業者の見分け方",
 };
 
 export default function AgentsIndexPage() {

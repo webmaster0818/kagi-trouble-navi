@@ -6,18 +6,18 @@ import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/agents/kagi110ban/";
-const UPDATED = "2026年7月7日";
+const UPDATED = "2026年9月30日";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "カギ110番の口コミ・評判は？料金・対応スピード・メリットを徹底調査【2026年7月】｜鍵トラブルナビ",
+      "カギ110番（鍵110番）の口コミ・評判は？料金6,600円〜と加盟店型の注意点【2026年9月】｜鍵トラブルナビ",
   },
   description:
-    "カギ110番の口コミ・評判を徹底調査。鍵開け6,600円〜（公式表示・2026年7月4日確認）、全国47都道府県24時間365日対応、最短5分手配の対応スピード、加盟店ネットワークの強みと注意点、利用者のリアルな良い口コミ・悪い口コミまで編集部が中立的にまとめました。",
+    "カギ110番の口コミ・評判を徹底調査。鍵開け6,600円〜（公式表示・2026年9月30日確認）、全国47都道府県24時間365日対応、最短5分手配の対応スピード、加盟店ネットワークの強みと注意点、利用者のリアルな良い口コミ・悪い口コミまで編集部が中立的にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
-    title: "カギ110番の口コミ・評判は？料金・対応スピード・メリットを徹底調査【2026年7月】",
+    title: "カギ110番（鍵110番）の口コミ・評判は？料金6,600円〜と加盟店型の注意点【2026年9月】",
     description:
       "カギ110番の料金・対応スピード・加盟店ネットワーク・利用者の口コミを中立的に調査。利用前に知っておきたいメリットと注意点を解説します。",
     url: `${SITE}${PATH}`,
@@ -50,7 +50,7 @@ const badReviews = [
 ];
 
 const faqs = [
-  { q: "カギ110番の料金はいくらからですか", a: "公式サイトの表示は鍵開け6,600円(税込)〜です(2026年7月4日確認)。ただし公式にも「対応エリア・加盟店により記載価格や条件では対応できない場合がある」と明記されており、実際の金額は現地見積もりで確定します。相談・見積もりは無料ですが、交通費やお客様都合のキャンセル料は別途発生する場合がある旨も公式に記載されているため、依頼時に確認しましょう。" },
+  { q: "カギ110番の料金はいくらからですか", a: "公式サイトの表示は鍵開け6,600円(税込)〜です(2026年9月30日確認)。ただし公式にも「対応エリア・加盟店により記載価格や条件では対応できない場合がある」と明記されており、実際の金額は現地見積もりで確定します。相談・見積もりは無料ですが、交通費やお客様都合のキャンセル料は別途発生する場合がある旨も公式に記載されているため、依頼時に確認しましょう。" },
   { q: "見積もりや出張は無料ですか", a: "カギ110番は見積もりが無料です。金額に納得したうえで依頼できるため、まずは無料見積もりで費用を確認するのがおすすめです。" },
   { q: "どのくらいの時間で来てくれますか", a: "電話一本で最短5分での手配が可能とされています。全国47都道府県の加盟店ネットワークにより、近隣の業者が駆けつける仕組みです。ただし繁忙期や地域によっては到着まで時間がかかる場合があります。" },
   { q: "どんな鍵トラブルに対応していますか", a: "玄関などの鍵開け・鍵交換・鍵修理に加え、金庫、車の鍵、バイクの鍵まで幅広く対応しています。対応可否が不明な場合は問い合わせ時に確認しましょう。" },
@@ -64,7 +64,7 @@ export default function Kagi110banPage() {
     description: "カギ110番の料金・対応スピード・加盟店ネットワーク・利用者の口コミを中立的に調査した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-10T00:00:00+09:00",
-    dateModified: "2026-07-07T00:00:00+09:00",
+    dateModified: "2026-09-30T00:00:00+09:00",
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` },
@@ -150,6 +150,10 @@ export default function Kagi110banPage() {
             <p className="leading-loose text-slate-700">
               24時間365日受付で、電話一本から最短5分での手配が可能とされており、深夜や早朝、年末年始などの緊急時にも相談しやすい体制です。見積もりは無料で、出張費・作業費・部材費を含めた金額を事前に提示する明朗会計を掲げています。
             </p>
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 mt-6">
+              <p className="font-bold text-slate-800 mb-2">「鍵110番」「鍵の110番」で探している方へ</p>
+              <p className="leading-loose text-slate-700 text-sm">公式の表記は「<strong>カギ110番</strong>」（サイトは kagi110ban.jp、運営はシェアリングテクノロジー株式会社）です。検索では「鍵110番」「鍵の110番」と書かれることもありますが、<strong>名称のよく似た別会社が複数あります</strong>。とくに「鍵の110番救急車（kagi110qq.co.jp／株式会社鍵）」や「一般社団法人 カギの110番・カギの救急車」は運営会社が異なる別のサービスです。口コミを読むときは、どの会社の話かを運営会社名とサイトのドメインで確かめてください。</p>
+            </div>
             <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200">
               <Image src="/images/kagi110ban-features.png" alt="カギ110番の3つの特徴（全国対応・24時間365日・最短5分手配）" width={1200} height={500} className="w-full h-auto" />
             </div>
@@ -174,7 +178,7 @@ export default function Kagi110banPage() {
               <table className="table w-full border border-slate-200">
                 <thead><tr className="bg-slate-100 text-slate-700"><th>項目</th><th>料金の目安</th><th>備考</th></tr></thead>
                 <tbody>
-                  <tr className="border-b border-slate-200"><td className="font-medium">鍵開け（公式表示）</td><td className="font-bold text-amber-700">6,600円〜（税込）</td><td className="text-sm text-slate-600">2026年7月4日公式サイト確認。加盟店・エリアにより異なる場合あり</td></tr>
+                  <tr className="border-b border-slate-200"><td className="font-medium">鍵開け（公式表示）</td><td className="font-bold text-amber-700">6,600円〜（税込）</td><td className="text-sm text-slate-600">2026年9月30日公式サイト確認。加盟店・エリアにより異なる場合あり</td></tr>
                   <tr className="border-b border-slate-200"><td className="font-medium">鍵開け・鍵交換など</td><td className="font-bold text-amber-700">作業内容により変動</td><td className="text-sm text-slate-600">出張費・作業費・部材費込みで提示</td></tr>
                   <tr><td className="font-medium">会計方式</td><td className="font-bold text-amber-700">相談・見積もり無料</td><td className="text-sm text-slate-600">交通費・お客様都合のキャンセル料は「別途発生する場合あり」と公式記載</td></tr>
                 </tbody>
@@ -278,7 +282,7 @@ export default function Kagi110banPage() {
           </section>
 
                     <AgentCompareTable current="kagi110ban" />
-          <VerificationNote officialUrl="https://kagi110ban.jp/" officialLabel="カギ110番 公式サイト" checkedNote="2026年7月4日確認" />
+          <VerificationNote officialUrl="https://kagi110ban.jp/" officialLabel="カギ110番 公式サイト" checkedNote="2026年9月30日確認" />
 
           {/* summary */}
           <section id="summary" className="scroll-mt-20">

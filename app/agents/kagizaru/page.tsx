@@ -6,15 +6,15 @@ import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/agents/kagizaru/";
-const UPDATED = "2026年7月7日";
+const UPDATED = "2026年9月30日";
 
 export const metadata: Metadata = {
-  title: { absolute: "鍵猿（かぎざる）の口コミ・評判は？料金・対応スピード・保証を徹底調査【2026年7月】｜鍵トラブルナビ" },
-  description: "鍵猿（SLS株式会社）の口コミ・評判を徹底調査。鍵開け8,800円〜の料金、最短15分到着、全国対応・1年保証、自社スタッフ施工、利用者の良い評判・気になる評判まで編集部が中立的にまとめました。",
+  title: { absolute: "鍵猿（鍵ザル）の口コミ・評判は？鍵屋の鍵猿の料金・到着時間・保証を調査【2026年9月】｜鍵トラブルナビ" },
+  description: "鍵猿（鍵屋の鍵猿・運営：SLS株式会社）の口コミ・評判を調査。鍵開け8,800円〜／最短15分／全国47都道府県／1年保証は公式サイトで確認しました（2026年9月30日時点）。「料金が高い」という声の中身は夜間の加算が中心で、事前見積りで避けられます。良い評判と注意点を中立にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
-    title: "鍵猿（かぎざる）の口コミ・評判は？料金・対応スピード・保証を徹底調査【2026年7月】",
-    description: "鍵猿の料金・対応スピード・保証・利用者の口コミを中立的に調査。利用前のメリットと注意点を解説します。",
+    title: "鍵猿（鍵ザル）の口コミ・評判は？鍵屋の鍵猿の料金・到着時間・保証を調査【2026年9月】",
+    description: "鍵屋の鍵猿の料金・到着時間・保証・利用者の口コミを中立的に調査。利用前のメリットと注意点を解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
     images: ["/images/kv-top.jpg"],
@@ -58,11 +58,11 @@ export default function KagizaruPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "鍵猿（かぎざる）の口コミ・評判は？料金・対応スピード・保証を徹底調査【2026年7月】",
-    description: "鍵猿の料金・対応スピード・保証・利用者の口コミを中立的に調査。利用前のメリットと注意点を解説します。",
+    headline: "鍵猿（鍵ザル）の口コミ・評判は？鍵屋の鍵猿の料金・到着時間・保証を調査【2026年9月】",
+    description: "鍵屋の鍵猿の料金・到着時間・保証・利用者の口コミを中立的に調査。利用前のメリットと注意点を解説します。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-20T00:00:00+09:00",
-    dateModified: "2026-07-07T00:00:00+09:00",
+    dateModified: "2026-09-30T00:00:00+09:00",
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` },
@@ -102,8 +102,8 @@ export default function KagizaruPage() {
         <header className="relative overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 text-white mt-4">
           <div className="mx-auto max-w-4xl px-4 py-12 md:py-16">
             <p className="text-sm tracking-widest text-amber-300 mb-3">鍵トラブル業者レビュー</p>
-            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">鍵猿の口コミ・評判は？<br className="hidden md:block" />料金・対応スピードを徹底調査</h1>
-            <p className="text-slate-200 leading-relaxed max-w-2xl">SLS株式会社が運営する「鍵猿」。最短15分到着・1年保証・自社スタッフ施工をうたう鍵トラブルサービスの料金や対応、利用者の評価を編集部が中立的に調査しました。</p>
+            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">鍵猿（鍵屋の鍵猿）の口コミ・評判は？<br className="hidden md:block" />料金・到着時間・保証を調査</h1>
+            <p className="text-slate-200 leading-relaxed max-w-2xl">SLS株式会社が運営する「鍵屋の鍵猿」。検索では「鍵猿」「鍵ザル」「かぎざる」とも書かれますが、いずれも同じサービスです。最短15分到着・1年保証・自社スタッフ施工をうたう鍵トラブルサービスの料金や対応、利用者の評価を編集部が中立的に調査しました。</p>
             <div className="mt-6 flex flex-wrap gap-2">
               <span className="badge badge-lg bg-white/15 border-0 text-white">鍵開け 8,800円〜</span>
               <span className="badge badge-lg bg-white/15 border-0 text-white">最短15分到着</span>
@@ -136,6 +136,11 @@ export default function KagizaruPage() {
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">鍵猿とはどんなサービスか</h2>
             <p className="leading-loose mb-4 text-slate-700">鍵猿（かぎざる）は、SLS株式会社（大阪本社）が運営する鍵トラブル解決サービスです。プライバシーマークを取得し、自社コールセンターと自社スタッフによる施工体制で、鍵開け・鍵交換・鍵修理・鍵作成に全国対応しています。</p>
             <p className="leading-loose mb-4 text-slate-700">基本料・見積料・出張料はすべて0円で、作業前に明確な合計金額を提示し追加請求しない明朗会計を掲げています。1年間の無料工事保証・無償商品保証があり、年間10万件以上の問い合わせ実績をうたっています。</p>
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 mt-6">
+              <p className="font-bold text-slate-800 mb-2">名前の表記について</p>
+              <p className="leading-loose text-slate-700 text-sm">公式サイトでの正式な表記は「<strong>鍵屋の鍵猿</strong>」です。検索では「鍵猿」「鍵ザル」「かぎざる」「猿鍵」などと書かれることがありますが、いずれも同じサービスを指します。旧ドメインの kagizaru.com は公式サイト（sls.co.jp/kagizaru/）へ転送されます（2026年9月30日確認）。運営会社を調べる場合は「SLS株式会社」で確認してください。</p>
+              <p className="leading-loose text-slate-700 text-sm mt-3">なお、かつて全国対応をうたっていた「鍵のレスキュー」は2023年12月末でサービスを終了し、公式サイトで鍵屋の鍵猿への引き継ぎが告知されていました。経緯は<Link href="/agents/kagi-rescue/" className="text-amber-700 underline">鍵のレスキューのページ</Link>にまとめています。</p>
+            </div>
             <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200">
               <Image src="/images/kagizaru-features.png" alt="鍵猿の特徴" width={1200} height={500} className="w-full h-auto" />
             </div>
@@ -268,7 +273,7 @@ export default function KagizaruPage() {
           </section>
 
           <AgentCompareTable current="kagizaru" />
-          <VerificationNote officialUrl="https://kagizaru.com/" officialLabel="鍵猿 公式サイト" />
+          <VerificationNote officialUrl="https://sls.co.jp/kagizaru/" officialLabel="鍵屋の鍵猿 公式サイト（SLS株式会社）" />
 
           <section id="summary" className="scroll-mt-20">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">まとめ</h2>
