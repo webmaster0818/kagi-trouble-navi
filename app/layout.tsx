@@ -67,7 +67,7 @@ export default function RootLayout({
         <ScrollReveal />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"鍵トラブルナビ\",\"url\":\"https://kagi-trouble-navi.com/\",\"logo\":\"https://kagi-trouble-navi.com/favicon.ico\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"株式会社MediaX\",\"url\":\"https://mediax.biz\"},\"sameAs\":[\"https://kagi-trouble-navi.com/about/\"]}" }}
+          dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"鍵トラブルナビ\",\"url\":\"https://kagi-trouble-navi.com/\",\"logo\":\"https://kagi-trouble-navi.com/images/logo-512.png\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"株式会社MediaX\",\"url\":\"https://mediax.biz\"},\"sameAs\":[\"https://kagi-trouble-navi.com/about/\"]}" }}
         />
         
       </body>
