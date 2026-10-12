@@ -162,68 +162,76 @@ export default function Home() {
 
   return (
     <main className="flex flex-col">
-      {/* Hero */}
-      <section className="border-b border-border bg-white">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-12 md:py-20 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
-          <div>
-            <span className="kt-eyebrow">LOCK TROUBLE GUIDE</span>
-            <h1 className="mt-5 text-[34px] font-bold leading-[1.35] tracking-wide text-primary-dark md:text-[52px]">
-              鍵のトラブル、
-              <br />
-              今すぐ解決。
-            </h1>
-            <p className="mt-6 text-[15px] leading-[2] text-text-secondary md:text-[17px]">
-              呼ぶ前の5分で、料金相場と信頼できる業者がわかる。
-              <br className="hidden md:block" />
-              全国対応・料金明示の優良業者だけを厳選比較。
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href="#trouble" className="kt-btn sm:min-w-[200px]">
-                トラブルから探す
-                <ArrowRight />
-              </a>
-              <a href="#area" className="kt-btn sm:min-w-[200px]">
-                エリアから探す
-                <ArrowRight />
-              </a>
-            </div>
-            <Link href="/ryokin/" className="mt-5 inline-flex min-h-[44px] items-center gap-1.5 text-sm font-bold text-primary underline-offset-4 hover:underline">
-              料金相場を先に見る
-              <ArrowRight />
-            </Link>
-            <p className="mt-3 text-xs leading-relaxed text-text-muted">
-              ※ 当サイトは鍵業者ではなく、呼ぶ前の判断材料を提供する比較サイトです。掲載業者は相談・見積もり無料。
-            </p>
-          </div>
-          <div>
-            <div className="overflow-hidden rounded-[14px] border border-border">
-              <Image
-                src="/images/kv-top.jpg"
-                alt="鍵交換の作業シーン"
-                width={1024}
-                height={1024}
-                priority
-                sizes="(min-width: 1024px) 520px, 100vw"
-                className="aspect-[4/3] h-auto w-full object-cover"
-              />
-            </div>
-            <dl className="mt-4 grid grid-cols-3 overflow-hidden rounded-[10px] border border-border bg-white">
-              <div className="border-r border-border px-2 py-4 text-center">
-                <dt className="text-[11px] tracking-wider text-text-muted">掲載業者</dt>
-                <dd className="mt-1 text-xl font-bold leading-tight text-primary">{listedAgents.length}社</dd>
-              </div>
-              <div className="border-r border-border px-2 py-4 text-center">
-                <dt className="text-[11px] tracking-wider text-text-muted">エリア別まとめ</dt>
-                <dd className="mt-1 text-xl font-bold leading-tight text-primary">{allAreaSlugs.length}</dd>
-              </div>
-              <div className="px-2 py-4 text-center">
-                <dt className="text-[11px] tracking-wider text-text-muted">状況別ガイド</dt>
-                <dd className="mt-1 text-xl font-bold leading-tight text-primary">{TROUBLES.length}種</dd>
-              </div>
-            </dl>
-          </div>
+      {/* Hero（2026-10-12 okina選定 案B：写真＋キャッチ＋2ボタン＋ネイビー数値帯） */}
+      <section className="relative overflow-hidden border-b border-border bg-[#F4F7FB]">
+        {/* SP：写真を上部に */}
+        <div className="relative h-[230px] md:hidden">
+          <Image src="/images/fv-hero.jpg" alt="笑顔で鍵を手にする女性の作業スタッフ" fill priority sizes="100vw" className="object-cover object-[78%_28%]" />
+          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#F4F7FB] to-transparent" />
         </div>
+        {/* PC：写真を右側の背景に */}
+        <div className="absolute inset-0 hidden md:block">
+          <Image src="/images/fv-hero.jpg" alt="笑顔で鍵を手にする女性の作業スタッフ" fill priority sizes="100vw" className="object-cover object-[right_30%]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,#F4F7FB_0%,rgba(244,247,251,0.95)_40%,rgba(244,247,251,0)_66%)]" />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-4 pb-8 pt-2 md:pb-16 md:pt-16 lg:pb-24 lg:pt-20">
+          <p className="flex flex-wrap items-center gap-2 text-[13px] font-bold tracking-wide text-text-secondary md:text-[15px]">
+            <span className="rounded-md bg-primary-dark px-2.5 py-1 text-white">掲載{listedAgents.length}社</span>
+            公式情報で中立に比較する、鍵の比較サイト
+          </p>
+          <h1 className="mt-4 text-[30px] font-black leading-[1.3] tracking-wide text-primary-dark md:mt-5 md:text-[48px] lg:text-[56px]">
+            閉じ込め・紛失・交換。
+            <br />
+            鍵のトラブル、今すぐ解決。
+          </h1>
+          <div className="mt-6 grid gap-3 sm:flex sm:flex-wrap md:mt-8 md:gap-4">
+            <a href="#trouble" className="inline-flex min-h-[60px] items-center justify-center gap-2.5 rounded-xl bg-primary-dark px-8 text-[18px] font-bold text-white shadow-[0_10px_24px_rgba(11,37,69,0.22)] transition hover:brightness-110 md:min-h-[72px] md:text-[20px]">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4" /><path d="M11 12l9-9M17 6l3 3M15 8l2 2" /></svg>
+              トラブルから探す
+              <ArrowRight />
+            </a>
+            <a href="#area" className="inline-flex min-h-[60px] items-center justify-center gap-2.5 rounded-xl bg-[#C2410C] px-8 text-[18px] font-bold text-white shadow-[0_10px_24px_rgba(194,65,12,0.25)] transition hover:brightness-110 md:min-h-[72px] md:text-[20px]">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" /><circle cx="12" cy="9.5" r="2.5" /></svg>
+              エリアから探す
+              <ArrowRight />
+            </a>
+          </div>
+          <ul className="mt-5 flex flex-wrap gap-2 md:max-w-[620px]">
+            {[
+              ["鍵の閉じ込め", "/shimedashi/"],
+              ["鍵をなくした", "/kagi-funshitsu/"],
+              ["鍵が回らない", "/kagi-mawaranai/"],
+              ["車のインロック", "/car-inlock/"],
+              ["料金相場", "/ryokin/"],
+            ].map(([label, href]) => (
+              <li key={href}>
+                <Link href={href} className="inline-flex min-h-[40px] items-center rounded-full border border-[#cbd5e1] bg-white px-4 text-[13px] font-bold text-primary-dark transition hover:border-primary md:text-[14px]">
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <dl className="relative grid grid-cols-2 bg-primary-dark text-white md:grid-cols-4">
+          {[
+            ["到着スピード", "最短15", "分"],
+            ["鍵開け料金", "8,000", "円〜"],
+            ["対応エリア", "47", "都道府県"],
+            ["エリア別まとめ", String(allAreaSlugs.length), "エリア"],
+          ].map(([k, v, u], i) => (
+            <div key={k} className={`px-2 py-4 text-center md:py-6 ${i % 2 === 0 ? "border-r border-white/15" : "md:border-r md:border-white/15"} ${i < 2 ? "border-b border-white/15 md:border-b-0" : ""} ${i === 3 ? "md:border-r-0" : ""}`}>
+              <dt className="text-[12px] font-medium text-white/80 md:text-[13px]">{k}</dt>
+              <dd className="mt-1 text-[26px] font-black leading-none md:text-[34px]">
+                {v}
+                <span className="ml-0.5 text-[13px] font-bold md:text-[16px]">{u}</span>
+              </dd>
+            </div>
+          ))}
+        </dl>
       </section>
+      <p className="mx-auto w-full max-w-6xl px-4 pt-2 text-[11px] leading-relaxed text-text-muted">
+        ※ 到着時間は掲載業者（カギの生活救急車・鍵猿）の公式表示による最短の目安、鍵開け料金はカギの生活救急車の公式表示（2026年10月12日確認）です。鍵の種類・地域・状況により異なります。当サイトは鍵業者ではなく、呼ぶ前の判断材料を提供する比較サイトです。
+      </p>
 
       {/* トラブル別 */}
       <section id="trouble" className="scroll-mt-20 py-16 md:py-24">
