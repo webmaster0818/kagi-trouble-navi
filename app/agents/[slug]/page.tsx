@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AgentShot from "@/components/AgentShot";
 import AgentCompareTable from "@/components/AgentCompareTable";
 import VerificationNote from "@/components/VerificationNote";
 import Image from "next/image";
@@ -98,10 +99,10 @@ export default async function AgentPage({ params }: Props) {
           </ol>
         </nav>
 
-        <header className="relative overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 text-white mt-4">
+        <header className="relative overflow-hidden border-y border-border bg-white text-foreground mt-4">
           <div className="mx-auto max-w-4xl px-4 py-12 md:py-16">
-            <p className="text-sm tracking-widest text-amber-300 mb-3">鍵トラブル業者レビュー</p>
-            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">
+            <p className="text-sm font-bold tracking-widest text-primary mb-3">鍵トラブル業者レビュー</p>
+            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4 text-primary-dark">
               {notice ? (
                 <>
                   {a.name}は{notice.endedOn}でサービス終了
@@ -116,15 +117,13 @@ export default async function AgentPage({ params }: Props) {
                 </>
               )}
             </h1>
-            <p className="text-slate-200 leading-relaxed max-w-2xl">{notice ? `${a.name}は公式サイトで閉鎖が告知され、現在は新規の受付を行っていません。以下は終了前の調査記録です。依頼先を探している方は、まず下の案内をご確認ください。` : a.heroLead}</p>
+            <p className="text-text-secondary leading-relaxed max-w-2xl">{notice ? `${a.name}は公式サイトで閉鎖が告知され、現在は新規の受付を行っていません。以下は終了前の調査記録です。依頼先を探している方は、まず下の案内をご確認ください。` : a.heroLead}</p>
             <div className="mt-6 flex flex-wrap gap-2">
               {a.badges.map((b) => (
-                <span key={b} className="badge badge-lg bg-white/15 border-0 text-white">{b}</span>
+                <span key={b} className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">{b}</span>
               ))}
             </div>
-            <div className="mt-8 overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
-              <Image src={a.image} alt={`${a.name}の鍵トラブル解決サービス`} width={1024} height={1024} className="w-full h-56 md:h-72 object-cover" priority />
-            </div>
+            <AgentShot slug={a.slug} name={a.name} priority className="mt-8 md:max-w-[640px]" sizes="(min-width: 768px) 640px, 100vw" />
           </div>
         </header>
 

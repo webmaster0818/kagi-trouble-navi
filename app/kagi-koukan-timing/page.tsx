@@ -96,22 +96,6 @@ export default function TimingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
 
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-primary text-white shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2">
-            <span className="text-2xl">🔑</span>
-            <span className="text-xl font-bold tracking-tight">鍵トラブルナビ</span>
-          </a>
-          <nav className="hidden md:flex gap-6 text-sm font-medium">
-            <a href="/#trouble" className="hover:text-secondary transition-colors">トラブル別</a>
-            <a href="/#service" className="hover:text-secondary transition-colors">サービス別</a>
-            <a href="/ryokin/" className="hover:text-secondary transition-colors">料金相場</a>
-            <a href="/ryokin-index/" className="hover:text-secondary transition-colors">料金インデックス</a>
-            <a href="/agents/" className="hover:text-secondary transition-colors">業者比較</a>
-          </nav>
-        </div>
-      </header>
 
       <main className="flex-1">
         <div className="bg-surface-alt border-b border-black/5">
@@ -131,7 +115,7 @@ export default function TimingPage() {
 
           {/* 今月のチェック */}
           <div className="bg-secondary/10 border border-secondary/30 rounded-2xl p-5 sm:p-6 mb-8">
-            <p className="font-bold text-primary mb-2">📅 今月（2026年7月）の防犯チェックポイント</p>
+            <p className="font-bold text-primary mb-2">今月（2026年7月）の防犯チェックポイント</p>
             <ul className="list-disc pl-5 space-y-1.5 text-sm text-text-secondary leading-relaxed">
               {monthlyPoints.map((p, i) => (
                 <li key={i}>{p}</li>

@@ -10,15 +10,6 @@ export const metadata: Metadata = {
 export default function ContentPolicyPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-primary text-white shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl">🔑</span>
-            <span className="text-xl font-bold tracking-tight">鍵トラブルナビ</span>
-          </Link>
-        </div>
-      </header>
 
       {/* Main Content */}
       <main className="flex-1 bg-background">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AgentShot from "@/components/AgentShot";
 import AgentCompareTable from "@/components/AgentCompareTable";
 import VerificationNote from "@/components/VerificationNote";
 import Image from "next/image";
@@ -99,20 +100,18 @@ export default function JbrPage() {
           </ol>
         </nav>
 
-        <header className="relative overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 text-white mt-4">
+        <header className="relative overflow-hidden border-y border-border bg-white text-foreground mt-4">
           <div className="mx-auto max-w-4xl px-4 py-12 md:py-16">
-            <p className="text-sm tracking-widest text-amber-300 mb-3">鍵トラブル業者レビュー</p>
-            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">JBRの鍵サービス（生活救急車）はどうなった？<br className="hidden md:block" />運営会社の変更と現在の依頼先</h1>
-            <p className="text-slate-200 leading-relaxed max-w-2xl">「生活救急車」はかつてJBR（ジャパンベストレスキューシステム）のブランドでしたが、2022年12月に事業が株式会社生活救急車へ承継され、JBR自体も2024年3月に上場廃止になっています。経緯と現在の依頼先を一次情報で整理しました。</p>
+            <p className="text-sm font-bold tracking-widest text-primary mb-3">鍵トラブル業者レビュー</p>
+            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4 text-primary-dark">JBRの鍵サービス（生活救急車）はどうなった？<br className="hidden md:block" />運営会社の変更と現在の依頼先</h1>
+            <p className="text-text-secondary leading-relaxed max-w-2xl">「生活救急車」はかつてJBR（ジャパンベストレスキューシステム）のブランドでしたが、2022年12月に事業が株式会社生活救急車へ承継され、JBR自体も2024年3月に上場廃止になっています。経緯と現在の依頼先を一次情報で整理しました。</p>
             <div className="mt-6 flex flex-wrap gap-2">
-              <span className="badge badge-lg bg-white/15 border-0 text-white">現運営：株式会社生活救急車</span>
-              <span className="badge badge-lg bg-white/15 border-0 text-white">24時間受付</span>
-              <span className="badge badge-lg bg-white/15 border-0 text-white">全国対応</span>
-              <span className="badge badge-lg bg-white/15 border-0 text-white">2026年7月4日 一次確認</span>
+              <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">現運営：株式会社生活救急車</span>
+              <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">24時間受付</span>
+              <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">全国対応</span>
+              <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">2026年7月4日 一次確認</span>
             </div>
-            <div className="mt-8 overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
-              <Image src="/images/kv-top.jpg" alt="ジャパンベストレスキュー（JBR）の鍵トラブル解決サービス" width={1024} height={1024} className="w-full h-56 md:h-72 object-cover" priority />
-            </div>
+            <AgentShot slug="jbr" name="JBR（ジャパンベストレスキュー）" priority className="mt-8 md:max-w-[640px]" sizes="(min-width: 768px) 640px, 100vw" />
           </div>
         </header>
 

@@ -1,3 +1,4 @@
+import AgentIntro from "@/components/AgentIntro";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
@@ -532,7 +533,7 @@ export default function AreaPageNishinomiya() {
                 <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
               </h3>
 
-              <p className="leading-loose">{a.intro}</p>
+              <AgentIntro slug={a.slug} name={a.name}>{a.intro}</AgentIntro>
 
               <H4>こんな人におすすめ</H4>
               <div className="rounded-[2px] bg-[#EFF3F8] px-5 py-4 md:px-6">

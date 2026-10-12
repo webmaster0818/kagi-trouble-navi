@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import SiteFooter from "@/components/SiteFooter";
+import SiteHeader from "@/components/SiteHeader";
+import ScrollReveal from "@/components/ScrollReveal";
 import "./globals.css";
 
 const notoSansJP = Noto_Sans_JP({
@@ -58,9 +60,11 @@ export default function RootLayout({
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Expires" content="0" />
       </head>
-      <body className="min-h-screen flex flex-col bg-background text-foreground"><div style={{background:'#f4f4f4',borderBottom:'1px solid #e2e2e2',fontSize:'11px',lineHeight:1.6,color:'#666',textAlign:'center',padding:'3px 8px'}}>本サイトはプロモーション(PR)を含みます。</div>
+      <body className="min-h-screen flex flex-col bg-background text-foreground"><div style={{background:'#f4f4f4',borderBottom:'1px solid #e2e2e2',fontSize:'11px',lineHeight:1.6,color:'#555',textAlign:'center',padding:'3px 8px'}}>本サイトはプロモーション(PR)を含みます。</div>
+        <SiteHeader />
         {children}
         <SiteFooter />
+        <ScrollReveal />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"鍵トラブルナビ\",\"url\":\"https://kagi-trouble-navi.com/\",\"logo\":\"https://kagi-trouble-navi.com/favicon.ico\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"株式会社MediaX\",\"url\":\"https://mediax.biz\"},\"sameAs\":[\"https://kagi-trouble-navi.com/about/\"]}" }}

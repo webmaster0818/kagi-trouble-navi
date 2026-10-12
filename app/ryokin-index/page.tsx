@@ -173,22 +173,6 @@ export default function RyokinIndexPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
 
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-primary text-white shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2">
-            <span className="text-2xl">🔑</span>
-            <span className="text-xl font-bold tracking-tight">鍵トラブルナビ</span>
-          </a>
-          <nav className="hidden md:flex gap-6 text-sm font-medium">
-            <a href="/#trouble" className="hover:text-secondary transition-colors">トラブル別</a>
-            <a href="/#service" className="hover:text-secondary transition-colors">サービス別</a>
-            <a href="/ryokin/" className="hover:text-secondary transition-colors">料金相場</a>
-            <a href="/ryokin-index/" className="hover:text-secondary transition-colors">料金インデックス</a>
-            <a href="/agents/" className="hover:text-secondary transition-colors">業者比較</a>
-          </nav>
-        </div>
-      </header>
 
       <main className="flex-1">
         <div className="bg-surface-alt border-b border-black/5">
@@ -317,7 +301,7 @@ export default function RyokinIndexPage() {
 
           {/* 企業構造の注意 */}
           <div className="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-8">
-            <p className="font-bold text-amber-900 mb-2">⚠️ 混同に注意：JBRと「生活救急車」</p>
+            <p className="font-bold text-amber-900 mb-2">混同に注意：JBRと「生活救急車」</p>
             <p className="text-sm text-text-secondary leading-relaxed">
               かつてJBR（ジャパンベストレスキューシステム株式会社）が運営していた「生活救急車」の駆けつけ事業は、<strong>2022年11月に別法人「株式会社生活救急車」へ承継</strong>されています。現在の「鍵の生活救急車」の料金は、JBR本体の料金ではありません。JBRは現在、消費者向けの鍵料金表を掲載した公式サイトを運営していないため、本一覧では「—」としています。
             </p>

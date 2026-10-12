@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AgentShot from "@/components/AgentShot";
 import type { Metadata } from "next";
 import { agents } from "./agentsData";
 
@@ -39,19 +40,22 @@ export default function AgentsIndexPage() {
         <p className="text-slate-600 mb-8 leading-relaxed">
           主要な鍵業者の料金・対応スピード・サービス内容・利用者の口コミを、編集部が中立的に調査してまとめました。気になる業者を選んで、依頼前の比較にお役立てください。
         </p>
-        <Link href="/agents/nitamei-kagiya/" className="block mb-6 rounded-2xl border-2 border-amber-300 bg-amber-50 p-5 hover:shadow-md transition">
+        <Link href="/agents/nitamei-kagiya/" className="kt-card kt-card-link block mb-8 p-5" style={{ borderLeft: "4px solid var(--primary)" }}>
           <p className="font-bold text-slate-800 mb-1">「救急車」「110番」「レスキュー」名前が似た鍵屋の見分け方</p>
           <p className="text-xs text-slate-600 leading-relaxed">屋号がよく似た鍵屋10件の運営会社を公式サイトで確認した一覧です。口コミや料金を調べる前にご確認ください。</p>
         </Link>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <ul className="grid sm:grid-cols-2 gap-5">
           {agents.map((a) => (
-            <Link key={a.slug} href={`/agents/${a.slug}/`} className="block rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition">
-              <p className="font-bold text-slate-800 mb-1">{a.name}</p>
-              <p className="text-xs text-slate-500 leading-relaxed">{taglines[a.slug] ?? "口コミ・評判・料金を見る"}</p>
-              <p className="text-xs text-amber-700 font-medium mt-2">口コミ・評判・料金を見る →</p>
-            </Link>
+            <li key={a.slug} className="kt-card flex flex-col p-4">
+              <AgentShot slug={a.slug} name={a.name} sizes="(min-width: 640px) 420px, 100vw" />
+              <Link href={`/agents/${a.slug}/`} className="group mt-3 flex flex-1 flex-col px-1">
+                <span className="font-bold text-foreground group-hover:text-primary mb-1">{a.name}</span>
+                <span className="text-xs text-text-muted leading-relaxed">{taglines[a.slug] ?? "口コミ・評判・料金を見る"}</span>
+                <span className="mt-3 text-xs font-bold text-primary">口コミ・評判・料金を見る →</span>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </article>
   );

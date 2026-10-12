@@ -1,15 +1,15 @@
 import Link from "next/link";
+import SiteLogo from "./SiteLogo";
 
 // 全ページ共通フッター。全21ページへの内部リンク網を保証する（孤立ページゼロ化）。
 export default function SiteFooter() {
   return (
-    <footer className="bg-[#0D1B2A] text-white/70 mt-auto">
+    <footer className="bg-[#0B1C33] text-white/75 mt-auto">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-2 mb-3 text-white">
-              <span className="text-2xl">🔑</span>
-              <span className="text-lg font-bold">鍵トラブルナビ</span>
+            <div className="mb-4">
+              <SiteLogo tone="light" />
             </div>
             <p className="text-sm max-w-sm">
               鍵のトラブルでお困りの方に、一次確認した情報だけで鍵業者を比較・紹介するサービスです。
@@ -90,7 +90,7 @@ export default function SiteFooter() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-white/10 pt-8 text-center text-xs text-white/40">
+        <div className="border-t border-white/10 pt-8 text-center text-xs text-white/60">
           <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。掲載料金は各社公式サイトの確認値または一般的な相場で、実際の費用は各業者の見積もりによります。</p>
           <p className="mt-2">運営: 株式会社MediaX（東京都渋谷区） &copy; 2026 MediaX All Rights Reserved.</p>
         </div>

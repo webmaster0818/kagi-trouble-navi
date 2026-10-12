@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AgentShot from "@/components/AgentShot";
 import AgentCompareTable from "@/components/AgentCompareTable";
 import VerificationNote from "@/components/VerificationNote";
 import Image from "next/image";
@@ -101,26 +102,24 @@ export default function Kagi110banPage() {
         </nav>
 
         {/* Hero */}
-        <header className="relative overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 text-white mt-4">
+        <header className="relative overflow-hidden border-y border-border bg-white text-foreground mt-4">
           <div className="mx-auto max-w-4xl px-4 py-12 md:py-16">
-            <p className="text-sm tracking-widest text-amber-300 mb-3">鍵トラブル業者レビュー</p>
-            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">
+            <p className="text-sm font-bold tracking-widest text-primary mb-3">鍵トラブル業者レビュー</p>
+            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4 text-primary-dark">
               カギ110番の口コミ・評判は？
               <br className="hidden md:block" />
               料金・対応スピード・メリットを徹底調査
             </h1>
-            <p className="text-slate-200 leading-relaxed max-w-2xl">
+            <p className="text-text-secondary leading-relaxed max-w-2xl">
               全国47都道府県の加盟店ネットワークで、24時間365日・最短5分手配をうたうカギ110番。実際の料金や対応スピード、利用者の評価を編集部が中立的に調査しました。
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
-              <span className="badge badge-lg bg-white/15 border-0 text-white">鍵開け 6,600円〜（公式表示）</span>
-              <span className="badge badge-lg bg-white/15 border-0 text-white">24時間365日</span>
-              <span className="badge badge-lg bg-white/15 border-0 text-white">最短5分手配</span>
-              <span className="badge badge-lg bg-white/15 border-0 text-white">全国47都道府県</span>
+              <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">鍵開け 6,600円〜（公式表示）</span>
+              <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">24時間365日</span>
+              <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">最短5分手配</span>
+              <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">全国47都道府県</span>
             </div>
-            <div className="mt-8 overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
-              <Image src="/images/kv-top.jpg" alt="カギ110番の鍵トラブル解決サービス" width={1024} height={1024} className="w-full h-56 md:h-72 object-cover" priority />
-            </div>
+            <AgentShot slug="kagi110ban" name="カギ110番" priority className="mt-8 md:max-w-[640px]" sizes="(min-width: 768px) 640px, 100vw" />
           </div>
         </header>
 

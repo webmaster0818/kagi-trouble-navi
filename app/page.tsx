@@ -1,458 +1,487 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import companies from "@/data/companies.json";
+import { agents } from "./agents/agentsData";
+import { allAreaSlugs } from "@/data/areaRegions";
+import { companyIdToSlug } from "@/data/agentShots";
+import AreaFinder from "@/components/AreaFinder";
+import AgentShot from "@/components/AgentShot";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
+const TROUBLES = [
+  { icon: "shimedashi", title: "鍵の閉じ込め", desc: "家・部屋に入れない", href: "/shimedashi/" },
+  { icon: "kagi-ore", title: "鍵が折れた", desc: "鍵穴の中で折れた", href: "/kagi-ore/" },
+  { icon: "kagi-mawaranai", title: "鍵穴が回らない", desc: "鍵が回りにくい・動かない", href: "/kagi-mawaranai/" },
+  { icon: "kagi-funshitsu", title: "鍵をなくした", desc: "鍵を紛失・防犯が心配", href: "/kagi-funshitsu/" },
+  { icon: "car-inlock", title: "車のインロック", desc: "車内に鍵を閉じ込めた", href: "/car-inlock/" },
+  { icon: "kinko", title: "金庫が開かない", desc: "暗証番号忘れ・故障", href: "/kinko-kaijo/" },
+];
+
+const SERVICES = [
+  { icon: "kagiake", name: "鍵開け", price: "8,000円〜", href: "/shimedashi/" },
+  { icon: "kagi-koukan", name: "鍵交換", price: "10,000円〜", href: "/kagi-koukan-timing/" },
+  { icon: "kagi-shuri", name: "鍵修理", price: "5,000円〜", href: "/kagi-mawaranai/" },
+  { icon: "kinko", name: "金庫", price: "15,000円〜", href: "/kinko-kaijo/" },
+  { icon: "kuruma-kagi", name: "車の鍵", price: "12,000円〜", href: "/car-inlock/" },
+  { icon: "bike", name: "バイクの鍵", price: "8,000円〜", href: "/bike-kagi-funshitsu/" },
+];
+
+const PRICES = [
+  { service: "鍵開け（一般的な鍵）", price: "8,000〜15,000円", time: "5〜30分" },
+  { service: "鍵開け（ディンプルキー）", price: "15,000〜30,000円", time: "15〜60分" },
+  { service: "鍵交換（シリンダー交換）", price: "10,000〜25,000円", time: "15〜40分" },
+  { service: "鍵交換（ディンプルキー）", price: "20,000〜40,000円", time: "15〜40分" },
+  { service: "鍵修理", price: "5,000〜15,000円", time: "10〜30分" },
+  { service: "金庫の鍵開け", price: "15,000〜50,000円", time: "30〜120分" },
+  { service: "車のインロック解錠", price: "12,000〜30,000円", time: "10〜40分" },
+  { service: "バイクの鍵開け", price: "8,000〜20,000円", time: "10〜30分" },
+];
+
+const FRAUD = [
+  {
+    title: "「980円〜」の激安広告に注意",
+    desc: "広告では格安を謳い、現場で「特殊な鍵だった」「部品代が別」などと理由をつけて数万円〜10万円以上を請求するケースが報告されています。",
+  },
+  {
+    title: "電話で概算を聞いてから依頼する",
+    desc: "優良業者は電話で症状を聞き、概算費用を伝えてくれます。「現場を見ないとわからない」としか言わない業者は要注意。",
+  },
+  {
+    title: "作業前に必ず見積書をもらう",
+    desc: "現場到着後、作業前に書面で見積もりを出してもらいましょう。口頭だけの説明で作業を始める業者は断りましょう。",
+  },
+  {
+    title: "断る勇気を持つ",
+    desc: "見積もりが高すぎると感じたら、その場で断ってOK。出張費のみ（またはキャンセル無料）の業者を選べば安心です。",
+  },
+  {
+    title: "消費者ホットラインに相談を",
+    desc: "被害に遭った場合は消費者ホットライン（188）に相談を。クーリングオフが適用される場合もあります。",
+  },
+];
+
+const POINTS = [
+  {
+    num: "01",
+    title: "料金の明示性",
+    desc: "ホームページや電話で料金目安を明確に提示してくれる業者を選びましょう。「現場を見ないとわからない」だけの業者は避けるのが無難です。",
+  },
+  {
+    num: "02",
+    title: "到着スピード",
+    desc: "緊急時は到着時間が重要です。「最短15分」「最短30分」など具体的な時間を示す業者、また拠点数が多い業者ほど早く対応できます。",
+  },
+  {
+    num: "03",
+    title: "対応実績・口コミ",
+    desc: "年間対応件数や利用者の口コミを確認しましょう。実績が多いほど技術力・対応力が高い傾向にあります。",
+  },
+  {
+    num: "04",
+    title: "キャンセルポリシー",
+    desc: "見積もり後にキャンセルできるか、キャンセル料はかかるか事前に確認を。良心的な業者は「見積もり後のキャンセル無料」を明示しています。",
+  },
+  {
+    num: "05",
+    title: "保険・保証の有無",
+    desc: "作業中に鍵や扉を傷つけた場合の賠償責任保険に加入しているか確認。また、交換した鍵の保証期間があるかも重要なポイントです。",
+  },
+];
+
+const FAQS = [
+  {
+    q: "深夜・早朝でも対応してもらえますか？",
+    a: "はい、当サイトで紹介している業者は24時間365日対応です。深夜・早朝でも追加料金なしの業者もあります。ただし、業者によっては夜間料金が発生する場合があるので、電話時に確認しましょう。",
+  },
+  {
+    q: "鍵開けにはどのくらい時間がかかりますか？",
+    a: "一般的なシリンダー錠であれば5〜15分程度、ディンプルキーなど高セキュリティ錠の場合は15〜60分程度かかります。到着後、作業前に所要時間の目安を教えてもらえます。",
+  },
+  {
+    q: "賃貸マンションの鍵を開けてもらう場合、身分証は必要ですか？",
+    a: "はい、防犯上の理由から本人確認書類（免許証・保険証など）の提示が必要です。また、賃貸の場合は管理会社への連絡が求められることもあります。",
+  },
+  {
+    q: "見積もり後にキャンセルできますか？",
+    a: "優良業者であれば見積もり後のキャンセルは無料で可能です。当サイトで紹介している業者はすべて見積もり無料・キャンセル可能な業者です。ただし一部業者では出張費がかかる場合があるので事前に確認しましょう。",
+  },
+  {
+    q: "ぼったくりに遭ってしまった場合はどうすればいいですか？",
+    a: "まずは消費者ホットライン（188番）に相談しましょう。訪問販売に該当する場合はクーリングオフ（8日以内）が適用される可能性があります。領収書・見積書は必ず保管してください。",
+  },
+];
+
+const AGENT_TAGLINES: Record<string, string> = {
+  kagi110ban: "全国47都道府県・24時間365日・最短5分手配",
+  jbr: "全国対応の大手レスキューグループ・賠償責任保険加入",
+  "seikatsu-kyukyusha": "最短15分到着・年間10万件以上の実績",
+  "kagi-rescue": "鍵の110番救急車（kagi110qq.co.jp）・営業中・鍵開け6,600円〜＋出張料",
+  kagizaru: "鍵屋の鍵猿（SLS株式会社）・全国47都道府県・最短15分・1年保証",
+  "kagi-kyukyusha": "加盟店ネットワーク型・「鍵の救急車」等の表記は別業者と公式が告知",
+  "kagi-24h-kyukyusha": "株式会社24時間救急車・鍵開け6,600円〜＋出張料・カギの救急車とは別会社",
+  "kagi-trouble-kyukyusha": "株式会社アスティ24（川越）・首都圏中心・夜間割増を公式に明示",
+};
+
+function Icon({ name, size = 112, className = "" }: { name: string; size?: number; className?: string }) {
+  return (
+    <Image
+      src={`/images/icons/${name}.webp`}
+      alt=""
+      width={size}
+      height={size}
+      className={className}
+      aria-hidden="true"
+    />
+  );
+}
+
+function SectionHead({ eyebrow, title, lead, icon }: { eyebrow: string; title: string; lead?: string; icon?: string }) {
+  return (
+    <div className="mb-10 text-center md:mb-12">
+      {icon && <Icon name={icon} size={64} className="mx-auto mb-4 h-14 w-14 md:h-16 md:w-16" />}
+      <span className="kt-eyebrow">{eyebrow}</span>
+      <h2 className="mt-3 text-[24px] font-bold leading-snug tracking-wide text-foreground md:text-[32px]">{title}</h2>
+      {lead && <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-text-muted md:text-[15px]">{lead}</p>}
+    </div>
+  );
+}
+
+const ArrowRight = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+    <polyline points="9 6 15 12 9 18" />
+  </svg>
+);
+
 export default function Home() {
   const top3 = companies.slice(0, 3);
+  const listedAgents = agents.filter((a) => !a.discontinued);
 
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-primary text-white shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="text-2xl">🔑</span>
-            <h1 className="text-xl font-bold tracking-tight">鍵トラブルナビ</h1>
-          </div>
-          <nav className="hidden md:flex gap-6 text-sm font-medium">
-            <a href="#trouble" className="hover:text-secondary transition-colors">トラブル別</a>
-            <a href="#service" className="hover:text-secondary transition-colors">サービス別</a>
-            <a href="#price" className="hover:text-secondary transition-colors">料金相場</a>
-            <a href="#compare" className="hover:text-secondary transition-colors">業者比較</a>
-            <a href="#area" className="hover:text-secondary transition-colors">地域別</a>
-          </nav>
-          <a
-            href="#compare"
-            className="md:hidden bg-accent text-white px-4 py-2 rounded-full text-sm font-bold btn-emergency"
-          >
-            🔓 業者を探す
-          </a>
-        </div>
-      </header>
-
-      {/* Hero Section */}
-      <section className="relative text-white overflow-hidden">
-        <img
-          src="/images/kv-top.jpg"
-          alt="鍵交換の作業シーン"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/90 via-[#0a1628]/70 to-[#0a1628]/40" />
-        <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-32">
-          <div className="max-w-2xl">
-            <div className="flex flex-wrap gap-3 mb-6">
-              <span className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
-                🔑 24時間365日対応
-              </span>
-              <span className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
-                ⚡ 最短15分到着
-              </span>
-              <span className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
-                🛡️ 厳選5社比較
-              </span>
-            </div>
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              鍵のトラブル、<br className="md:hidden" />今すぐ解決。
-            </h2>
-            <p className="text-lg md:text-xl text-white/80 mb-8">
-              呼ぶ前の5分で、料金相場と信頼できる業者がわかる。<br />
+    <main className="flex flex-col">
+      {/* Hero */}
+      <section className="border-b border-border bg-white">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-12 md:py-20 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
+          <div>
+            <span className="kt-eyebrow">LOCK TROUBLE GUIDE</span>
+            <h1 className="mt-5 text-[34px] font-bold leading-[1.35] tracking-wide text-primary-dark md:text-[52px]">
+              鍵のトラブル、
+              <br />
+              今すぐ解決。
+            </h1>
+            <p className="mt-6 text-[15px] leading-[2] text-text-secondary md:text-[17px]">
+              呼ぶ前の5分で、料金相場と信頼できる業者がわかる。
+              <br className="hidden md:block" />
               全国対応・料金明示の優良業者だけを厳選比較。
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#trouble"
-                className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl btn-emergency transition-colors"
-              >
-                🔓 今すぐ業者を探す
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="#trouble" className="kt-btn sm:min-w-[200px]">
+                トラブルから探す
+                <ArrowRight />
               </a>
-              <a
-                href="/ryokin/"
-                className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-full text-lg font-bold shadow-xl hover:bg-gray-100 transition-colors"
-              >
-                💴 料金相場を先に見る
+              <a href="#area" className="kt-btn sm:min-w-[200px]">
+                エリアから探す
+                <ArrowRight />
               </a>
             </div>
-            <p className="mt-4 text-white/60 text-sm">※ 当サイトは鍵業者ではなく、呼ぶ前の判断材料を提供する比較サイトです。掲載業者は相談・見積もり無料。</p>
+            <Link href="/ryokin/" className="mt-5 inline-flex min-h-[44px] items-center gap-1.5 text-sm font-bold text-primary underline-offset-4 hover:underline">
+              料金相場を先に見る
+              <ArrowRight />
+            </Link>
+            <p className="mt-3 text-xs leading-relaxed text-text-muted">
+              ※ 当サイトは鍵業者ではなく、呼ぶ前の判断材料を提供する比較サイトです。掲載業者は相談・見積もり無料。
+            </p>
           </div>
-        </div>
-      </section>
-
-      {/* Trouble-based Navigation */}
-      <section id="trouble" className="py-16 bg-background">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <span className="inline-block bg-accent/10 text-accent px-4 py-1 rounded-full text-sm font-bold mb-3">
-              ★ トラブル別で探す
-            </span>
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-              今のお困りごとは？
-            </h3>
-            <p className="text-text-muted mt-2">該当するトラブルをお選びください。最適な業者をご案内します。</p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              { icon: "🚪", title: "鍵の閉じ込め", desc: "家・部屋に入れない", urgency: true, href: "/shimedashi/" },
-              { icon: "💔", title: "鍵が折れた", desc: "鍵穴の中で折れた", urgency: true, href: "/kagi-ore/" },
-              { icon: "🔧", title: "鍵穴が回らない", desc: "鍵が回りにくい・動かない", urgency: false, href: "/kagi-mawaranai/" },
-              { icon: "😰", title: "鍵をなくした", desc: "鍵を紛失・防犯が心配", urgency: true, href: "/kagi-funshitsu/" },
-              { icon: "🚗", title: "車のインロック", desc: "車内に鍵を閉じ込めた", urgency: true, href: "/car-inlock/" },
-              { icon: "🔐", title: "金庫が開かない", desc: "暗証番号忘れ・故障", urgency: false, href: "/kinko-kaijo/" },
-            ].map((item) => (
-              <a
-                key={item.title}
-                href={item.href}
-                className={`group relative flex items-center gap-4 p-5 rounded-xl border-2 transition-all hover:shadow-lg hover:-translate-y-0.5 ${
-                  item.urgency
-                    ? "border-accent/30 bg-white hover:border-accent"
-                    : "border-border bg-white hover:border-primary"
-                }`}
-              >
-                <span className="text-4xl flex-shrink-0">{item.icon}</span>
-                <div className="flex-1">
-                  <h4 className="font-bold text-lg text-foreground group-hover:text-primary">
-                    {item.title}
-                  </h4>
-                  <p className="text-sm text-text-muted">{item.desc}</p>
-                </div>
-                <span className={`text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap ${
-                  item.urgency
-                    ? "bg-accent text-white"
-                    : "bg-secondary text-white"
-                }`}>
-                  今すぐ相談
-                </span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Service Category Cards */}
-      <section id="service" className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-              サービス別で探す
-            </h3>
-            <p className="text-text-muted mt-2">必要なサービスから業者を比較できます</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {[
-              { icon: "🔓", name: "鍵開け", price: "8,000円〜" },
-              { icon: "🔄", name: "鍵交換", price: "10,000円〜" },
-              { icon: "🔧", name: "鍵修理", price: "5,000円〜" },
-              { icon: "🔐", name: "金庫", price: "15,000円〜" },
-              { icon: "🚗", name: "車の鍵", price: "12,000円〜" },
-              { icon: "🏍️", name: "バイクの鍵", price: "8,000円〜" },
-            ].map((service) => (
-              <div
-                key={service.name}
-                className="flex flex-col items-center p-5 rounded-xl border border-border bg-background hover:border-primary hover:shadow-md transition-all cursor-pointer group"
-              >
-                <span className="text-3xl mb-2">{service.icon}</span>
-                <h4 className="font-bold text-foreground group-hover:text-primary">{service.name}</h4>
-                <p className="text-xs text-text-muted mt-1">{service.price}</p>
+          <div>
+            <div className="overflow-hidden rounded-[14px] border border-border">
+              <Image
+                src="/images/kv-top.jpg"
+                alt="鍵交換の作業シーン"
+                width={1024}
+                height={1024}
+                priority
+                sizes="(min-width: 1024px) 520px, 100vw"
+                className="aspect-[4/3] h-auto w-full object-cover"
+              />
+            </div>
+            <dl className="mt-4 grid grid-cols-3 overflow-hidden rounded-[10px] border border-border bg-white">
+              <div className="border-r border-border px-2 py-4 text-center">
+                <dt className="text-[11px] tracking-wider text-text-muted">掲載業者</dt>
+                <dd className="mt-1 text-xl font-bold leading-tight text-primary">{listedAgents.length}社</dd>
               </div>
-            ))}
+              <div className="border-r border-border px-2 py-4 text-center">
+                <dt className="text-[11px] tracking-wider text-text-muted">エリア別まとめ</dt>
+                <dd className="mt-1 text-xl font-bold leading-tight text-primary">{allAreaSlugs.length}</dd>
+              </div>
+              <div className="px-2 py-4 text-center">
+                <dt className="text-[11px] tracking-wider text-text-muted">状況別ガイド</dt>
+                <dd className="mt-1 text-xl font-bold leading-tight text-primary">{TROUBLES.length}種</dd>
+              </div>
+            </dl>
           </div>
         </div>
       </section>
 
-      {/* Top 3 Recommended Companies */}
-      <section id="compare" className="py-16 bg-background">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <span className="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-bold mb-3">
-              厳選比較
-            </span>
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-              おすすめ鍵業者 TOP3
-            </h3>
-            <p className="text-text-muted mt-2">実績・料金・対応力を総合評価して厳選</p>
-          </div>
-          <div className="space-y-6">
-            {top3.map((company, index) => (
-              <div
-                key={company.id}
-                className={`relative bg-white rounded-2xl border-2 p-6 md:p-8 shadow-sm ${
-                  index === 0 ? "border-secondary" : "border-border"
-                }`}
-              >
-                {index === 0 && (
-                  <span className="absolute -top-3 left-6 bg-secondary text-white px-4 py-1 rounded-full text-sm font-bold">
-                    👑 おすすめNo.1
+      {/* トラブル別 */}
+      <section id="trouble" className="scroll-mt-20 py-16 md:py-24">
+        <div className="mx-auto max-w-6xl px-4">
+          <SectionHead eyebrow="TROUBLE" title="今のお困りごとは？" lead="該当するトラブルをお選びください。状況別の対処法と、頼める業者をご案内します。" />
+          <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5">
+            {TROUBLES.map((t) => (
+              <li key={t.title}>
+                <Link href={t.href} className="kt-card kt-card-link group flex h-full flex-col overflow-hidden">
+                  <span className="flex flex-1 flex-col items-center justify-center px-3 pb-5 pt-7 md:pb-7 md:pt-10">
+                    <Icon name={t.icon} size={160} className="h-[88px] w-[88px] md:h-[128px] md:w-[128px]" />
+                    <span className="mt-4 text-center text-[11px] leading-relaxed text-text-muted md:text-[13px]">{t.desc}</span>
                   </span>
-                )}
-                <div className="flex flex-col md:flex-row md:items-start gap-6">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-2xl font-bold text-primary">
-                        {index + 1}位
-                      </span>
-                      <h4 className="text-xl font-bold text-foreground">
-                        {company.name}
-                      </h4>
-                    </div>
-                    <p className="text-text-muted mb-4">{company.tagline}</p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {company.features.slice(0, 4).map((feature) => (
-                        <span
-                          key={feature}
-                          className="inline-flex items-center bg-primary/5 text-primary text-xs font-medium px-3 py-1 rounded-full"
-                        >
-                          {feature}
-                        </span>
-                      ))}
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <h5 className="text-sm font-bold text-success mb-1">メリット</h5>
-                        <ul className="text-sm text-text-muted space-y-1">
-                          {company.pros.slice(0, 2).map((pro) => (
-                            <li key={pro} className="flex items-start gap-1">
-                              <span className="text-success flex-shrink-0">○</span>
-                              {pro}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div>
-                        <h5 className="text-sm font-bold text-accent mb-1">注意点</h5>
-                        <ul className="text-sm text-text-muted space-y-1">
-                          {company.cons.slice(0, 2).map((con) => (
-                            <li key={con} className="flex items-start gap-1">
-                              <span className="text-accent flex-shrink-0">△</span>
-                              {con}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center gap-3 md:min-w-[180px]">
-                    <div className="text-center">
-                      <p className="text-sm text-text-muted">料金目安</p>
-                      <p className="text-2xl font-bold text-primary">{company.priceRange}</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-sm text-text-muted">到着時間</p>
-                      <p className="text-lg font-bold text-foreground">{company.speed}</p>
-                    </div>
-                    <a
-                      href={company.officialUrl}
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      className="w-full bg-accent hover:bg-accent-dark text-white text-center py-3 px-6 rounded-full font-bold text-sm transition-colors btn-emergency"
-                    >
-                      無料で相談する
-                    </a>
-                  </div>
-                </div>
-              </div>
+                  <span className="flex min-h-[52px] items-center justify-center gap-1.5 bg-primary px-2 py-3 text-center text-[14px] font-bold tracking-wide text-white transition-colors group-hover:bg-primary-dark md:text-[16px]">
+                    {t.title}
+                  </span>
+                </Link>
+              </li>
             ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* エリアから探す */}
+      <section id="area" className="scroll-mt-20 border-y border-border bg-white py-16 md:py-24">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="mb-4 text-center">
+            <Icon name="area" size={64} className="mx-auto mb-4 h-14 w-14 md:h-16 md:w-16" />
+            <span className="kt-eyebrow">AREA SEARCH</span>
+            <h2 className="mt-3 text-[24px] font-bold tracking-wide text-foreground md:text-[32px]">エリアから探す</h2>
+          </div>
+          <AreaFinder />
+        </div>
+      </section>
+
+      {/* サービス別 */}
+      <section id="service" className="scroll-mt-20 py-16 md:py-24">
+        <div className="mx-auto max-w-6xl px-4">
+          <SectionHead eyebrow="SERVICE" title="サービス別で探す" lead="必要なサービスから、料金の目安と関連ガイドを確認できます" />
+          <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5 lg:grid-cols-6">
+            {SERVICES.map((s) => (
+              <li key={s.name}>
+                <Link href={s.href} className="kt-card kt-card-link group flex h-full flex-col overflow-hidden">
+                  <span className="flex flex-1 flex-col items-center justify-center px-3 pb-4 pt-6">
+                    <Icon name={s.icon} size={128} className="h-[80px] w-[80px] md:h-[96px] md:w-[96px]" />
+                    <span className="mt-3 text-[12px] font-bold text-text-muted">{s.price}</span>
+                  </span>
+                  <span className="flex min-h-[48px] items-center justify-center bg-primary px-2 py-2.5 text-[14px] font-bold tracking-wide text-white transition-colors group-hover:bg-primary-dark md:text-[15px]">
+                    {s.name}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* おすすめ TOP3 */}
+      <section id="compare" className="scroll-mt-20 border-y border-border bg-white py-16 md:py-24">
+        <div className="mx-auto max-w-6xl px-4">
+          <SectionHead eyebrow="RECOMMEND" title="おすすめ鍵業者 TOP3" lead="実績・料金・対応力を総合評価して厳選" icon="hikaku" />
+          <ol className="space-y-6">
+            {top3.map((company, index) => {
+              const slug = companyIdToSlug[company.id] ?? company.id;
+              return (
+                <li key={company.id} className={`kt-card relative p-5 md:p-8 ${index === 0 ? "border-primary !border-2" : ""}`}>
+                  {index === 0 && (
+                    <span className="absolute -top-3 left-5 rounded-full bg-primary px-4 py-1 text-xs font-bold tracking-wider text-white md:left-8">
+                      おすすめNo.1
+                    </span>
+                  )}
+                  <div className="grid gap-6 md:grid-cols-[320px_minmax(0,1fr)_190px] md:gap-8">
+                    <AgentShot slug={slug} name={company.name} sizes="(min-width: 768px) 320px, 100vw" />
+                    <div>
+                      <div className="mb-3 flex items-baseline gap-3">
+                        <span className="shrink-0 whitespace-nowrap text-[26px] font-bold leading-none text-primary">
+                          {index + 1}
+                          <span className="ml-0.5 text-sm">位</span>
+                        </span>
+                        <h3 className="text-xl font-bold text-foreground">{company.name}</h3>
+                      </div>
+                      <p className="mb-4 text-sm leading-relaxed text-text-muted">{company.tagline}</p>
+                      <ul className="mb-5 flex flex-wrap gap-2">
+                        {company.features.slice(0, 4).map((feature) => (
+                          <li key={feature} className="rounded border border-border px-2.5 py-1 text-xs font-medium text-text-secondary">
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="grid gap-4 sm:grid-cols-2">
+                        <div>
+                          <h4 className="mb-1.5 text-sm font-bold text-foreground">メリット</h4>
+                          <ul className="space-y-1 text-sm text-text-muted">
+                            {company.pros.slice(0, 2).map((pro) => (
+                              <li key={pro} className="flex items-start gap-1.5">
+                                <span className="font-bold text-primary">○</span>
+                                {pro}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="mb-1.5 text-sm font-bold text-foreground">注意点</h4>
+                          <ul className="space-y-1 text-sm text-text-muted">
+                            {company.cons.slice(0, 2).map((con) => (
+                              <li key={con} className="flex items-start gap-1.5">
+                                <span className="font-bold text-accent">△</span>
+                                {con}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-3 border-t border-border pt-5 md:border-l md:border-t-0 md:pl-6 md:pt-0">
+                      <div>
+                        <p className="text-xs text-text-muted">料金目安</p>
+                        <p className="text-2xl font-bold text-primary">{company.priceRange}</p>
+                      </div>
+                      <div>
+                        <p className="text-xs text-text-muted">到着時間</p>
+                        <p className="text-base font-bold text-foreground">{company.speed}</p>
+                      </div>
+                      <a href={company.officialUrl} target="_blank" rel="noopener noreferrer nofollow" className="kt-btn mt-1 w-full text-sm">
+                        無料で相談する
+                      </a>
+                      <Link href={`/agents/${slug}/`} className="inline-flex min-h-[44px] items-center justify-center gap-1 text-sm font-bold text-primary underline-offset-4 hover:underline">
+                        口コミ・評判を見る
+                        <ArrowRight />
+                      </Link>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
+
+          {/* 掲載業者一覧 */}
+          <div className="mt-16">
+            <h3 className="mb-6 text-center text-lg font-bold tracking-wide text-foreground md:text-xl">掲載している鍵業者</h3>
+            <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {listedAgents.map((a) => (
+                <li key={a.slug} className="kt-card flex flex-col p-3">
+                  <AgentShot slug={a.slug} name={a.name} sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 100vw" />
+                  <Link href={`/agents/${a.slug}/`} className="group mt-3 flex flex-1 flex-col px-1 pb-1">
+                    <span className="font-bold text-foreground group-hover:text-primary">{a.name}</span>
+                    <span className="mt-1 text-xs leading-relaxed text-text-muted">{AGENT_TAGLINES[a.slug] ?? "口コミ・評判・料金を見る"}</span>
+                    <span className="mt-3 inline-flex items-center gap-1 text-xs font-bold text-primary">
+                      口コミ・評判・料金を見る
+                      <ArrowRight />
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-8 text-center">
+              <Link href="/agents/nitamei-kagiya/" className="inline-flex min-h-[44px] items-center gap-1.5 text-sm font-bold text-primary underline-offset-4 hover:underline">
+                「救急車」「110番」など名前が似た鍵屋の見分け方
+                <ArrowRight />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Fee Guide Table */}
-      <section id="price" className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-              サービス別の料金相場
-            </h3>
-            <p className="text-text-muted mt-2">2026年7月時点の料金相場をまとめました</p>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-sm">
+      {/* 料金相場 */}
+      <section id="price" className="scroll-mt-20 py-16 md:py-24">
+        <div className="mx-auto max-w-4xl px-4">
+          <SectionHead eyebrow="PRICE" title="サービス別の料金相場" lead="2026年7月時点の料金相場をまとめました" icon="ryokin" />
+          <div className="overflow-x-auto rounded-[10px] border border-border bg-white">
+            <table className="w-full border-collapse text-sm md:text-[15px]">
               <thead>
                 <tr className="bg-primary text-white">
-                  <th className="px-6 py-4 text-left font-bold">サービス</th>
-                  <th className="px-6 py-4 text-left font-bold">料金相場</th>
-                  <th className="px-6 py-4 text-left font-bold">作業時間</th>
+                  <th className="px-4 py-3.5 text-left font-bold md:px-6">サービス</th>
+                  <th className="px-4 py-3.5 text-left font-bold md:px-6">料金相場</th>
+                  <th className="px-4 py-3.5 text-left font-bold md:px-6">作業時間</th>
                 </tr>
               </thead>
               <tbody>
-                {[
-                  { service: "鍵開け（一般的な鍵）", price: "8,000〜15,000円", time: "5〜30分" },
-                  { service: "鍵開け（ディンプルキー）", price: "15,000〜30,000円", time: "15〜60分" },
-                  { service: "鍵交換（シリンダー交換）", price: "10,000〜25,000円", time: "15〜40分" },
-                  { service: "鍵交換（ディンプルキー）", price: "20,000〜40,000円", time: "15〜40分" },
-                  { service: "鍵修理", price: "5,000〜15,000円", time: "10〜30分" },
-                  { service: "金庫の鍵開け", price: "15,000〜50,000円", time: "30〜120分" },
-                  { service: "車のインロック解錠", price: "12,000〜30,000円", time: "10〜40分" },
-                  { service: "バイクの鍵開け", price: "8,000〜20,000円", time: "10〜30分" },
-                ].map((row, i) => (
-                  <tr key={row.service} className={i % 2 === 0 ? "bg-background" : "bg-white"}>
-                    <td className="px-6 py-4 font-medium text-foreground">{row.service}</td>
-                    <td className="px-6 py-4 text-primary font-bold">{row.price}</td>
-                    <td className="px-6 py-4 text-text-muted">{row.time}</td>
+                {PRICES.map((row) => (
+                  <tr key={row.service} className="border-t border-border">
+                    <td className="px-4 py-3.5 font-medium text-foreground md:px-6">{row.service}</td>
+                    <td className="whitespace-nowrap px-4 py-3.5 font-bold text-primary md:px-6">{row.price}</td>
+                    <td className="whitespace-nowrap px-4 py-3.5 text-text-muted md:px-6">{row.time}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-text-muted mt-4 text-center">
+          <p className="mt-4 text-center text-xs text-text-muted">
             ※ 上記は目安です。鍵の種類・時間帯・地域によって変動します。必ず事前見積もりを取りましょう。
           </p>
-          <div className="text-center mt-6">
-            <a href="/ryokin/" className="inline-flex items-center gap-1.5 bg-primary text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-primary/90 transition-colors">
-              鍵開け・鍵交換の料金相場を詳しく見る →
-            </a>
+          <div className="mt-8 text-center">
+            <Link href="/ryokin/" className="kt-btn">
+              鍵開け・鍵交換の料金相場を詳しく見る
+              <ArrowRight />
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Fraud Warning Section */}
-      <section className="py-16 bg-accent/5">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-white border-2 border-accent rounded-2xl p-8 md:p-10">
-            <div className="text-center mb-8">
-              <span className="inline-block text-4xl mb-3">⚠️</span>
-              <h3 className="text-2xl md:text-3xl font-bold text-accent">
-                ぼったくり業者にご注意ください
-              </h3>
-              <p className="text-text-muted mt-2">
-                鍵業界では悪質な料金請求のトラブルが多発しています
-              </p>
-            </div>
-            <div className="space-y-4">
-              {[
-                {
-                  title: "「980円〜」の激安広告に注意",
-                  desc: "広告では格安を謳い、現場で「特殊な鍵だった」「部品代が別」などと理由をつけて数万円〜10万円以上を請求するケースが報告されています。",
-                },
-                {
-                  title: "電話で概算を聞いてから依頼する",
-                  desc: "優良業者は電話で症状を聞き、概算費用を伝えてくれます。「現場を見ないとわからない」としか言わない業者は要注意。",
-                },
-                {
-                  title: "作業前に必ず見積書をもらう",
-                  desc: "現場到着後、作業前に書面で見積もりを出してもらいましょう。口頭だけの説明で作業を始める業者は断りましょう。",
-                },
-                {
-                  title: "断る勇気を持つ",
-                  desc: "見積もりが高すぎると感じたら、その場で断ってOK。出張費のみ（またはキャンセル無料）の業者を選べば安心です。",
-                },
-                {
-                  title: "消費者ホットラインに相談を",
-                  desc: "被害に遭った場合は消費者ホットライン（188）に相談を。クーリングオフが適用される場合もあります。",
-                },
-              ].map((item, i) => (
-                <div key={i} className="flex gap-4 items-start">
-                  <span className="flex-shrink-0 w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center font-bold text-sm">
-                    {i + 1}
-                  </span>
-                  <div>
-                    <h4 className="font-bold text-foreground">{item.title}</h4>
-                    <p className="text-sm text-text-muted mt-1">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How to Choose Guide */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-              失敗しない鍵業者の選び方 5つのポイント
-            </h3>
-          </div>
-          <div className="space-y-6">
-            {[
-              {
-                num: "01",
-                title: "料金の明示性",
-                desc: "ホームページや電話で料金目安を明確に提示してくれる業者を選びましょう。「現場を見ないとわからない」だけの業者は避けるのが無難です。",
-              },
-              {
-                num: "02",
-                title: "到着スピード",
-                desc: "緊急時は到着時間が重要です。「最短15分」「最短30分」など具体的な時間を示す業者、また拠点数が多い業者ほど早く対応できます。",
-              },
-              {
-                num: "03",
-                title: "対応実績・口コミ",
-                desc: "年間対応件数や利用者の口コミを確認しましょう。実績が多いほど技術力・対応力が高い傾向にあります。",
-              },
-              {
-                num: "04",
-                title: "キャンセルポリシー",
-                desc: "見積もり後にキャンセルできるか、キャンセル料はかかるか事前に確認を。良心的な業者は「見積もり後のキャンセル無料」を明示しています。",
-              },
-              {
-                num: "05",
-                title: "保険・保証の有無",
-                desc: "作業中に鍵や扉を傷つけた場合の賠償責任保険に加入しているか確認。また、交換した鍵の保証期間があるかも重要なポイントです。",
-              },
-            ].map((item) => (
-              <div key={item.num} className="flex gap-5 items-start">
-                <span className="flex-shrink-0 text-3xl font-bold text-primary/30">
-                  {item.num}
+      {/* ぼったくり注意 */}
+      <section className="border-y border-border bg-white py-16 md:py-24">
+        <div className="mx-auto max-w-4xl px-4">
+          <SectionHead eyebrow="CAUTION" title="ぼったくり業者にご注意ください" lead="鍵業界では悪質な料金請求のトラブルが多発しています" icon="chui" />
+          <ol className="kt-card divide-y divide-border overflow-hidden" style={{ borderLeft: "4px solid var(--accent)" }}>
+            {FRAUD.map((item, i) => (
+              <li key={item.title} className="flex items-start gap-4 p-5 md:p-6">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary text-sm font-bold text-primary">
+                  {i + 1}
                 </span>
                 <div>
-                  <h4 className="text-lg font-bold text-foreground">{item.title}</h4>
-                  <p className="text-text-muted mt-1">{item.desc}</p>
+                  <h3 className="font-bold text-foreground">{item.title}</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-text-muted">{item.desc}</p>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ol>
+        </div>
+      </section>
+
+      {/* 選び方 */}
+      <section className="py-16 md:py-24">
+        <div className="mx-auto max-w-4xl px-4">
+          <SectionHead eyebrow="HOW TO CHOOSE" title="失敗しない鍵業者の選び方 5つのポイント" />
+          <ol className="grid gap-4">
+            {POINTS.map((item) => (
+              <li key={item.num} className="kt-card flex items-start gap-5 p-5 md:p-7">
+                <span className="shrink-0 font-bold leading-none tracking-wider text-primary text-[28px] md:text-[34px]">{item.num}</span>
+                <div>
+                  <h3 className="text-lg font-bold text-foreground">{item.title}</h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-text-muted md:text-[15px]">{item.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-background">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-              よくある質問
-            </h3>
-          </div>
-          <div className="space-y-4">
-            {[
-              {
-                q: "深夜・早朝でも対応してもらえますか？",
-                a: "はい、当サイトで紹介している業者は24時間365日対応です。深夜・早朝でも追加料金なしの業者もあります。ただし、業者によっては夜間料金が発生する場合があるので、電話時に確認しましょう。",
-              },
-              {
-                q: "鍵開けにはどのくらい時間がかかりますか？",
-                a: "一般的なシリンダー錠であれば5〜15分程度、ディンプルキーなど高セキュリティ錠の場合は15〜60分程度かかります。到着後、作業前に所要時間の目安を教えてもらえます。",
-              },
-              {
-                q: "賃貸マンションの鍵を開けてもらう場合、身分証は必要ですか？",
-                a: "はい、防犯上の理由から本人確認書類（免許証・保険証など）の提示が必要です。また、賃貸の場合は管理会社への連絡が求められることもあります。",
-              },
-              {
-                q: "見積もり後にキャンセルできますか？",
-                a: "優良業者であれば見積もり後のキャンセルは無料で可能です。当サイトで紹介している業者はすべて見積もり無料・キャンセル可能な業者です。ただし一部業者では出張費がかかる場合があるので事前に確認しましょう。",
-              },
-              {
-                q: "ぼったくりに遭ってしまった場合はどうすればいいですか？",
-                a: "まずは消費者ホットライン（188番）に相談しましょう。訪問販売に該当する場合はクーリングオフ（8日以内）が適用される可能性があります。領収書・見積書は必ず保管してください。",
-              },
-            ].map((item, i) => (
-              <details
-                key={i}
-                className="group bg-white rounded-xl border border-border overflow-hidden"
-              >
-                <summary className="flex items-center justify-between px-6 py-5 cursor-pointer font-bold text-foreground hover:bg-background transition-colors">
-                  <span className="flex items-center gap-3">
-                    <span className="text-primary font-bold">Q.</span>
+      <section className="border-y border-border bg-white py-16 md:py-24">
+        <div className="mx-auto max-w-4xl px-4">
+          <SectionHead eyebrow="FAQ" title="よくある質問" icon="faq" />
+          <div className="space-y-3">
+            {FAQS.map((item) => (
+              <details key={item.q} className="kt-acc kt-card overflow-hidden">
+                <summary className="flex min-h-[60px] cursor-pointer items-center justify-between gap-3 px-5 py-4 font-bold text-foreground md:px-6">
+                  <span className="flex items-start gap-3">
+                    <span className="font-bold text-primary">Q.</span>
                     {item.q}
                   </span>
-                  <span className="text-text-muted group-open:rotate-180 transition-transform">
-                    ▼
-                  </span>
+                  <svg className="kt-chev h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
                 </summary>
-                <div className="px-6 pb-5 text-text-muted">
-                  <span className="text-accent font-bold">A.</span> {item.a}
+                <div className="flex gap-3 border-t border-border px-5 py-4 text-sm leading-relaxed text-text-secondary md:px-6">
+                  <span className="font-bold text-accent">A.</span>
+                  <span>{item.a}</span>
                 </div>
               </details>
             ))}
@@ -460,34 +489,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-primary via-primary-dark to-[#0D2B4A] text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            鍵のトラブル、一人で悩まないでください
-          </h3>
-          <p className="text-white/80 mb-8 max-w-xl mx-auto">
-            24時間365日対応の業者を厳選して比較しています。<br />
-            まずは料金相場と各社の特徴を確認してからのご相談がおすすめです。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/agents/"
-              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl btn-emergency transition-colors"
-            >
-              🔓 24時間対応の業者を比較する
-            </a>
-            <a
-              href="#compare"
-              className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border-2 border-white/50 text-white px-8 py-4 rounded-full text-lg font-bold transition-colors"
-            >
-              業者を比較する
-            </a>
+      {/* CTA */}
+      <section className="py-16 md:py-24">
+        <div className="mx-auto max-w-4xl px-4">
+          <div className="kt-card px-6 py-12 text-center md:px-12">
+            <h2 className="text-[22px] font-bold tracking-wide text-foreground md:text-[28px]">鍵のトラブル、一人で悩まないでください</h2>
+            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-text-muted md:text-[15px]">
+              24時間365日対応の業者を厳選して比較しています。
+              <br className="hidden md:block" />
+              まずは料金相場と各社の特徴を確認してからのご相談がおすすめです。
+            </p>
+            <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+              <Link href="/agents/" className="kt-btn w-full sm:w-auto">
+                24時間対応の業者を比較する
+                <ArrowRight />
+              </Link>
+              <a href="#compare" className="kt-btn w-full sm:w-auto">
+                業者を比較する
+                <ArrowRight />
+              </a>
+            </div>
+            <p className="mt-4 text-xs text-text-muted">通話料無料・見積もり無料・キャンセル無料</p>
           </div>
-          <p className="mt-4 text-white/50 text-sm">通話料無料・見積もり無料・キャンセル無料</p>
         </div>
       </section>
-
-    </div>
+    </main>
   );
 }

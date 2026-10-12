@@ -104,23 +104,6 @@ export default function KagiMawaranaiPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
 
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-primary text-white shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2">
-            <span className="text-2xl">🔑</span>
-            <span className="text-xl font-bold tracking-tight">鍵トラブルナビ</span>
-          </a>
-          <nav className="hidden md:flex gap-6 text-sm font-medium">
-            <a href="/#trouble" className="hover:text-secondary transition-colors">トラブル別</a>
-            <a href="/#service" className="hover:text-secondary transition-colors">サービス別</a>
-            <a href="/ryokin/" className="hover:text-secondary transition-colors">料金相場</a>
-            <a href="/ryokin-index/" className="hover:text-secondary transition-colors">料金インデックス</a>
-            <a href="/kagi-koukan-timing/" className="hover:text-secondary transition-colors">交換の時期</a>
-            <a href="/agents/" className="hover:text-secondary transition-colors">業者比較</a>
-          </nav>
-        </div>
-      </header>
 
       <main className="flex-1">
         {/* Breadcrumb */}
@@ -256,7 +239,7 @@ export default function KagiMawaranaiPage() {
           <ul className="space-y-2 mb-6">
             {proCases.map((p, i) => (
               <li key={i} className="flex gap-2 bg-white rounded-lg border border-black/10 px-4 py-3 text-sm text-text-secondary">
-                <span className="text-primary font-bold shrink-0">✓</span>
+                <span className="text-primary font-bold shrink-0"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 7" /></svg></span>
                 <span>{p}</span>
               </li>
             ))}

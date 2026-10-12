@@ -56,23 +56,6 @@ export default function CarInlockPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
 
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-primary text-white shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2">
-            <span className="text-2xl">🔑</span>
-            <span className="text-xl font-bold tracking-tight">鍵トラブルナビ</span>
-          </a>
-          <nav className="hidden md:flex gap-6 text-sm font-medium">
-            <a href="/#trouble" className="hover:text-secondary transition-colors">トラブル別</a>
-            <a href="/#service" className="hover:text-secondary transition-colors">サービス別</a>
-            <a href="/ryokin/" className="hover:text-secondary transition-colors">料金相場</a>
-            <a href="/ryokin-index/" className="hover:text-secondary transition-colors">料金インデックス</a>
-            <a href="/kagi-koukan-timing/" className="hover:text-secondary transition-colors">交換の時期</a>
-            <a href="/agents/" className="hover:text-secondary transition-colors">業者比較</a>
-          </nav>
-        </div>
-      </header>
 
       <main className="flex-1">
         {/* Breadcrumb */}
@@ -92,7 +75,7 @@ export default function CarInlockPage() {
 
           {/* 緊急警告 */}
           <div className="bg-red-50 border border-red-300 rounded-2xl p-5 mb-6">
-            <p className="font-bold text-red-700 mb-1">⚠️ 子ども・ペットが車内にいる場合</p>
+            <p className="font-bold text-red-700 mb-1">子ども・ペットが車内にいる場合</p>
             <p className="text-sm text-red-700 leading-relaxed">
               夏場の車内は短時間で命に関わる温度になります。業者の到着を待たず、<strong>ためらわず119番に通報してください</strong>。窓を割る判断を含めて消防が対応します。
             </p>
@@ -228,7 +211,7 @@ export default function CarInlockPage() {
               { title: "会社名・所在地が明記された業者を選ぶ", desc: "運営会社名・所在地・固定電話番号がサイトに明記されているかを確認しましょう。複数の業者に電話して比較する余裕があれば、相場から外れた請求を避けやすくなります。" },
             ].map((c, i) => (
               <li key={i} className="flex gap-3 bg-white rounded-xl border border-black/10 p-4">
-                <span className="shrink-0 text-primary font-bold text-sm mt-0.5">✓</span>
+                <span className="shrink-0 text-primary font-bold text-sm mt-0.5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 7" /></svg></span>
                 <div>
                   <p className="font-bold text-text-primary text-sm mb-1">{c.title}</p>
                   <p className="text-sm text-text-secondary leading-relaxed">{c.desc}</p>
