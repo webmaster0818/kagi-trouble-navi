@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: "鍵業者の口コミ・評判まとめ｜料金・対応スピードを徹底比較｜鍵トラブルナビ",
   },
   description:
-    "鍵業者の口コミ・評判・料金を業者別に徹底調査。カギ110番・JBR・鍵の生活救急車・鍵のレスキュー・鍵猿など各社のメリット・注意点、対応スピード、料金を比較して、あなたに合う鍵業者を見つけられます。",
+    "鍵業者の口コミ・評判・料金を業者別に徹底調査。カギ110番・鍵の生活救急車・鍵のレスキュー・鍵猿・カギの救急車・鍵の24時間救急車・カギのトラブル救急車など各社のメリット・注意点、対応スピード、料金を比較して、あなたに合う鍵業者を見つけられます。",
   alternates: { canonical: `${SITE}/agents/` },
 };
 
@@ -17,9 +17,11 @@ const taglines: Record<string, string> = {
   kagi110ban: "全国47都道府県・24時間365日・最短5分手配",
   jbr: "全国対応の大手レスキューグループ・賠償責任保険加入",
   "seikatsu-kyukyusha": "最短15分到着・年間10万件以上の実績",
-  "kagi-rescue": "2023年12月末でサービス終了・経緯と現在の依頼先",
+  "kagi-rescue": "鍵の110番救急車（kagi110qq.co.jp）・営業中・鍵開け6,600円〜＋出張料",
   kagizaru: "鍵屋の鍵猿（SLS株式会社）・全国47都道府県・最短15分・1年保証",
-  "kagi-kyukyusha": "加盟店ネットワーク型・運営会社と似た名前の別業者の見分け方",
+  "kagi-kyukyusha": "加盟店ネットワーク型・「鍵の救急車」等の表記は別業者と公式が告知",
+  "kagi-24h-kyukyusha": "株式会社24時間救急車・鍵開け6,600円〜＋出張料・カギの救急車とは別会社",
+  "kagi-trouble-kyukyusha": "株式会社アスティ24（川越）・首都圏中心・夜間割増を公式に明示",
 };
 
 export default function AgentsIndexPage() {
@@ -37,6 +39,10 @@ export default function AgentsIndexPage() {
         <p className="text-slate-600 mb-8 leading-relaxed">
           主要な鍵業者の料金・対応スピード・サービス内容・利用者の口コミを、編集部が中立的に調査してまとめました。気になる業者を選んで、依頼前の比較にお役立てください。
         </p>
+        <Link href="/agents/nitamei-kagiya/" className="block mb-6 rounded-2xl border-2 border-amber-300 bg-amber-50 p-5 hover:shadow-md transition">
+          <p className="font-bold text-slate-800 mb-1">「救急車」「110番」「レスキュー」名前が似た鍵屋の見分け方</p>
+          <p className="text-xs text-slate-600 leading-relaxed">屋号がよく似た鍵屋10件の運営会社を公式サイトで確認した一覧です。口コミや料金を調べる前にご確認ください。</p>
+        </Link>
         <div className="grid sm:grid-cols-2 gap-4">
           {agents.map((a) => (
             <Link key={a.slug} href={`/agents/${a.slug}/`} className="block rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition">

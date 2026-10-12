@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-// 6社統一スペック比較表。各値は各業者ページで一次確認済みの公式表示のみを転記（確認日は各業者ページ参照）。
+// 業者スペック比較表。各値は各業者ページで一次確認済みの公式表示のみを転記（確認日は各業者ページ参照）。
 // 閲覧中の業者の行をハイライトする。
 const ROWS = [
   {
@@ -29,11 +29,11 @@ const ROWS = [
   },
   {
     slug: "kagi-rescue",
-    name: "鍵のレスキュー",
-    price: "鍵開け 8,000円〜（出張料0〜8,800円）",
-    uketsuke: "24時間365日",
-    mitsumori: "現場での追加費用なし（事前見積確定）",
-    operator: "株式会社鍵（自社社員対応・全国約20拠点）",
+    name: "鍵のレスキュー（鍵の110番救急車）",
+    price: "鍵開け 6,600円〜＋出張料4,400〜8,800円（税込）",
+    uketsuke: "24時間・全国出張",
+    mitsumori: "作業前に料金表で説明しサイン後に作業。作業開始30分超のキャンセルは全額",
+    operator: "株式会社レスキュー（公式会社案内の表示）",
   },
   {
     slug: "kagizaru",
@@ -51,12 +51,28 @@ const ROWS = [
     mitsumori: "加盟店により異なる",
     operator: "株式会社ジェイクライプ／一般社団法人（加盟店ネットワーク）",
   },
+  {
+    slug: "kagi-24h-kyukyusha",
+    name: "鍵の24時間救急車",
+    price: "鍵開け 6,600円〜＋出張料4,400〜8,800円（税込）",
+    uketsuke: "24時間365日",
+    mitsumori: "作業員の出発後のキャンセルは出張料全額",
+    operator: "株式会社24時間救急車（大阪市西区）",
+  },
+  {
+    slug: "kagi-trouble-kyukyusha",
+    name: "カギのトラブル救急車",
+    price: "玄関の鍵開け 2,980円〜＋基本出張費（別途）",
+    uketsuke: "夜8時以降・深夜12時以降は割増あり",
+    mitsumori: "作業前に料金説明・施工後3ヶ月の無償メンテナンス",
+    operator: "株式会社アスティ24（埼玉県川越市）",
+  },
 ];
 
 export default function AgentCompareTable({ current }: { current?: string }) {
   return (
     <section className="my-10">
-      <h2 className="text-xl md:text-2xl font-bold mb-3 text-slate-900">主要6社スペック比較（公式表示の一次確認値）</h2>
+      <h2 className="text-xl md:text-2xl font-bold mb-3 text-slate-900">主要{ROWS.length}社スペック比較（公式表示の一次確認値）</h2>
       <p className="text-sm text-slate-500 mb-4">
         各社公式サイトで確認した表示のみを掲載しています（詳細・確認日は各業者ページ参照）。実際の費用は鍵の種類・時間帯・出張距離で変わるため、必ず作業前の見積もりで総額を確認してください。
       </p>
@@ -101,6 +117,7 @@ export default function AgentCompareTable({ current }: { current?: string }) {
       </div>
       <p className="text-xs text-slate-500 mt-3">
         料金の物差し: JAF非会員の鍵開け料金は25,630円（一般的な開錠・昼間・一次確認済み）。これより大幅に高い見積もりが出た場合は、内訳（基本料金＋作業費＋出張費＋部品代）の説明を求めましょう。
+        名前の似た業者の整理: <Link href="/agents/nitamei-kagiya/" className="text-blue-700 underline">名前が似た鍵屋の見分け方</Link>／
         関連: <Link href="/ryokin/" className="text-blue-700 underline">鍵開け・鍵交換の料金相場</Link>／<Link href="/ryokin-index/" className="text-blue-700 underline">主要業者の料金一次確認まとめ</Link>
       </p>
     </section>

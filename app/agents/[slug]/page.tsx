@@ -46,7 +46,7 @@ export default async function AgentPage({ params }: Props) {
     ["about", `${a.name}とはどんなサービスか`],
     ["service", "対応している鍵トラブルの種類"],
     ["price", `${a.name}の料金体系と相場`],
-    ["reviews", "利用者のリアルな口コミ・評判"],
+    ["reviews", a.goodReviews.length > 0 ? "利用者のリアルな口コミ・評判" : "口コミ・評判について（調査結果）"],
     ["merit", "メリットと注意点"],
     ["recommend", `${a.name}がおすすめな人`],
     ["compare", "他社と比較するときのチェックポイント"],
@@ -61,7 +61,7 @@ export default async function AgentPage({ params }: Props) {
     description: a.metaDesc,
     image: `${SITE}${a.image}`,
     datePublished: "2026-06-10T00:00:00+09:00",
-    dateModified: "2026-06-10T00:00:00+09:00",
+    dateModified: a.updated?.iso ?? "2026-06-10T00:00:00+09:00",
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}/agents/${slug}/` },
@@ -155,7 +155,7 @@ export default async function AgentPage({ params }: Props) {
               </p>
             </div>
           )}
-          <p className="text-sm text-slate-500 mb-8">最終更新日：{notice ? "2026年9月17日" : UPDATED}　／　鍵トラブルナビ編集部</p>
+          <p className="text-sm text-slate-500 mb-8">最終更新日：{notice ? "2026年9月17日" : a.updated?.label ?? UPDATED}　／　鍵トラブルナビ編集部</p>
 
           <nav aria-label="目次" className="mb-12 rounded-2xl border border-slate-200 bg-slate-50 p-6">
             <p className="font-bold text-slate-800 mb-4">この記事の目次</p>
@@ -175,6 +175,17 @@ export default async function AgentPage({ params }: Props) {
             {a.about.map((p, i) => (
               <p key={i} className="leading-loose mb-4 text-slate-700">{p}</p>
             ))}
+            {a.nameNote && (
+              <div className="mt-6 rounded-2xl border-2 border-amber-300 bg-amber-50 p-5">
+                <p className="font-bold text-slate-800 mb-2">{a.nameNote.heading}</p>
+                {a.nameNote.paragraphs.map((p, i) => (
+                  <p key={i} className="leading-loose text-slate-700 text-sm mb-2">{p}</p>
+                ))}
+                <p className="text-sm mt-2">
+                  <Link href="/agents/nitamei-kagiya/" className="text-amber-800 underline font-semibold">名前が似た鍵屋の見分け方（運営会社の一覧）</Link>
+                </p>
+              </div>
+            )}
             {a.featureImage && (
               <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200">
                 <Image src={a.featureImage} alt={`${a.name}の特徴`} width={1200} height={500} className="w-full h-auto" />
@@ -212,10 +223,11 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <section id="reviews" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">利用者のリアルな口コミ・評判</h2>
+            <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">{a.goodReviews.length > 0 ? "利用者のリアルな口コミ・評判" : "口コミ・評判について（調査結果）"}</h2>
             <div className="rounded-2xl bg-amber-50 border border-amber-200 p-6 mb-6">
               <p className="text-slate-700 text-sm leading-relaxed">{a.reviewsSummary}</p>
             </div>
+            {a.goodReviews.length > 0 && (<>
             <h3 className="font-bold text-lg mb-3">良い口コミ</h3>
             <div className="space-y-4 mb-8">
               {a.goodReviews.map((r, i) => (
@@ -236,7 +248,19 @@ export default async function AgentPage({ params }: Props) {
                 </div>
               ))}
             </div>
+            </>)}
+            {a.goodReviews.length === 0 && a.badReviews.length === 0 ? (
+              <div className="rounded-xl border border-slate-200 p-5">
+                <p className="font-bold mb-2">口コミを確かめるときの手順</p>
+                <ol className="list-decimal pl-5 text-sm leading-relaxed text-slate-700 space-y-1">
+                  <li>Googleマップや口コミサイトで、屋号だけでなく<strong>運営会社名</strong>も入れて検索する</li>
+                  <li>名前の似た別業者の口コミが混ざっていないか、投稿の中の社名・地域を確認する</li>
+                  <li>「料金」「キャンセル」「到着時間」について書かれた投稿を中心に読み、上の料金表・規定と照らし合わせる</li>
+                </ol>
+              </div>
+            ) : (
             <p className="text-xs text-slate-500 mt-4">※ 口コミは各種口コミサイト・Googleのクチコミ等で見られる利用者の声をもとに、編集部が傾向を要約したものです。感じ方には個人差があります。</p>
+            )}
           </section>
 
           <section id="merit" className="scroll-mt-20 mb-14">
@@ -287,7 +311,19 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <AgentCompareTable current={slug} />
-          <VerificationNote  />
+          {a.sources && a.sources.length > 0 && (
+            <section className="my-10">
+              <h2 className="text-xl font-bold mb-3 text-slate-900">出典（{a.updated?.label ?? UPDATED}確認）</h2>
+              <ul className="text-sm text-slate-700 space-y-1.5 list-disc pl-5">
+                {a.sources.map((src) => (
+                  <li key={src.url}>
+                    {src.label}：<a href={src.url} target="_blank" rel="noopener nofollow" className="text-blue-700 underline break-all">{src.url}</a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+          <VerificationNote officialUrl={a.officialUrl} officialLabel={a.officialLabel} checkedNote={a.updated ? `${a.updated.label}確認` : undefined} />
 
           <section id="summary" className="scroll-mt-20">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">まとめ</h2>

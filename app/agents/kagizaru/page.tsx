@@ -139,7 +139,7 @@ export default function KagizaruPage() {
             <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 mt-6">
               <p className="font-bold text-slate-800 mb-2">名前の表記について</p>
               <p className="leading-loose text-slate-700 text-sm">公式サイトでの正式な表記は「<strong>鍵屋の鍵猿</strong>」です。検索では「鍵猿」「鍵ザル」「かぎざる」「猿鍵」などと書かれることがありますが、いずれも同じサービスを指します。旧ドメインの kagizaru.com は公式サイト（sls.co.jp/kagizaru/）へ転送されます（2026年9月30日確認）。運営会社を調べる場合は「SLS株式会社」で確認してください。</p>
-              <p className="leading-loose text-slate-700 text-sm mt-3">なお、かつて全国対応をうたっていた「鍵のレスキュー」は2023年12月末でサービスを終了し、公式サイトで鍵屋の鍵猿への引き継ぎが告知されていました。経緯は<Link href="/agents/kagi-rescue/" className="text-amber-700 underline">鍵のレスキューのページ</Link>にまとめています。</p>
+              <p className="leading-loose text-slate-700 text-sm mt-3">なお、kagi-rescue.com というサイト（2016年時点の屋号は「キーレスキューサービス」）は2023年12月末で閉鎖され、鍵のトラブル駆けつけは鍵屋の鍵猿で引き続き対応すると告知されています。これは現在も営業している「<Link href="/agents/kagi-rescue/" className="text-amber-700 underline">鍵のレスキュー（鍵の110番救急車／kagi110qq.co.jp）</Link>」とは別のサービスです（2026年10月12日確認）。名前の似た鍵屋の整理は<Link href="/agents/nitamei-kagiya/" className="text-amber-700 underline">名前が似た鍵屋の見分け方</Link>にまとめています。</p>
             </div>
             <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200">
               <Image src="/images/kagizaru-features.png" alt="鍵猿の特徴" width={1200} height={500} className="w-full h-auto" />

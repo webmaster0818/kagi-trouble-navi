@@ -50,6 +50,9 @@ export default function SiteFooter() {
               <li><Link href="/agents/kagizaru/" className="hover:text-white transition-colors">鍵猿</Link></li>
               <li><Link href="/agents/kagi-rescue/" className="hover:text-white transition-colors">鍵のレスキュー</Link></li>
               <li><Link href="/agents/kagi-kyukyusha/" className="hover:text-white transition-colors">カギの救急車</Link></li>
+              <li><Link href="/agents/kagi-24h-kyukyusha/" className="hover:text-white transition-colors">鍵の24時間救急車</Link></li>
+              <li><Link href="/agents/kagi-trouble-kyukyusha/" className="hover:text-white transition-colors">カギのトラブル救急車</Link></li>
+              <li><Link href="/agents/nitamei-kagiya/" className="hover:text-white transition-colors">名前が似た鍵屋の見分け方</Link></li>
               <li><Link href="/agents/kagi110ban-vs-seikatsu9/" className="hover:text-white transition-colors">カギ110番 vs 生活救急車</Link></li>
               <li>
                 エリア別: <Link href="/area/tokyo/" className="hover:text-white transition-colors">東京</Link>・<Link href="/area/osaka/" className="hover:text-white transition-colors">大阪</Link>・<Link href="/area/nagoya/" className="hover:text-white transition-colors">名古屋</Link>・<Link href="/area/yokohama/" className="hover:text-white transition-colors">横浜</Link>・<Link href="/area/fukuoka/" className="hover:text-white transition-colors">福岡</Link>・<Link href="/area/sapporo/" className="hover:text-white transition-colors">札幌</Link>
