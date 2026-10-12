@@ -11,7 +11,7 @@ const UPDATED = "2026年7月7日";
 
 export const metadata: Metadata = {
   title: { absolute: "鍵の生活救急車の口コミ・評判は？料金・対応スピード・実績を徹底調査【2026年7月】｜鍵トラブルナビ" },
-  description: "鍵の生活救急車（運営：株式会社生活救急車）の口コミ・評判を徹底調査。鍵開け8,800円〜の料金、最短15分の駆けつけ、全国2,270拠点・施工240万件以上の実績、利用者の良い評判・気になる評判まで編集部が中立的にまとめました。",
+  description: "鍵の生活救急車（運営：株式会社生活救急車）の口コミ・評判を徹底調査。鍵開け8,000円〜（公式表示）の料金、最短15分の駆けつけ、全国2,270拠点・施工240万件以上の実績、利用者の良い評判・気になる評判まで編集部が中立的にまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title: "鍵の生活救急車の口コミ・評判は？料金・対応スピード・実績を徹底調査【2026年7月】",
@@ -47,7 +47,7 @@ const badReviews = [
   ];
 
 const faqs = [
-    {"q": "鍵の生活救急車の料金はいくらからですか", "a": "鍵開けは8,800円（税込）からが目安です。鍵の種類や作業内容で変動し、鍵交換は11,000円＋部品代〜などとなります。出張・見積もり・キャンセルは無料で、作業前に料金を説明し同意のうえで作業します。"},
+    {"q": "鍵の生活救急車の料金はいくらからですか", "a": "公式サイトのトップでは「カギ開け8,000円」と表示されています（2026年10月12日確認。税込・税別の記載はなく、対応エリアの店舗によっては記載価格で対応できない場合があると注記されています）。鍵の種類や作業内容で変動し、鍵交換は11,000円＋部品代〜などとなります。出張・見積もり・キャンセルは無料で、作業前に料金を説明し同意のうえで作業します。"},
     {"q": "どのくらいの時間で来てくれますか", "a": "最短15分での駆けつけをうたっています。ただし拠点からの距離や繁忙状況により到着時間は変動するため、依頼時に到着目安を確認するのがおすすめです。"},
     {"q": "対応エリアは全国ですか", "a": "全国対応で、拠点数は2,270店とされています。地域を問わず鍵トラブルに対応できる体制です。"},
     {"q": "支払いにクレジットカードは使えますか", "a": "現金のほかクレジットカード（VISA/Master/JCB等）に対応するとされていますが、対応店舗・エリアによって利用可否が異なる場合があるため、事前に確認しましょう。"}
@@ -106,7 +106,7 @@ export default function SeikatsuKyukyushaPage() {
             <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4 text-primary-dark">鍵の生活救急車の口コミ・評判は？<br className="hidden md:block" />料金・対応スピードを徹底調査</h1>
             <p className="text-text-secondary leading-relaxed max-w-2xl">全国2,270拠点の実績をうたう「鍵の生活救急車」（運営：株式会社生活救急車）。最短15分の駆けつけをうたう鍵トラブルサービスの料金・対応・評価を編集部が中立的に調査しました。</p>
             <div className="mt-6 flex flex-wrap gap-2">
-              <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">鍵開け 8,800円〜</span>
+              <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">鍵開け 8,000円〜</span>
               <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">最短15分駆けつけ</span>
               <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">全国2,270拠点</span>
               <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">施工240万件以上</span>
@@ -157,7 +157,7 @@ export default function SeikatsuKyukyushaPage() {
               <table className="table w-full border border-slate-200">
                 <thead><tr className="bg-slate-100 text-slate-700"><th>項目</th><th>料金の目安</th><th>備考</th></tr></thead>
                 <tbody>
-                  <tr className="border-b border-slate-200"><td className="font-medium">鍵開け</td><td className="font-bold text-amber-700">8,800円〜（税込）</td><td className="text-sm text-slate-600">住宅・刻みキーの目安</td></tr>
+                  <tr className="border-b border-slate-200"><td className="font-medium">鍵開け</td><td className="font-bold text-amber-700">8,000円〜</td><td className="text-sm text-slate-600">公式トップの表示（2026年10月12日確認・税込/税別の記載なし）</td></tr>
                   <tr className="border-b border-slate-200"><td className="font-medium">鍵交換／ディンプルキー解錠</td><td className="font-bold text-amber-700">11,000円＋部品代〜／33,000円〜</td><td className="text-sm text-slate-600">鍵の種類・作業内容で変動</td></tr>
                   <tr className="border-b border-slate-200"><td className="font-medium">会計方式</td><td className="font-bold text-amber-700">出張・見積もり・キャンセル無料</td><td className="text-sm text-slate-600">作業前に説明・同意のうえ作業</td></tr>
                 </tbody>
