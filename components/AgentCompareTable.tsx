@@ -14,7 +14,7 @@ const ROWS = [
   {
     slug: "seikatsu-kyukyusha",
     name: "鍵の生活救急車",
-    price: "鍵開け 8,800円〜（税込）",
+    price: "鍵開け 8,000円〜（公式トップの表示）",
     uketsuke: "24時間365日",
     mitsumori: "出張・見積・キャンセル無料",
     operator: "株式会社生活救急車（2022年12月にJBRから事業承継）",
