@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: { absolute: `${TITLE}｜鍵トラブルナビ` },
   description: DESC,
   alternates: { canonical: URL },
-  openGraph: { title: TITLE, description: DESC, url: URL, type: "article" },
+  openGraph: { title: TITLE, description: DESC, url: URL, type: "article", images: ["/images/kv-top.jpg"] },
 };
 
 type Row = { name: string; operator: string; site: string; siteUrl: string; note: string; review?: string };
