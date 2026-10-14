@@ -116,7 +116,7 @@ const FAQS = [
 ];
 
 const AGENT_TAGLINES: Record<string, string> = {
-  kagi110ban: "全国47都道府県・24時間365日・最短5分手配",
+  kagi110ban: "全国415社の加盟店・24時間365日受付・鍵開け11,000円〜（税込）",
   jbr: "全国対応の大手レスキューグループ・賠償責任保険加入",
   "seikatsu-kyukyusha": "最短15分到着・年間10万件以上の実績",
   "kagi-rescue": "鍵の110番救急車（kagi110qq.co.jp）・営業中・鍵開け6,600円〜＋出張料",

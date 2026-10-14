@@ -6,7 +6,7 @@ const ROWS = [
   {
     slug: "kagi110ban",
     name: "カギ110番",
-    price: "鍵開け 6,600円〜（税込・公式表示）",
+    price: "鍵開け 11,000円〜（税込・公式料金表）",
     uketsuke: "24時間365日",
     mitsumori: "見積無料",
     operator: "シェアリングテクノロジー株式会社（東証グロース3989）",
@@ -14,7 +14,7 @@ const ROWS = [
   {
     slug: "seikatsu-kyukyusha",
     name: "鍵の生活救急車",
-    price: "鍵開け 8,000円〜（公式トップの表示）",
+    price: "鍵開け（刻みキー）8,800円〜（税込・公式料金ページ）",
     uketsuke: "24時間365日",
     mitsumori: "出張・見積・キャンセル無料",
     operator: "株式会社生活救急車（2022年12月にJBRから事業承継）",
@@ -22,10 +22,10 @@ const ROWS = [
   {
     slug: "jbr",
     name: "JBR",
-    price: "鍵開け 8,800円〜（税込）",
-    uketsuke: "24時間365日",
-    mitsumori: "出張見積無料・賠償責任保険加入",
-    operator: "ジャパンベストレスキューシステム株式会社",
+    price: "一般向けの鍵開け受付なし（会員制の駆けつけサービスのみ）",
+    uketsuke: "会員向けに24時間365日",
+    mitsumori: "費用負担は会員規約による",
+    operator: "ジャパンベストレスキューシステム株式会社（2024年3月上場廃止）",
   },
   {
     slug: "kagi-rescue",
