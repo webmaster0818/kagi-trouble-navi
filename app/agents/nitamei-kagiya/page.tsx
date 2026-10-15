@@ -44,7 +44,7 @@ const kyukyusha: Row[] = [
   },
   {
     name: "鍵の生活救急車（カギの生活救急車）",
-    operator: "株式会社生活救急車（名古屋市）。2022年12月にJBRから事業を承継",
+    operator: "株式会社生活救急車（名古屋市）。2022年11月にJBRから事業を承継",
     site: "kagi-seikatsukyukyusya.com",
     siteUrl: "https://kagi-seikatsukyukyusya.com/",
     note: "パートナー店方式。JBR（ジャパンベストレスキューシステム）の運営ではなくなっている",

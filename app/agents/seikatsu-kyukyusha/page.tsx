@@ -280,7 +280,7 @@ export default function SeikatsuKyukyushaPage() {
 
           <section id="summary" className="scroll-mt-20">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">まとめ</h2>
-            <p className="leading-loose mb-4 text-slate-700">鍵の生活救急車は、株式会社生活救急車が運営する鍵トラブル解決サービスです（2022年12月にJBRから事業承継）。料金ページの税込額（鍵開け8,800円〜）と、出張・見積もり・キャンセル無料が特徴で、現在はJBRと資本関係のない別会社です。</p>
+            <p className="leading-loose mb-4 text-slate-700">鍵の生活救急車は、株式会社生活救急車が運営する鍵トラブル解決サービスです（2022年11月にJBRから事業承継）。料金ページの税込額（鍵開け8,800円〜）と、出張・見積もり・キャンセル無料が特徴で、現在はJBRと資本関係のない別会社です。</p>
             <p className="leading-loose mb-4 text-slate-700">一方で、料金が割高に感じるという声や、支払い方法の制限には注意が必要です。作業前に部材費を含む総額を確認し、複数社の見積もりを比較すると安心です。まずは無料見積もりから検討してみてください。</p>
             <div className="rounded-2xl bg-slate-800 text-white p-6 text-center mt-6">
               <p className="font-bold text-lg mb-2">鍵のトラブルでお困りの方へ</p>
