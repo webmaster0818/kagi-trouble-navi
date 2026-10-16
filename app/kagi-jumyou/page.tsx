@@ -191,7 +191,7 @@ export default function KagiJumyouPage() {
           {/* 業者判断 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">メンテナンスで改善しない場合の交換の検討</h2>
           <p className="text-sm text-text-secondary leading-relaxed mb-4">
-            清掃と専用潤滑剤で改善しない、改善してもすぐ再発する、という段階まで来た鍵は、内部の摩耗がかなり進んでいる可能性があります。特に使用10年前後の鍵の場合は、<strong>その場しのぎの修理よりシリンダー交換のほうが、機能面でも防犯面でも合理的</strong>なことが多いです。症状の切り分け方は<a href="/kagi-mawaranai/" className="text-primary underline">鍵が回らないときの対処法</a>を、交換の判断基準は<a href="/kagi-koukan-timing/" className="text-primary underline">鍵交換のタイミングと目安</a>を参考にしてください。
+            清掃と専用潤滑剤で改善しない、改善してもすぐ再発する、という段階まで来た鍵は、内部の摩耗がかなり進んでいる可能性があります。特に使用10年前後の鍵の場合は、<strong>その場しのぎの修理よりシリンダー交換のほうが、機能面でも防犯面でも合理的</strong>な選択となる場合が多くあります。症状の切り分け方は<a href="/kagi-mawaranai/" className="text-primary underline">鍵が回らないときの対処法</a>を、交換の判断基準は<a href="/kagi-koukan-timing/" className="text-primary underline">鍵交換のタイミングと目安</a>を参考にしてください。
           </p>
           <p className="text-sm text-text-secondary leading-relaxed mb-10">
             交換を業者に依頼する場合は、選ぶシリンダーのグレードや時間帯で費用が変わるため、作業前に部品代・作業費・出張料を含む総額見積もりを必ず確認してください。費用の目安は<a href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場</a>で、依頼先の検討は<a href="/agents/" className="text-primary underline">鍵業者の比較</a>でご確認いただけます。
