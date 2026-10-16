@@ -12,7 +12,7 @@ export default function SiteFooter() {
               <SiteLogo tone="light" />
             </div>
             <p className="text-sm max-w-sm">
-              鍵のトラブルでお困りの方に、一次確認した情報だけで鍵業者を比較・紹介するサービスです。
+              鍵のトラブルでお困りの方に向けて、各社公式サイト等で確認した情報にもとづき、鍵業者を比較・紹介する情報サイトです。
             </p>
             <ul className="space-y-2 text-sm mt-4">
               <li><Link href="/about/" className="hover:text-white transition-colors">運営者情報</Link></li>
@@ -91,7 +91,7 @@ export default function SiteFooter() {
           </div>
         </div>
         <div className="border-t border-white/10 pt-8 text-center text-xs text-white/60">
-          <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。掲載料金は各社公式サイトの確認値または一般的な相場で、実際の費用は各業者の見積もりによります。</p>
+          <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。掲載料金は各社公式サイトで確認した金額または一般的な相場であり、実際の費用は各業者の見積もりにより異なります。</p>
           <p className="mt-2">運営: 株式会社MediaX（東京都渋谷区） &copy; 2026 MediaX All Rights Reserved.</p>
         </div>
       </div>

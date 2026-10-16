@@ -7,10 +7,10 @@ const SITE = "https://kagi-trouble-navi.com";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "鍵業者の口コミ・評判まとめ｜料金・対応スピードを徹底比較｜鍵トラブルナビ",
+    absolute: "鍵業者の口コミ・評判まとめ｜料金・対応スピードを比較｜鍵トラブルナビ",
   },
   description:
-    "鍵業者の口コミ・評判・料金を業者別に徹底調査。カギ110番・鍵の生活救急車・鍵のレスキュー・鍵猿・カギの救急車・鍵の24時間救急車・カギのトラブル救急車など各社のメリット・注意点、対応スピード、料金を比較して、あなたに合う鍵業者を見つけられます。",
+    "鍵業者の口コミ・評判・料金を業者別に調査しました。カギ110番・鍵の生活救急車・鍵のレスキュー・鍵猿・カギの救急車・鍵の24時間救急車・カギのトラブル救急車など各社のメリット・注意点、対応スピード、料金を比較し、鍵業者選びに必要な情報を掲載しています。",
   alternates: { canonical: `${SITE}/agents/` },
 };
 
@@ -38,10 +38,10 @@ export default function AgentsIndexPage() {
       <div className="mx-auto max-w-4xl px-4 py-10">
         <h1 className="text-2xl md:text-3xl font-bold mb-3">鍵業者の口コミ・評判まとめ</h1>
         <p className="text-slate-600 mb-8 leading-relaxed">
-          主要な鍵業者の料金・対応スピード・サービス内容・利用者の口コミを、編集部が中立的に調査してまとめました。気になる業者を選んで、依頼前の比較にお役立てください。
+          主要な鍵業者の料金・対応スピード・サービス内容・利用者の口コミを、編集部が中立的な立場で調査し、掲載しています。依頼前の比較にお役立てください。
         </p>
         <Link href="/agents/nitamei-kagiya/" className="kt-card kt-card-link block mb-8 p-5" style={{ borderLeft: "4px solid var(--primary)" }}>
-          <p className="font-bold text-slate-800 mb-1">「救急車」「110番」「レスキュー」名前が似た鍵屋の見分け方</p>
+          <p className="font-bold text-slate-800 mb-1">「救急車」「110番」「レスキュー」など名前が似た鍵屋の見分け方</p>
           <p className="text-xs text-slate-600 leading-relaxed">屋号がよく似た鍵屋10件の運営会社を公式サイトで確認した一覧です。口コミや料金を調べる前にご確認ください。</p>
         </Link>
         <ul className="grid sm:grid-cols-2 gap-5">

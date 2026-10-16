@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `${a.name}の評判・口コミは？${a.discontinued.endedOn}でサービス終了・現在の依頼先｜鍵トラブルナビ`
     : a.metaTitle;
   const desc = a.discontinued
-    ? `「${a.name}」の評判・口コミを調べている方へ。${a.name}は${a.discontinued.endedOn}に公式サイトが閉鎖され、サービスを終了しています（現在は新規の依頼を受け付けていません）。${a.discontinued.successor ? `公式サイトでは、鍵のトラブルを${a.discontinued.successor}へ引き継いだと告知されていました。` : ""}終了の経緯と、いま同じ条件で頼める鍵屋の選び方をまとめました。`
+    ? `「${a.name}」の評判・口コミを調べている方へ。${a.name}は${a.discontinued.endedOn}に公式サイトが閉鎖され、サービスを終了しています（現在は新規の依頼を受け付けていません）。${a.discontinued.successor ? `公式サイトでは、鍵のトラブルを${a.discontinued.successor}へ引き継いだと告知されていました。` : ""}終了の経緯と、現在依頼できる鍵業者の選び方を解説します。`
     : a.metaDesc;
   return {
     title: { absolute: title },
@@ -47,9 +47,9 @@ export default async function AgentPage({ params }: Props) {
     ["about", `${a.name}とはどんなサービスか`],
     ["service", "対応している鍵トラブルの種類"],
     ["price", `${a.name}の料金体系と相場`],
-    ["reviews", a.goodReviews.length > 0 ? "利用者のリアルな口コミ・評判" : "口コミ・評判について（調査結果）"],
+    ["reviews", a.goodReviews.length > 0 ? "利用者の口コミ・評判" : "口コミ・評判の調査結果"],
     ["merit", "メリットと注意点"],
-    ["recommend", `${a.name}がおすすめな人`],
+    ["recommend", `${a.name}をおすすめする方`],
     ["compare", "他社と比較するときのチェックポイント"],
     ["faq", "よくある質問"],
     ["summary", "まとめ"],
@@ -58,7 +58,7 @@ export default async function AgentPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `${a.name}の口コミ・評判・料金を徹底調査`,
+    headline: `${a.name}の口コミ・評判・料金を調査`,
     description: a.metaDesc,
     image: `${SITE}${a.image}`,
     datePublished: "2026-06-10T00:00:00+09:00",
@@ -77,7 +77,7 @@ export default async function AgentPage({ params }: Props) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "鍵トラブルナビ", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "鍵屋レビュー", item: `${SITE}/agents/` },
+      { "@type": "ListItem", position: 2, name: "鍵業者の口コミ・評判", item: `${SITE}/agents/` },
       { "@type": "ListItem", position: 3, name: `${a.name}の口コミ・評判`, item: `${SITE}/agents/${slug}/` },
     ],
   };
@@ -93,7 +93,7 @@ export default async function AgentPage({ params }: Props) {
           <ol className="flex flex-wrap gap-1">
             <li><Link href="/" className="hover:underline">鍵トラブルナビ</Link></li>
             <li>/</li>
-            <li><Link href="/agents/" className="hover:underline">鍵屋レビュー</Link></li>
+            <li><Link href="/agents/" className="hover:underline">鍵業者の口コミ・評判</Link></li>
             <li>/</li>
             <li className="text-slate-700">{a.name}の口コミ・評判</li>
           </ol>
@@ -101,23 +101,23 @@ export default async function AgentPage({ params }: Props) {
 
         <header className="relative overflow-hidden border-y border-border bg-white text-foreground mt-4">
           <div className="mx-auto max-w-4xl px-4 py-12 md:py-16">
-            <p className="text-sm font-bold tracking-widest text-primary mb-3">鍵トラブル業者レビュー</p>
+            <p className="text-sm font-bold tracking-widest text-primary mb-3">鍵業者の口コミ・評判</p>
             <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4 text-primary-dark">
               {notice ? (
                 <>
                   {a.name}は{notice.endedOn}でサービス終了
                   <br className="hidden md:block" />
-                  経緯と現在の依頼先
+                  経緯と現在の依頼先について
                 </>
               ) : (
                 <>
                   {a.name}の口コミ・評判は？
                   <br className="hidden md:block" />
-                  料金・対応・メリットを徹底調査
+                  料金・対応・メリットを調査
                 </>
               )}
             </h1>
-            <p className="text-text-secondary leading-relaxed max-w-2xl">{notice ? `${a.name}は公式サイトで閉鎖が告知され、現在は新規の受付を行っていません。以下は終了前の調査記録です。依頼先を探している方は、まず下の案内をご確認ください。` : a.heroLead}</p>
+            <p className="text-text-secondary leading-relaxed max-w-2xl">{notice ? `${a.name}は公式サイトで閉鎖が告知され、現在は新規の受付を行っていません。以下は終了前の調査記録です。依頼先をお探しの方は、まず下記の案内をご確認ください。` : a.heroLead}</p>
             <div className="mt-6 flex flex-wrap gap-2">
               {a.badges.map((b) => (
                 <span key={b} className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">{b}</span>
@@ -142,10 +142,10 @@ export default async function AgentPage({ params }: Props) {
                 )}
               </p>
               <p className="text-sm text-slate-800 leading-relaxed mb-3">
-                このページに記載している料金・受付時間・到着時間は、<strong>終了前に確認した内容</strong>です。現在の申し込み先としては使えません。
-                いま依頼先をお探しの場合は、
+                このページに記載している料金・受付時間・到着時間は、<strong>終了前に確認した内容</strong>です。現在の申し込み先としてはご利用いただけません。
+                現在の依頼先をお探しの場合は、
                 <Link href="/" className="text-amber-800 underline font-semibold">当サイトの業者比較</Link>
-                から、受付時間と料金の出し方を確認したうえで選んでください。
+                から、受付時間と料金の算出方法を確認したうえでお選びください。
               </p>
               <p className="text-xs text-slate-600 leading-relaxed">
                 出典：{a.name}公式サイトの告知（
@@ -194,7 +194,7 @@ export default async function AgentPage({ params }: Props) {
 
           <section id="service" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">対応している鍵トラブルの種類</h2>
-            <p className="leading-loose mb-5 text-slate-700">玄関まわりの鍵だけでなく、幅広い鍵トラブルに対応しています。どこに相談すべきか分からない場合も、まとめて相談しやすいのが利点です。</p>
+            <p className="leading-loose mb-5 text-slate-700">玄関まわりの鍵だけでなく、幅広い鍵トラブルに対応しています。相談先の判断が難しい場合も、まとめて相談できる点が利点です。</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {a.serviceTags.map((s) => (
                 <div key={s} className="rounded-xl border border-slate-200 p-4 text-center font-medium text-slate-700">{s}</div>
@@ -222,12 +222,12 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <section id="reviews" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">{a.goodReviews.length > 0 ? "利用者のリアルな口コミ・評判" : "口コミ・評判について（調査結果）"}</h2>
+            <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">{a.goodReviews.length > 0 ? "利用者の口コミ・評判" : "口コミ・評判の調査結果"}</h2>
             <div className="rounded-2xl bg-amber-50 border border-amber-200 p-6 mb-6">
               <p className="text-slate-700 text-sm leading-relaxed">{a.reviewsSummary}</p>
             </div>
             {a.goodReviews.length > 0 && (<>
-            <h3 className="font-bold text-lg mb-3">良い口コミ</h3>
+            <h3 className="font-bold text-lg mb-3">良い口コミの傾向</h3>
             <div className="space-y-4 mb-8">
               {a.goodReviews.map((r, i) => (
                 <div key={i} className="rounded-xl border border-slate-200 p-5">
@@ -250,11 +250,11 @@ export default async function AgentPage({ params }: Props) {
             </>)}
             {a.goodReviews.length === 0 && a.badReviews.length === 0 ? (
               <div className="rounded-xl border border-slate-200 p-5">
-                <p className="font-bold mb-2">口コミを確かめるときの手順</p>
+                <p className="font-bold mb-2">口コミを確認する際の手順</p>
                 <ol className="list-decimal pl-5 text-sm leading-relaxed text-slate-700 space-y-1">
                   <li>Googleマップや口コミサイトで、屋号だけでなく<strong>運営会社名</strong>も入れて検索する</li>
-                  <li>名前の似た別業者の口コミが混ざっていないか、投稿の中の社名・地域を確認する</li>
-                  <li>「料金」「キャンセル」「到着時間」について書かれた投稿を中心に読み、上の料金表・規定と照らし合わせる</li>
+                  <li>名前の似た別業者の口コミが混ざっていないか、投稿内の社名・地域を確認する</li>
+                  <li>「料金」「キャンセル」「到着時間」について書かれた投稿を中心に読み、上記の料金表・規定と照らし合わせる</li>
                 </ol>
               </div>
             ) : (
@@ -277,7 +277,7 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <section id="recommend" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">{a.name}がおすすめな人</h2>
+            <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">{a.name}をおすすめする方</h2>
             <ul className="space-y-3 text-slate-700">
               {a.recommend.map((r, i) => (
                 <li key={i} className="flex gap-3"><span className="text-amber-600 font-bold">●</span>{r}</li>
@@ -287,13 +287,13 @@ export default async function AgentPage({ params }: Props) {
 
           <section id="compare" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">他社と比較するときのチェックポイント</h2>
-            <p className="leading-loose mb-4 text-slate-700">鍵業者は料金の安さだけでなく、対応スピードや見積もりの明確さを含めて比較することが大切です。{a.name}を他社と比べる際は、次の点を確認すると判断しやすくなります。</p>
+            <p className="leading-loose mb-4 text-slate-700">鍵業者は、料金の安さだけでなく、対応スピードや見積もりの明確さを含めて比較することが重要です。{a.name}を他社と比較する際は、次の点をご確認ください。</p>
             <ol className="space-y-3 text-slate-700">
               {a.comparePoints.map((c, i) => (
                 <li key={i} className="flex gap-3"><span className="font-bold text-amber-600">{i + 1}.</span>{c}</li>
               ))}
             </ol>
-            <p className="leading-loose mt-4 text-slate-700">料金や対応は地域・状況で変わるため、{a.name}を含めて<Link href="/agents/" className="text-amber-700 underline">複数の鍵業者を比較</Link>し、見積もりを取ったうえで選ぶのがおすすめです。</p>
+            <p className="leading-loose mt-4 text-slate-700">料金や対応は地域・状況で変わるため、{a.name}を含めて<Link href="/agents/" className="text-amber-700 underline">複数の鍵業者を比較</Link>し、見積もりを取ったうえで選ぶことをおすすめします。</p>
           </section>
 
           <section id="faq" className="scroll-mt-20 mb-14">
@@ -331,7 +331,7 @@ export default async function AgentPage({ params }: Props) {
             ))}
             <div className="rounded-2xl bg-slate-800 text-white p-6 text-center mt-2">
               <p className="font-bold text-lg mb-2">鍵のトラブルでお困りの方へ</p>
-              <p className="text-slate-300 text-sm mb-4">地域・状況に合った鍵業者を比較して、無料見積もりを取りましょう。</p>
+              <p className="text-slate-300 text-sm mb-4">地域・状況に合った鍵業者を比較し、無料見積もりをご活用ください。</p>
               <Link href="/agents/" className="btn bg-amber-500 hover:bg-amber-600 border-0 text-white">鍵業者を比較して探す</Link>
             </div>
           </section>

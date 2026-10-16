@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CP認定錠とは？防犯性能の物差しになる「防犯建物部品」制度をわかりやすく解説 | 鍵トラブルナビ",
+  title: "CP認定錠とは？防犯性能の判断基準となる「防犯建物部品」制度をわかりやすく解説 | 鍵トラブルナビ",
   description:
     "CP認定錠（防犯性能の高い建物部品）とは何かを一般知識として解説。官民合同会議による認定制度の仕組み、侵入まで5分以上抵抗するという試験基準の考え方、CPマークの見分け方、鍵交換で選ぶ際のポイントまで紹介します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/cp-nintei-jou/" },
@@ -14,7 +14,7 @@ const basics = [
   },
   {
     title: "「5分以上の抵抗」という基準の考え方",
-    desc: "認定の中心となる考え方が「侵入までに5分以上かかること」です。侵入をあきらめる理由として「時間がかかること」を挙げる侵入犯が多いという知見に基づき、ピッキングや破壊などの攻撃を想定した試験で、5分以上侵入を防げるかどうかが評価されます。つまりCPマークは「絶対に破られない」ことの保証ではなく、「侵入に時間がかかる＝あきらめさせる可能性が高い」ことを示す物差しです。この点を理解しておくと、過信も軽視もせずに製品を選べます。",
+    desc: "認定の中心となる考え方が「侵入までに5分以上かかること」です。侵入をあきらめる理由として「時間がかかること」を挙げる侵入犯が多いという知見に基づき、ピッキングや破壊などの攻撃を想定した試験で、5分以上侵入を防げるかどうかが評価されます。CPマークは「絶対に破られない」ことの保証ではなく、「侵入に時間がかかり、あきらめさせる可能性が高い」ことを示す指標です。この点を理解しておくと、過信も軽視もせずに製品を選べます。",
   },
   {
     title: "CP認定錠（防犯性能の高い錠前）の特徴",
@@ -25,7 +25,7 @@ const basics = [
 const erabikata = [
   {
     title: "目録（公表リスト）で製品を確認する",
-    desc: "防犯性能の高い建物部品は目録として公表されており、インターネットで検索できます。鍵交換を検討する際は、候補の製品が目録に掲載されているか、CPマークの表示があるかを確認しましょう。カタログやパッケージにCPマークが印刷されているのが目印です。",
+    desc: "防犯性能の高い建物部品は目録として公表されており、インターネットで検索できます。鍵交換を検討する際は、候補の製品が目録に掲載されているか、CPマークの表示があるかを確認してください。カタログやパッケージにCPマークが印刷されているのが目印です。",
   },
   {
     title: "自宅の錠前との適合を確認する",
@@ -37,14 +37,14 @@ const erabikata = [
   },
   {
     title: "賃貸の場合は管理会社に相談する",
-    desc: "賃貸住宅の錠前交換には大家・管理会社の許可が必要です。防犯性向上が目的であれば相談に応じてもらえる場合も多く、物件によっては貸主負担で交換してもらえることもあります。無断交換は原状回復トラブルの元になるため、必ず事前に確認しましょう。",
+    desc: "賃貸住宅の錠前交換には大家・管理会社の許可が必要です。防犯性向上が目的であれば相談に応じてもらえる場合も多く、物件によっては貸主負担で交換してもらえることもあります。無断交換は原状回復トラブルの元になるため、必ず事前に確認してください。",
   },
 ];
 
 const ngActions = [
   {
     title: "CPマークを「絶対安全」の保証と考える",
-    desc: "CP認定は「5分以上の抵抗」を目安とした試験に基づく制度であり、破られないことを保証するものではありません。施錠の習慣、補助錠、窓の対策などと組み合わせてこそ効果を発揮します。マークだけを理由に他の対策を省略しないようにしましょう。",
+    desc: "CP認定は「5分以上の抵抗」を目安とした試験に基づく制度であり、破られないことを保証するものではありません。施錠の習慣、補助錠、窓の対策などと組み合わせてこそ効果を発揮します。マークだけを理由に、他の対策を省略しないでください。",
   },
   {
     title: "適合確認をせずにシリンダーだけ購入する",
@@ -52,7 +52,7 @@ const ngActions = [
   },
   {
     title: "類似マークや「防犯」表記だけで判断する",
-    desc: "パッケージに「防犯」と書かれていても、官民合同会議の目録に掲載された製品とは限りません。判断の物差しにするなら、CPマークの有無と目録への掲載を確認するのが確実です。",
+    desc: "パッケージに「防犯」と書かれていても、官民合同会議の目録に掲載された製品とは限りません。判断基準とする場合は、CPマークの有無と目録への掲載を確認するのが確実です。",
   },
   {
     title: "古い錠前に費用をかけて部分修理を重ねる",
@@ -71,11 +71,11 @@ const faqs = [
   },
   {
     q: "自宅の鍵がCP認定かどうかはどうやって確認できますか？",
-    a: "製品のパッケージやカタログのCPマーク表示、およびインターネットで公表されている「防犯性能の高い建物部品」の目録で確認できます。現在使用中の錠前は、ドア側面のフロントプレートに刻印されたメーカー名・型番を控えて調べるか、鍵業者に確認を依頼しましょう。",
+    a: "製品のパッケージやカタログのCPマーク表示、およびインターネットで公表されている「防犯性能の高い建物部品」の目録で確認できます。現在使用中の錠前は、ドア側面のフロントプレートに刻印されたメーカー名・型番を控えて調べるか、鍵業者に確認を依頼してください。",
   },
   {
     q: "CP認定錠への交換は自分でできますか？費用はどのくらいですか？",
-    a: "シリンダー交換自体は適合品を入手できれば自分で行うことも可能ですが、適合確認と施工精度が防犯性能に直結するため、不安があれば鍵業者への依頼が確実です。費用は部品代と作業費で構成され、製品グレードで変わります。目安は料金相場ページで解説しています。",
+    a: "シリンダー交換自体は適合品を入手できれば自分で行うことも可能ですが、適合確認と施工精度が防犯性能に直結するため、不安がある場合は、鍵業者への依頼が確実です。費用は部品代と作業費で構成され、製品グレードで変わります。目安は料金相場ページで解説しています。",
   },
 ];
 
@@ -89,13 +89,13 @@ const breadcrumbLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "ホーム", item: "https://kagi-trouble-navi.com/" },
-    { "@type": "ListItem", position: 2, name: "CP認定錠とは？防犯性能の物差し" },
+    { "@type": "ListItem", position: 2, name: "CP認定錠とは？防犯性能の判断基準" },
   ],
 };
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "CP認定錠とは？防犯性能の物差しになる「防犯建物部品」制度を解説",
+  headline: "CP認定錠とは？防犯性能の判断基準となる「防犯建物部品」制度を解説",
   description: "官民合同会議による防犯性能の高い建物部品（CP認定）制度の仕組みと、鍵選びでの活用方法を一般知識として解説。",
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
@@ -117,26 +117,26 @@ export default function CpNinteiJouPage() {
           <div className="max-w-4xl mx-auto px-4 py-3 text-xs text-text-muted">
             <a href="/" className="hover:text-primary">ホーム</a>
             <span className="mx-1.5">/</span>
-            <span className="text-text-secondary">CP認定錠とは？防犯性能の物差し</span>
+            <span className="text-text-secondary">CP認定錠とは？防犯性能の判断基準</span>
           </div>
         </div>
 
         <article className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
-            CP認定錠とは？防犯性能の物差しになる「防犯建物部品」制度をわかりやすく解説
+            CP認定錠とは？防犯性能の判断基準となる「防犯建物部品」制度をわかりやすく解説
           </h1>
           <p className="text-sm text-text-muted mb-6">最終更新日：2026年8月9日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">結論：CP認定錠は「侵入に5分以上かかる」ことを物差しにした認定品</p>
+            <p className="font-bold text-primary mb-2">要点：CP認定錠は「侵入に5分以上かかる」ことを基準とした認定品です</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
-              CP認定錠とは、警察庁などの官公庁と民間団体で構成される<strong>官民合同会議</strong>が、侵入手口を想定した試験で<strong>「防犯性能の高い建物部品」</strong>と認めた錠前のことです。中心となる基準は<strong>侵入までに5分以上抵抗できること</strong>。鍵交換で防犯性を高めたいときは、CPマークの有無と公表目録への掲載、そして自宅の錠前との適合を確認して選ぶのが基本です。
+              CP認定錠とは、警察庁などの官公庁と民間団体で構成される<strong>官民合同会議</strong>が、侵入手口を想定した試験で<strong>「防犯性能の高い建物部品」</strong>と認めた錠前のことです。中心となる基準は<strong>侵入までに5分以上抵抗できること</strong>です。鍵交換で防犯性を高めたいときは、CPマークの有無と公表目録への掲載、そして自宅の錠前との適合を確認して選ぶのが基本です。
             </p>
           </div>
 
           <p className="text-sm text-text-secondary leading-relaxed mb-8">
-            「防犯性の高い鍵に替えたい」と思って製品を探すと、さまざまな宣伝文句が並んでいて迷ってしまいます。そこで役立つのが、公的な枠組みで性能が確認された製品を示すCPマークです。この記事では、制度の仕組みから選び方、交換を業者に頼む場合のポイントまでを一般知識として整理します。
+            「防犯性の高い鍵に替えたい」と思って製品を探すと、さまざまな宣伝文句があり、選択に迷うことがあります。その際に役立つのが、公的な枠組みで性能が確認された製品を示すCPマークです。この記事では、制度の仕組みから選び方、交換を業者に依頼する場合のポイントまでを一般知識として整理します。
           </p>
 
           {/* 制度の基礎 */}
@@ -153,7 +153,7 @@ export default function CpNinteiJouPage() {
           {/* 選び方 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">CP認定錠の選び方・活用のポイント</h2>
           <p className="text-sm text-text-secondary leading-relaxed mb-4">
-            CPマークは「どれを選べばよいか分からない」ときの信頼できる出発点です。ただし、マークを確認するだけでなく、自宅の状況に合わせた次の視点を持つと失敗がありません。
+            CPマークは「どれを選べばよいか分からない」ときの信頼できる出発点です。ただし、マークを確認するだけでなく、自宅の状況に合わせた次の視点もあわせて確認することをおすすめします。
           </p>
           <div className="space-y-4 mb-10">
             {erabikata.map((e, i) => (
@@ -165,12 +165,12 @@ export default function CpNinteiJouPage() {
           </div>
 
           {/* 自分でできること */}
-          <h2 className="text-xl font-bold text-text-primary mb-4">交換前に自分でできる確認</h2>
+          <h2 className="text-xl font-bold text-text-primary mb-4">交換前にご自身でできる確認</h2>
           <ol className="space-y-3 mb-10">
             {[
               "ドア側面のフロントプレートを見て、錠前のメーカー名・型番を控える（写真を撮っておくと確実）。",
               "現在の鍵の形状を確認する。ギザギザの刻みキーなら旧式シリンダーの可能性が高く、交換の優先度が上がります。",
-              "候補製品がCPマーク付きか、公表されている目録に掲載されているかを確認する。",
+              "候補製品にCPマークの表示があるか、公表されている目録に掲載されているかを確認する。",
               "賃貸の場合は、管理会社・大家に交換の可否と費用負担を確認する。",
               "シリンダー交換だけで足りるか、補助錠の追加（ワンドアツーロック）も必要かを検討する。",
             ].map((t, i) => (
@@ -185,19 +185,19 @@ export default function CpNinteiJouPage() {
           <h2 className="text-xl font-bold text-text-primary mb-4">錠前以外にもある「防犯建物部品」</h2>
           <div className="bg-white rounded-xl border border-black/10 p-5 mb-10">
             <p className="text-sm text-text-secondary leading-relaxed mb-3">
-              CP認定の対象は錠前だけではありません。玄関ドアそのもの、窓ガラス（防犯合わせガラスなど）、サッシ、雨戸・シャッター、面格子、ガラスに貼る防犯フィルムなど、侵入経路になり得る建物部品が幅広く目録に掲載されています。侵入は玄関よりも窓から行われるケースが多いとされるため、玄関の錠前を強化したら、次は窓まわりの部品にも同じ物差しを当ててみるのが効果的です。
+              CP認定の対象は錠前だけではありません。玄関ドアそのもの、窓ガラス（防犯合わせガラスなど）、サッシ、雨戸・シャッター、面格子、ガラスに貼る防犯フィルムなど、侵入経路になり得る建物部品が幅広く目録に掲載されています。侵入は玄関よりも窓から行われるケースが多いとされるため、玄関の錠前を強化したら、次は窓まわりの部品も同じ基準で確認することが効果的です。
             </p>
             <p className="text-sm text-text-secondary leading-relaxed">
-              住まい全体を見渡して「どこが一番弱いか」を考え、弱い場所から順にCP認定品などの性能が確認された部品で補強していく。これが、限られた予算で防犯効果を最大化する基本的な考え方です。
+              住まい全体を見渡して「どこが一番弱いか」を考え、弱い場所から順にCP認定品などの性能が確認された部品で補強していくことが、限られた予算で防犯効果を最大化する基本的な考え方です。
             </p>
           </div>
 
           {/* NG行動 */}
-          <h2 className="text-xl font-bold text-text-primary mb-4">やってはいけないNG行動・よくある誤解</h2>
+          <h2 className="text-xl font-bold text-text-primary mb-4">避けるべき行動とよくある誤解</h2>
           <div className="space-y-4 mb-10">
             {ngActions.map((n, i) => (
               <div key={i} className="bg-white rounded-xl border border-red-200 p-5">
-                <h3 className="font-bold text-red-600 mb-1.5">NG{i + 1}. {n.title}</h3>
+                <h3 className="font-bold text-red-600 mb-1.5">{i + 1}. {n.title}</h3>
                 <p className="text-sm text-text-secondary leading-relaxed">{n.desc}</p>
               </div>
             ))}
@@ -207,13 +207,13 @@ export default function CpNinteiJouPage() {
           <h2 className="text-xl font-bold text-text-primary mb-4">業者に依頼する場合の判断と選び方</h2>
           <div className="bg-surface-alt rounded-xl p-5 mb-10">
             <p className="text-sm text-text-secondary leading-relaxed mb-3">
-              CP認定シリンダーへの交換は、適合品を入手できれば自分で作業できる場合もあります。しかし、<strong>①適合する製品が分からない、②錠前ケースごとの交換が必要、③ドアの建て付けや補助錠の追加もまとめて相談したい</strong>という場合は、鍵業者に依頼するのが確実です。防犯目的の交換は緊急の解錠と違って時間の余裕があるため、複数社に相見積もりを取り、部品代・作業費・出張費を含む総額で比較しましょう。
+              CP認定シリンダーへの交換は、適合品を入手できれば自分で作業できる場合もあります。しかし、<strong>①適合する製品が分からない、②錠前ケースごとの交換が必要、③ドアの建て付けや補助錠の追加もまとめて相談したい</strong>という場合は、鍵業者に依頼するのが確実です。防犯目的の交換は緊急の解錠と違って時間の余裕があるため、複数社に相見積もりを取り、部品代・作業費・出張料を含む総額で比較してください。
             </p>
             <p className="text-sm text-text-secondary leading-relaxed mb-3">
-              見積もり時には「CP認定品（防犯建物部品）で提案してほしい」と伝えると話が早く、提案されたシリンダーの型番を目録と照合すれば自分でも裏取りできます。防犯診断を掲げ、ドア全体・窓まで含めた提案をしてくれる業者は信頼しやすいと言えます。
+              見積もり時には「CP認定品（防犯建物部品）で提案してほしい」と伝えると相談がスムーズに進みます。提案されたシリンダーの型番を目録と照合すれば、ご自身でも確認できます。防犯診断を掲げ、ドア全体・窓まで含めた提案を行う業者は、信頼性が高いといえます。
             </p>
             <p className="text-sm text-text-secondary leading-relaxed">
-              鍵交換の費用感は<a href="/ryokin/" className="text-primary underline">料金相場ページ</a>、業者選びの比較ポイントは<a href="/agents/" className="text-primary underline">業者比較ページ</a>で詳しく解説しています。
+              鍵交換の費用の目安は<a href="/ryokin/" className="text-primary underline">料金相場ページ</a>、業者選びの比較ポイントは<a href="/agents/" className="text-primary underline">業者比較ページ</a>で詳しく解説しています。
             </p>
           </div>
 
@@ -221,10 +221,10 @@ export default function CpNinteiJouPage() {
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 mb-10">
             <h2 className="text-lg font-bold text-text-primary mb-2">防犯性の高い鍵への交換に対応できる業者を比較する</h2>
             <p className="text-sm text-text-secondary leading-relaxed mb-4">
-              CP認定品の取り扱いを明記し、見積もり無料で総額を提示してくれる業者を中心に比較しましょう。
+              CP認定品の取り扱いを明記し、見積もり無料で総額を提示する業者を中心に比較してください。
             </p>
             <div className="flex flex-wrap gap-2">
-              <a href="/agents/" className="px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold hover:bg-primary/90 transition-colors">鍵トラブル業者を比較する →</a>
+              <a href="/agents/" className="px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold hover:bg-primary/90 transition-colors">鍵業者を比較する →</a>
               <a href="/ryokin/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">料金相場を詳しく見る</a>
               <a href="/kagi-koukan-timing/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">鍵交換のタイミング</a>
             </div>

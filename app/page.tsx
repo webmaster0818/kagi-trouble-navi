@@ -16,7 +16,7 @@ const TROUBLES = [
   { icon: "shimedashi", title: "鍵の閉じ込め", desc: "家・部屋に入れない", href: "/shimedashi/" },
   { icon: "kagi-ore", title: "鍵が折れた", desc: "鍵穴の中で折れた", href: "/kagi-ore/" },
   { icon: "kagi-mawaranai", title: "鍵穴が回らない", desc: "鍵が回りにくい・動かない", href: "/kagi-mawaranai/" },
-  { icon: "kagi-funshitsu", title: "鍵をなくした", desc: "鍵を紛失・防犯が心配", href: "/kagi-funshitsu/" },
+  { icon: "kagi-funshitsu", title: "鍵をなくした", desc: "鍵の紛失・防犯面の不安", href: "/kagi-funshitsu/" },
   { icon: "car-inlock", title: "車のインロック", desc: "車内に鍵を閉じ込めた", href: "/car-inlock/" },
   { icon: "kinko", title: "金庫が開かない", desc: "暗証番号忘れ・故障", href: "/kinko-kaijo/" },
 ];
@@ -43,24 +43,24 @@ const PRICES = [
 
 const FRAUD = [
   {
-    title: "「980円〜」の激安広告に注意",
-    desc: "広告では格安を謳い、現場で「特殊な鍵だった」「部品代が別」などと理由をつけて数万円〜10万円以上を請求するケースが報告されています。",
+    title: "「980円〜」などの低価格広告にご注意ください",
+    desc: "広告で低価格を掲げ、現場で「特殊な鍵だった」「部品代が別」などの理由を付けて、数万円〜10万円以上を請求するケースが報告されています。",
   },
   {
-    title: "電話で概算を聞いてから依頼する",
-    desc: "優良業者は電話で症状を聞き、概算費用を伝えてくれます。「現場を見ないとわからない」としか言わない業者は要注意。",
+    title: "電話で概算を確認してから依頼する",
+    desc: "多くの業者は、電話で症状を確認したうえで概算費用を案内しています。「現場を見ないとわからない」との回答のみで概算を示さない業者には注意が必要です。",
   },
   {
-    title: "作業前に必ず見積書をもらう",
-    desc: "現場到着後、作業前に書面で見積もりを出してもらいましょう。口頭だけの説明で作業を始める業者は断りましょう。",
+    title: "作業前に見積書を受け取る",
+    desc: "現場到着後、作業前に書面で見積もりを提示してもらってください。口頭の説明のみで作業を始めようとする業者への依頼は控えることをおすすめします。",
   },
   {
-    title: "断る勇気を持つ",
-    desc: "見積もりが高すぎると感じたら、その場で断ってOK。出張費のみ（またはキャンセル無料）の業者を選べば安心です。",
+    title: "納得できない場合は依頼を断る",
+    desc: "見積もりが高額だと感じた場合は、その場でお断りいただけます。キャンセル時の費用が出張料のみ、またはキャンセル無料の業者を選ぶと、断る際の負担を抑えられます。",
   },
   {
-    title: "消費者ホットラインに相談を",
-    desc: "被害に遭った場合は消費者ホットライン（188）に相談を。クーリングオフが適用される場合もあります。",
+    title: "消費者ホットラインに相談する",
+    desc: "被害に遭った場合は、消費者ホットライン（188）にご相談ください。クーリング・オフが適用される場合もあります。",
   },
 ];
 
@@ -68,50 +68,50 @@ const POINTS = [
   {
     num: "01",
     title: "料金の明示性",
-    desc: "ホームページや電話で料金目安を明確に提示してくれる業者を選びましょう。「現場を見ないとわからない」だけの業者は避けるのが無難です。",
+    desc: "ホームページや電話で料金の目安を明確に提示している業者を選ぶことをおすすめします。「現場を見ないとわからない」との説明のみの業者は、避けることが望ましいといえます。",
   },
   {
     num: "02",
     title: "到着スピード",
-    desc: "緊急時は到着時間が重要です。「最短15分」「最短30分」など具体的な時間を示す業者、また拠点数が多い業者ほど早く対応できます。",
+    desc: "緊急時は到着時間が重要です。「最短15分」「最短30分」など具体的な時間を示している業者や、拠点数の多い業者は、早い対応が期待できます。",
   },
   {
     num: "03",
     title: "対応実績・口コミ",
-    desc: "年間対応件数や利用者の口コミを確認しましょう。実績が多いほど技術力・対応力が高い傾向にあります。",
+    desc: "年間対応件数や利用者の口コミをご確認ください。対応実績は、技術力・対応力を判断する材料の一つです。",
   },
   {
     num: "04",
     title: "キャンセルポリシー",
-    desc: "見積もり後にキャンセルできるか、キャンセル料はかかるか事前に確認を。良心的な業者は「見積もり後のキャンセル無料」を明示しています。",
+    desc: "見積もり後にキャンセルできるか、キャンセル料がかかるかを事前にご確認ください。「見積もり後のキャンセル無料」を明示している業者もあります。",
   },
   {
     num: "05",
     title: "保険・保証の有無",
-    desc: "作業中に鍵や扉を傷つけた場合の賠償責任保険に加入しているか確認。また、交換した鍵の保証期間があるかも重要なポイントです。",
+    desc: "作業中に鍵や扉を傷つけた場合に備えた賠償責任保険への加入状況をご確認ください。交換した鍵の保証期間の有無も、確認すべき項目です。",
   },
 ];
 
 const FAQS = [
   {
     q: "深夜・早朝でも対応してもらえますか？",
-    a: "はい、当サイトで紹介している業者は24時間365日対応です。深夜・早朝でも追加料金なしの業者もあります。ただし、業者によっては夜間料金が発生する場合があるので、電話時に確認しましょう。",
+    a: "当サイトで紹介している業者の多くは、24時間受付に対応しています。ただし、受付時間は業者・加盟店により異なり、深夜・早朝は夜間料金が発生する場合もあるため、電話の際にご確認ください。",
   },
   {
     q: "鍵開けにはどのくらい時間がかかりますか？",
-    a: "一般的なシリンダー錠であれば5〜15分程度、ディンプルキーなど高セキュリティ錠の場合は15〜60分程度かかります。到着後、作業前に所要時間の目安を教えてもらえます。",
+    a: "一般的なシリンダー錠であれば5〜15分程度、ディンプルキーなどの高セキュリティ錠の場合は15〜60分程度が目安です。所要時間の目安は、到着後、作業前に確認できます。",
   },
   {
     q: "賃貸マンションの鍵を開けてもらう場合、身分証は必要ですか？",
-    a: "はい、防犯上の理由から本人確認書類（免許証・保険証など）の提示が必要です。また、賃貸の場合は管理会社への連絡が求められることもあります。",
+    a: "防犯上の理由から、本人確認書類（運転免許証・保険証など）の提示が必要です。また、賃貸物件の場合は管理会社への連絡を求められることもあります。",
   },
   {
     q: "見積もり後にキャンセルできますか？",
-    a: "優良業者であれば見積もり後のキャンセルは無料で可能です。当サイトで紹介している業者はすべて見積もり無料・キャンセル可能な業者です。ただし一部業者では出張費がかかる場合があるので事前に確認しましょう。",
+    a: "見積もり後のキャンセルを無料としている業者もあります。ただし、作業開始後のキャンセルや作業員の出発後のキャンセルに費用がかかる業者もあるため、キャンセル規定を事前にご確認ください。",
   },
   {
-    q: "ぼったくりに遭ってしまった場合はどうすればいいですか？",
-    a: "まずは消費者ホットライン（188番）に相談しましょう。訪問販売に該当する場合はクーリングオフ（8日以内）が適用される可能性があります。領収書・見積書は必ず保管してください。",
+    q: "高額な料金を請求された場合はどうすればよいですか？",
+    a: "消費者ホットライン（188番）にご相談ください。訪問販売に該当する場合は、クーリング・オフ（8日以内）が適用される可能性があります。領収書・見積書は必ず保管してください。",
   },
 ];
 
@@ -177,12 +177,12 @@ export default function Home() {
         <div className="relative mx-auto max-w-6xl px-4 pb-8 pt-2 md:pb-16 md:pt-16 lg:pb-24 lg:pt-20">
           <p className="flex flex-wrap items-center gap-2 text-[13px] font-bold tracking-wide text-text-secondary md:text-[15px]">
             <span className="rounded-md bg-primary-dark px-2.5 py-1 text-white">掲載{listedAgents.length}社</span>
-            公式情報で中立に比較する、鍵の比較サイト
+            公式サイトの情報にもとづく鍵業者の比較サイト
           </p>
           <h1 className="mt-4 text-[30px] font-black leading-[1.3] tracking-wide text-primary-dark md:mt-5 md:text-[48px] lg:text-[56px]">
-            閉じ込め・紛失・交換。
+            鍵のトラブルに対応する
             <br />
-            鍵のトラブル、今すぐ解決。
+            業者を比較・ご紹介します
           </h1>
           <div className="mt-6 grid gap-3 sm:flex sm:flex-wrap md:mt-8 md:gap-4">
             <a href="#trouble" className="inline-flex min-h-[60px] items-center justify-center gap-2.5 rounded-xl bg-primary-dark px-8 text-[18px] font-bold text-white shadow-[0_10px_24px_rgba(11,37,69,0.22)] transition hover:brightness-110 md:min-h-[72px] md:text-[20px]">
@@ -230,13 +230,13 @@ export default function Home() {
         </dl>
       </section>
       <p className="mx-auto w-full max-w-6xl px-4 pt-2 text-[11px] leading-relaxed text-text-muted">
-        ※ 到着時間は掲載業者（カギの生活救急車・鍵猿）の公式表示による最短の目安、鍵開け料金はカギの生活救急車の公式表示（2026年10月12日確認）です。鍵の種類・地域・状況により異なります。当サイトは鍵業者ではなく、呼ぶ前の判断材料を提供する比較サイトです。
+        ※ 到着時間は掲載業者（カギの生活救急車・鍵猿）の公式表示による最短の目安、鍵開け料金はカギの生活救急車の公式表示（2026年10月12日確認）です。実際の時間・料金は鍵の種類・地域・状況により異なります。当サイトは鍵業者ではなく、業者へ依頼する前の判断材料を提供する比較サイトです。
       </p>
 
       {/* トラブル別 */}
       <section id="trouble" className="scroll-mt-20 py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-4">
-          <SectionHead eyebrow="TROUBLE" title="今のお困りごとは？" lead="該当するトラブルをお選びください。状況別の対処法と、頼める業者をご案内します。" />
+          <SectionHead eyebrow="TROUBLE" title="トラブルの種類から探す" lead="該当するトラブルをお選びください。状況別の対処法と、依頼できる業者をご案内します。" />
           <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5">
             {TROUBLES.map((t) => (
               <li key={t.title}>
@@ -270,7 +270,7 @@ export default function Home() {
       {/* サービス別 */}
       <section id="service" className="scroll-mt-20 py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-4">
-          <SectionHead eyebrow="SERVICE" title="サービス別で探す" lead="必要なサービスから、料金の目安と関連ガイドを確認できます" />
+          <SectionHead eyebrow="SERVICE" title="サービス別で探す" lead="必要なサービスから、料金の目安と関連ガイドをご確認いただけます。" />
           <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5 lg:grid-cols-6">
             {SERVICES.map((s) => (
               <li key={s.name}>
@@ -292,7 +292,7 @@ export default function Home() {
       {/* おすすめ TOP3 */}
       <section id="compare" className="scroll-mt-20 border-y border-border bg-white py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-4">
-          <SectionHead eyebrow="RECOMMEND" title="おすすめ鍵業者 TOP3" lead="実績・料金・対応力を総合評価して厳選" icon="hikaku" />
+          <SectionHead eyebrow="RECOMMEND" title="おすすめ鍵業者 TOP3" lead="実績・料金・対応力の観点から選定した3社です。" icon="hikaku" />
           <ol className="space-y-6">
             {top3.map((company, index) => {
               const slug = companyIdToSlug[company.id] ?? company.id;
@@ -400,7 +400,7 @@ export default function Home() {
       {/* 料金相場 */}
       <section id="price" className="scroll-mt-20 py-16 md:py-24">
         <div className="mx-auto max-w-4xl px-4">
-          <SectionHead eyebrow="PRICE" title="サービス別の料金相場" lead="2026年7月時点の料金相場をまとめました" icon="ryokin" />
+          <SectionHead eyebrow="PRICE" title="サービス別の料金相場" lead="2026年7月時点の料金相場です。" icon="ryokin" />
           <div className="overflow-x-auto rounded-[10px] border border-border bg-white">
             <table className="w-full border-collapse text-sm md:text-[15px]">
               <thead>
@@ -422,7 +422,7 @@ export default function Home() {
             </table>
           </div>
           <p className="mt-4 text-center text-xs text-text-muted">
-            ※ 上記は目安です。鍵の種類・時間帯・地域によって変動します。必ず事前見積もりを取りましょう。
+            ※ 上記は目安です。料金は鍵の種類・時間帯・地域によって変動するため、必ず事前に見積もりをご確認ください。
           </p>
           <div className="mt-8 text-center">
             <Link href="/ryokin/" className="kt-btn">
@@ -436,7 +436,7 @@ export default function Home() {
       {/* ぼったくり注意 */}
       <section className="border-y border-border bg-white py-16 md:py-24">
         <div className="mx-auto max-w-4xl px-4">
-          <SectionHead eyebrow="CAUTION" title="ぼったくり業者にご注意ください" lead="鍵業界では悪質な料金請求のトラブルが多発しています" icon="chui" />
+          <SectionHead eyebrow="CAUTION" title="悪質な料金請求にご注意ください" lead="鍵業界では、悪質な料金請求に関するトラブルが多く報告されています。" icon="chui" />
           <ol className="kt-card divide-y divide-border overflow-hidden" style={{ borderLeft: "4px solid var(--accent)" }}>
             {FRAUD.map((item, i) => (
               <li key={item.title} className="flex items-start gap-4 p-5 md:p-6">
@@ -456,7 +456,7 @@ export default function Home() {
       {/* 選び方 */}
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-4xl px-4">
-          <SectionHead eyebrow="HOW TO CHOOSE" title="失敗しない鍵業者の選び方 5つのポイント" />
+          <SectionHead eyebrow="HOW TO CHOOSE" title="鍵業者を選ぶ際の5つの確認事項" />
           <ol className="grid gap-4">
             {POINTS.map((item) => (
               <li key={item.num} className="kt-card flex items-start gap-5 p-5 md:p-7">
@@ -501,11 +501,11 @@ export default function Home() {
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-4xl px-4">
           <div className="kt-card px-6 py-12 text-center md:px-12">
-            <h2 className="text-[22px] font-bold tracking-wide text-foreground md:text-[28px]">鍵のトラブル、一人で悩まないでください</h2>
+            <h2 className="text-[22px] font-bold tracking-wide text-foreground md:text-[28px]">鍵のトラブルに対応する業者を比較しています</h2>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-text-muted md:text-[15px]">
-              24時間365日対応の業者を厳選して比較しています。
+              24時間受付の業者を中心に、各社の料金と特徴を比較しています。
               <br className="hidden md:block" />
-              まずは料金相場と各社の特徴を確認してからのご相談がおすすめです。
+              ご依頼の前に、料金相場と各社の特徴をご確認ください。
             </p>
             <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
               <Link href="/agents/" className="kt-btn w-full sm:w-auto">

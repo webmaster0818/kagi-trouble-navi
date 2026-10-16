@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   alternates: { canonical: "/content-policy/" },
   title: "記事の制作ポリシー | 鍵トラブルナビ",
-  description: "鍵トラブルナビの記事制作ポリシーです。コンテンツの品質・正確性・透明性へのこだわりをご説明します。",
+  description: "鍵トラブルナビの記事制作ポリシーです。コンテンツの品質・正確性・透明性に関する方針をご説明します。",
 };
 
 export default function ContentPolicyPage() {
@@ -26,7 +26,7 @@ export default function ContentPolicyPage() {
           <div className="space-y-8 text-foreground">
             <section>
               <p className="leading-relaxed text-text-muted">
-                「鍵トラブルナビ」は、鍵のトラブルで困っている方に、正確で信頼性の高い情報と優良業者をお届けすることを使命としています。本ポリシーでは、当サイトのコンテンツ制作における基準・方針を明示します。
+                「鍵トラブルナビ」は、鍵のトラブルでお困りの方に、正確で信頼性の高い情報と、信頼できる業者の情報をお届けすることを使命としています。本ポリシーでは、当サイトのコンテンツ制作における基準・方針を明示します。
               </p>
             </section>
 
@@ -67,7 +67,7 @@ export default function ContentPolicyPage() {
               <ul className="space-y-3 text-text-muted">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1 shrink-0">●</span>
-                  <span><span className="font-medium text-foreground">料金透明性：</span>見積もり方法、料金体系の明確さ、ぼったくりリスクの低さ</span>
+                  <span><span className="font-medium text-foreground">料金透明性：</span>見積もり方法、料金体系の明確さ、不当な高額請求のリスクの低さ</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1 shrink-0">●</span>
@@ -100,7 +100,7 @@ export default function ContentPolicyPage() {
               <ul className="space-y-3 text-text-muted">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1 shrink-0">●</span>
-                  <span>鍵トラブルで困っている読者の利益を最優先に考え、誇大広告や不正確な情報は掲載しません。</span>
+                  <span>鍵のトラブルでお困りの読者の利益を最優先に考え、誇大広告や不正確な情報は掲載しません。</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1 shrink-0">●</span>

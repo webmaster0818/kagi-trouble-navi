@@ -8,7 +8,7 @@ const ROWS = [
     name: "カギ110番",
     price: "鍵開け 11,000円〜（税込・公式料金表）",
     uketsuke: "24時間365日",
-    mitsumori: "見積無料",
+    mitsumori: "見積もり無料",
     operator: "シェアリングテクノロジー株式会社（東証グロース3989）",
   },
   {
@@ -16,7 +16,7 @@ const ROWS = [
     name: "鍵の生活救急車",
     price: "鍵開け（刻みキー）8,800円〜（税込・公式料金ページ）",
     uketsuke: "24時間365日",
-    mitsumori: "出張・見積・キャンセル無料",
+    mitsumori: "出張・見積もり・キャンセル無料",
     operator: "株式会社生活救急車（2022年11月にJBRから事業承継）",
   },
   {
@@ -32,7 +32,7 @@ const ROWS = [
     name: "鍵のレスキュー（鍵の110番救急車）",
     price: "鍵開け 6,600円〜＋出張料4,400〜8,800円（税込）",
     uketsuke: "24時間・全国出張",
-    mitsumori: "作業前に料金表で説明しサイン後に作業。作業開始30分超のキャンセルは全額",
+    mitsumori: "作業前に料金表で説明し、署名後に作業。作業開始30分超のキャンセルは全額",
     operator: "株式会社レスキュー（公式会社案内の表示）",
   },
   {
@@ -72,9 +72,9 @@ const ROWS = [
 export default function AgentCompareTable({ current }: { current?: string }) {
   return (
     <section className="my-10">
-      <h2 className="text-xl md:text-2xl font-bold mb-3 text-slate-900">主要{ROWS.length}社スペック比較（公式表示の一次確認値）</h2>
+      <h2 className="text-xl md:text-2xl font-bold mb-3 text-slate-900">主要{ROWS.length}社の比較（公式表示の一次確認値）</h2>
       <p className="text-sm text-slate-500 mb-4">
-        各社公式サイトで確認した表示のみを掲載しています（詳細・確認日は各業者ページ参照）。実際の費用は鍵の種類・時間帯・出張距離で変わるため、必ず作業前の見積もりで総額を確認してください。
+        各社公式サイトで確認した表示のみを掲載しています（詳細・確認日は各業者ページをご参照ください）。実際の費用は鍵の種類・時間帯・出張距離によって変わるため、必ず作業前の見積もりで総額をご確認ください。
       </p>
       <div className="overflow-x-auto rounded-lg border border-slate-200">
         <table className="w-full text-sm bg-white">
@@ -83,7 +83,7 @@ export default function AgentCompareTable({ current }: { current?: string }) {
               <th className="px-3 py-2.5 whitespace-nowrap">業者</th>
               <th className="px-3 py-2.5">基本料金（公式表示）</th>
               <th className="px-3 py-2.5 whitespace-nowrap">受付</th>
-              <th className="px-3 py-2.5">見積・特徴</th>
+              <th className="px-3 py-2.5">見積もり・特徴</th>
               <th className="px-3 py-2.5">運営会社（一次確認）</th>
             </tr>
           </thead>
@@ -116,7 +116,7 @@ export default function AgentCompareTable({ current }: { current?: string }) {
         </table>
       </div>
       <p className="text-xs text-slate-500 mt-3">
-        料金の物差し: JAF非会員の鍵開け料金は25,630円（一般的な開錠・昼間・一次確認済み）。これより大幅に高い見積もりが出た場合は、内訳（基本料金＋作業費＋出張費＋部品代）の説明を求めましょう。
+        料金の目安: JAF非会員の鍵開け料金は25,630円です（一般的な解錠・昼間・一次確認済み）。これを大幅に上回る見積もりが提示された場合は、内訳（基本料金＋作業費＋出張料＋部品代）の説明を求めることをおすすめします。
         名前の似た業者の整理: <Link href="/agents/nitamei-kagiya/" className="text-blue-700 underline">名前が似た鍵屋の見分け方</Link>／
         関連: <Link href="/ryokin/" className="text-blue-700 underline">鍵開け・鍵交換の料金相場</Link>／<Link href="/ryokin-index/" className="text-blue-700 underline">主要業者の料金一次確認まとめ</Link>
       </p>

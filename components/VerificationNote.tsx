@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function VerificationNote({ officialUrl, officialLabel, checkedNote }: { officialUrl?: string; officialLabel?: string; checkedNote?: string }) {
   return (
     <section className="my-10 rounded-lg border border-emerald-200 bg-emerald-50/60 p-5">
-      <h2 className="text-lg font-bold text-slate-900 mb-2">この記事の情報の検証について</h2>
+      <h2 className="text-lg font-bold text-slate-900 mb-2">掲載情報の確認方法について</h2>
       <ul className="text-sm text-slate-700 space-y-1.5 list-disc pl-5">
         <li>運営会社・料金・サービス内容は、公式サイトおよび国税庁法人番号公表サイト等の公開情報で編集部が直接確認した内容のみを掲載しています{checkedNote ? `（${checkedNote}）` : ""}。</li>
-        <li>体験談・口コミの創作は行いません。未検証の口コミは掲載しない方針です（引用する場合は出典を明記の上、編集部の要約であることを明示します）。</li>
-        <li>星評価（AggregateRating）等の自前評価は構造化データに付与していません。</li>
-        <li>鍵業者は名称の似た別会社が多い業界です。当サイトでは運営会社（法人）単位で確認し、混同しやすい業者には注意書きを付けています。</li>
+        <li>体験談・口コミの創作は行いません。未検証の口コミは掲載しません（引用する場合は出典を明記のうえ、編集部による要約であることを明示します）。</li>
+        <li>当サイト独自の星評価（AggregateRating）などの評価は、構造化データに付与していません。</li>
+        <li>鍵業界には名称の似た別会社が多いため、当サイトでは運営会社（法人）単位で確認し、混同しやすい業者には注意書きを記載しています。</li>
       </ul>
       <p className="text-sm text-slate-700 mt-3">
         {officialUrl && (

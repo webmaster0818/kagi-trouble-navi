@@ -39,7 +39,7 @@ export default function AreaFinder() {
   return (
     <div>
       <p className="mb-6 text-center text-sm text-text-muted">
-        47都道府県・{total}エリアの鍵業者まとめから、お住まいの地域を選べます
+        47都道府県・{total}エリアの鍵業者まとめから、お住まいの地域を選択いただけます
       </p>
 
       {/* 東京都（別枠） */}
