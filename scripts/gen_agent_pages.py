@@ -3,6 +3,12 @@
 # A方式: review section is editor-summarized trends with source attribution; NO fabricated individual reviews.
 # Adds a 出典・参照元 (source links) section per okina's A-enhancement request.
 import json
+import sys
+
+# 2026-10-16 停止: このスクリプトの BRANDS は 6/20 時点の値のまま（JBR を一般向け鍵サービスとして紹介・生活救急車を「JBR運営」・公式URL sq.jbr.co.jp 等）。
+# 10/14〜15 に app/agents/*/page.tsx を公式の現行値へ直接訂正済みなので、再実行すると誤った記述に巻き戻る。業者ページは page.tsx を直接編集すること。
+if "--force-outdated" not in sys.argv:
+    sys.exit("gen_agent_pages.py は停止中（BRANDS が 6/20 の古い値）。app/agents/*/page.tsx を直接編集してください。")
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://kagi-trouble-navi.com"
