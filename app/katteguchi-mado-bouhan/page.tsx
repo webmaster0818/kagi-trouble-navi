@@ -140,7 +140,7 @@ export default function KatteguchiMadoBouhanPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">窓・勝手口の防犯の要点：クレセント錠は防犯錠ではありません。窓は「補助錠＋防犯フィルム」、勝手口は「錠の見直し＋ワンドアツーロック」で防犯性を高めます</p>
+            <p className="font-bold text-primary mb-2">窓・勝手口の防犯でまず押さえておきたいのは、クレセント錠は防犯錠ではないという点です。窓は「補助錠＋防犯フィルム」、勝手口は「錠の見直し＋ワンドアツーロック」で防犯性を高めます。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               窓のクレセント錠は<strong>本来サッシの気密性を保つための締め金具であり、防犯を主目的とした錠ではありません</strong>。ガラスを小さく割ってつまみを回せば開いてしまうため、窓の防犯は<strong>クレセント錠から離れた位置への補助錠の追加と、防犯フィルムなどのガラス対策の組み合わせ</strong>が基本です。人目に触れにくい勝手口も、玄関と同じ発想で<strong>ピッキングに強いシリンダーへの見直しと補助錠によるワンドアツーロック化</strong>を行い、侵入に時間がかかる家にすることが対策の軸になります。
             </p>

@@ -140,7 +140,7 @@ export default function TaikyoKagiTroublePage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">退去時の鍵の要点：借りた鍵と自作の合鍵の全数返却が原則です。紛失している場合は隠さず事前に申告し、負担の根拠と金額を契約書・精算明細で確認してください</p>
+            <p className="font-bold text-primary mb-2">退去時は、借りた鍵と自作の合鍵の全数返却が原則です。紛失している場合は隠さず事前に申告し、負担の根拠と金額を契約書・精算明細で確認してください。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               賃貸住宅の鍵は貸主から借りている物です。退去時には入居時に受け取った本数どおりの返却に加え、<strong>自分で作った合鍵も全数返却</strong>を求められるのが一般的です。鍵を紛失していた場合は、借主の責任としてシリンダー交換費用などの負担を求められることが一般的ですが、<strong>負担の有無・範囲は契約書の定めによる</strong>ため、まず紛失時条項をご確認ください。費用は敷金から差し引く精算が通常で、明細の内訳と根拠を確認してから同意するのがトラブル回避の基本です。通常使用による自然な摩耗まで借主負担とする性質のものではない、というのが原状回復の一般的な整理です。
             </p>

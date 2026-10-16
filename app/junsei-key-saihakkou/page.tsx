@@ -140,7 +140,7 @@ export default function JunseiKeySaihakkouPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">純正キー再発行の要点：登録制の鍵は「セキュリティカード＋メーカー取り寄せ」で純正キーを追加できます（受け取りまで数週間単位）</p>
+            <p className="font-bold text-primary mb-2">登録制の鍵は、「セキュリティカード＋メーカー取り寄せ」で純正キーを追加できます（受け取りまで数週間単位）。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               ディンプルキーなど登録制シリンダーの追加キーは、<strong>セキュリティカード（鍵番号カード）の情報をもとに、購入店やメーカー窓口経由で純正キーを取り寄せる</strong>のが基本です。受け取りまで数週間単位かかることが多いため、緊急の締め出し対策にはなりません。カード自体をなくした場合の対応はメーカーごとに異なり、<strong>再発行できない製品ではシリンダー交換が最終手段</strong>になることもあります。カードは鍵と別の場所に保管してください。
             </p>

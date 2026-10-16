@@ -129,7 +129,7 @@ export default function SmartKeyDenchiPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">スマートキー電池切れ対処の要点：電池が切れても「メカニカルキーで開けて、キーを近づけて始動」できます</p>
+            <p className="font-bold text-primary mb-2">スマートキーの電池が切れても、「メカニカルキーで開けて、キーを近づけて始動」することができます。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               スマートキーの電池が切れても、車に乗れなくなるわけではありません。<strong>①キーに内蔵されたメカニカルキー（金属キー）で運転席ドアを解錠</strong>し、<strong>②スタートボタンにキーを触れさせる・所定の位置にかざすなどの方法でエンジンを始動</strong>できます。始動方法はメーカー・車種で異なるため<strong>取扱説明書の確認が必須</strong>です。移動できたら、早めにボタン電池を新品に交換してください。
             </p>

@@ -133,7 +133,7 @@ export default function KagianaTouketsuPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">鍵穴トラブルの要点：凍結は温めて溶かし、異物はほじらない</p>
+            <p className="font-bold text-primary mb-2">鍵穴が凍結した場合は温めて溶かし、異物が入った場合はほじらないことが基本です。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               冬の鍵穴凍結は、<strong>解氷スプレー・カイロ・温めた鍵</strong>で氷を溶かすことで、自力で解決できる場合が多いトラブルです。ただし、<strong>お湯をかけるのは再凍結と部品変形を招くため避けてください</strong>。一方、ガム・接着剤などの<strong>異物は自力でほじると悪化する</strong>ため、無理をせず業者に依頼することが基本です。力ずくで回すと、鍵折れという二次被害につながります。
             </p>

@@ -140,7 +140,7 @@ export default function JoumaeTypeZukanPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：錠前は「鍵穴の位置・フロントの構成・室内側の見た目」で系統を見分けられます。交換時に最も重要なのは、ドア側面のフロント刻印（メーカー名・型番）の確認です</p>
+            <p className="font-bold text-primary mb-2">錠前は「鍵穴の位置・フロントの構成・室内側の見た目」で系統を見分けられます。交換時に最も重要なのは、ドア側面のフロント刻印（メーカー名・型番）の確認です。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               住宅の錠前は、ノブ一体型の<strong>インテグラル錠・円筒錠</strong>、ドアに彫り込む<strong>箱錠（ケースロック）</strong>、玄関で主流の<strong>プッシュプル錠</strong>、室内側に後付けする<strong>面付箱錠</strong>が主要タイプです。見分けは「鍵穴がノブと一体か」「ドア側面のフロントにラッチとデッドボルトが並ぶか」「室内側に箱状ケースが見えるか」の3点の観察が基本です。交換・相談の際は<strong>フロント刻印のメーカー名・型番と、バックセット・ドア厚の採寸値</strong>を控え、写真とあわせて伝えると、適合部品の特定がスムーズに進みます。
             </p>

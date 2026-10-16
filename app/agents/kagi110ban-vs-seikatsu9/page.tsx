@@ -80,7 +80,7 @@ export default function VsPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">比較の要点：両社の違いは「無料範囲の明記」と「料金表示の構造」です</p>
+            <p className="font-bold text-primary mb-2">両社を比較する際に重要なのは、「無料範囲の明記」と「料金表示の構造」の違いです。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               両社とも24時間受付・全国対応・加盟店方式という点は共通していますが、公式の記載には明確な差があります。<strong>キャンセルまで無料と明記しているのは生活救急車</strong>（カギ110番は交通費・キャンセル料が「別途発生する場合あり」と記載）。一方、<strong>表示上の最低料金はカギ110番の鍵開け6,600円〜が低く、上場企業（東証グロース）の直接運営もカギ110番のみ</strong>です。ただし、公開口コミでは<strong>両社とも「表示より現地見積もりが高かった」という指摘が最も多い傾向</strong>にあるため、どちらを選ぶ場合も、作業前に総額を確認し、納得できなければ依頼を断ることが重要です。
             </p>

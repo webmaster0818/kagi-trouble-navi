@@ -148,7 +148,7 @@ export default function AkisuShinnyuTeguchiPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">空き巣対策の要点：「必ず施錠」「時間のかかる鍵」「窓の防犯」の3点を組み合わせることが基本です</p>
+            <p className="font-bold text-primary mb-2">空き巣対策は、「必ず施錠」「時間のかかる鍵」「窓の防犯」の3点を組み合わせることが基本です。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               空き巣の代表的な侵入手口は、<strong>無締り（鍵のかけ忘れ）・ガラス破り・合鍵の悪用・ピッキング・サムターン回し</strong>などです。警察庁の「住まいる防犯110番」でも手口別の傾向が公表されており、対策の基本は<strong>全ての出入口と窓を必ず施錠すること</strong>、玄関は<strong>CP認定錠など解錠に時間のかかる鍵＋補助錠のワンドアツーロック</strong>にすること、そして<strong>窓を補助錠や防犯フィルムで強化すること</strong>です。侵入に時間がかかる家ほど、犯行は諦められやすくなります。
             </p>

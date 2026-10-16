@@ -144,7 +144,7 @@ export default function ChintaiKagiKoukanHiyouPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：負担者は「原因」と「契約内容」で決まる</p>
+            <p className="font-bold text-primary mb-2">賃貸の鍵交換費用を誰が負担するかは、「原因」と「契約内容」によって決まります。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               賃貸の鍵交換費用は、<strong>入居時の交換は契約（特約）次第</strong>で、実務上は借主負担の特約が多い一方、国土交通省の原状回復ガイドラインでは<strong>入居者の入れ替わりに伴う交換は貸主負担が妥当</strong>と整理されています。<strong>鍵を紛失・破損した場合は借主負担が一般的</strong>、経年劣化による故障は貸主負担が原則です。どのケースでも、<strong>無断で鍵を交換することはできません</strong>。必ず先に管理会社・大家へ連絡してください。
             </p>

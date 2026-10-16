@@ -148,7 +148,7 @@ export default function ChintaiBouhanPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：賃貸の防犯は「工事不要の後付けグッズ」と「施錠習慣」で強化できます</p>
+            <p className="font-bold text-primary mb-2">賃貸住宅の防犯は、「工事不要の後付けグッズ」と「施錠習慣」で強化できます。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               賃貸住宅の鍵や扉は貸主の所有物のため、無断での交換・穴あけはできませんが、<strong>工事不要の補助錠・窓用補助錠・防犯フィルム・電池式センサーライト・貼り付け型スマートロック</strong>など、原状回復できる範囲でも防犯性を大きく高めることができます。基本は、<strong>玄関をワンドアツーロックにし、窓にクレセント錠以外の錠を追加し、施錠を徹底する</strong>ことです。シリンダー交換など設備に手を加える場合は、必ず<strong>管理会社・大家の事前承諾</strong>を得てください。
             </p>

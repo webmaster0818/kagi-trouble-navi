@@ -140,7 +140,7 @@ export default function CylinderKoukanDiyPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">シリンダー交換DIYの要点：成否は作業よりも適合確認で決まります</p>
+            <p className="font-bold text-primary mb-2">シリンダー交換をDIYで行う場合、成否を分けるのは作業よりも適合確認です。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               一般的な箱錠系のシリンダー交換は、<strong>フロントプレートのビスを外し、固定ピンを抜いてシリンダーを入れ替える</strong>構造であり、作業自体はドライバーで行える範囲です。難しいのは製品の選定で、<strong>フロント刻印のメーカー名・型番</strong>と<strong>バックセット・扉厚の採寸値</strong>から適合品を確認せずに購入すると、取り付けられずに買い直しになることがあります。取り付け後の動作確認は必ずドアを開けたまま行い、問題がないことを確かめてから閉めてください。<strong>賃貸での無断交換は契約違反・原状回復の問題になる</strong>ため、必ず事前に管理会社の許可を得てください。
             </p>

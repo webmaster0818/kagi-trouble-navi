@@ -159,7 +159,7 @@ export default function AikagiPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：合鍵の作り方と値段は「鍵の種類」によって大きく変わります</p>
+            <p className="font-bold text-primary mb-2">合鍵の作り方と値段は、「鍵の種類」によって大きく変わります。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               合鍵は、<strong>シンプルな刻みキーなら合鍵店やホームセンターの店頭で短時間で複製できます</strong>が、ディンプルキーは対応店が限られ、<strong>メーカー純正キーの取り寄せ（日数がかかる）が基本</strong>です。さらに<strong>登録制・セキュリティカード式の鍵は本人申請でのみ作製でき、店頭での複製はできません</strong>。値段も鍵の種類と作製方法で大きく変わるため、まず自分の鍵の種類を確認することが重要です。作製する際は、必ず<strong>純正キー（元鍵）から</strong>作ってください。
             </p>

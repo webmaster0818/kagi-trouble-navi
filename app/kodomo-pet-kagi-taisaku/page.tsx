@@ -140,7 +140,7 @@ export default function KodomoPetKagiTaisakuPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：対策は「操作させない」と「起きても開けられる」の2本柱です。施錠できる場所の洗い出しと非常解錠装置の共有は、子どもが操作できるようになる前に行ってください</p>
+            <p className="font-bold text-primary mb-2">子ども・ペットの鍵トラブルへの対策は、「操作させない」と「起きても開けられる」の2本柱です。施錠できる場所の洗い出しと非常解錠装置の共有は、子どもが操作できるようになる前に行ってください。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               子ども・ペットの鍵トラブルは、内鍵での閉じ込めと玄関サムターンによる閉め出しが典型です。予防は<strong>サムターンカバー・ドアノブカバー・高い位置の補助錠（チャイルドロック）で操作させない</strong>こと、そして<strong>非常解錠装置（コイン溝）の位置と使い方・スペアキーの備えを家族で共有し、起きても開けられるようにしておく</strong>ことの2本柱です。家じゅうの施錠できる場所を一度洗い出し、子どもの成長に合わせて見直してください。緊急時に反応がなければ119番が最優先です。
             </p>

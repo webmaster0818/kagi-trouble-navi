@@ -140,7 +140,7 @@ export default function KurumaSpareKeyPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">車のスペアキー作成の要点：鍵のタイプ（金属／リモコン／スマートキー）で作成方法が決まります。イモビライザー搭載車は登録作業が必須で、残り1本になった時点での作成をおすすめします</p>
+            <p className="font-bold text-primary mb-2">車のスペアキーは、鍵のタイプ（金属／リモコン／スマートキー）で作成方法が決まります。イモビライザー搭載車は登録作業が必須で、残り1本になった時点での作成をおすすめします。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               車のスペアキー作成は、<strong>金属キーなら刻みの複製だけで済む一方、イモビライザー搭載車・リモコンキー・スマートキーは車両側への登録作業が必要</strong>で、難易度と手順が大きく変わります。確実性を重視する場合はディーラー、スピード・出張対応を重視する場合は設備のある鍵の専門業者、という使い分けが基本です。依頼時は<strong>本人確認書類と車検証</strong>を用意してください。鍵を全部なくすと工程と負担が大幅に増えるため、<strong>「残り1本」になった時点で予備を作る</strong>ことをおすすめします。
             </p>

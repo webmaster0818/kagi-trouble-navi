@@ -133,7 +133,7 @@ export default function HojoJouPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：補助錠は「目的」と「住まいの条件」で選びます</p>
+            <p className="font-bold text-primary mb-2">補助錠は、「目的」と「住まいの条件」に合わせて選ぶことが重要です。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               補助錠は<strong>外出時の防犯には外から施解錠できるタイプ、在宅時の防犯には内締りタイプ</strong>を選びます。持ち家の場合はネジ固定の面付タイプが第一候補、<strong>賃貸の場合はドアに穴を開けない工事不要タイプ</strong>が基本です。メインの錠から間隔を空けて取り付け、1枚のドアに錠2つの「ワンドアツーロック」にすることで、侵入に必要な時間と手間を大きく増やせます。
             </p>

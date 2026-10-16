@@ -75,7 +75,7 @@ export default function KagiOrePage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：鍵が折れた場合の対処の順序</p>
+            <p className="font-bold text-primary mb-2">鍵が折れた場合は、次の順序で対処してください。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               鍵が鍵穴の中で折れたら、<strong>①それ以上回さない → ②破片が飛び出ていればピンセットで優しく抜く → ③抜けない場合は業者に「折れ鍵の抜き取り」を依頼</strong>の順で対処します。抜き取りの相場は<strong>8,000〜15,000円</strong>、シリンダー交換になる場合は<strong>＋10,000〜40,000円</strong>です。<strong>瞬間接着剤で継いで抜く方法は、固着してシリンダー交換が必要になるため絶対に避けてください</strong>。
             </p>

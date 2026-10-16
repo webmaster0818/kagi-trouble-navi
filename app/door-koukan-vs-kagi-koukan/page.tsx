@@ -140,7 +140,7 @@ export default function DoorKoukanVsKagiKoukanPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">ドア交換と鍵交換の判断の要点：原因が鍵穴・錠前にある場合は鍵交換、ドア本体の劣化・断熱・防犯性能まで及ぶ場合はドア交換を検討します。切り分けは、ドアを開けた状態で鍵を回す確認が基本です</p>
+            <p className="font-bold text-primary mb-2">ドア交換と鍵交換のどちらを選ぶかは、原因によって判断します。原因が鍵穴・錠前にある場合は鍵交換、ドア本体の劣化・断熱・防犯性能まで及ぶ場合はドア交換を検討します。切り分けは、ドアを開けた状態で鍵を回す確認が基本です。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               玄関の不調は、工事の規模が小さい順に<strong>シリンダー交換 → 錠前一式交換 → ドアごと交換</strong>の3段階で検討するのが合理的です。ドアを開けた状態で鍵がスムーズに回る場合は原因が建て付け側にあり、鍵を替えても直りません。反対に、開けた状態でも重い場合は鍵穴・錠前側の問題です。ドアの反りや腐食、断熱性の不足、旧式ドアの防犯性まで改善したい場合に初めて、リフォーム工事である<strong>ドアごと交換</strong>が候補になります。賃貸・分譲では管理会社・管理組合への事前確認が必須です。
             </p>

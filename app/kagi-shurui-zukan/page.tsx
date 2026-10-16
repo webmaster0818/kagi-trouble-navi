@@ -154,7 +154,7 @@ export default function KagiShuruiZukanPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：住宅の鍵は大きく6種類に分けられ、「鍵の形」と「刻印の型番」で見分けることができます</p>
+            <p className="font-bold text-primary mb-2">住宅の鍵は大きく6種類に分けられ、「鍵の形」と「刻印の型番」で見分けることができます。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               住宅で使われる鍵は、<strong>刻みキー（ギザギザの鍵）・ディンプルキー・ロータリーディスクシリンダー・カードキー・電子錠（テンキー）・スマートロック</strong>に大別できます。防犯性の目安は「解錠にどれだけ時間がかかるか」で、古い刻みキーは低め、ディンプルキーやCP認定品は高めというのが一般的な整理です。自宅の鍵は<strong>鍵本体の形（ギザギザか、くぼみか）とシリンダーやフロントプレートの刻印（メーカー名・型番）</strong>で見分けられます。
             </p>

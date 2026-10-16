@@ -140,7 +140,7 @@ export default function JitenshaKagiPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">自転車の鍵紛失時の要点：スペアキー・鍵番号の確認、所有者証明の用意、自転車店または出張対応の鍵業者への依頼の順に進めます</p>
+            <p className="font-bold text-primary mb-2">自転車の鍵をなくした場合は、スペアキー・鍵番号の確認、所有者証明の用意、自転車店または出張対応の鍵業者への依頼の順に進めます。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               自転車の鍵をなくしたら、まず<strong>スペアキーと鍵番号を確認</strong>し、次に<strong>防犯登録カード（お客様控え）と身分証</strong>を用意します。自転車を動かせる場合は自転車店への持ち込み、動かせない場合は出張対応の鍵業者への依頼が基本の選択肢です。リング錠（馬蹄錠）は錠前ごと交換、ワイヤー錠は切断して買い替え、U字ロックは頑丈なため専門業者への依頼が現実的というように、タイプごとに対処が変わります。どの窓口でも<strong>所有者確認は必須の手続き</strong>のため、証明書類を先に揃えておくことが早期解決につながります。
             </p>

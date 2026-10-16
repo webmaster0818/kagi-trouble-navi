@@ -140,7 +140,7 @@ export default function KagiJumyouPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">鍵の寿命の要点：シリンダーの寿命は10年程度が一般的な目安です。専用潤滑剤での定期的なメンテナンスで長持ちさせ、不調を繰り返す場合は交換をご検討ください</p>
+            <p className="font-bold text-primary mb-2">シリンダーの寿命は、10年程度が一般的な目安です。専用潤滑剤での定期的なメンテナンスで長持ちさせ、不調を繰り返す場合は交換をご検討ください。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               錠前（シリンダー)の耐用年数は<strong>一般に10年程度が目安</strong>とされています（日本ロック工業会が案内する一般値）。回りにくい・引っかかるといった症状は寿命が近いサインで、日常のメンテナンスは<strong>掃除機での鍵穴清掃＋鍵穴専用のパウダー系・フッ素系潤滑剤</strong>が基本です。食用油や一般の潤滑スプレーはホコリを固めて症状を悪化させるため、使用しないでください。清掃・潤滑で改善しない不調や10年超の鍵の繰り返す不調は、<strong>修理より交換を検討するタイミング</strong>です。
             </p>

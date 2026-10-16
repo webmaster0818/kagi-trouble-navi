@@ -140,7 +140,7 @@ export default function DenshijouDenchigirePage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：残量警告が出たら速やかに電池を交換し、切れてしまった場合は「非常給電」か「機械キー」で開けるのが正規の手順です</p>
+            <p className="font-bold text-primary mb-2">電子錠は、残量警告が出たら速やかに電池を交換し、切れてしまった場合は「非常給電」か「機械キー」で開けるのが正規の手順です。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               住宅用電子錠の電池切れによる締め出しは、<strong>警告音・ランプ点滅などの残量警告を見逃さず、その日のうちに電池交換</strong>すればほぼ防げます。完全に切れた場合も、<strong>屋外側の端子に乾電池を当てて一時給電できる非常給電機能</strong>や、<strong>非常用の機械キー（物理鍵）</strong>で開けられる製品が多くあります。自宅の製品の非常時の開け方を取扱説明書で事前に確認し、機械キーを1本持ち歩くことが最大の締め出し対策です。
             </p>

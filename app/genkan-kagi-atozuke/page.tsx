@@ -133,7 +133,7 @@ export default function GenkanKagiAtozukePage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">玄関の鍵の後付けの要点：選択肢は4系統あり、賃貸では「工事不要型」が基本です</p>
+            <p className="font-bold text-primary mb-2">玄関の鍵を後付けする方法は4系統あり、賃貸住宅では「工事不要型」を選ぶことが基本です。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               玄関に鍵を後付けする方法は、<strong>①工事不要タイプの補助錠、②ネジ固定の面付補助錠、③後付けスマートロック、④引き戸用の後付け錠</strong>の4系統に整理できます。賃貸住宅ではドアに穴を開けない<strong>工事不要タイプ（または粘着固定式スマートロック）</strong>が基本で、ネジ固定式は管理会社の許可が前提です。持ち家で防犯を強化する場合は、メイン錠から離した位置に面付補助錠を追加し、ワンドアツーロックにするのが一般的です。
             </p>

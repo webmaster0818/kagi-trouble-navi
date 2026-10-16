@@ -140,7 +140,7 @@ export default function KeyNumberAikagiPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">キーナンバーの要点：キーナンバーはメーカーが鍵の形状を特定できる番号です。番号だけで純正キーを作製できる半面、他人に見られると合鍵を作られる恐れがあるため、刻印は隠して管理してください</p>
+            <p className="font-bold text-primary mb-2">キーナンバーは、メーカーが鍵の形状を特定できる番号です。番号だけで純正キーを作製できる半面、他人に見られると合鍵を作られる恐れがあるため、刻印は隠して管理してください。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               キーナンバー（鍵番号）は鍵の頭部分などに刻印された英数字で、<strong>メーカー名とセットで分かれば純正キーを取り寄せられる</strong>のが一般的です。ディンプルキーでは付属のキーカードに番号が記載される方式もあり、登録制シリンダーではカード提示や本人確認が注文の条件になることもあります。その一方で、<strong>番号を見られただけで合鍵を作られるリスク</strong>があります。鍵の写真をSNSに投稿しない、刻印はキーカバーで覆う、番号の控えとカードは鍵と別に保管する、という3点が管理の基本です。
             </p>

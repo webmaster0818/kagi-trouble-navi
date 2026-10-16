@@ -159,7 +159,7 @@ export default function SmartLockPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">スマートロック導入の要点：締め出し対策が必須です</p>
+            <p className="font-bold text-primary mb-2">スマートロックを導入する際は、締め出しへの対策が欠かせません。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               スマートロックは、<strong>オートロックによる閉め忘れ防止・スマホや暗証番号での解錠・合鍵のアプリ管理</strong>が魅力の後付け電子錠です。一方で、最大の弱点は<strong>電池切れ・スマホ紛失・うっかり外出による締め出しリスク</strong>です。対策は「物理鍵を必ず携帯する」「スマホ以外の解錠手段を設定する」「電池は警告が出たらすぐに交換する」の3点です。賃貸物件では<strong>工事を伴う設置に貸主の承諾が必要</strong>な点にも注意してください。
             </p>

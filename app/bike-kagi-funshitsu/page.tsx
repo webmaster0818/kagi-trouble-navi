@@ -125,7 +125,7 @@ export default function BikeKagiFunshitsuPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">バイクの鍵トラブルの要点：こじ開けは避け、スペアキーの確認、捜索、鍵業者への依頼（車種・年式を伝える）の順に対処します</p>
+            <p className="font-bold text-primary mb-2">バイクの鍵をなくした場合は、こじ開けは避け、スペアキーの確認、捜索、鍵業者への依頼（車種・年式を伝える）の順に対処します。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               バイクの鍵トラブルは<strong>「紛失（鍵作成が必要）」と「メットイン閉じ込め・シャッターキー（解錠で解決）」</strong>で必要な作業が異なります。まずスペアキーの有無と立ち寄り先を確認し、解決しない場合は鍵業者に依頼するのが基本です。<strong>鍵穴やシートのこじ開けは修理費用のほうが高くつく典型的な失敗</strong>です。依頼時はメーカー・車種・年式を伝えて対応可否と総額を確認し、身分証と車両書類で所有確認に応じられるよう準備してください。
             </p>

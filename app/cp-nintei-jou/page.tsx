@@ -129,7 +129,7 @@ export default function CpNinteiJouPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：CP認定錠は「侵入に5分以上かかる」ことを基準とした認定品です</p>
+            <p className="font-bold text-primary mb-2">CP認定錠は、「侵入に5分以上かかる」ことを基準とした認定品です。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               CP認定錠とは、警察庁などの官公庁と民間団体で構成される<strong>官民合同会議</strong>が、侵入手口を想定した試験で<strong>「防犯性能の高い建物部品」</strong>と認めた錠前のことです。中心となる基準は<strong>侵入までに5分以上抵抗できること</strong>です。鍵交換で防犯性を高めたいときは、CPマークの有無と公表目録への掲載、そして自宅の錠前との適合を確認して選ぶのが基本です。
             </p>

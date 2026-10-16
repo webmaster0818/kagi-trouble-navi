@@ -140,7 +140,7 @@ export default function ShitsunaiToiletKagiPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">室内ドアが開かないときの要点：まず外側の非常解錠装置（コイン溝）を硬貨で回します。回しても開かない場合はラッチ故障が考えられます。緊急時は119番に通報し、無理なこじ開けは避けてください</p>
+            <p className="font-bold text-primary mb-2">室内ドアが開かないときは、まず外側の非常解錠装置（コイン溝）を硬貨で回します。回しても開かない場合はラッチ故障が考えられます。緊急時は119番に通報し、無理なこじ開けは避けてください。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               トイレなど室内ドアの多くには、外側から開けられる<strong>非常解錠装置（ドアノブ外側のコイン溝や小穴）</strong>が備わっています。閉じ込めが起きた場合は、まず中の人に声を掛けて内側からの解錠を誘導し、それが難しい場合は<strong>硬貨やマイナスドライバーで非常解錠装置を回します</strong>。回しても開かない場合は施錠ではなく<strong>ラッチの故障</strong>の可能性が高く、対処が変わります。中の人の反応がないなど緊急時は<strong>119番への通報を優先</strong>し、蹴破りや針金での無理な解錠は避けてください。
             </p>

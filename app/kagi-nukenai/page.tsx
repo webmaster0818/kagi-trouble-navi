@@ -156,7 +156,7 @@ export default function KagiNukenaiPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：抜けない鍵は力任せに引かないことが原則です</p>
+            <p className="font-bold text-primary mb-2">鍵が抜けない場合は、力任せに引かないことが原則です。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               鍵が抜けない時は、<strong>①力任せに引かない（鍵折れ防止）→ ②挿した時と同じ角度に戻し、軽く揺らしながらゆっくり引く → ③鍵穴専用潤滑剤（または鉛筆の芯）を使う</strong>の順で対処します。刺さらない場合は、まず<strong>鍵穴の異物を掃除機で吸い出して</strong>ください。<strong>KURE 5-56などの油系潤滑剤は使用できません</strong>（ホコリを吸着して悪化するため）。無理に引いて鍵穴の中で折れると被害が大きく拡大するため、改善しなければ専門業者へ依頼してください。
             </p>

@@ -140,7 +140,7 @@ export default function KeyBoxKanriPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：キーボックスの安全性は箱ではなく「運用」で決まります。利用者が替わるたびの番号変更・見えにくい設置・記録の3点が必要です</p>
+            <p className="font-bold text-primary mb-2">キーボックスの安全性は、箱ではなく「運用」で決まります。利用者が替わるたびの番号変更・見えにくい設置・記録の3点が必要です。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               ダイヤル式キーボックスは民泊・介護・建設現場などで鍵の受け渡しを無人化できる便利な道具ですが、<strong>一度番号を教えた相手はずっと開けられる</strong>という性質上、番号を変えない運用では「鍵を渡した人が増え続ける」状態になります。安全に使う条件は、<strong>利用者が替わるたび＋定期の番号変更、通りから見えにくく持ち去りにくい設置、誰に番号を伝えたかの記録</strong>の3点です。恒常的な業務利用の場合は、履歴が残り権限を遠隔で無効化できるスマートロックなどの代替手段も検討してください。
             </p>

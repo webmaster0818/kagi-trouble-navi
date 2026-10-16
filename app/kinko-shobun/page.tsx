@@ -140,7 +140,7 @@ export default function KinkoShobunPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">金庫処分の要点：耐火金庫は自治体のごみ収集で回収不可とされるのが一般的です。「購入店・メーカー・専門業者」の3ルートから選び、中身の確認と搬出時の安全を優先してください</p>
+            <p className="font-bold text-primary mb-2">耐火金庫は、自治体のごみ収集で回収不可とされるのが一般的です。「購入店・メーカー・専門業者」の3ルートから選び、中身の確認と搬出時の安全を優先してください。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               耐火金庫は鋼板の間に耐火充填材が入った特殊構造のため、多くの自治体で<strong>粗大ごみとして収集できない品目</strong>と案内されています。処分は<strong>①購入店・販売店の引き取り（買い替え時）②メーカーの相談窓口 ③金庫を扱う専門業者</strong>の3ルートが基本で、いずれも有償が一般的です。開かない金庫は、中身が残っている可能性がある場合、先に解錠して確認するのが原則です。耐火金庫は見た目以上に重いため、階段での搬出などは無理をせず、運搬を含めて業者に依頼してください。費用はサイズ・重量・搬出経路で変わるため、作業前に総額の見積もりをご確認ください。
             </p>

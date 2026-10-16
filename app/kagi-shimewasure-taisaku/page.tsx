@@ -140,7 +140,7 @@ export default function KagiShimewasureTaisakuPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：閉じ忘れ対策で重要なのは「記憶に頼らない仕組み化」です。施錠確認グッズ・オートロック・指差し確認の3本柱で、無締りによる侵入のリスクを防ぎます</p>
+            <p className="font-bold text-primary mb-2">閉じ忘れ対策で重要なのは「記憶に頼らない仕組み化」です。施錠確認グッズ・オートロック・指差し確認の3本柱で、無締りによる侵入のリスクを防ぎます。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               施錠されていない出入口や窓から入られる<strong>無締り</strong>は、住宅侵入の代表的な原因のひとつです。対策の柱は次の3つです。①鍵に付けて施錠すると表示が変わる<strong>施錠確認グッズ</strong>で「かけたか」を後から確認できるようにする、②スマートロックの<strong>オートロック機能</strong>で閉じ忘れ自体をなくす（締め出し対策とセットが前提）、③<strong>指差し確認・声出し・撮影</strong>で施錠を意識的な動作に変える。「短時間でも・在宅でも施錠する」を例外なしのルールにすることが出発点です。
             </p>

@@ -91,7 +91,7 @@ export default function KinkoKaijoPage() {
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">要点：金庫が開かない時の対処法</p>
+            <p className="font-bold text-primary mb-2">金庫が開かない場合の主な原因と対処法は、次のとおりです。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               金庫が開かない原因の多くは<strong>テンキーの電池切れ・ダイヤル番号の間違い/忘れ・鍵の紛失</strong>のいずれかです。テンキーはまず電池交換、ダイヤルはメーカーへの番号照会という、ご自身で行える対処法を確認し、解決しない場合は業者に依頼してください。業者による金庫解錠の相場は<strong>15,000〜50,000円</strong>（種類・難易度で変動）です。依頼時は所有者確認（身分証など）があります。
             </p>
