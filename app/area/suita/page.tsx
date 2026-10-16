@@ -361,7 +361,7 @@ export default function AreaPageSuita() {
           {/* h1・更新日・タグchips */}
           <header className="grid gap-4">
             <h1 className="text-2xl md:text-[32px] font-bold leading-normal tracking-wide text-foreground">
-              【2026年最新】吹田市の鍵開け・鍵交換業者おすすめ4選｜団地・ニュータウンの建て替え後に新しい住戸へ移るときの鍵の受け取り本数の確認と旧住戸・仮住まいの鍵の返却方法も解説する鍵屋比較
+              【2026年最新】吹田市の鍵開け・鍵交換業者おすすめ4選｜団地の建て替え後に受け取る鍵の本数確認と旧住戸の鍵の返却も解説する鍵屋比較
             </h1>
             <div>
               <span className="inline-block rounded-[2px] bg-primary px-2 py-1 text-xs font-bold tracking-wide text-white">
