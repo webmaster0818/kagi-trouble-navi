@@ -770,7 +770,7 @@ export default function AreaTokyoPage() {
                 { href: "/shimedashi/", label: "鍵の閉じ込め・締め出しの対処法" },
                 { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処法" },
                 { href: "/agents/", label: "鍵業者一覧・比較" },
-                { href: "/agents/kagi110ban-vs-seikatsu9/", label: "カギ110番 vs 生活救急車 徹底比較" },
+                { href: "/agents/kagi110ban-vs-seikatsu9/", label: "カギ110番 vs 生活救急車 比較" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
