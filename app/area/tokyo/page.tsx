@@ -2,6 +2,7 @@ import AgentIntro from "@/components/AgentIntro";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/tokyo/";
@@ -455,6 +456,11 @@ export default function AreaTokyoPage() {
                       <Link href={`/agents/${r.slug}/`} className="text-primary underline">
                         {r.name}
                       </Link>
+                      {hasAff(r.slug) && (
+                        <span className="block mt-1">
+                          <AffText slug={r.slug} variant="small" label="公式サイト" />
+                        </span>
+                      )}
                     </td>
                     <td className="border border-border px-3 py-2">{r.price}</td>
                     <td className="border border-border px-3 py-2">{r.time}</td>
@@ -513,6 +519,12 @@ export default function AreaTokyoPage() {
                 <p className="text-xs md:text-sm leading-relaxed text-foreground">{a.memo}</p>
               </div>
 
+              {hasAff(a.slug) && (
+                <div className="mt-6 flex flex-col items-center gap-3">
+                  <AffBanner slug={a.slug} />
+                  <AffText slug={a.slug} variant="button" label={`${a.name}の公式サイトで無料相談`} />
+                </div>
+              )}
               <div className="mt-6">
                 <Link
                   href={`/agents/${a.slug}/`}

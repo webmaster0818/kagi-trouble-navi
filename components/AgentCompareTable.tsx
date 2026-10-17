@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AffText, hasAff } from "@/components/AffLink";
 
 // 業者スペック比較表。各値は各業者ページで一次確認済みの公式表示のみを転記（確認日は各業者ページ参照）。
 // 閲覧中の業者の行をハイライトする。
@@ -104,6 +105,11 @@ export default function AgentCompareTable({ current }: { current?: string }) {
                     <Link href={`/agents/${r.slug}/`} className="text-blue-700 underline hover:no-underline">
                       {r.name}
                     </Link>
+                  )}
+                  {hasAff(r.slug) && (
+                    <span className="block mt-1">
+                      <AffText slug={r.slug} variant="small" label="公式サイト" />
+                    </span>
                   )}
                 </td>
                 <td className="px-3 py-2.5">{r.price}</td>

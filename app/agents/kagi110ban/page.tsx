@@ -3,6 +3,7 @@ import AgentShot from "@/components/AgentShot";
 import AgentCompareTable from "@/components/AgentCompareTable";
 import VerificationNote from "@/components/VerificationNote";
 import type { Metadata } from "next";
+import { AffBanner, AffText } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/agents/kagi110ban/";
@@ -117,6 +118,11 @@ export default function Kagi110banPage() {
               <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">加盟店415社</span>
               <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">公式集計 総合4.6（2,239件）</span>
             </div>
+            <div className="mt-8 flex flex-col items-center sm:items-start gap-4">
+              <AffBanner slug="kagi110ban" />
+              <AffText slug="kagi110ban" variant="button" label="カギ110番の公式サイトで無料相談" />
+              <p className="text-xs text-text-muted">※本ページはプロモーションを含みます</p>
+            </div>
             <AgentShot slug="kagi110ban" name="カギ110番" priority className="mt-8 md:max-w-[640px]" sizes="(min-width: 768px) 640px, 100vw" />
           </div>
         </header>
@@ -200,6 +206,7 @@ export default function Kagi110banPage() {
               <li>公式の注記：「交通費、お客様都合でのキャンセル料は別途発生する場合があります」「一部加盟店・エリアによりカードが使えない場合がございます」</li>
             </ul>
             <p className="text-xs text-slate-500 mt-2">出典：<a href="https://www.kagi110ban.jp/price/" target="_blank" rel="noopener nofollow" className="underline">カギ110番 料金のご案内</a></p>
+            <p className="text-sm text-slate-700 mt-4">最新の料金・受付状況は公式サイトでご確認ください：<AffText slug="kagi110ban" label="カギ110番の公式サイト" /></p>
           </section>
 
           {/* reviews */}
@@ -323,7 +330,12 @@ export default function Kagi110banPage() {
             <div className="rounded-2xl bg-slate-800 text-white p-6 text-center">
               <p className="font-bold text-lg mb-2">鍵のトラブルでお困りの方へ</p>
               <p className="text-slate-300 text-sm mb-4">地域・状況に合った鍵業者を比較し、無料見積もりをご活用ください。</p>
-              <Link href="/" className="btn bg-amber-500 hover:bg-amber-600 border-0 text-white">鍵業者を比較して探す</Link>
+              <div className="flex flex-col items-center gap-3">
+                <AffBanner slug="kagi110ban" />
+                <AffText slug="kagi110ban" variant="button" label="カギ110番の公式サイトで無料相談" />
+                <Link href="/" className="text-slate-300 text-sm underline">他の鍵業者とも比較する</Link>
+                <p className="text-xs text-slate-400">※本ページはプロモーションを含みます</p>
+              </div>
             </div>
           </section>
         </div>

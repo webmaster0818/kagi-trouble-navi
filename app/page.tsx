@@ -7,6 +7,7 @@ import { allAreaSlugs } from "@/data/areaRegions";
 import { companyIdToSlug } from "@/data/agentShots";
 import AreaFinder from "@/components/AreaFinder";
 import AgentShot from "@/components/AgentShot";
+import { AffText, hasAff } from "@/components/AffLink";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -355,9 +356,13 @@ export default function Home() {
                         <p className="text-xs text-text-muted">到着時間</p>
                         <p className="text-base font-bold text-foreground">{company.speed}</p>
                       </div>
-                      <a href={company.officialUrl} target="_blank" rel="noopener noreferrer nofollow" className="kt-btn mt-1 w-full text-sm">
-                        無料で相談する
-                      </a>
+                      {hasAff(slug) ? (
+                        <AffText slug={slug} variant="button" label="無料で相談する" className="aff-full mt-1" />
+                      ) : (
+                        <a href={company.officialUrl} target="_blank" rel="noopener noreferrer nofollow" className="kt-btn mt-1 w-full text-sm">
+                          無料で相談する
+                        </a>
+                      )}
                       <Link href={`/agents/${slug}/`} className="inline-flex min-h-[44px] items-center justify-center gap-1 text-sm font-bold text-primary underline-offset-4 hover:underline">
                         口コミ・評判を見る
                         <ArrowRight />

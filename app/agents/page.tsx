@@ -2,6 +2,7 @@ import Link from "next/link";
 import AgentShot from "@/components/AgentShot";
 import type { Metadata } from "next";
 import { agents } from "./agentsData";
+import { AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 
@@ -53,6 +54,11 @@ export default function AgentsIndexPage() {
                 <span className="text-xs text-text-muted leading-relaxed">{taglines[a.slug] ?? "口コミ・評判・料金を見る"}</span>
                 <span className="mt-3 text-xs font-bold text-primary">口コミ・評判・料金を見る →</span>
               </Link>
+              {hasAff(a.slug) && (
+                <p className="mt-2 px-1 text-right">
+                  <AffText slug={a.slug} variant="small" label={`${a.name}の公式サイト`} />
+                </p>
+              )}
             </li>
           ))}
         </ul>

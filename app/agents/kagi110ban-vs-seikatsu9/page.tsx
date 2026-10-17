@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AffText } from "@/components/AffLink";
 
 export const metadata: Metadata = {
   title: "カギ110番と生活救急車はどっちがいい？料金・無料範囲・運営会社を公式情報で比較 | 鍵トラブルナビ",
@@ -108,6 +109,9 @@ export default function VsPage() {
               </tbody>
             </table>
           </div>
+          <p className="text-sm text-text-secondary mb-3">
+            カギ110番の最新の料金・受付状況は公式サイトでご確認ください：<AffText slug="kagi110ban" label="カギ110番の公式サイト" />（PR）
+          </p>
           <p className="text-xs text-text-muted mb-10">
             ※両社公式サイトの表記にもとづいています（2026年7月4日確認）。料金・条件は加盟店・エリア・作業内容により変わります。実際の金額は現地の見積もりで確定します。
           </p>
