@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "鍵開け・鍵交換の料金相場【2026年7月】｜出張料・深夜割増・費用を抑える方法 | 鍵トラブルナビ",
+  title: "鍵開け・鍵交換の料金相場｜出張料・深夜割増・費用を抑える方法 | 鍵トラブルナビ",
   description:
     "鍵開け・鍵交換の料金相場を作業別にまとめて解説。一般錠の鍵開けは8,000〜15,000円、ディンプルキーは15,000〜30,000円が目安。出張料・深夜割増などの追加料金、高額請求を避けるための確認事項、業者の選び方を、2026年7月時点の情報にもとづいて解説します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/ryokin/" },
@@ -81,7 +81,7 @@ const breadcrumbLd = {
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "鍵開け・鍵交換の料金相場【2026年7月】",
+  headline: "鍵開け・鍵交換の料金相場",
   description: "鍵開け・鍵交換の作業別料金相場と追加料金、費用を抑える方法を解説した記事です。",
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
@@ -109,7 +109,7 @@ export default function RyokinPage() {
 
         <article className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
-            鍵開け・鍵交換の料金相場【2026年7月】
+            鍵開け・鍵交換の料金相場
           </h1>
           <p className="text-sm text-text-muted mb-6">最終更新日：2026年7月7日</p>
 

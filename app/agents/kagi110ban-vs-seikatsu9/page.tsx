@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "カギ110番と生活救急車はどっちがいい？料金・無料範囲・運営会社を公式情報で比較【2026年7月】 | 鍵トラブルナビ",
+  title: "カギ110番と生活救急車はどっちがいい？料金・無料範囲・運営会社を公式情報で比較 | 鍵トラブルナビ",
   description:
     "カギ110番（鍵開け6,600円〜・シェアリングテクノロジー運営）と生活救急車（刻みキー8,800円〜・出張・見積もり・キャンセル無料と明記）を、公式サイトの一次情報で比較しました。無料範囲の記載方法・料金表示の構造・運営会社の違いと、両社共通の注意点（金額は現地見積もりで確定）を中立的な立場で解説します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/agents/kagi110ban-vs-seikatsu9/" },
@@ -44,7 +44,7 @@ const breadcrumbLd = {
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "カギ110番と生活救急車はどっちがいい？料金・無料範囲・運営会社を公式情報で比較【2026年7月】",
+  headline: "カギ110番と生活救急車はどっちがいい？料金・無料範囲・運営会社を公式情報で比較",
   description: "カギ110番と生活救急車の料金表示・無料範囲・運営会社の違いを、公式の一次情報で比較した記事です。",
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
@@ -74,7 +74,7 @@ export default function VsPage() {
 
         <article className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
-            カギ110番と生活救急車はどっちがいい？料金・無料範囲・運営会社を公式情報で比較【2026年7月】
+            カギ110番と生活救急車はどっちがいい？料金・無料範囲・運営会社を公式情報で比較
           </h1>
           <p className="text-sm text-text-muted mb-6">最終更新日：2026年7月4日（両社の公式サイト・国税庁法人番号公表サイト・JPX公表情報を同日に一次確認）</p>
 

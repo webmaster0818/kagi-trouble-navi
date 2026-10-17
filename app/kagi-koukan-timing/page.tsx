@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/kagi-koukan-timing/";
-const UPDATED = "2026年7月7日";
+const UPDATED = "2026年10月17日";
 const CHECKED = "2026年7月7日";
 
 export const metadata: Metadata = {
   title:
-    "鍵交換・防犯見直しのベストタイミング｜引越しシーズンの混雑と料金【2026年7月】 | 鍵トラブルナビ",
+    "鍵交換・防犯見直しのベストタイミング｜引越しシーズンの混雑と料金 | 鍵トラブルナビ",
   description:
-    "鍵交換や防犯の見直しに適した時期を、引越しシーズン(2〜4月)の混雑・料金の傾向と、警察庁の侵入窃盗統計をもとに解説します。引越し直後の鍵交換の必要性、空き巣に狙われやすい侵入口、今月の防犯の確認事項まで、毎月更新して掲載しています（2026年7月7日確認）。",
+    "鍵交換や防犯の見直しに適した時期を、引越しシーズン(2〜4月)の混雑・料金の傾向と、警察庁の侵入窃盗統計をもとに解説します。引越し直後の鍵交換の必要性、空き巣に狙われやすい侵入口、防犯の確認ポイントまで掲載しています（統計の確認日：2026年7月7日）。",
   alternates: { canonical: `${SITE}${PATH}` },
 };
 
-const monthlyPoints = [
-  "夏の長期不在（帰省・旅行）に備え、玄関・窓の施錠と補助錠を点検する",
-  "在宅時間が減る時期のため、短時間の外出でも施錠を徹底する（無締りが最も多い侵入手口のため）",
-  "引越し・異動が一段落し、鍵業者の繁忙期（2〜4月）を過ぎているため、鍵交換を検討する場合は比較的予約が取りやすい時期",
+const checkPoints = [
+  "短時間の外出でも施錠を徹底する（警察庁の統計で、住宅対象侵入窃盗の侵入手口は「無締り（施錠のし忘れ）」が最も多いため）",
+  "帰省・旅行などで家を長期に空ける前は、玄関・窓の施錠と補助錠を点検する",
+  "緊急でない鍵交換は、鍵業者が混み合う2〜4月の繁忙期を避けると、予約が取りやすく複数社の見積もりも比較しやすい",
 ];
 
 const seasons = [
@@ -81,12 +81,12 @@ const breadcrumbLd = {
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "鍵交換・防犯見直しのベストタイミング｜引越しシーズンの混雑と料金【2026年7月】",
+  headline: "鍵交換・防犯見直しのベストタイミング｜引越しシーズンの混雑と料金",
   description: "鍵交換や防犯見直しの最適な時期を、引越しシーズンの混雑傾向と警察庁の侵入窃盗統計をもとに解説します。",
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-07-07",
-  dateModified: "2026-07-07",
+  dateModified: "2026-10-17",
 };
 
 export default function TimingPage() {
@@ -108,16 +108,16 @@ export default function TimingPage() {
 
         <article className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
-            鍵交換・防犯見直しのベストタイミング｜引越しシーズンの混雑と料金【2026年7月】
+            鍵交換・防犯見直しのベストタイミング｜引越しシーズンの混雑と料金
           </h1>
           <p className="text-sm text-text-muted mb-1">最終更新日：{UPDATED}</p>
-          <p className="text-xs text-text-muted mb-6">統計・情報の確認日：{CHECKED}（毎月更新）</p>
+          <p className="text-xs text-text-muted mb-6">統計・情報の確認日：{CHECKED}</p>
 
-          {/* 今月のチェック */}
+          {/* 防犯の確認ポイント */}
           <div className="bg-secondary/10 border border-secondary/30 rounded-2xl p-5 sm:p-6 mb-8">
-            <p className="font-bold text-primary mb-2">今月（2026年7月）の防犯の確認ポイント</p>
+            <p className="font-bold text-primary mb-2">時期を問わない防犯の確認ポイント</p>
             <ul className="list-disc pl-5 space-y-1.5 text-sm text-text-secondary leading-relaxed">
-              {monthlyPoints.map((p, i) => (
+              {checkPoints.map((p, i) => (
                 <li key={i}>{p}</li>
               ))}
             </ul>

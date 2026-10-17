@@ -7,9 +7,9 @@ const CHECKED = "2026年7月7日";
 
 export const metadata: Metadata = {
   title:
-    "鍵トラブル料金インデックス｜主要5社の公式料金を実確認【2026年7月】業者×サービス別一覧 | 鍵トラブルナビ",
+    "鍵トラブル料金インデックス｜主要5社の公式料金を実確認｜業者×サービス別一覧 | 鍵トラブルナビ",
   description:
-    "カギ110番・鍵の生活救急車・鍵のレスキュー・鍵猿・JBRの公式サイトに表示された料金を、当サイトが2026年7月7日に実際に確認し、業者×サービス別に一覧にしています。鍵開け・鍵交換・鍵修理・金庫・車の鍵の料金、出張料・深夜割増の有無を、出典URLを明記して比較できます。料金は毎月再確認して更新します。",
+    "カギ110番・鍵の生活救急車・鍵のレスキュー・鍵猿・JBRの公式サイトに表示された料金を、当サイトが2026年7月7日に実際に確認し、業者×サービス別に一覧にしています。鍵開け・鍵交換・鍵修理・金庫・車の鍵の料金、出張料・深夜割増の有無を、出典URLを明記して比較できます。",
   alternates: { canonical: `${SITE}${PATH}` },
 };
 
@@ -100,7 +100,7 @@ const rows: Row[] = [
 const faqs = [
   {
     q: "この料金一覧はどうやって確認していますか？",
-    a: "各社の公式サイトに実際に表示されている料金を、当サイト編集部が2026年7月7日に一件ずつ確認し、出典URLとあわせて掲載しています。相場の推測値ではなく、各社が公式に提示している価格表示に基づく一覧です。料金は改定されることがあるため、毎月再確認して更新します。",
+    a: "各社の公式サイトに実際に表示されている料金を、当サイト編集部が2026年7月7日に一件ずつ確認し、出典URLとあわせて掲載しています。相場の推測値ではなく、各社が公式に提示している価格表示に基づく一覧です。料金は改定されることがあるため、最新の料金は各社の公式サイトでご確認ください。",
   },
   {
     q: "一番安いのはどの業者ですか？",
@@ -148,7 +148,7 @@ const breadcrumbLd = {
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "鍵トラブル料金インデックス｜主要5社の公式料金を実確認【2026年7月】",
+  headline: "鍵トラブル料金インデックス｜主要5社の公式料金を実確認",
   description: "主要な鍵トラブル業者5社の公式サイト表示料金を業者×サービス別に実際に確認し、一覧にしています。出典URLと確認日を明記しています。",
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
@@ -185,10 +185,10 @@ export default function RyokinIndexPage() {
 
         <article className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
-            鍵トラブル料金インデックス｜主要5社の公式料金を実確認【2026年7月】
+            鍵トラブル料金インデックス｜主要5社の公式料金を実確認
           </h1>
           <p className="text-sm text-text-muted mb-1">最終更新日：{UPDATED}</p>
-          <p className="text-xs text-text-muted mb-6">料金の確認日：{CHECKED}（各社公式サイトを毎月再確認して更新）</p>
+          <p className="text-xs text-text-muted mb-6">料金の確認日：{CHECKED}</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-8">

@@ -10,11 +10,11 @@ const PATH = "/agents/kagizaru/";
 const UPDATED = "2026年9月30日";
 
 export const metadata: Metadata = {
-  title: { absolute: "鍵猿（鍵ザル）の口コミ・評判は？鍵屋の鍵猿の料金・到着時間・保証を調査【2026年9月】｜鍵トラブルナビ" },
+  title: { absolute: "鍵猿（鍵ザル）の口コミ・評判は？鍵屋の鍵猿の料金・到着時間・保証を調査｜鍵トラブルナビ" },
   description: "鍵猿（鍵屋の鍵猿・運営：SLS株式会社）の口コミ・評判を調査。鍵開け8,800円〜／最短15分／全国47都道府県／1年保証は公式サイトで確認しました（2026年9月30日時点）。「料金が高い」という声の多くは夜間の加算によるもので、事前の見積もりで確認できます。良い評判と注意点を中立的な立場で解説します。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
-    title: "鍵猿（鍵ザル）の口コミ・評判は？鍵屋の鍵猿の料金・到着時間・保証を調査【2026年9月】",
+    title: "鍵猿（鍵ザル）の口コミ・評判は？鍵屋の鍵猿の料金・到着時間・保証を調査",
     description: "鍵屋の鍵猿の料金・到着時間・保証・利用者の口コミを中立的な立場で調査し、利用前に確認すべきメリットと注意点を解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
@@ -59,7 +59,7 @@ export default function KagizaruPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "鍵猿（鍵ザル）の口コミ・評判は？鍵屋の鍵猿の料金・到着時間・保証を調査【2026年9月】",
+    headline: "鍵猿（鍵ザル）の口コミ・評判は？鍵屋の鍵猿の料金・到着時間・保証を調査",
     description: "鍵屋の鍵猿の料金・到着時間・保証・利用者の口コミを中立的な立場で調査し、利用前に確認すべきメリットと注意点を解説します。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-20T00:00:00+09:00",
