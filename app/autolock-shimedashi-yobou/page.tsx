@@ -92,6 +92,8 @@ const relatedLinks = [
   { href: "/smart-lock/", label: "スマートロックの基礎知識", desc: "オートロック機能と締め出しリスク" },
   { href: "/kagi-funshitsu/", label: "鍵を紛失した時にやること", desc: "捜索・届け出・交換の判断を解説" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "依頼前に確認すべき料金の目安" },
+  { href: "/door-guard-shimedashi/", label: "ドアガードがかかって家に入れないとき", desc: "家族が中にいる場合・いない場合の対処" },
+  { href: "/bunjo-mansion-kagi-koukan/", label: "分譲マンションの玄関の鍵交換", desc: "管理規約での扱いとオートロック連動の鍵" },
 ];
 
 const faqLd = {

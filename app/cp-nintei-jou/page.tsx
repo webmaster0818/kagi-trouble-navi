@@ -249,6 +249,7 @@ export default function CpNinteiJouPage() {
               { href: "/hojo-jou/", label: "補助錠の選び方（ワンドア・ツーロック）" },
               { href: "/kagi-koukan-timing/", label: "鍵交換のタイミングと判断基準" },
               { href: "/ryokin/", label: "鍵トラブルの料金相場" },
+              { href: "/ikkodate-kagi-koukan/", label: "一戸建ての鍵交換で確認すること" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →

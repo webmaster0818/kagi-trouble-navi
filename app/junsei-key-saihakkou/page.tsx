@@ -88,6 +88,8 @@ const relatedLinks = [
   { href: "/dimple-key/", label: "ディンプルキーとは？防犯性の仕組み", desc: "登録制シリンダーの特徴を解説" },
   { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処法", desc: "紛失時に行うべき対応の手順" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "緊急時の料金の目安を解説" },
+  { href: "/bunjo-mansion-kagi-koukan/", label: "分譲マンションの玄関の鍵交換", desc: "管理規約での扱いとオートロック連動の鍵" },
+  { href: "/kagi-magatta/", label: "鍵が曲がった・変形したときの対処", desc: "曲げ戻さずに作り直す方法" },
 ];
 
 const faqLd = {

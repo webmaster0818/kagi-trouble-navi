@@ -88,6 +88,9 @@ const relatedLinks = [
   { href: "/joumae-type-zukan/", label: "錠前タイプ図鑑", desc: "錠前の系統と型番確認の基礎知識" },
   { href: "/kagi-jumyou/", label: "鍵の寿命と経年劣化", desc: "寿命のサインと長持ちさせる方法" },
   { href: "/doorknob-koukan/", label: "ドアノブ・ラッチの故障と交換", desc: "ノブ・ラッチ側の不調はこちら" },
+  { href: "/genkan-kagi-koukan-dokoni/", label: "玄関の鍵交換はどこに頼む？", desc: "住まい別の連絡先と依頼先の違い" },
+  { href: "/ikkodate-kagi-koukan/", label: "一戸建ての鍵交換で確認すること", desc: "複数の出入口と同じ鍵での統一" },
+  { href: "/bunjo-mansion-kagi-koukan/", label: "分譲マンションの玄関の鍵交換", desc: "管理規約での扱いとオートロック連動の鍵" },
 ];
 
 const faqLd = {

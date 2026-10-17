@@ -92,6 +92,8 @@ const relatedLinks = [
   { href: "/kagi-koukan-timing/", label: "鍵交換のタイミングと目安", desc: "交換を検討する目安となるサインを解説" },
   { href: "/dimple-key/", label: "ディンプルキーとは？防犯性と交換の考え方", desc: "防犯性の高い鍵の基礎知識" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "依頼前に把握しておくべき料金の目安" },
+  { href: "/genkan-kagi-koukan-dokoni/", label: "玄関の鍵交換はどこに頼む？", desc: "住まい別の連絡先と依頼先の違い" },
+  { href: "/bunjo-mansion-kagi-koukan/", label: "分譲マンションの玄関の鍵交換", desc: "管理規約での扱いとオートロック連動の鍵" },
 ];
 
 const faqLd = {

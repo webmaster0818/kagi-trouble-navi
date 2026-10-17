@@ -88,6 +88,7 @@ const relatedLinks = [
   { href: "/thumb-turn-taisaku/", label: "サムターン回し対策", desc: "防犯面のサムターン対策について" },
   { href: "/shimedashi/", label: "締め出されたときの対処法", desc: "玄関の閉め出しトラブルの手順" },
   { href: "/key-box-kanri/", label: "キーボックスでの鍵管理", desc: "スペアキーの備えと保管の注意点" },
+  { href: "/door-guard-shimedashi/", label: "ドアガードがかかって家に入れないとき", desc: "家族が中にいる場合・いない場合の対処" },
 ];
 
 const faqLd = {

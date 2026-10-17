@@ -88,6 +88,7 @@ const relatedLinks = [
   { href: "/hojo-jou/", label: "補助錠の選び方と付け方", desc: "ワンドアツーロックの基礎知識" },
   { href: "/thumb-turn-taisaku/", label: "サムターン回し対策", desc: "ガラス破り後の解錠を防ぐ知識" },
   { href: "/cp-nintei-jou/", label: "CP認定錠とは？", desc: "防犯建物部品の公的な目印を解説" },
+  { href: "/ikkodate-kagi-koukan/", label: "一戸建ての鍵交換で確認すること", desc: "複数の出入口と同じ鍵での統一" },
 ];
 
 const faqLd = {

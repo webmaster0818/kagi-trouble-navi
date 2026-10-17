@@ -239,6 +239,7 @@ export default function GenkanKagiAtozukePage() {
               { href: "/smart-lock/", label: "スマートロックのメリットと注意点" },
               { href: "/chintai-bouhan/", label: "賃貸でもできる防犯対策" },
               { href: "/ryokin/", label: "鍵トラブルの料金相場" },
+              { href: "/genkan-kagi-koukan-dokoni/", label: "玄関の鍵交換はどこに頼む？" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →

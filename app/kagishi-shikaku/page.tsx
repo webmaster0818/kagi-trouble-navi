@@ -88,6 +88,8 @@ const relatedLinks = [
   { href: "/agents/", label: "鍵業者の比較", desc: "依頼先を検討する際のポイント" },
   { href: "/kagi-shurui-zukan/", label: "鍵の種類図鑑", desc: "自宅の鍵の種類と防犯性の目安" },
   { href: "/cp-nintei-jou/", label: "CP認定錠とは？", desc: "防犯性能を客観的に示す公的な目印" },
+  { href: "/kagiya-erabikata/", label: "鍵屋の選び方｜電話で確認する質問", desc: "依頼前・電話・作業前・支払い時のチェックリスト" },
+  { href: "/kagiya-kougaku-seikyuu/", label: "鍵屋に高額請求されたときの対処", desc: "その場での対応・記録の残し方・188への相談" },
 ];
 
 const faqLd = {

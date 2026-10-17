@@ -273,6 +273,19 @@ export default function KagiMawaranaiPage() {
               </details>
             ))}
           </div>
+
+          {/* 関連する解説 */}
+          <h2 className="text-xl font-bold text-text-primary mt-10 mb-4">関連する解説</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { href: "/kagiana-abura/", label: "鍵穴に油を差してしまったときの対処" },
+              { href: "/kagi-magatta/", label: "鍵が曲がった・変形したときの対処" },
+            ].map((l, i) => (
+              <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
+                {l.label} →
+              </a>
+            ))}
+          </div>
         </article>
       </main>
 

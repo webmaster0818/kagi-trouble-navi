@@ -63,6 +63,9 @@ const troubleLinks = [
   { href: "/kagi-mawaranai/", label: "鍵が回らないときの対処法" },
   { href: "/car-inlock/", label: "車のインロック解錠" },
   { href: "/kinko-kaijo/", label: "金庫の鍵開け" },
+  { href: "/kagiya-erabikata/", label: "鍵屋の選び方｜電話で確認する質問" },
+  { href: "/kagiya-kougaku-seikyuu/", label: "鍵屋に高額請求されたときの対処" },
+  { href: "/shinya-kagiake/", label: "深夜・早朝に鍵屋を呼ぶときの注意点" },
 ];
 
 const faqLd = {

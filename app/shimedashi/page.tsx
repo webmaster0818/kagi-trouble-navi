@@ -239,6 +239,21 @@ export default function ShimedashiPage() {
               </details>
             ))}
           </div>
+
+          {/* 関連する解説 */}
+          <h2 className="text-xl font-bold text-text-primary mt-10 mb-4">関連する解説</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { href: "/kagiya-erabikata/", label: "鍵屋の選び方｜電話で確認する質問" },
+              { href: "/kagiya-kougaku-seikyuu/", label: "鍵屋に高額請求されたときの対処" },
+              { href: "/shinya-kagiake/", label: "深夜・早朝に鍵屋を呼ぶときの注意点" },
+              { href: "/door-guard-shimedashi/", label: "ドアガードがかかって家に入れないとき" },
+            ].map((l, i) => (
+              <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
+                {l.label} →
+              </a>
+            ))}
+          </div>
         </article>
       </main>
 

@@ -88,6 +88,8 @@ const relatedLinks = [
   { href: "/junsei-key-saihakkou/", label: "メーカー純正キーの再発行", desc: "純正キー取り寄せの流れと必要なもの" },
   { href: "/dimple-key/", label: "ディンプルキーの基礎知識", desc: "登録制シリンダー・キーカードの仕組み" },
   { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処法", desc: "紛失時の動き方の全体像はこちら" },
+  { href: "/kagi-magatta/", label: "鍵が曲がった・変形したときの対処", desc: "曲げ戻さずに作り直す方法" },
+  { href: "/bunjo-mansion-kagi-koukan/", label: "分譲マンションの玄関の鍵交換", desc: "管理規約での扱いとオートロック連動の鍵" },
 ];
 
 const faqLd = {

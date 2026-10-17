@@ -104,6 +104,8 @@ const relatedLinks = [
   { href: "/kagi-mawaranai/", label: "鍵が回らない・回りにくい時の対処法", desc: "回転系トラブルの原因と対処" },
   { href: "/kagi-koukan-timing/", label: "鍵交換のタイミングと目安", desc: "摩耗した鍵を交換すべきサイン" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "業者へ依頼する前の費用の目安" },
+  { href: "/kagiana-abura/", label: "鍵穴に油を差してしまったときの対処", desc: "メーカーが案内する清掃と専用潤滑剤" },
+  { href: "/kagi-magatta/", label: "鍵が曲がった・変形したときの対処", desc: "曲げ戻さずに作り直す方法" },
 ];
 
 const faqLd = {

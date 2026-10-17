@@ -107,6 +107,7 @@ const relatedLinks = [
   { href: "/kagi-funshitsu/", label: "鍵をなくした時の対処法", desc: "紛失時にやるべきことを手順で解説" },
   { href: "/chintai-kagi-koukan-hiyou/", label: "賃貸の鍵交換費用は誰が負担？", desc: "賃貸の鍵まわりの費用負担ルール" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "依頼前に知っておきたい費用感" },
+  { href: "/kagi-magatta/", label: "鍵が曲がった・変形したときの対処", desc: "曲げ戻さずに作り直す方法" },
 ];
 
 const faqLd = {

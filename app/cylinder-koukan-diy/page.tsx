@@ -88,6 +88,8 @@ const relatedLinks = [
   { href: "/chintai-kagi-koukan-hiyou/", label: "賃貸の鍵交換費用と負担の考え方", desc: "賃貸物件で交換する場合の基礎知識" },
   { href: "/joumae-type-zukan/", label: "錠前タイプ図鑑", desc: "フロント刻印と錠の系統の見分け方" },
   { href: "/kagi-shurui-zukan/", label: "鍵の種類図鑑", desc: "防犯シリンダー選びの基礎知識" },
+  { href: "/genkan-kagi-koukan-dokoni/", label: "玄関の鍵交換はどこに頼む？", desc: "住まい別の連絡先と依頼先の違い" },
+  { href: "/bunjo-mansion-kagi-koukan/", label: "分譲マンションの玄関の鍵交換", desc: "管理規約での扱いとオートロック連動の鍵" },
 ];
 
 const faqLd = {

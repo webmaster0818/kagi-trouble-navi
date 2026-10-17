@@ -246,6 +246,19 @@ export default function TimingPage() {
               </details>
             ))}
           </div>
+
+          {/* 関連する解説 */}
+          <h2 className="text-xl font-bold text-text-primary mt-10 mb-4">関連する解説</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { href: "/genkan-kagi-koukan-dokoni/", label: "玄関の鍵交換はどこに頼む？" },
+              { href: "/ikkodate-kagi-koukan/", label: "一戸建ての鍵交換で確認すること" },
+            ].map((l, i) => (
+              <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
+                {l.label} →
+              </a>
+            ))}
+          </div>
         </article>
       </main>
 
