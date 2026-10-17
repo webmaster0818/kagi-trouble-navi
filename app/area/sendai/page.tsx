@@ -438,7 +438,7 @@ export default function AreaSendaiPage() {
             ※他の都市の比較は、<Link href="/area/tokyo/" className="text-primary underline">東京版</Link>・<Link href="/area/sapporo/" className="text-primary underline">札幌版</Link>・<Link href="/area/osaka/" className="text-primary underline">大阪版</Link>もご覧ください。
           </p>
           <p className="text-sm text-text-muted mb-8">
-            ※関西エリアの方は、関西中心に対応する<Link href="/agents/kagizaru/" className="text-primary underline">鍵猿</Link>も選択肢になります（<Link href="/area/osaka/" className="text-primary underline">大阪版の比較記事</Link>に掲載しています）。
+            ※関西エリアの方は、全国（6県を除く）に対応する<Link href="/agents/kagizaru/" className="text-primary underline">鍵猿</Link>も選択肢になります（<Link href="/area/osaka/" className="text-primary underline">大阪版の比較記事</Link>に掲載しています）。
           </p>
 
           <h3 id="hikaku" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">

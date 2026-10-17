@@ -452,7 +452,7 @@ export default function AreaWakayamaPage() {
             ※他の都市の比較は、<Link href="/area/osaka/" className="text-primary underline">大阪版</Link>・<Link href="/area/sakai/" className="text-primary underline">堺版</Link>・<Link href="/area/kobe/" className="text-primary underline">神戸版</Link>もご覧ください。
           </p>
           <p className="text-sm text-text-muted mb-8">
-            ※和歌山市を含む関西エリアでは、関西中心に対応する<Link href="/agents/kagizaru/" className="text-primary underline">鍵猿</Link>も選択肢になります（<Link href="/area/osaka/" className="text-primary underline">大阪版の比較記事</Link>に掲載しています）。
+            ※和歌山市を含む関西エリアでは、全国（6県を除く）に対応する<Link href="/agents/kagizaru/" className="text-primary underline">鍵猿</Link>も選択肢になります（<Link href="/area/osaka/" className="text-primary underline">大阪版の比較記事</Link>に掲載しています）。
           </p>
 
           <h3 id="hikaku" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">

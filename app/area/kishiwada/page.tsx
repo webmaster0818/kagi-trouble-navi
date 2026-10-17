@@ -455,7 +455,7 @@ export default function AreaPageKishiwada() {
             岸和田市内から依頼できる主要な鍵業者4社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。各社の対応エリアは「大阪府」としての一次確認値のため、岸和田市での詳細な対応可否・条件は依頼時に各社へご確認ください。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
           </p>
           <p className="text-sm text-text-muted mb-8">
-            ※岸和田市を含む関西エリアでは、関西中心に対応する<Link href="/agents/kagizaru/" className="text-primary underline">鍵猿</Link>も選択肢になります（<Link href="/area/osaka/" className="text-primary underline">大阪版の比較記事</Link>に掲載しています）。近隣エリアの比較は<Link href="/area/sakai/" className="text-primary underline">堺版</Link>・<Link href="/area/higashiosaka/" className="text-primary underline">東大阪市版</Link>もご覧ください。
+            ※岸和田市を含む関西エリアでは、全国（6県を除く）に対応する<Link href="/agents/kagizaru/" className="text-primary underline">鍵猿</Link>も選択肢になります（<Link href="/area/osaka/" className="text-primary underline">大阪版の比較記事</Link>に掲載しています）。近隣エリアの比較は<Link href="/area/sakai/" className="text-primary underline">堺版</Link>・<Link href="/area/higashiosaka/" className="text-primary underline">東大阪市版</Link>もご覧ください。
           </p>
 
           <h3 id="hikaku" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
