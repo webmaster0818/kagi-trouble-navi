@@ -122,7 +122,7 @@ export default function AgentCompareTable({ current }: { current?: string }) {
         </table>
       </div>
       <p className="text-xs text-slate-500 mt-3">
-        料金の目安: JAF非会員の鍵開け料金は25,630円です（一般的な解錠・昼間・一次確認済み）。これを大幅に上回る見積もりが提示された場合は、内訳（基本料金＋作業費＋出張料＋部品代）の説明を求めることをおすすめします。
+        料金の目安: JAFの公式料金例では、非会員が車のキー閉じこみで夜間（20時〜8時）・一般道でのドア開放作業を依頼した場合25,630円（税込）です（2026年10月18日確認）。これを大幅に上回る見積もりが提示された場合は、内訳（基本料金＋作業費＋出張料＋部品代）の説明を求めることをおすすめします。
         名前の似た業者の整理: <Link href="/agents/nitamei-kagiya/" className="text-blue-700 underline">名前が似た鍵屋の見分け方</Link>／
         関連: <Link href="/ryokin/" className="text-blue-700 underline">鍵開け・鍵交換の料金相場</Link>／<Link href="/ryokin-index/" className="text-blue-700 underline">主要業者の料金一次確認まとめ</Link>
       </p>

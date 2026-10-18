@@ -231,7 +231,7 @@ export default function NitameiKagiyaPage() {
             <h2 className="text-2xl font-bold border-l-4 border-amber-500 pl-4 mb-4">なぜ運営会社で見分ける必要があるのか</h2>
             <p className="leading-loose text-slate-700 mb-3">屋号が似ていても、料金の算出方法やキャンセル規定は会社ごとに異なります。当サイトが公式サイトで確認した範囲でも、出張料を別途請求する業者（4,400〜8,800円など）、夜間に割増料金がかかる業者（夜8時以降3,000円など）、作業開始から30分を超えると総額の全額がかかる規定の業者があります。</p>
             <p className="leading-loose text-slate-700 mb-3">口コミも同様です。「鍵の24時間救急車 評判」と検索して表示された「カギの救急車」の口コミは、別の会社に対する評判です。口コミサイトやGoogleマップでは、屋号に加えて運営会社名もご確認ください。</p>
-            <p className="leading-loose text-slate-700">料金の目安として、JAFの非会員がキー閉じ込みの解錠を依頼した場合の料金（夜間・一般道のドア開放で25,630円）と比較する方法もあります。詳しくは<Link href="/ryokin/" className="text-blue-700 underline">鍵開け・鍵交換の料金相場</Link>と<Link href="/ryokin-index/" className="text-blue-700 underline">主要業者の料金一次確認まとめ</Link>をご覧ください。</p>
+            <p className="leading-loose text-slate-700">料金の目安として、JAFの非会員がキー閉じ込みの解錠を依頼した場合の料金（夜間（20時〜8時）・一般道でのドア開放作業で25,630円・税込・JAF公式）と比較する方法もあります。詳しくは<Link href="/ryokin/" className="text-blue-700 underline">鍵開け・鍵交換の料金相場</Link>と<Link href="/ryokin-index/" className="text-blue-700 underline">主要業者の料金一次確認まとめ</Link>をご覧ください。</p>
           </section>
 
           <section className="mb-12">
