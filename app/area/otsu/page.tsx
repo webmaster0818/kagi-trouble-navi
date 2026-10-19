@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/otsu/";
-const UPDATED = "2026年10月15日";
-const UPDATED_ISO = "2026-10-15";
+const UPDATED = "2026年10月19日";
+const UPDATED_ISO = "2026-10-19";
 
 export const metadata: Metadata = {
   title: {
@@ -242,7 +242,7 @@ const faqs: AreaFaq[] = [
   },
   {
     q: "大津は「鍵猿」にも依頼できますか？",
-    a: "鍵猿は大阪に本社を置き関西エリアを中心に対応する鍵業者で、大津を含む滋賀の方も候補に加えられます。当サイトでは大阪版の比較記事で詳しく紹介しています。対応可否・料金・到着目安は依頼時に必ずご確認ください。",
+    a: "鍵猿は大阪に本社を置き全国（秋田・福井・鳥取・島根・徳島・宮崎を除く）に対応する鍵業者で、大津を含む滋賀の方も候補に加えられます。当サイトでは大阪版の比較記事で詳しく紹介しています。対応可否・料金・到着目安は依頼時に必ずご確認ください。",
     link: { href: "/agents/kagizaru/", label: "鍵猿の詳細ページはこちら" },
   },
   {
