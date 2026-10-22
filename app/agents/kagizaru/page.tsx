@@ -134,7 +134,7 @@ export default function KagizaruPage() {
           <section id="about" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">鍵猿とはどんなサービスか</h2>
             <p className="leading-loose mb-4 text-slate-700">鍵猿（かぎざる）は、SLS株式会社（大阪本社）が運営する鍵トラブル解決サービスです。プライバシーマークを取得し、自社コールセンターと自社スタッフによる施工体制で、鍵開け・鍵交換・鍵修理・鍵作成に全国対応しています。</p>
-            <p className="leading-loose mb-4 text-slate-700">基本料・見積料・出張料はすべて0円で、作業前に合計金額を提示し、追加請求を行わない料金体系を掲げています。1年間の無料工事保証・無償商品保証があり、年間10万件以上の問い合わせ実績を公表しています。</p>
+            <p className="leading-loose mb-4 text-slate-700">基本料・見積料・出張料はすべて0円で、作業前に合計金額を提示し、追加請求を行わない料金体系を掲げています。1年間の無料工事保証・無償商品保証があります。</p>
             <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 mt-6">
               <p className="font-bold text-slate-800 mb-2">名前の表記について</p>
               <p className="leading-loose text-slate-700 text-sm">公式サイトでの正式な表記は「<strong>鍵屋の鍵猿</strong>」です。検索では「鍵猿」「鍵ザル」「かぎざる」「猿鍵」などと表記されることがありますが、いずれも同じサービスを指します。旧ドメインの kagizaru.com は公式サイト（sls.co.jp/kagizaru/）へ転送されます（2026年9月30日確認）。運営会社を調べる場合は、「SLS株式会社」でご確認ください。</p>
