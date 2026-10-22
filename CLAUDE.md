@@ -28,3 +28,11 @@
 - 公式トップの「カギ開け8,000円」（税込/税別の記載なし）はサイト内で引用しない。8,000円〜表記は使わない。
 - 対象: agentsData（metaDesc・バッジ・料金表・FAQ）、/agents/seikatsu-kyukyusha/（FAQ・料金節）、companies.json（cons・priceRange）、TOP統計バー＋注記、エリア188ページ（紹介文・表の注記・比較表に「刻みキー」条件）。
 - 残す: TOP サービスカード「鍵開け／バイクの鍵 8,000円〜」と /kagi-funshitsu/ の「8,000円〜」は業者を特定しない相場目安（生活救急車の値ではない）。
+
+## 2026-10-22 業者データの古い記述を整理（site d9c9824 / deploy b463649fe＋空コミット2本）
+- agentsData の jbr・seikatsu-kyukyusha・kagizaru は静的ページ（app/agents/<slug>/page.tsx）があるため本文は表示されていなかった（一覧は name・slug のみ使用）。6/20 時点の「JBRグループ運営」「年間10万件以上」「大手レスキューグループのJBR」「43万件」「深夜早朝の追加料金なし」「年間5万件以上」などを削除して空にし、hasStaticPage: true を付けた。本文は page.tsx が正
+- scripts/gen_agent_pages.py の BRANDS（東証上場JBR運営・sq.jbr.co.jp 等）を空にした。3社のページはこのスクリプトで作り直さない
+- 鍵猿：ページ表示の「年間10万件以上の問い合わせ実績を公表」と companies.json（TOP 4位以下で非表示）の「年間対応5万件以上」「関西エリア最安級」を削除。10/22 は公式 kagizaru.com・sls.co.jp が終日 502 で確認できなかったため。公式で確認できたら出典付きで戻してよい
+- 生活救急車の公式確認（10/22）：運営 株式会社生活救急車（名古屋市中区栄1-14-15 RSビル502）、2022年11月にJBRから事業承継・JBRと資本関係なし（seikatu-rescue.jp/company/）、最短15分・施工件数240万件以上（公式トップ）。「年間10万件」「深夜早朝の追加料金なし」は公式に記載なし
+- JBR 公式（jbr.co.jp）は 10/22「PHPの脆弱性対応に伴う緊急メンテナンス」で 503。jbr ページの記述は 10/14 確認値のまま（変更なし）
+- Cloudflare Pages が最初の push（b463649fe）と1本目の空コミットでビルドを起動しなかった（GitHub の check-run 0件）。2本目の空コミットで起動し反映。未反映時は GitHub API の check-runs で起動有無を確かめる
