@@ -92,7 +92,7 @@ export default function SiteFooter() {
         </div>
         <div className="border-t border-white/10 pt-8 text-center text-xs text-white/60">
           <p>当サイトはアフィリエイトプログラムに参加しており、紹介先サービスへの申し込みにより報酬を受け取る場合があります。掲載料金は各社公式サイトで確認した金額または一般的な相場であり、実際の費用は各業者の見積もりにより異なります。</p>
-          <p className="mt-2">運営: 株式会社MediaX（東京都渋谷区） &copy; 2026 MediaX All Rights Reserved.</p>
+          <p className="mt-2">運営: 株式会社MediaX &copy; 2026 MediaX All Rights Reserved.</p>
         </div>
       </div>
     </footer>
