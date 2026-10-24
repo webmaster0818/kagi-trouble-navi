@@ -6,20 +6,20 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/nakano-ku/";
-const UPDATED = "2026年10月19日";
-const UPDATED_ISO = "2026-10-19";
+const UPDATED = "2026年10月24日";
+const UPDATED_ISO = "2026-10-24";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "【2026年最新】中野区の鍵開け・鍵交換業者おすすめ4選｜アパートの鍵紛失で大家・管理会社へ連絡する手順も解説する鍵屋比較｜鍵トラブルナビ",
+      "【2026年最新】中野区の鍵交換・鍵開け業者おすすめ4選｜料金比較と区の補助金（費用の4分の3・上限3万円）｜鍵トラブルナビ",
   },
   description:
-    "中野区で鍵開け・鍵交換を依頼できる鍵業者4社を一次確認値で比較。カギ110番（鍵開け11,000円〜）・鍵の生活救急車（最短15分）・鍵のレスキュー・カギの救急車の料金と受付時間、アパートの鍵をなくしたときの大家・管理会社への連絡の仕方と費用負担の考え方まで当サイト編集部が中立的な立場でまとめています。",
+    "中野区で鍵交換・鍵開けを頼める4社の料金と受付時間を公式表示で比較。防犯性能の高い玄関錠・補助錠への交換は中野区の防犯機器補助（費用の4分の3・上限3万円）の対象で、申請条件と必要書類、アパートの鍵紛失時の連絡もまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title:
-      "【2026年最新】中野区の鍵開け・鍵交換業者おすすめ4選｜アパートの鍵紛失で大家・管理会社へ連絡する手順も解説する鍵屋比較",
+      "【2026年最新】中野区の鍵交換・鍵開け業者おすすめ4選｜料金比較と区の補助金（費用の4分の3・上限3万円）",
     description:
       "中野区で鍵開け・鍵交換を依頼できる鍵業者4社を、料金・受付時間の一次確認値で比較。一人暮らしのアパートで鍵をなくしたとき、大家・管理会社への連絡内容と、無断で行ってはいけないことも解説します。",
     url: `${SITE}${PATH}`,
@@ -233,6 +233,11 @@ const faqs: AreaFaq[] = [
     link: { href: "/chintai-kagi-koukan-hiyou/", label: "賃貸の鍵交換費用はこちら" },
   },
   {
+    q: "中野区の鍵交換に補助金は使えますか？",
+    a: "中野区の「防犯機器等購入緊急補助事業」（令和8年度）では、区に住民登録があり区内の住宅にお住まいの方が、令和8年4月1日から令和9年1月29日までに新品を購入・設置した防犯機器等について、購入費と設置費の合計の4分の3（上限3万円・千円未満切り捨て）が補助されます。対象品目には「防犯性能の高い玄関錠」と「防犯性能の高い玄関補助錠」が含まれますが、既存の鍵に後付けするスマートロックは対象外です。申請は1世帯1回、受付は令和9年1月29日まで（オンラインまたは区役所8階の窓口。FAX・郵送は不可）で、宛名が申請者本人のフルネームの領収書、メーカー名・型番が分かる資料、設置後の写真などが必要です。アパート・マンションなどの共同住宅では、管理者や管理組合との設置に関する同意書が求められます。令和7年度に同じ補助を受けた世帯は対象外で、予算に達すると期間中でも終了する場合があります。依頼前に区の公式ページで最新の条件をご確認ください（2026年10月24日確認）。",
+    link: { href: "https://www.city.tokyo-nakano.lg.jp/kurashi/bohan/hanzaihigai/20260403.html", label: "中野区公式：令和8年度 防犯機器等購入緊急補助事業（外部サイト）" },
+  },
+  {
     q: "深夜や早朝でも中野区に来てくれますか？",
     a: "カギ110番・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし、深夜帯は割増料金や到着時間の変動が生じる場合があるため、電話の際に深夜料金の有無と到着目安を確認してから依頼することをおすすめします。なお各社の対応エリアは「東京都」としての一次確認値のため、中野区での詳細は依頼時に各社へご確認ください。",
   },
@@ -296,7 +301,7 @@ export default function AreaNakanoKuPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "【2026年最新】中野区の鍵開け・鍵交換業者おすすめ4選｜アパートの鍵紛失で大家・管理会社へ連絡する手順も解説する鍵屋比較",
+      "【2026年最新】中野区の鍵交換・鍵開け業者おすすめ4選｜料金比較と区の補助金（費用の4分の3・上限3万円）",
     description:
       "中野区で鍵開け・鍵交換を依頼できる鍵業者4社を、料金・受付時間の一次確認値で比較した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
@@ -365,7 +370,7 @@ export default function AreaNakanoKuPage() {
           {/* h1・更新日・タグchips */}
           <header className="grid gap-4">
             <h1 className="text-2xl md:text-[32px] font-bold leading-normal tracking-wide text-foreground">
-              【2026年最新】中野区の鍵開け・鍵交換業者おすすめ4選｜アパートの鍵紛失で大家・管理会社へ連絡する手順も解説する鍵屋比較
+              【2026年最新】中野区の鍵交換・鍵開け業者おすすめ4選｜料金比較と区の補助金（費用の4分の3・上限3万円）
             </h1>
             <div>
               <span className="inline-block rounded-[2px] bg-primary px-2 py-1 text-xs font-bold tracking-wide text-white">
@@ -634,7 +639,7 @@ export default function AreaNakanoKuPage() {
                     {f.link && (
                       <>
                         {" "}
-                        <Link href={f.link.href} className="text-primary underline">{f.link.label}</Link>
+                        {f.link.href.startsWith("http") ? (<a href={f.link.href} target="_blank" rel="noopener noreferrer" className="text-primary underline">{f.link.label}</a>) : (<Link href={f.link.href} className="text-primary underline">{f.link.label}</Link>)}
                       </>
                     )}
                   </span>

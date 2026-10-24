@@ -6,20 +6,20 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/minato-ku/";
-const UPDATED = "2026年10月15日";
-const UPDATED_ISO = "2026-10-15";
+const UPDATED = "2026年10月24日";
+const UPDATED_ISO = "2026-10-24";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "【2026年最新】港区の鍵開け・鍵交換業者おすすめ4選｜オフィスの鍵とセキュリティカードの紛失時の連絡順も解説する鍵屋比較｜鍵トラブルナビ",
+      "【2026年最新】港区の鍵交換・鍵開け業者おすすめ4選｜料金比較と区の防犯助成（費用の4分の3・上限4万円）｜鍵トラブルナビ",
   },
   description:
-    "港区で鍵開け・鍵交換を依頼できる鍵業者4社を一次確認値で比較。カギ110番（鍵開け11,000円〜）・鍵の生活救急車（最短15分）・鍵のレスキュー・カギの救急車の料金と受付時間、オフィスの鍵・セキュリティカードをなくした場合の連絡順と、ビル管理会社との管轄の切り分けまで、編集部が中立的な立場でまとめています。",
+    "港区で鍵交換・鍵開けを頼める4社の料金と受付時間を公式表示で比較。防犯性能の高い錠への交換は港区の住まいの防犯対策助成（費用の4分の3・上限4万円）の対象で、申請条件と領収書の注意点、オフィスの鍵紛失時の連絡順もまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title:
-      "【2026年最新】港区の鍵開け・鍵交換業者おすすめ4選｜オフィスの鍵とセキュリティカードの紛失時の連絡順も解説する鍵屋比較",
+      "【2026年最新】港区の鍵交換・鍵開け業者おすすめ4選｜料金比較と区の防犯助成（費用の4分の3・上限4万円）",
     description:
       "港区で鍵開け・鍵交換を依頼できる鍵業者4社を、料金・受付時間の一次確認値で比較。オフィスビルの共用部・専有部の管轄の切り分けと、物理鍵とセキュリティカードを併用する職場での紛失時の連絡順も整理しています。",
     url: `${SITE}${PATH}`,
@@ -228,6 +228,11 @@ const faqs: AreaFaq[] = [
     link: { href: "/ryokin/", label: "料金相場の詳細はこちら" },
   },
   {
+    q: "港区の鍵交換に補助金（助成金）は使えますか？",
+    a: "港区の「住まいの防犯対策助成事業」（令和8年度）では、区内に居住し住民登録をしている世帯が、現に住んでいる住宅で行った防犯対策の費用の4分の3（100円未満切り捨て・上限40,000円）が助成されます。玄関の対象品目には、防犯性能の高い錠の取り付け・交換のほか、補助錠、サムターンカバー、カム送り防止具、ガードプレート、電気錠（スマートドア）の取り付け・交換が含まれます。申請は費用を支払った日から90日以内に、電子申請（LoGoフォーム）または各地区総合支所の協働推進課の窓口で行い、申請書・領収書の原本・設置状況が分かる写真を提出します。領収書には申請者氏名・領収年月日・金額・メーカー名と製品名・製品番号・施工内容・発行事業者の住所と名称・印の記載が必要です。令和8年度は1世帯1回で、賃貸住宅の方も申請できますが、所有者の了解が必要です。事務所・事業所の対策は対象外のため、オフィスの鍵交換には使えません。依頼前に区の公式ページで最新の条件をご確認ください（2026年10月24日確認）。",
+    link: { href: "https://www.city.minato.tokyo.jp/seikatsuanzen/bosai-anzen/sekatsuanzen/jose/bohantaisaku.html", label: "港区公式：住まいの防犯対策助成事業（外部サイト）" },
+  },
+  {
     q: "深夜や早朝でも港区に来てくれますか？",
     a: "カギ110番・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし、深夜帯は割増料金や到着時間の変動が生じる場合があるため、電話の際に深夜料金の有無と到着目安を確認してから依頼することをおすすめします。なお各社の対応エリアは「東京都」としての一次確認値のため、港区での詳細は依頼時に各社へご確認ください。",
   },
@@ -292,7 +297,7 @@ export default function AreaMinatoKuPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "【2026年最新】港区の鍵開け・鍵交換業者おすすめ4選｜オフィスの鍵とセキュリティカードの紛失時の連絡順も解説する鍵屋比較",
+      "【2026年最新】港区の鍵交換・鍵開け業者おすすめ4選｜料金比較と区の防犯助成（費用の4分の3・上限4万円）",
     description:
       "港区で鍵開け・鍵交換を依頼できる鍵業者4社を、料金・受付時間の一次確認値で比較した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
@@ -361,7 +366,7 @@ export default function AreaMinatoKuPage() {
           {/* h1・更新日・タグchips */}
           <header className="grid gap-4">
             <h1 className="text-2xl md:text-[32px] font-bold leading-normal tracking-wide text-foreground">
-              【2026年最新】港区の鍵開け・鍵交換業者おすすめ4選｜オフィスの鍵とセキュリティカードの紛失時の連絡順も解説する鍵屋比較
+              【2026年最新】港区の鍵交換・鍵開け業者おすすめ4選｜料金比較と区の防犯助成（費用の4分の3・上限4万円）
             </h1>
             <div>
               <span className="inline-block rounded-[2px] bg-primary px-2 py-1 text-xs font-bold tracking-wide text-white">
@@ -630,7 +635,7 @@ export default function AreaMinatoKuPage() {
                     {f.link && (
                       <>
                         {" "}
-                        <Link href={f.link.href} className="text-primary underline">{f.link.label}</Link>
+                        {f.link.href.startsWith("http") ? (<a href={f.link.href} target="_blank" rel="noopener noreferrer" className="text-primary underline">{f.link.label}</a>) : (<Link href={f.link.href} className="text-primary underline">{f.link.label}</Link>)}
                       </>
                     )}
                   </span>
