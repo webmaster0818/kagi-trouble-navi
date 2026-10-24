@@ -39,7 +39,7 @@ const kyukyusha: Row[] = [
     operator: "株式会社アスティ24（埼玉県川越市・2003年設立）",
     site: "key.asti24.co.jp（旧サイト kagi-trouble24.jp）",
     siteUrl: "https://key.asti24.co.jp/company/",
-    note: "首都圏中心の出張鍵屋。夜8時以降3,000円・深夜12時以降5,000円の割増を公式FAQで明示",
+    note: "公式の対応地域は44都道府県の出張鍵屋。夜8時以降3,000円・深夜12時以降5,000円の割増を公式FAQで明示",
     review: "/agents/kagi-trouble-kyukyusha/",
   },
   {

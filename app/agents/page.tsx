@@ -23,7 +23,7 @@ const taglines: Record<string, string> = {
   kagizaru: "鍵屋の鍵猿（SLS株式会社）・全国（秋田・福井・鳥取・島根・徳島・宮崎を除く）・最短15分・1年保証",
   "kagi-kyukyusha": "加盟店ネットワーク型・「鍵の救急車」等の表記は別業者と公式が告知",
   "kagi-24h-kyukyusha": "株式会社24時間救急車・鍵開け6,600円〜＋出張料・カギの救急車とは別会社",
-  "kagi-trouble-kyukyusha": "株式会社アスティ24（川越）・首都圏中心・夜間割増を公式に明示",
+  "kagi-trouble-kyukyusha": "株式会社アスティ24（川越）・対応地域44都道府県・夜間割増を公式に明示",
 };
 
 export default function AgentsIndexPage() {
