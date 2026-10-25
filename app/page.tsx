@@ -23,24 +23,14 @@ const TROUBLES = [
 ];
 
 const SERVICES = [
-  { icon: "kagiake", name: "鍵開け", price: "8,000円〜", href: "/shimedashi/" },
-  { icon: "kagi-koukan", name: "鍵交換", price: "10,000円〜", href: "/kagi-koukan-timing/" },
-  { icon: "kagi-shuri", name: "鍵修理", price: "5,000円〜", href: "/kagi-mawaranai/" },
-  { icon: "kinko", name: "金庫", price: "15,000円〜", href: "/kinko-kaijo/" },
-  { icon: "kuruma-kagi", name: "車の鍵", price: "12,000円〜", href: "/car-inlock/" },
-  { icon: "bike", name: "バイクの鍵", price: "8,000円〜", href: "/bike-kagi-funshitsu/" },
+  { icon: "kagiake", name: "鍵開け", href: "/shimedashi/" },
+  { icon: "kagi-koukan", name: "鍵交換", href: "/kagi-koukan-timing/" },
+  { icon: "kagi-shuri", name: "鍵修理", href: "/kagi-mawaranai/" },
+  { icon: "kinko", name: "金庫", href: "/kinko-kaijo/" },
+  { icon: "kuruma-kagi", name: "車の鍵", href: "/car-inlock/" },
+  { icon: "bike", name: "バイクの鍵", href: "/bike-kagi-funshitsu/" },
 ];
 
-const PRICES = [
-  { service: "鍵開け（一般的な鍵）", price: "8,000〜15,000円", time: "5〜30分" },
-  { service: "鍵開け（ディンプルキー）", price: "15,000〜30,000円", time: "15〜60分" },
-  { service: "鍵交換（シリンダー交換）", price: "10,000〜25,000円", time: "15〜40分" },
-  { service: "鍵交換（ディンプルキー）", price: "20,000〜40,000円", time: "15〜40分" },
-  { service: "鍵修理", price: "5,000〜15,000円", time: "10〜30分" },
-  { service: "金庫の鍵開け", price: "15,000〜50,000円", time: "30〜120分" },
-  { service: "車のインロック解錠", price: "12,000〜30,000円", time: "10〜40分" },
-  { service: "バイクの鍵開け", price: "8,000〜20,000円", time: "10〜30分" },
-];
 
 const FRAUD = [
   {
@@ -271,14 +261,13 @@ export default function Home() {
       {/* サービス別 */}
       <section id="service" className="scroll-mt-20 py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-4">
-          <SectionHead eyebrow="SERVICE" title="サービス別で探す" lead="必要なサービスから、料金の目安と関連ガイドをご確認いただけます。" />
+          <SectionHead eyebrow="SERVICE" title="サービス別で探す" lead="必要なサービスから、関連ガイドをご確認いただけます。" />
           <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5 lg:grid-cols-6">
             {SERVICES.map((s) => (
               <li key={s.name}>
                 <Link href={s.href} className="kt-card kt-card-link group flex h-full flex-col overflow-hidden">
                   <span className="flex flex-1 flex-col items-center justify-center px-3 pb-4 pt-6">
                     <Icon name={s.icon} size={128} className="h-[80px] w-[80px] md:h-[96px] md:w-[96px]" />
-                    <span className="mt-3 text-[12px] font-bold text-text-muted">{s.price}</span>
                   </span>
                   <span className="flex min-h-[48px] items-center justify-center bg-primary px-2 py-2.5 text-[14px] font-bold tracking-wide text-white transition-colors group-hover:bg-primary-dark md:text-[15px]">
                     {s.name}
@@ -405,33 +394,13 @@ export default function Home() {
       {/* 料金相場 */}
       <section id="price" className="scroll-mt-20 py-16 md:py-24">
         <div className="mx-auto max-w-4xl px-4">
-          <SectionHead eyebrow="PRICE" title="サービス別の料金相場" lead="2026年7月時点の料金相場です。" icon="ryokin" />
-          <div className="overflow-x-auto rounded-[10px] border border-border bg-white">
-            <table className="w-full border-collapse text-sm md:text-[15px]">
-              <thead>
-                <tr className="bg-primary text-white">
-                  <th className="px-4 py-3.5 text-left font-bold md:px-6">サービス</th>
-                  <th className="px-4 py-3.5 text-left font-bold md:px-6">料金相場</th>
-                  <th className="px-4 py-3.5 text-left font-bold md:px-6">作業時間</th>
-                </tr>
-              </thead>
-              <tbody>
-                {PRICES.map((row) => (
-                  <tr key={row.service} className="border-t border-border">
-                    <td className="px-4 py-3.5 font-medium text-foreground md:px-6">{row.service}</td>
-                    <td className="whitespace-nowrap px-4 py-3.5 font-bold text-primary md:px-6">{row.price}</td>
-                    <td className="whitespace-nowrap px-4 py-3.5 text-text-muted md:px-6">{row.time}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="mt-4 text-center text-xs text-text-muted">
-            ※ 上記は目安です。料金は鍵の種類・時間帯・地域によって変動するため、必ず事前に見積もりをご確認ください。
+          <SectionHead eyebrow="PRICE" title="サービス別の料金" lead="鍵開け・鍵交換の料金は、鍵の種類・時間帯・地域によって変わります。" icon="ryokin" />
+          <p className="text-center text-sm leading-relaxed text-text-secondary md:text-[15px]">
+            金額は鍵の種類・作業内容・時間帯・地域によって変わるため、業者の見積もりで確認してください。各社が公式サイトに表示している料金は、<Link href="/ryokin-index/" className="text-primary underline">鍵トラブル料金インデックス（確認日を記載）</Link>にまとめています。
           </p>
           <div className="mt-8 text-center">
             <Link href="/ryokin/" className="kt-btn">
-              鍵開け・鍵交換の料金相場を詳しく見る
+              料金の内訳と見積もりの確認点を見る
               <ArrowRight />
             </Link>
           </div>

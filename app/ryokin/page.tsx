@@ -3,31 +3,21 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "鍵開け・鍵交換の料金相場｜出張料・深夜割増・費用を抑える方法 | 鍵トラブルナビ",
   description:
-    "鍵開け・鍵交換の料金相場を作業別にまとめて解説。一般錠の鍵開けは8,000〜15,000円、ディンプルキーは15,000〜30,000円が目安。出張料・深夜割増などの追加料金、高額請求を避けるための確認事項、業者の選び方を、2026年7月時点の情報にもとづいて解説します。",
+    "鍵開け・鍵交換の料金の内訳（基本料金・作業費・出張料・部品代・深夜割増）と料金を左右する要因、高額請求を避けるための確認事項、業者の選び方を解説します。各社の公式料金は確認日つきの一覧に掲載しています。",
   alternates: { canonical: "https://kagi-trouble-navi.com/ryokin/" },
 };
 
-const priceRows = [
-  { service: "鍵開け（一般的な鍵）", price: "8,000〜15,000円", time: "5〜30分" },
-  { service: "鍵開け（ディンプルキー）", price: "15,000〜30,000円", time: "15〜60分" },
-  { service: "鍵交換（シリンダー交換）", price: "10,000〜25,000円", time: "15〜40分" },
-  { service: "鍵交換（ディンプルキー）", price: "20,000〜40,000円", time: "15〜40分" },
-  { service: "鍵修理", price: "5,000〜15,000円", time: "10〜30分" },
-  { service: "金庫の鍵開け", price: "15,000〜50,000円", time: "30〜120分" },
-  { service: "車のインロック解錠", price: "12,000〜30,000円", time: "10〜40分" },
-  { service: "バイクの鍵開け", price: "8,000〜20,000円", time: "10〜30分" },
-];
 
 const factors = [
   { title: "鍵の種類", desc: "一般的なディスクシリンダーは安価ですが、ディンプルキーや電子錠・特殊錠は防犯性が高く解錠に技術と時間がかかるため料金が上がります。" },
-  { title: "作業時間帯（深夜・早朝割増）", desc: "多くの業者で深夜・早朝・休日は割増料金（数千円〜）がかかります。急ぎでない場合は、日中に依頼するほうが費用を抑えられます。" },
-  { title: "出張料・見積もり", desc: "基本料金とは別に出張料（3,000円前後）がかかる場合があります。出張・見積もり無料を明記している業者を選ぶことをおすすめします。" },
+  { title: "作業時間帯（深夜・早朝割増）", desc: "多くの業者で深夜・早朝・休日は割増料金がかかります。急ぎでない場合は、日中に依頼するほうが費用を抑えられます。" },
+  { title: "出張料・見積もり", desc: "基本料金とは別に出張料がかかる場合があります。出張・見積もり無料を明記している業者を選ぶことをおすすめします。" },
   { title: "作業の難易度・破壊の有無", desc: "鍵を壊さず開けられるか、シリンダー交換が必要かで費用が変わります。破壊解錠後に交換となると部品代が追加されます。" },
 ];
 
 const faqs = [
-  { q: "鍵開けの料金相場はいくらですか？", a: "一般的な鍵（ディスクシリンダー等）の鍵開けは8,000〜15,000円、防犯性の高いディンプルキーは15,000〜30,000円が目安です。これに出張料や深夜割増が加わる場合があります。正確な金額は鍵の種類・状況により変わるため、必ず作業前に見積もりをご確認ください。" },
-  { q: "深夜や早朝に頼むと高くなりますか？", a: "多くの業者で深夜・早朝・休日は割増料金（数千円程度）が設定されています。緊急でない場合は、日中に依頼するほうが費用を抑えられます。割増の有無と金額は依頼前に必ず確認してください。" },
+  { q: "鍵開けの料金相場はいくらですか？", a: "金額は鍵の種類・作業内容・時間帯・地域によって変わり、出張料や深夜割増が加わる場合もあるため、業者の見積もりで確認してください。各社が公式サイトに表示している料金は、鍵トラブル料金インデックス（確認日を記載）にまとめています。" },
+  { q: "深夜や早朝に頼むと高くなりますか？", a: "多くの業者で深夜・早朝・休日は割増料金が設定されています。緊急でない場合は、日中に依頼するほうが費用を抑えられます。割増の有無と金額は依頼前に必ず確認してください。" },
   { q: "鍵開けで高額請求を避けるにはどうすればよいですか？", a: "①作業前に必ず総額の見積もりを書面・口頭で確認する、②「出張・見積もり無料」「追加料金なし」を明記する業者を選ぶ、③相場より極端に安い広告（『290円〜』等）は現地で高額請求される例があるため注意する、の3点が有効です。" },
   { q: "賃貸住宅の鍵開け・鍵交換は自分で依頼してもよいですか？", a: "鍵開け（締め出し）は入居者の判断で依頼できますが、鍵交換は原状回復や費用負担の関係で、事前に管理会社・大家へ連絡するのが原則です。交換費用の負担者は契約内容によって異なります。" },
   { q: "料金以外で業者を選ぶ際のポイントはありますか？", a: "対応エリアと到着スピード、24時間対応か、見積もりの明確さ、実績・口コミ、追加料金の有無を比較することをおすすめします。当サイトの業者比較もご参照ください。" },
@@ -85,11 +75,11 @@ const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "鍵開け・鍵交換の料金相場",
-  description: "鍵開け・鍵交換の作業別料金相場と追加料金、費用を抑える方法を解説した記事です。",
+  description: "鍵開け・鍵交換の料金の内訳と追加料金、費用を抑える方法を解説した記事です。",
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-06-30",
-  dateModified: "2026-07-07",
+  dateModified: "2026-10-25",
 };
 
 export default function RyokinPage() {
@@ -114,50 +104,25 @@ export default function RyokinPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             鍵開け・鍵交換の料金相場
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年7月7日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月25日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
             <p className="font-bold text-primary mb-2">鍵開け・鍵交換の料金相場の要点</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
-              鍵開けの料金相場は、一般的な鍵で<strong>8,000〜15,000円</strong>、防犯性の高いディンプルキーで<strong>15,000〜30,000円</strong>が目安です。鍵交換はシリンダー交換で<strong>10,000〜25,000円</strong>（ディンプルキーは20,000〜40,000円）が目安です。これに出張料（3,000円前後）や深夜・早朝の割増が加わる場合があります。鍵の種類や状況で金額が変わるため、<strong>作業前に必ず総額の見積もりを確認</strong>することが、高額請求を避けるうえで最も重要です。
+              鍵開け・鍵交換の料金は、鍵の種類・作業内容・時間帯・地域によって変わり、出張料や深夜・早朝の割増が加わる場合もあります。金額は業者の見積もりで確認してください。鍵の種類や状況で金額が変わるため、<strong>作業前に必ず総額の見積もりを確認</strong>することが、高額請求を避けるうえで最も重要です。
             </p>
           </div>
 
           {/* 一次確認版への導線 */}
           <div className="bg-secondary/10 border border-secondary/30 rounded-2xl p-5 mb-8">
             <p className="text-sm text-text-secondary leading-relaxed">
-              下記は一般的な<strong>相場の目安</strong>です。<strong>掲載業者の公式サイトに実際に表示されている料金</strong>を当サイトが確認・集計した業者別の一覧は、
+              <strong>掲載業者の公式サイトに実際に表示されている料金</strong>を当サイトが確認・集計した業者別の一覧は、
               <a href="/ryokin-index/" className="text-primary font-bold underline">鍵トラブル料金インデックス（業者・サービス別、確認日を記載）</a>
               で掲載しています。
             </p>
           </div>
 
-          {/* 料金相場テーブル */}
-          <h2 className="text-xl font-bold text-text-primary mb-4">作業別の料金相場一覧</h2>
-          <div className="overflow-x-auto mb-4 rounded-xl border border-black/10">
-            <table className="w-full text-sm min-w-[520px]">
-              <thead>
-                <tr className="bg-primary text-white">
-                  <th className="px-4 py-3 text-left font-bold">作業内容</th>
-                  <th className="px-4 py-3 text-left font-bold">料金相場（税込目安）</th>
-                  <th className="px-4 py-3 text-left font-bold">作業時間の目安</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceRows.map((r, i) => (
-                  <tr key={i} className={i % 2 ? "bg-surface-alt" : "bg-white"}>
-                    <td className="px-4 py-3 font-medium text-text-primary">{r.service}</td>
-                    <td className="px-4 py-3 text-primary font-bold whitespace-nowrap">{r.price}</td>
-                    <td className="px-4 py-3 text-text-muted whitespace-nowrap">{r.time}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-text-muted mb-10">
-            ※上記は一般的な相場の目安です。鍵の種類・防犯性能・建物の状況・時間帯により変動します。実際の費用は各業者の見積もりでご確認ください。
-          </p>
 
           {/* 料金の内訳構造 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">料金の内訳構造｜「電話口の最低料金」と「現場の総額」はなぜ違うのか</h2>

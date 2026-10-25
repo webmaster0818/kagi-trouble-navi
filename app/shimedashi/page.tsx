@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "家を締め出された時の対処法【2026年版】鍵開け料金相場・賃貸/オートロックの注意点 | 鍵トラブルナビ",
   description:
-    "家の締め出し（鍵の閉め出し）で今すぐ入りたい時の対処法を手順で解説します。賃貸物件は管理会社へ、オートロック物件は管理人を通じて連絡してください。鍵業者に依頼する場合の料金相場は、一般的な鍵で8,000〜15,000円です。深夜割増・本人確認・避けるべき行動までご紹介します。",
+    "家の締め出し（鍵の閉め出し）で今すぐ入りたい時の対処法を手順で解説します。賃貸物件は管理会社へ、オートロック物件は管理人を通じて連絡してください。鍵業者に依頼する前の見積もりの確認点、深夜割増・本人確認・避けるべき行動までご紹介します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/shimedashi/" },
 };
 
@@ -16,8 +16,8 @@ const steps = [
 ];
 
 const faqs = [
-  { q: "家を締め出された時、鍵業者に依頼するといくらかかりますか？", a: "一般的な鍵（ディスクシリンダー等）の鍵開けで8,000〜15,000円、防犯性の高いディンプルキーで15,000〜30,000円が相場の目安です。これに出張料（3,000円前後）や深夜・早朝の割増が加わる場合があります。作業前に必ず総額の見積もりをご確認ください。" },
-  { q: "深夜の締め出しでも鍵業者は来てくれますか？", a: "24時間対応の業者であれば、深夜でも出張対応を受けられます。ただし多くの業者で深夜・早朝は割増料金（数千円程度）がかかります。始発まで待てる状況であれば、日中に依頼したほうが費用を抑えられます。" },
+  { q: "家を締め出された時、鍵業者に依頼するといくらかかりますか？", a: "金額は鍵の種類・作業内容・時間帯によって変わり、出張料や深夜・早朝の割増が加わる場合もあります。金額は業者の見積もりで確認し、作業前に必ず総額をご確認ください。" },
+  { q: "深夜の締め出しでも鍵業者は来てくれますか？", a: "24時間対応の業者であれば、深夜でも出張対応を受けられます。ただし多くの業者で深夜・早朝は割増料金がかかります。始発まで待てる状況であれば、日中に依頼したほうが費用を抑えられます。" },
   { q: "身分証も家の中にあります。本人確認はどうなりますか？", a: "財布ごと閉め出された場合でも、解錠後に室内の身分証を提示する方法で対応するのが一般的です。正規の業者ほど本人確認を徹底しています（悪用防止のため）。反対に、確認をまったく行わない業者には注意が必要です。" },
   { q: "賃貸で締め出された場合、鍵開け費用は誰が負担しますか？", a: "入居者の不注意による締め出しは、原則として入居者負担です。ただし、管理会社がスペアキーで無料対応する場合や、加入している火災保険・入居者サポートに鍵開け特典が含まれる場合があるため、依頼前に確認することで費用を抑えられます。" },
   { q: "警察は鍵を開けてくれますか？", a: "原則として警察は住宅の鍵開け作業は行いません（緊急の人命に関わる場合を除く）。締め出しは鍵業者か管理会社への連絡が基本です。鍵を紛失した場合は、悪用防止のため警察への遺失届の提出をおすすめします。" },
@@ -44,7 +44,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-07-02",
-  dateModified: "2026-07-02",
+  dateModified: "2026-10-25",
 };
 
 export default function ShimedashiPage() {
@@ -69,13 +69,13 @@ export default function ShimedashiPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             家を締め出された時に今すぐ入るための対処法【2026年版】
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年7月2日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月25日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
             <p className="font-bold text-primary mb-2">締め出し時の対処の要点</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
-              家を締め出された場合は、<strong>①合鍵・家族・他の入口の確認 → ②賃貸物件は管理会社・大家へ連絡 → ③解決しなければ鍵業者に依頼</strong>の順に対応すると、最も早く、費用を抑えて解決できます。鍵業者の鍵開けの料金相場は、一般的な鍵で<strong>8,000〜15,000円</strong>、ディンプルキーで<strong>15,000〜30,000円</strong>です（出張料・深夜割増が加わる場合があります）。窓を割る・こじ開けるといった行為は、修理費のほうが高額になるため避けてください。
+              家を締め出された場合は、<strong>①合鍵・家族・他の入口の確認 → ②賃貸物件は管理会社・大家へ連絡 → ③解決しなければ鍵業者に依頼</strong>の順に対応すると、最も早く、費用を抑えて解決できます。鍵業者の料金は鍵の種類や時間帯で変わるため、金額は業者の見積もりで確認してください。窓を割る・こじ開けるといった行為は、修理費のほうが高額になるため避けてください。
             </p>
           </div>
 
@@ -130,7 +130,7 @@ export default function ShimedashiPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             {[
               { title: "窓を割って入る", desc: "ガラス交換費用（数万円〜）が鍵開けより高額になるうえ、ケガや通報のリスクもあります。防犯ガラスの場合は、割ること自体が困難です。" },
-              { title: "針金などでこじ開ける", desc: "シリンダー内部を傷めると鍵開けでは済まず交換（10,000〜40,000円）が必要になり、かえって高額になります。" },
+              { title: "針金などでこじ開ける", desc: "シリンダー内部を傷めると鍵開けでは済まず交換が必要になり、かえって高額になります。" },
               { title: "ベランダ・窓からの侵入", desc: "転落事故の危険があるほか、不審者として通報される例もあります。特に2階以上では、絶対に行わないでください。" },
               { title: "相場より極端に安い広告で即決", desc: "「◯◯円〜」の過度に安い表示は現地で高額請求になる例があります。作業前に総額見積もりを確認してください。" },
             ].map((n, i) => (
@@ -163,33 +163,9 @@ export default function ShimedashiPage() {
           </ol>
 
           {/* 料金 */}
-          <h2 className="text-xl font-bold text-text-primary mb-4">鍵業者に依頼した場合の料金の目安</h2>
-          <div className="overflow-x-auto mb-4 rounded-xl border border-black/10">
-            <table className="w-full text-sm min-w-[480px]">
-              <thead>
-                <tr className="bg-primary text-white">
-                  <th className="px-4 py-3 text-left font-bold">状況</th>
-                  <th className="px-4 py-3 text-left font-bold">料金相場（税込目安）</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ["鍵開け（一般的な刻みキー）", "8,000〜15,000円"],
-                  ["鍵開け（ディンプルキー）", "15,000〜30,000円"],
-                  ["出張料（かかる場合）", "3,000円前後"],
-                  ["深夜・早朝の割増", "数千円程度"],
-                  ["開かず交換になった場合", "＋10,000〜40,000円"],
-                ].map((r, i) => (
-                  <tr key={i} className={i % 2 ? "bg-surface-alt" : "bg-white"}>
-                    <td className="px-4 py-3 font-medium text-text-primary">{r[0]}</td>
-                    <td className="px-4 py-3 text-primary font-bold whitespace-nowrap">{r[1]}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-text-muted mb-10">
-            ※一般的な相場の目安です。鍵の種類・建物の状況・時間帯により変動します。詳しくは<a href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場</a>をご覧ください。
+          <h2 className="text-xl font-bold text-text-primary mb-4">鍵業者に依頼した場合の料金</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            金額は鍵の種類・作業内容・時間帯・地域によって変わるため、業者の見積もりで確認してください。各社が公式サイトに表示している料金は<a href="/ryokin-index/" className="text-primary underline">鍵トラブル料金インデックス（確認日を記載）</a>にまとめています。
           </p>
 
           {/* 依頼前チェックリスト */}
@@ -202,7 +178,7 @@ export default function ShimedashiPage() {
               { title: "総額見積もりを「作業前」に確認する", desc: "基本料金・作業費・出張料・時間帯割増をすべて含んだ総額について、作業が始まる前に提示を受けてください。「開けてみないと分からない」と言われた場合も、上限額の目安を確認してから依頼することをおすすめします。" },
               { title: "キャンセル料の有無を確認する", desc: "見積もり額に納得できなかった場合にキャンセルできるか、その際にキャンセル料や出張料が発生するかを電話の時点で確認しておくと、現地で断りづらくなる事態を避けられます。" },
               { title: "身分証・名刺・会社情報を確認する", desc: "到着したスタッフの名刺や会社名・所在地を確認してください。正規の業者は依頼者側の本人確認も行います。会社情報の提示を渋る業者への依頼は、避けることをおすすめします。" },
-              { title: "提示額が相場からかけ離れていないか確認する", desc: "提示された金額が一般的な相場と大きくずれていないかを冷静に照らし合わせてください。作業別の相場は料金相場ページで確認できます。" },
+              { title: "提示額を公式の料金表示と照らし合わせる", desc: "提示された金額を、その業者が公式サイトに表示している料金と冷静に照らし合わせてください。主要業者の公式料金は料金インデックスで確認できます。" },
             ].map((c, i) => (
               <li key={i} className="flex gap-3 bg-white rounded-xl border border-black/10 p-4">
                 <span className="shrink-0 w-7 h-7 rounded-full bg-primary/10 text-primary font-bold text-sm flex items-center justify-center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 7" /></svg></span>
@@ -214,7 +190,7 @@ export default function ShimedashiPage() {
             ))}
           </ul>
           <p className="text-sm text-text-secondary leading-relaxed mb-10">
-            料金の妥当性は<a href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場</a>で、業者ごとの対応エリア・特徴は<a href="/agents/" className="text-primary underline">鍵業者の比較</a>でご確認いただけます。
+            各社の公式料金は<a href="/ryokin-index/" className="text-primary underline">鍵トラブル料金インデックス</a>で、業者ごとの対応エリア・特徴は<a href="/agents/" className="text-primary underline">鍵業者の比較</a>でご確認いただけます。
           </p>
 
           {/* 業者選び・内部リンク */}

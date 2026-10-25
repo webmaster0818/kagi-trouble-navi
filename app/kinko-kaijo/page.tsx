@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "金庫が開かない時の対処法と鍵開けの料金相場【2026年版】番号忘れ・電池切れ・鍵紛失 | 鍵トラブルナビ",
   description:
-    "金庫が開かない時の対処法を原因別に解説。ダイヤル番号忘れ・テンキーの電池切れ・鍵の紛失それぞれの対応と、業者による金庫解錠の料金相場（15,000〜50,000円）、破壊解錠の判断基準、依頼時に必要な所有者確認まで紹介します。",
+    "金庫が開かない時の対処法を原因別に解説。ダイヤル番号忘れ・テンキーの電池切れ・鍵の紛失それぞれの対応と、業者に依頼する際の見積もりの確認点、破壊解錠の判断基準、依頼時に必要な所有者確認まで紹介します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/kinko-kaijo/" },
 };
 
@@ -15,7 +15,7 @@ const causes = [
 ];
 
 const faqs = [
-  { q: "金庫の鍵開けの料金相場はいくらですか？", a: "金庫の解錠は15,000〜50,000円が目安です。家庭用の小型テンキー・シリンダー式は安く、業務用の大型・防盗金庫やダイヤル番号不明のケースは高くなります。出張料・時間帯割増が加わる場合もあるため、金庫の種類・メーカー・型番を伝えて、事前に見積もりを取ってください。" },
+  { q: "金庫の鍵開けの料金相場はいくらですか？", a: "金額は金庫の種類・状況によって変わり、業務用の大型・防盗金庫やダイヤル番号不明のケースは高くなります。出張料・時間帯割増が加わる場合もあるため、金庫の種類・メーカー・型番を伝えて、事前に見積もりを取ってください。" },
   { q: "テンキー式金庫が反応しません。電池切れですか？", a: "まず電池切れを疑ってください。多くの家庭用機種は扉の外側に電池ボックスがあり、交換すれば設定番号のまま使えます。新品電池でも反応しない場合は基板や配線の故障が考えられ、業者による解錠・修理が必要です。" },
   { q: "ダイヤル番号を忘れた金庫は開けられますか？", a: "開けられます。業者はダイヤル探索などの技術で解錠しますが、時間がかかるため通常の鍵開けより高額（数万円〜）になります。メーカーによっては購入証明を提示すると番号を照会できる場合があるため、先にメーカーへ確認するのも一つの方法です。" },
   { q: "金庫の解錠を依頼すると、所有者確認はありますか？", a: "あります。盗難金庫の解錠を防ぐため、正規の業者は身分証の提示や所有経緯（遺品の場合は相続関係の説明など）の確認を行います。確認を一切しない業者はかえって注意が必要です。" },
@@ -62,7 +62,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-07-02",
-  dateModified: "2026-07-02",
+  dateModified: "2026-10-25",
 };
 
 export default function KinkoKaijoPage() {
@@ -87,13 +87,13 @@ export default function KinkoKaijoPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             金庫が開かない時の原因別の対処法と鍵開けの料金相場【2026年版】
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年7月2日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月25日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
             <p className="font-bold text-primary mb-2">金庫が開かない場合の主な原因と対処法は、次のとおりです。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
-              金庫が開かない原因の多くは<strong>テンキーの電池切れ・ダイヤル番号の間違い/忘れ・鍵の紛失</strong>のいずれかです。テンキーはまず電池交換、ダイヤルはメーカーへの番号照会という、ご自身で行える対処法を確認し、解決しない場合は業者に依頼してください。業者による金庫解錠の相場は<strong>15,000〜50,000円</strong>（種類・難易度で変動）です。依頼時は所有者確認（身分証など）があります。
+              金庫が開かない原因の多くは<strong>テンキーの電池切れ・ダイヤル番号の間違い/忘れ・鍵の紛失</strong>のいずれかです。テンキーはまず電池交換、ダイヤルはメーカーへの番号照会という、ご自身で行える対処法を確認し、解決しない場合は業者に依頼してください。業者による金庫解錠の金額は種類・難易度で変わるため、業者の見積もりで確認してください。依頼時は所有者確認（身分証など）があります。
             </p>
           </div>
 
@@ -109,34 +109,9 @@ export default function KinkoKaijoPage() {
           </div>
 
           {/* 料金 */}
-          <h2 className="text-xl font-bold text-text-primary mb-4">金庫解錠の料金相場</h2>
-          <div className="overflow-x-auto mb-4 rounded-xl border border-black/10">
-            <table className="w-full text-sm min-w-[520px]">
-              <thead>
-                <tr className="bg-primary text-white">
-                  <th className="px-4 py-3 text-left font-bold">金庫の種類・状況</th>
-                  <th className="px-4 py-3 text-left font-bold">料金相場（税込目安）</th>
-                  <th className="px-4 py-3 text-left font-bold">作業時間の目安</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ["家庭用（シリンダー式・鍵紛失）", "15,000〜30,000円", "30〜60分"],
-                  ["家庭用（テンキー式・故障）", "15,000〜35,000円", "30〜90分"],
-                  ["家庭用（ダイヤル番号不明）", "20,000〜50,000円", "60〜120分"],
-                  ["業務用・防盗金庫", "30,000円〜（要見積もり）", "60分〜"],
-                ].map((r, i) => (
-                  <tr key={i} className={i % 2 ? "bg-surface-alt" : "bg-white"}>
-                    <td className="px-4 py-3 font-medium text-text-primary">{r[0]}</td>
-                    <td className="px-4 py-3 text-primary font-bold whitespace-nowrap">{r[1]}</td>
-                    <td className="px-4 py-3 text-text-muted whitespace-nowrap">{r[2]}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-text-muted mb-10">
-            ※一般的な相場の目安です。金庫のメーカー・型番・設置状況・時間帯により変動します。他の鍵作業の相場は<a href="/ryokin/" className="text-primary underline">料金相場ページ</a>をご覧ください。
+          <h2 className="text-xl font-bold text-text-primary mb-4">金庫解錠の料金</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            金額は金庫のメーカー・型番・設置状況・時間帯によって変わるため、業者の見積もりで確認してください。型番を伝えると見積もりが正確になります。各社が公式サイトに表示している料金は<a href="/ryokin-index/" className="text-primary underline">鍵トラブル料金インデックス（確認日を記載）</a>にまとめています。
           </p>
 
           {/* 依頼前チェック */}
@@ -216,7 +191,7 @@ export default function KinkoKaijoPage() {
               あわせて、<strong>非破壊解錠か破壊解錠か、開けた後に金庫を再利用できるか</strong>も必ずご確認ください。非破壊なら中身も金庫もそのまま、破壊解錠でもシリンダー交換で再使用できる場合と、扉ごと破壊して買い替えになる場合があります。この点を見積もり時に明確に説明する業者は、信頼性が高いといえます。
             </p>
             <p className="text-sm text-text-secondary leading-relaxed">
-              料金の目安は本ページ上部の相場表のほか、<a href="/ryokin/" className="text-primary underline">料金相場ページ</a>で作業別に整理しています。業者選びの比較ポイントは<a href="/agents/" className="text-primary underline">業者比較ページ</a>をご覧ください。
+              各社が公式サイトに表示している料金は<a href="/ryokin-index/" className="text-primary underline">料金インデックス</a>に、料金の内訳は<a href="/ryokin/" className="text-primary underline">料金ページ</a>にまとめています。業者選びの比較ポイントは<a href="/agents/" className="text-primary underline">業者比較ページ</a>をご覧ください。
             </p>
           </div>
 

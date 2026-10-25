@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "鍵が折れた時の対処法：鍵穴に詰まった折れ鍵の抜き方と料金相場【2026年版】 | 鍵トラブルナビ",
   description:
-    "鍵が鍵穴の中で折れた時の対処法を手順で解説。瞬間接着剤で継ぐ方法は、鍵穴内で固着してシリンダー交換が必要になるため避けてください。折れ鍵の抜き取りの料金相場は8,000〜15,000円、抜き取れずに交換となる場合は＋10,000〜40,000円です。鍵が折れる原因と予防法もご説明します。",
+    "鍵が鍵穴の中で折れた時の対処法を手順で解説。瞬間接着剤で継ぐ方法は、鍵穴内で固着してシリンダー交換が必要になるため避けてください。抜き取れずにシリンダー交換となると費用が増えるため、金額は業者の見積もりで確認してください。鍵が折れる原因と予防法もご説明します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/kagi-ore/" },
 };
 
@@ -16,8 +16,8 @@ const steps = [
 ];
 
 const faqs = [
-  { q: "折れた鍵の抜き取りはいくらかかりますか？", a: "折れ鍵の抜き取りの相場は8,000〜15,000円が目安です。破片が奥に入り込んでいて分解が必要な場合や、シリンダーが傷んで交換になる場合は＋10,000〜40,000円程度かかります。作業前に総額の見積もりを必ず確認してください。" },
-  { q: "瞬間接着剤で折れた鍵を接着して抜く方法は使えますか？", a: "絶対にやめてください。接着剤が鍵穴内部に流れ込むとピンが固着し、抜き取りでは済まずシリンダーごと交換（10,000〜40,000円）になる典型的な失敗例です。鍵業者の現場でも「接着剤で悪化した」ケースはよく見られるトラブルです。" },
+  { q: "折れた鍵の抜き取りはいくらかかりますか？", a: "金額は破片の位置・鍵の種類・時間帯によって変わり、分解が必要な場合やシリンダーが傷んで交換になる場合は費用が増えます。金額は業者の見積もりで確認し、作業前に必ず総額をご確認ください。" },
+  { q: "瞬間接着剤で折れた鍵を接着して抜く方法は使えますか？", a: "絶対にやめてください。接着剤が鍵穴内部に流れ込むとピンが固着し、抜き取りでは済まずシリンダーごと交換になる典型的な失敗例です。鍵業者の現場でも「接着剤で悪化した」ケースはよく見られるトラブルです。" },
   { q: "なぜ鍵は折れるのですか？", a: "主な原因は①長年の使用による金属疲労・摩耗、②鍵の曲がりを放置して使い続けた、③鍵穴の潤滑不足で重くなったところに無理な力をかけた、の3つです。回りが渋い・曲がっているといった前兆がある鍵は、折れる前に合鍵を作成しておくことをおすすめします。" },
   { q: "折れた鍵から合鍵は作れますか？", a: "刻み（ギザギザ）やディンプルの窪みが破片に残っていれば、2つの破片から合鍵を作成できる場合があります。純正キーの番号（キーナンバー）が分かる場合はメーカー取り寄せも可能です。まずは合鍵店か鍵業者に破片を持ってご相談ください。" },
   { q: "鍵穴に油を差してもよいですか？", a: "食用油やCRC等の一般的な潤滑油は使用しないでください。内部でホコリを固めて動作不良の原因になります。潤滑には鍵穴専用のパウダースプレーを使うか、鉛筆の芯（黒鉛）を鍵に塗る方法が安全です。" },
@@ -46,7 +46,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-07-04",
-  dateModified: "2026-07-04",
+  dateModified: "2026-10-25",
 };
 
 export default function KagiOrePage() {
@@ -71,13 +71,13 @@ export default function KagiOrePage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             鍵が折れた時の対処法：鍵穴に詰まった折れ鍵の抜き方と料金相場【2026年版】
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年7月4日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月25日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
             <p className="font-bold text-primary mb-2">鍵が折れた場合は、次の順序で対処してください。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
-              鍵が鍵穴の中で折れたら、<strong>①それ以上回さない → ②破片が飛び出ていればピンセットで優しく抜く → ③抜けない場合は業者に「折れ鍵の抜き取り」を依頼</strong>の順で対処します。抜き取りの相場は<strong>8,000〜15,000円</strong>、シリンダー交換になる場合は<strong>＋10,000〜40,000円</strong>です。<strong>瞬間接着剤で継いで抜く方法は、固着してシリンダー交換が必要になるため絶対に避けてください</strong>。
+              鍵が鍵穴の中で折れたら、<strong>①それ以上回さない → ②破片が飛び出ていればピンセットで優しく抜く → ③抜けない場合は業者に「折れ鍵の抜き取り」を依頼</strong>の順で対処します。金額は業者の見積もりで確認してください（シリンダー交換になると費用が増えます）。<strong>瞬間接着剤で継いで抜く方法は、固着してシリンダー交換が必要になるため絶対に避けてください</strong>。
             </p>
           </div>
 
@@ -121,7 +121,7 @@ export default function KagiOrePage() {
           <h2 className="text-xl font-bold text-text-primary mb-4">避けるべき行動</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             {[
-              { title: "瞬間接着剤で破片を継ぐ", desc: "接着剤が鍵穴内で固まるとピンが固着し、シリンダーごと交換（10,000〜40,000円）になります。折れ鍵トラブルで最も多い悪化パターンです。" },
+              { title: "瞬間接着剤で破片を継ぐ", desc: "接着剤が鍵穴内で固まるとピンが固着し、シリンダーごと交換になります。折れ鍵トラブルで最も多い悪化パターンです。" },
               { title: "針金・つまようじでほじる", desc: "破片を奥に押し込んだり、先端が中で折れて異物が増えたりします。内部部品を傷めると抜き取りでは済まなくなります。" },
               { title: "スペアキーを無理に差し込む", desc: "破片が残ったままスペアキーを差すと、スペアまで曲がる・破片がさらに奥へ入るなど二重のトラブルになります。" },
               { title: "折れかけの鍵を使い続ける", desc: "曲がり・ヒビのある鍵は次に回した時に折れます。前兆がある時点で合鍵作成・鍵交換を検討することが、結果的に最も費用を抑えられます。" },
@@ -156,33 +156,9 @@ export default function KagiOrePage() {
           </p>
 
           {/* 料金 */}
-          <h2 className="text-xl font-bold text-text-primary mb-4">業者に依頼した場合の料金の目安</h2>
-          <div className="overflow-x-auto mb-4 rounded-xl border border-black/10">
-            <table className="w-full text-sm min-w-[480px]">
-              <thead>
-                <tr className="bg-primary text-white">
-                  <th className="px-4 py-3 text-left font-bold">状況</th>
-                  <th className="px-4 py-3 text-left font-bold">料金相場（税込目安）</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ["折れ鍵の抜き取り", "8,000〜15,000円"],
-                  ["抜き取り＋シリンダー分解洗浄", "＋5,000〜10,000円程度"],
-                  ["シリンダー交換になった場合", "＋10,000〜40,000円"],
-                  ["出張料（かかる場合）", "3,000円前後"],
-                  ["深夜・早朝の割増", "数千円程度"],
-                ].map((r, i) => (
-                  <tr key={i} className={i % 2 ? "bg-surface-alt" : "bg-white"}>
-                    <td className="px-4 py-3 font-medium text-text-primary">{r[0]}</td>
-                    <td className="px-4 py-3 text-primary font-bold whitespace-nowrap">{r[1]}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-text-muted mb-10">
-            ※一般的な相場の目安です。鍵の種類・破片の位置・時間帯により変動します。詳しくは<a href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場</a>をご覧ください。
+          <h2 className="text-xl font-bold text-text-primary mb-4">業者に依頼した場合の料金</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            金額は鍵の種類・作業内容・時間帯・地域によって変わるため、業者の見積もりで確認してください。各社が公式サイトに表示している料金は<a href="/ryokin-index/" className="text-primary underline">鍵トラブル料金インデックス（確認日を記載）</a>にまとめています。
           </p>
 
           {/* 依頼の流れと選び方 */}
@@ -207,7 +183,7 @@ export default function KagiOrePage() {
             ))}
           </ol>
           <p className="text-sm text-text-secondary leading-relaxed mb-10">
-            業者選びのポイントは、①「折れ鍵抜き対応」を明記している、②作業前の総額見積もりを徹底している、③深夜・早朝の割増条件を事前に明示している、の3点です。料金の目安は<a href="/ryokin/" className="text-primary underline">料金相場のページ</a>で確認し、複数社を比べたい場合は<a href="/agents/" className="text-primary underline">鍵業者の比較ページ</a>を活用してください。その場で相場から大きく外れた金額を提示された場合は、即決せずいったん保留する判断も大切です。
+            業者選びのポイントは、①「折れ鍵抜き対応」を明記している、②作業前の総額見積もりを徹底している、③深夜・早朝の割増条件を事前に明示している、の3点です。各社の公式料金は<a href="/ryokin-index/" className="text-primary underline">料金インデックス</a>で確認し、複数社を比べたい場合は<a href="/agents/" className="text-primary underline">鍵業者の比較ページ</a>を活用してください。その場で公式の料金表示から大きく外れた金額を提示された場合は、即決せずいったん保留する判断も大切です。
           </p>
 
           {/* 業者選び・内部リンク */}

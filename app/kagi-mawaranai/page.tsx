@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "鍵が回らない・回りにくい時の原因と対処法｜避けるべき行動と料金相場 | 鍵トラブルナビ",
   description:
-    "鍵が回らない・固い・回りにくい時の原因（ホコリ詰まり・潤滑不足・鍵の摩耗・凍結）と正しい対処法を解説。油（KURE 5-56）を注すのは避けてください。直らない場合のシリンダー交換の料金相場は8,000〜25,000円が目安。鍵を無理に回して折らないための手順も紹介します。",
+    "鍵が回らない・固い・回りにくい時の原因（ホコリ詰まり・潤滑不足・鍵の摩耗・凍結）と正しい対処法を解説。油（KURE 5-56）を注すのは避けてください。直らない場合はシリンダー交換となり、金額は業者の見積もりで確認します。鍵を無理に回して折らないための手順も紹介します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/kagi-mawaranai/" },
 };
 
@@ -19,7 +19,7 @@ const faqs = [
   { q: "鍵が回らない時、油（KURE 5-56）を注してもよいですか？", a: "おすすめしません。KURE 5-56などのオイル系潤滑剤は一時的に滑りが良くなりますが、粘度でホコリを吸着し、数日〜数週間後にかえって固まって悪化させることが多いためです。鍵穴には「鍵穴専用潤滑剤（パウダー系・フッ素系）」を使うか、応急処置としては鉛筆の芯（黒鉛）を鍵にこすりつけてください。" },
   { q: "鍵が回りにくい主な原因は何ですか？", a: "①鍵穴のホコリ・ゴミ詰まり ②潤滑不足 ③鍵やシリンダーの経年摩耗・変形 ④扉のゆがみ・金具のズレ ⑤冬場の凍結 が主な原因です。合鍵は純正キーより精度が落ち摩耗しやすいため、合鍵で回りにくい場合は元鍵で試すと改善することがあります。" },
   { q: "鍵が鍵穴の中で折れてしまいました。どうすればよいですか？", a: "自分で取り出そうとすると奥に押し込んで悪化させることがあります。折れた鍵の一部が出ていればラジオペンチで慎重に引き抜ける場合もありますが、難しい場合は鍵の専門業者に依頼してください。折れ込んだ鍵の除去とシリンダー交換で対応するのが一般的です。" },
-  { q: "直らない場合、鍵交換の料金はいくらですか？", a: "シリンダー交換の相場は一般的な鍵で8,000〜15,000円、防犯性の高いディンプルキーで15,000〜25,000円程度が目安です（部品代＋作業費）。これに出張料や深夜・早朝の割増が加わる場合があります。作業前に総額の見積もりを確認してください。" },
+  { q: "直らない場合、鍵交換の料金はいくらですか？", a: "シリンダー交換の金額は鍵の種類（部品代＋作業費）・時間帯・地域によって変わり、出張料や深夜・早朝の割増が加わる場合もあります。金額は業者の見積もりで確認し、作業前に総額をご確認ください。" },
   { q: "冬に鍵が回らないのは凍結ですか？", a: "気温が氷点下になると鍵穴内部の水分が凍って回らなくなることがあります。お湯をかけると再凍結や部品の傷みの原因になるため避け、市販の解氷スプレーやカイロで鍵穴周辺を温める、温めた鍵をゆっくり挿すなどで対応します。凍結を繰り返す場合は鍵穴用の防水・潤滑ケアが有効です。" },
 ];
 
@@ -94,7 +94,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-07-15",
-  dateModified: "2026-07-15",
+  dateModified: "2026-10-25",
 };
 
 export default function KagiMawaranaiPage() {
@@ -119,13 +119,13 @@ export default function KagiMawaranaiPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             鍵が回らない・回りにくい時の原因と正しい対処法
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年7月15日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月25日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
             <p className="font-bold text-primary mb-2">鍵が回らない時の対処の要点</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
-              鍵が回らない時は、<strong>①無理に回さない（鍵折れ防止）→ ②鍵穴のホコリ・異物を除去 → ③鍵穴専用潤滑剤（または鉛筆の芯）を使う</strong>のが正しい順番です。<strong>KURE 5-56などの油は使用しないでください</strong>（ホコリを吸着して悪化するため）。それでも直らない・摩耗している場合はシリンダー交換で、相場は一般的な鍵で<strong>8,000〜15,000円</strong>、ディンプルキーで<strong>15,000〜25,000円</strong>が目安です。
+              鍵が回らない時は、<strong>①無理に回さない（鍵折れ防止）→ ②鍵穴のホコリ・異物を除去 → ③鍵穴専用潤滑剤（または鉛筆の芯）を使う</strong>のが正しい順番です。<strong>KURE 5-56などの油は使用しないでください</strong>（ホコリを吸着して悪化するため）。それでも直らない・摩耗している場合はシリンダー交換が必要で、金額は業者の見積もりで確認してください。
             </p>
           </div>
 
@@ -181,7 +181,7 @@ export default function KagiMawaranaiPage() {
             {[
               { title: "油（KURE 5-56）を注す", desc: "一時的に滑りますが、粘度でホコリを吸着し数日〜数週間後にさらに固まります。鍵穴には専用のパウダー系・フッ素系潤滑剤を使ってください。" },
               { title: "力任せに回す", desc: "回らないまま無理に回すと鍵穴の中で鍵が折れ、解錠＋シリンダー交換で高額になります。少しでも抵抗が強い時は回すのを止めてください。" },
-              { title: "針金などでこじる", desc: "シリンダー内部のピンを傷めると、清掃や潤滑では直らず交換（10,000〜25,000円）が必要になります。" },
+              { title: "針金などでこじる", desc: "シリンダー内部のピンを傷めると、清掃や潤滑では直らず交換が必要になります。" },
               { title: "凍結にお湯をかける", desc: "急な温度差で部品を傷めたり、水分が再凍結して悪化します。解氷スプレーやカイロで温める方法が適切です。" },
             ].map((n, i) => (
               <div key={i} className="bg-white rounded-xl border border-red-200 p-5">
@@ -192,33 +192,9 @@ export default function KagiMawaranaiPage() {
           </div>
 
           {/* 料金 */}
-          <h2 className="text-xl font-bold text-text-primary mb-4">直らない場合の料金目安（鍵開け・交換）</h2>
-          <div className="overflow-x-auto mb-4 rounded-xl border border-black/10">
-            <table className="w-full text-sm min-w-[480px]">
-              <thead>
-                <tr className="bg-primary text-white">
-                  <th className="px-4 py-3 text-left font-bold">作業</th>
-                  <th className="px-4 py-3 text-left font-bold">料金相場（税込目安）</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ["鍵開け（回らなくなった場合）", "8,000〜15,000円"],
-                  ["シリンダー交換（一般的な鍵）", "8,000〜15,000円"],
-                  ["シリンダー交換（ディンプルキー）", "15,000〜25,000円"],
-                  ["折れ込んだ鍵の取り出し", "8,000〜15,000円"],
-                  ["出張料・深夜割増（かかる場合）", "3,000円前後〜"],
-                ].map((r, i) => (
-                  <tr key={i} className={i % 2 ? "bg-surface-alt" : "bg-white"}>
-                    <td className="px-4 py-3 font-medium text-text-primary">{r[0]}</td>
-                    <td className="px-4 py-3 text-primary font-bold whitespace-nowrap">{r[1]}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-text-muted mb-10">
-            ※一般的な相場の目安です。鍵の種類・状況・時間帯により変動します。各社の公式料金は<a href="/ryokin-index/" className="text-primary underline">鍵トラブル料金インデックス</a>、相場の詳細は<a href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場</a>をご覧ください。
+          <h2 className="text-xl font-bold text-text-primary mb-4">直らない場合の料金（鍵開け・交換）</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            金額は鍵の種類・作業内容・時間帯・地域によって変わるため、業者の見積もりで確認してください。各社が公式サイトに表示している料金は<a href="/ryokin-index/" className="text-primary underline">鍵トラブル料金インデックス（確認日を記載）</a>にまとめています。
           </p>
 
           {/* 放置のリスクと交換の判断 */}
@@ -248,7 +224,7 @@ export default function KagiMawaranaiPage() {
             業者選びで最も重要なのは、<strong>作業を始める前に「出張料・部品代・作業費を含めた総額」の見積もりを確認する</strong>ことです。電話で伝えられる金額は最低料金であることが多く、現地で症状を見たうえでの総額提示と、追加料金の有無を必ず確認してください。見積もりに納得できなければ、その場で断って構いません。キャンセル料の条件も作業前に確認しておくと安心です。
           </p>
           <p className="text-sm text-text-secondary leading-relaxed mb-10">
-            料金の目安を事前に把握したい方は<a href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場</a>を、料金体系や対応エリアで業者を比べたい方は<a href="/agents/" className="text-primary underline">鍵業者の比較</a>をご覧ください。相場を把握したうえで見積もりを取ると、高すぎる請求にも気づくことができます。
+            各社の公式料金は<a href="/ryokin-index/" className="text-primary underline">鍵トラブル料金インデックス</a>を、料金体系や対応エリアで業者を比べたい方は<a href="/agents/" className="text-primary underline">鍵業者の比較</a>をご覧ください。公式の料金表示を確認したうえで見積もりを取ると、高すぎる請求にも気づくことができます。
           </p>
 
           {/* 業者選び・内部リンク */}
