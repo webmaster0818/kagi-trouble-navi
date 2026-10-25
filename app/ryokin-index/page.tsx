@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/ryokin-index/";
-const UPDATED = "2026年7月7日";
+const UPDATED = "2026年10月25日";
 const CHECKED = "2026年7月7日";
 
 export const metadata: Metadata = {
@@ -153,7 +153,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-07-07",
-  dateModified: "2026-07-07",
+  dateModified: "2026-10-25",
 };
 
 const cols: { key: keyof Row; label: string }[] = [
@@ -270,7 +270,7 @@ export default function RyokinIndexPage() {
           <h2 className="text-xl font-bold text-text-primary mb-4">公式表示と実際の総額が異なる理由</h2>
           <div className="text-sm text-text-secondary leading-relaxed space-y-3 mb-8">
             <p>
-              「公式には6,600円〜と書いてあったのに、請求は数万円だった」という事例が生じるのは、公式表示が<strong>もっとも簡単な条件で作業できた場合の下限</strong>だからです。実際の総額は、主に次の4つの要因で上下します。
+              公式表示より請求額が高くなる事例が生じるのは、公式表示が<strong>もっとも簡単な条件で作業できた場合の下限</strong>だからです。実際の総額は、主に次の4つの要因で上下します。
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>鍵の種類：</strong>ギザギザの刻みキーに比べ、ディンプルキーや特殊錠は解錠の難度が高く、料金も上がります。実際に、生活救急車は鍵開け8,800円〜に対しディンプル33,000円〜、鍵猿はディンプルで〜27,500円と、公式表示の段階で差がついています。</li>

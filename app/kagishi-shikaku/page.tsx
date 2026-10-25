@@ -60,7 +60,7 @@ const ngActions = [
   },
   {
     title: "その場で契約を急かされて即決する・現金の全額前払いに応じる",
-    desc: "「今決めれば割引」「すぐやらないと開かなくなる」など、判断を急がせる説明には注意が必要です。締め出されて焦っているときほど冷静さを失いがちですが、数十分の比較検討で費用が数万円変わる場合もあります。不審に感じたら一度断り、消費生活センター（188）に相談する方法もあります。",
+    desc: "「今決めれば割引」「すぐやらないと開かなくなる」など、判断を急がせる説明には注意が必要です。締め出されて焦っているときほど冷静さを失いがちですが、数十分の比較検討で費用が大きく変わる場合もあります。不審に感じたら一度断り、消費生活センター（188）に相談する方法もあります。",
   },
 ];
 
@@ -113,7 +113,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-08-09",
-  dateModified: "2026-08-09",
+  dateModified: "2026-10-25",
 };
 
 export default function KagishiShikakuPage() {
@@ -138,7 +138,7 @@ export default function KagishiShikakuPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             鍵師とは｜資格の実態と信頼できる鍵屋の見分け方
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年8月9日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月25日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
