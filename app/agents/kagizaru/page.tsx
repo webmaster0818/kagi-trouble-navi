@@ -7,14 +7,14 @@ import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/agents/kagizaru/";
-const UPDATED = "2026年10月23日";
+const UPDATED = "2026年10月26日";
 
 export const metadata: Metadata = {
-  title: { absolute: "鍵猿（鍵ザル）の口コミ・評判は？鍵屋の鍵猿の料金・到着時間・保証を調査｜鍵トラブルナビ" },
-  description: "鍵猿（鍵屋の鍵猿・運営：SLS株式会社）の口コミ・評判を調査。鍵開け8,800円〜／最短15分／全国（6県を除く）／1年保証は公式サイトで確認しました（2026年9月30日時点）。「料金が高い」という声の多くは夜間の加算によるもので、事前の見積もりで確認できます。良い評判と注意点を中立的な立場で解説します。",
+  title: { absolute: "鍵屋の鍵猿（鍵ザル）の口コミ・評判は？運営会社・料金・受付時間・保証を調査｜鍵トラブルナビ" },
+  description: "鍵屋の鍵猿（鍵ザル）はSLS株式会社（大阪本社）が運営する出張専門の鍵屋です。電話受付は365日8:00〜23:00、玄関の鍵開けは8,800円〜（税込）、出張料・見積もりは無料、施工後1年の工事保証と商品保証があります。秋田・福井・鳥取・島根・徳島・宮崎は対応エリア外です。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
-    title: "鍵猿（鍵ザル）の口コミ・評判は？鍵屋の鍵猿の料金・到着時間・保証を調査",
+    title: "鍵屋の鍵猿（鍵ザル）の口コミ・評判は？運営会社・料金・受付時間・保証を調査",
     description: "鍵屋の鍵猿の料金・到着時間・保証・利用者の口コミを中立的な立場で調査し、利用前に確認すべきメリットと注意点を解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
@@ -47,6 +47,7 @@ const badReviews = [
   ];
 
 const faqs = [
+    {"q": "鍵猿（鍵ザル）の運営会社はどこですか", "a": "SLS株式会社です。大阪本社・横浜営業所を中心に拠点を置いています。鍵猿は出張専門の鍵屋で、店舗での受付や鍵の持ち込みには対応していません（SLS株式会社・鍵屋の鍵猿 公式サイト 2026年10月26日確認）。"},
     {"q": "鍵猿の料金はいくらからですか", "a": "玄関の鍵開けは8,800円（税込）から、鍵交換は11,000円（税込）＋部品代からが目安です。基本料・見積料・出張料はすべて0円で、作業前に合計金額を提示し、追加請求を行わないことを掲げています。"},
     {"q": "どのくらいの時間で来てくれますか", "a": "最短60秒で出動、最短15分で現場到着を掲げています。拠点からの距離や状況により到着時間は変動します。"},
     {"q": "保証はありますか", "a": "1年間の無料工事保証・無償商品保証があるとされています。作業後のトラブルに備えられる点は、判断材料の一つです。"},
@@ -59,11 +60,11 @@ export default function KagizaruPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "鍵猿（鍵ザル）の口コミ・評判は？鍵屋の鍵猿の料金・到着時間・保証を調査",
+    headline: "鍵屋の鍵猿（鍵ザル）の口コミ・評判は？運営会社・料金・受付時間・保証を調査",
     description: "鍵屋の鍵猿の料金・到着時間・保証・利用者の口コミを中立的な立場で調査し、利用前に確認すべきメリットと注意点を解説します。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-20T00:00:00+09:00",
-    dateModified: "2026-10-23T00:00:00+09:00",
+    dateModified: "2026-10-26T00:00:00+09:00",
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` },
@@ -103,7 +104,7 @@ export default function KagizaruPage() {
         <header className="relative overflow-hidden border-y border-border bg-white text-foreground mt-4">
           <div className="mx-auto max-w-4xl px-4 py-12 md:py-16">
             <p className="text-sm font-bold tracking-widest text-primary mb-3">鍵業者の口コミ・評判</p>
-            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4 text-primary-dark">鍵猿（鍵屋の鍵猿）の口コミ・評判は？<br className="hidden md:block" />料金・到着時間・保証を調査</h1>
+            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4 text-primary-dark">鍵屋の鍵猿（鍵ザル）の口コミ・評判は？<br className="hidden md:block" />運営会社・料金・受付時間・保証を調査</h1>
             <p className="text-text-secondary leading-relaxed max-w-2xl">「鍵屋の鍵猿」は、SLS株式会社が運営する鍵トラブル解決サービスです。検索では「鍵猿」「鍵ザル」「かぎざる」とも表記されますが、いずれも同じサービスです。最短15分到着・1年保証・自社スタッフ施工を掲げる同サービスの料金や対応、利用者の評価を、編集部が中立的な立場で調査しました。</p>
             <div className="mt-6 flex flex-wrap gap-2">
               <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">鍵開け 8,800円〜</span>
@@ -117,6 +118,13 @@ export default function KagizaruPage() {
 
         <div className="mx-auto max-w-4xl px-4 py-8 md:py-12">
           <p className="text-sm text-slate-500 mb-8">最終更新日：{UPDATED}　／　鍵トラブルナビ編集部</p>
+
+          <div className="mb-10 rounded-2xl border border-amber-200 bg-amber-50 p-5">
+            <p className="font-bold text-slate-800 mb-2">鍵猿（鍵ザル）の運営会社と利用前に確認できること</p>
+            <p className="leading-loose text-slate-700 mb-3">鍵屋の鍵猿（鍵ザル）は、SLS株式会社が運営する出張専門の鍵屋です。SLS株式会社は大阪本社・横浜営業所を中心に拠点を置いています（<a href="https://sls.co.jp/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">SLS株式会社 公式サイト</a>）。店舗での受付や鍵の持ち込みには対応しておらず、電話受付は365日・8:00〜23:00です。秋田・福井・鳥取・島根・徳島・宮崎の6県は対応エリア外とされています（<a href="https://sls.co.jp/kagizaru/area/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">公式の対応エリアページ</a>）。</p>
+            <p className="leading-loose text-slate-700 mb-3">公式サイトでは、出張料・見積もりは無料で、作業前にすべての費用を含む見積もり金額を提示し、同意を得てから施工するとしています。見積もりに納得できない場合のキャンセルは無料ですが、<strong>鍵開けなど急を要する出動では、スタッフ手配後のキャンセルにキャンセル料がかかる場合がある</strong>と記載されています。施工後は1年間の無料工事保証と無償商品保証が付きます（<a href="https://sls.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">鍵屋の鍵猿 公式サイト</a>）。いずれも2026年10月26日に確認しました。</p>
+            <p className="leading-loose text-slate-700 text-sm">口コミ・評判の傾向は、下の「<a href="#reviews" className="text-amber-700 underline">利用者の口コミ・評判</a>」にまとめています（口コミサイトの調査時点は2026年7月です）。</p>
+          </div>
 
           <nav aria-label="目次" className="mb-12 rounded-2xl border border-slate-200 bg-slate-50 p-6">
             <p className="font-bold text-slate-800 mb-4">この記事の目次</p>
