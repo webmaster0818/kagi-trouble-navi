@@ -6,22 +6,22 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/kobe/";
-const UPDATED = "2026年10月20日";
-const UPDATED_ISO = "2026-10-20";
+const UPDATED = "2026年10月26日";
+const UPDATED_ISO = "2026-10-26";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "【2026年最新】神戸の鍵開け・鍵交換業者おすすめ5選｜24時間対応の鍵屋を比較｜鍵トラブルナビ",
+      "【2026年最新】神戸の鍵交換・鍵開け業者おすすめ5選｜鍵交換料金の比較と24時間対応の鍵屋｜鍵トラブルナビ",
   },
   description:
-    "神戸で鍵開け・鍵交換を依頼できる鍵業者5社を一次確認値で比較しています。自社施工の鍵猿（鍵開け8,800円〜税込）を含め、カギ110番（鍵開け11,000円〜）・鍵の生活救急車・鍵のレスキュー・カギの救急車の料金と受付時間、オートロックの締め出しで業者に依頼する前の確認事項を解説します。",
+    "神戸で鍵交換を頼める5社の料金（カギ110番 部材費込14,300円〜・鍵猿 11,000円〜＋部品代ほか）を公式表示で比較。兵庫県警が案内する防犯性能の高い錠（CP部品）の選び方、鍵開けの料金と受付時間、依頼前の確認事項もまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title:
-      "【2026年最新】神戸の鍵開け・鍵交換業者おすすめ5選｜24時間対応の鍵屋を比較",
+      "【2026年最新】神戸の鍵交換・鍵開け業者おすすめ5選｜鍵交換料金の比較と24時間対応の鍵屋",
     description:
-      "神戸で鍵開け・鍵交換を依頼できる鍵業者5社を、料金・受付時間の一次確認値で比較しています。自社施工の鍵猿を含む5社の選び方や、オートロックの締め出しで業者に依頼する前の確認事項も解説します。",
+      "神戸で鍵交換・鍵開けを依頼できる鍵業者5社を、公式表示の料金・受付時間で比較。兵庫県警が案内する防犯性能の高い錠（CP部品）の選び方と、依頼前の確認事項も解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
     images: ["/images/kv-top.jpg"],
@@ -328,7 +328,7 @@ export default function AreaKobePage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "【2026年最新】神戸の鍵開け・鍵交換業者おすすめ5選｜24時間対応の鍵屋を比較",
+      "【2026年最新】神戸の鍵交換・鍵開け業者おすすめ5選｜鍵交換料金の比較と24時間対応の鍵屋",
     description:
       "神戸で鍵開け・鍵交換を依頼できる鍵業者5社を、料金・受付時間の一次確認値で比較した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
@@ -352,27 +352,36 @@ export default function AreaKobePage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "鍵トラブルナビ", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "神戸の鍵開け・鍵交換業者おすすめ5選", item: `${SITE}${PATH}` },
+      { "@type": "ListItem", position: 2, name: "神戸の鍵交換・鍵開け業者おすすめ5選", item: `${SITE}${PATH}` },
     ],
   };
 
   const toc: { href: string; label: string; sub?: { href: string; label: string }[] }[] = [
     {
+      href: "#koukan",
+      label: "1｜神戸で鍵交換を頼む場合の料金・鍵の選び方・流れ",
+      sub: [
+        { href: "#koukan-ryokin", label: "鍵交換の料金（各社の公式表示）" },
+        { href: "#cp", label: "交換する鍵の選び方（兵庫県警の案内）" },
+        { href: "#nagare", label: "神戸で鍵交換を依頼する流れ" },
+      ],
+    },
+    {
       href: "#kobe6",
-      label: "1｜神戸で依頼できるおすすめの鍵業者5選",
+      label: "2｜神戸で依頼できるおすすめの鍵業者5選",
       sub: [
         { href: "#hikaku", label: "神戸の鍵業者の一覧比較表" },
         ...agents.map((a) => ({ href: `#${a.id}`, label: `${a.num}｜【${a.catch}】${a.name}` })),
       ],
     },
-    { href: "#isogi", label: "2｜急いで鍵開けを依頼したい場合" },
-    { href: "#shinya", label: "3｜深夜・早朝のトラブルの場合" },
-    { href: "#meikaku", label: "4｜料金を事前に確認したい場合" },
-    { href: "#jisha", label: "5｜自社施工・自社スタッフによる対応を希望する場合" },
-    { href: "#kobe-tips", label: "6｜神戸で鍵業者に依頼する前の確認事項" },
-    { href: "#erabikata", label: "7｜鍵業者の選び方" },
-    { href: "#faq", label: "8｜神戸の鍵業者でよくある質問" },
-    { href: "#matome", label: "9｜まとめ" },
+    { href: "#isogi", label: "3｜急いで鍵開けを依頼したい場合" },
+    { href: "#shinya", label: "4｜深夜・早朝のトラブルの場合" },
+    { href: "#meikaku", label: "5｜料金を事前に確認したい場合" },
+    { href: "#jisha", label: "6｜自社施工・自社スタッフによる対応を希望する場合" },
+    { href: "#kobe-tips", label: "7｜神戸で鍵業者に依頼する前の確認事項" },
+    { href: "#erabikata", label: "8｜鍵業者の選び方" },
+    { href: "#faq", label: "9｜神戸の鍵業者でよくある質問" },
+    { href: "#matome", label: "10｜まとめ" },
   ];
 
   return (
@@ -390,14 +399,14 @@ export default function AreaKobePage() {
                 <Link href="/" className="hover:underline">鍵トラブルナビ</Link>
               </li>
               <li>/</li>
-              <li className="text-foreground">神戸の鍵開け・鍵交換業者おすすめ5選</li>
+              <li className="text-foreground">神戸の鍵交換・鍵開け業者おすすめ5選</li>
             </ol>
           </nav>
 
           {/* h1・更新日・タグchips */}
           <header className="grid gap-4">
             <h1 className="text-2xl md:text-[32px] font-bold leading-normal tracking-wide text-foreground">
-              【2026年最新】神戸の鍵開け・鍵交換業者おすすめ5選｜24時間対応の鍵屋を比較
+              【2026年最新】神戸の鍵交換・鍵開け業者おすすめ5選｜鍵交換料金の比較と24時間対応の鍵屋
             </h1>
             <div>
               <span className="inline-block rounded-[2px] bg-primary px-2 py-1 text-xs font-bold tracking-wide text-white">
@@ -480,8 +489,81 @@ export default function AreaKobePage() {
             </ol>
           </nav>
 
-          {/* 1｜5選 */}
-          <H2 id="kobe6" num="1">神戸で依頼できるおすすめの鍵業者5選</H2>
+          {/* 1｜鍵交換 */}
+          <H2 id="koukan" num="1">神戸で鍵交換を頼む場合の料金・鍵の選び方・流れ</H2>
+          <p className="leading-loose mb-6">
+            神戸で玄関の鍵交換を業者に頼む場合、費用は業者の料金体系（部品代を含むか・出張料が別か）と、交換するシリンダーの種類で決まります。
+            ここでは、各社の公式表示の料金、兵庫県警が案内する防犯性能の高い錠の選び方、依頼の流れを順にまとめます。
+          </p>
+
+          <h3 id="koukan-ryokin" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
+            鍵交換の料金（各社の公式表示）
+            <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
+          </h3>
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-primary text-white">
+                  <th className="border border-border px-3 py-2 whitespace-nowrap text-left">業者名</th>
+                  <th className="border border-border px-3 py-2 whitespace-nowrap text-left">鍵交換の料金（税込・最低額／目安）</th>
+                  <th className="border border-border px-3 py-2 whitespace-nowrap text-left">部品代・出張料</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { slug: "kagi110ban", name: "カギ110番", price: "14,300円〜", note: "部材費込" },
+                  { slug: "seikatsu-kyukyusha", name: "鍵の生活救急車", price: "11,000円＋部品代", note: "部品代は別" },
+                  { slug: "kagizaru", name: "鍵猿", price: "11,000円〜＋部品代", note: "部品代は別・自社施工・1年保証" },
+                  { slug: "kagi-rescue", name: "鍵のレスキュー", price: "6,600円〜", note: "部材費・出張料4,400〜8,800円は別" },
+                  { slug: "kagi-kyukyusha", name: "カギの救急車", price: "11,000〜55,000円（公式目安）", note: "実額は加盟店ごとに異なる" },
+                ].map((r, i) => (
+                  <tr key={r.slug} className={i % 2 === 1 ? "bg-[#F5F8FC]" : "bg-white"}>
+                    <td className="border border-border px-3 py-2 font-bold whitespace-nowrap">
+                      <Link href={`/agents/${r.slug}/`} className="text-primary underline">{r.name}</Link>
+                    </td>
+                    <td className="border border-border px-3 py-2">{r.price}</td>
+                    <td className="border border-border px-3 py-2">{r.note}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="leading-loose mb-10 text-sm">
+            部品代を含むかどうかが社によって違うため、広告の金額だけで比べず<Hl>「シリンダー代を含めた総額」で見積もりを比べる</Hl>ことをおすすめします。
+            急ぎでない鍵交換は、2〜3社に同じ条件（扉の数・シリンダーの種類）で見積もりを取って比べてください。
+            賃貸の場合の費用負担は<Link href="/chintai-kagi-koukan-hiyou/" className="text-primary underline">賃貸の鍵交換費用</Link>で解説しています。
+          </p>
+
+          <h3 id="cp" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
+            交換する鍵の選び方（兵庫県警の案内）
+            <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
+          </h3>
+          <p className="leading-loose mb-4">
+            兵庫県警察は、玄関などの出入り口の防犯ポイントとして、確実な戸締りに加えて<Hl>防犯性能の高い建物部品（ドア、錠など）と補助錠の取り付け</Hl>を挙げています。
+            防犯性能の高い建物部品は、警察庁・関係省庁と民間団体による「官民合同会議」が一定の防犯性能があると評価して目録に掲載したもので、共通の標章が「CPマーク」です。
+          </p>
+          <p className="leading-loose mb-4">
+            官民合同会議は、侵入までに「5分」以上かかること等を防犯性能の基準としています。
+            同ページでは、侵入をあきらめる時間について侵入窃盗の被疑者の約17％が「2分」、約51％が「2分を超えて5分以内」と答えた調査を紹介し、<Hl>建物部品が5分耐えれば約7割が侵入をあきらめる</Hl>と説明しています。
+            鍵を交換する際は、<Hl>見積もりの段階で、交換するシリンダーがCP部品（CPマーク付き）かどうかを業者に確認</Hl>してください。
+          </p>
+          <p className="text-xs text-text-muted mb-10">
+            出典：<a href="https://www.police.pref.hyogo.lg.jp/seikatu/akisu/index.htm" target="_blank" rel="noopener noreferrer" className="text-primary underline">兵庫県警察「泥棒や強盗などの侵入を防ぎましょう！」</a>（2026年10月26日確認）
+          </p>
+
+          <h3 id="nagare" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
+            神戸で鍵交換を依頼する流れ
+            <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
+          </h3>
+          <ol className="leading-loose mb-10 list-decimal pl-6 space-y-2">
+            <li>賃貸の場合は、業者に連絡する前に管理会社・大家の許可を得る</li>
+            <li>扉の数と今の鍵の種類（メーカー・刻みキーかディンプルキーか）を確認する</li>
+            <li>2〜3社に同じ条件で、部品代・出張料を含めた総額の見積もりを取り、交換するシリンダーがCP部品かどうかも確認する</li>
+            <li>金額に合意してから作業を始めてもらい、作業後は会社名と金額が書かれた領収書を受け取る</li>
+          </ol>
+
+          {/* 2｜5選 */}
+          <H2 id="kobe6" num="2">神戸で依頼できるおすすめの鍵業者5選</H2>
           <p className="leading-loose mb-2">
             神戸市内から依頼できる主要な鍵業者5社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
           </p>
@@ -591,7 +673,7 @@ export default function AreaKobePage() {
           ))}
 
           {/* 2｜急ぎ */}
-          <H2 id="isogi" num="2">神戸で急いで鍵開けを依頼したい場合</H2>
+          <H2 id="isogi" num="3">神戸で急いで鍵開けを依頼したい場合</H2>
           <p className="leading-loose mb-4">
             締め出しなどで急ぎの鍵開けが必要な場合は、駆けつけ時間の目安を公表している業者が候補になります。<Hl>鍵の生活救急車は最短15分の駆けつけと全国約2,270店の拠点網</Hl>を掲げており、<Hl>自社施工の鍵猿も最短15分到着</Hl>を掲げています。また、<Hl>カギ110番は電話一本で最短5分の手配</Hl>（全国47都道府県の加盟店ネットワークから近隣の業者を手配する仕組み）を掲げています。
           </p>
@@ -600,7 +682,7 @@ export default function AreaKobePage() {
           </p>
 
           {/* 3｜深夜 */}
-          <H2 id="shinya" num="3">深夜・早朝の鍵トラブルの場合</H2>
+          <H2 id="shinya" num="4">深夜・早朝の鍵トラブルの場合</H2>
           <p className="leading-loose mb-4">
             深夜・早朝のトラブルでは、まず24時間受付かどうかが重要です。一次確認値では、<Hl>カギ110番・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。一方、<Hl>鍵猿の電話受付は8:00〜23:00</Hl>（施工は深夜・早朝も対応・365日）のため、深夜に新規で電話する場合は24時間受付の業者のほうが確実です。
           </p>
@@ -609,7 +691,7 @@ export default function AreaKobePage() {
           </p>
 
           {/* 4｜料金明確 */}
-          <H2 id="meikaku" num="4">料金を事前に確認したい場合</H2>
+          <H2 id="meikaku" num="5">料金を事前に確認したい場合</H2>
           <p className="leading-loose mb-4">
             鍵業者とのトラブルで多いのは、作業後に想定外の金額を請求されるケースです。料金の透明性を重視する場合、<Hl>鍵のレスキューは鍵開け6,600円〜（税込）と出張料4,400〜8,800円（税込・地域により異なる）を公式サイトで分けて公開</Hl>しています。<Hl>鍵猿も基本料・見積料・出張料0円で、作業前に合計金額を提示し追加請求しない方式</Hl>です。また、<Hl>鍵の生活救急車は出張・見積もり・キャンセルが無料</Hl>のため、提示された金額を見てから依頼するかどうかを判断できます。
           </p>
@@ -618,7 +700,7 @@ export default function AreaKobePage() {
           </p>
 
           {/* 5｜自社施工 */}
-          <H2 id="jisha" num="5">自社施工・自社スタッフによる対応を希望する場合</H2>
+          <H2 id="jisha" num="6">自社施工・自社スタッフによる対応を希望する場合</H2>
           <p className="leading-loose mb-4">
             鍵業者には、依頼を受けて加盟店を手配する「紹介型」と、自社のスタッフが直接対応する「自社対応型」があります。紹介型は対応範囲が広い一方、店舗によって技術・対応に差が出ることがあります。神戸で自社施工を重視する場合は、<Hl>兵庫県を含む全国（秋田・福井・鳥取・島根・徳島・宮崎を除く）に対応する鍵猿が選択肢</Hl>になります。下請けを使わない自社施工（自社コールセンター＋自社スタッフ）で、1年間の無料工事保証・無償商品保証があり、防犯設備士も在籍しています。
           </p>
@@ -627,7 +709,7 @@ export default function AreaKobePage() {
           </p>
 
           {/* 6｜神戸特有 */}
-          <H2 id="kobe-tips" num="6">神戸で鍵業者に依頼する前の確認事項</H2>
+          <H2 id="kobe-tips" num="7">神戸で鍵業者に依頼する前の確認事項</H2>
           <p className="leading-loose mb-4">
             オートロック付きマンションで締め出された場合、<Hl>エントランス（共用部）の解錠は鍵業者に頼んでも基本的に解決できません</Hl>。共用部は管理会社・管理組合の管理範囲のため、まず管理会社・大家・管理人にご連絡ください。鍵業者に依頼できるのは、自室玄関の鍵開けや紛失時の鍵交換など専有部のトラブルです。電話の際は、エントランスに入れないのか、自室の鍵のトラブルなのかを区別してお伝えください。オートロック物件で締め出しを防ぐ習慣は<Link href="/autolock-shimedashi-yobou/" className="text-primary underline">オートロックの締め出し予防</Link>で解説しています。
           </p>
@@ -639,7 +721,7 @@ export default function AreaKobePage() {
           </p>
 
           {/* 7｜選び方 */}
-          <H2 id="erabikata" num="7">神戸の鍵業者の選び方</H2>
+          <H2 id="erabikata" num="8">神戸の鍵業者の選び方</H2>
           <p className="leading-loose mb-6">
             鍵業者を選ぶ際は、次の4つの手順で確認することをおすすめします。緊急時は即決しがちですが、依頼前に数分の確認を行うことで、多くのトラブルを防ぐことができます。
           </p>
@@ -654,7 +736,7 @@ export default function AreaKobePage() {
           ))}
 
           {/* 8｜FAQ */}
-          <H2 id="faq" num="8">神戸の鍵業者でよくある質問</H2>
+          <H2 id="faq" num="9">神戸の鍵業者でよくある質問</H2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <div key={f.q} className="rounded-[2px] border border-border">
@@ -705,7 +787,7 @@ export default function AreaKobePage() {
           </div>
 
           {/* 9｜まとめ */}
-          <H2 id="matome" num="9">まとめ</H2>
+          <H2 id="matome" num="10">まとめ</H2>
           <p className="leading-loose mb-4">
             本記事では、神戸で鍵開け・鍵交換を依頼できる主要5社を、一次確認した料金・受付時間・運営会社の情報で比較しました。駆けつけの速さを重視する場合は鍵の生活救急車・鍵猿・カギ110番、深夜・早朝の新規受付を重視する場合はカギ110番・鍵のレスキュー、自社施工と保証を重視する場合は自社施工の鍵猿、料金の明確さを重視する場合は鍵のレスキューや鍵猿というように、目的によって適した業者は異なります。
           </p>
