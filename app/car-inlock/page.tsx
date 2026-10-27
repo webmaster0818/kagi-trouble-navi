@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "JAFのインロック（キー閉じ込み）料金｜会員は無料・非会員25,630円の条件と自動車保険のロードサービス | 鍵トラブルナビ",
+  title: "JAFのインキー（インロック・キー閉じ込み）料金｜会員は無料・非会員25,630円の条件と自動車保険のロードサービス | 鍵トラブルナビ",
   description:
-    "JAFにインロック（インキー・キー閉じ込み）の解錠を依頼した場合の料金を、JAF公式の料金表で確認しました。会員は無料、非会員は夜間（20時〜8時）・一般道でのドア開放作業で25,630円（税込）です。昼間・高速道路の基本料、現場で入会した場合の扱い、自動車保険のロードサービスとの違いも解説します。",
+    "JAFにインロック（インキー・キー閉じ込み）の解錠を依頼した場合の料金を、JAF公式の料金表で確認しました。会員は無料、非会員は夜間（20時〜8時）・一般道でのドア開放作業で25,630円（税込）です。昼間・高速道路の基本料、2024年4月改定前との違い、自動車保険のロードサービスとの違いも解説します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/car-inlock/" },
 };
 
@@ -44,12 +44,12 @@ const breadcrumbLd = {
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "JAFのインロック（キー閉じ込み）料金と対処法",
+  headline: "JAFのインキー（インロック・キー閉じ込み）料金と対処法",
   description: "JAFにキー閉じ込みの解錠を依頼した場合の会員・非会員の料金、時間帯・道路別の基本料、自動車保険のロードサービスとの違いと対処手順を解説します。",
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-07-04",
-  dateModified: "2026-10-25",
+  dateModified: "2026-10-27",
 };
 
 export default function CarInlockPage() {
@@ -74,7 +74,7 @@ export default function CarInlockPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             JAFのインロック（キー閉じ込み）料金と対処法
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月25日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月27日</p>
 
           {/* 緊急警告 */}
           <div className="bg-red-50 border border-red-300 rounded-2xl p-5 mb-6">
@@ -118,8 +118,39 @@ export default function CarInlockPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-text-muted leading-relaxed mb-10">
+          <p className="text-xs text-text-muted leading-relaxed mb-6">
             ※金額はすべて税込です。出典：<a href="https://jaf.or.jp/common/about-road-service/estimate-costs" className="underline" target="_blank" rel="noopener noreferrer">JAF「ロードサービスの料金を調べる」</a>（2024年4月1日改定の料金）、<a href="https://jaf.or.jp/individual/join-us/membership/individual" className="underline" target="_blank" rel="noopener noreferrer">JAF「個人会員について」</a>（入会金2,000円・年会費4,000円、現場で入会した場合の扱い）、<a href="https://jaf.or.jp/common/call-road-service/before-calling/road-service-terms" className="underline" target="_blank" rel="noopener noreferrer">JAFロードサービス利用約款</a>。いずれも2026年10月19日に確認しました。昼間・高速道路でのキー閉じ込みの総額は公式に個別の掲載がないため、依頼時にJAFへご確認ください。
+          </p>
+          <h3 className="font-bold text-text-primary mb-3">2024年4月の料金改定前との違い（非会員）</h3>
+          <p className="text-sm text-text-secondary leading-relaxed mb-3">
+            JAFは2024年4月1日にロードサービス料金を改定し、入会していない方の基本料と作業料が上がりました。2024年3月以前に書かれた記事やブログの金額は改定前の料金のため、現在の料金とは異なります。会員の基本料は改定前も改定後も無料です。
+          </p>
+          <div className="overflow-x-auto mb-3 rounded-xl border border-black/10">
+            <table className="w-full text-sm min-w-[520px]">
+              <thead>
+                <tr className="bg-primary text-white">
+                  <th className="px-4 py-3 text-left font-bold">非会員の料金（一般道路）</th>
+                  <th className="px-4 py-3 text-left font-bold">改定前</th>
+                  <th className="px-4 py-3 text-left font-bold">2024年4月1日以降</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["基本料（8時〜20時）", "8,380円", "15,700円"],
+                  ["基本料（20時〜8時）", "10,480円", "19,630円"],
+                  ["作業料（作業工数表の工数0.1あたり）", "950円", "1,200円"],
+                ].map((r, i) => (
+                  <tr key={i} className={i % 2 ? "bg-surface-alt" : "bg-white"}>
+                    <td className="px-4 py-3 font-medium text-text-primary">{r[0]}</td>
+                    <td className="px-4 py-3 text-text-secondary whitespace-nowrap">{r[1]}</td>
+                    <td className="px-4 py-3 text-text-primary font-bold whitespace-nowrap">{r[2]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-text-muted leading-relaxed mb-10">
+            ※税込。出典：<a href="https://jaf.or.jp/common/news/2024/20240227-001" className="underline" target="_blank" rel="noopener noreferrer">JAF ニュースリリース（2024年2月27日）</a>添付の「ロードサービス料金表（新旧比較）」（2026年10月27日確認）。新旧比較表には、キー閉じ込みの総額の行はありません。
           </p>
 
           <h2 className="text-xl font-bold text-text-primary mb-4">JAFと自動車保険のロードサービスの違い</h2>
