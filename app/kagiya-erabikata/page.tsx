@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "鍵屋の選び方｜電話で確認する質問と、作業前・支払い時のチェックリスト | 鍵トラブルナビ",
+  title: "鍵屋・鍵業者の選び方｜電話で確認する質問と、作業前・支払い時のチェックリスト | 鍵トラブルナビ",
   description:
-    "鍵開け・鍵交換を依頼する鍵屋の選び方を、依頼前・電話・到着後・支払い時の4段階のチェックリストとしてまとめました。国民生活センターが公表した出張解錠の料金トラブル事例をもとに、「〇〇円〜」の表示ではなく総額と運営会社で比較する方法をご説明します。",
+    "鍵開け・鍵交換を依頼する鍵屋・鍵業者の選び方を、依頼前・電話・到着後・支払い時の4段階のチェックリストとしてまとめました。国民生活センターが公表した出張解錠の料金トラブル事例をもとに、「〇〇円〜」の表示ではなく総額と運営会社で比較する方法をご説明します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/kagiya-erabikata/" },
 };
 
@@ -27,18 +27,18 @@ const breadcrumbLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "ホーム", item: "https://kagi-trouble-navi.com/" },
-    { "@type": "ListItem", position: 2, name: "鍵屋の選び方" },
+    { "@type": "ListItem", position: 2, name: "鍵屋・鍵業者の選び方" },
   ],
 };
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "鍵屋の選び方｜電話で確認する質問と、作業前・支払い時のチェックリスト",
-  description: "鍵開け・鍵交換を依頼する鍵屋の選び方を、依頼前・電話・到着後・支払い時の4段階のチェックリストとしてまとめました。国民生活センターが公表した出張解錠の料金トラブル事例をもとに、「〇〇円〜」の表示ではなく総額と運営会社で比較する方法をご説明します。",
+  headline: "鍵屋・鍵業者の選び方｜電話で確認する質問と、作業前・支払い時のチェックリスト",
+  description: "鍵開け・鍵交換を依頼する鍵屋・鍵業者の選び方を、依頼前・電話・到着後・支払い時の4段階のチェックリストとしてまとめました。国民生活センターが公表した出張解錠の料金トラブル事例をもとに、「〇〇円〜」の表示ではなく総額と運営会社で比較する方法をご説明します。",
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-10-17",
-  dateModified: "2026-10-17",
+  dateModified: "2026-10-27",
 };
 
 export default function KagiyaErabikataPage() {
@@ -53,18 +53,18 @@ export default function KagiyaErabikataPage() {
           <div className="max-w-4xl mx-auto px-4 py-3 text-xs text-text-muted">
             <a href="/" className="hover:text-primary">ホーム</a>
             <span className="mx-1.5">/</span>
-            <span className="text-text-secondary">鍵屋の選び方</span>
+            <span className="text-text-secondary">鍵屋・鍵業者の選び方</span>
           </div>
         </div>
 
         <article className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
-            鍵屋の選び方｜電話で確認する質問と、作業前・支払い時のチェックリスト
+            鍵屋・鍵業者の選び方｜電話で確認する質問と、作業前・支払い時のチェックリスト
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月17日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月27日</p>
 
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">鍵屋は「〇〇円〜」の最低料金ではなく、作業前に示される総額と、運営会社・所在地が確認できるかどうかで選ぶことが基本です。</p>
+            <p className="font-bold text-primary mb-2">鍵屋（鍵業者）は「〇〇円〜」の最低料金ではなく、作業前に示される総額と、運営会社・所在地が確認できるかどうかで選ぶことが基本です。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base" dangerouslySetInnerHTML={{ __html: "国民生活センターは、インターネット広告の安い表示を見て依頼したところ、作業後に約10万円を請求された事例などを公表し、<strong>「〇〇円〜」の表示をうのみにしないこと</strong>、<strong>出張料やキャンセル時の金額も確認すること</strong>、<strong>納得できない場合はその場で支払わないこと</strong>を呼びかけています。電話の段階で確認する質問と、作業前・支払い時の確認事項を以下にまとめました。" }} />
           </div>
 

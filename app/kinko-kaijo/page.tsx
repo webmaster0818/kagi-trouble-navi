@@ -62,7 +62,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-07-02",
-  dateModified: "2026-10-25",
+  dateModified: "2026-10-27",
 };
 
 export default function KinkoKaijoPage() {
@@ -87,7 +87,7 @@ export default function KinkoKaijoPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             金庫が開かない時の原因別の対処法と鍵開けの料金相場【2026年版】
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月25日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月27日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
@@ -130,6 +130,26 @@ export default function KinkoKaijoPage() {
               </li>
             ))}
           </ol>
+
+          {/* 依頼先 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">金庫が開かない時に依頼できる業者と選び方</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            依頼先は、番号の照会や修理を受け付ける<strong>金庫メーカー</strong>と、現地で解錠する<strong>鍵業者</strong>の2つです。購入証明があり急ぎでなければメーカーへの照会、すぐに開ける必要がある場合や遺品の金庫で購入証明がない場合は鍵業者への依頼が一般的です。当サイトで紹介している次の5社は、いずれも公式サイトで金庫の鍵開け・解錠を案内しています（2026年10月27日確認）。
+          </p>
+          <ul className="grid sm:grid-cols-2 gap-2 mb-4 text-sm">
+            {[
+              ["/agents/kagi110ban/", "カギ110番"],
+              ["/agents/seikatsu-kyukyusha/", "鍵の生活救急車"],
+              ["/agents/kagi-kyukyusha/", "カギの救急車"],
+              ["/agents/kagi-rescue/", "鍵のレスキュー"],
+              ["/agents/kagizaru/", "鍵猿"],
+            ].map(([href, label]) => (
+              <li key={href}><a href={href} className="block rounded-lg border border-primary/30 px-4 py-2 text-primary hover:bg-primary/5">{label}の口コミ・評判</a></li>
+            ))}
+          </ul>
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            業者を選ぶ際は、①金庫のメーカー・型番を伝えて対応できるかを確認する、②非破壊で開けられるか・開けた後に再使用できるかを尋ねる、③出張料を含む総額を作業前に提示してもらう、④所有者確認（身分証など）を行う業者かを確かめる、の4点で比べてください。電話での確認事項は<a href="/kagiya-erabikata/" className="text-primary underline">鍵屋・鍵業者の選び方</a>にまとめています。
+          </p>
 
           {/* タイプ別の原因 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">金庫のタイプ別の開かない原因</h2>

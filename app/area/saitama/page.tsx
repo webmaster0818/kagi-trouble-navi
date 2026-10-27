@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/saitama/";
-const UPDATED = "2026年10月15日";
-const UPDATED_ISO = "2026-10-15";
+const UPDATED = "2026年10月27日";
+const UPDATED_ISO = "2026-10-27";
 
 export const metadata: Metadata = {
   title: {
@@ -606,6 +606,9 @@ export default function AreaSaitamaPage() {
               <p className="leading-loose text-sm md:text-base">{s.b}</p>
             </section>
           ))}
+          <p className="leading-loose mb-8 text-sm md:text-base">
+            金庫が開かない場合は、テンキーの電池切れなどご自身で確かめられる原因と、金庫の解錠を案内している業者・選び方を<Link href="/kinko-kaijo/" className="text-primary underline">金庫が開かない時の対処法と依頼できる業者</Link>にまとめています。電話で確認する質問は<Link href="/kagiya-erabikata/" className="text-primary underline">鍵屋・鍵業者の選び方チェックリスト</Link>をご覧ください。
+          </p>
 
           {/* 8｜FAQ */}
           <H2 id="faq" num="8">さいたまの鍵業者でよくある質問</H2>

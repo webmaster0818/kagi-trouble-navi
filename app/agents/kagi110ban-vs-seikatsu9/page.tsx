@@ -87,6 +87,10 @@ export default function VsPage() {
             </p>
           </div>
 
+          <p className="text-sm text-text-secondary leading-relaxed mb-10">
+            このページはカギ110番と生活救急車の2社を並べて比較しています。カギの生活救急車1社の口コミ・評判、鍵の種類別の料金表、運営会社の経緯は<a href="/agents/seikatsu-kyukyusha/" className="text-primary underline">鍵の生活救急車（カギの生活救急車）の口コミ・評判</a>にまとめています。
+          </p>
+
           {/* 比較表 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">公式情報の比較表（2026年7月4日確認）</h2>
           <div className="overflow-x-auto mb-4 rounded-xl border border-black/10">

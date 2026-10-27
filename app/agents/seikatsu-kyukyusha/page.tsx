@@ -6,14 +6,14 @@ import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/agents/seikatsu-kyukyusha/";
-const UPDATED = "2026年10月14日";
+const UPDATED = "2026年10月27日";
 
 export const metadata: Metadata = {
-  title: { absolute: "鍵の生活救急車の口コミ・評判は？鍵開け8,800円〜（税込）とJBRから承継後の運営会社【2026年10月】｜鍵トラブルナビ" },
-  description: "鍵の生活救急車の口コミ・評判を、出典を明記して整理。運営は2022年11月にJBRから事業を承継した株式会社生活救急車（現在はJBRと資本関係なし）。公式料金ページの鍵開け8,800円〜（税込）、出張・見積もり・キャンセル無料の例外、公式の実績表記の読み方を解説します。",
+  title: { absolute: "鍵の生活救急車（カギの生活救急車）の口コミ・評判は？鍵開け8,800円〜（税込）と運営会社【2026年10月】｜鍵トラブルナビ" },
+  description: "カギの生活救急車の口コミ・評判を、出典を明記して整理。運営は2022年11月にJBRから事業を承継した株式会社生活救急車（現在はJBRと資本関係なし）。公式料金ページの鍵開け8,800円〜（税込）、出張・見積もり・キャンセル無料の例外、公式の実績表記の読み方を解説します。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
-    title: "鍵の生活救急車の口コミ・評判は？鍵開け8,800円〜（税込）とJBRから承継後の運営会社【2026年10月】",
+    title: "鍵の生活救急車（カギの生活救急車）の口コミ・評判は？鍵開け8,800円〜（税込）と運営会社【2026年10月】",
     description: "鍵の生活救急車の料金・対応スピード・実績・利用者の口コミを中立的な立場で調査し、利用前に確認すべきメリットと注意点を解説します。",
     url: `${SITE}${PATH}`,
     type: "article",
@@ -47,7 +47,7 @@ const badReviews = [
 
 const faqs = [
     {"q": "鍵の生活救急車はJBR（ジャパンベストレスキュー）が運営していますか", "a": "現在は株式会社生活救急車が運営しています。2022年11月にJBRから事業を承継し、同社は公式サイトで「ジャパンベストレスキューシステム株式会社とは資本関係を含め一切関係ございません」と表明しています（2026年10月14日確認）。"},
-    {"q": "鍵の生活救急車の料金はいくらからですか", "a": "公式の料金ページ（全て税込）では、鍵開け（刻みキー）8,800円〜、ディンプルキー33,000円〜、鍵交換11,000円＋部品代です（2026年10月21日確認）。出張・見積もり・キャンセルは無料ですが、エリア・店舗・現場状況によっては事前確認のうえ調査・見積もりに費用がかかる場合があると注記されています。"},
+    {"q": "鍵の生活救急車の料金はいくらからですか", "a": "公式の料金ページ（全て税込）では、鍵開け（刻みキー）8,800円〜、ディンプルキー33,000円〜、鍵交換11,000円＋部品代です（2026年10月27日確認）。出張・見積もり・キャンセルは無料ですが、エリア・店舗・現場状況によっては事前確認のうえ調査・見積もりに費用がかかる場合があると注記されています。"},
     {"q": "どのくらいの時間で来てくれますか", "a": "最短15分での駆けつけを掲げています。ただし、拠点からの距離や繁忙状況により到着時間は変動するため、依頼時に到着目安を確認することをおすすめします。"},
     {"q": "対応エリアは全国ですか", "a": "全国対応を掲げています。公式トップには「拠点数2,270店」と「拠点数1,900店（2017年1月現在）」の2つの表記があります。自宅の地域への対応可否と到着の目安は、電話でご確認ください。"},
     {"q": "支払いにクレジットカードは使えますか", "a": "現金のほかクレジットカード（VISA/Master/JCB等）に対応するとされていますが、対応店舗・エリアによって利用可否が異なる場合があるため、事前にご確認ください。"}
@@ -58,11 +58,11 @@ export default function SeikatsuKyukyushaPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "鍵の生活救急車の口コミ・評判は？鍵開け8,800円〜（税込）とJBRから承継後の運営会社",
+    headline: "鍵の生活救急車（カギの生活救急車）の口コミ・評判は？鍵開け8,800円〜（税込）と運営会社",
     description: "鍵の生活救急車の料金・対応スピード・実績・利用者の口コミを中立的な立場で調査し、利用前に確認すべきメリットと注意点を解説します。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-20T00:00:00+09:00",
-    dateModified: "2026-10-14T00:00:00+09:00",
+    dateModified: "2026-10-27T00:00:00+09:00",
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` },
@@ -117,6 +117,12 @@ export default function SeikatsuKyukyushaPage() {
         <div className="mx-auto max-w-4xl px-4 py-8 md:py-12">
           <p className="text-sm text-slate-500 mb-8">最終更新日：{UPDATED}　／　鍵トラブルナビ編集部</p>
 
+          <div className="mb-10 rounded-2xl border border-primary/20 bg-primary/5 p-5 sm:p-6">
+            <p className="font-bold text-primary mb-2">鍵の生活救急車（カギの生活救急車）の口コミ・評判は、対応の速さを評価する声と、料金が見積もりより高く感じたという声に分かれています。</p>
+            <p className="text-sm sm:text-base leading-relaxed text-slate-700">みん評などの公開口コミ（2026年7月時点）では、好意的な傾向は「緊急時の駆けつけが速い」「出張・見積もり・キャンセルが無料」「作業が丁寧」、否定的な傾向は「ホームページの表記と実際の請求額の差」「部品代が割高に感じる」「電話での説明と現地の対応の差」です。公式の料金ページ（全て税込）は鍵開け（刻みキー）8,800円〜、ディンプルキー33,000円〜、鍵交換11,000円＋部品代です（2026年10月27日確認）。依頼する場合は、作業前に部品代を含む総額を確認してください。</p>
+            <p className="text-xs text-slate-500 mt-3">このページは鍵の生活救急車1社の口コミ・料金・運営会社をまとめています。カギ110番と並べて料金・無料範囲を比べたい方は<Link href="/agents/kagi110ban-vs-seikatsu9/" className="text-amber-700 underline">カギ110番と生活救急車の比較</Link>をご覧ください。</p>
+          </div>
+
           <nav aria-label="目次" className="mb-12 rounded-2xl border border-slate-200 bg-slate-50 p-6">
             <p className="font-bold text-slate-800 mb-4">この記事の目次</p>
             <ol className="space-y-2 text-sm md:text-base">
@@ -153,7 +159,7 @@ export default function SeikatsuKyukyushaPage() {
 
           <section id="price" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">鍵の生活救急車の料金体系と相場</h2>
-            <p className="leading-loose mb-5 text-slate-700">公式の料金ページには「価格表記は全て税込」と明記され、<strong>鍵開け（刻みキー）は8,800円〜（税込）</strong>、ディンプルキーは33,000円〜です。特殊作業となる場合は別途料金がかかると注記されています（2026年10月21日確認）。</p>
+            <p className="leading-loose mb-5 text-slate-700">公式の料金ページには「価格表記は全て税込」と明記され、<strong>鍵開け（刻みキー）は8,800円〜（税込）</strong>、ディンプルキーは33,000円〜です。特殊作業となる場合は別途料金がかかると注記されています（2026年10月27日確認）。</p>
             <div className="overflow-x-auto">
               <table className="table w-full border border-slate-200">
                 <thead><tr className="bg-slate-100 text-slate-700"><th>作業</th><th>料金（税込）</th></tr></thead>
@@ -246,6 +252,7 @@ export default function SeikatsuKyukyushaPage() {
               <li className="flex gap-3"><span className="font-bold text-amber-600">4.</span>作業後の保証やアフター対応の有無</li>
             </ol>
             <p className="leading-loose mt-4 text-slate-700">料金や対応は地域・状況で変わるため、鍵の生活救急車を含めて<Link href="/" className="text-amber-700 underline">複数の鍵業者を比較</Link>し、見積もりを取ったうえで選ぶことをおすすめします。</p>
+            <p className="leading-loose mt-4 text-slate-700">カギ110番との違い（キャンセル料の記載・料金表示の構造・運営会社）は<Link href="/agents/kagi110ban-vs-seikatsu9/" className="text-amber-700 underline">カギ110番と生活救急車はどっちがいい？</Link>で比較しています。</p>
           </section>
 
           <section id="faq" className="scroll-mt-20 mb-14">
@@ -263,7 +270,7 @@ export default function SeikatsuKyukyushaPage() {
 
           <section id="sources" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">本記事の出典・参照元</h2>
-            <p className="leading-loose mb-4 text-slate-700">本記事の事実情報・口コミの傾向は、以下の公式サイトおよび口コミ・比較サイトを参照し、編集部が確認・要約しています（確認日：{UPDATED}）。</p>
+            <p className="leading-loose mb-4 text-slate-700">本記事の事実情報・口コミの傾向は、以下の公式サイトおよび口コミ・比較サイトを参照し、編集部が確認・要約しています（運営会社・実績表記は2026年10月14日、料金ページは2026年10月27日に確認。口コミの傾向は2026年7月時点）。</p>
             <ul className="space-y-2 text-sm">
               <li><a href="https://kagi-seikatsukyukyusya.com/price/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">鍵の生活救急車 公式（料金）</a></li>
               <li><a href="https://kagi-seikatsukyukyusya.com/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">カギの生活救急車 公式サイト</a></li>
