@@ -7,7 +7,7 @@ import { AffBanner, AffText } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/agents/kagi110ban/";
-const UPDATED = "2026年10月23日";
+const UPDATED = "2026年10月28日";
 
 export const metadata: Metadata = {
   title: {
@@ -65,7 +65,7 @@ export default function Kagi110banPage() {
     description: "カギ110番の公式料金表・公式集計と第三者サイトの評価・加盟店の仕組み・消費者庁の注意喚起との関係を、出典を明記して整理した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-10T00:00:00+09:00",
-    dateModified: "2026-10-23T00:00:00+09:00",
+    dateModified: "2026-10-28T00:00:00+09:00",
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` },
@@ -111,7 +111,7 @@ export default function Kagi110banPage() {
               料金・対応スピード・メリットを調査
             </h1>
             <p className="text-text-secondary leading-relaxed max-w-2xl">
-              カギ110番は、全国415社の加盟店から近くの業者を手配する24時間365日受付のサービスです。公式の料金表・自社アンケートと、第三者サイトの口コミを編集部が比較・確認しました。
+              「鍵110番」で探されるカギ110番は、東証上場のシェアリングテクノロジー株式会社が運営し、全国415社以上の加盟店から近くの業者を手配する24時間365日受付のサービスです（公式サイト kagi110ban.jp・2026年10月28日確認）。名前が似た「鍵の110番」「カギの110番」などは別の事業者です。公式の料金表・自社アンケートと、第三者サイトの口コミを編集部が比較・確認しました。
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
               <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">鍵開け 11,000円〜（税込・公式料金表）</span>
