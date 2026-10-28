@@ -6,20 +6,20 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/yamaguchi/";
-const UPDATED = "2026年10月15日";
-const UPDATED_ISO = "2026-10-15";
+const UPDATED = "2026年10月28日";
+const UPDATED_ISO = "2026-10-28";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "【2026年最新】山口の鍵開け・鍵交換業者おすすめ4選｜24時間対応の鍵屋を比較｜鍵トラブルナビ",
+      "【2026年最新】山口の鍵開け・鍵交換業者おすすめ4選｜鍵開けの料金比較と24時間対応の鍵屋｜鍵トラブルナビ",
   },
   description:
-    "山口で鍵開け・鍵交換を依頼できる鍵業者4社を一次確認値で比較しています。カギ110番（鍵開け11,000円〜）・鍵の生活救急車（最短15分）・鍵のレスキュー・カギの救急車の料金と受付時間、電子錠・スマートロックの電池切れ予防と家族のスペア運用について、編集部が中立的な立場でまとめています。",
+    "山口で鍵開けを頼める4社の公式料金（税込）は、鍵のレスキュー6,600円〜＋出張料4,400〜8,800円、鍵の生活救急車8,800円〜（出張・見積もり無料）、カギ110番11,000円〜。国民生活センターが案内する、依頼前に確認する点もまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title:
-      "【2026年最新】山口の鍵開け・鍵交換業者おすすめ4選｜24時間対応の鍵屋を比較",
+      "【2026年最新】山口の鍵開け・鍵交換業者おすすめ4選｜鍵開けの料金比較と24時間対応の鍵屋",
     description:
       "山口で鍵開け・鍵交換を依頼できる鍵業者4社を、料金・受付時間の一次確認値で比較しています。玄関の電子錠・スマートロックの電池切れを防ぐ運用と、家族のスペアの持たせ方も解説します。",
     url: `${SITE}${PATH}`,
@@ -291,7 +291,7 @@ export default function AreaYamaguchiPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "【2026年最新】山口の鍵開け・鍵交換業者おすすめ4選｜24時間対応の鍵屋を比較",
+      "【2026年最新】山口の鍵開け・鍵交換業者おすすめ4選｜鍵開けの料金比較と24時間対応の鍵屋",
     description:
       "山口で鍵開け・鍵交換を依頼できる鍵業者4社を、料金・受付時間の一次確認値で比較した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
@@ -360,7 +360,7 @@ export default function AreaYamaguchiPage() {
           {/* h1・更新日・タグchips */}
           <header className="grid gap-4">
             <h1 className="text-2xl md:text-[32px] font-bold leading-normal tracking-wide text-foreground">
-              【2026年最新】山口の鍵開け・鍵交換業者おすすめ4選｜24時間対応の鍵屋を比較
+              【2026年最新】山口の鍵開け・鍵交換業者おすすめ4選｜鍵開けの料金比較と24時間対応の鍵屋
             </h1>
             <div>
               <span className="inline-block rounded-[2px] bg-primary px-2 py-1 text-xs font-bold tracking-wide text-white">
@@ -394,6 +394,27 @@ export default function AreaYamaguchiPage() {
               />
             </figure>
           </header>
+
+          {/* 即答：山口で鍵開けを頼む場合の料金 */}
+          <section aria-labelledby="sokutou" className="mt-6 rounded-[2px] border border-border bg-[#F7FAFD] px-5 py-5 md:px-8">
+            <p id="sokutou" className="font-bold text-foreground mb-3">
+              山口で鍵開けを頼む場合の料金（各社の公式表示・税込）
+            </p>
+            <ul className="grid gap-2 text-sm md:text-base leading-relaxed">
+              <li>・鍵のレスキュー：鍵開け<Hl>6,600円〜</Hl>に、出張料4,400〜8,800円（出張先の地域により異なる）が加わります</li>
+              <li>・鍵の生活救急車：鍵開け<Hl>8,800円〜</Hl>（刻みキー。ディンプルキーは33,000円〜）。出張・見積もり・キャンセルは無料です</li>
+              <li>・カギ110番：鍵開け<Hl>11,000円〜</Hl>。交通費・お客様都合のキャンセル料は別途の場合があります</li>
+              <li>・カギの救急車：料金は加盟店ごとに異なります（下の比較表を参照）</li>
+            </ul>
+            <p className="mt-3 text-sm leading-relaxed">
+              いずれも「〜」付きの最低額で、鍵の種類・時間帯・現場の状況で総額が変わります。国民生活センターは、広告の「○○円〜」をうのみにせず出張料やキャンセル時の金額も事前に確認すること、料金や作業内容に納得できない場合はその場で支払わないこと、トラブルになったら消費者ホットライン「188」で最寄りの消費生活センターに相談することを案内しています。
+            </p>
+            <p className="mt-2 text-xs text-text-muted leading-relaxed">
+              出典：各社公式の料金表・特定商取引法上の表記（鍵のレスキューは出張料）、
+              <a href="https://www.kokusen.go.jp/news/data/n-20241119_1.html" className="underline" target="_blank" rel="noopener noreferrer">国民生活センター「【広告より高額！？】出張解錠サービスの料金トラブルに注意」（2024年11月19日）</a>
+              。いずれも2026年10月28日確認。
+            </p>
+          </section>
 
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
