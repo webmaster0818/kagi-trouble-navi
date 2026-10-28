@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/tokushima/";
-const UPDATED = "2026年10月15日";
-const UPDATED_ISO = "2026-10-15";
+const UPDATED = "2026年10月28日";
+const UPDATED_ISO = "2026-10-28";
 
 export const metadata: Metadata = {
   title: {
@@ -613,6 +613,9 @@ export default function AreaTokushimaPage() {
               <p className="leading-loose text-sm md:text-base">{s.b}</p>
             </section>
           ))}
+          <p className="leading-loose mb-8 text-sm md:text-base">
+            電話で確認する質問（総額・断った場合の費用・運営会社・到着時刻）と、作業前・支払い時の確認事項は、地域を問わない<Link href="/kagiya-erabikata/" className="text-primary underline">鍵屋・鍵業者の選び方チェックリスト</Link>にまとめています（国民生活センターの出張解錠の相談事例にもとづく）。
+          </p>
 
           {/* 8｜FAQ */}
           <H2 id="faq" num="8">徳島の鍵業者でよくある質問</H2>

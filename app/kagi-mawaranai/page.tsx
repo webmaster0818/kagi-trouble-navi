@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "鍵が回らない・回りにくい時の原因と対処法｜避けるべき行動と料金相場 | 鍵トラブルナビ",
+  title: "鍵が回らない・回りにくい時の原因と対処法｜避けるべき行動と料金の確認方法 | 鍵トラブルナビ",
   description:
     "鍵が回らない・固い・回りにくい時の原因（ホコリ詰まり・潤滑不足・鍵の摩耗・凍結）と正しい対処法を解説。油（KURE 5-56）を注すのは避けてください。直らない場合はシリンダー交換となり、金額は業者の見積もりで確認します。鍵を無理に回して折らないための手順も紹介します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/kagi-mawaranai/" },

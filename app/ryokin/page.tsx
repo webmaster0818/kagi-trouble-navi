@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "鍵開け・鍵交換の料金相場｜出張料・深夜割増・費用を抑える方法 | 鍵トラブルナビ",
+  title: "鍵開け・鍵交換の料金の内訳と確認方法｜出張料・深夜割増・費用を抑える方法 | 鍵トラブルナビ",
   description:
     "鍵開け・鍵交換の料金の内訳（基本料金・作業費・出張料・部品代・深夜割増）と料金を左右する要因、高額請求を避けるための確認事項、業者の選び方を解説します。各社の公式料金は確認日つきの一覧に掲載しています。",
   alternates: { canonical: "https://kagi-trouble-navi.com/ryokin/" },

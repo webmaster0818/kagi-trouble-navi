@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "鍵が折れた時の対処法：鍵穴に詰まった折れ鍵の抜き方と料金相場【2026年版】 | 鍵トラブルナビ",
+  title: "鍵が折れた時の対処法：鍵穴に詰まった折れ鍵の抜き方と業者料金の確認方法【2026年版】 | 鍵トラブルナビ",
   description:
     "鍵が鍵穴の中で折れた時の対処法を手順で解説。瞬間接着剤で継ぐ方法は、鍵穴内で固着してシリンダー交換が必要になるため避けてください。抜き取れずにシリンダー交換となると費用が増えるため、金額は業者の見積もりで確認してください。鍵が折れる原因と予防法もご説明します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/kagi-ore/" },

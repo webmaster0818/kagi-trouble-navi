@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "金庫が開かない時の対処法と鍵開けの料金相場【2026年版】番号忘れ・電池切れ・鍵紛失 | 鍵トラブルナビ",
+  title: "金庫が開かない時の対処法と鍵開け料金の確認方法【2026年版】番号忘れ・電池切れ・鍵紛失 | 鍵トラブルナビ",
   description:
     "金庫が開かない時の対処法を原因別に解説。ダイヤル番号忘れ・テンキーの電池切れ・鍵の紛失それぞれの対応と、業者に依頼する際の見積もりの確認点、破壊解錠の判断基準、依頼時に必要な所有者確認まで紹介します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/kinko-kaijo/" },
