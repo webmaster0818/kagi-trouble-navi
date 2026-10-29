@@ -6,20 +6,20 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/sapporo/";
-const UPDATED = "2026年10月28日";
-const UPDATED_ISO = "2026-10-28";
+const UPDATED = "2026年10月29日";
+const UPDATED_ISO = "2026-10-29";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "【2026年最新】札幌の鍵開け・鍵交換業者おすすめ4選｜24時間対応の鍵屋を比較｜鍵トラブルナビ",
+      "【2026年最新】札幌の鍵交換・鍵開け業者おすすめ4選｜鍵交換料金の比較と24時間対応の鍵屋｜鍵トラブルナビ",
   },
   description:
-    "札幌で鍵開け・鍵交換を依頼できる鍵業者4社を一次確認値で比較しています。カギ110番（鍵開け11,000円〜）・鍵の生活救急車（最短15分）・鍵のレスキュー・カギの救急車の料金と受付時間、冬に多い鍵穴の凍結トラブルで業者に依頼する前にできること、賃貸での注意点について、編集部が中立的な立場でまとめています。",
+    "札幌で鍵交換を頼める業者の料金（カギ110番 部材費込14,300円〜・鍵の生活救急車 11,000円＋部品代・鍵のレスキュー 6,600円〜＋部材費・出張料）を公式表示で比較。見積もりの取り方と依頼の流れ、鍵開けの料金と受付時間、冬の鍵穴凍結への対処もまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title:
-      "【2026年最新】札幌の鍵開け・鍵交換業者おすすめ4選｜24時間対応の鍵屋を比較",
+      "【2026年最新】札幌の鍵交換・鍵開け業者おすすめ4選｜鍵交換料金の比較と24時間対応の鍵屋",
     description:
       "札幌で鍵開け・鍵交換を依頼できる鍵業者4社を、料金・受付時間の一次確認値で比較しています。冬の鍵穴凍結トラブルへの対処や、賃貸物件で業者に依頼する前の確認事項も解説します。",
     url: `${SITE}${PATH}`,
@@ -229,6 +229,11 @@ const faqs = [
     a: "カギ110番・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし、深夜帯は割増料金や到着時間の変動が生じる場合があるほか、冬期は路面状況によって到着が遅れる可能性もあります。電話の際に深夜料金の有無と到着目安を確認し、締め出し時は暖の取れる場所でお待ちください。",
   },
   {
+    q: "札幌で鍵交換を業者に頼むといくらかかりますか？",
+    a: "各社の公式表示（税込の最低額、2026年10月29日確認）では、鍵交換はカギ110番が部材費込14,300円〜、鍵の生活救急車が開きドアのシリンダーで11,000円＋部品代、鍵のレスキューが6,600円〜（部材費と出張料4,400〜8,800円は別）です。カギの救急車は公式サイトに一律の鍵交換料金の掲載がなく、加盟店の見積もりで決まります。部品代を含むかどうかが業者によって違うため、シリンダー代・作業料・出張料を含めた総額の見積もりで比べることをおすすめします。",
+    link: { href: "/kagiya-erabikata/", label: "鍵屋・鍵業者の選び方はこちら" },
+  },
+  {
     q: "賃貸マンションで勝手に鍵交換してもよいですか？",
     a: "賃貸の鍵は大家・管理会社の管理物にあたるため、無断で交換すると契約違反となる恐れがあります。締め出しや紛失のときも、まず管理会社・大家にご連絡ください。合鍵やマスターキーで開けてもらえる場合があり、費用がかからずに済むこともあります。交換が必要な場合も、必ず事前に許可を得てから行ってください。",
   },
@@ -278,7 +283,7 @@ export default function AreaSapporoPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "【2026年最新】札幌の鍵開け・鍵交換業者おすすめ4選｜24時間対応の鍵屋を比較",
+      "【2026年最新】札幌の鍵交換・鍵開け業者おすすめ4選｜鍵交換料金の比較と24時間対応の鍵屋",
     description:
       "札幌で鍵開け・鍵交換を依頼できる鍵業者4社を、料金・受付時間の一次確認値で比較した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
@@ -302,27 +307,35 @@ export default function AreaSapporoPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "鍵トラブルナビ", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "札幌の鍵開け・鍵交換業者おすすめ4選", item: `${SITE}${PATH}` },
+      { "@type": "ListItem", position: 2, name: "札幌の鍵交換・鍵開け業者おすすめ4選", item: `${SITE}${PATH}` },
     ],
   };
 
   const toc: { href: string; label: string; sub?: { href: string; label: string }[] }[] = [
     {
+      href: "#koukan",
+      label: "1｜札幌で鍵交換を頼む場合の料金・流れ",
+      sub: [
+        { href: "#koukan-ryokin", label: "鍵交換の料金（各社の公式表示）" },
+        { href: "#nagare", label: "札幌で鍵交換を依頼する流れ" },
+      ],
+    },
+    {
       href: "#sapporo5",
-      label: "1｜札幌で依頼できるおすすめの鍵業者4選",
+      label: "2｜札幌で依頼できるおすすめの鍵業者4選",
       sub: [
         { href: "#hikaku", label: "札幌の鍵業者の一覧比較表" },
         ...agents.map((a) => ({ href: `#${a.id}`, label: `${a.num}｜【${a.catch}】${a.name}` })),
       ],
     },
-    { href: "#isogi", label: "2｜急いで鍵開けを依頼したい場合" },
-    { href: "#shinya", label: "3｜深夜・早朝のトラブルの場合" },
-    { href: "#meikaku", label: "4｜料金を事前に確認したい場合" },
-    { href: "#jisha", label: "5｜自社スタッフによる対応を希望する場合" },
-    { href: "#sapporo-tips", label: "6｜札幌で鍵業者に依頼する前の確認事項（冬の鍵穴凍結）" },
-    { href: "#erabikata", label: "7｜鍵業者の選び方" },
-    { href: "#faq", label: "8｜札幌の鍵業者でよくある質問" },
-    { href: "#matome", label: "9｜まとめ" },
+    { href: "#isogi", label: "3｜急いで鍵開けを依頼したい場合" },
+    { href: "#shinya", label: "4｜深夜・早朝のトラブルの場合" },
+    { href: "#meikaku", label: "5｜料金を事前に確認したい場合" },
+    { href: "#jisha", label: "6｜自社スタッフによる対応を希望する場合" },
+    { href: "#sapporo-tips", label: "7｜札幌で鍵業者に依頼する前の確認事項（冬の鍵穴凍結）" },
+    { href: "#erabikata", label: "8｜鍵業者の選び方" },
+    { href: "#faq", label: "9｜札幌の鍵業者でよくある質問" },
+    { href: "#matome", label: "10｜まとめ" },
   ];
 
   return (
@@ -340,14 +353,14 @@ export default function AreaSapporoPage() {
                 <Link href="/" className="hover:underline">鍵トラブルナビ</Link>
               </li>
               <li>/</li>
-              <li className="text-foreground">札幌の鍵開け・鍵交換業者おすすめ4選</li>
+              <li className="text-foreground">札幌の鍵交換・鍵開け業者おすすめ4選</li>
             </ol>
           </nav>
 
           {/* h1・更新日・タグchips */}
           <header className="grid gap-4">
             <h1 className="text-2xl md:text-[32px] font-bold leading-normal tracking-wide text-foreground">
-              【2026年最新】札幌の鍵開け・鍵交換業者おすすめ4選｜24時間対応の鍵屋を比較
+              【2026年最新】札幌の鍵交換・鍵開け業者おすすめ4選｜鍵交換料金の比較と24時間対応の鍵屋
             </h1>
             <div>
               <span className="inline-block rounded-[2px] bg-primary px-2 py-1 text-xs font-bold tracking-wide text-white">
@@ -430,8 +443,74 @@ export default function AreaSapporoPage() {
             </ol>
           </nav>
 
-          {/* 1｜4選 */}
-          <H2 id="sapporo5" num="1">札幌で依頼できるおすすめの鍵業者4選</H2>
+          {/* 1｜鍵交換 */}
+          <H2 id="koukan" num="1">札幌で鍵交換を頼む場合の料金・流れ</H2>
+          <p className="leading-loose mb-6">
+            札幌で玄関の鍵交換を業者に頼む場合、費用は業者の料金体系（部品代を含むか・出張料が別か）と、交換するシリンダーの種類で決まります。
+            ここでは、各社の公式表示の料金と依頼の流れをまとめます。札幌市内の鍵交換の料金はこのページでまとめて比較し、<Link href="/area/sapporo-kita/" className="text-primary underline">札幌市北区</Link>・<Link href="/area/sapporo-chuo/" className="text-primary underline">札幌市中央区</Link>のページでは区ごとの暮らしに合わせた鍵の備えを解説しています。
+          </p>
+
+          <h3 id="koukan-ryokin" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
+            鍵交換の料金（各社の公式表示）
+            <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
+          </h3>
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-primary text-white">
+                  <th className="border border-border px-3 py-2 whitespace-nowrap text-left">業者名</th>
+                  <th className="border border-border px-3 py-2 whitespace-nowrap text-left">鍵交換の料金（税込・最低額）</th>
+                  <th className="border border-border px-3 py-2 whitespace-nowrap text-left">部品代・出張料</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { slug: "kagi110ban", name: "カギ110番", price: "14,300円〜（ご自宅の鍵交換）", note: "部材費込。交通費は別途かかる場合あり" },
+                  { slug: "seikatsu-kyukyusha", name: "鍵の生活救急車", price: "11,000円＋部品代（開きドアのシリンダー）", note: "部品代は別。引き戸錠のシリンダーは16,500円＋部品代" },
+                  { slug: "kagi-rescue", name: "鍵のレスキュー", price: "6,600円〜", note: "部材費は別。出張料4,400〜8,800円（地域により異なる）" },
+                  { slug: "kagi-kyukyusha", name: "カギの救急車", price: "加盟店の見積もり", note: "公式サイトに一律の鍵交換料金の掲載なし" },
+                ].map((r, i) => (
+                  <tr key={r.slug} className={i % 2 === 1 ? "bg-[#F5F8FC]" : "bg-white"}>
+                    <td className="border border-border px-3 py-2 font-bold whitespace-nowrap">
+                      <Link href={`/agents/${r.slug}/`} className="text-primary underline">{r.name}</Link>
+                    </td>
+                    <td className="border border-border px-3 py-2">{r.price}</td>
+                    <td className="border border-border px-3 py-2">{r.note}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-text-muted mb-4">
+            出典：
+            <a href="https://www.kagi110ban.jp/price/" target="_blank" rel="noopener noreferrer" className="text-primary underline">カギ110番 料金</a>
+            ・
+            <a href="https://kagi-seikatsukyukyusya.com/price/" target="_blank" rel="noopener noreferrer" className="text-primary underline">鍵の生活救急車 料金表</a>
+            ・
+            <a href="https://www.kagi110qq.co.jp/price/price.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">鍵のレスキュー 料金</a>
+            ・
+            <a href="https://www.kagi110qq.co.jp/about/transaction.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">同 特定商取引法上の表記</a>
+            ・
+            <a href="https://www.kagi1109948.com/service/koukan/" target="_blank" rel="noopener noreferrer" className="text-primary underline">カギの救急車 カギの交換/取付</a>
+            （いずれも2026年10月29日確認）
+          </p>
+          <p className="leading-loose mb-10 text-sm">
+            部品代を含むかどうかが社によって違うため、広告の金額だけで比べず<Hl>「シリンダー代・作業料・出張料を含めた総額」で見積もりを比べる</Hl>ことをおすすめします。急ぎでない鍵交換は、2〜3社に同じ条件（扉の数・シリンダーの種類）で見積もりを取って比べてください。賃貸の場合の費用負担は<Link href="/chintai-kagi-koukan-hiyou/" className="text-primary underline">賃貸の鍵交換費用</Link>、交換するシリンダーの選び方は<Link href="/cp-nintei-jou/" className="text-primary underline">CP認定錠の解説</Link>、業者の選び方の一般的な確認点は<Link href="/kagiya-erabikata/" className="text-primary underline">鍵屋・鍵業者の選び方</Link>で解説しています。
+          </p>
+
+          <h3 id="nagare" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
+            札幌で鍵交換を依頼する流れ
+            <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
+          </h3>
+          <ol className="leading-loose mb-10 list-decimal pl-6 space-y-2">
+            <li>賃貸の場合は、業者に連絡する前に管理会社・大家の許可を得る</li>
+            <li>扉の数・現在のシリンダーの種類（刻みキー・ディンプルキー等）を確認する</li>
+            <li>2〜3社に同じ条件で、部品代・作業料・出張料を含めた総額の見積もりを取る</li>
+            <li>作業後は、領収書と新しい鍵の本数を確認して保管する</li>
+          </ol>
+
+          {/* 2｜4選 */}
+          <H2 id="sapporo5" num="2">札幌で依頼できるおすすめの鍵業者4選</H2>
           <p className="leading-loose mb-2">
             札幌市内から依頼できる主要な鍵業者4社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
           </p>
@@ -541,7 +620,7 @@ export default function AreaSapporoPage() {
           ))}
 
           {/* 2｜急ぎ */}
-          <H2 id="isogi" num="2">札幌で急いで鍵開けを依頼したい場合</H2>
+          <H2 id="isogi" num="3">札幌で急いで鍵開けを依頼したい場合</H2>
           <p className="leading-loose mb-4">
             氷点下の屋外に締め出された場合、長時間待つこと自体が体への負担になるため、駆けつけスピードの目安を公表している業者が候補になります。<Hl>鍵の生活救急車は最短15分の駆けつけと全国約2,270店の拠点網</Hl>を掲げています。拠点数が多いことは、到着までの時間を短くする要素の一つです。また、<Hl>カギ110番は電話一本で最短5分の手配</Hl>（全国47都道府県の加盟店ネットワークから近隣の業者を手配する仕組み）を掲げています。
           </p>
@@ -550,7 +629,7 @@ export default function AreaSapporoPage() {
           </p>
 
           {/* 3｜深夜 */}
-          <H2 id="shinya" num="3">深夜・早朝の鍵トラブルの場合</H2>
+          <H2 id="shinya" num="4">深夜・早朝の鍵トラブルの場合</H2>
           <p className="leading-loose mb-4">
             深夜・早朝のトラブルでは、まず24時間受付かどうかが重要です。一次確認値では、<Hl>カギ110番・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。冷え込みの厳しい早朝は鍵穴の凍結による「鍵が入らない・回らない」も起こりやすい時間帯のため、凍結が疑われる場合はその旨を電話で伝えると、対応が円滑に進みます。
           </p>
@@ -559,7 +638,7 @@ export default function AreaSapporoPage() {
           </p>
 
           {/* 4｜料金明確 */}
-          <H2 id="meikaku" num="4">料金を事前に確認したい場合</H2>
+          <H2 id="meikaku" num="5">料金を事前に確認したい場合</H2>
           <p className="leading-loose mb-4">
             鍵業者とのトラブルで多いのは、作業後に想定外の金額を請求されるケースです。料金の透明性を重視する場合、<Hl>鍵のレスキューは鍵開け6,600円〜（税込）と出張料4,400〜8,800円（税込・地域により異なる）を公式サイトで分けて公開</Hl>しています。また、<Hl>鍵の生活救急車は出張・見積もり・キャンセルが無料</Hl>のため、提示された金額を見てから依頼するかどうかを判断できます。
           </p>
@@ -568,13 +647,13 @@ export default function AreaSapporoPage() {
           </p>
 
           {/* 5｜自社スタッフ */}
-          <H2 id="jisha" num="5">自社スタッフによる対応を希望する場合</H2>
+          <H2 id="jisha" num="6">自社スタッフによる対応を希望する場合</H2>
           <p className="leading-loose mb-4">
             鍵業者には、依頼を受けて加盟店を手配する「紹介型」と、自社のスタッフが直接対応する「自社対応型」があります。紹介型は対応範囲が広い一方、店舗によって技術・対応に差が出ることがあります。担当者の所属を確認したい場合は、依頼時に「自社スタッフか協力店か」をご確認ください。
           </p>
 
           {/* 6｜札幌特有：冬の凍結 */}
-          <H2 id="sapporo-tips" num="6">札幌で鍵業者に依頼する前の確認事項（冬の鍵穴凍結）</H2>
+          <H2 id="sapporo-tips" num="7">札幌で鍵業者に依頼する前の確認事項（冬の鍵穴凍結）</H2>
           <p className="leading-loose mb-4">
             札幌など寒冷地で特に注意すべきなのが、冬の朝などに起こる<Hl>鍵穴の凍結による「鍵が入らない・回らない」トラブル</Hl>です。鍵穴内部に入り込んだ水分が凍ると、鍵が奥まで差さらなくなったり、差さっても回らなくなったりします。このとき、<Hl>力任せに鍵を差し込んだり回したりすることは避けてください</Hl>。鍵が折れて鍵穴内に残ると、解錠のみで済むはずだった作業が鍵穴ごとの交換になり、費用が大幅に増える恐れがあります。凍結時の対処手順と避けるべき行為は<Link href="/kagiana-touketsu/" className="text-primary underline">鍵穴が凍結したときの対処法</Link>で詳しく解説しています。自分で対処しても開かない場合は、無理をせず業者にご相談ください。
           </p>
@@ -586,7 +665,7 @@ export default function AreaSapporoPage() {
           </p>
 
           {/* 7｜選び方 */}
-          <H2 id="erabikata" num="7">札幌の鍵業者の選び方</H2>
+          <H2 id="erabikata" num="8">札幌の鍵業者の選び方</H2>
           <p className="leading-loose mb-6">
             鍵業者を選ぶ際は、次の4つの手順で確認することをおすすめします。緊急時は即決しがちですが、依頼前に数分の確認を行うことで、多くのトラブルを防ぐことができます。
           </p>
@@ -604,7 +683,7 @@ export default function AreaSapporoPage() {
           </p>
 
           {/* 8｜FAQ */}
-          <H2 id="faq" num="8">札幌の鍵業者でよくある質問</H2>
+          <H2 id="faq" num="9">札幌の鍵業者でよくある質問</H2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <div key={f.q} className="rounded-[2px] border border-border">
@@ -641,7 +720,7 @@ export default function AreaSapporoPage() {
           </div>
 
           {/* 9｜まとめ */}
-          <H2 id="matome" num="9">まとめ</H2>
+          <H2 id="matome" num="10">まとめ</H2>
           <p className="leading-loose mb-4">
             本記事では、札幌で鍵開け・鍵交換を依頼できる主要4社を、一次確認した料金・受付時間・運営会社の情報で比較しました。駆けつけの速さを重視する場合は鍵の生活救急車やカギ110番、深夜・早朝の受付を重視する場合はカギ110番・鍵のレスキュー、料金の明確さを重視する場合は鍵のレスキューというように、目的によって適した業者は異なります。
           </p>

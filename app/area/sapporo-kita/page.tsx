@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/sapporo-kita/";
-const UPDATED = "2026年10月28日";
-const UPDATED_ISO = "2026-10-28";
+const UPDATED = "2026年10月29日";
+const UPDATED_ISO = "2026-10-29";
 
 export const metadata: Metadata = {
   title: {
@@ -455,7 +455,7 @@ export default function AreaSapporoKitaPage() {
             札幌市北区内から依頼できる主要な鍵業者4社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。各社の対応エリアは「北海道」としての一次確認値のため、北区での詳細な対応可否・条件は依頼時に各社へご確認ください。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
           </p>
           <p className="text-sm text-text-muted mb-8">
-            ※<Link href="/area/sapporo/" className="text-primary underline">札幌全体の情報はこちら</Link>（札幌版では同じ一次確認値で4社を比較しています）。
+            ※札幌市内の鍵交換の料金（各社の公式表示）と依頼の流れは<Link href="/area/sapporo/#koukan" className="text-primary underline">札幌版の「鍵交換を頼む場合の料金・流れ」</Link>でまとめて比較しています。このページでは北区の冬の暮らしに合わせた鍵の備えを中心に解説します。
           </p>
 
           <h3 id="hikaku" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
@@ -583,7 +583,7 @@ export default function AreaSapporoKitaPage() {
             単身世帯では、想定外の出費が生活費に大きく影響します。料金の透明性を重視する場合、<Hl>鍵のレスキューは鍵開け6,600円〜（税込）と出張料4,400〜8,800円（税込・地域により異なる）を公式サイトで分けて公開</Hl>しています。また、<Hl>鍵の生活救急車は出張・見積もり・キャンセルが無料</Hl>のため、提示された金額を見てから依頼するかどうかを判断できます。金額を確認してから断れるかどうかは、電話の段階でご確認ください。
           </p>
           <p className="leading-loose mb-4">
-            どの業者に依頼する場合も、作業前に出張料・部材費・深夜割増まで含めた総額の見積もりをご確認ください。料金の目安は<Link href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場ページ</Link>で解説しています。
+            どの業者に依頼する場合も、作業前に出張料・部材費・深夜割増まで含めた総額の見積もりをご確認ください。料金の目安は<Link href="/ryokin/" className="text-primary underline">鍵開け・鍵交換の料金相場ページ</Link>、札幌市内の鍵交換の各社料金は<Link href="/area/sapporo/#koukan" className="text-primary underline">札幌版の鍵交換料金の比較</Link>で解説しています。
           </p>
 
           {/* 5｜自社スタッフ */}
