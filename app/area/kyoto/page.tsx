@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/kyoto/";
-const UPDATED = "2026年10月28日";
-const UPDATED_ISO = "2026-10-28";
+const UPDATED = "2026年10月30日";
+const UPDATED_ISO = "2026-10-30";
 
 export const metadata: Metadata = {
   title: {
@@ -437,6 +437,18 @@ export default function AreaKyotoPage() {
               本記事では、京都府内から依頼できる主要な鍵業者5社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報のみで比較しています。全国型4社に、自社施工の鍵猿を加えた5社です。急ぎ・深夜・料金重視・自社施工重視といった目的別の選び方や、古い鍵を依頼する際のポイントもまとめています。鍵業者選びの参考としてご活用ください。
             </p>
           </div>
+
+          {/* 結論（2026年10月30日確認） */}
+          <section id="hyouban" aria-labelledby="hyouban-t" className="mt-8 rounded-[2px] border-2 border-primary bg-[#F5F8FC] px-5 py-6 md:px-8">
+            <h2 id="hyouban-t" className="text-lg md:text-xl font-bold text-foreground mb-4">京都の鍵交換業者の評判を確かめるには（結論）</h2>
+            <ul className="leading-loose list-disc pl-5 space-y-2 mb-4 text-sm md:text-base">
+              <li>国民生活センターは、「解錠で2,000円〜」と表示した業者に依頼したところ、作業前に料金を知らされないまま作業後に約10万円を請求された事例など、<Hl>広告の金額より高い請求を受けた相談</Hl>を紹介しています。</li>
+              <li>そのうえで、「○○円〜」の表示をうのみにしないこと、出張料やキャンセルした場合の金額も確認すること、料金や作業内容に納得できない場合はその場で支払わないことを助言しています。</li>
+              <li>評判を比べるときは、口コミの星の数だけでなく、<Hl>作業前に総額を示すか・部品代を含むか・キャンセル時の扱い</Hl>を各社の公式表示で確かめると比べやすくなります。</li>
+            </ul>
+            <p className="leading-loose mb-3 text-sm md:text-base">京都から依頼できる業者の公式表示では、鍵猿は玄関の鍵交換11,000円〜＋部品代・1年間の無料工事保証・電話受付8:00〜23:00、鍵の生活救急車は出張・見積もり・キャンセル無料で作業後の追加料金なし、カギ110番は鍵交換が部材費込14,300円〜で見積もりからの追加料金なし、鍵のレスキューは作業前に料金を説明し出張料（4,400〜8,800円）とキャンセル規定を公開しています。トラブルになったときは、消費者ホットライン「188」で最寄りの消費生活センターを案内してもらえます。料金の比べ方は8章のよくある質問にもまとめています。</p>
+            <p className="text-xs text-text-muted">出典：<a href="https://www.kokusen.go.jp/news/data/n-20241119_1.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">国民生活センター「出張解錠サービスの料金トラブルに注意」（2024年11月19日公表）</a>・<a href="https://www.sls.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer" className="text-primary underline">鍵猿</a>・<a href="https://kagi-seikatsukyukyusya.com/price/" target="_blank" rel="noopener noreferrer" className="text-primary underline">鍵の生活救急車 料金表</a>・<a href="https://www.kagi110ban.jp/" target="_blank" rel="noopener noreferrer" className="text-primary underline">カギ110番</a>・<a href="https://www.kagi110ban.jp/price/" target="_blank" rel="noopener noreferrer" className="text-primary underline">同 料金</a>・<a href="https://www.kagi110qq.co.jp/" target="_blank" rel="noopener noreferrer" className="text-primary underline">鍵のレスキュー</a>・<a href="https://www.kagi110qq.co.jp/about/transaction.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">同 特定商取引法上の表記</a>（いずれも2026年10月30日確認）</p>
+          </section>
 
           {/* Contents 目次ボックス */}
           <nav

@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/kawanishi/";
-const UPDATED = "2026年10月28日";
-const UPDATED_ISO = "2026-10-28";
+const UPDATED = "2026年10月30日";
+const UPDATED_ISO = "2026-10-30";
 
 export const metadata: Metadata = {
   title: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       "【2026年最新】川西市の鍵開け・鍵交換業者おすすめ4選｜交換する錠を同じ型にするか別の型にするかの決め方も解説する鍵屋比較｜鍵トラブルナビ",
   },
   description:
-    "川西市で鍵開け・鍵交換を依頼できる鍵業者4社を一次確認値で比較。カギ110番（鍵開け11,000円〜）・鍵の生活救急車（最短15分）・鍵のレスキュー・カギの救急車の料金と受付時間、錠を同じ型で交換するか別の型に交換するかの判断基準、取り付け寸法が合わない場合の選択肢まで、編集部が中立的な立場でまとめています。",
+    "川西市で鍵交換を頼める業者の料金（カギ110番 部材費込14,300円〜・鍵の生活救急車 11,000円＋部品代・鍵のレスキュー 6,600円〜＋部材費・出張料）を公式表示で比較。兵庫県警察が案内する防犯性能の高い錠（CP部品）、錠を同じ型にするか別の型にするかの決め方、鍵開けの料金と受付時間もまとめました。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title:
@@ -230,6 +230,11 @@ const faqs: AreaFaq[] = [
     link: { href: "/ryokin/", label: "料金相場の詳細はこちら" },
   },
   {
+    q: "川西市で鍵交換を業者に頼むといくらかかりますか？",
+    a: "各社の公式表示（税込の最低額、2026年10月30日確認）では、鍵交換はカギ110番が部材費込14,300円〜、鍵の生活救急車が開きドアのシリンダーで11,000円＋部品代、鍵のレスキューが6,600円〜（部材費と出張料4,400〜8,800円は別）です。カギの救急車は公式サイトに一律の鍵交換料金の掲載がなく、加盟店の見積もりで決まります。部品代を含むかどうかが業者によって違うため、シリンダー代・作業料・出張料を含めた総額の見積もりで比べることをおすすめします。錠全体を交換する場合は、今の錠の取り付け寸法に収まるかどうかでも金額が変わります。",
+    link: { href: "/kagiya-erabikata/", label: "鍵屋・鍵業者の選び方はこちら" },
+  },
+  {
     q: "好きな錠に自由に替えられますか？",
     a: "扉には錠を収める彫り込みと、ノブや鍵を通す穴がすでに開いています。新しい錠がそこに収まらない場合は、扉を削るか穴を開け直すことになります。まずは現在の錠の寸法を測り、その範囲で取り付け可能な候補を提示してもらってください。",
     link: { href: "/joumae-type-zukan/", label: "錠前の種類図鑑はこちら" },
@@ -329,21 +334,30 @@ export default function AreaPageKawanishi() {
 
   const toc: { href: string; label: string; sub?: { href: string; label: string }[] }[] = [
     {
+      href: "#koukan",
+      label: "1｜川西市で鍵交換を頼む場合の料金・鍵の選び方・流れ",
+      sub: [
+        { href: "#koukan-ryokin", label: "鍵交換の料金（各社の公式表示）" },
+        { href: "#cp", label: "交換する鍵の選び方（兵庫県警察・警察庁の案内）" },
+        { href: "#nagare", label: "川西市で鍵交換を依頼する流れ" },
+      ],
+    },
+    {
       href: "#top5",
-      label: "1｜川西市で依頼できるおすすめの鍵業者4選",
+      label: "2｜川西市で依頼できるおすすめの鍵業者4選",
       sub: [
         { href: "#hikaku", label: "川西市の鍵業者の一覧比較表" },
         ...agents.map((a) => ({ href: `#${a.id}`, label: `${a.num}｜【${a.catch}】${a.name}` })),
       ],
     },
-    { href: "#isogi", label: "2｜急いで鍵開けを依頼したい場合" },
-    { href: "#shinya", label: "3｜深夜・早朝のトラブルの場合" },
-    { href: "#meikaku", label: "4｜料金を事前に確認したい場合" },
-    { href: "#jisha", label: "5｜自社スタッフによる対応を希望する場合" },
-    { href: "#kawanishi-tips", label: "6｜川西市で鍵業者に依頼する前の確認事項（交換する錠を「今と同じ型」にするか「別の型」にするかの判断と、取り付け寸法による制約）" },
-    { href: "#erabikata", label: "7｜鍵業者の選び方" },
-    { href: "#faq", label: "8｜川西市の鍵業者でよくある質問" },
-    { href: "#matome", label: "9｜まとめ" },
+    { href: "#isogi", label: "3｜急いで鍵開けを依頼したい場合" },
+    { href: "#shinya", label: "4｜深夜・早朝のトラブルの場合" },
+    { href: "#meikaku", label: "5｜料金を事前に確認したい場合" },
+    { href: "#jisha", label: "6｜自社スタッフによる対応を希望する場合" },
+    { href: "#kawanishi-tips", label: "7｜川西市で鍵業者に依頼する前の確認事項（交換する錠を「今と同じ型」にするか「別の型」にするかの判断と、取り付け寸法による制約）" },
+    { href: "#erabikata", label: "8｜鍵業者の選び方" },
+    { href: "#faq", label: "9｜川西市の鍵業者でよくある質問" },
+    { href: "#matome", label: "10｜まとめ" },
   ];
 
   return (
@@ -451,8 +465,87 @@ export default function AreaPageKawanishi() {
             </ol>
           </nav>
 
+          {/* 1｜鍵交換 */}
+          <H2 id="koukan" num="1">川西市で鍵交換を頼む場合の料金・鍵の選び方・流れ</H2>
+          <p className="leading-loose mb-6">
+            川西市で玄関の鍵交換を業者に頼む場合、費用は業者の料金体系（部品代を含むか・出張料が別か）と、交換するシリンダーの種類で決まります。ここでは、各社の公式表示の料金、兵庫県警察が案内する防犯性能の高い錠（CP部品）、依頼の流れを順にまとめます。錠全体を今と同じ型にするか別の型にするかの判断は、7章で詳しく扱っています。
+          </p>
+
+          <h3 id="koukan-ryokin" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
+            鍵交換の料金（各社の公式表示）
+            <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
+          </h3>
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-primary text-white">
+                  <th className="border border-border px-3 py-2 whitespace-nowrap text-left">業者名</th>
+                  <th className="border border-border px-3 py-2 whitespace-nowrap text-left">鍵交換の料金（税込・最低額）</th>
+                  <th className="border border-border px-3 py-2 whitespace-nowrap text-left">部品代・出張料</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { slug: "kagi110ban", name: "カギ110番", price: "14,300円〜（ご自宅の鍵交換）", note: "部材費込。交通費は別途かかる場合あり" },
+                  { slug: "seikatsu-kyukyusha", name: "鍵の生活救急車", price: "11,000円＋部品代（開きドアのシリンダー）", note: "部品代は別。引き戸錠のシリンダーは16,500円＋部品代" },
+                  { slug: "kagi-rescue", name: "鍵のレスキュー", price: "6,600円〜", note: "部材費は別。出張料4,400〜8,800円（地域により異なる）" },
+                  { slug: "kagi-kyukyusha", name: "カギの救急車", price: "加盟店の見積もり", note: "公式サイトに一律の鍵交換料金の掲載なし" },
+                ].map((r, i) => (
+                  <tr key={r.slug} className={i % 2 === 1 ? "bg-[#F5F8FC]" : "bg-white"}>
+                    <td className="border border-border px-3 py-2 font-bold whitespace-nowrap">
+                      <Link href={`/agents/${r.slug}/`} className="text-primary underline">{r.name}</Link>
+                    </td>
+                    <td className="border border-border px-3 py-2">{r.price}</td>
+                    <td className="border border-border px-3 py-2">{r.note}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-text-muted mb-4">
+            出典：
+            <a href="https://www.kagi110ban.jp/price/" target="_blank" rel="noopener noreferrer" className="text-primary underline">カギ110番 料金</a>
+            ・
+            <a href="https://kagi-seikatsukyukyusya.com/price/" target="_blank" rel="noopener noreferrer" className="text-primary underline">鍵の生活救急車 料金表</a>
+            ・
+            <a href="https://www.kagi110qq.co.jp/price/price.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">鍵のレスキュー 料金</a>
+            ・
+            <a href="https://www.kagi110qq.co.jp/about/transaction.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">同 特定商取引法上の表記</a>
+            ・
+            <a href="https://www.kagi1109948.com/service/koukan/" target="_blank" rel="noopener noreferrer" className="text-primary underline">カギの救急車 カギの交換/取付</a>
+            （いずれも2026年10月30日確認）
+          </p>
+          <p className="leading-loose mb-10 text-sm">
+            部品代を含むかどうかが社によって違うため、広告の金額だけで比べず<Hl>「シリンダー代・作業料・出張料を含めた総額」で見積もりを比べる</Hl>ことをおすすめします。急ぎでない鍵交換は、2〜3社に同じ条件（扉の数・シリンダーの種類・取り付け寸法）で見積もりを取って比べてください。賃貸の場合の費用負担は<Link href="/chintai-kagi-koukan-hiyou/" className="text-primary underline">賃貸の鍵交換費用</Link>、業者の選び方の一般的な確認点は<Link href="/kagiya-erabikata/" className="text-primary underline">鍵屋・鍵業者の選び方</Link>で解説しています。
+          </p>
+
+          <h3 id="cp" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
+            交換する鍵の選び方（兵庫県警察・警察庁の案内）
+            <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
+          </h3>
+          <p className="leading-loose mb-4">
+            兵庫県警察が掲載している警察庁のリーフレット「防犯建物部品について」では、ピッキングやドア錠のこじ破りなどを始めてから侵入できるまでの時間（抵抗時間）が<Hl>5分以上と試験で確認された建物部品が「防犯性能の高い建物部品」（CP部品）</Hl>として公表されていると説明しています。侵入に手間取ってあきらめる時間について「2分を超えて5分以内」と答えた被疑者が51.4％（「2分以内」は17.1％）だったという調査を紹介し、5分耐えれば約7割があきらめるとしています。一方で、CP部品も侵入を完全に防ぐものではないと注意書きがあります。
+          </p>
+          <p className="leading-loose mb-4">
+            見積もりを取る際は、<Hl>交換後のシリンダーがCP部品かどうか</Hl>を業者に確認してください。CP部品の詳細は<Link href="/cp-nintei-jou/" className="text-primary underline">CP認定錠の解説</Link>をご覧ください。
+          </p>
+          <p className="text-xs text-text-muted mb-10">
+            出典：<a href="https://www.police.pref.hyogo.lg.jp/seikatu/akisu/image/leaflet_cp.pdf" target="_blank" rel="noopener noreferrer" className="text-primary underline">兵庫県警察「防犯建物部品について」（警察庁リーフレット・PDF）</a>（2026年10月30日確認）
+          </p>
+
+          <h3 id="nagare" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
+            川西市で鍵交換を依頼する流れ
+            <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
+          </h3>
+          <ol className="leading-loose mb-10 list-decimal pl-6 space-y-2">
+            <li>賃貸の場合は、業者に連絡する前に管理会社・大家の許可を得る</li>
+            <li>扉の数・現在のシリンダーの種類（刻みキー・ディンプルキー等）と、扉の端から鍵穴の中心までの距離・扉の厚みを確認する</li>
+            <li>2〜3社に同じ条件で、部品代・作業料・出張料を含めた総額の見積もりを取る（錠全体か鍵穴だけかで分けてもらう）</li>
+            <li>作業後は、領収書と新しい鍵の本数を確認して保管する</li>
+          </ol>
+
           {/* 1｜業者一覧 */}
-          <H2 id="top5" num="1">川西市で依頼できるおすすめの鍵業者4選</H2>
+          <H2 id="top5" num="2">川西市で依頼できるおすすめの鍵業者4選</H2>
           <p className="leading-loose mb-2">
             川西市内から依頼できる主要な鍵業者4社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。各社の対応エリアは「兵庫県」としての一次確認値のため、川西市での詳細な対応可否・条件は依頼時に各社へご確認ください。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
           </p>
@@ -562,7 +655,7 @@ export default function AreaPageKawanishi() {
           ))}
 
           {/* 2｜急ぎ */}
-          <H2 id="isogi" num="2">川西市で急いで鍵開けを依頼したい場合</H2>
+          <H2 id="isogi" num="3">川西市で急いで鍵開けを依頼したい場合</H2>
           <p className="leading-loose mb-4">
             動きの悪い錠を使い続けていると、ある日まったく回らなくなることがあります。その場合は、交換よりも先に解錠が必要になります。駆けつけ時間の目安を公表している業者としては、<Hl>鍵の生活救急車が最短15分の駆けつけと全国約2,270店の拠点網</Hl>を掲げています。拠点数が多いことは、到着までの時間を短くする要素の一つです。また、<Hl>カギ110番は電話一本で最短5分の手配</Hl>（全国47都道府県の加盟店ネットワークから近隣の業者を手配する仕組み）を掲げています。
           </p>
@@ -571,7 +664,7 @@ export default function AreaPageKawanishi() {
           </p>
 
           {/* 3｜深夜 */}
-          <H2 id="shinya" num="3">深夜・早朝の鍵トラブルの場合</H2>
+          <H2 id="shinya" num="4">深夜・早朝の鍵トラブルの場合</H2>
           <p className="leading-loose mb-4">
             家に入れないまま夜を越すかどうかは、早い時間に判断する必要があります。帰宅した時点で錠が動かなくなると、その日のうちに解錠を依頼するかどうかを判断しなければなりません。一次確認値では<Hl>カギ110番・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。
           </p>
@@ -580,7 +673,7 @@ export default function AreaPageKawanishi() {
           </p>
 
           {/* 4｜料金明確 */}
-          <H2 id="meikaku" num="4">料金を事前に確認したい場合</H2>
+          <H2 id="meikaku" num="5">料金を事前に確認したい場合</H2>
           <p className="leading-loose mb-4">
             錠の交換は、選ぶ製品によって部材費が大きく変わります。そのため、作業前に総額を示す方針の業者かどうかが重要になります。<Hl>鍵のレスキューは鍵開け6,600円〜（税込）と出張料4,400〜8,800円（税込・地域により異なる）を公式サイトで分けて公開</Hl>しています。また、<Hl>鍵の生活救急車は出張・見積もり・キャンセルが無料</Hl>のため、提示された金額を見てから依頼するかどうかを判断できます。
           </p>
@@ -589,13 +682,13 @@ export default function AreaPageKawanishi() {
           </p>
 
           {/* 5｜自社スタッフ */}
-          <H2 id="jisha" num="5">自社スタッフによる対応を希望する場合</H2>
+          <H2 id="jisha" num="6">自社スタッフによる対応を希望する場合</H2>
           <p className="leading-loose mb-4">
             鍵業者には、依頼を受けて加盟店を手配する「紹介型」と、自社のスタッフが直接対応する「自社対応型」があります。紹介型は対応範囲が広い一方、店舗によって技術・対応に差が出ることがあります。取り付け寸法は、現場で扉を確認しなければ確定しません。採寸できる担当者が来るかどうか、寸法が合わなかった場合の対応を、電話の段階で確認しておくことをおすすめします。
           </p>
 
           {/* 6｜エリア特有 */}
-          <H2 id="kawanishi-tips" num="6">川西市で鍵業者に依頼する前の確認事項（交換する錠を「今と同じ型」にするか「別の型」にするかの判断と、取り付け寸法による制約）</H2>
+          <H2 id="kawanishi-tips" num="7">川西市で鍵業者に依頼する前の確認事項（交換する錠を「今と同じ型」にするか「別の型」にするかの判断と、取り付け寸法による制約）</H2>
           <p className="leading-loose mb-4">
             錠を交換する際、最初に制約となるのが寸法です。<Hl>扉には、錠を収めるための彫り込みと、ノブや鍵を通すための穴がすでに開いています</Hl>。新しい錠がそこに収まらない場合は、扉を削るか、穴を埋めて開け直すことになります。そのため業者は、まず現在の錠の寸法を測ります。主な測定箇所は、扉の端から鍵穴の中心までの距離（バックセット）、扉の側面に見える金属板（フロント）の縦横の寸法、扉の厚みです。錠の分類は<Link href="/joumae-type-zukan/" className="text-primary underline">錠前の種類図鑑</Link>で確かめられます。
           </p>
@@ -610,7 +703,7 @@ export default function AreaPageKawanishi() {
           </p>
 
           {/* 7｜選び方 */}
-          <H2 id="erabikata" num="7">川西市の鍵業者の選び方</H2>
+          <H2 id="erabikata" num="8">川西市の鍵業者の選び方</H2>
           <p className="leading-loose mb-6">
             鍵業者を選ぶ際は、次の4つの手順で確認することをおすすめします。錠の交換は、寸法の確認が済んでいるかどうかで進め方が変わります。
           </p>
@@ -628,7 +721,7 @@ export default function AreaPageKawanishi() {
           </p>
 
           {/* 8｜FAQ */}
-          <H2 id="faq" num="8">川西市の鍵業者でよくある質問</H2>
+          <H2 id="faq" num="9">川西市の鍵業者でよくある質問</H2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <div key={f.q} className="rounded-[2px] border border-border">
@@ -653,7 +746,7 @@ export default function AreaPageKawanishi() {
           </div>
 
           {/* 9｜まとめ */}
-          <H2 id="matome" num="9">まとめ</H2>
+          <H2 id="matome" num="10">まとめ</H2>
           <p className="leading-loose mb-4">
             川西市で鍵開け・鍵交換を依頼できる主要4社を、一次確認した料金・受付時間・運営会社の情報で比較しました。到着の早さを重視する場合は鍵の生活救急車やカギ110番、深夜・早朝の受付を重視する場合はカギ110番・鍵のレスキュー、料金の明確さを重視する場合は鍵のレスキューというように、目的によって適した業者は異なります。
           </p>

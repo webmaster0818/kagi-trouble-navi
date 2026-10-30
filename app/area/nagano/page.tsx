@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/nagano/";
-const UPDATED = "2026年10月28日";
-const UPDATED_ISO = "2026-10-28";
+const UPDATED = "2026年10月30日";
+const UPDATED_ISO = "2026-10-30";
 
 export const metadata: Metadata = {
   title: {
@@ -221,6 +221,10 @@ const faqs = [
     a: "当サイトが一次確認した各社の公式表示では、鍵開けの基本料金はカギ110番11,000円〜、鍵のレスキュー6,600円〜（別途出張料4,400〜8,800円）、鍵の生活救急車8,800円〜（いずれも税込）、カギの救急車は公式目安11,000〜44,000円です。ただし、これらは最低価格または目安であり、鍵の種類（ディンプルキー等）・時間帯・出張距離で総額は変わります。作業前に総額の見積もりを取ることをおすすめします。詳しくは鍵開け・鍵交換の料金相場ページで解説しています。",
   },
   {
+    q: "長野で玄関の鍵交換を頼むなら、どの業者でいくらかかりますか？",
+    a: "長野市から依頼できる主な業者の公式表示（税込の最低額、2026年10月30日確認）では、鍵交換はカギ110番が部材費込14,300円〜、鍵の生活救急車が開きドアのシリンダーで11,000円＋部品代、鍵のレスキューが6,600円〜（部材費と出張料4,400〜8,800円は別）です。カギの救急車は長野市に長野稲里店があり、料金は一律の掲載がなく見積もりで決まります。部品代を含むかどうかが業者によって違うため、シリンダー代・作業料・出張料を含めた総額の見積もりで比べることをおすすめします。",
+  },
+  {
     q: "深夜や早朝でも長野に来てくれますか？",
     a: "カギ110番・鍵のレスキューは24時間365日受付を掲げており、カギの救急車も多くの加盟店が24時間受付です。ただし、深夜帯は割増料金や到着時間の変動が生じる場合があるため、電話の際に深夜料金の有無と到着目安を確認してから依頼することをおすすめします。",
   },
@@ -312,21 +316,30 @@ export default function AreaNaganoPage() {
 
   const toc: { href: string; label: string; sub?: { href: string; label: string }[] }[] = [
     {
+      href: "#koukan",
+      label: "1｜長野で玄関の鍵交換を頼める業者と料金・依頼の流れ",
+      sub: [
+        { href: "#koukan-ryokin", label: "鍵交換の料金（各社の公式表示）" },
+        { href: "#erabi-kagi", label: "交換する鍵の選び方" },
+        { href: "#nagare", label: "長野で鍵交換を依頼する流れ" },
+      ],
+    },
+    {
       href: "#nagano5",
-      label: "1｜長野で依頼できるおすすめの鍵業者4選",
+      label: "2｜長野で依頼できるおすすめの鍵業者4選",
       sub: [
         { href: "#hikaku", label: "長野の鍵業者の一覧比較表" },
         ...agents.map((a) => ({ href: `#${a.id}`, label: `${a.num}｜【${a.catch}】${a.name}` })),
       ],
     },
-    { href: "#isogi", label: "2｜急いで鍵開けを依頼したい場合" },
-    { href: "#shinya", label: "3｜深夜・早朝のトラブルの場合" },
-    { href: "#meikaku", label: "4｜料金を事前に確認したい場合" },
-    { href: "#jisha", label: "5｜自社スタッフによる対応を希望する場合" },
-    { href: "#nagano-tips", label: "6｜長野で鍵業者に依頼する前の確認事項（別荘・季節利用の家の鍵管理）" },
-    { href: "#erabikata", label: "7｜鍵業者の選び方" },
-    { href: "#faq", label: "8｜長野の鍵業者でよくある質問" },
-    { href: "#matome", label: "9｜まとめ" },
+    { href: "#isogi", label: "3｜急いで鍵開けを依頼したい場合" },
+    { href: "#shinya", label: "4｜深夜・早朝のトラブルの場合" },
+    { href: "#meikaku", label: "5｜料金を事前に確認したい場合" },
+    { href: "#jisha", label: "6｜自社スタッフによる対応を希望する場合" },
+    { href: "#nagano-tips", label: "7｜長野で鍵業者に依頼する前の確認事項（別荘・季節利用の家の鍵管理）" },
+    { href: "#erabikata", label: "8｜鍵業者の選び方" },
+    { href: "#faq", label: "9｜長野の鍵業者でよくある質問" },
+    { href: "#matome", label: "10｜まとめ" },
   ];
 
   return (
@@ -434,8 +447,89 @@ export default function AreaNaganoPage() {
             </ol>
           </nav>
 
+          {/* 1｜鍵交換 */}
+          <H2 id="koukan" num="1">長野で玄関の鍵交換を頼める業者と料金・依頼の流れ</H2>
+          <p className="leading-loose mb-6">
+            長野市から玄関の鍵交換を頼める主な鍵業者は、全国対応のカギ110番・鍵の生活救急車・鍵のレスキューと、長野市に店舗（長野稲里店）がある<Hl>カギの救急車</Hl>の4社です。費用は業者の料金体系（部品代を含むか・出張料が別か）と、交換するシリンダーの種類で決まります。ここでは、各社の公式表示の料金、交換する鍵の選び方、依頼の流れを順にまとめます。
+          </p>
+
+          <h3 id="koukan-ryokin" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
+            鍵交換の料金（各社の公式表示）
+            <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
+          </h3>
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-primary text-white">
+                  <th className="border border-border px-3 py-2 whitespace-nowrap text-left">業者名</th>
+                  <th className="border border-border px-3 py-2 whitespace-nowrap text-left">鍵交換の料金（税込・最低額）</th>
+                  <th className="border border-border px-3 py-2 whitespace-nowrap text-left">部品代・出張料</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { slug: "kagi110ban", name: "カギ110番", price: "14,300円〜（ご自宅の鍵交換）", note: "部材費込。交通費は別途かかる場合あり" },
+                  { slug: "seikatsu-kyukyusha", name: "鍵の生活救急車", price: "11,000円＋部品代（開きドアのシリンダー）", note: "部品代は別。引き戸錠のシリンダーは16,500円＋部品代" },
+                  { slug: "kagi-rescue", name: "鍵のレスキュー", price: "6,600円〜", note: "部材費は別。出張料4,400〜8,800円（地域により異なる）" },
+                  { slug: "kagi-kyukyusha", name: "カギの救急車", price: "加盟店（店舗）の見積もり", note: "公式サイトに一律の鍵交換料金の掲載なし。長野市に長野稲里店" },
+                ].map((r, i) => (
+                  <tr key={r.slug} className={i % 2 === 1 ? "bg-[#F5F8FC]" : "bg-white"}>
+                    <td className="border border-border px-3 py-2 font-bold whitespace-nowrap">
+                      <Link href={`/agents/${r.slug}/`} className="text-primary underline">{r.name}</Link>
+                    </td>
+                    <td className="border border-border px-3 py-2">{r.price}</td>
+                    <td className="border border-border px-3 py-2">{r.note}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-text-muted mb-4">
+            出典：
+            <a href="https://www.kagi110ban.jp/price/" target="_blank" rel="noopener noreferrer" className="text-primary underline">カギ110番 料金</a>
+            ・
+            <a href="https://kagi-seikatsukyukyusya.com/price/" target="_blank" rel="noopener noreferrer" className="text-primary underline">鍵の生活救急車 料金表</a>
+            ・
+            <a href="https://www.kagi110qq.co.jp/price/price.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">鍵のレスキュー 料金</a>
+            ・
+            <a href="https://www.kagi110qq.co.jp/about/transaction.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">同 特定商取引法上の表記</a>
+            ・
+            <a href="https://www.kagi1109948.com/service/koukan/" target="_blank" rel="noopener noreferrer" className="text-primary underline">カギの救急車 カギの交換/取付</a>
+            ・
+            <a href="https://www.kagi1109948.com/shop/naganoinasato/" target="_blank" rel="noopener noreferrer" className="text-primary underline">カギの救急車 長野稲里店</a>
+            （いずれも2026年10月30日確認）
+          </p>
+          <p className="leading-loose mb-10 text-sm">
+            部品代を含むかどうかが社によって違うため、広告の金額だけで比べず<Hl>「シリンダー代・作業料・出張料を含めた総額」で見積もりを比べる</Hl>ことをおすすめします。急ぎでない鍵交換は、2〜3社に同じ条件（扉の数・シリンダーの種類）で見積もりを取って比べてください。業者の選び方の一般的な確認点は<Link href="/kagiya-erabikata/" className="text-primary underline">鍵屋・鍵業者の選び方</Link>、交換のタイミングは<Link href="/kagi-koukan-timing/" className="text-primary underline">鍵交換のタイミング</Link>で解説しています。
+          </p>
+
+          <h3 id="erabi-kagi" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
+            交換する鍵の選び方
+            <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
+          </h3>
+          <p className="leading-loose mb-4">
+            カギの救急車の公式店舗案内では、<Hl>長野稲里店（長野市）</Hl>が住宅などのシリンダー交換に対応し、主な対応エリアとして長野市・千曲市・須坂市・中野市などを挙げています。料金は店舗案内に掲載がないため、電話で総額の見積もりを確認してください。
+          </p>
+          <p className="leading-loose mb-4">
+            中古で購入した家や別荘、相続した実家などで、前の住人や親族が合鍵を持っているかどうか分からない場合は、<Hl>錠全体ではなくシリンダー（鍵穴）だけの交換</Hl>で合鍵を使えなくできることがあります。見積もりでは、ピッキングに強い防犯性能の高い部品（CP部品）かどうかもあわせて確認してください。CP部品の詳細は<Link href="/cp-nintei-jou/" className="text-primary underline">CP認定錠の解説</Link>、玄関の鍵の種類は<Link href="/dimple-key/" className="text-primary underline">ディンプルキーの解説</Link>で扱っています。
+          </p>
+          <p className="text-xs text-text-muted mb-10">
+            出典：<a href="https://www.kagi1109948.com/shop/naganoinasato/" target="_blank" rel="noopener noreferrer" className="text-primary underline">カギの救急車 長野稲里店（公式店舗案内）</a>（2026年10月30日確認）
+          </p>
+
+          <h3 id="nagare" className="scroll-mt-20 relative pb-3 mb-5 border-b-4 border-[#EAF1F8] text-base md:text-[22px] font-bold text-foreground">
+            長野で鍵交換を依頼する流れ
+            <span className="absolute bottom-[-4px] left-0 h-[4px] w-24 bg-gradient-to-r from-primary to-[#3E86C9]" />
+          </h3>
+          <ol className="leading-loose mb-10 list-decimal pl-6 space-y-2">
+            <li>賃貸の場合は、業者に連絡する前に管理会社・大家の許可を得る</li>
+            <li>扉の数・現在のシリンダーの種類（刻みキー・ディンプルキー等）を確認し、錠や鍵の写真を撮っておく</li>
+            <li>2〜3社に同じ条件で、部品代・作業料・出張料を含めた総額の見積もりを取る</li>
+            <li>作業後は、領収書と新しい鍵の本数を確認し、合鍵を渡す相手を決めて保管する</li>
+          </ol>
+
           {/* 1｜4選 */}
-          <H2 id="nagano5" num="1">長野で依頼できるおすすめの鍵業者4選</H2>
+          <H2 id="nagano5" num="2">長野で依頼できるおすすめの鍵業者4選</H2>
           <p className="leading-loose mb-2">
             長野市内から依頼できる主要な鍵業者4社を紹介します。掲載している料金・受付時間・運営会社は、いずれも編集部が各社公式サイト等で一次確認した値です（確認日は各社の欄に記載）。実際の総額は鍵の種類・時間帯・出張距離で変わるため、必ず作業前に見積もりで確認してください。
           </p>
@@ -545,7 +639,7 @@ export default function AreaNaganoPage() {
           ))}
 
           {/* 2｜急ぎ */}
-          <H2 id="isogi" num="2">長野で急いで鍵開けを依頼したい場合</H2>
+          <H2 id="isogi" num="3">長野で急いで鍵開けを依頼したい場合</H2>
           <p className="leading-loose mb-4">
             締め出しなどで急ぎの鍵開けが必要な場合は、駆けつけ時間の目安を公表している業者が候補となります。<Hl>鍵の生活救急車は最短15分の駆けつけと全国約2,270店の拠点網</Hl>を掲げています。拠点数が多いことは、到着までの時間を短くする要素の一つです。また、<Hl>カギ110番は電話一本で最短5分の手配</Hl>（全国47都道府県の加盟店ネットワークから近隣の業者を手配する仕組み）を掲げています。
           </p>
@@ -554,7 +648,7 @@ export default function AreaNaganoPage() {
           </p>
 
           {/* 3｜深夜 */}
-          <H2 id="shinya" num="3">深夜・早朝の鍵トラブルの場合</H2>
+          <H2 id="shinya" num="4">深夜・早朝の鍵トラブルの場合</H2>
           <p className="leading-loose mb-4">
             長野でも、深夜の締め出しや帰宅後に紛失へ気づくトラブルは起こり得ます。この時間帯の依頼先となるのは24時間受付の業者です。一次確認値では<Hl>カギ110番・鍵のレスキューが24時間365日受付</Hl>を掲げており、カギの救急車も多くの加盟店が24時間受付です。
           </p>
@@ -563,7 +657,7 @@ export default function AreaNaganoPage() {
           </p>
 
           {/* 4｜料金明確 */}
-          <H2 id="meikaku" num="4">料金を事前に確認したい場合</H2>
+          <H2 id="meikaku" num="5">料金を事前に確認したい場合</H2>
           <p className="leading-loose mb-4">
             鍵業者とのトラブルで多いのは、作業後に想定外の金額を請求されるケースです。料金の透明性を重視する場合、<Hl>鍵のレスキューは鍵開け6,600円〜（税込）と出張料4,400〜8,800円（税込・地域により異なる）を公式サイトで分けて公開</Hl>しています。また、<Hl>鍵の生活救急車は出張・見積もり・キャンセルが無料</Hl>のため、提示された金額を見てから依頼するかどうかを判断できます。
           </p>
@@ -572,13 +666,13 @@ export default function AreaNaganoPage() {
           </p>
 
           {/* 5｜自社スタッフ */}
-          <H2 id="jisha" num="5">自社スタッフによる対応を希望する場合</H2>
+          <H2 id="jisha" num="6">自社スタッフによる対応を希望する場合</H2>
           <p className="leading-loose mb-4">
             鍵業者には、依頼を受けて加盟店を手配する「紹介型」と、自社のスタッフが直接対応する「自社対応型」があります。紹介型は対応範囲が広い一方、店舗によって技術・対応に差が出ることがあります。担当者の所属を確認したい場合は、依頼時に「自社スタッフか協力店か」をご確認ください。
           </p>
 
           {/* 6｜長野特有 */}
-          <H2 id="nagano-tips" num="6">長野で鍵業者に依頼する前の確認事項（別荘・季節利用の家の鍵管理）</H2>
+          <H2 id="nagano-tips" num="7">長野で鍵業者に依頼する前の確認事項（別荘・季節利用の家の鍵管理）</H2>
           <p className="leading-loose mb-4">
             長期間使われない錠前は、内部の潤滑が切れたりホコリがたまったりして<Hl>動きが渋くなりがち</Hl>です。久しぶりに訪れて鍵が固い場合は、鍵折れの原因となるため力任せに回すことは避け、鍵穴専用のパウダースプレー（乾式潤滑剤）で手入れをしてください。滞在のたびに玄関・勝手口・物置の鍵をひととおり動かして点検しておくと、不具合の早期発見につながります。なお、標高の高い地域では冬季に鍵穴の凍結が起こることもあります。対処の基本は<Link href="/kagiana-touketsu/" className="text-primary underline">鍵穴の凍結の解説記事</Link>を、渋さが直らない場合は<Link href="/kagi-mawaranai/" className="text-primary underline">鍵が回らないときの解説記事</Link>をご覧ください。
           </p>
@@ -590,7 +684,7 @@ export default function AreaNaganoPage() {
           </p>
 
           {/* 7｜選び方 */}
-          <H2 id="erabikata" num="7">長野の鍵業者の選び方</H2>
+          <H2 id="erabikata" num="8">長野の鍵業者の選び方</H2>
           <p className="leading-loose mb-6">
             鍵業者を選ぶ際は、次の4つの手順で確認することをおすすめします。緊急時は即決しがちですが、依頼前に数分の確認を行うことで、多くのトラブルを防ぐことができます。
           </p>
@@ -608,7 +702,7 @@ export default function AreaNaganoPage() {
           </p>
 
           {/* 8｜FAQ */}
-          <H2 id="faq" num="8">長野の鍵業者でよくある質問</H2>
+          <H2 id="faq" num="9">長野の鍵業者でよくある質問</H2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <div key={f.q} className="rounded-[2px] border border-border">
@@ -651,7 +745,7 @@ export default function AreaNaganoPage() {
           </div>
 
           {/* 9｜まとめ */}
-          <H2 id="matome" num="9">まとめ</H2>
+          <H2 id="matome" num="10">まとめ</H2>
           <p className="leading-loose mb-4">
             長野で鍵開け・鍵交換を依頼できる主要4社を、一次確認した料金・受付時間・運営会社の情報で比較しました。到着の早さを重視する場合は鍵の生活救急車やカギ110番、深夜・早朝のトラブルにはカギ110番・鍵のレスキュー、料金の明確さを重視する場合は鍵のレスキューというように、目的によって適した業者は異なります。
           </p>

@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/hiroshima-naka/";
-const UPDATED = "2026年10月28日";
-const UPDATED_ISO = "2026-10-28";
+const UPDATED = "2026年10月30日";
+const UPDATED_ISO = "2026-10-30";
 
 export const metadata: Metadata = {
   title: {
@@ -410,6 +410,20 @@ export default function AreaPageHiroshimaNaka() {
               本記事では、広島市中区内から依頼できる主要な鍵業者4社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報のみで比較しています。あわせて、締め出しと紛失の見分け方、深夜に業者の到着を待つ場所の選び方、飲酒後に契約する際の注意点を、帰宅の流れに沿って整理しています。
             </p>
           </div>
+
+          {/* 結論（2026年10月30日確認） */}
+          <section id="shinya-ketsuron" aria-labelledby="shinya-ketsuron-t" className="mt-8 rounded-[2px] border-2 border-primary bg-[#F5F8FC] px-5 py-6 md:px-8">
+            <h2 id="shinya-ketsuron-t" className="text-lg md:text-xl font-bold text-foreground mb-4">広島市中区で深夜・緊急に鍵開けを頼めるか（結論）</h2>
+            <ul className="leading-loose list-disc pl-5 space-y-2 mb-4 text-sm md:text-base">
+              <li><Hl>カギ110番</Hl>：公式サイトで「24時間365日・全国受付対応」を掲げています。</li>
+              <li><Hl>鍵のレスキュー</Hl>：公式サイトで「24時間365日対応・日本全国どこでも出張」を掲げ、対応地域の一覧に広島を載せています（出張料4,400〜8,800円は別）。</li>
+              <li><Hl>鍵の生活救急車</Hl>：公式サイトは「年中無休」の受付と最短15分の駆けつけを掲げています。深夜の時間帯に受け付けているかは、電話で確認してください。</li>
+              <li><Hl>カギの救急車</Hl>：公式の店舗案内には広島県内の店舗が見当たらないため、中区に来てもらえるかと受付時間は電話で確認してください。</li>
+            </ul>
+            <p className="leading-loose mb-3 text-sm md:text-base">24時間受付の業者でも、深夜は到着までの時間や総額が昼間と変わることがあります。電話の時点で<Hl>到着の目安と、深夜の割増を含めた総額</Hl>を確認してから依頼してください。</p>
+            <p className="leading-loose mb-3 text-sm md:text-base">広島市消費生活センターは、「鍵開け5,800円〜」の広告を見て連絡したところ、内容や料金の説明がないまま鍵を取り換えられ、15万円を請求された相談例を紹介しています。作業前に内容と料金を確認し、想定と違えば作業を断ること、納得できない請求はその場で支払わずに相談することを呼びかけています（相談専用 082-225-3300）。</p>
+            <p className="text-xs text-text-muted">出典：<a href="https://www.kagi110ban.jp/" target="_blank" rel="noopener noreferrer" className="text-primary underline">カギ110番</a>・<a href="https://www.kagi110qq.co.jp/" target="_blank" rel="noopener noreferrer" className="text-primary underline">鍵のレスキュー</a>・<a href="https://www.kagi110qq.co.jp/about/transaction.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">同 特定商取引法上の表記</a>・<a href="https://kagi-seikatsukyukyusya.com/" target="_blank" rel="noopener noreferrer" className="text-primary underline">鍵の生活救急車</a>・<a href="https://www.kagi1109948.com/shop/" target="_blank" rel="noopener noreferrer" className="text-primary underline">カギの救急車 店舗案内</a>・<a href="https://www.city.hiroshima.lg.jp/living/shouhi/1025695/1025701/1006754.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">広島市「鍵開けなど緊急対応での料金トラブルに注意！」</a>（いずれも2026年10月30日確認）</p>
+          </section>
 
           {/* Contents 目次ボックス */}
           <nav
