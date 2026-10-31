@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "キーナンバーとは？鍵穴・番号からの合鍵作成の基礎知識 | 鍵トラブルナビ",
+  title: "キーナンバー（鍵番号）で合鍵は作れる？刻印の場所と注文できない場合 | 鍵トラブルナビ",
   description:
-    "鍵に刻印されたキーナンバー（鍵番号）の基礎知識を解説。キーナンバーが刻印されている場所、番号からメーカー純正キーを取り寄せる方法の一般知識、番号を他人に見られないようにすべき防犯上の理由、キーカバーなどの対策を紹介します。",
+    "キーナンバー（鍵番号）が分かれば、メーカー純正の合鍵を注文できる場合があります。美和ロックの公式通販では鍵番号の入力が必要で、手元に鍵がない・番号が消えた・セキュリティ認証ID番号が分からない場合は注文できません。刻印の場所と番号を見られたときの対策も解説します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/key-number-aikagi/" },
 };
 
 const basics = [
   {
     title: "キーナンバーとは｜鍵1本ごとの形状データを特定する番号",
-    desc: "キーナンバー（鍵番号）は、鍵の表面に刻印された英数字の組み合わせで、メーカーがその鍵の刻み・ピン配列を管理するための番号です。メーカーはこの番号から鍵の形状データを特定できるため、鍵の現物がなくても、メーカー名とキーナンバーが分かれば純正キーを製作できる仕組みになっています。つまりキーナンバーは、その鍵の形状データを特定する番号であり、暗証番号に匹敵する重要な情報です。鍵をなくして手元に1本も残っていない場合でも、契約書類などに控えたキーナンバーが再作製の手がかりになる一方、他人に知られると勝手に合鍵を作られるリスクにも直結します。",
+    desc: "キーナンバー（鍵番号）は、鍵に刻印された英数字の組み合わせで、メーカーがその鍵の刻み・ピン配列を管理するための番号です。メーカーはこの番号から鍵の形状を特定できるため、メーカー純正の合鍵を注文する際の手がかりになります。ただし、注文できる条件はメーカーと窓口によって異なり、美和ロックの公式オンラインショップでは、現在手元に鍵がない場合は注文できません。キーナンバーはその鍵の形状を特定する番号であり、暗証番号と同様に扱うべき情報です。他人に知られると、勝手に合鍵を作られるリスクにも直結します。",
   },
   {
     title: "キーナンバーの記載場所｜鍵本体の刻印とキーカード",
@@ -71,7 +71,7 @@ const faqs = [
   },
   {
     q: "鍵をすべてなくしても、キーナンバーが分かれば作れますか？",
-    a: "メーカー名とキーナンバーが分かれば、メーカー純正キーを取り寄せられるのが一般的です。ただし、登録制シリンダーでは所有者登録やキーカードの提示、本人確認が必要な場合があり、納期も取り寄せ期間がかかるのが通常です。すぐに家に入れない状況の場合は、鍵開けと純正キーの手配を並行して進めることになります。紛失時の全体の動き方は鍵をなくしたときの記事を参照してください。",
+    a: "注文できない場合があります。美和ロックの公式オンラインショップでは、現在手元に鍵がない場合は注文できないと案内されています（2026年10月31日確認）。他のメーカーや販売店での扱いは、メーカー名とキーナンバーを伝えて事前に確認してください。登録制シリンダーでは所有者登録やキーカードの提示、本人確認が必要な場合があり、納期も取り寄せ期間がかかるのが通常です。すぐに家に入れない状況の場合は、鍵開けと純正キーの手配を並行して進めることになります。紛失時の全体の動き方は鍵をなくしたときの記事を参照してください。",
   },
   {
     q: "キーナンバーを人に見られるとどんな危険がありますか？",
@@ -108,12 +108,12 @@ const breadcrumbLd = {
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "キーナンバーとは？鍵穴・番号からの合鍵作成の基礎知識",
-  description: "キーナンバーの刻印場所、番号からのメーカー純正キー取り寄せの一般知識、番号を隠すべき防犯上の理由とキーカバーなどの対策を解説。",
+  headline: "キーナンバー（鍵番号）で合鍵は作れる？刻印の場所と注文できない場合",
+  description: "キーナンバー（鍵番号）から純正の合鍵を注文できる条件と注文できない場合（美和ロック公式で確認）、刻印の場所、番号を隠すべき理由と対策を解説。",
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-08-12",
-  dateModified: "2026-08-12",
+  dateModified: "2026-10-31",
 };
 
 export default function KeyNumberAikagiPage() {
@@ -136,15 +136,26 @@ export default function KeyNumberAikagiPage() {
 
         <article className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
-            キーナンバーとは？鍵穴・番号からの合鍵作成の基礎知識
+            キーナンバー（鍵番号）で合鍵は作れる？刻印の場所と注文できない場合
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年8月12日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月31日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">キーナンバーは、メーカーが鍵の形状を特定できる番号です。番号だけで純正キーを作製できる半面、他人に見られると合鍵を作られる恐れがあるため、刻印は隠して管理してください。</p>
-            <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
-              キーナンバー（鍵番号）は鍵の頭部分などに刻印された英数字で、<strong>メーカー名とセットで分かれば純正キーを取り寄せられる</strong>のが一般的です。ディンプルキーでは付属のキーカードに番号が記載される方式もあり、登録制シリンダーではカード提示や本人確認が注文の条件になることもあります。その一方で、<strong>番号を見られただけで合鍵を作られるリスク</strong>があります。鍵の写真をSNSに投稿しない、刻印はキーカバーで覆う、番号の控えとカードは鍵と別に保管する、という3点が管理の基本です。
+            <p className="font-bold text-primary mb-2">キーナンバー（鍵番号）が分かれば、メーカー純正の合鍵を注文できる場合があります。ただし、鍵が手元にない、番号が消えている、セキュリティカードの番号が分からない場合は、メーカーの公式通販では注文できないことがあります。</p>
+            <p className="text-text-secondary leading-relaxed text-sm sm:text-base mb-3">
+              美和ロック（MIWA）の場合、鍵番号は純正キーの裏面に記載された数字・アルファベット・記号で、2行で記載されている場合は2行続けて入力します。公式オンラインショップ「MIWA Direct」で注文できるのはMIWA刻印のある5種類（WR・U9・UR・PR・PS）で、注文時には鍵番号の入力に加えて鍵の正面と側面の撮影が必要です（セキュリティ認証IDシステム付きの鍵は撮影の代わりにID番号を入力します）。
+            </p>
+            <ul className="text-sm text-text-secondary leading-relaxed list-disc pl-5 mb-3 space-y-1">
+              <li><strong>注文できない鍵：</strong>MIWA刻印がない鍵（複製キー）、鍵番号がない・消えている鍵、現在手元に鍵がない場合、セキュリティ認証ID番号が分からない場合、マスターキーなどの特殊な鍵</li>
+              <li><strong>セキュリティカード付きの鍵：</strong>カードのセキュリティ認証ID番号と鍵番号の2つがそろわないと複製を注文できません</li>
+              <li><strong>上記で注文できない鍵：</strong>JC・LBなど一部は専用の注文用紙、それ以外は美和ロックのサービス代行店（SD店）に相談します</li>
+            </ul>
+            <p className="text-text-secondary leading-relaxed text-sm sm:text-base mb-3">
+              美和ロックは、セキュリティ認証IDシステムの付いていない鍵では、鍵番号を他人に見られると番号だけで不正に複製されるおそれがあるとし、過去に見られた可能性がある場合はシリンダー交換を勧めています。他のメーカーの鍵は、そのメーカーまたは販売店に注文の条件を確認してください。
+            </p>
+            <p className="text-xs text-text-muted leading-relaxed">
+              出典：<a href="https://www.miwa-lock.co.jp/tec/support/duplicatekey.html" target="_blank" rel="nofollow noopener" className="underline">美和ロック「合鍵を希望されるお客様へ」</a>／<a href="https://www.shop.miwa-lock.co.jp/ec/orderableKey" target="_blank" rel="nofollow noopener" className="underline">MIWA Direct「ご注文可能なキー」</a>／<a href="https://www.shop.miwa-lock.co.jp/ec/inputKeyNo" target="_blank" rel="nofollow noopener" className="underline">MIWA Direct「鍵情報のご入力」</a>（いずれも2026年10月31日確認）
             </p>
           </div>
 
