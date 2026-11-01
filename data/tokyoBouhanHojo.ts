@@ -17,6 +17,7 @@ export type WardHojo = {
   slug: string; // area slug (例: setagaya-ku)
   ward: string;
   program: string;
+  pageTitle?: string; // 区ページの<title>（区サイト名を除く）。program と異なる場合のみ
   url: string;
   pageUpdated?: string; // 区ページ表示の更新日・掲載日
   lockCovered: "yes" | "no";
@@ -41,6 +42,7 @@ export const WARD_HOJO: WardHojo[] = [
     rate: "2分の1",
     cap: "1万円",
     period: "令和8年5月1日〜令和9年1月29日",
+    subPage: "/area/chiyoda-ku/bouhan-hojo/",
   },
   {
     slug: "chuo-ku",
@@ -53,6 +55,7 @@ export const WARD_HOJO: WardHojo[] = [
     rate: "4分の3",
     cap: "1万5千円",
     period: "令和8年5月1日〜令和9年2月26日（予定）",
+    subPage: "/area/chuo-ku/bouhan-hojo/",
   },
   {
     slug: "minato-ku",
@@ -91,11 +94,13 @@ export const WARD_HOJO: WardHojo[] = [
     rate: "4分の3",
     cap: "3万円",
     period: "令和8年5月11日〜令和9年3月5日",
+    subPage: "/area/bunkyo-ku/bouhan-hojo/",
   },
   {
     slug: "taito-ku",
     ward: "台東区",
     program: "防犯機器等の購入・設置費用の補助",
+    pageTitle: "【令和8年度申請受付開始】防犯機器等の購入・設置費用を補助します",
     url: "https://www.city.taito.lg.jp/bosai/bohantaisaku/anzentaisaku/bouhanjyosei/bouhannkinkyu.html",
     pageUpdated: "2026年4月24日",
     lockCovered: "yes",
@@ -103,6 +108,7 @@ export const WARD_HOJO: WardHojo[] = [
     rate: "4分の3",
     cap: "6万円（補助対象経費の上限8万円）",
     period: "令和8年5月1日〜令和9年2月15日",
+    subPage: "/area/taito-ku/bouhan-hojo/",
   },
   {
     slug: "sumida-ku",
@@ -115,11 +121,13 @@ export const WARD_HOJO: WardHojo[] = [
     rate: "2分の1",
     cap: "2万円",
     period: "令和8年4月1日から受付（先着順・予算額に達した時点で終了）",
+    subPage: "/area/sumida-ku/bouhan-hojo/",
   },
   {
     slug: "koto-ku",
     ward: "江東区",
     program: "個人宅向け防犯機器等購入緊急補助事業",
+    pageTitle: "【令和9年3月12日まで】個人宅向け防犯機器等購入緊急補助事業",
     url: "https://www.city.koto.lg.jp/056153/bosai/bohan/7053.html",
     pageUpdated: "2026年4月17日",
     lockCovered: "yes",
@@ -128,11 +136,13 @@ export const WARD_HOJO: WardHojo[] = [
     cap: "3万円",
     period: "令和8年4月1日〜令和9年3月12日（必着）",
     note: "区は令和8年度をもって終了する予定と案内",
+    subPage: "/area/koto-ku/bouhan-hojo/",
   },
   {
     slug: "shinagawa-ku",
     ward: "品川区",
     program: "品川区住まいの防犯対策補助金交付制度",
+    pageTitle: "品川区住まいの防犯対策補助金交付制度（個人の住宅における防犯設備の設置）",
     url: "https://www.city.shinagawa.tokyo.jp/bosai/bohan/1009496/1003455.html",
     pageUpdated: "2026年10月20日",
     lockCovered: "yes",
@@ -141,6 +151,7 @@ export const WARD_HOJO: WardHojo[] = [
     cap: "3万円",
     period: "令和8年4月1日〜令和9年2月26日",
     note: "スマートロックは対象外",
+    subPage: "/area/shinagawa-ku/bouhan-hojo/",
   },
   {
     slug: "meguro-ku",
@@ -186,6 +197,7 @@ export const WARD_HOJO: WardHojo[] = [
     slug: "shibuya-ku",
     ward: "渋谷区",
     program: "防犯機器等購入費用の補助",
+    pageTitle: "防犯機器等購入費用の補助について",
     url: "https://www.city.shibuya.tokyo.jp/bosai/bohan/bohan-torikumi/bohankikihojo.html",
     pageUpdated: "2026年4月1日",
     lockCovered: "yes",
@@ -193,6 +205,7 @@ export const WARD_HOJO: WardHojo[] = [
     rate: "2分の1",
     cap: "2万円",
     period: "令和8年4月1日〜令和9年2月28日",
+    subPage: "/area/shibuya-ku/bouhan-hojo/",
   },
   {
     slug: "nakano-ku",
@@ -232,6 +245,7 @@ export const WARD_HOJO: WardHojo[] = [
     rate: "2分の1",
     cap: "2万円",
     period: "令和8年5月15日〜令和9年1月31日（窓口は1月29日まで）",
+    subPage: "/area/toshima-ku/bouhan-hojo/",
   },
   {
     slug: "kita-ku",
@@ -244,6 +258,7 @@ export const WARD_HOJO: WardHojo[] = [
     rate: "4分の3",
     cap: "2万円（都・区あわせて）",
     period: "令和8年5月1日〜令和9年2月26日",
+    subPage: "/area/kita-ku/bouhan-hojo/",
   },
   {
     slug: "arakawa-ku",
@@ -256,11 +271,13 @@ export const WARD_HOJO: WardHojo[] = [
     rate: "2分の1",
     cap: "1万5千円（防犯対策品全般）",
     period: "令和8年5月27日〜令和9年2月28日（窓口は2月26日まで）",
+    subPage: "/area/arakawa-ku/bouhan-hojo/",
   },
   {
     slug: "itabashi-ku",
     ward: "板橋区",
     program: "防犯機器等の購入・設置費用の補助",
+    pageTitle: "防犯機器等の購入・設置費用の一部を補助しています",
     url: "https://www.city.itabashi.tokyo.jp/bousai/bouhan/torikumi/1057420.html",
     pageUpdated: "2026年6月23日",
     lockCovered: "yes",
@@ -269,6 +286,7 @@ export const WARD_HOJO: WardHojo[] = [
     cap: "3万円",
     period: "令和8年6月1日〜令和9年2月28日",
     note: "スマートロックは対象外",
+    subPage: "/area/itabashi-ku/bouhan-hojo/",
   },
   {
     slug: "nerima-ku",
@@ -308,6 +326,7 @@ export const WARD_HOJO: WardHojo[] = [
     rate: "2分の1",
     cap: "5万円",
     period: "令和8年4月20日〜令和9年3月31日（必着）",
+    subPage: "/area/katsushika-ku/bouhan-hojo/",
   },
   {
     slug: "edogawa-ku",

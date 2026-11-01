@@ -101,7 +101,7 @@ export default function WardHojoArticle({ w, pagePath, h1, description, answerLe
             </table>
           </div>
           <p className="text-xs text-text-muted leading-relaxed mb-10">
-            出典：<Ext href={w.url}>{w.ward}公式「{w.program}」</Ext>
+            出典：<Ext href={w.url}>{w.ward}公式「{w.pageTitle ?? w.program}」</Ext>
             {w.pageUpdated ? `（区ページの更新日 ${w.pageUpdated}）` : ""}、{HOJO_CHECKED}確認。予算に達すると期間内でも受付が終わることがあるため、申請前に区のページで最新の状況を確かめてください。
           </p>
 
