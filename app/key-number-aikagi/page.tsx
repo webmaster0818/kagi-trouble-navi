@@ -90,6 +90,9 @@ const relatedLinks = [
   { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処法", desc: "紛失時の動き方の全体像はこちら" },
   { href: "/kagi-magatta/", label: "鍵が曲がった・変形したときの対処", desc: "曲げ戻さずに作り直す方法" },
   { href: "/bunjo-mansion-kagi-koukan/", label: "分譲マンションの玄関の鍵交換", desc: "管理規約での扱いとオートロック連動の鍵" },
+  { href: "/maker/miwa/aikagi/", label: "美和ロック（MIWA）の合鍵の頼み方", desc: "MIWA Directの5種類と価格、注文できない鍵" },
+  { href: "/maker/goal/aikagi/", label: "GOAL（ゴール）のスペアキー注文", desc: "鍵番号でわかるキーチェンジ機能と納期" },
+  { href: "/maker/showa/spare-key/", label: "ミネベアショウワのスペアキー", desc: "キー名別の価格と納期、FAX・郵送での注文" },
 ];
 
 const faqLd = {

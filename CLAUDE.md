@@ -41,3 +41,10 @@
 - 削除: TOP サービスカード6件の価格・TOP「サービス別の料金相場」表8行、/ryokin/ 相場表8行・即答・FAQ・description、/shimedashi/・/kagi-ore/・/kagi-mawaranai/・/kinko-kaijo/ の相場表と本文・FAQ・description の金額、/kagi-funshitsu/ の交換判断表の費用列・本文の金額、/car-inlock/ の「鍵の専門業者 8,000〜15,000円」。いずれも出典なし（業者を特定しない相場）。代わりに「金額は業者の見積もりで確認」＋/ryokin-index/（公式料金・確認日つき）への案内
 - 料金を新しく書き足さない。業者ごとの公式料金（カギ110番 11,000円〜・生活救急車 8,800円〜・鍵のレスキュー 6,600円〜＋出張料4,400〜8,800円・鍵猿 8,800円〜/夜間5,500円・アスティ24 2,980円〜）は 10/25 に公式で照合し一致＝変更なし
 - 出典のない相場の金額（「○○〜○○円が目安」）を今後書かない。title の「料金相場」の語は金額を含まないため残置
+
+## 2026-11-01 補助金ハブ＋区別6ページ＋メーカー3ページ新設（okina-coverage 5章 第1弾）
+- 新規: /bouhan-hojo-tokyo/（23区一覧）、/area/{setagaya,ota,nerima,edogawa,suginami,adachi}-ku/bouhan-hojo/、/maker/miwa/aikagi/、/maker/goal/aikagi/、/maker/showa/spare-key/。sitemap 263→273
+- 23区の値は data/tokyoBouhanHojo.ts に集約（各区公式を 2026-11-01 に確認・品目名は区の表記どおり）。新宿区は錠が対象外のためハブで「対象外」と明記し区別ページは作らない。目黒・港・中野・新宿は既存エリアページに補助解説あり＝ハブからリンクのみ
+- 区別ページは components/WardHojoArticle.tsx、メーカーページは components/SimpleArticle.tsx
+- 期限: 大田・世田谷・杉並は R8/12/28。制度終了（令和8年度末見込み）後は各ページを「受付終了」に更新するか統合を判断
+- メーカー: 価格・納期は公式値（MIWA Direct・GOALオンライン・ミネベアショウワ spare-key）。「旧ユーシン・ショウワ」等の社名の沿革は公式で未確認のため書いていない
