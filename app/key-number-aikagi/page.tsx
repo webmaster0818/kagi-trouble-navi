@@ -93,6 +93,9 @@ const relatedLinks = [
   { href: "/maker/miwa/aikagi/", label: "美和ロック（MIWA）の合鍵の頼み方", desc: "MIWA Directの5種類と価格、注文できない鍵" },
   { href: "/maker/goal/aikagi/", label: "GOAL（ゴール）のスペアキー注文", desc: "鍵番号でわかるキーチェンジ機能と納期" },
   { href: "/maker/showa/spare-key/", label: "ミネベアショウワのスペアキー", desc: "キー名別の価格と納期、FAX・郵送での注文" },
+  { href: "/maker/west/aikagi/", label: "ウエスト（WEST）の合鍵の頼み方", desc: "キーナンバーの頭文字で分かる注文先" },
+  { href: "/maker/alpha/fb-lock/", label: "アルファのFBロックのスペアキー", desc: "セキュリティカードで注文・1本3,000円（税別）" },
+  { href: "/maker/", label: "錠メーカー別ガイド", desc: "5社の合鍵の窓口・価格を一覧で比較" },
 ];
 
 const faqLd = {

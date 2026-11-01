@@ -48,3 +48,10 @@
 - 区別ページは components/WardHojoArticle.tsx、メーカーページは components/SimpleArticle.tsx
 - 期限: 大田・世田谷・杉並は R8/12/28。制度終了（令和8年度末見込み）後は各ページを「受付終了」に更新するか統合を判断
 - メーカー: 価格・納期は公式値（MIWA Direct・GOALオンライン・ミネベアショウワ spare-key）。「旧ユーシン・ショウワ」等の社名の沿革は公式で未確認のため書いていない
+
+## 2026-11-01 第2弾: 区別の防犯補助13ページ＋メーカー3ページ
+- 区別（各区公式を同日再確認）: /area/{chiyoda,chuo,bunkyo,taito,sumida,koto,shinagawa,shibuya,toshima,kita,arakawa,itabashi,katsushika}-ku/bouhan-hojo/。13区とも錠は対象（文京区はCP製品に限る）
+- data/tokyoBouhanHojo.ts に pageTitle（区ページの<title>が program と違う区＝台東・江東・品川・渋谷・板橋）を追加。WardHojoArticle の出典表記は pageTitle ?? program。出典の題名は区ページ<title>と照合済み
+- 期限の早い順: 世田谷・大田・杉並 R8/12/28 → 千代田・目黒・中野 R9/1/29 → 豊島 1/31 → 台東 2/15 … 葛飾・江戸川 3/31。墨田は終了日なし（先着・予算到達まで、10/29時点 申請割合35.2%）
+- メーカー: /maker/（ハブ）、/maker/west/aikagi/（FAQの頭文字表は画像を書き写し）、/maker/alpha/fb-lock/（1本3,000円税別・セキュリティカード必須・MIWA錠対応表）。ミネベアショウワのページに旧社名（株式会社ユーシン・ショウワ→令和5年4月2日に社名変更、公式お知らせPDF）を追記しtitleにも反映
+- 長沢製作所（キーレックス）は未着手（公式未確認）

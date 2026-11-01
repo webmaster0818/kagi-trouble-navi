@@ -147,6 +147,7 @@ export default function Page() {
       faqTitle="GOALのスペアキーのよくある質問"
       faqs={faqs}
       related={[
+        { href: "/maker/", label: "錠メーカー別ガイド", desc: "5社の合鍵の窓口・価格を一覧で比較" },
         { href: "/key-number-aikagi/", label: "キーナンバーで合鍵は作れる？", desc: "刻印の場所と注文できない場合" },
         { href: "/maker/miwa/aikagi/", label: "美和ロック（MIWA）の合鍵", desc: "MIWA Directの5種類と価格" },
         { href: "/maker/showa/spare-key/", label: "ミネベアショウワのスペアキー", desc: "キー名ごとの価格と納期" },
