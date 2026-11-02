@@ -4,7 +4,7 @@ import SimpleArticle, { Ext, type Faq } from "@/components/SimpleArticle";
 const PATH = "/maker/miwa/aikagi/";
 const TITLE = "美和ロック（MIWA）の合鍵・純正キーの頼み方｜MIWA Directの5種類と価格、注文できない鍵";
 const DESC =
-  "美和ロック（MIWA）の純正合鍵は、公式オンラインショップ「MIWA Direct」でWR・U9・UR・PR・PSの5種類を注文できます（1,155円〜1,760円・税込・送料別）。鍵が手元にない、鍵番号が消えている、セキュリティ認証ID番号が分からない場合は注文できません。LB・JCは専用の注文用紙、それ以外はサービス代行店（SD店）へ。美和ロック公式（2026年11月1日確認）にもとづいてまとめました。";
+  "美和ロック（MIWA）の純正合鍵は、公式通販「MIWA Direct」でWR・U9・UR・PR・PSの5種類を注文できます（1,155円〜1,760円・税込・送料別）。鍵が手元にない、鍵番号が消えている等の場合は注文不可。LB・JCは注文用紙、他はサービス代行店へ（美和ロック公式 2026年11月1日確認）。";
 
 export const metadata: Metadata = {
   title: `${TITLE} | 鍵トラブルナビ`,
