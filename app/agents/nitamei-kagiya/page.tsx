@@ -168,7 +168,7 @@ export default function NitameiKagiyaPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "鍵トラブルナビ", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "鍵業者の口コミ・評判", item: `${SITE}/agents/` },
+      { "@type": "ListItem", position: 2, name: "鍵業者の比較一覧", item: `${SITE}/agents/` },
       { "@type": "ListItem", position: 3, name: "名前が似た鍵屋の見分け方", item: URL },
     ],
   };
@@ -183,7 +183,7 @@ export default function NitameiKagiyaPage() {
           <ol className="flex flex-wrap gap-1">
             <li><Link href="/" className="hover:underline">鍵トラブルナビ</Link></li>
             <li>/</li>
-            <li><Link href="/agents/" className="hover:underline">鍵業者の口コミ・評判</Link></li>
+            <li><Link href="/agents/" className="hover:underline">鍵業者の比較一覧</Link></li>
             <li>/</li>
             <li className="text-slate-700">名前が似た鍵屋の見分け方</li>
           </ol>

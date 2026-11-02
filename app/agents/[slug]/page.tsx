@@ -42,6 +42,9 @@ export default async function AgentPage({ params }: Props) {
   }
 
   const notice = a.discontinued;
+  // 口コミ（goodReviews/badReviews）を掲載していない業者は、title・h1・パンくずで「口コミ・評判」を約束しない
+  const hasReviews = a.goodReviews.length > 0 || a.badReviews.length > 0;
+  const pageLabel = hasReviews ? `${a.name}の口コミ・評判` : `${a.name}の運営会社・料金`;
 
   const toc: [string, string][] = [
     ["about", `${a.name}とはどんなサービスか`],
@@ -58,7 +61,7 @@ export default async function AgentPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `${a.name}の口コミ・評判・料金を調査`,
+    headline: hasReviews ? `${a.name}の口コミ・評判・料金を調査` : `${a.name}の運営会社・料金・対応を調査`,
     description: a.metaDesc,
     image: `${SITE}${a.image}`,
     datePublished: "2026-06-10T00:00:00+09:00",
@@ -77,8 +80,8 @@ export default async function AgentPage({ params }: Props) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "鍵トラブルナビ", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "鍵業者の口コミ・評判", item: `${SITE}/agents/` },
-      { "@type": "ListItem", position: 3, name: `${a.name}の口コミ・評判`, item: `${SITE}/agents/${slug}/` },
+      { "@type": "ListItem", position: 2, name: "鍵業者の比較一覧", item: `${SITE}/agents/` },
+      { "@type": "ListItem", position: 3, name: pageLabel, item: `${SITE}/agents/${slug}/` },
     ],
   };
 
@@ -93,15 +96,15 @@ export default async function AgentPage({ params }: Props) {
           <ol className="flex flex-wrap gap-1">
             <li><Link href="/" className="hover:underline">鍵トラブルナビ</Link></li>
             <li>/</li>
-            <li><Link href="/agents/" className="hover:underline">鍵業者の口コミ・評判</Link></li>
+            <li><Link href="/agents/" className="hover:underline">鍵業者の比較一覧</Link></li>
             <li>/</li>
-            <li className="text-slate-700">{a.name}の口コミ・評判</li>
+            <li className="text-slate-700">{pageLabel}</li>
           </ol>
         </nav>
 
         <header className="relative overflow-hidden border-y border-border bg-white text-foreground mt-4">
           <div className="mx-auto max-w-4xl px-4 py-12 md:py-16">
-            <p className="text-sm font-bold tracking-widest text-primary mb-3">鍵業者の口コミ・評判</p>
+            <p className="text-sm font-bold tracking-widest text-primary mb-3">{hasReviews ? "鍵業者の口コミ・評判" : "鍵業者の比較"}</p>
             <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4 text-primary-dark">
               {notice ? (
                 <>
@@ -111,9 +114,9 @@ export default async function AgentPage({ params }: Props) {
                 </>
               ) : (
                 <>
-                  {a.name}の口コミ・評判は？
+                  {hasReviews ? `${a.name}の口コミ・評判は？` : `${a.name}の運営会社・料金は？`}
                   <br className="hidden md:block" />
-                  料金・対応・メリットを調査
+                  {hasReviews ? "料金・対応・メリットを調査" : "対応・注意点を公式サイトで確認"}
                 </>
               )}
             </h1>

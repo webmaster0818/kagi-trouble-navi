@@ -8,10 +8,10 @@ const SITE = "https://kagi-trouble-navi.com";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "鍵業者の口コミ・評判まとめ｜料金・対応スピードを比較｜鍵トラブルナビ",
+    absolute: "鍵業者の比較一覧｜運営会社・料金・受付時間を公式サイトで確認｜鍵トラブルナビ",
   },
   description:
-    "鍵業者の口コミ・評判・料金を業者別に調査しました。カギ110番・鍵の生活救急車・鍵のレスキュー・鍵猿・カギの救急車・鍵の24時間救急車・カギのトラブル救急車など各社のメリット・注意点、対応スピード、料金を比較し、鍵業者選びに必要な情報を掲載しています。",
+    "主要な鍵業者8社の運営会社・料金・受付時間を、各社の公式サイトで確認した一覧です。カギ110番・鍵の生活救急車・鍵のレスキュー・鍵猿・カギの救急車・鍵の24時間救急車・カギのトラブル救急車などの業者別ページへのリンクと、名前が似た鍵屋の見分け方を掲載しています。",
   alternates: { canonical: `${SITE}/agents/` },
 };
 
@@ -33,13 +33,13 @@ export default function AgentsIndexPage() {
         <ol className="flex flex-wrap gap-1">
           <li><Link href="/" className="hover:underline">鍵トラブルナビ</Link></li>
           <li>/</li>
-          <li className="text-slate-700">鍵業者の口コミ・評判</li>
+          <li className="text-slate-700">鍵業者の比較一覧</li>
         </ol>
       </nav>
       <div className="mx-auto max-w-4xl px-4 py-10">
-        <h1 className="text-2xl md:text-3xl font-bold mb-3">鍵業者の口コミ・評判まとめ</h1>
+        <h1 className="text-2xl md:text-3xl font-bold mb-3">鍵業者の比較一覧</h1>
         <p className="text-slate-600 mb-8 leading-relaxed">
-          主要な鍵業者の料金・対応スピード・サービス内容・利用者の口コミを、編集部が中立的な立場で調査し、掲載しています。依頼前の比較にお役立てください。
+          主要な鍵業者の運営会社・料金・受付時間・サービス内容を、各社の公式サイトで確認して掲載しています。口コミの調査結果は各業者のページに記載しています。依頼前の比較にお役立てください。
         </p>
         <Link href="/agents/nitamei-kagiya/" className="kt-card kt-card-link block mb-8 p-5" style={{ borderLeft: "4px solid var(--primary)" }}>
           <p className="font-bold text-slate-800 mb-1">「救急車」「110番」「レスキュー」など名前が似た鍵屋の見分け方</p>
@@ -51,8 +51,8 @@ export default function AgentsIndexPage() {
               <AgentShot slug={a.slug} name={a.name} sizes="(min-width: 640px) 420px, 100vw" />
               <Link href={`/agents/${a.slug}/`} className="group mt-3 flex flex-1 flex-col px-1">
                 <span className="font-bold text-foreground group-hover:text-primary mb-1">{a.name}</span>
-                <span className="text-xs text-text-muted leading-relaxed">{taglines[a.slug] ?? "口コミ・評判・料金を見る"}</span>
-                <span className="mt-3 text-xs font-bold text-primary">口コミ・評判・料金を見る →</span>
+                <span className="text-xs text-text-muted leading-relaxed">{taglines[a.slug] ?? "運営会社・料金を見る"}</span>
+                <span className="mt-3 text-xs font-bold text-primary">運営会社・料金を見る →</span>
               </Link>
               {hasAff(a.slug) && (
                 <p className="mt-2 px-1 text-right">

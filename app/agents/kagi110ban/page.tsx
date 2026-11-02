@@ -80,7 +80,7 @@ export default function Kagi110banPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "鍵トラブルナビ", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "鍵業者の口コミ・評判", item: `${SITE}/agents/` },
+      { "@type": "ListItem", position: 2, name: "鍵業者の比較一覧", item: `${SITE}/agents/` },
       { "@type": "ListItem", position: 3, name: "カギ110番の口コミ・評判", item: `${SITE}${PATH}` },
     ],
   };
