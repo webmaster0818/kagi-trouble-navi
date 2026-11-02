@@ -27,6 +27,10 @@ export function Ext({ href, children }: { href: string; children: ReactNode }) {
 
 export default function WardHojoArticle({ w, pagePath, h1, description, answerLead, answerBody, sections, faqs }: Props) {
   const areaPath = `/area/${w.slug}/`;
+  const unit = w.unit ?? "区";
+  const isWard = unit === "区";
+  const checked = w.checked ?? HOJO_CHECKED;
+  const checkedIso = w.checkedIso ?? HOJO_CHECKED_ISO;
   const faqLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -48,8 +52,8 @@ export default function WardHojoArticle({ w, pagePath, h1, description, answerLe
     description,
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
-    datePublished: HOJO_CHECKED_ISO,
-    dateModified: HOJO_CHECKED_ISO,
+    datePublished: checkedIso,
+    dateModified: checkedIso,
   };
 
   const rows: [string, string][] = [
@@ -59,7 +63,7 @@ export default function WardHojoArticle({ w, pagePath, h1, description, answerLe
     ["上限額", w.cap],
     ["申請期間", w.period],
   ];
-  if (w.note) rows.push(["区の注記", w.note]);
+  if (w.note) rows.push([`${unit}の注記`, w.note]);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -80,14 +84,14 @@ export default function WardHojoArticle({ w, pagePath, h1, description, answerLe
 
         <article className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">{h1}</h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：{HOJO_CHECKED}（{w.ward}公式ページを同日に確認）</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：{checked}（{w.ward}公式ページを同日に確認）</p>
 
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-8">
             <p className="font-bold text-primary mb-2">{answerLead}</p>
             <div className="text-text-secondary leading-relaxed text-sm sm:text-base space-y-3">{answerBody}</div>
           </div>
 
-          <h2 className="text-xl font-bold text-text-primary mb-4">{w.ward}の制度の要点（{HOJO_CHECKED}確認）</h2>
+          <h2 className="text-xl font-bold text-text-primary mb-4">{w.ward}の制度の要点（{checked}確認）</h2>
           <div className="overflow-x-auto mb-3">
             <table className="w-full text-sm border-collapse">
               <tbody>
@@ -102,7 +106,7 @@ export default function WardHojoArticle({ w, pagePath, h1, description, answerLe
           </div>
           <p className="text-xs text-text-muted leading-relaxed mb-10">
             出典：<Ext href={w.url}>{w.ward}公式「{w.pageTitle ?? w.program}」</Ext>
-            {w.pageUpdated ? `（区ページの更新日 ${w.pageUpdated}）` : ""}、{HOJO_CHECKED}確認。予算に達すると期間内でも受付が終わることがあるため、申請前に区のページで最新の状況を確かめてください。
+            {w.pageUpdated ? `（${unit}ページの更新日 ${w.pageUpdated}）` : ""}、{checked}確認。予算に達すると期間内でも受付が終わることがあるため、申請前に{unit}のページで最新の状況を確かめてください。
           </p>
 
           {sections.map((s, i) => (
@@ -119,7 +123,7 @@ export default function WardHojoArticle({ w, pagePath, h1, description, answerLe
                 東京都は「令和8年度東京都防犯機器等購入緊急補助事業」として、区市町村が行う防犯機器の補助を支援しています。都の補助は区市町村を通じた間接補助で、都に直接申し込むものではありません。対象品目や補助額は区市町村ごとに異なり、申請先はお住まいの区市町村です。都は令和7年度に都の補助金の交付を受けた人は、令和8年度に再び都の補助を受けられないとしています。
               </p>
               <p className="text-xs text-text-muted">
-                出典：<Ext href={TOKYO_HOJO_SOURCE.url}>{TOKYO_HOJO_SOURCE.label}</Ext>（{HOJO_CHECKED}確認）。ほかの区の対象品目は<a href="/bouhan-hojo-tokyo/" className="text-primary underline">東京23区の一覧</a>にまとめています。
+                出典：<Ext href={TOKYO_HOJO_SOURCE.url}>{TOKYO_HOJO_SOURCE.label}</Ext>（{HOJO_CHECKED}確認）。ほかの区{isWard ? "" : "・市"}の対象品目は<a href="/bouhan-hojo-tokyo/" className="text-primary underline">{isWard ? "東京23区の一覧" : "東京23区と多摩6市の一覧"}</a>にまとめています。
               </p>
             </div>
           </section>
@@ -131,7 +135,7 @@ export default function WardHojoArticle({ w, pagePath, h1, description, answerLe
             </p>
             <div className="flex flex-wrap gap-2">
               <a href={areaPath} className="px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold hover:bg-primary/90 transition-colors">{w.ward}の鍵業者を見る →</a>
-              <a href="/bouhan-hojo-tokyo/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">23区の補助を比べる</a>
+              <a href="/bouhan-hojo-tokyo/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">{isWard ? "23区の補助を比べる" : "23区・多摩6市の補助を比べる"}</a>
             </div>
           </div>
 
@@ -148,7 +152,7 @@ export default function WardHojoArticle({ w, pagePath, h1, description, answerLe
           <h2 className="text-xl font-bold text-text-primary mb-4">関連記事</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              { href: "/bouhan-hojo-tokyo/", label: "東京23区の防犯機器補助と鍵交換", desc: "区ごとの対象品目・補助率・期限の一覧" },
+              { href: "/bouhan-hojo-tokyo/", label: isWard ? "東京23区の防犯機器補助と鍵交換" : "東京23区・多摩6市の防犯機器補助と鍵交換", desc: isWard ? "区ごとの対象品目・補助率・期限の一覧" : "区市ごとの対象品目・補助率・期限の一覧" },
               { href: areaPath, label: `${w.ward}の鍵交換・鍵開け業者`, desc: "公式表示の料金と受付時間で比較" },
               { href: "/cp-nintei-jou/", label: "CP認定錠の解説", desc: "防犯性能の高い建物部品の見分け方" },
               { href: "/hojo-jou/", label: "補助錠の基礎知識", desc: "1ドア2ロックの考え方と取り付け" },

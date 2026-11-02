@@ -713,6 +713,7 @@ export default function AreaPageMusashino() {
             <p className="text-sm font-bold text-text-muted mb-3">関連記事</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/area/musashino/bouhan-hojo/", label: "武蔵野市の防犯補助で鍵交換は対象か" },
                 { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場" },
                 { href: "/ryokin-index/", label: "主要業者の料金一次確認まとめ" },
                 { href: "/kagishi-shikaku/", label: "鍵師の資格と鍵屋の見分け方" },

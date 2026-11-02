@@ -715,6 +715,7 @@ export default function AreaPageHachioji() {
             <p className="text-sm font-bold text-text-muted mb-3">関連記事</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/area/hachioji/bouhan-hojo/", label: "八王子市の防犯補助で鍵交換は対象か" },
                 { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処" },
                 { href: "/chintai-kagi-koukan-hiyou/", label: "賃貸の鍵交換費用" },
                 { href: "/kagi-koukan-timing/", label: "鍵交換のタイミング" },

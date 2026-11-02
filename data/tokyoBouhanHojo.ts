@@ -28,6 +28,9 @@ export type WardHojo = {
   note?: string;
   subPage?: string; // 当サイトの区別解説ページ
   areaNote?: string; // 既存エリアページに補助の解説がある場合
+  unit?: "区" | "市"; // 未指定は「区」
+  checked?: string; // 公式ページの確認日（未指定は HOJO_CHECKED）
+  checkedIso?: string;
 };
 
 export const WARD_HOJO: WardHojo[] = [
@@ -346,5 +349,125 @@ export const WARD_HOJO: WardHojo[] = [
 export function wardHojo(slug: string): WardHojo {
   const w = WARD_HOJO.find((x) => x.slug === slug);
   if (!w) throw new Error(`ward hojo not found: ${slug}`);
+  return w;
+}
+
+// 多摩地域のうち、当サイトにエリアページがある6市（東京都のページの区市町村リンクから各市公式へ）。
+// 各市の公式ページを 2026-11-02 に開いて確認した値。lockItems は市のページの品目名どおり。
+export const TAMA_CHECKED = "2026年11月2日";
+export const TAMA_CHECKED_ISO = "2026-11-02";
+
+export const TAMA_HOJO: WardHojo[] = [
+  {
+    slug: "hachioji",
+    ward: "八王子市",
+    unit: "市",
+    program: "令和8年度八王子市住まいの防犯対策緊急補助金",
+    pageTitle: "令和8年度八王子市住まいの防犯対策緊急補助金について【受付中】",
+    url: "https://www.city.hachioji.tokyo.jp/emergency/bousai/m7914685/008/p033456.html",
+    pageUpdated: "令和8年10月1日",
+    lockCovered: "yes",
+    lockItems: "防犯性能の高い錠や補助錠の取付け又は交換",
+    rate: "2分の1",
+    cap: "2万円",
+    period: "令和8年4月20日〜令和9年2月1日",
+    note: "市内の販売店等で購入・設置したものに限る",
+    checked: TAMA_CHECKED,
+    checkedIso: TAMA_CHECKED_ISO,
+    subPage: "/area/hachioji/bouhan-hojo/",
+  },
+  {
+    slug: "machida",
+    ward: "町田市",
+    unit: "市",
+    program: "2026年度町田市住まいの防犯対策補助金",
+    pageTitle: "2026年度町田市住まいの防犯対策補助金（申請受付中です）",
+    url: "https://www.city.machida.tokyo.jp/kurashi/bouhan/bouhan/sumai-bohan-hojo.html",
+    pageUpdated: "2026年10月6日",
+    lockCovered: "yes",
+    lockItems: "防犯性能の高い錠・補助錠",
+    rate: "2分の1",
+    cap: "1万円",
+    period: "2026年5月1日〜2026年12月25日（郵送は消印有効）",
+    note: "2026年12月25日までに購入したものが対象・5000件（先着順）",
+    checked: TAMA_CHECKED,
+    checkedIso: TAMA_CHECKED_ISO,
+    subPage: "/area/machida/bouhan-hojo/",
+  },
+  {
+    slug: "tachikawa",
+    ward: "立川市",
+    unit: "市",
+    program: "令和8年度住まいの防犯対策緊急支援事業",
+    pageTitle: "【6月1日から申請受付開始】令和8年度住まいの防犯対策緊急支援事業について",
+    url: "https://www.city.tachikawa.lg.jp/bosai/bohan/1008439/1024725.html",
+    pageUpdated: "2026年10月22日",
+    lockCovered: "yes",
+    lockItems: "防犯性能の高い錠及び補助錠",
+    rate: "4分の3",
+    cap: "15,000円",
+    period: "令和8年6月1日〜令和8年12月28日（郵送は17時必着）",
+    note: "先着順で約1,000世帯",
+    checked: TAMA_CHECKED,
+    checkedIso: TAMA_CHECKED_ISO,
+    subPage: "/area/tachikawa/bouhan-hojo/",
+  },
+  {
+    slug: "musashino",
+    ward: "武蔵野市",
+    unit: "市",
+    program: "住まいの防犯対策補助事業",
+    url: "https://www.city.musashino.lg.jp/kurashi_tetsuzuki/bosai_anzen/bosai_anzen_center_web/1050188.html",
+    pageUpdated: "2026年5月21日",
+    lockCovered: "yes",
+    lockItems: "防犯性能の高い錠及び補助錠の取付け又は交換",
+    rate: "9割",
+    cap: "5万円",
+    period: "令和8年4月1日〜令和9年2月28日（必着）",
+    note: "令和7年4月1日以降に購入等したものが対象。令和7年度に申請した世帯は申請できない",
+    checked: TAMA_CHECKED,
+    checkedIso: TAMA_CHECKED_ISO,
+    subPage: "/area/musashino/bouhan-hojo/",
+  },
+  {
+    slug: "chofu",
+    ward: "調布市",
+    unit: "市",
+    program: "個人住宅向け防犯補助金",
+    url: "https://www.city.chofu.lg.jp/020090/p013231.html",
+    pageUpdated: "2026年10月13日",
+    lockCovered: "yes",
+    lockItems: "防犯性能の高い錠・補助錠（設置費用の対象は防犯性能の高い錠のみ。補助錠は購入費用のみ）",
+    rate: "2分の1",
+    cap: "20,000円",
+    period: "令和8年7月6日〜令和8年12月25日（必着）",
+    note: "賃貸住宅等における入居時の鍵穴交換は対象外。市は令和8年度で終了する予定と案内",
+    checked: TAMA_CHECKED,
+    checkedIso: TAMA_CHECKED_ISO,
+    subPage: "/area/chofu/bouhan-hojo/",
+  },
+  {
+    slug: "fuchu",
+    ward: "府中市",
+    unit: "市",
+    program: "個人宅向け防犯機器等購入助成事業",
+    pageTitle: "【令和9年1月29日まで】個人宅向け防犯機器等購入助成事業",
+    url: "https://www.city.fuchu.tokyo.jp/bosaibohan/bohan/bouhankikijosei.html",
+    pageUpdated: "2026年7月14日",
+    lockCovered: "yes",
+    lockItems: "防犯性能の高い錠・補助錠",
+    rate: "2分の1",
+    cap: "20,000円",
+    period: "令和8年7月1日〜令和9年1月29日",
+    note: "賃貸住宅等における入居時の鍵穴交換・経年劣化による製品の更新は対象外。市は令和8年度で終了する予定と案内",
+    checked: TAMA_CHECKED,
+    checkedIso: TAMA_CHECKED_ISO,
+    subPage: "/area/fuchu/bouhan-hojo/",
+  },
+];
+
+export function tamaHojo(slug: string): WardHojo {
+  const w = TAMA_HOJO.find((x) => x.slug === slug);
+  if (!w) throw new Error(`tama hojo not found: ${slug}`);
   return w;
 }

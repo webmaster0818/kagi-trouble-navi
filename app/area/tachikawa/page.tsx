@@ -716,6 +716,7 @@ export default function AreaPageTachikawa() {
             <p className="text-sm font-bold text-text-muted mb-3">関連記事</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/area/tachikawa/bouhan-hojo/", label: "立川市の防犯補助で鍵交換は対象か" },
                 { href: "/joumae-type-zukan/", label: "錠前の種類図鑑" },
                 { href: "/kagi-shurui-zukan/", label: "鍵の種類図鑑" },
                 { href: "/kagi-mawaranai/", label: "鍵が回らないときの対処" },

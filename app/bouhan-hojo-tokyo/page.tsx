@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { HOJO_CHECKED, HOJO_CHECKED_ISO, TOKYO_HOJO_SOURCE, WARD_HOJO } from "@/data/tokyoBouhanHojo";
+import { HOJO_CHECKED, HOJO_CHECKED_ISO, TAMA_CHECKED, TAMA_CHECKED_ISO, TAMA_HOJO, TOKYO_HOJO_SOURCE, WARD_HOJO } from "@/data/tokyoBouhanHojo";
 
 const PATH = "/bouhan-hojo-tokyo/";
 const TITLE = "東京都の防犯機器補助で鍵交換は対象になる？23区別の対象品目・補助率・期限一覧（令和8年度）";
@@ -56,7 +56,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: HOJO_CHECKED_ISO,
-  dateModified: HOJO_CHECKED_ISO,
+  dateModified: TAMA_CHECKED_ISO,
 };
 
 function Ext({ href, children }: { href: string; children: React.ReactNode }) {
@@ -87,7 +87,7 @@ export default function BouhanHojoTokyoPage() {
 
         <article className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">{TITLE}</h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：{HOJO_CHECKED}（東京都と23区の公式ページを同日に確認）</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：{TAMA_CHECKED}（多摩6市を追加・各市の公式ページを同日に確認。東京都と23区は{HOJO_CHECKED}に確認）</p>
 
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
             <p className="font-bold text-primary mb-2">
@@ -218,8 +218,50 @@ export default function BouhanHojoTokyoPage() {
             ))}
           </div>
           <p className="text-sm text-text-secondary leading-relaxed mb-10">
-            目黒区・港区・中野区・新宿区の補助は、それぞれの区の鍵業者ページで解説しています（<a href="/area/meguro-ku/" className="text-primary underline">目黒区</a>・<a href="/area/minato-ku/" className="text-primary underline">港区</a>・<a href="/area/nakano-ku/" className="text-primary underline">中野区</a>・<a href="/area/shinjuku-ku/" className="text-primary underline">新宿区</a>）。多摩地域の市町村の補助は、東京都のページの区市町村リンクから確認できます。
+            目黒区・港区・中野区・新宿区の補助は、それぞれの区の鍵業者ページで解説しています（<a href="/area/meguro-ku/" className="text-primary underline">目黒区</a>・<a href="/area/minato-ku/" className="text-primary underline">港区</a>・<a href="/area/nakano-ku/" className="text-primary underline">中野区</a>・<a href="/area/shinjuku-ku/" className="text-primary underline">新宿区</a>）。このほかの多摩地域の市町村の補助は、東京都のページの区市町村リンクから確認できます。
           </p>
+
+          <h2 className="text-xl font-bold text-text-primary mb-2">多摩地域6市の鍵（錠）の扱いと補助率・上限・期限</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            当サイトに鍵業者のページがある多摩地域の6市について、各市の公式ページを{TAMA_CHECKED}に確認しました。6市とも錠・補助錠が対象ですが、補助率や条件は市ごとに違います。
+          </p>
+          <div className="overflow-x-auto mb-3">
+            <table className="w-full text-sm border-collapse min-w-[760px]">
+              <thead>
+                <tr className="bg-surface-alt">
+                  <th className="border border-border px-3 py-2 text-left whitespace-nowrap">市</th>
+                  <th className="border border-border px-3 py-2 text-left">鍵（錠）の扱い</th>
+                  <th className="border border-border px-3 py-2 text-left whitespace-nowrap">補助率</th>
+                  <th className="border border-border px-3 py-2 text-left">上限額</th>
+                  <th className="border border-border px-3 py-2 text-left">申請期間</th>
+                  <th className="border border-border px-3 py-2 text-left whitespace-nowrap">詳しく</th>
+                </tr>
+              </thead>
+              <tbody>
+                {TAMA_HOJO.map((w) => (
+                  <tr key={w.slug}>
+                    <td className="border border-border px-3 py-2 whitespace-nowrap font-bold text-text-primary">{w.ward}</td>
+                    <td className="border border-border px-3 py-2">
+                      {w.lockItems}
+                      {w.note ? <span className="block text-xs text-text-muted mt-1">{w.note}</span> : null}
+                    </td>
+                    <td className="border border-border px-3 py-2 whitespace-nowrap">{w.rate}</td>
+                    <td className="border border-border px-3 py-2">{w.cap}</td>
+                    <td className="border border-border px-3 py-2">{w.period}</td>
+                    <td className="border border-border px-3 py-2 text-xs leading-relaxed">
+                      <Ext href={w.url}>市の公式</Ext>
+                      <br />
+                      <a href={w.subPage} className="text-primary underline">解説ページ</a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-text-muted leading-relaxed mb-10">
+            出典：各市の公式ページ（表の「市の公式」リンク先、いずれも{TAMA_CHECKED}確認）。調布市の錠・補助錠の扱いは市の「補助対象機器等一覧」PDFで確認しました。
+          </p>
+
 
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 mb-10">
             <h2 className="text-lg font-bold text-text-primary mb-2">東京で鍵交換を頼める業者を比べる</h2>

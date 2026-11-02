@@ -715,6 +715,7 @@ export default function AreaPageChofu() {
             <p className="text-sm font-bold text-text-muted mb-3">関連記事</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/area/chofu/bouhan-hojo/", label: "調布市の防犯補助で鍵交換は対象か" },
                 { href: "/key-box-kanri/", label: "キーボックスの管理と注意点" },
                 { href: "/door-closer/", label: "ドアクローザーの不具合" },
                 { href: "/kagi-koukan-timing/", label: "鍵交換のタイミング" },

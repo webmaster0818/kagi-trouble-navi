@@ -715,6 +715,7 @@ export default function AreaPageFuchu() {
             <p className="text-sm font-bold text-text-muted mb-3">関連記事</p>
             <ul className="grid gap-3 md:grid-cols-2">
               {[
+                { href: "/area/fuchu/bouhan-hojo/", label: "府中市の防犯補助で鍵交換は対象か" },
                 { href: "/joumae-type-zukan/", label: "錠前タイプ図鑑" },
                 { href: "/kagi-shurui-zukan/", label: "鍵の種類図鑑" },
                 { href: "/cylinder-koukan-diy/", label: "シリンダー交換のDIY" },

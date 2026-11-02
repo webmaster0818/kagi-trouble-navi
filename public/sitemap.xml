@@ -303,7 +303,7 @@
   <url><loc>https://kagi-trouble-navi.com/area/sanda/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/area/hatsukaichi/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/area/imabari/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://kagi-trouble-navi.com/bouhan-hojo-tokyo/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/bouhan-hojo-tokyo/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/area/setagaya-ku/bouhan-hojo/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/area/ota-ku/bouhan-hojo/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/area/nerima-ku/bouhan-hojo/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
@@ -329,4 +329,10 @@
   <url><loc>https://kagi-trouble-navi.com/maker/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/maker/west/aikagi/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/maker/alpha/fb-lock/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/area/hachioji/bouhan-hojo/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/area/machida/bouhan-hojo/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/area/tachikawa/bouhan-hojo/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/area/musashino/bouhan-hojo/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/area/chofu/bouhan-hojo/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/area/fuchu/bouhan-hojo/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
 </urlset>
