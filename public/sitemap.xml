@@ -39,11 +39,11 @@
   <url><loc>https://kagi-trouble-navi.com/agents/seikatsu-kyukyusha/</loc>
     <lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/agents/kagi-rescue/</loc>
-    <lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+    <lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/agents/kagizaru/</loc>
     <lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/agents/kagi-kyukyusha/</loc>
-    <lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+    <lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/agents/kagi-24h-kyukyusha/</loc>
     <lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/agents/kagi-trouble-kyukyusha/</loc>
@@ -60,7 +60,7 @@
     <lastmod>2026-10-17</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/shimedashi/</loc><lastmod>2026-10-27</lastmod><priority>0.9</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/kagi-mawaranai/</loc><lastmod>2026-10-28</lastmod><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://kagi-trouble-navi.com/kagi-funshitsu/</loc><lastmod>2026-10-25</lastmod><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/kagi-funshitsu/</loc><lastmod>2026-11-03</lastmod><priority>0.9</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/kinko-kaijo/</loc><lastmod>2026-10-28</lastmod><priority>0.9</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/kagi-ore/</loc><lastmod>2026-10-28</lastmod><priority>0.9</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/car-inlock/</loc><lastmod>2026-10-27</lastmod><priority>0.9</priority><changefreq>monthly</changefreq></url>
@@ -323,10 +323,10 @@
   <url><loc>https://kagi-trouble-navi.com/area/arakawa-ku/bouhan-hojo/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/area/itabashi-ku/bouhan-hojo/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/area/katsushika-ku/bouhan-hojo/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://kagi-trouble-navi.com/maker/miwa/aikagi/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://kagi-trouble-navi.com/maker/goal/aikagi/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/maker/miwa/aikagi/</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/maker/goal/aikagi/</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/maker/showa/spare-key/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://kagi-trouble-navi.com/maker/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/maker/</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/maker/west/aikagi/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/maker/alpha/fb-lock/</loc><lastmod>2026-11-01</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/area/hachioji/bouhan-hojo/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
@@ -335,4 +335,11 @@
   <url><loc>https://kagi-trouble-navi.com/area/musashino/bouhan-hojo/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/area/chofu/bouhan-hojo/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://kagi-trouble-navi.com/area/fuchu/bouhan-hojo/</loc><lastmod>2026-11-02</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/kagi-funshitsu/tokyo/</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/kagi-funshitsu/osaka/</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/kagi-funshitsu/zenkoku/</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/maker/miwa/pr-cylinder/</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/maker/miwa/lb-cylinder/</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/maker/miwa/haishi-cylinder/</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://kagi-trouble-navi.com/maker/goal/oteire/</loc><lastmod>2026-11-03</lastmod><priority>0.8</priority><changefreq>monthly</changefreq></url>
 </urlset>

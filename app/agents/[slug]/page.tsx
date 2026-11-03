@@ -228,6 +228,13 @@ export default async function AgentPage({ params }: Props) {
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">{a.goodReviews.length > 0 ? "利用者の口コミ・評判" : "口コミ・評判の調査結果"}</h2>
             <div className="rounded-2xl bg-amber-50 border border-amber-200 p-6 mb-6">
               <p className="text-slate-700 text-sm leading-relaxed">{a.reviewsSummary}</p>
+              {a.reviewSources && a.reviewSources.length > 0 && (
+                <ul className="mt-3 text-xs text-slate-600 space-y-1 list-disc pl-5">
+                  {a.reviewSources.map((src) => (
+                    <li key={src.url}>口コミの掲載元：{src.label}（{src.checked}確認）：<a href={src.url} target="_blank" rel="noopener nofollow" className="text-blue-700 underline break-all">{src.url}</a></li>
+                  ))}
+                </ul>
+              )}
             </div>
             {a.goodReviews.length > 0 && (<>
             <h3 className="font-bold text-lg mb-3">良い口コミの傾向</h3>
@@ -236,7 +243,7 @@ export default async function AgentPage({ params }: Props) {
                 <div key={i} className="rounded-xl border border-slate-200 p-5">
                   <p className="font-bold mb-1">{r.title}</p>
                   <p className="text-sm leading-relaxed mb-2 text-slate-700">{r.body}</p>
-                  <p className="text-xs text-slate-400">{r.meta}</p>
+                  <p className="text-xs text-slate-400">{r.meta}{r.sourceUrl && (<>（<a href={r.sourceUrl} target="_blank" rel="noopener nofollow" className="underline break-all">掲載元</a>）</>)}</p>
                 </div>
               ))}
             </div>
@@ -246,7 +253,7 @@ export default async function AgentPage({ params }: Props) {
                 <div key={i} className="rounded-xl border border-slate-200 bg-slate-50 p-5">
                   <p className="font-bold mb-1">{r.title}</p>
                   <p className="text-sm leading-relaxed mb-2 text-slate-700">{r.body}</p>
-                  <p className="text-xs text-slate-400">{r.meta}</p>
+                  <p className="text-xs text-slate-400">{r.meta}{r.sourceUrl && (<>（<a href={r.sourceUrl} target="_blank" rel="noopener nofollow" className="underline break-all">掲載元</a>）</>)}</p>
                 </div>
               ))}
             </div>

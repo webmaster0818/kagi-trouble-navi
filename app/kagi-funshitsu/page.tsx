@@ -44,7 +44,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-07-02",
-  dateModified: "2026-10-25",
+  dateModified: "2026-11-03",
 };
 
 export default function KagiFunshitsuPage() {
@@ -69,7 +69,7 @@ export default function KagiFunshitsuPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             鍵をなくした時の対処法｜紛失時の対処手順【2026年版】
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月25日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年11月3日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
@@ -109,6 +109,9 @@ export default function KagiFunshitsuPage() {
           <h3 className="text-base font-bold text-text-primary mb-2">オンライン申請に対応する都道府県もある</h3>
           <p className="text-sm text-text-secondary leading-relaxed mb-4">
             都道府県警察によっては、遺失届の<strong>電子申請（オンライン届出）</strong>に対応している場合があります。窓口へ行く時間が取れないときは「お住まいの都道府県名＋遺失届 電子申請」で検索し、対応状況をご確認ください。地域や届出内容によっては窓口での手続きを案内される場合もあるため、あくまで補助的な手段としてお考えください。
+          </p>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            都道府県ごとの窓口は、<a href="/kagi-funshitsu/tokyo/" className="text-primary underline hover:no-underline">東京（警視庁）</a>・<a href="/kagi-funshitsu/osaka/" className="text-primary underline hover:no-underline">大阪（大阪府警察）</a>・<a href="/kagi-funshitsu/zenkoku/" className="text-primary underline hover:no-underline">そのほかの45道府県（警察庁の共通ポータル）</a>の各ページで、公式の案内をもとにまとめています。
           </p>
           <h3 className="text-base font-bold text-text-primary mb-2">鍵が見つかった場合の連絡の流れ</h3>
           <p className="text-sm text-text-secondary leading-relaxed mb-10">

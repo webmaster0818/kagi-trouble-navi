@@ -148,6 +148,17 @@ export default function Page() {
             </div>
           ),
         },
+        {
+          h2: "シリンダー・お手入れのページ",
+          body: (
+            <ul className="list-disc pl-5 space-y-1.5">
+              <li><a href="/maker/miwa/pr-cylinder/" className="text-primary underline">美和ロック（MIWA）のPRシリンダー</a>：2WAY構造・PR-Jとの違い・純正以外の合鍵の注意</li>
+              <li><a href="/maker/miwa/lb-cylinder/" className="text-primary underline">美和ロック（MIWA）のLBシリンダー</a>：紛失時もシリンダー交換なしで以前のキーを無効にできる仕組み</li>
+              <li><a href="/maker/miwa/haishi-cylinder/" className="text-primary underline">美和ロック（MIWA）の廃止シリンダー</a>：ディスク・EC・UX・PX・URの合鍵の注文期限と見分け方</li>
+              <li><a href="/maker/goal/oteire/" className="text-primary underline">GOAL（ゴール）の錠前のお手入れ</a>：CQ303シリンダー潤滑剤か鉛筆の粉、油は使わない</li>
+            </ul>
+          ),
+        },
       ]}
       cta={{
         h2: "合鍵を待てない・鍵をなくしたときは",
