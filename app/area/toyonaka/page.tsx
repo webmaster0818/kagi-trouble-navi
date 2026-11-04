@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/toyonaka/";
-const UPDATED = "2026年11月2日";
-const UPDATED_ISO = "2026-11-02";
+const UPDATED = "2026年11月4日";
+const UPDATED_ISO = "2026-11-04";
 
 export const metadata: Metadata = {
   title: {
@@ -170,8 +170,8 @@ const agents: AreaAgent[] = [
       { k: "運営", v: "株式会社ジェイクライプ（加盟店ネットワーク）" },
     ],
     memo:
-      "公式グループの料金目安ページで鍵開け（住宅一般）11,000〜44,000円（税込）を確認（2026年7月時点）。料金・営業時間・支払い方法は加盟店ごとに異なるため、依頼時に担当加盟店へ総額と条件の確認が必要です。名前のよく似た別業者が複数あるため、運営会社名での確認をおすすめします。",
-    memoDate: "2026年7月時点の調査",
+      "公式グループの料金目安ページで鍵開け（住宅一般）11,000〜44,000円（税込）を確認（2026年11月4日）。料金・営業時間・支払い方法は加盟店ごとに異なるため、依頼時に担当加盟店へ総額と条件の確認が必要です。名前のよく似た別業者が複数あるため、運営会社名での確認をおすすめします。",
+    memoDate: "2026年11月4日確認",
   },
 ];
 
