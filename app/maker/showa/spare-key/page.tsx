@@ -143,6 +143,7 @@ export default function Page() {
         { href: "/maker/miwa/aikagi/", label: "美和ロック（MIWA）の合鍵", desc: "MIWA Directの5種類と価格" },
         { href: "/maker/goal/aikagi/", label: "GOAL（ゴール）のスペアキー注文", desc: "鍵番号でわかるキーチェンジ機能" },
         { href: "/junsei-key-saihakkou/", label: "メーカー純正キーの再発行", desc: "純正キー取り寄せの流れ" },
+        { href: "/maker/showa/oteire/", label: "ミネベアショウワの錠前のお手入れ", desc: "症状別の対処と8つの注意" },
       ]}
     />
   );

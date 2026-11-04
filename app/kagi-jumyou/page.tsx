@@ -90,6 +90,7 @@ const relatedLinks = [
   { href: "/kagi-shurui-zukan/", label: "鍵の種類図鑑", desc: "交換先を選ぶための種類別の基礎知識" },
   { href: "/kagiana-abura/", label: "鍵穴に油を差してしまったときの対処", desc: "メーカーが案内する清掃と専用潤滑剤" },
   { href: "/ikkodate-kagi-koukan/", label: "一戸建ての鍵交換で確認すること", desc: "複数の出入口と同じ鍵での統一" },
+  { href: "/maker/taiyou-nensu/", label: "錠の耐用年数と保守点検制度", desc: "一般錠10年・電気錠7年とメーカー各社の案内" },
 ];
 
 const faqLd = {

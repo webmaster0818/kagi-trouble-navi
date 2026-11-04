@@ -156,6 +156,9 @@ export default function Page() {
               <li><a href="/maker/miwa/lb-cylinder/" className="text-primary underline">美和ロック（MIWA）のLBシリンダー</a>：紛失時もシリンダー交換なしで以前のキーを無効にできる仕組み</li>
               <li><a href="/maker/miwa/haishi-cylinder/" className="text-primary underline">美和ロック（MIWA）の廃止シリンダー</a>：ディスク・EC・UX・PX・URの合鍵の注文期限と見分け方</li>
               <li><a href="/maker/goal/oteire/" className="text-primary underline">GOAL（ゴール）の錠前のお手入れ</a>：CQ303シリンダー潤滑剤か鉛筆の粉、油は使わない</li>
+              <li><a href="/maker/showa/oteire/" className="text-primary underline">ミネベアショウワの錠前のお手入れ</a>：症状別の対処と、鍵穴に油を注さないなど8つの注意</li>
+              <li><a href="/maker/taiyou-nensu/" className="text-primary underline">錠の耐用年数と保守点検制度</a>：一般錠10年・電気錠7年、保証期間との違い、部品の保有期間</li>
+              <li><a href="/maker/nagasawa/keylex/" className="text-primary underline">長沢製作所 キーレックス（ボタン錠）</a>：暗証番号の確認・変更、スペアキーを作れる品番、相談先</li>
             </ul>
           ),
         },

@@ -134,6 +134,7 @@ export default function Page() {
         { href: "/maker/goal/aikagi/", label: "GOAL（ゴール）のスペアキー注文", desc: "鍵番号でわかるキーチェンジ機能" },
         { href: "/kagiana-abura/", label: "鍵穴に油を差してよいか", desc: "美和ロックの案内と専用潤滑剤" },
         { href: "/kagi-jumyou/", label: "鍵の寿命と交換の目安", desc: "耐用年数の考え方" },
+        { href: "/maker/showa/oteire/", label: "ミネベアショウワの錠前のお手入れ", desc: "症状別の対処と8つの注意" },
         { href: "/maker/", label: "錠メーカー別ガイド", desc: "5社の合鍵の窓口を一覧で比較" },
       ]}
     />
