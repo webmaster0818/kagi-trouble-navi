@@ -256,6 +256,7 @@ export default function KagiMawaranaiPage() {
             {[
               { href: "/kagiana-abura/", label: "鍵穴に油を差してしまったときの対処" },
               { href: "/kagi-magatta/", label: "鍵が曲がった・変形したときの対処" },
+              { href: "/kagiana-touketsu/kanreichi/", label: "鍵穴が凍りやすい時期（都市別の冬の最低気温）" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →

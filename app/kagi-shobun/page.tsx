@@ -88,6 +88,7 @@ const relatedLinks = [
   { href: "/kagi-koukan-timing/", label: "鍵交換のタイミングと目安", desc: "交換を検討すべきサインと考え方" },
   { href: "/aikagi/", label: "合鍵作成の基礎知識", desc: "合鍵の管理と作成時の注意点" },
   { href: "/key-box-kanri/", label: "キーボックスでの鍵管理", desc: "スペアキーの安全な保管方法" },
+  { href: "/kinko-shobun/jichitai/", label: "自治体別の金庫の分別ルール", desc: "10市区の耐火金庫・手提げ金庫の扱い" },
 ];
 
 const faqLd = {

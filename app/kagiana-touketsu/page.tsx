@@ -235,6 +235,7 @@ export default function KagianaTouketsuPage() {
           <h2 className="text-xl font-bold text-text-primary mb-4">関連記事</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
+              { href: "/kagiana-touketsu/kanreichi/", label: "都市別 冬の最低気温（気象庁 平年値）" },
               { href: "/kagi-mawaranai/", label: "鍵が回らない・重いときの対処法" },
               { href: "/kagi-ore/", label: "鍵が折れたときの対処法" },
               { href: "/kagi-koukan-timing/", label: "鍵交換のタイミングと判断基準" },

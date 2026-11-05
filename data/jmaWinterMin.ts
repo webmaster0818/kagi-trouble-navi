@@ -1,0 +1,142 @@
+export type JmaRow = { slug: string; city: string; station: string; months: string[]; dec: string; jan: string; feb: string; mar: string; url: string };
+
+export const JMA_ROWS: JmaRow[] = [
+  {
+    slug: "asahikawa", city: "旭川市", station: "旭川",
+    months: ["11月", "12月", "1月", "2月", "3月"],
+    dec: "-8.0", jan: "-11.7", feb: "-11.8", mar: "-6.1",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+  },
+  {
+    slug: "sapporo", city: "札幌市", station: "札幌",
+    months: ["12月", "1月", "2月", "3月"],
+    dec: "-4.0", jan: "-6.4", feb: "-6.2", mar: "-2.4",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=14&block_no=47412&year=&month=&day=&view=",
+  },
+  {
+    slug: "kushiro", city: "釧路市", station: "釧路",
+    months: ["11月", "12月", "1月", "2月", "3月"],
+    dec: "-7.0", jan: "-9.8", feb: "-9.4", mar: "-4.2",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=19&block_no=47418&year=&month=&day=&view=",
+  },
+  {
+    slug: "tomakomai", city: "苫小牧市", station: "苫小牧",
+    months: ["12月", "1月", "2月", "3月"],
+    dec: "-5.4", jan: "-8.1", feb: "-7.9", mar: "-3.7",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=21&block_no=47424&year=&month=&day=&view=",
+  },
+  {
+    slug: "hakodate", city: "函館市", station: "函館",
+    months: ["12月", "1月", "2月", "3月"],
+    dec: "-3.6", jan: "-6.0", feb: "-5.7", mar: "-2.2",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=23&block_no=47430&year=&month=&day=&view=",
+  },
+  {
+    slug: "aomori", city: "青森市", station: "青森",
+    months: ["12月", "1月", "2月", "3月"],
+    dec: "-1.4", jan: "-3.5", feb: "-3.3", mar: "-0.8",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=31&block_no=47575&year=&month=&day=&view=",
+  },
+  {
+    slug: "hachinohe", city: "八戸市", station: "八戸",
+    months: ["12月", "1月", "2月", "3月"],
+    dec: "-1.6", jan: "-3.9", feb: "-3.7", mar: "-0.9",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=31&block_no=47581&year=&month=&day=&view=",
+  },
+  {
+    slug: "akita", city: "秋田市", station: "秋田",
+    months: ["1月", "2月"],
+    dec: "0.0", jan: "-2.1", feb: "-2.1", mar: "0.4",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=32&block_no=47582&year=&month=&day=&view=",
+  },
+  {
+    slug: "morioka", city: "盛岡市", station: "盛岡",
+    months: ["12月", "1月", "2月", "3月"],
+    dec: "-2.5", jan: "-5.2", feb: "-4.8", mar: "-1.8",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=33&block_no=47584&year=&month=&day=&view=",
+  },
+  {
+    slug: "sendai", city: "仙台市", station: "仙台",
+    months: ["1月", "2月"],
+    dec: "0.9", jan: "-1.3", feb: "-1.1", mar: "1.4",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=34&block_no=47590&year=&month=&day=&view=",
+  },
+  {
+    slug: "yamagata", city: "山形市", station: "山形",
+    months: ["12月", "1月", "2月", "3月"],
+    dec: "-0.7", jan: "-3.1", feb: "-3.1", mar: "-0.3",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=35&block_no=47588&year=&month=&day=&view=",
+  },
+  {
+    slug: "fukushima", city: "福島市", station: "福島",
+    months: ["1月", "2月"],
+    dec: "0.7", jan: "-1.5", feb: "-1.2", mar: "1.3",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=36&block_no=47595&year=&month=&day=&view=",
+  },
+  {
+    slug: "utsunomiya", city: "宇都宮市", station: "宇都宮",
+    months: ["1月", "2月"],
+    dec: "0.2", jan: "-2.2", feb: "-1.3", mar: "2.1",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=41&block_no=47615&year=&month=&day=&view=",
+  },
+  {
+    slug: "maebashi", city: "前橋市", station: "前橋",
+    months: ["1月"],
+    dec: "1.9", jan: "-0.5", feb: "0.0", mar: "3.1",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=42&block_no=47624&year=&month=&day=&view=",
+  },
+  {
+    slug: "nagano", city: "長野市", station: "長野",
+    months: ["12月", "1月", "2月", "3月"],
+    dec: "-1.5", jan: "-3.9", feb: "-3.7", mar: "-0.5",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=48&block_no=47610&year=&month=&day=&view=",
+  },
+  {
+    slug: "matsumoto", city: "松本市", station: "松本",
+    months: ["12月", "1月", "2月", "3月"],
+    dec: "-2.2", jan: "-4.9", feb: "-4.5", mar: "-1.0",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=48&block_no=47618&year=&month=&day=&view=",
+  },
+  {
+    slug: "kofu", city: "甲府市", station: "甲府",
+    months: ["1月", "2月"],
+    dec: "0.3", jan: "-2.1", feb: "-0.7", mar: "3.1",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=49&block_no=47638&year=&month=&day=&view=",
+  },
+  {
+    slug: "niigata", city: "新潟市", station: "新潟",
+    months: ["2月"],
+    dec: "2.4", jan: "0.1", feb: "-0.1", mar: "2.4",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=54&block_no=47604&year=&month=&day=&view=",
+  },
+  {
+    slug: "joetsu", city: "上越市", station: "高田",
+    months: ["1月", "2月"],
+    dec: "1.8", jan: "-0.4", feb: "-0.8", mar: "1.4",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=54&block_no=47612&year=&month=&day=&view=",
+  },
+  {
+    slug: "toyama", city: "富山市", station: "富山",
+    months: [],
+    dec: "2.5", jan: "0.2", feb: "0.1", mar: "2.6",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=55&block_no=47607&year=&month=&day=&view=",
+  },
+  {
+    slug: "kanazawa", city: "金沢市", station: "金沢",
+    months: [],
+    dec: "3.5", jan: "1.2", feb: "1.0", mar: "3.4",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=56&block_no=47605&year=&month=&day=&view=",
+  },
+  {
+    slug: "fukui", city: "福井市", station: "福井",
+    months: [],
+    dec: "2.7", jan: "0.5", feb: "0.3", mar: "2.8",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=57&block_no=47616&year=&month=&day=&view=",
+  },
+  {
+    slug: "gifu", city: "岐阜市", station: "岐阜",
+    months: [],
+    dec: "3.0", jan: "0.7", feb: "1.2", mar: "4.2",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=52&block_no=47632&year=&month=&day=&view=",
+  },
+];
