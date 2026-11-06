@@ -80,6 +80,30 @@ export const JMA_ROWS: JmaRow[] = [
     url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=41&block_no=47615&year=&month=&day=&view=",
   },
   {
+    slug: "iwaki", city: "いわき市", station: "小名浜",
+    months: ["1月"],
+    dec: "2.1", jan: "-0.1", feb: "0.1", mar: "2.8",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=36&block_no=47598&year=&month=&day=&view=",
+  },
+  {
+    slug: "mito", city: "水戸市", station: "水戸",
+    months: ["1月", "2月"],
+    dec: "0.5", jan: "-1.8", feb: "-1.2", mar: "2.1",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=40&block_no=47629&year=&month=&day=&view=",
+  },
+  {
+    slug: "tsukuba", city: "つくば市", station: "つくば（館野）",
+    months: ["12月", "1月", "2月"],
+    dec: "-0.5", jan: "-2.8", feb: "-1.8", mar: "1.7",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=40&block_no=47646&year=&month=&day=&view=",
+  },
+  {
+    slug: "kumagaya", city: "熊谷市", station: "熊谷",
+    months: ["1月"],
+    dec: "1.8", jan: "-0.4", feb: "0.3", mar: "3.6",
+    url: "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=43&block_no=47626&year=&month=&day=&view=",
+  },
+  {
     slug: "maebashi", city: "前橋市", station: "前橋",
     months: ["1月"],
     dec: "1.9", jan: "-0.5", feb: "0.0", mar: "3.1",

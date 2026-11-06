@@ -84,7 +84,7 @@ const faqs = [
 ];
 
 const relatedLinks = [
-  { href: "/kinko-shobun/jichitai/", label: "自治体別の金庫の分別ルール", desc: "10市区の耐火金庫・手提げ金庫の扱い" },
+  { href: "/kinko-shobun/jichitai/", label: "自治体別の金庫の分別ルール", desc: "18市区の耐火金庫・手提げ金庫の扱い" },
   { href: "/kinko-kaijo/", label: "金庫の鍵開け・解錠", desc: "開かない金庫の解錠方法と依頼の流れ" },
   { href: "/kagi-shobun/", label: "不要になった鍵の処分方法", desc: "古い鍵・合鍵の安全な捨て方" },
   { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処法", desc: "金庫の鍵の紛失時もまずこちら" },

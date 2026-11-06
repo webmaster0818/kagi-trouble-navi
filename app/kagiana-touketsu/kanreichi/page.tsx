@@ -3,10 +3,10 @@ import SimpleArticle, { Ext, type Faq } from "@/components/SimpleArticle";
 import { JMA_ROWS } from "@/data/jmaWinterMin";
 
 const PATH = "/kagiana-touketsu/kanreichi/";
-const TITLE = "鍵穴が凍りやすい時期を都市別に確認｜気象庁の平年値で見る冬の最低気温（23市）";
+const TITLE = "鍵穴が凍りやすい時期を都市別に確認｜気象庁の平年値で見る冬の最低気温（27市）";
 const DESC =
   "旭川・釧路は11月から3月まで、札幌・青森・盛岡・長野・松本などは12月から3月まで、日最低気温の月平均が0℃を下回ります（気象庁 平年値 1991〜2020年）。" +
-  "北海道・東北・北関東・甲信・北陸の23市を一覧にしました（2026年11月5日確認）。";
+  "北海道・東北・関東・甲信・北陸の27市を一覧にしました（2026年11月5日・6日確認）。";
 
 export const metadata: Metadata = {
   title: `${TITLE} | 鍵トラブルナビ`,
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: `https://kagi-trouble-navi.com${PATH}` },
 };
 
-const CHECKED = "2026年11月5日確認";
+const CHECKED = "2026年11月5日・6日確認";
 const JMA_TOP = "https://www.data.jma.go.jp/obd/stats/etrn/index.php";
 
 const sorted = [...JMA_ROWS].sort((a, b) => parseFloat(a.jan) - parseFloat(b.jan));
@@ -31,7 +31,7 @@ function span(m: string[]): string {
 const faqs: Faq[] = [
   {
     q: "日最低気温の月平均が0℃を下回る月が長いのはどの都市ですか？",
-    a: "今回の23市では、旭川市と釧路市が11月から3月までの5か月です。札幌市・苫小牧市・函館市・青森市・八戸市・盛岡市・山形市・長野市・松本市は12月から3月までの4か月です（気象庁 平年値 1991〜2020年、" +
+    a: "今回の27市では、旭川市と釧路市が11月から3月までの5か月です。札幌市・苫小牧市・函館市・青森市・八戸市・盛岡市・山形市・長野市・松本市は12月から3月までの4か月です（気象庁 平年値 1991〜2020年、" +
       CHECKED +
       "）。",
   },
@@ -51,8 +51,8 @@ export default function Page() {
       path={PATH}
       h1={TITLE}
       description={DESC}
-      updated="2026年11月5日"
-      updatedIso="2026-11-05"
+      updated="2026年11月6日"
+      updatedIso="2026-11-06"
       crumbs={[
         { name: "鍵穴の凍結・異物", href: "/kagiana-touketsu/" },
         { name: "都市別の冬の最低気温" },
@@ -70,7 +70,7 @@ export default function Page() {
       }
       sections={[
         {
-          h2: "23市の日最低気温の平年値（12月〜3月）",
+          h2: "27市の日最低気温の平年値（12月〜3月）",
           body: (
             <>
               <div className="overflow-x-auto">
@@ -103,7 +103,7 @@ export default function Page() {
                 </table>
               </div>
               <p className="text-xs text-text-muted">
-                値は日最低気温の月平均（平年値・統計期間1991〜2020年）。表は1月の値が低い順です。上越市の観測地点は高田です。出典：気象庁（{CHECKED}）。
+                値は日最低気温の月平均（平年値・統計期間1991〜2020年）。表は1月の値が低い順です。上越市の観測地点は高田、いわき市は小名浜、つくば市は館野です。出典：気象庁（{CHECKED}）。
               </p>
             </>
           ),
