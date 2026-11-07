@@ -21,6 +21,7 @@ const faqs = [
   { q: "身分証も家の中にあります。本人確認はどうなりますか？", a: "財布ごと閉め出された場合でも、解錠後に室内の身分証を提示する方法で対応するのが一般的です。正規の業者ほど本人確認を徹底しています（悪用防止のため）。反対に、確認をまったく行わない業者には注意が必要です。" },
   { q: "賃貸で締め出された場合、鍵開け費用は誰が負担しますか？", a: "入居者の不注意による締め出しは、原則として入居者負担です。ただし、管理会社がスペアキーで無料対応する場合や、加入している火災保険・入居者サポートに鍵開け特典が含まれる場合があるため、依頼前に確認することで費用を抑えられます。" },
   { q: "鍵業者の料金に納得できない場合、その場で支払う必要はありますか？", a: "国民生活センターは、料金や作業内容に納得できない場合はその場で支払いをしないこと、事業者とトラブルになった場合は最寄りの消費生活センター等（消費者ホットライン188）に相談することを呼びかけています。状況によっては特定商取引法の訪問販売によるクーリング・オフなどが適用できる可能性もあるとしています（国民生活センター 2024年11月19日公表、2026年10月27日確認）。" },
+  { q: "家族に家の鍵を閉められて入れません。どうすればよいですか？", a: "まず電話やメッセージで中の方に開けてもらうよう連絡してください。警察庁は、事件や事故の緊急通報は110番、緊急でない生活の安全に関わる相談は最寄りの警察署または「#9110」番を利用するよう案内しています。身の危険を感じる場合は110番に通報してください。配偶者などからの暴力に関する相談は、内閣府男女共同参画局の「DV相談ナビ」（#8008）でお近くの相談窓口につないでもらえます（2026年11月7日確認）。" },
 ];
 
 const faqLd = {
@@ -44,7 +45,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-07-02",
-  dateModified: "2026-10-27",
+  dateModified: "2026-11-07",
 };
 
 export default function ShimedashiPage() {
@@ -69,13 +70,13 @@ export default function ShimedashiPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             家を締め出されたらどうする？今すぐ入るための対処法【2026年版】
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月27日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年11月7日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
             <p className="font-bold text-primary mb-2">家を締め出されたらどうする？（対処の順番）</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base mb-3">
-              家を締め出された場合は、<strong>①合鍵・家族・他の入口を確認する → ②賃貸住宅は大家・管理会社に連絡する → ③それでも開かなければ鍵業者に依頼する</strong>の順に対応します。オートロックのマンションでエントランスに入れない場合も、まず管理会社・管理人に連絡してください。窓を割る・こじ開けるといった行為は避けてください。
+              家を締め出された場合は、<strong>①合鍵・家族・他の入口を確認する → ②賃貸住宅は大家・管理会社に連絡する → ③それでも開かなければ鍵業者に依頼する</strong>の順に対応します。オートロックのマンションでエントランスに入れない場合も、まず管理会社・管理人に連絡してください。家族・同居人に家の鍵を閉められた場合は、下の「（e）」をご覧ください。窓を割る・こじ開けるといった行為は避けてください。
             </p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               鍵業者に依頼する際について、国民生活センターは、必要な作業は時間帯や現場の状況で異なるため「○○円～」などのインターネット上の安価な金額表示をうのみにせず、<strong>出張料やキャンセルした場合の金額も確認する</strong>よう呼びかけています。料金や作業内容に納得できない場合は<strong>その場で支払いをしない</strong>こと、トラブルになった場合は消費者ホットライン「188」（最寄りの消費生活センター等の案内）に相談することも挙げられています（<a href="https://www.kokusen.go.jp/news/data/n-20241119_1.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">国民生活センター「出張解錠サービスの料金トラブルに注意」2024年11月19日公表</a>、2026年10月27日確認）。
@@ -124,6 +125,15 @@ export default function ShimedashiPage() {
               <h3 className="font-bold text-text-primary text-sm mb-1.5">（d）オートロックマンションの場合</h3>
               <p className="text-sm text-text-secondary leading-relaxed">
                 エントランスのオートロックは共用部のため、住人個人の依頼では鍵業者が作業できないことが多く、まず管理会社・管理人を通じて対応する必要があります。物件の管理会社（夜間は緊急連絡先）に電話し、エントランスの開け方について案内を受けてください。エントランスを通過できれば、自室ドアの解錠は通常の鍵開けと同じ扱いです。他の住人に続いて入る「共連れ」はトラブルの原因になるため、避けてください。
+              </p>
+            </div>
+            <div className="bg-white rounded-xl border border-black/10 p-5">
+              <h3 className="font-bold text-text-primary text-sm mb-1.5">（e）家族・同居人に家の鍵を閉められた場合</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">
+                家の中にいる家族・同居人に鍵やドアガード（チェーン）をかけられて入れない場合は、まず電話やメッセージで開けてもらうよう連絡してください。ドアガードの外し方は<a href="/door-guard-shimedashi/" className="text-primary underline">ドアガードがかかって家に入れないとき</a>で解説しています。
+              </p>
+              <p className="text-sm text-text-secondary leading-relaxed mt-2">
+                警察庁は、事件や事故に関する緊急通報は「110」番、生活の安全に関わる悩みごと・困りごとなど緊急でない相談は最寄りの警察署または「#9110」番を利用するよう案内しています。身の危険を感じる場合は110番に通報してください。配偶者などからの暴力に関する相談は、内閣府男女共同参画局の「DV相談ナビ」（#8008）でお近くの相談窓口につないでもらえます（<a href="https://www.npa.go.jp/goiken/index.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">警察庁「ご意見、各種相談・情報提供等」</a>、<a href="https://www.gender.go.jp/policy/no_violence/e-vaw/index.html" target="_blank" rel="noopener noreferrer" className="text-primary underline">内閣府男女共同参画局「配偶者からの暴力被害者支援情報」</a>、いずれも2026年11月7日確認）。
               </p>
             </div>
           </div>
