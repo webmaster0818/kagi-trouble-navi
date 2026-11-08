@@ -17,6 +17,7 @@ const steps = [
 
 const faqs = [
   { q: "JAFに依頼するといくらかかりますか？", a: "JAF会員は無料です（キー閉じ込みの解錠は会員サービスに含まれます）。非会員は有料で、夜間（20時〜8時）・一般道でのドア開放作業は25,630円（税込）です（JAF公式の料金表・2026年10月19日確認）。個人会員の入会金は2,000円、年会費は4,000円です。" },
+  { q: "JAFにインロックの解錠を頼むにはどうすればよいですか？", a: "JAFはロードサービスの要請先として、JAFアプリ、救援要請ウェブサイト（ダウンロード不要）、電話（ロードサービス救援コール：ナビダイヤル 0570-00-8139、短縮ダイヤル #8139。全国共通・年中無休・24時間）を案内しています。アプリとウェブサイトはGPSで現在地を特定でき、出動後はロードサービスカーの「現在地」や「到着時間」を確認できます。大雨・大雪・災害時など救援要請が集中すると、電話がつながりにくい・到着まで時間を要することがあるとされています（JAF「JAFを呼ぶ」ほか・2026年11月8日確認）。" },
   { q: "昼間や高速道路でキー閉じ込みを依頼した場合、非会員の料金はいくらですか？", a: "JAF公式の料金表では、昼間・高速道路のキー閉じ込みの総額は個別に掲載されていません。非会員の基本料は、一般道（駐車場・自宅を含む）が8時〜20時で15,700円、20時〜8時で19,630円、高速道路の本線上などが8時〜20時で31,410円、20時〜8時で37,270円（いずれも税込）で、これに作業内容に応じた作業料が加わります。正確な金額は依頼時にJAFへご確認ください。" },
   { q: "その場でJAFに入会すれば、今回の料金は無料になりますか？", a: "なりません。JAF公式のよくある質問では、ロードサービスの現場で入会はできるものの、その回のロードサービス料金は会員扱いにならないと案内されています。現場で発行される仮会員証により、次回以降が会員料金の対象となります。" },
   { q: "家族や同乗者がJAF会員の場合は使えますか？", a: "JAFの個人会員・家族会員は、運転中だけでなく同乗中でも、また車の所有者名義に関係なく、会員としてロードサービスを利用できます（JAFロードサービス利用約款 第6条）。救援現場で、会員証またはデジタル会員証を提示する必要があります。" },
@@ -49,7 +50,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-07-04",
-  dateModified: "2026-10-27",
+  dateModified: "2026-11-08",
 };
 
 export default function CarInlockPage() {
@@ -74,7 +75,7 @@ export default function CarInlockPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             JAFのインロック（キー閉じ込み）料金と対処法
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月27日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年11月8日</p>
 
           {/* 緊急警告 */}
           <div className="bg-red-50 border border-red-300 rounded-2xl p-5 mb-6">
@@ -88,7 +89,7 @@ export default function CarInlockPage() {
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-6">
             <p className="font-bold text-primary mb-2">JAFのキー閉じ込み料金（会員・非会員）</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
-              JAFにインロック（インキー・キー閉じ込み）の解錠を依頼した場合、<strong>会員は無料</strong>です。非会員は有料で、JAF公式の料金表では<strong>夜間（20時〜8時）・一般道でのドア開放作業が25,630円（税込）</strong>と掲載されています。現場で入会しても、その回の料金は会員扱いになりません。JAF非会員の方は、先に自動車保険のロードサービスに鍵開けが含まれているかを確認し、どちらも使えない場合に鍵業者へ依頼すると、費用を抑えられます。
+              JAFにインロック（インキー・キー閉じ込み）の解錠を依頼した場合、<strong>会員は無料</strong>です。非会員は有料で、JAF公式の料金表では<strong>夜間（20時〜8時）・一般道でのドア開放作業が25,630円（税込）</strong>と掲載されています。現場で入会しても、その回の料金は会員扱いになりません。JAF非会員の方は、先に自動車保険のロードサービスに鍵開けが含まれているかを確認し、どちらも使えない場合に鍵業者へ依頼すると、費用を抑えられます。JAFへの依頼は、アプリ・救援要請ウェブサイト・電話（#8139）で受け付けています（下の「JAFへの依頼方法」）。
             </p>
           </div>
           <div className="overflow-x-auto mb-3 rounded-xl border border-black/10">
@@ -151,6 +152,22 @@ export default function CarInlockPage() {
           </div>
           <p className="text-xs text-text-muted leading-relaxed mb-10">
             ※税込。出典：<a href="https://jaf.or.jp/common/news/2024/20240227-001" className="underline" target="_blank" rel="noopener noreferrer">JAF ニュースリリース（2024年2月27日）</a>添付の「ロードサービス料金表（新旧比較）」（2026年10月27日確認）。新旧比較表には、キー閉じ込みの総額の行はありません。
+          </p>
+
+          <h2 className="text-xl font-bold text-text-primary mb-4">JAFへの依頼方法（アプリ・ウェブサイト・電話）</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-3">
+            JAFにインロック（キー閉じ込み）の解錠を依頼する方法として、JAFは次の3つを案内しています。高速道路上では、ガードレールの外側など安全な場所に避難してから救援を要請してください。
+          </p>
+          <ul className="space-y-3 mb-4">
+            <li className="bg-white rounded-xl border border-black/10 p-4 text-sm text-text-secondary leading-relaxed"><strong className="text-text-primary">JAFアプリ</strong>：GPSで現在地を特定でき、画面の質問に答えていくだけで要請できます。JAFの出動後は、ロードサービスカーの「現在地」や「到着時間」を確認できます。</li>
+            <li className="bg-white rounded-xl border border-black/10 p-4 text-sm text-text-secondary leading-relaxed"><strong className="text-text-primary">救援要請ウェブサイト（ダウンロード不要）</strong>：メールアドレスを入力して届いたURLから、救援場所やトラブル内容を選んで要請します。アプリと同じく、出動状況（現在地・到着時間）を確認できます。</li>
+            <li className="bg-white rounded-xl border border-black/10 p-4 text-sm text-text-secondary leading-relaxed"><strong className="text-text-primary">電話（ロードサービス救援コール）</strong>：ナビダイヤル 0570-00-8139、または短縮ダイヤル #8139（全国共通・年中無休・24時間、通話料は有料）。これらが使えない場合の地区別の一般電話も、JAFのページに掲載されています。</li>
+          </ul>
+          <p className="text-sm text-text-secondary leading-relaxed mb-3">
+            JAFは、大雨や大雪、災害時など救援要請が集中した場合は電話がつながりにくいことがあり、その際はアプリまたは救援要請ウェブサイトの利用を案内しています。また、ロードサービスカーの到着までに時間を要する場合があるとしています。会員として利用するには、救援現場で会員証またはデジタル会員証の提示が必要です（JAFロードサービス利用約款 第6条）。ドアロックの開錠では、係員の求めに応じて運転免許証、自動車検査証その他本人の確認に必要な書類を提示することとされ（同 第10条）、所有者または利用者の本人確認ができないときはロードサービスを実施しないと定められています（同 第14条）。
+          </p>
+          <p className="text-xs text-text-muted leading-relaxed mb-10">
+            出典：<a href="https://jaf.or.jp/common/call-road-service" className="underline" target="_blank" rel="noopener noreferrer">JAF「JAFを呼ぶ」</a>、<a href="https://jaf.or.jp/common/call-road-service/app" className="underline" target="_blank" rel="noopener noreferrer">JAF「アプリで呼ぶ」</a>、<a href="https://jaf.or.jp/common/call-road-service/web" className="underline" target="_blank" rel="noopener noreferrer">JAF「ウェブサイトで呼ぶ」</a>、<a href="https://jaf.or.jp/common/call-road-service/phone" className="underline" target="_blank" rel="noopener noreferrer">JAF「電話・FAXで呼ぶ」</a>、<a href="https://jaf.or.jp/common/call-road-service/before-calling" className="underline" target="_blank" rel="noopener noreferrer">JAF「ロードサービスご利用時の確認事項」</a>、<a href="https://jaf.or.jp/common/call-road-service/before-calling/road-service-terms" className="underline" target="_blank" rel="noopener noreferrer">JAFロードサービス利用約款</a>（いずれも2026年11月8日確認）。
           </p>
 
           <h2 className="text-xl font-bold text-text-primary mb-4">JAFと自動車保険のロードサービスの違い</h2>
