@@ -88,6 +88,7 @@ const relatedLinks = [
   { href: "/kodomo-pet-kagi-taisaku/", label: "子ども・ペットの鍵トラブル対策", desc: "閉じ込めを予防する環境づくり" },
   { href: "/doorknob-koukan/", label: "ドアノブ・ラッチの故障と交換", desc: "空回り・戻らない症状の直し方" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "依頼前に確認すべき料金の考え方" },
+  { href: "/heya-kagi-atozuke/", label: "部屋（室内ドア）に鍵を後付けする方法", desc: "賃貸での注意と外から開けられない内鍵" },
 ];
 
 const faqLd = {

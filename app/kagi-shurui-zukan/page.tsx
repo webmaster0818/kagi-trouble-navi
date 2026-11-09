@@ -102,6 +102,7 @@ const relatedLinks = [
   { href: "/smart-lock/", label: "スマートロックの基礎知識", desc: "後付け型・交換型の違いと注意点" },
   { href: "/kagi-koukan-timing/", label: "鍵交換のタイミングと目安", desc: "交換を検討すべきサインと考え方" },
   { href: "/cp-nintei-jou/", label: "CP認定錠とは？防犯性能の公的な目印", desc: "5分以上の侵入抵抗を目安とした認定制度" },
+  { href: "/genkan-cardkey/", label: "玄関のカードキー（電気錠）の注意", desc: "なくしたときの無効化とメーカー別の案内" },
 ];
 
 const faqLd = {

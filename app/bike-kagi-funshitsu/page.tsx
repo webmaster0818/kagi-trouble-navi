@@ -231,6 +231,7 @@ export default function BikeKagiFunshitsuPage() {
               { href: "/car-inlock/", label: "車のインロック（閉じ込み）の対処法" },
               { href: "/immobilizer/", label: "イモビライザーとは？鍵屋で対応できる範囲" },
               { href: "/ryokin/", label: "鍵トラブルの料金相場" },
+              { href: "/suitcase-kagi-funshitsu/", label: "スーツケースの鍵をなくしたときの対処" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →

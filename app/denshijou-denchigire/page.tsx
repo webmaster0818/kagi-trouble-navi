@@ -88,6 +88,7 @@ const relatedLinks = [
   { href: "/shimedashi/", label: "締め出されたときの対処法", desc: "家に入れないときの対応手順" },
   { href: "/smart-key-denchi/", label: "車のスマートキー電池切れ対処", desc: "車の電子キーが反応しないときの知識" },
   { href: "/kagi-shurui-zukan/", label: "鍵の種類図鑑", desc: "電子錠・テンキー錠の分類を整理" },
+  { href: "/genkan-cardkey/", label: "玄関のカードキー（電気錠）の注意", desc: "なくしたときの無効化と停電時の動作" },
 ];
 
 const faqLd = {

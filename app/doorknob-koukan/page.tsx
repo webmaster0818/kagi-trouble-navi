@@ -88,6 +88,7 @@ const relatedLinks = [
   { href: "/door-closer/", label: "ドアクローザーの不調と対処法", desc: "ドアの閉まり方に異常がある場合の解説" },
   { href: "/joumae-type-zukan/", label: "錠前タイプ図鑑", desc: "インテグラル錠・箱錠などの見分け方" },
   { href: "/kagi-koukan-timing/", label: "鍵交換のタイミングと目安", desc: "交換を検討すべきサインと考え方" },
+  { href: "/doorknob-yurumi/", label: "ドアノブ・レバーハンドルの緩みの直し方", desc: "締め直すネジの場所と締め付けの強さ" },
 ];
 
 const faqLd = {

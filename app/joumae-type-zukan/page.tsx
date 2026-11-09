@@ -88,6 +88,7 @@ const relatedLinks = [
   { href: "/kagi-koukan-timing/", label: "鍵交換のタイミングと目安", desc: "交換を検討すべきサインと考え方" },
   { href: "/doorknob-koukan/", label: "ドアノブ・ラッチの故障と交換", desc: "ノブ・ラッチ側の不調について" },
   { href: "/hikido-kagi/", label: "引き戸（玄関）の鍵交換・後付け", desc: "引き戸専用の錠の基礎知識" },
+  { href: "/guremon-jou/", label: "グレモン錠（グレモンハンドル）とは", desc: "多点締めの錠と窓のハンドル交換部品" },
 ];
 
 const faqLd = {

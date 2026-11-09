@@ -89,6 +89,7 @@ const relatedLinks = [
   { href: "/thumb-turn-taisaku/", label: "サムターン回し対策", desc: "ガラス破り後の解錠を防ぐ知識" },
   { href: "/cp-nintei-jou/", label: "CP認定錠とは？", desc: "防犯建物部品の公的な目印を解説" },
   { href: "/ikkodate-kagi-koukan/", label: "一戸建ての鍵交換で確認すること", desc: "複数の出入口と同じ鍵での統一" },
+  { href: "/guremon-jou/", label: "グレモン錠（グレモンハンドル）とは", desc: "すべり出し窓のハンドルと交換部品" },
 ];
 
 const faqLd = {

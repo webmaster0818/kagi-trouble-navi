@@ -96,6 +96,7 @@ const relatedLinks = [
   { href: "/maker/west/aikagi/", label: "ウエスト（WEST）の合鍵の頼み方", desc: "キーナンバーの頭文字で分かる注文先" },
   { href: "/maker/alpha/fb-lock/", label: "アルファのFBロックのスペアキー", desc: "セキュリティカードで注文・1本3,000円（税別）" },
   { href: "/maker/", label: "錠メーカー別ガイド", desc: "5社の合鍵の窓口・価格を一覧で比較" },
+  { href: "/suitcase-kagi-funshitsu/", label: "スーツケースの鍵をなくしたときの対処", desc: "カギ番号でメーカーに鍵を注文する" },
 ];
 
 const faqLd = {
