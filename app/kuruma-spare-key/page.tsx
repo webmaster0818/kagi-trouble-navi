@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "車のスペアキー作成の基礎知識｜合鍵との違いとディーラー・鍵屋の使い分け | 鍵トラブルナビ",
+  title: "車のスペアキーは販売店で注文できる｜必要な書類とディーラー・鍵屋の使い分け | 鍵トラブルナビ",
   description:
-    "車のスペアキー作成に関する一般知識を解説します。金属キー・リモコンキー（キーレス）・スマートキーで作成の難易度と手順が大きく変わること、イモビライザー搭載車で必要になる登録作業、ディーラーと鍵の専門業者それぞれの得意分野と使い分け、依頼時に必要な本人確認・車両情報をご紹介します。",
+    "車のスペアキーは販売店（ディーラー）で注文できます。トヨタ・日産の公式案内にもとづいて必要な書類と本人確認の条件を整理し、金属キー・リモコンキー・スマートキーの違い、ディーラーと鍵の専門業者の使い分けを解説します。",
   alternates: { canonical: "https://kagi-trouble-navi.com/kuruma-spare-key/" },
 };
 
@@ -111,7 +111,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-08-10",
-  dateModified: "2026-08-10",
+  dateModified: "2026-11-09",
 };
 
 export default function KurumaSpareKeyPage() {
@@ -134,14 +134,16 @@ export default function KurumaSpareKeyPage() {
 
         <article className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
-            車のスペアキー作成の基礎知識｜合鍵との違いとディーラー・鍵屋の使い分け
+            車のスペアキーは販売店（ディーラー）で注文できる｜必要な書類と鍵屋との使い分け
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年8月10日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年11月9日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">車のスペアキーは、鍵のタイプ（金属／リモコン／スマートキー）で作成方法が決まります。イモビライザー搭載車は登録作業が必須で、残り1本になった時点での作成をおすすめします。</p>
+            <p className="font-bold text-primary mb-2">車のスペアキーは販売店（ディーラー）で注文できます。トヨタは本人の場合、身分証明と車検証が必要と案内しています。日産はキーナンバーが分からなくても、車と本人確認ができれば注文できると案内しています。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
+              トヨタは、車検証記載の使用者（または所有者）本人が注文する場合の書類を「身分証明（免許証、パスポートなど）」と「車検証」としています（<a href="https://toyota.jp/faq/show/176.html" className="underline" target="_blank" rel="noopener noreferrer">トヨタ「紛失などによりトヨタ販売店でクルマのキーを追加・新規作成する際、必要な書類などはありますか？」</a>・2026年11月9日確認）。
+              日産は「スペアキーは日産の販売店でご注文を承っております。」とし、電話での注文は受け付けていません。本人確認に必要な書類と価格は販売店への確認が必要です（<a href="https://faq2.nissan.co.jp/faq/show/5470?category_id=9&site_domain=default" className="underline" target="_blank" rel="noopener noreferrer">日産「スペアキーの注文方法を教えて。」</a>・2026年11月9日確認）。
               車のスペアキー作成は、<strong>金属キーなら刻みの複製だけで済む一方、イモビライザー搭載車・リモコンキー・スマートキーは車両側への登録作業が必要</strong>で、難易度と手順が大きく変わります。確実性を重視する場合はディーラー、スピード・出張対応を重視する場合は設備のある鍵の専門業者、という使い分けが基本です。依頼時は<strong>本人確認書類と車検証</strong>を用意してください。鍵を全部なくすと工程と負担が大幅に増えるため、<strong>「残り1本」になった時点で予備を作る</strong>ことをおすすめします。
             </p>
           </div>
