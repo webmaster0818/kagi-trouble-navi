@@ -253,6 +253,7 @@ export default function TimingPage() {
             {[
               { href: "/genkan-kagi-koukan-dokoni/", label: "玄関の鍵交換はどこに頼む？" },
               { href: "/ikkodate-kagi-koukan/", label: "一戸建ての鍵交換で確認すること" },
+              { href: "/disc-cylinder/", label: "ディスクシリンダーとは（見分け方と後継品）" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →

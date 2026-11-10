@@ -88,6 +88,7 @@ const relatedLinks = [
   { href: "/kagi-koukan-timing/", label: "鍵交換のタイミングと目安", desc: "交換を検討すべきサインと考え方" },
   { href: "/joumae-type-zukan/", label: "錠前タイプ図鑑", desc: "錠前の構造と型番確認の基礎知識" },
   { href: "/chintai-bouhan/", label: "賃貸住宅の防犯対策", desc: "賃貸物件で実施できる防犯強化の方法" },
+  { href: "/sash-kagi-koukan/", label: "サッシの鍵交換", desc: "窓・勝手口ドア・引戸で替える部品の違い" },
 ];
 
 const faqLd = {

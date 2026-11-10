@@ -88,6 +88,7 @@ const relatedLinks = [
   { href: "/bike-kagi-funshitsu/", label: "バイクの鍵をなくしたときの対処法", desc: "原付・バイクの鍵紛失の対処" },
   { href: "/kagi-shurui-zukan/", label: "鍵の種類図鑑", desc: "鍵の構造と防犯性の基礎知識" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "依頼前に確認すべき料金の考え方" },
+  { href: "/jitensha-kagi-koukan/", label: "自転車の鍵交換", desc: "交換を考える場面とリコール対象の錠の確認" },
 ];
 
 const faqLd = {
