@@ -107,6 +107,7 @@ const relatedLinks = [
   { href: "/dimple-key/", label: "ディンプルキーとは？防犯性と交換の考え方", desc: "ベースの錠前の防犯性を高める知識" },
   { href: "/chintai-kagi-koukan-hiyou/", label: "賃貸の鍵交換費用は誰が負担？", desc: "賃貸の鍵まわりのルールと費用負担" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "業者に依頼する前に確認する料金の目安" },
+  { href: "/denkijou-shikumi/", label: "電気錠の仕組み", desc: "停電時の動き方と耐用年数の目安" },
 ];
 
 const faqLd = {

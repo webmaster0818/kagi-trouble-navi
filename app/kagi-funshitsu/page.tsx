@@ -249,6 +249,7 @@ export default function KagiFunshitsuPage() {
               { href: "/kagiya-erabikata/", label: "鍵屋の選び方｜電話で確認する質問" },
               { href: "/kagiya-kougaku-seikyuu/", label: "鍵屋に高額請求されたときの対処" },
               { href: "/shinya-kagiake/", label: "深夜・早朝に鍵屋を呼ぶときの注意点" },
+              { href: "/locker-kagi-funshitsu/", label: "ロッカーの鍵をなくしたとき" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →

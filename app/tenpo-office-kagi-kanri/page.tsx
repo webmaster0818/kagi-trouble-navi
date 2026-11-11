@@ -88,6 +88,8 @@ const relatedLinks = [
   { href: "/key-box-kanri/", label: "キーボックスでの鍵管理", desc: "物理鍵の保管・共有の基礎知識" },
   { href: "/smart-lock/", label: "スマートロックの基礎知識", desc: "後付けによる電子錠化の選択肢" },
   { href: "/kagi-koukan-timing/", label: "鍵交換のタイミングと目安", desc: "交換を検討すべきサインと考え方" },
+  { href: "/master-key-shikumi/", label: "マスターキーの仕組み", desc: "メーカーの定義と複製に念書が要る理由" },
+  { href: "/shutter-kagi-koukan/", label: "シャッターの鍵交換", desc: "鍵をなくしたときのメーカー窓口" },
 ];
 
 const faqLd = {

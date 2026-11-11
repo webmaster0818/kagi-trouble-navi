@@ -88,6 +88,7 @@ const relatedLinks = [
   { href: "/smart-lock/", label: "スマートロックの基礎知識", desc: "履歴・権限管理ができる受け渡し手段" },
   { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処法", desc: "紛失に気づいた際の対応手順" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "シリンダー交換の料金の目安" },
+  { href: "/locker-kagi-funshitsu/", label: "ロッカーの鍵をなくしたとき", desc: "コインロッカー・職場のロッカー別の手順" },
 ];
 
 const faqLd = {
