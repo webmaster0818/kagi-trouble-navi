@@ -215,6 +215,7 @@ export default function KagiOrePage() {
             {[
               { href: "/kagi-magatta/", label: "鍵が曲がった・変形したときの対処" },
               { href: "/kagiana-abura/", label: "鍵穴に油を差してしまったときの対処" },
+              { href: "/monooki-kagi-koukan/", label: "物置の鍵交換・鍵の紛失" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →

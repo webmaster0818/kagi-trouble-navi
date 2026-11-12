@@ -237,6 +237,7 @@ export default function ImmobilizerPage() {
               { href: "/smart-key-denchi/", label: "スマートキーの電池切れ対処法" },
               { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処法" },
               { href: "/ryokin/", label: "鍵トラブルの料金相場" },
+              { href: "/kuruma-kagi-mark-tenmetsu/", label: "車のメーターの鍵マークが点滅するとき" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →

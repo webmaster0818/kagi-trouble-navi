@@ -235,6 +235,7 @@ export default function SmartKeyDenchiPage() {
               { href: "/kagi-funshitsu/", label: "鍵をなくした時の対処法" },
               { href: "/ryokin/", label: "鍵トラブルの料金相場" },
               { href: "/agents/", label: "鍵トラブル業者の比較" },
+              { href: "/kuruma-kagi-mark-tenmetsu/", label: "車のメーターの鍵マークが点滅するとき" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →
