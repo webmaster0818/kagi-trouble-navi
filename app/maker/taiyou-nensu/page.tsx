@@ -174,6 +174,7 @@ export default function Page() {
         { href: "/maker/showa/oteire/", label: "ミネベアショウワの錠前のお手入れ", desc: "症状別の対処と8つの注意" },
         { href: "/maker/nagasawa/keylex/", label: "キーレックスの暗証番号", desc: "電気を使わないボタン錠" },
         { href: "/maker/", label: "錠メーカー別ガイド", desc: "各社の合鍵の窓口を一覧で比較" },
+        { href: "/genkan-anshou-bangou/", label: "暗証番号式の玄関の鍵（テンキー錠）", desc: "のぞき見への備えと番号の変更" },
       ]}
     />
   );

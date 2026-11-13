@@ -199,6 +199,7 @@ export default function Page() {
         { href: "/maker/taiyou-nensu/", label: "錠の耐用年数と保守点検制度", desc: "一般錠10年・電気錠7年の考え方" },
         { href: "/tenpo-office-kagi-kanri/", label: "店舗・事務所の鍵管理", desc: "従業員の入れ替わりと鍵" },
         { href: "/smart-lock/", label: "スマートロックの選び方", desc: "電池式の鍵との違い" },
+        { href: "/genkan-anshou-bangou/", label: "暗証番号式の玄関の鍵（テンキー錠）", desc: "のぞき見への備えと番号の変更" },
       ]}
     />
   );
