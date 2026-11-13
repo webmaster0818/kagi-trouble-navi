@@ -97,6 +97,7 @@ const relatedLinks = [
   { href: "/maker/alpha/fb-lock/", label: "アルファのFBロックのスペアキー", desc: "セキュリティカードで注文・1本3,000円（税別）" },
   { href: "/maker/", label: "錠メーカー別ガイド", desc: "5社の合鍵の窓口・価格を一覧で比較" },
   { href: "/suitcase-kagi-funshitsu/", label: "スーツケースの鍵をなくしたときの対処", desc: "カギ番号でメーカーに鍵を注文する" },
+  { href: "/aikagi-kara-aikagi/", label: "合鍵から合鍵は作れる？", desc: "複製キーの誤差と純正キーでの作り直し" },
 ];
 
 const faqLd = {

@@ -241,6 +241,7 @@ export default function GenkanKagiAtozukePage() {
               { href: "/ryokin/", label: "鍵トラブルの料金相場" },
               { href: "/genkan-kagi-koukan-dokoni/", label: "玄関の鍵交換はどこに頼む？" },
               { href: "/heya-kagi-atozuke/", label: "部屋（室内ドア）に鍵を後付けする方法" },
+              { href: "/haikai-boushi-kagi/", label: "徘徊（ひとり歩き）防止の鍵で考えたいこと" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →

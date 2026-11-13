@@ -145,6 +145,7 @@ export default function Page() {
       faqTitle="物置の鍵交換・鍵の紛失のよくある質問"
       faqs={faqs}
       related={[
+        { href: "/post-kagi-koukan/", label: "ポスト（郵便受け）の鍵交換", desc: "集合ポストは管理会社へ・ナスタの公式案内" },
         { href: "/shutter-kagi-koukan/", label: "シャッターの鍵交換", desc: "鍵番号での注文とメーカー別の窓口" },
         { href: "/kagi-ore/", label: "鍵が折れたときの対処", desc: "鍵穴に残ったときにしないこと" },
         { href: "/kagiana-abura/", label: "鍵穴に油を差してしまったとき", desc: "専用潤滑剤とメーカーの案内" },

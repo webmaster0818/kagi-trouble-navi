@@ -90,6 +90,7 @@ const relatedLinks = [
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "緊急時の料金の目安を解説" },
   { href: "/bunjo-mansion-kagi-koukan/", label: "分譲マンションの玄関の鍵交換", desc: "管理規約での扱いとオートロック連動の鍵" },
   { href: "/kagi-magatta/", label: "鍵が曲がった・変形したときの対処", desc: "曲げ戻さずに作り直す方法" },
+  { href: "/aikagi-kara-aikagi/", label: "合鍵から合鍵は作れる？", desc: "複製キーの誤差と純正キーでの作り直し" },
 ];
 
 const faqLd = {

@@ -84,6 +84,7 @@ const faqs = [
 ];
 
 const relatedLinks = [
+  { href: "/toyota-smart-key-funshitsu/", label: "トヨタのスマートキーを紛失したとき", desc: "残りのキーを持って販売店へ・必要な書類" },
   { href: "/immobilizer/", label: "イモビライザーの基礎知識", desc: "鍵とエンジン照合の仕組みを解説" },
   { href: "/smart-key-denchi/", label: "スマートキーの電池切れ対処", desc: "反応しないときの応急対応" },
   { href: "/car-inlock/", label: "車のインロック対処法", desc: "鍵の閉じ込みが起きたときの手順" },

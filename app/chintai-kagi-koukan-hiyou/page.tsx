@@ -94,6 +94,7 @@ const relatedLinks = [
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "依頼前に把握しておくべき料金の目安" },
   { href: "/genkan-kagi-koukan-dokoni/", label: "玄関の鍵交換はどこに頼む？", desc: "住まい別の連絡先と依頼先の違い" },
   { href: "/bunjo-mansion-kagi-koukan/", label: "分譲マンションの玄関の鍵交換", desc: "管理規約での扱いとオートロック連動の鍵" },
+  { href: "/post-kagi-koukan/", label: "ポスト（郵便受け）の鍵交換", desc: "集合ポストは管理会社・所有者へ" },
 ];
 
 const faqLd = {

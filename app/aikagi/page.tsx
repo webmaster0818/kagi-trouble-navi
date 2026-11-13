@@ -108,6 +108,7 @@ const relatedLinks = [
   { href: "/chintai-kagi-koukan-hiyou/", label: "賃貸の鍵交換費用は誰が負担？", desc: "賃貸の鍵まわりの費用負担ルール" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "依頼前に知っておきたい費用感" },
   { href: "/kagi-magatta/", label: "鍵が曲がった・変形したときの対処", desc: "曲げ戻さずに作り直す方法" },
+  { href: "/aikagi-kara-aikagi/", label: "合鍵から合鍵は作れる？", desc: "美和ロック・ウエストの公式案内で見る誤差" },
 ];
 
 const faqLd = {

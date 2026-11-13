@@ -253,6 +253,7 @@ export default function HojoJouPage() {
               { href: "/door-guard-shimedashi/", label: "ドアガードがかかって家に入れないとき" },
               { href: "/ikkodate-kagi-koukan/", label: "一戸建ての鍵交換で確認すること" },
               { href: "/crescent-koukan/", label: "クレセント錠の交換部品の選び方" },
+              { href: "/haikai-boushi-kagi/", label: "徘徊（ひとり歩き）防止の鍵で考えたいこと" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →

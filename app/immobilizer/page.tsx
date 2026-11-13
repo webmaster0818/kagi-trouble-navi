@@ -238,6 +238,7 @@ export default function ImmobilizerPage() {
               { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処法" },
               { href: "/ryokin/", label: "鍵トラブルの料金相場" },
               { href: "/kuruma-kagi-mark-tenmetsu/", label: "車のメーターの鍵マークが点滅するとき" },
+              { href: "/toyota-smart-key-funshitsu/", label: "トヨタのスマートキーを紛失したとき" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →
