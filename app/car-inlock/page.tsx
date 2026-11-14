@@ -343,6 +343,7 @@ export default function CarInlockPage() {
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               { href: "/shinya-kagiake/", label: "深夜・早朝に鍵屋を呼ぶときの注意点" },
+              { href: "/kuruma-kagi-akanai/", label: "車の鍵（ドア）が開かないときの原因の切り分け" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →

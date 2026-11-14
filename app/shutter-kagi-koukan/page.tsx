@@ -166,6 +166,7 @@ export default function Page() {
         { href: "/ikkodate-kagi-koukan/", label: "一戸建ての鍵交換", desc: "持ち家の鍵の替え方と相談先" },
         { href: "/kagi-mawaranai/", label: "鍵が回らないとき", desc: "鍵穴まわりの不具合の確かめ方" },
         { href: "/tenpo-office-kagi-kanri/", label: "店舗・オフィスの鍵管理", desc: "複数人で使う鍵の管理方法" },
+        { href: "/shutter-kagi-akanai/", label: "シャッターの鍵が開かない", desc: "凍結・左右の錠・停電時の手動切替え" },
       ]}
     />
   );

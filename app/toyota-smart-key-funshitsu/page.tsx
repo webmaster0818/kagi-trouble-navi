@@ -128,6 +128,7 @@ export default function Page() {
         { href: "/immobilizer/", label: "イモビライザーとは", desc: "鍵とエンジンの照合" },
         { href: "/kuruma-kagi-mark-tenmetsu/", label: "車の鍵マークの点滅", desc: "トヨタの取扱説明書で確認" },
         { href: "/car-inlock/", label: "車のインキー", desc: "JAFのロードサービス" },
+        { href: "/kuruma-kagi-funshitsu-spare-nashi/", label: "スペアキーもないとき", desc: "トヨタ・日産・SUBARUの案内を比較" },
       ]}
     />
   );

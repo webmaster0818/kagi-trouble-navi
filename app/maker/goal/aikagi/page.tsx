@@ -153,6 +153,7 @@ export default function Page() {
         { href: "/maker/showa/spare-key/", label: "ミネベアショウワのスペアキー", desc: "キー名ごとの価格と納期" },
         { href: "/dimple-key/", label: "ディンプルキーの基礎知識", desc: "仕組みと防犯性、交換の考え方" },
         { href: "/maker/goal/oteire/", label: "GOALの錠前のお手入れ", desc: "CQ303潤滑剤か鉛筆の粉、油は使わない" },
+        { href: "/maker/goal/koukan/", label: "GOALの鍵交換", desc: "シリンダー交換の窓口GMSと紛失時の2つの方法" },
       ]}
     />
   );

@@ -136,6 +136,7 @@ export default function Page() {
         { href: "/kagi-jumyou/", label: "鍵の寿命と交換の目安", desc: "耐用年数の考え方" },
         { href: "/maker/showa/oteire/", label: "ミネベアショウワの錠前のお手入れ", desc: "症状別の対処と8つの注意" },
         { href: "/maker/", label: "錠メーカー別ガイド", desc: "5社の合鍵の窓口を一覧で比較" },
+        { href: "/maker/goal/koukan/", label: "GOALの鍵交換", desc: "お手入れで直らないときのシリンダー交換" },
       ]}
     />
   );

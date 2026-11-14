@@ -89,6 +89,7 @@ const relatedLinks = [
   { href: "/smart-key-denchi/", label: "スマートキーの電池切れ対処", desc: "反応しないときの応急対応" },
   { href: "/car-inlock/", label: "車のインロック対処法", desc: "鍵の閉じ込みが起きたときの手順" },
   { href: "/junsei-key-saihakkou/", label: "純正キーの再発行", desc: "メーカー取り寄せの基礎知識" },
+  { href: "/kuruma-kagi-funshitsu-spare-nashi/", label: "車の鍵を紛失してスペアキーもないとき", desc: "トヨタ・日産・SUBARUの公式案内を比較" },
 ];
 
 const faqLd = {
