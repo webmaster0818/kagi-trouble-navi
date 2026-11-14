@@ -176,8 +176,8 @@ export default function Page() {
       faqTitle="東京で鍵をなくしたときのよくある質問"
       faqs={faqs}
       related={[
-        { href: "/kagi-funshitsu/osaka/", label: "大阪で鍵をなくしたら", desc: "大阪府警の落とし物公開情報と届出" },
-        { href: "/kagi-funshitsu/zenkoku/", label: "道府県警察の落とし物検索・遺失届", desc: "45道府県は共通のポータル" },
+        { href: "/kagi-funshitsu/osaka/", label: "大阪で鍵をなくしたら", desc: "大阪府のオンライン遺失届と落とし物検索" },
+        { href: "/kagi-funshitsu/zenkoku/", label: "道府県警察の落とし物検索・遺失届", desc: "46道府県は共通のポータル" },
         { href: "/area/tokyo/", label: "東京都の鍵屋・鍵トラブル", desc: "都内の業者の比べ方" },
         { href: "/kagi-koukan-timing/", label: "鍵交換のタイミング", desc: "紛失後に交換すべきかの目安" },
       ]}
