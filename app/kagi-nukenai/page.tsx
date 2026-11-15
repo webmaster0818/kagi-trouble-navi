@@ -102,6 +102,7 @@ const faqs = [
 const relatedLinks = [
   { href: "/kagi-ore/", label: "鍵が折れた時の対処法", desc: "折れ込んだ鍵の取り出しと交換の知識" },
   { href: "/kagi-mawaranai/", label: "鍵が回らない・回りにくい時の対処法", desc: "回転系トラブルの原因と対処" },
+  { href: "/kuruma-kagi-nukenai/", label: "車の鍵が抜けないとき", desc: "シフトレバーの位置とキーの回し方" },
   { href: "/kagi-koukan-timing/", label: "鍵交換のタイミングと目安", desc: "摩耗した鍵を交換すべきサイン" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "業者へ依頼する前の費用の目安" },
   { href: "/kagiana-abura/", label: "鍵穴に油を差してしまったときの対処", desc: "メーカーが案内する清掃と専用潤滑剤" },

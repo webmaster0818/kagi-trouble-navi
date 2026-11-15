@@ -175,6 +175,8 @@ export default function Page() {
         { href: "/kuruma-spare-key/", label: "車のスペアキーは販売店で注文できる", desc: "必要な書類" },
         { href: "/kuruma-kagi-akanai/", label: "車の鍵（ドア）が開かないとき", desc: "原因の切り分け" },
         { href: "/kuruma-kagi-funshitsu-spare-nashi/", label: "車の鍵を紛失してスペアキーもないとき", desc: "メーカー3社の公式案内" },
+        { href: "/honda-smart-key-funshitsu/", label: "ホンダのスマートキーを紛失したとき", desc: "Honda販売店とキーナンバータグ" },
+        { href: "/kuruma-kagi-nukenai/", label: "車の鍵が抜けないとき", desc: "シフトレバーの位置とキーの回し方" },
       ]}
     />
   );

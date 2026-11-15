@@ -129,6 +129,7 @@ export default function Page() {
         { href: "/kuruma-kagi-mark-tenmetsu/", label: "車の鍵マークの点滅", desc: "トヨタの取扱説明書で確認" },
         { href: "/car-inlock/", label: "車のインキー", desc: "JAFのロードサービス" },
         { href: "/kuruma-kagi-funshitsu-spare-nashi/", label: "スペアキーもないとき", desc: "トヨタ・日産・SUBARUの案内を比較" },
+        { href: "/honda-smart-key-funshitsu/", label: "ホンダのスマートキーを紛失したとき", desc: "Honda販売店とキーナンバータグ" },
       ]}
     />
   );
