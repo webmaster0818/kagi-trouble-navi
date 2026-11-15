@@ -155,6 +155,7 @@ export default function Page() {
         { href: "/denshijou-denchigire/", label: "電子錠の電池切れ", desc: "電池式の錠が開かないときの対処" },
         { href: "/maker/taiyou-nensu/", label: "錠の耐用年数と保守点検制度", desc: "一般錠10年・電気錠7年" },
         { href: "/autolock-shimedashi-yobou/", label: "オートロックマンションの締め出し予防策", desc: "共用玄関と住戸玄関の備え" },
+        { href: "/autolock-shurui/", label: "オートロックの種類", desc: "LIXIL・YKK APの自動施錠の比較" },
       ]}
     />
   );

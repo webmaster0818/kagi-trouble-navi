@@ -89,6 +89,7 @@ const faqs = [
 
 const relatedLinks = [
   { href: "/shimedashi/", label: "家から締め出された時の対処法", desc: "連絡の順番と鍵開け依頼の判断基準" },
+  { href: "/autolock-shurui/", label: "オートロックの種類", desc: "共用玄関・玄関ドアの自動施錠・後付けの違い" },
   { href: "/smart-lock/", label: "スマートロックの基礎知識", desc: "オートロック機能と締め出しリスク" },
   { href: "/kagi-funshitsu/", label: "鍵を紛失した時にやること", desc: "捜索・届け出・交換の判断を解説" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "依頼前に確認すべき料金の目安" },

@@ -238,6 +238,7 @@ export default function SmartKeyDenchiPage() {
               { href: "/kuruma-kagi-mark-tenmetsu/", label: "車のメーターの鍵マークが点滅するとき" },
               { href: "/toyota-smart-key-funshitsu/", label: "トヨタのスマートキーを紛失したとき" },
               { href: "/kuruma-kagi-akanai/", label: "車の鍵（ドア）が開かないときの原因の切り分け" },
+              { href: "/kuruma-kagi-shurui/", label: "車の鍵の種類｜スマートキー・メカニカルキーの違い" },
             ].map((l, i) => (
               <a key={i} href={l.href} className="bg-white rounded-xl border border-black/10 p-4 text-sm font-medium text-text-primary hover:border-primary/40 hover:text-primary transition-colors">
                 {l.label} →
