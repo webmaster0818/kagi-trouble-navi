@@ -137,6 +137,7 @@ export default function Page() {
         { href: "/kuruma-kagi-akanai/", label: "車の鍵（ドア）が開かないとき", desc: "原因の切り分け" },
         { href: "/kagi-magatta/", label: "鍵が曲がった・変形したとき", desc: "曲げ戻さない理由" },
         { href: "/car-inlock/", label: "JAFのインキー料金", desc: "閉じ込めたときの依頼先" },
+        { href: "/trunk-akanai/", label: "車のトランク（バックドア）が開かないとき", desc: "メインスイッチ・閉じ込み・ハンズフリー" },
       ]}
     />
   );

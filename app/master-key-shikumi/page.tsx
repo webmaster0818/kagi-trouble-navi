@@ -135,6 +135,7 @@ export default function Page() {
       related={[
         { href: "/tenpo-office-kagi-kanri/", label: "店舗・オフィスの鍵管理", desc: "複数人で使う鍵の管理方法" },
         { href: "/bunjo-mansion-kagi-koukan/", label: "分譲マンションの鍵交換", desc: "管理組合への確認と共用部との関係" },
+        { href: "/change-key-system/", label: "チェンジキーシステムとは", desc: "シリンダーを替えずに前の鍵を無効にする仕組み" },
         { href: "/key-number-aikagi/", label: "鍵番号と合鍵の注文", desc: "刻印の見方とメーカーへの注文" },
         { href: "/denkijou-shikumi/", label: "電気錠の仕組み", desc: "停電時の動き方と耐用年数" },
         { href: "/disc-cylinder/", label: "ディスクシリンダーとは", desc: "合鍵・マスターキー複製の注文期限" },

@@ -54,7 +54,7 @@ export const regions: Region[] = [
       { name: "石川県", areas: [a("kanazawa", "金沢市")] },
       { name: "福井県", areas: [a("fukui", "福井市")] },
       { name: "山梨県", areas: [a("kofu", "甲府市")] },
-      { name: "長野県", areas: [a("nagano", "長野市"), a("matsumoto", "松本市")] },
+      { name: "長野県", areas: [a("nagano", "長野市"), a("matsumoto", "松本市"), a("ueda", "上田市")] },
     ],
   },
   {
@@ -73,7 +73,7 @@ export const regions: Region[] = [
       { name: "京都府", areas: [a("kyoto", "京都市"), a("kyoto-nakagyo", "京都市中京区"), a("kyoto-fushimi", "京都市伏見区"), a("uji", "宇治市")] },
       { name: "大阪府", areas: [a("osaka", "大阪市"), a("osaka-kita", "大阪市北区"), a("osaka-chuo", "大阪市中央区"), a("osaka-yodogawa", "大阪市淀川区"), a("osaka-hirano", "大阪市平野区"), a("sakai", "堺市"), a("higashiosaka", "東大阪市"), a("toyonaka", "豊中市"), a("suita", "吹田市"), a("takatsuki", "高槻市"), a("hirakata", "枚方市"), a("ibaraki", "茨木市"), a("neyagawa", "寝屋川市"), a("yao", "八尾市"), a("kishiwada", "岸和田市"), a("izumi", "和泉市")] },
       { name: "兵庫県", areas: [a("kobe", "神戸市"), a("kobe-chuo", "神戸市中央区"), a("kobe-nada", "神戸市灘区"), a("himeji", "姫路市"), a("amagasaki", "尼崎市"), a("nishinomiya", "西宮市"), a("akashi", "明石市"), a("kakogawa", "加古川市"), a("takarazuka", "宝塚市"), a("itami", "伊丹市"), a("kawanishi", "川西市"), a("sanda", "三田市")] },
-      { name: "奈良県", areas: [a("nara", "奈良市")] },
+      { name: "奈良県", areas: [a("nara", "奈良市"), a("ikoma", "生駒市")] },
       { name: "和歌山県", areas: [a("wakayama", "和歌山市")] },
     ],
   },

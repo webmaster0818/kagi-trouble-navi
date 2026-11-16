@@ -686,6 +686,7 @@ export default function AreaPageMatsumoto() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/ueda/", label: "上田市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/nagano/", label: "長野の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kofu/", label: "甲府の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/joetsu/", label: "上越市の鍵開け・鍵交換業者おすすめ4選" },

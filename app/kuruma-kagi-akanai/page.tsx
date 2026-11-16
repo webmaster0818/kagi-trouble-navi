@@ -156,6 +156,7 @@ export default function Page() {
       related={[
         { href: "/smart-key-denchi/", label: "車のスマートキー電池切れ対処法", desc: "メカニカルキーと電池交換" },
         { href: "/car-inlock/", label: "JAFのインキー料金", desc: "閉じ込めたときの依頼先" },
+        { href: "/trunk-akanai/", label: "車のトランク（バックドア）が開かないとき", desc: "メインスイッチ・閉じ込み・ハンズフリー" },
         { href: "/kuruma-kagi-funshitsu-spare-nashi/", label: "車の鍵を紛失してスペアキーもないとき", desc: "メーカー3社の公式案内" },
         { href: "/kagiana-touketsu/", label: "鍵穴の凍結で開かないとき", desc: "お湯をかけない理由" },
         { href: "/immobilizer/", label: "イモビライザーとは", desc: "鍵と車両のID照合" },

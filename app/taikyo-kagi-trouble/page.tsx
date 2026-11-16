@@ -88,6 +88,7 @@ const relatedLinks = [
   { href: "/kagi-shobun/", label: "不要になった鍵の処分方法", desc: "古い鍵・合鍵の安全な捨て方" },
   { href: "/hikkoshi-kagi-checklist/", label: "引っ越し時の鍵の確認事項", desc: "退去・入居で確認すべき項目一覧" },
   { href: "/chintai-bouhan/", label: "賃貸でもできる防犯対策", desc: "新居の防犯を高める工夫" },
+  { href: "/danchi-kagi-koukan/", label: "団地（UR賃貸）の鍵交換", desc: "退去時に鍵が足りない場合の取扱い" },
 ];
 
 const faqLd = {
