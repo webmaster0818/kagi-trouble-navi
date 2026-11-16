@@ -62,7 +62,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-07-02",
-  dateModified: "2026-10-27",
+  dateModified: "2026-11-16",
 };
 
 export default function KinkoKaijoPage() {
@@ -87,13 +87,16 @@ export default function KinkoKaijoPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             金庫が開かない時の原因別の対処法と鍵開けの料金相場【2026年版】
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年10月27日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年11月16日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
             <p className="font-bold text-primary mb-2">金庫が開かない場合の主な原因と対処法は、次のとおりです。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               金庫が開かない原因の多くは<strong>テンキーの電池切れ・ダイヤル番号の間違い/忘れ・鍵の紛失</strong>のいずれかです。テンキーはまず電池交換、ダイヤルはメーカーへの番号照会という、ご自身で行える対処法を確認し、解決しない場合は業者に依頼してください。業者による金庫解錠の金額は種類・難易度で変わるため、業者の見積もりで確認してください。依頼時は所有者確認（身分証など）があります。
+            </p>
+            <p className="text-text-secondary leading-relaxed text-sm sm:text-base mt-3">
+              テンキー式で<strong>ボタンを押しても音がしない、入力後に警報音が鳴る</strong>場合は、電池の消耗が考えられます。一例として、コクヨの耐火金庫（コンピューターロック HS-SCTE355）の取扱説明書は、電池が消耗するとボタンを押した後に警報ブザーが5回鳴ってLEDランプが赤色に5回点滅する、テンキーボタンを押しても「ピッ」と音がしない、といったサインが出るとしています。対処は<strong>単3形アルカリ乾電池4本をすべて新品に交換する</strong>ことで、アルカリ乾電池以外は使わないこと、電池の向きを間違えると新品でも消耗した状態の表示になることも記載されています。交換しても直らない場合は、販売店に相談するよう案内されています（出典：<a href="https://www.kokuyo-furniture.co.jp/products/manual/pdf/hs-scte355_computer.pdf" className="text-primary underline" target="_blank" rel="noopener noreferrer">コクヨ「学籍簿用耐火金庫 コンピューターロック HS-SCTE355 取扱説明書」</a>、2026年11月16日確認）。電池の種類・位置や非常時の解錠方法は機種によって異なるため、お手持ちの金庫の取扱説明書で確認してください。
             </p>
           </div>
 
