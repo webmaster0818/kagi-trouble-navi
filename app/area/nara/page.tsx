@@ -685,6 +685,7 @@ export default function AreaNaraPage() {
             <ul className="grid gap-3 md:grid-cols-3">
               {[
                 { href: "/area/ikoma/", label: "生駒市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/yamatokoriyama/", label: "大和郡山市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ4選" },

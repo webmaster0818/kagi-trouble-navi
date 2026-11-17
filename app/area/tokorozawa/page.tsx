@@ -690,6 +690,8 @@ export default function AreaPageTokorozawa() {
                 { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/saitama-omiya/", label: "さいたま市大宮区の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kawagoe/", label: "川越市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/sayama/", label: "狭山市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/iruma/", label: "入間市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kawaguchi/", label: "川口市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/nerima-ku/", label: "練馬区の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/itabashi-ku/", label: "板橋区の鍵開け・鍵交換業者おすすめ4選" },

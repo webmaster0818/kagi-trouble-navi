@@ -697,6 +697,7 @@ export default function AreaPageAgeo() {
                 { href: "/area/tokorozawa/", label: "所沢市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kita-ku/", label: "北区の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kumagaya/", label: "熊谷市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/kitamoto/", label: "北本市の鍵開け・鍵交換業者おすすめ3選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
