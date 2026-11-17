@@ -112,7 +112,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-08-12",
-  dateModified: "2026-08-12",
+  dateModified: "2026-11-17",
 };
 
 export default function KinkoShobunPage() {
@@ -137,13 +137,16 @@ export default function KinkoShobunPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             開かない金庫・古い金庫の処分方法｜回収ルートと注意点の基礎知識
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年8月12日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年11月17日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
             <p className="font-bold text-primary mb-2">耐火金庫は、自治体のごみ収集で回収不可とされるのが一般的です。「購入店・メーカー・専門業者」の3ルートから選び、中身の確認と搬出時の安全を優先してください。</p>
             <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
               耐火金庫は鋼板の間に耐火充填材が入った特殊構造のため、多くの自治体で<strong>粗大ごみとして収集できない品目</strong>と案内されています。処分は<strong>①購入店・販売店の引き取り（買い替え時）②メーカーの相談窓口 ③金庫を扱う専門業者</strong>の3ルートが基本で、いずれも有償が一般的です。開かない金庫は、中身が残っている可能性がある場合、先に解錠して確認するのが原則です。耐火金庫は見た目以上に重いため、階段での搬出などは無理をせず、運搬を含めて業者に依頼してください。費用はサイズ・重量・搬出経路で変わるため、作業前に総額の見積もりをご確認ください。
+            </p>
+            <p className="text-text-secondary leading-relaxed text-sm mt-3">
+              相模原市のように、扉を開けて中が空であることを確認できる耐火金庫に限り、粗大ごみとして市の施設へ直接搬入できる（戸別収集はできない）と条件つきで受け付ける市もあります（<a href="https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/recycle/1026493/katei/1008311.html" target="_blank" rel="nofollow noopener" className="text-primary underline">相模原市「市では処理できないもの」</a>・<a href="https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/recycle/1026493/1036314/1036284.html" target="_blank" rel="nofollow noopener" className="text-primary underline">相模原市「ごみ分別検索」</a>、2026年11月17日確認）。自治体別の扱いは<a href="/kinko-shobun/jichitai/" className="text-primary underline">自治体別の金庫の分別ルール</a>をご覧ください。
             </p>
           </div>
 
