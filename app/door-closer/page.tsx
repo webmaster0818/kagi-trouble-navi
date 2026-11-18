@@ -112,7 +112,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-08-09",
-  dateModified: "2026-08-09",
+  dateModified: "2026-11-18",
 };
 
 export default function DoorCloserPage() {
@@ -137,7 +137,7 @@ export default function DoorCloserPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             ドアクローザーの不調と鍵の関係｜「鍵がかからない」の原因が閉まる速度にあるケースを解説
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年8月9日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年11月18日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
@@ -188,6 +188,22 @@ export default function DoorCloserPage() {
               </div>
             ))}
           </div>
+
+          {/* 交換費用 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">ドアクローザー交換の費用（DCMの公式の工事料金）</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            ホームセンターのDCMは、リフォーム専用サイトの「ドアクローザーの取付・交換」の工事料金表で、次の金額を表示しています。対象は店頭販売商品での取付・交換です。
+          </p>
+          <ul className="list-disc pl-5 space-y-1 text-sm text-text-secondary mb-4">
+            <li>標準工事費（工賃のみ）：8,000円（税込）</li>
+            <li>追加工事 既設品処分費：1,500円（税込）</li>
+          </ul>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            表示は工賃のみで、ドアクローザー本体の代金は含まれません。注意事項として、現場の状況により別途費用が発生する場合があること、築年数を経てドア周りの立て付けが悪くなっている場合は作業を断る場合があること、現状を確認したうえで開閉速度の異常は調整で済む場合もあることが書かれています。同サイトは、鳥取県・島根県・佐賀県・長崎県・大分県・宮崎県・鹿児島県・沖縄県では受け付けていないとしています。
+          </p>
+          <p className="text-xs text-text-muted mb-10">
+            出典：<a href="https://reform.dcm-hc.co.jp/blogs/%E5%8F%96%E4%BB%98-%E4%BA%A4%E6%8F%9B/%E3%83%89%E3%82%A2%E3%82%AF%E3%83%AD%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AE%E5%8F%96%E4%BB%98-%E4%BA%A4%E6%8F%9B" target="_blank" rel="nofollow noopener" className="text-primary underline">DCMリフォーム「ドアクローザーの取付・交換」</a>（2026年11月18日確認）
+          </p>
 
           {/* 業者判断 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">調整で直らない場合・原因を切り分けられない場合の業者への依頼</h2>

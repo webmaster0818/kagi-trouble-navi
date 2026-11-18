@@ -132,7 +132,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-08-09",
-  dateModified: "2026-08-09",
+  dateModified: "2026-11-18",
 };
 
 export default function AikagiPage() {
@@ -157,7 +157,7 @@ export default function AikagiPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             合鍵の作り方と値段の考え方｜作れる場所・作れない鍵も解説
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年8月9日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年11月18日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
@@ -191,6 +191,49 @@ export default function AikagiPage() {
           </p>
           <p className="text-sm text-text-secondary leading-relaxed mb-10">
             使い分けの目安は、「急ぎ・簡易な刻みキーなら店頭複製」「精度重視・ディンプルキー・長く使う鍵なら純正取り寄せ」です。回りにくい合鍵を無理に使い続けるとシリンダーを傷める原因になります。すでに鍵の回りが悪い場合は<a href="/kagi-mawaranai/" className="text-primary underline">鍵が回らない・回りにくい時の対処法</a>も参考にしてください。
+          </p>
+
+          {/* ディンプルキーの合鍵の値段 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">ディンプルキーの合鍵の値段（ミスターミニットの公式料金）</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            全国に店舗のある合鍵作製のミスターミニットは、公式サイトの料金ページで合鍵1本あたりの税込価格を次のように表示しています。同ページの注記によると、価格は2026年7月現在の1本作製の税込価格で、予告なく変更する場合があります。
+          </p>
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-surface-alt">
+                  <th className="border border-border px-3 py-2 text-left">鍵の種類（公式の表記）</th>
+                  <th className="border border-border px-3 py-2 text-left">価格（1本・税込）</th>
+                  <th className="border border-border px-3 py-2 text-left">目安時間</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-border px-3 py-2">ディンプルキー</td>
+                  <td className="border border-border px-3 py-2">4,950円〜6,050円</td>
+                  <td className="border border-border px-3 py-2">最短15分〜</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-3 py-2">メーカー純正キー</td>
+                  <td className="border border-border px-3 py-2">6,050円〜</td>
+                  <td className="border border-border px-3 py-2">取り寄せ（受付時に元鍵の番号が必要）</td>
+                </tr>
+                <tr>
+                  <td className="border border-border px-3 py-2">ホームキー（住居・オフィス・店舗のドアで一般的な鍵）</td>
+                  <td className="border border-border px-3 py-2">1,320円〜</td>
+                  <td className="border border-border px-3 py-2">最短3分〜</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            同じページでは、合鍵から合鍵を作ると誤差が生じて解錠できない場合があるため元鍵を持参するよう求め、曲がった鍵・折れた鍵・ねじれた鍵からは作製できないとしています。鍵の種類によっては取り扱いのない店舗もあります。
+          </p>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            美和ロックの公式オンラインショップ「MIWA Direct」で注文できる合鍵は、MIWAの刻印があり鍵番号が読み取れるキーに限られます。手元にキーがない場合、セキュリティカード付きでセキュリティ認証ID番号が分からない場合、マスターキーは注文できず、美和ロックのサービス代行店（SD店）への相談を案内しています。
+          </p>
+          <p className="text-xs text-text-muted mb-10">
+            出典：<a href="https://www.minit.co.jp/service/key/" target="_blank" rel="nofollow noopener" className="text-primary underline">ミスターミニット「合鍵の作製/料金」</a>、<a href="https://www.shop.miwa-lock.co.jp/ec/orderableKey" target="_blank" rel="nofollow noopener" className="text-primary underline">美和ロック公式オンラインショップ MIWA Direct「ご注文可能なキー」</a>（いずれも2026年11月18日確認）
           </p>
 
           {/* 作れない鍵 */}

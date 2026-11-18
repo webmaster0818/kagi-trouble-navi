@@ -113,7 +113,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-08-10",
-  dateModified: "2026-08-10",
+  dateModified: "2026-11-18",
 };
 
 export default function DoorknobKoukanPage() {
@@ -138,7 +138,7 @@ export default function DoorknobKoukanPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             ドアノブ・ラッチの故障と交換の基礎知識｜ガタつき・空回り・戻らない症状の見方
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年8月10日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年11月18日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
@@ -189,6 +189,22 @@ export default function DoorknobKoukanPage() {
               </div>
             ))}
           </div>
+
+          {/* 交換費用 */}
+          <h2 className="text-xl font-bold text-text-primary mb-4">ドアノブ交換の費用（DCMの公式の工事料金）</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            ホームセンターのDCMは、リフォーム専用サイトの「ドアノブ・引違錠の交換」（既存のドアノブ・引違錠を交換する作業）の工事料金表で、次の金額を表示しています。
+          </p>
+          <ul className="list-disc pl-5 space-y-1 text-sm text-text-secondary mb-4">
+            <li>標準工事費（工賃のみ）：8,000円（税込）</li>
+            <li>追加工事 既設品処分費：1,500円（税込）</li>
+          </ul>
+          <p className="text-sm text-text-secondary leading-relaxed mb-4">
+            表示は工賃のみで、交換するドアノブ本体の代金は含まれません。注意事項として、現場の状況により別途費用が発生する場合があること、築年数を経てドア周りの立て付けが悪くなっている場合は交換の効果が得られないため作業を断る場合があることが書かれています。同サイトは、鳥取県・島根県・佐賀県・長崎県・大分県・宮崎県・鹿児島県・沖縄県では受け付けていないとしています。
+          </p>
+          <p className="text-xs text-text-muted mb-10">
+            出典：<a href="https://reform.dcm-hc.co.jp/blogs/%E5%8F%96%E4%BB%98-%E4%BA%A4%E6%8F%9B/%E3%83%89%E3%82%A2%E3%83%8E%E3%83%96-%E5%BC%95%E9%81%95%E9%8C%A0%E4%BA%A4%E6%8F%9B" target="_blank" rel="nofollow noopener" className="text-primary underline">DCMリフォーム「ドアノブ・引違錠の交換」</a>（2026年11月18日確認）
+          </p>
 
           {/* 業者判断 */}
           <h2 className="text-xl font-bold text-text-primary mb-4">業者に依頼すべきケースと依頼時の注意</h2>
