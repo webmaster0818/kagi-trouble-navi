@@ -690,6 +690,7 @@ export default function AreaPageKariya() {
                 { href: "/area/toyota/", label: "豊田市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/okazaki/", label: "岡崎市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/anjo/", label: "安城市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/tokai/", label: "東海市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/toyohashi/", label: "豊橋市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kasugai/", label: "春日井市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/ichinomiya/", label: "一宮市の鍵開け・鍵交換業者おすすめ4選" },

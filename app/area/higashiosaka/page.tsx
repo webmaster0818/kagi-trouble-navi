@@ -691,6 +691,7 @@ export default function AreaPageHigashiosaka() {
             <ul className="grid gap-3 md:grid-cols-3">
               {[
                 { href: "/area/neyagawa/", label: "寝屋川市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/daito/", label: "大東市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/osaka-chuo/", label: "大阪市中央区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/osaka-hirano/", label: "大阪市平野区の鍵開け・鍵交換業者おすすめ5選" },

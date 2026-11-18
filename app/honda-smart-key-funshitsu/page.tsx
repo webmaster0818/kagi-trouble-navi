@@ -136,6 +136,7 @@ export default function Page() {
       related={[
         { href: "/kuruma-kagi-funshitsu-spare-nashi/", label: "車の鍵を紛失してスペアキーもないとき", desc: "トヨタ・日産・SUBARUの公式案内" },
         { href: "/toyota-smart-key-funshitsu/", label: "トヨタのスマートキーを紛失したとき", desc: "残りのキーを持って販売店へ" },
+        { href: "/suzuki-smart-key-funshitsu/", label: "スズキのスマートキーを紛失したとき", desc: "スズキ販売店とキーナンバープレート" },
         { href: "/kuruma-spare-key/", label: "車のスペアキーは販売店で注文できる", desc: "必要な書類" },
         { href: "/immobilizer/", label: "イモビライザーとは", desc: "鍵と車両のID照合" },
         { href: "/kuruma-kagi-shurui/", label: "車の鍵の種類", desc: "メーカーごとの呼び方" },

@@ -691,6 +691,7 @@ export default function AreaUtsunomiyaPage() {
               {[
                 { href: "/area/tsukuba/", label: "つくば市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/oyama/", label: "小山市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/kanuma/", label: "鹿沼市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ4選" },
