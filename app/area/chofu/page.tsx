@@ -687,6 +687,7 @@ export default function AreaPageChofu() {
             <ul className="grid gap-3 md:grid-cols-3">
               {[
                 { href: "/area/fuchu/", label: "府中市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/mitaka/", label: "三鷹市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/machida/", label: "町田市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/hachioji/", label: "八王子市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/setagaya-ku/", label: "世田谷区の鍵開け・鍵交換業者おすすめ4選" },

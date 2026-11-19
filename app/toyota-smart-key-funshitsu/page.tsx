@@ -130,6 +130,7 @@ export default function Page() {
         { href: "/car-inlock/", label: "車のインキー", desc: "JAFのロードサービス" },
         { href: "/kuruma-kagi-funshitsu-spare-nashi/", label: "スペアキーもないとき", desc: "トヨタ・日産・SUBARUの案内を比較" },
         { href: "/honda-smart-key-funshitsu/", label: "ホンダのスマートキーを紛失したとき", desc: "Honda販売店とキーナンバータグ" },
+        { href: "/daihatsu-kagi-funshitsu/", label: "ダイハツ車の鍵をなくしたとき", desc: "キーナンバーと残りのキーでサービス工場へ" },
       ]}
     />
   );

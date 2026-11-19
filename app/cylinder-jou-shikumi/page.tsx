@@ -108,7 +108,7 @@ export default function Page() {
                 フロント（面座）にはメーカー名や型式記号が刻まれており、美和ロックは交換時や故障時に確認する箇所だとしています。バックセットは、ドアの先端からノブ（レバーハンドル）またはシリンダーの中心までの長さです。採寸と交換の流れは<a href="/cylinder-koukan-diy/" className="text-primary underline">シリンダー交換をDIYで行う方法と注意点</a>、錠の系統の見分け方は<a href="/joumae-type-zukan/" className="text-primary underline">錠前タイプ図鑑</a>にまとめています。
               </p>
               <p>
-                ドアが閉まりきらない・ラッチが引っかからないなど、鍵ではなくラッチ側の不調は<a href="/doorknob-koukan/" className="text-primary underline">ドアノブ・ラッチ交換の基礎知識</a>を参照してください。室内側のサムターンを回されにくくする対策は<a href="/thumb-turn-taisaku/" className="text-primary underline">サムターン回し対策</a>で説明しています。
+                ドアが閉まりきらない・ラッチが引っかからないなど、鍵ではなくラッチ側の不調は<a href="/doorknob-koukan/" className="text-primary underline">ドアノブ・ラッチ交換の基礎知識</a>を、枠側の受け金具の位置合わせは<a href="/strike-chousei/" className="text-primary underline">ストライク（受座）の調整</a>を参照してください。室内側のサムターンを回されにくくする対策は<a href="/thumb-turn-taisaku/" className="text-primary underline">サムターン回し対策</a>で説明しています。
               </p>
               <p className="text-xs text-text-muted">
                 出典：<Ext href={SRC.front}>美和ロック「錠と防犯の用語集」フロント（面座）</Ext>、<Ext href={SRC.backset}>同 バックセット</Ext>、<Ext href={SRC.thumb}>同 サムターン</Ext>（いずれも2026年11月12日確認）
@@ -123,6 +123,7 @@ export default function Page() {
         { href: "/cylinder-koukan-diy/", label: "シリンダー交換をDIYで行う方法", desc: "規格確認・採寸の基礎" },
         { href: "/joumae-type-zukan/", label: "錠前タイプ図鑑", desc: "フロント刻印と錠の系統の見分け方" },
         { href: "/disc-cylinder/", label: "ディスクシリンダーとは", desc: "旧型シリンダーと交換の考え方" },
+        { href: "/tumbler-jou/", label: "タンブラー錠とは", desc: "ピン・ディスク・回転式の違い" },
         { href: "/cp-nintei-jou/", label: "CP認定錠", desc: "防犯性能の高い建物部品の目印" },
         { href: "/lixil-kagi-koukan/", label: "LIXIL（トステム）の鍵交換", desc: "鍵をなくしたときのシリンダー交換" },
       ]}

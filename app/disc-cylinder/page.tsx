@@ -164,6 +164,7 @@ export default function Page() {
       related={[
         { href: "/maker/miwa/haishi-cylinder/", label: "美和ロックの廃止シリンダー一覧", desc: "ディスク・EC・UX・PX・URの合鍵の注文期限" },
         { href: "/kagi-shurui-zukan/", label: "鍵の種類図鑑", desc: "刻みキー・ディンプルキーなどの見分け方" },
+        { href: "/tumbler-jou/", label: "タンブラー錠とは", desc: "ピン・ディスク・回転式の違い" },
         { href: "/cp-nintei-jou/", label: "CP認定錠とは", desc: "防犯性能の判断基準" },
         { href: "/kagi-koukan-timing/", label: "鍵交換のタイミング", desc: "交換を検討すべきサイン" },
         { href: "/kaijo-hyouki-chigai/", label: "「解錠」と「開錠」の違い", desc: "法令・官公庁・メーカーの文書での表記" },

@@ -89,6 +89,7 @@ const relatedLinks = [
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "ドア周りの作業を依頼する前の料金の目安" },
   { href: "/agents/", label: "鍵トラブル業者の比較", desc: "ドア金物に対応できる依頼先の検討" },
   { href: "/doorknob-yurumi/", label: "ドアノブ・レバーハンドルの緩みの直し方", desc: "締め直すネジの場所と締め付けの強さ" },
+  { href: "/strike-chousei/", label: "ストライク（受座）の調整", desc: "ラッチがかからないときの位置合わせ" },
 ];
 
 const faqLd = {
