@@ -695,6 +695,7 @@ export default function AreaPageHiratsuka() {
                 { href: "/area/kawasaki/", label: "川崎の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/machida/", label: "町田市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/odawara/", label: "小田原市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/hadano/", label: "秦野市の鍵開け・鍵交換業者おすすめ3選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

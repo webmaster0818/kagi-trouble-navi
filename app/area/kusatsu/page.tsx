@@ -695,6 +695,7 @@ export default function AreaPageKusatsu() {
                 { href: "/area/yokkaichi/", label: "四日市市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/gifu/", label: "岐阜の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kobe/", label: "神戸の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/shiga/", label: "滋賀県の鍵開け・鍵交換業者おすすめ3選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

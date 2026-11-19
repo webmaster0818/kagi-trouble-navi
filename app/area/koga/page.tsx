@@ -224,6 +224,7 @@ export default function AreaKogaPage() {
       nearby={[
         { href: "/area/oyama/", label: "小山市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/tsukuba/", label: "つくば市の鍵開け・鍵交換業者おすすめ4選" },
+        { href: "/area/chikusei/", label: "筑西市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/kasukabe/", label: "春日部市の鍵開け・鍵交換業者おすすめ4選" },
       ]}
       related={[

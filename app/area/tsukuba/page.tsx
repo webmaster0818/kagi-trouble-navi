@@ -744,6 +744,7 @@ export default function AreaTsukubaPage() {
                 { href: "/area/kochi/", label: "高知の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/saga/", label: "佐賀の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/hitachi/", label: "日立市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/ushiku/", label: "牛久市の鍵開け・鍵交換業者おすすめ3選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
