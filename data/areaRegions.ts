@@ -18,7 +18,7 @@ export const tokyo = {
   ],
   tama: [
     a("hachioji", "八王子市"), a("machida", "町田市"), a("tachikawa", "立川市"),
-    a("musashino", "武蔵野市"), a("chofu", "調布市"), a("fuchu", "府中市"),
+    a("musashino", "武蔵野市"), a("chofu", "調布市"), a("fuchu", "府中市"), a("hino", "日野市"), a("nishitokyo", "西東京市"),
   ],
 };
 
@@ -38,7 +38,7 @@ export const regions: Region[] = [
   {
     name: "関東",
     prefectures: [
-      { name: "茨城県", areas: [a("mito", "水戸市"), a("tsukuba", "つくば市"), a("hitachi", "日立市")] },
+      { name: "茨城県", areas: [a("mito", "水戸市"), a("tsukuba", "つくば市"), a("hitachi", "日立市"), a("hitachinaka", "ひたちなか市"), a("koga", "古河市")] },
       { name: "栃木県", areas: [a("utsunomiya", "宇都宮市"), a("oyama", "小山市"), a("kanuma", "鹿沼市")] },
       { name: "群馬県", areas: [a("maebashi", "前橋市"), a("takasaki", "高崎市")] },
       { name: "埼玉県", areas: [a("saitama", "さいたま市"), a("saitama-omiya", "さいたま市大宮区"), a("kawaguchi", "川口市"), a("kawagoe", "川越市"), a("tokorozawa", "所沢市"), a("koshigaya", "越谷市"), a("soka", "草加市"), a("kasukabe", "春日部市"), a("ageo", "上尾市"), a("kumagaya", "熊谷市"), a("sayama", "狭山市"), a("iruma", "入間市"), a("kitamoto", "北本市")] },
