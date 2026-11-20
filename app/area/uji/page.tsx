@@ -699,6 +699,7 @@ export default function AreaPageUji() {
                 { href: "/area/nara/", label: "奈良の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/takatsuki/", label: "高槻市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/hirakata/", label: "枚方市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/kyotanabe/", label: "京田辺市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/ibaraki/", label: "茨木市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kobe/", label: "神戸の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kusatsu/", label: "草津市の鍵開け・鍵交換業者おすすめ4選" },

@@ -694,6 +694,7 @@ export default function AreaOyamaPage() {
               {[
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/koga/", label: "古河市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/sano/", label: "佐野市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ4選" },

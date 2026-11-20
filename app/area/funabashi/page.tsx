@@ -687,6 +687,7 @@ export default function AreaPageFunabashi() {
               {[
                 { href: "/area/kashiwa/", label: "柏市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/chiba/", label: "千葉の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/yachiyo/", label: "八千代市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/matsudo/", label: "松戸市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/edogawa-ku/", label: "江戸川区の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/katsushika-ku/", label: "葛飾区の鍵開け・鍵交換業者おすすめ4選" },

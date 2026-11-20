@@ -698,6 +698,7 @@ export default function AreaPageHirakata() {
                 { href: "/area/sakai/", label: "堺の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kyoto/", label: "京都の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kyoto-fushimi/", label: "京都市伏見区の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/yawata/", label: "八幡市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/nara/", label: "奈良の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kawaguchi/", label: "川口市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/uji/", label: "宇治市の鍵開け・鍵交換業者おすすめ4選" },
