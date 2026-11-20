@@ -40,9 +40,9 @@ export const regions: Region[] = [
     prefectures: [
       { name: "茨城県", areas: [a("mito", "水戸市"), a("tsukuba", "つくば市"), a("hitachi", "日立市"), a("hitachinaka", "ひたちなか市"), a("koga", "古河市"), a("ushiku", "牛久市"), a("chikusei", "筑西市")] },
       { name: "栃木県", areas: [a("utsunomiya", "宇都宮市"), a("oyama", "小山市"), a("kanuma", "鹿沼市"), a("otawara", "大田原市")] },
-      { name: "群馬県", areas: [a("maebashi", "前橋市"), a("takasaki", "高崎市")] },
+      { name: "群馬県", areas: [a("maebashi", "前橋市"), a("takasaki", "高崎市"), a("gunma", "群馬県全域")] },
       { name: "埼玉県", areas: [a("saitama", "さいたま市"), a("saitama-omiya", "さいたま市大宮区"), a("kawaguchi", "川口市"), a("kawagoe", "川越市"), a("tokorozawa", "所沢市"), a("koshigaya", "越谷市"), a("soka", "草加市"), a("kasukabe", "春日部市"), a("ageo", "上尾市"), a("kumagaya", "熊谷市"), a("sayama", "狭山市"), a("iruma", "入間市"), a("kitamoto", "北本市"), a("fukaya", "深谷市")] },
-      { name: "千葉県", areas: [a("chiba", "千葉市"), a("funabashi", "船橋市"), a("ichikawa", "市川市"), a("matsudo", "松戸市"), a("kashiwa", "柏市"), a("ichihara", "市原市"), a("nagareyama", "流山市"), a("urayasu", "浦安市")] },
+      { name: "千葉県", areas: [a("chiba", "千葉市"), a("funabashi", "船橋市"), a("ichikawa", "市川市"), a("matsudo", "松戸市"), a("kashiwa", "柏市"), a("ichihara", "市原市"), a("nagareyama", "流山市"), a("urayasu", "浦安市"), a("noda", "野田市")] },
       { name: "神奈川県", areas: [a("yokohama", "横浜市"), a("yokohama-kohoku", "横浜市港北区"), a("yokohama-tsurumi", "横浜市鶴見区"), a("yokohama-totsuka", "横浜市戸塚区"), a("yokohama-aoba", "横浜市青葉区"), a("kawasaki", "川崎市"), a("kawasaki-kawasaki", "川崎市川崎区"), a("kawasaki-nakahara", "川崎市中原区"), a("sagamihara", "相模原市"), a("yokosuka", "横須賀市"), a("fujisawa", "藤沢市"), a("hiratsuka", "平塚市"), a("chigasaki", "茅ヶ崎市"), a("yamato", "大和市"), a("atsugi", "厚木市"), a("odawara", "小田原市"), a("hadano", "秦野市")] },
     ],
   },

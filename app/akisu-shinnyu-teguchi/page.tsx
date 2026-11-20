@@ -94,6 +94,7 @@ const faqs = [
 const relatedLinks = [
   { href: "/cp-nintei-jou/", label: "CP認定錠とは？防犯性能の公的な目印", desc: "5分以上の侵入抵抗を目安とした認定制度" },
   { href: "/hojo-jou/", label: "補助錠の選び方とワンドアツーロック", desc: "賃貸でも使える工事不要タイプも紹介" },
+  { href: "/kagi-koukan-hoken/", label: "空き巣に壊された鍵と保険", desc: "建物の盗難補償で確認すること" },
   { href: "/thumb-turn-taisaku/", label: "サムターン回し対策の基本", desc: "内側のつまみを狙う手口と防ぎ方" },
   { href: "/dimple-key/", label: "ディンプルキーとは？防犯性の仕組み", desc: "ピッキングに強い鍵の構造を解説" },
 ];

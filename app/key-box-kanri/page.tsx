@@ -87,6 +87,7 @@ const relatedLinks = [
   { href: "/chintai-bouhan/", label: "賃貸住宅の防犯対策", desc: "借りている部屋でできる防犯の基本" },
   { href: "/smart-lock/", label: "スマートロックの基礎知識", desc: "履歴・権限管理ができる受け渡し手段" },
   { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処法", desc: "紛失に気づいた際の対応手順" },
+  { href: "/kagi-hokan-basho/", label: "鍵の保管場所", desc: "合鍵を屋外に置かない理由と預け先" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "シリンダー交換の料金の目安" },
   { href: "/locker-kagi-funshitsu/", label: "ロッカーの鍵をなくしたとき", desc: "コインロッカー・職場のロッカー別の手順" },
 ];

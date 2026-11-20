@@ -86,6 +86,7 @@ const faqs = [
 const relatedLinks = [
   { href: "/shimedashi/", label: "締め出されたときの対処法", desc: "家に入れないときの対応の全体像" },
   { href: "/ryokin/", label: "鍵開け・鍵交換の料金相場", desc: "サポート対象外のときの料金の目安" },
+  { href: "/kagi-koukan-hoken/", label: "鍵交換は保険で補償される？", desc: "盗難補償・鍵取替え費用の確認" },
   { href: "/kagi-funshitsu/", label: "鍵をなくしたときの対処法", desc: "紛失時に行うべき手順" },
   { href: "/car-inlock/", label: "車のインロック対処法", desc: "ロードサービスの対象となる車の鍵トラブルの対処法" },
 ];

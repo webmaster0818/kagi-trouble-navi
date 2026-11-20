@@ -688,6 +688,7 @@ export default function AreaPageKashiwa() {
             <ul className="grid gap-3 md:grid-cols-3">
               {[
                 { href: "/area/matsudo/", label: "松戸市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/noda/", label: "野田市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/funabashi/", label: "船橋市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/ichikawa/", label: "市川市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/chiba/", label: "千葉の鍵開け・鍵交換業者おすすめ4選" },

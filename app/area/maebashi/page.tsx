@@ -690,6 +690,7 @@ export default function AreaMaebashiPage() {
             <ul className="grid gap-3 md:grid-cols-3">
               {[
                 { href: "/area/oyama/", label: "小山市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/gunma/", label: "群馬県の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/nagoya/", label: "名古屋の鍵開け・鍵交換業者おすすめ4選" },

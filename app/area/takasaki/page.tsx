@@ -688,6 +688,7 @@ export default function AreaPageTakasaki() {
               {[
                 { href: "/area/oyama/", label: "小山市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/maebashi/", label: "前橋の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/gunma/", label: "群馬県の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/utsunomiya/", label: "宇都宮の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/saitama-omiya/", label: "さいたま市大宮区の鍵開け・鍵交換業者おすすめ4選" },

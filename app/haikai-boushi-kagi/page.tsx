@@ -165,6 +165,7 @@ export default function Page() {
       related={[
         { href: "/hojo-jou/", label: "補助錠の選び方", desc: "ワンドア・ツーロックの補助錠" },
         { href: "/kodomo-pet-kagi-taisaku/", label: "子ども・ペットの鍵対策", desc: "閉じ込め予防" },
+        { href: "/anpi-kakunin-kagiake/", label: "安否確認で鍵開けを頼むとき", desc: "警察・管理会社・鍵預かりの制度" },
         { href: "/genkan-kagi-atozuke/", label: "玄関の鍵の後付け", desc: "賃貸での許可と工事" },
         { href: "/door-guard-shimedashi/", label: "ドアガードの締め出し", desc: "内側からかかったときの対処" },
         { href: "/smart-lock/", label: "スマートロックの選び方", desc: "開閉の通知機能" },
