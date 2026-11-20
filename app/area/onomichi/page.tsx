@@ -688,6 +688,7 @@ export default function AreaPageOnomichi() {
             <ul className="grid gap-3 md:grid-cols-3">
               {[
                 { href: "/area/fukuyama/", label: "福山市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/mihara/", label: "三原市の鍵開け・鍵交換業者おすすめ2選" },
                 { href: "/area/hiroshima/", label: "広島の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/hiroshima-naka/", label: "広島市中区の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/higashihiroshima/", label: "東広島市の鍵開け・鍵交換業者おすすめ4選" },

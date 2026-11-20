@@ -688,6 +688,7 @@ export default function AreaPageSoka() {
             <ul className="grid gap-3 md:grid-cols-3">
               {[
                 { href: "/area/koshigaya/", label: "越谷市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/misato/", label: "三郷市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/kawaguchi/", label: "川口市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/saitama/", label: "さいたまの鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/saitama-omiya/", label: "さいたま市大宮区の鍵開け・鍵交換業者おすすめ4選" },

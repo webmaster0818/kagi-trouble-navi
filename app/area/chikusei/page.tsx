@@ -204,6 +204,7 @@ export default function AreaChikuseiPage() {
       ]}
       nearby={[
         { href: "/area/koga/", label: "古河市の鍵開け・鍵交換業者おすすめ4選" },
+        { href: "/area/shimotsuma/", label: "下妻市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/tsukuba/", label: "つくば市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/oyama/", label: "小山市の鍵開け・鍵交換業者おすすめ4選" },
       ]}
