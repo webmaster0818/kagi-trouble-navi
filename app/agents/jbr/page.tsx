@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/agents/jbr/";
-const UPDATED = "2026年10月14日";
+const UPDATED = "2026年11月20日";
 
 export const metadata: Metadata = {
   title: { absolute: "ジャパンベストレスキュー（JBR）の口コミ・評判｜鍵の「生活救急車」は今どこが運営？【2026年10月】｜鍵トラブルナビ" },
@@ -62,7 +62,7 @@ export default function JbrPage() {
     description: "JBRの口コミ・評判を鍵・水まわり・社員評価に分けて整理し、鍵サービスの運営移管の経緯と現在の依頼先を一次情報で解説した記事です。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-20T00:00:00+09:00",
-    dateModified: "2026-10-14T00:00:00+09:00",
+    dateModified: "2026-11-20T00:00:00+09:00",
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` },
@@ -108,7 +108,7 @@ export default function JbrPage() {
               <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">鍵の生活救急車＝現在は株式会社生活救急車</span>
               <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">JBRは2024年3月上場廃止</span>
               <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">JBRの駆けつけは会員制</span>
-              <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">2026年10月14日 一次確認</span>
+              <span className="inline-flex items-center rounded border border-border bg-white px-3 py-1.5 text-sm font-bold text-foreground">2026年11月20日 一次確認</span>
             </div>
             <AgentShot slug="jbr" name="JBR（ジャパンベストレスキュー）" priority className="mt-8 md:max-w-[640px]" sizes="(min-width: 768px) 640px, 100vw" />
           </div>
@@ -116,6 +116,13 @@ export default function JbrPage() {
 
         <div className="mx-auto max-w-4xl px-4 py-8 md:py-12">
           <p className="text-sm text-slate-500 mb-8">最終更新日：{UPDATED}　／　鍵トラブルナビ編集部</p>
+
+          <div className="mb-10 rounded-2xl border border-amber-200 bg-amber-50 p-5">
+            <p className="font-bold text-slate-800 mb-2">JBR（ジャパンベストレスキューシステム）とは</p>
+            <p className="leading-loose text-slate-700 mb-3">JBRは、名古屋市中区に本社を置くジャパンベストレスキューシステム株式会社（1997年2月創業）の略称です。会社概要では、事業内容を「カギ、水まわり、ガラス等の生活トラブル解決サービス」「住宅設備の延長保証サービス」「家財保険を中心とする保険サービス」としています（<a href="https://www.jbr.co.jp/company/" target="_blank" rel="noopener nofollow" className="text-amber-700 underline">JBR 企業概要</a>）。</p>
+            <p className="leading-loose text-slate-700 mb-3">現在JBRが案内している駆けつけは、安心入居サポート・アクト安心ライフ24・緊急サポート24などの<strong>会員制のカスタマーサポート</strong>です（<a href="https://www.jbr.co.jp/emergency/" target="_blank" rel="noopener nofollow" className="text-amber-700 underline">JBR 緊急駆け付けサービス</a>）。鍵の「生活救急車」は2022年11月にJBRから事業承継され、現在は株式会社生活救急車が運営しています。同社は「ジャパンベストレスキューシステム株式会社とは資本関係を含め一切関係ございません」と公式に表明しています（<a href="https://www.seikatu-rescue.jp/company/" target="_blank" rel="noopener nofollow" className="text-amber-700 underline">生活救急車 会社概要</a>）。</p>
+            <p className="leading-loose text-slate-700 text-sm">JBRの株式は2024年3月25日に東京証券取引所で上場廃止となりました（<a href="https://www.jpx.co.jp/news/1023/20240222-11.html" target="_blank" rel="noopener nofollow" className="text-amber-700 underline">JPX 上場廃止等の決定</a>）。いずれも2026年11月20日に確認しました。</p>
+          </div>
 
           <nav aria-label="目次" className="mb-12 rounded-2xl border border-slate-200 bg-slate-50 p-6">
             <p className="font-bold text-slate-800 mb-4">この記事の目次</p>
@@ -143,7 +150,7 @@ export default function JbrPage() {
                   <tr><th className="bg-slate-50">上場</th><td>2024年3月25日に上場廃止（現在は非上場）</td></tr>
                 </tbody>
               </table>
-              <p className="text-xs text-slate-500 mt-2">出典：<a href="https://www.jbr.co.jp/company/" target="_blank" rel="noopener nofollow" className="underline">JBR 企業概要</a>（2026年10月14日確認）・<a href="https://www.jpx.co.jp/news/1023/20240222-11.html" target="_blank" rel="noopener nofollow" className="underline">JPX 上場廃止等の決定</a></p>
+              <p className="text-xs text-slate-500 mt-2">出典：<a href="https://www.jbr.co.jp/company/" target="_blank" rel="noopener nofollow" className="underline">JBR 企業概要</a>（2026年11月20日確認）・<a href="https://www.jpx.co.jp/news/1023/20240222-11.html" target="_blank" rel="noopener nofollow" className="underline">JPX 上場廃止等の決定</a></p>
             </div>
           </section>
 
@@ -169,7 +176,7 @@ export default function JbrPage() {
               <li className="rounded-xl border border-slate-200 p-4"><strong>アクト安心ライフ24（年額）／緊急サポート24（月額）</strong>：水まわり・鍵・ガス・電気設備などのトラブルに24時間365日対応する駆けつけサービス</li>
             </ul>
             <p className="leading-loose text-slate-700">現在「JBR」の名称を目にするのは、こうした会員サービスに加入している場合がほとんどです。会員の方は、まず契約書や会員証に記載された番号にお問い合わせください（対象のトラブル・費用負担は契約ごとに異なります）。</p>
-            <p className="text-xs text-slate-500 mt-2">出典：<a href="https://www.jbr.co.jp/emergency/" target="_blank" rel="noopener nofollow" className="underline">JBR 緊急駆け付けサービス</a>（2026年10月14日確認）</p>
+            <p className="text-xs text-slate-500 mt-2">出典：<a href="https://www.jbr.co.jp/emergency/" target="_blank" rel="noopener nofollow" className="underline">JBR 緊急駆け付けサービス</a>（2026年11月20日確認）</p>
           </section>
 
           <section id="reviews" className="scroll-mt-20 mb-14">
@@ -236,7 +243,7 @@ export default function JbrPage() {
           </section>
 
           <AgentCompareTable current="jbr" />
-          <VerificationNote officialUrl="https://www.jbr.co.jp/" officialLabel="JBR 公式サイト" checkedNote="2026年10月14日確認" />
+          <VerificationNote officialUrl="https://www.jbr.co.jp/" officialLabel="JBR 公式サイト" checkedNote="2026年11月20日確認" />
 
           <section id="summary" className="scroll-mt-20">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">まとめ</h2>
