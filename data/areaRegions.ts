@@ -18,7 +18,7 @@ export const tokyo = {
   ],
   tama: [
     a("hachioji", "八王子市"), a("machida", "町田市"), a("tachikawa", "立川市"),
-    a("musashino", "武蔵野市"), a("chofu", "調布市"), a("fuchu", "府中市"), a("hino", "日野市"), a("nishitokyo", "西東京市"), a("mitaka", "三鷹市"),
+    a("musashino", "武蔵野市"), a("chofu", "調布市"), a("fuchu", "府中市"), a("hino", "日野市"), a("nishitokyo", "西東京市"), a("mitaka", "三鷹市"), a("kunitachi", "国立市"),
   ],
 };
 
@@ -26,7 +26,7 @@ export const regions: Region[] = [
   {
     name: "北海道・東北",
     prefectures: [
-      { name: "北海道", areas: [a("sapporo", "札幌市"), a("sapporo-chuo", "札幌市中央区"), a("sapporo-kita", "札幌市北区"), a("asahikawa", "旭川市"), a("hakodate", "函館市"), a("kushiro", "釧路市"), a("tomakomai", "苫小牧市")] },
+      { name: "北海道", areas: [a("sapporo", "札幌市"), a("sapporo-chuo", "札幌市中央区"), a("sapporo-kita", "札幌市北区"), a("asahikawa", "旭川市"), a("hakodate", "函館市"), a("kushiro", "釧路市"), a("tomakomai", "苫小牧市"), a("hokkaido", "北海道全域")] },
       { name: "青森県", areas: [a("aomori", "青森市"), a("hachinohe", "八戸市"), a("hirosaki", "弘前市")] },
       { name: "岩手県", areas: [a("morioka", "盛岡市")] },
       { name: "宮城県", areas: [a("sendai", "仙台市")] },
@@ -41,8 +41,8 @@ export const regions: Region[] = [
       { name: "茨城県", areas: [a("mito", "水戸市"), a("tsukuba", "つくば市"), a("hitachi", "日立市"), a("hitachinaka", "ひたちなか市"), a("koga", "古河市"), a("ushiku", "牛久市"), a("chikusei", "筑西市"), a("shimotsuma", "下妻市")] },
       { name: "栃木県", areas: [a("utsunomiya", "宇都宮市"), a("oyama", "小山市"), a("kanuma", "鹿沼市"), a("otawara", "大田原市"), a("sano", "佐野市")] },
       { name: "群馬県", areas: [a("maebashi", "前橋市"), a("takasaki", "高崎市"), a("gunma", "群馬県全域")] },
-      { name: "埼玉県", areas: [a("saitama", "さいたま市"), a("saitama-omiya", "さいたま市大宮区"), a("kawaguchi", "川口市"), a("kawagoe", "川越市"), a("tokorozawa", "所沢市"), a("koshigaya", "越谷市"), a("soka", "草加市"), a("kasukabe", "春日部市"), a("ageo", "上尾市"), a("kumagaya", "熊谷市"), a("sayama", "狭山市"), a("iruma", "入間市"), a("kitamoto", "北本市"), a("fukaya", "深谷市"), a("misato", "三郷市"), a("kuki", "久喜市")] },
-      { name: "千葉県", areas: [a("chiba", "千葉市"), a("funabashi", "船橋市"), a("ichikawa", "市川市"), a("matsudo", "松戸市"), a("kashiwa", "柏市"), a("ichihara", "市原市"), a("nagareyama", "流山市"), a("urayasu", "浦安市"), a("noda", "野田市"), a("sakura", "佐倉市"), a("yachiyo", "八千代市")] },
+      { name: "埼玉県", areas: [a("saitama", "さいたま市"), a("saitama-omiya", "さいたま市大宮区"), a("kawaguchi", "川口市"), a("kawagoe", "川越市"), a("tokorozawa", "所沢市"), a("koshigaya", "越谷市"), a("soka", "草加市"), a("kasukabe", "春日部市"), a("ageo", "上尾市"), a("kumagaya", "熊谷市"), a("sayama", "狭山市"), a("iruma", "入間市"), a("kitamoto", "北本市"), a("fukaya", "深谷市"), a("misato", "三郷市"), a("kuki", "久喜市"), a("kazo", "加須市")] },
+      { name: "千葉県", areas: [a("chiba", "千葉市"), a("funabashi", "船橋市"), a("ichikawa", "市川市"), a("matsudo", "松戸市"), a("kashiwa", "柏市"), a("ichihara", "市原市"), a("nagareyama", "流山市"), a("urayasu", "浦安市"), a("noda", "野田市"), a("sakura", "佐倉市"), a("yachiyo", "八千代市"), a("inzai", "印西市")] },
       { name: "神奈川県", areas: [a("yokohama", "横浜市"), a("yokohama-kohoku", "横浜市港北区"), a("yokohama-tsurumi", "横浜市鶴見区"), a("yokohama-totsuka", "横浜市戸塚区"), a("yokohama-aoba", "横浜市青葉区"), a("kawasaki", "川崎市"), a("kawasaki-kawasaki", "川崎市川崎区"), a("kawasaki-nakahara", "川崎市中原区"), a("sagamihara", "相模原市"), a("yokosuka", "横須賀市"), a("fujisawa", "藤沢市"), a("hiratsuka", "平塚市"), a("chigasaki", "茅ヶ崎市"), a("yamato", "大和市"), a("atsugi", "厚木市"), a("odawara", "小田原市"), a("hadano", "秦野市")] },
     ],
   },
@@ -71,7 +71,7 @@ export const regions: Region[] = [
     prefectures: [
       { name: "滋賀県", areas: [a("otsu", "大津市"), a("kusatsu", "草津市"), a("shiga", "滋賀県全域")] },
       { name: "京都府", areas: [a("kyoto", "京都市"), a("kyoto-nakagyo", "京都市中京区"), a("kyoto-fushimi", "京都市伏見区"), a("uji", "宇治市"), a("kyotanabe", "京田辺市"), a("yawata", "八幡市")] },
-      { name: "大阪府", areas: [a("osaka", "大阪市"), a("osaka-kita", "大阪市北区"), a("osaka-chuo", "大阪市中央区"), a("osaka-yodogawa", "大阪市淀川区"), a("osaka-hirano", "大阪市平野区"), a("sakai", "堺市"), a("higashiosaka", "東大阪市"), a("toyonaka", "豊中市"), a("suita", "吹田市"), a("takatsuki", "高槻市"), a("hirakata", "枚方市"), a("ibaraki", "茨木市"), a("neyagawa", "寝屋川市"), a("yao", "八尾市"), a("kishiwada", "岸和田市"), a("izumi", "和泉市"), a("daito", "大東市")] },
+      { name: "大阪府", areas: [a("osaka", "大阪市"), a("osaka-kita", "大阪市北区"), a("osaka-chuo", "大阪市中央区"), a("osaka-yodogawa", "大阪市淀川区"), a("osaka-hirano", "大阪市平野区"), a("sakai", "堺市"), a("higashiosaka", "東大阪市"), a("toyonaka", "豊中市"), a("suita", "吹田市"), a("takatsuki", "高槻市"), a("hirakata", "枚方市"), a("ibaraki", "茨木市"), a("neyagawa", "寝屋川市"), a("yao", "八尾市"), a("kishiwada", "岸和田市"), a("izumi", "和泉市"), a("daito", "大東市"), a("shijonawate", "四條畷市")] },
       { name: "兵庫県", areas: [a("kobe", "神戸市"), a("kobe-chuo", "神戸市中央区"), a("kobe-nada", "神戸市灘区"), a("himeji", "姫路市"), a("amagasaki", "尼崎市"), a("nishinomiya", "西宮市"), a("akashi", "明石市"), a("kakogawa", "加古川市"), a("takarazuka", "宝塚市"), a("itami", "伊丹市"), a("kawanishi", "川西市"), a("sanda", "三田市")] },
       { name: "奈良県", areas: [a("nara", "奈良市"), a("ikoma", "生駒市"), a("yamatokoriyama", "大和郡山市"), a("kashihara", "橿原市")] },
       { name: "和歌山県", areas: [a("wakayama", "和歌山市")] },

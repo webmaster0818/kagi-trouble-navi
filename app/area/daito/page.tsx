@@ -250,6 +250,7 @@ export default function AreaDaitoPage() {
         { href: "/area/higashiosaka/", label: "東大阪市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/neyagawa/", label: "寝屋川市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ5選" },
+        { href: "/area/shijonawate/", label: "四條畷市の鍵開け・鍵交換業者おすすめ3選" },
       ]}
       related={[
         { href: "/akisu-shinnyu-teguchi/", label: "空き巣の侵入手口と対策" },

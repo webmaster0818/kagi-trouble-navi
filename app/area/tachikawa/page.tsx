@@ -688,6 +688,7 @@ export default function AreaPageTachikawa() {
             <ul className="grid gap-3 md:grid-cols-3">
               {[
                 { href: "/area/fuchu/", label: "府中市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/kunitachi/", label: "国立市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/chofu/", label: "調布市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/hachioji/", label: "八王子市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/machida/", label: "町田市の鍵開け・鍵交換業者おすすめ4選" },

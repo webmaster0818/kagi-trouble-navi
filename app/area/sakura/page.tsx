@@ -206,6 +206,7 @@ export default function AreaSakuraPage() {
         { href: "/area/chiba/", label: "千葉の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/yachiyo/", label: "八千代市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/funabashi/", label: "船橋市の鍵開け・鍵交換業者おすすめ4選" },
+        { href: "/area/inzai/", label: "印西市の鍵開け・鍵交換業者おすすめ3選" },
       ]}
       related={[
         { href: "/akisu-shinnyu-teguchi/", label: "空き巣の侵入手口と対策" },
