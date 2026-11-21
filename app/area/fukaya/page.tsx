@@ -199,6 +199,7 @@ export default function AreaFukayaPage() {
         <>埼玉県警察の令和7年確定値では、深谷市の空き巣・忍込み・居空きの合計は24件で、前年の42件から減りました。県全体では増えているため、外出時だけでなく在宅中・就寝中の施錠も続け、必要に応じて鍵交換や補助錠の設置をご検討ください。</>,
       ]}
       nearby={[
+        { href: "/area/honjo/", label: "本庄市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/kumagaya/", label: "熊谷市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/kitamoto/", label: "北本市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ4選" },

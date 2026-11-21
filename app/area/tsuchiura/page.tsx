@@ -204,6 +204,7 @@ export default function AreaTsuchiuraPage() {
         <>茨城県警察の統計では、土浦市の住宅侵入窃盗は令和7年に61件と前年から14件増え、特に忍込みが13件から23件に増えました。外出時と就寝前の施錠を確かめ、鍵の紛失や不調があれば交換をご検討ください。</>,
       ]}
       nearby={[
+        { href: "/area/kamisu/", label: "神栖市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/tsukuba/", label: "つくば市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/ushiku/", label: "牛久市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/mito/", label: "水戸の鍵開け・鍵交換業者おすすめ4選" },
