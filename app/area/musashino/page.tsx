@@ -688,6 +688,7 @@ export default function AreaPageMusashino() {
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/nishitokyo/", label: "西東京市の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/mitaka/", label: "三鷹市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/koganei/", label: "小金井市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/shinjuku-ku/", label: "新宿区の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/suginami-ku/", label: "杉並区の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/nakano-ku/", label: "中野区の鍵開け・鍵交換業者おすすめ4選" },

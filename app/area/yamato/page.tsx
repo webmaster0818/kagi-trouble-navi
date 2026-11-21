@@ -686,6 +686,7 @@ export default function AreaPageYamato() {
               {[
                 { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/sagamihara/", label: "相模原市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/zama/", label: "座間市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/fujisawa/", label: "藤沢市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/atsugi/", label: "厚木市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/chigasaki/", label: "茅ヶ崎市の鍵開け・鍵交換業者おすすめ4選" },

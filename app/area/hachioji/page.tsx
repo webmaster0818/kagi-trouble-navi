@@ -687,6 +687,7 @@ export default function AreaPageHachioji() {
               {[
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/hino/", label: "日野市の鍵開け・鍵交換業者おすすめ5選" },
+                { href: "/area/tama/", label: "多摩市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/nerima-ku/", label: "練馬区の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/suginami-ku/", label: "杉並区の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/setagaya-ku/", label: "世田谷区の鍵開け・鍵交換業者おすすめ4選" },

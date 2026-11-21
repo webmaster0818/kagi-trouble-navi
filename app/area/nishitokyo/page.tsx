@@ -245,6 +245,7 @@ export default function AreaNishitokyoPage() {
       ]}
       nearby={[
         { href: "/area/musashino/", label: "武蔵野市の鍵開け・鍵交換業者おすすめ4選" },
+        { href: "/area/kodaira/", label: "小平市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/nerima-ku/", label: "練馬区の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/tokorozawa/", label: "所沢市の鍵開け・鍵交換業者おすすめ4選" },
       ]}
