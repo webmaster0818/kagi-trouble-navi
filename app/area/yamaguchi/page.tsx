@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/yamaguchi/";
-const UPDATED = "2026年11月4日";
-const UPDATED_ISO = "2026-11-04";
+const UPDATED = "2026年11月21日";
+const UPDATED_ISO = "2026-11-21";
 
 export const metadata: Metadata = {
   title: {
@@ -419,7 +419,12 @@ export default function AreaYamaguchiPage() {
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
             <p className="mb-4">
-              玄関を電子錠にして鍵を持ち歩かなくなった結果、電池が切れたときの備えをしていなかったというケースのように、電子錠やスマートロックの締め出しで多い原因は、電池切れと非常用手段の準備不足です。利便性が高い一方で、物理キーの保管場所が分からなくなっているご家庭も少なくありません。山口で電子錠・スマートロックを使用している方、またはこれから導入する方に向けて、電池切れの予防と家族のスペアの運用方法を整理します。
+              鍵交換を考えている場合は、山口県警察の数字が判断の材料になります。山口県警察によると、山口県内の住宅を対象にした侵入盗の被害は令和4年中113件で、そのうち約7割は無施錠の状態で被害に遭っています。同じページでは、侵入盗の犯人の約7割は侵入に5分以上かかると諦めるといわれていることを挙げ、在宅時や短時間の外出でも常に施錠すること、一定の試験をクリアした防犯性の高い建物部品（CP部品）を設置することを対策として案内しています。鍵交換を業者に頼むときは、交換後の錠が<Link href="/cp-nintei-jou/" className="text-primary underline">CP部品</Link>かどうかを見積もりの段階で確認すると、県警の案内に沿った選び方になります。
+            </p>
+            <p className="mb-4 text-xs text-text-muted leading-relaxed">
+              出典：
+              <a href="https://www.pref.yamaguchi.lg.jp/site/police/208801.html" className="underline" target="_blank" rel="noopener noreferrer">山口県警察「侵入盗被害防止対策」（2026年5月29日更新）</a>
+              。2026年11月21日確認。
             </p>
             <p>
               本記事では、山口市内から依頼できる主要な鍵業者4社を、当サイト編集部が各社公式サイト等で一次確認した料金・受付時間・運営会社の情報のみで比較しています。あわせて、電子錠・スマートロックの電池切れ予防と家族のスペア運用もまとめています。鍵業者選びの参考としてご活用ください。
