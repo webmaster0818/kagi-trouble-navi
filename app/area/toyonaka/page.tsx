@@ -689,6 +689,7 @@ export default function AreaPageToyonaka() {
             <p className="text-sm font-bold text-text-muted mb-3">他エリアの鍵業者まとめ</p>
             <ul className="grid gap-3 md:grid-cols-3">
               {[
+                { href: "/area/mino/", label: "箕面市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/takarazuka/", label: "宝塚市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/neyagawa/", label: "寝屋川市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ5選" },

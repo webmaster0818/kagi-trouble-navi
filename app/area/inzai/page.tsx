@@ -203,6 +203,7 @@ export default function AreaInzaiPage() {
         <>千葉県警察の暫定値では、印西市の侵入盗は令和8年8月末で24件と、前年同期の67件から大きく減りました。空き巣は前年同期と同じ5件のため、外出時の施錠を続け、鍵の紛失や不調があれば交換をご検討ください。</>,
       ]}
       nearby={[
+        { href: "/area/abiko/", label: "我孫子市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/sakura/", label: "佐倉市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/kashiwa/", label: "柏市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/chiba/", label: "千葉の鍵開け・鍵交換業者おすすめ4選" },
