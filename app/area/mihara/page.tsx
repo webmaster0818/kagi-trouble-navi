@@ -181,6 +181,7 @@ export default function AreaMiharaPage() {
         <>広島県警察の暫定値では、三原市の侵入窃盗は令和7年に24件と前年の18件から増え、県全体の減少とは逆の動きでした。外出時・就寝前の施錠を確認し、鍵の不調や紛失があれば交換をご検討ください。</>,
       ]}
       nearby={[
+        { href: "/area/miyoshi/", label: "三次市の鍵開け・鍵交換業者おすすめ2選" },
         { href: "/area/onomichi/", label: "尾道市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/higashihiroshima/", label: "東広島市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/fukuyama/", label: "福山市の鍵開け・鍵交換業者おすすめ4選" },

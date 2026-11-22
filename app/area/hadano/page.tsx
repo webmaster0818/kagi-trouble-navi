@@ -199,6 +199,7 @@ export default function AreaHadanoPage() {
         <>神奈川県警察の令和8年10月暫定値では、秦野市の住宅を狙う侵入盗は12件で、うち11件が空き巣でした。外出時の施錠を徹底し、鍵の紛失や不調があれば交換をご検討ください。</>,
       ]}
       nearby={[
+        { href: "/area/isehara/", label: "伊勢原市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/hiratsuka/", label: "平塚市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/atsugi/", label: "厚木市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/odawara/", label: "小田原市の鍵開け・鍵交換業者おすすめ4選" },
