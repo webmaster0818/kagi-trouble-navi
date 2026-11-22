@@ -205,6 +205,7 @@ export default function AreaKodairaPage() {
         <>警視庁の統計では、小平市の侵入窃盗は令和7年に28件と前年から増えましたが、住宅をねらう手口は8件で前年と同数でした。外出時と就寝前の施錠を確かめ、鍵の紛失や不調があれば交換をご検討ください。</>,
       ]}
       nearby={[
+        { href: "/area/kokubunji/", label: "国分寺市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/nishitokyo/", label: "西東京市の鍵開け・鍵交換業者おすすめ5選" },
         { href: "/area/tachikawa/", label: "立川市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/koganei/", label: "小金井市の鍵開け・鍵交換業者おすすめ3選" },

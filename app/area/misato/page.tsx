@@ -203,6 +203,7 @@ export default function AreaMisatoPage() {
         <>埼玉県警察の確定値では、三郷市の空き巣・忍込み・居空きの合計は令和7年に16件と前年の24件から減りましたが、忍込みは4件から6件に増えました。在宅中・就寝中も施錠を確認し、鍵の不調や紛失があれば早めに交換をご検討ください。</>,
       ]}
       nearby={[
+        { href: "/area/yashio/", label: "八潮市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/soka/", label: "草加市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/koshigaya/", label: "越谷市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/kawaguchi/", label: "川口市の鍵開け・鍵交換業者おすすめ4選" },

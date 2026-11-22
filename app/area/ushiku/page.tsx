@@ -203,6 +203,7 @@ export default function AreaUshikuPage() {
         <>茨城県警察の確定値では、牛久市の住宅侵入窃盗は令和7年28件で、空き巣が前年の13件から19件に増えました。外出時の施錠を徹底し、鍵の不調や紛失があれば交換をご検討ください。</>,
       ]}
       nearby={[
+        { href: "/area/toride/", label: "取手市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/tsukuba/", label: "つくば市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/mito/", label: "水戸の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/koga/", label: "古河市の鍵開け・鍵交換業者おすすめ4選" },

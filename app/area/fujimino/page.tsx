@@ -203,6 +203,7 @@ export default function AreaFujiminoPage() {
         <>埼玉県警察の確定値では、ふじみ野市の空き巣は減ったものの、忍込みは令和7年に15件と前年の4件から増えました。就寝前の施錠を確かめ、鍵の紛失や不調があれば早めに交換をご検討ください。</>,
       ]}
       nearby={[
+        { href: "/area/sakado/", label: "坂戸市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/kawagoe/", label: "川越市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/tokorozawa/", label: "所沢市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ4選" },
