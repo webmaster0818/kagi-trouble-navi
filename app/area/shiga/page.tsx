@@ -208,6 +208,7 @@ export default function AreaShigaPage() {
         { href: "/area/otsu/", label: "大津の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/kusatsu/", label: "草津市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/kyoto/", label: "京都の鍵開け・鍵交換業者おすすめ5選" },
+{ href: "/area/higashiomi/", label: "東近江市の鍵開け・鍵交換業者おすすめ2選" },
       ]}
       related={[
         { href: "/akisu-shinnyu-teguchi/", label: "空き巣の侵入手口と対策" },

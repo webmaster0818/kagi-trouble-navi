@@ -210,6 +210,7 @@ export default function AreaKodairaPage() {
         { href: "/area/tachikawa/", label: "立川市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/koganei/", label: "小金井市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/kunitachi/", label: "国立市の鍵開け・鍵交換業者おすすめ3選" },
+{ href: "/area/higashimurayama/", label: "東村山市の鍵開け・鍵交換業者おすすめ3選" },
       ]}
       related={[
         { href: "/akisu-shinnyu-teguchi/", label: "空き巣の侵入手口と対策" },

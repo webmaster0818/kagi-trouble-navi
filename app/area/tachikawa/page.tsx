@@ -691,6 +691,7 @@ export default function AreaPageTachikawa() {
                 { href: "/area/kunitachi/", label: "国立市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/chofu/", label: "調布市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/hachioji/", label: "八王子市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/akishima/", label: "昭島市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/machida/", label: "町田市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/tokyo/", label: "東京の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/nerima-ku/", label: "練馬区の鍵開け・鍵交換業者おすすめ4選" },

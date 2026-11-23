@@ -206,6 +206,7 @@ export default function AreaSakadoPage() {
         { href: "/area/kawagoe/", label: "川越市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/fujimino/", label: "ふじみ野市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ4選" },
+{ href: "/area/higashimatsuyama/", label: "東松山市の鍵開け・鍵交換業者おすすめ3選" },
       ]}
       related={[
         { href: "/akisu-shinnyu-teguchi/", label: "空き巣の侵入手口と対策" },
