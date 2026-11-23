@@ -686,6 +686,7 @@ export default function AreaPageIzumi() {
               {[
                 { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/sakai/", label: "堺の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/osakasayama/", label: "大阪狭山市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/kishiwada/", label: "岸和田市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/yao/", label: "八尾市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/higashiosaka/", label: "東大阪市の鍵開け・鍵交換業者おすすめ4選" },
