@@ -225,6 +225,7 @@ export default function AreaKanumaPage() {
         { href: "/area/utsunomiya/", label: "宇都宮の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/oyama/", label: "小山市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/otawara/", label: "大田原市の鍵開け・鍵交換業者おすすめ2選" },
+        { href: "/area/nikko/", label: "日光市の鍵開け・鍵交換業者おすすめ2選" },
       ]}
       related={[
         { href: "/kagiana-touketsu/", label: "鍵穴が凍ったときの対処" },

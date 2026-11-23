@@ -697,6 +697,7 @@ export default function AreaPageSuita() {
                 { href: "/area/takatsuki/", label: "高槻市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/hirakata/", label: "枚方市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/higashiosaka/", label: "東大阪市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/settsu/", label: "摂津市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/sakai/", label: "堺の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kyoto/", label: "京都の鍵開け・鍵交換業者おすすめ5選" },
               ].map((l) => (

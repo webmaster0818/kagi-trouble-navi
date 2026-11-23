@@ -205,6 +205,7 @@ export default function AreaAsakaPage() {
         { href: "/area/niiza/", label: "新座市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/toda/", label: "戸田市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/nerima-ku/", label: "練馬区の鍵開け・鍵交換業者おすすめ4選" },
+        { href: "/area/shiki/", label: "志木市の鍵開け・鍵交換業者おすすめ3選" },
       ]}
       related={[
         { href: "/akisu-shinnyu-teguchi/", label: "空き巣の侵入手口と対策" },

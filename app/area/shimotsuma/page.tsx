@@ -207,6 +207,7 @@ export default function AreaShimotsumaPage() {
         { href: "/area/chikusei/", label: "筑西市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/tsukuba/", label: "つくば市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/koga/", label: "古河市の鍵開け・鍵交換業者おすすめ4選" },
+        { href: "/area/joso/", label: "常総市の鍵開け・鍵交換業者おすすめ3選" },
       ]}
       related={[
         { href: "/akisu-shinnyu-teguchi/", label: "空き巣の侵入手口と対策" },
