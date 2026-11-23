@@ -7,11 +7,11 @@ import type { Metadata } from "next";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/agents/kagizaru/";
-const UPDATED = "2026年10月26日";
+const UPDATED = "2026年11月24日";
 
 export const metadata: Metadata = {
-  title: { absolute: "鍵屋の鍵猿（鍵ザル）の口コミ・評判は？運営会社・料金・受付時間・保証を調査｜鍵トラブルナビ" },
-  description: "鍵屋の鍵猿（鍵ザル）はSLS株式会社（大阪本社）が運営する出張専門の鍵屋です。電話受付は365日8:00〜23:00、玄関の鍵開けは8,800円〜（税込）、出張料・見積もりは無料、施工後1年の工事保証と商品保証があります。秋田・福井・鳥取・島根・徳島・宮崎は対応エリア外です。",
+  title: { absolute: "鍵屋の鍵猿（鍵ザル）の口コミ・評判は？料金表・夜間早朝料金・支払い方法・保証を調査｜鍵トラブルナビ" },
+  description: "鍵屋の鍵猿（鍵ザル）はSLS株式会社（大阪本社）が運営する出張専門の鍵屋です。電話受付は365日8:00〜23:00、玄関の鍵開けは8,800円〜（税込）、21:00〜7:59の作業は夜間早朝料金5,500円（税込）、出張料・見積もりは無料、施工後1年の工事保証と商品保証があります。料金表・支払い方法も掲載。",
   alternates: { canonical: `${SITE}${PATH}` },
   openGraph: {
     title: "鍵屋の鍵猿（鍵ザル）の口コミ・評判は？運営会社・料金・受付時間・保証を調査",
@@ -25,7 +25,8 @@ export const metadata: Metadata = {
 const toc = [
     ["about", "鍵猿とはどんなサービスか"],
     ["service", "対応している鍵トラブルの種類"],
-    ["price", "鍵猿の料金体系と相場"],
+    ["price", "鍵猿の料金表（公式）"],
+    ["flow", "依頼の流れと支払い方法"],
     ["reviews", "利用者の口コミ・評判"],
     ["merit", "メリットと注意点"],
     ["recommend", "鍵猿をおすすめする方"],
@@ -52,9 +53,13 @@ const faqs = [
     {"q": "どのくらいの時間で来てくれますか", "a": "最短60秒で出動、最短15分で現場到着を掲げています。拠点からの距離や状況により到着時間は変動します。"},
     {"q": "保証はありますか", "a": "1年間の無料工事保証・無償商品保証があるとされています。作業後のトラブルに備えられる点は、判断材料の一つです。"},
     {"q": "受付時間と対応エリアを教えてください", "a": "電話受付は8:00〜23:00で、施工は深夜・早朝も対応、365日年中無休とされています。対応エリアは北海道から沖縄まで全国ですが、秋田・福井・鳥取・島根・徳島・宮崎は対応エリア外です（公式の対応エリアページ 2026年10月17日確認）。"}
+    ,{"q": "夜間や早朝に頼むと料金は上がりますか", "a": "21:00〜7:59に作業を行う場合は、夜間早朝料金5,500円（税込）がかかります。スタッフの訪問後にキャンセルした場合も、同じく夜間早朝料金が発生します。休日に料金が上がることはなく、全国の対応エリアで同じ料金体系です（公式の料金ページ・よくある質問 2026年11月24日確認）。"},
+    {"q": "支払い方法は何が使えますか", "a": "現金のほか、クレジットカード（VISA・Master・AMEX・Diners）、電子マネー（au PAY・メルペイ・PayPay・銀聯など）、後払いに対応しています。ただし、一部地域ではクレジットカード・電子マネーが使えず、現金のみとなる場合があります（公式サイト 2026年11月24日確認）。"},
+    {"q": "作業時間はどのくらいかかりますか", "a": "公式のよくある質問では、作業はおおむね10分〜2時間ほどとされています。鍵開けの後の鍵交換も、当日に対応できる場合があります。"},
+    {"q": "鍵開けで本人確認はありますか", "a": "鍵開けの際は、運転免許証などの本人確認書類の提示を求められます。書類が手元にない場合でも対応できることがあるため、依頼時に相談してください（公式のよくある質問 2026年11月24日確認）。"}
   ];
 
-const sources = [["鍵猿 公式（SLS株式会社）", "https://sls.co.jp/kagizaru/"], ["鍵猿 口コミ・評判（みん評）", "https://minhyo.jp/kagizaru"], ["鍵猿 口コミ・料金（セーフリー）", "https://safely.co.jp/ky/vendor/slskagizaru/"], ["鍵猿 利用者の口コミ（専門家の相談室）", "https://www.sodanshitsu.co.jp/kagizaru/"]];
+const sources = [["鍵猿 公式（SLS株式会社）", "https://sls.co.jp/kagizaru/"], ["鍵猿 料金ページ", "https://sls.co.jp/kagizaru/price/"], ["鍵猿 口コミ・評判（みん評）", "https://minhyo.jp/kagizaru"], ["鍵猿 口コミ・料金（セーフリー）", "https://safely.co.jp/ky/vendor/slskagizaru/"], ["鍵猿 利用者の口コミ（専門家の相談室）", "https://www.sodanshitsu.co.jp/kagizaru/"]];
 
 export default function KagizaruPage() {
   const articleSchema = {
@@ -64,7 +69,7 @@ export default function KagizaruPage() {
     description: "鍵屋の鍵猿の料金・到着時間・保証・利用者の口コミを中立的な立場で調査し、利用前に確認すべきメリットと注意点を解説します。",
     image: `${SITE}/images/kv-top.jpg`,
     datePublished: "2026-06-20T00:00:00+09:00",
-    dateModified: "2026-10-26T00:00:00+09:00",
+    dateModified: "2026-11-24T00:00:00+09:00",
     author: { "@type": "Organization", name: "鍵トラブルナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "鍵トラブルナビ", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${PATH}` },
@@ -121,8 +126,8 @@ export default function KagizaruPage() {
 
           <div className="mb-10 rounded-2xl border border-amber-200 bg-amber-50 p-5">
             <p className="font-bold text-slate-800 mb-2">鍵猿（鍵ザル）の運営会社と利用前に確認できること</p>
-            <p className="leading-loose text-slate-700 mb-3">鍵屋の鍵猿（鍵ザル）は、SLS株式会社が運営する出張専門の鍵屋です。SLS株式会社は大阪本社・横浜営業所を中心に拠点を置いています（<a href="https://sls.co.jp/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">SLS株式会社 公式サイト</a>）。店舗での受付や鍵の持ち込みには対応しておらず、電話受付は365日・8:00〜23:00です。秋田・福井・鳥取・島根・徳島・宮崎の6県は対応エリア外とされています（<a href="https://sls.co.jp/kagizaru/area/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">公式の対応エリアページ</a>）。</p>
-            <p className="leading-loose text-slate-700 mb-3">公式サイトでは、出張料・見積もりは無料で、作業前にすべての費用を含む見積もり金額を提示し、同意を得てから施工するとしています。見積もりに納得できない場合のキャンセルは無料ですが、<strong>鍵開けなど急を要する出動では、スタッフ手配後のキャンセルにキャンセル料がかかる場合がある</strong>と記載されています。施工後は1年間の無料工事保証と無償商品保証が付きます（<a href="https://sls.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">鍵屋の鍵猿 公式サイト</a>）。いずれも2026年10月26日に確認しました。</p>
+            <p className="leading-loose text-slate-700 mb-3">鍵屋の鍵猿（鍵ザル）は、SLS株式会社が運営する出張専門の鍵屋です。SLS株式会社は大阪本社・横浜営業所を中心に拠点を置いています（<a href="https://sls.co.jp/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">SLS株式会社 公式サイト</a>）。店舗での受付や鍵の持ち込みには対応しておらず、電話受付は365日・8:00〜23:00です。秋田・福井・鳥取・島根・徳島・宮崎の6県と離島は対応エリア外とされています（<a href="https://sls.co.jp/kagizaru/area/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">公式の対応エリアページ</a>）。</p>
+            <p className="leading-loose text-slate-700 mb-3">公式サイトでは、出張料・見積もりは無料で、作業前にすべての費用を含む見積もり金額を提示し、同意を得てから施工するとしています。見積もりに納得できない場合のキャンセルは無料ですが、<strong>鍵開けなど急を要する出動では、スタッフ手配後のキャンセルにキャンセル料がかかる場合がある</strong>と記載されています。21:00〜7:59の作業には夜間早朝料金5,500円（税込）がかかり、この時間帯にスタッフの訪問後にキャンセルした場合も同じ料金が発生します（<a href="https://sls.co.jp/kagizaru/price/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">公式の料金ページ</a>・2026年11月24日確認）。施工後は1年間の無料工事保証と無償商品保証が付きます（<a href="https://sls.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">鍵屋の鍵猿 公式サイト</a>）。いずれも2026年10月26日に確認しました。</p>
             <p className="leading-loose text-slate-700 text-sm">口コミ・評判の傾向は、下の「<a href="#reviews" className="text-amber-700 underline">利用者の口コミ・評判</a>」にまとめています（口コミサイトの調査時点は2026年7月です）。</p>
           </div>
 
@@ -142,6 +147,7 @@ export default function KagizaruPage() {
           <section id="about" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">鍵猿とはどんなサービスか</h2>
             <p className="leading-loose mb-4 text-slate-700">鍵猿（かぎざる）は、SLS株式会社（大阪本社）が運営する鍵トラブル解決サービスです。プライバシーマークを取得し、自社コールセンターと自社スタッフによる施工体制で、鍵開け・鍵交換・鍵修理・鍵作成に全国対応しています。</p>
+            <p className="leading-loose mb-4 text-slate-700">公式サイトでは、2007年の創業、官公庁と直接取引できる資格の保有、防犯設備士の在籍（一部在籍していないエリアあり）を掲げています。拠点は大阪本社（大阪府吹田市豊津町1-18 エクラート江坂ビル8F）と横浜営業所（横浜市港北区新横浜2-12-12 新横浜IKビル303）です（出典：<a href="https://sls.co.jp/kagizaru/reason/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">鍵猿が選ばれる理由</a>・<a href="https://sls.co.jp/corporate/place/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">SLS株式会社 拠点</a>・2026年11月24日確認）。</p>
             <p className="leading-loose mb-4 text-slate-700">基本料・見積料・出張料はすべて0円で、作業前に合計金額を提示し、追加請求を行わない料金体系を掲げています。1年間の無料工事保証・無償商品保証があります。公式サイトのトップページでは、問い合わせの件数として「年間10万件以上のお問合せ」と掲げています（作業・施工の件数ではなく、問い合わせの件数です。出典：<a href="https://sls.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">鍵屋の鍵猿 公式サイト</a>・2026年10月23日確認）。</p>
             <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 mt-6">
               <p className="font-bold text-slate-800 mb-2">名前の表記について</p>
@@ -165,26 +171,67 @@ export default function KagizaruPage() {
 
           <section id="price" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">鍵猿の料金体系と相場</h2>
-            <p className="leading-loose mb-5 text-slate-700">料金は、出張料・作業費・部材費を含めた総額を事前に提示する方式です。作業内容や鍵の種類によって変わるため、最終的な金額は無料見積もりでご確認ください。</p>
+            <p className="leading-loose mb-5 text-slate-700">公式の料金ページでは、1か所ごとの料金の目安を、出張料・見積もり料・基本料を含めた総額（税込）で示しています。作業前に提示される見積もり金額が最終金額で、追加の作業が必要になった場合は改めて見積もりを提示するとしています（2026年11月24日確認）。</p>
             <div className="overflow-x-auto">
               <table className="table w-full border border-slate-200">
-                <thead><tr className="bg-slate-100 text-slate-700"><th>項目</th><th>料金の目安</th><th>備考</th></tr></thead>
+                <thead><tr className="bg-slate-100 text-slate-700"><th>対象</th><th>作業</th><th>料金の目安（税込）</th></tr></thead>
                 <tbody>
-                  <tr className="border-b border-slate-200"><td className="font-medium">鍵開け</td><td className="font-bold text-amber-700">8,800円〜（税込）</td><td className="text-sm text-slate-600">玄関の鍵開けの目安</td></tr>
-                  <tr className="border-b border-slate-200"><td className="font-medium">鍵交換</td><td className="font-bold text-amber-700">11,000円〜（税込）＋部品代</td><td className="text-sm text-slate-600">鍵の種類・作業内容で変動</td></tr>
-                  <tr className="border-b border-slate-200"><td className="font-medium">会計方式</td><td className="font-bold text-amber-700">基本料・見積料・出張料 0円</td><td className="text-sm text-slate-600">作業前に合計金額を提示・追加請求なし</td></tr>
+                  {[
+                    ["住宅", "鍵開け", "8,800円〜"],
+                    ["住宅", "鍵交換", "11,000円〜＋部品代"],
+                    ["住宅", "鍵修理", "8,800円〜"],
+                    ["住宅", "鍵の取り付け", "16,500円〜＋部品代"],
+                    ["住宅", "鍵作成", "16,500円〜"],
+                    ["車", "鍵開け／鍵作成", "8,800円〜／16,500円〜"],
+                    ["バイク", "鍵開け／鍵作成", "8,800円〜／13,200円〜"],
+                    ["金庫", "鍵開け／鍵修理", "8,800円〜"],
+                    ["金庫", "鍵交換", "11,000円〜＋部品代"],
+                    ["金庫", "鍵作成", "16,500円〜"],
+                    ["金庫", "廃棄・買い替え（家庭用のみ）", "現地で見積もり（エリアにより対応不可）"],
+                    ["ドアクローザー", "交換・新規取り付け", "16,500円〜＋部品代"],
+                    ["加算", "夜間早朝料金（21:00〜7:59の作業）", "5,500円"],
+                    ["加算", "高速道路・有料道路上（PA・SA含む）での作業", "3,300円"],
+                  ].map(([a, b, c], i) => (
+                    <tr key={i} className="border-b border-slate-200"><td className="text-sm text-slate-600">{a}</td><td className="font-medium">{b}</td><td className="font-bold text-amber-700">{c}</td></tr>
+                  ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-slate-500 mt-3">※ 料金は変動する場合があります。正確な金額は無料の見積もりでご確認ください。</p>
+            <ul className="text-sm text-slate-600 mt-3 space-y-1 list-disc pl-5">
+              <li>基本料・見積料・出張料は0円です。休日に料金が上がることはなく、全国の対応エリアで同じ料金体系です</li>
+              <li>鍵の種類ごとの目安として、公式の料金ページにはディンプルキーの交換 27,500円〜55,000円、刻みキーの交換 16,500円〜27,500円、電子錠の交換 59,400円〜100,000円などの記載があります</li>
+              <li>スタッフの訪問後にキャンセルした場合も、21:00〜7:59は夜間早朝料金がかかります</li>
+            </ul>
+            <p className="text-xs text-slate-500 mt-2">出典：<a href="https://sls.co.jp/kagizaru/price/" target="_blank" rel="noopener noreferrer" className="underline">鍵屋の鍵猿 料金ページ</a>・<a href="https://sls.co.jp/kagizaru/reason/" target="_blank" rel="noopener noreferrer" className="underline">鍵猿が選ばれる理由</a>（2026年11月24日確認）。料金は変わる場合があるため、正確な金額は無料の見積もりでご確認ください。</p>
+          </section>
+
+          <section id="flow" className="scroll-mt-20 mb-14">
+            <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">依頼の流れと支払い方法</h2>
+            <ol className="space-y-3 text-slate-700 mb-6">
+              {[
+                ["電話で相談", "フリーダイヤルに電話し、鍵の状況と場所を伝えます（電話受付は365日8:00〜23:00。メールは平日10時〜18時に返信、LINEでの相談・簡易見積もりもあり）。"],
+                ["スタッフが出張", "近くのスタッフが現場へ向かいます。到着時間は拠点からの距離や状況で変わります。"],
+                ["現地で見積もり（無料）", "作業前にすべての費用を含む見積もり金額が提示されます。納得できなければ、その場で断れます。"],
+                ["作業", "見積もりに同意してから作業に入ります。鍵開けでは本人確認書類の提示を求められます。"],
+                ["確認・支払い", "作業内容を確認してから支払います。"],
+              ].map(([t, d], i) => (
+                <li key={i} className="flex gap-3"><span className="font-bold text-amber-600">{i + 1}.</span><span><strong>{t}</strong>：{d}</span></li>
+              ))}
+            </ol>
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p className="font-bold text-slate-800 mb-2">使える支払い方法</p>
+              <p className="text-sm leading-relaxed text-slate-700">現金、クレジットカード（VISA・Master・AMEX・Diners）、電子マネー（au PAY・メルペイ・PayPay・銀聯など）、後払いに対応しています。一部地域ではクレジットカード・電子マネーが使えず、現金のみとなる場合があります。</p>
+            </div>
+            <p className="text-xs text-slate-500 mt-2">出典：<a href="https://sls.co.jp/kagizaru/flow/" target="_blank" rel="noopener noreferrer" className="underline">鍵屋の鍵猿 ご依頼の流れ</a>・<a href="https://sls.co.jp/kagizaru/faq/" target="_blank" rel="noopener noreferrer" className="underline">よくある質問</a>・<a href="https://sls.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer" className="underline">公式トップ</a>（2026年11月24日確認）</p>
           </section>
 
           <section id="reviews" className="scroll-mt-20 mb-14">
             <h2 className="text-2xl md:text-3xl font-bold border-l-4 border-amber-500 pl-4 mb-5">利用者の口コミ・評判</h2>
             <div className="rounded-2xl bg-amber-50 border border-amber-200 p-6 mb-6">
-              <p className="text-slate-700 text-sm leading-relaxed">口コミ・比較サイト（みん評、専門家の相談室等）の公開口コミを編集部が調査しました（2026年7月時点）。みん評には約52件の口コミが掲載されています。<strong>好意的な傾向</strong>は「到着・対応が早い（最短15分・深夜対応）で緊急時に安心」「スタッフの対応が丁寧」「鍵を壊さず開けてくれる技術力」、<strong>否定的な傾向</strong>は「料金が高い（多くは事前に見積もりを取っていないケース）」「サイト表示料金と実額の差（夜間出張料等の加算）」「拠点・担当者による対応差」です。</p>
-              <p className="text-slate-500 text-xs leading-relaxed mt-3">※ 出典：みん評・専門家の相談室ほか公開口コミ、調査時点2026年7月。みん評に表示される「2.9」は当該カテゴリの平均値であり鍵猿単体の平均★ではありません。否定的な声の多くは、事前に見積もりを取らずに依頼し、現場で夜間出張料等が加算されて想定を超えたケースです。作業前に総額の見積もりを確認することで、このような食い違いを避けることができます。</p>
+              <p className="text-slate-700 text-sm leading-relaxed">口コミ・比較サイト（みん評、専門家の相談室等）の公開口コミを編集部が調査しました（2026年7月時点）。みん評には約52件の口コミが掲載されています。<strong>好意的な傾向</strong>は「到着・対応が早い（最短15分・深夜対応）で緊急時に安心」「スタッフの対応が丁寧」「鍵を壊さず開けてくれる技術力」、<strong>否定的な傾向</strong>は「料金が高い（多くは事前に見積もりを取っていないケース）」「サイト表示料金と実額の差（夜間早朝料金等の加算）」「拠点・担当者による対応差」です。</p>
+              <p className="text-slate-500 text-xs leading-relaxed mt-3">※ 出典：みん評・専門家の相談室ほか公開口コミ、調査時点2026年7月。みん評に表示される「2.9」は当該カテゴリの平均値であり鍵猿単体の平均★ではありません。否定的な声の多くは、事前に見積もりを取らずに依頼し、現場で夜間早朝料金（21:00〜7:59の作業は5,500円）等が加算されて想定を超えたケースです。なお、出張料は公式では無料です（2026年11月24日確認）。作業前に総額の見積もりを確認することで、このような食い違いを避けることができます。</p>
             </div>
+            <p className="text-sm text-slate-600 leading-relaxed mb-6">参考として、公式サイトのトップには「お客様の声」の自社集計として「平均的な評価 4.61点（総評価数 6,412件）」が掲載されています。第三者の口コミサイトの評価ではない点にご注意ください（<a href="https://sls.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline">鍵屋の鍵猿 公式サイト</a>・2026年11月24日確認）。</p>
             <h3 className="font-bold text-lg mb-3">良い口コミの傾向</h3>
             <div className="space-y-4 mb-8">
               {goodReviews.map((r, i) => (
@@ -218,7 +265,8 @@ export default function KagizaruPage() {
                   <li>基本料・見積料・出張料がすべて0円</li>
                   <li>1年間の無料工事保証・無償商品保証</li>
                   <li>自社コールセンター・自社スタッフによる施工</li>
-                  <li>クレジットカード対応（VISA/Master/AMEX/Diners）</li>
+                  <li>クレジットカード（VISA/Master/AMEX/Diners）・電子マネー・後払いに対応（一部地域は現金のみ）</li>
+                  <li>休日料金なし・全国同一の料金体系</li>
                 </ul>
               </div>
               <div className="rounded-2xl border-2 border-rose-200 bg-rose-50 p-6">
@@ -228,6 +276,7 @@ export default function KagizaruPage() {
                   <li>スタッフ対応にばらつきがあるという指摘がある</li>
                   <li>電話受付は8:00〜23:00（施工は深夜・早朝も対応）</li>
                   <li>作業前に提示される合計金額の確認が必要</li>
+                  <li>21:00〜7:59の作業は夜間早朝料金5,500円がかかる（訪問後のキャンセルも同じ）</li>
                 </ul>
               </div>
             </div>
@@ -253,6 +302,15 @@ export default function KagizaruPage() {
               <li className="flex gap-3"><span className="font-bold text-amber-600">4.</span>作業後の保証やアフター対応の有無</li>
             </ol>
             <p className="leading-loose mt-4 text-slate-700">料金や対応は地域・状況で変わるため、鍵猿を含めて<Link href="/" className="text-amber-700 underline">複数の鍵業者を比較</Link>し、見積もりを取ったうえで選ぶことをおすすめします。</p>
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 mt-6">
+              <p className="font-bold text-slate-800 mb-2">関連ページ</p>
+              <ul className="space-y-1 text-sm list-disc pl-5">
+                <li><Link href="/ryokin-index/" className="text-amber-700 underline">鍵業者の公式料金一覧（確認日つき）</Link></li>
+                <li><Link href="/agents/kagi110ban/" className="text-amber-700 underline">カギ110番の口コミ・評判</Link>／<Link href="/agents/seikatsu-kyukyusha/" className="text-amber-700 underline">鍵の生活救急車の口コミ・評判</Link></li>
+                <li><Link href="/shimedashi/" className="text-amber-700 underline">鍵を閉め出されたときの対処</Link>／<Link href="/car-inlock/" className="text-amber-700 underline">車のインロック</Link>／<Link href="/kinko-kaijo/" className="text-amber-700 underline">金庫が開かないとき</Link></li>
+                <li><Link href="/kagiya-kougaku-seikyuu/" className="text-amber-700 underline">鍵屋の高額請求を避けるには</Link>／<Link href="/agents/nitamei-kagiya/" className="text-amber-700 underline">名前が似た鍵屋の見分け方</Link></li>
+              </ul>
+            </div>
           </section>
 
           <section id="faq" className="scroll-mt-20 mb-14">
@@ -273,6 +331,8 @@ export default function KagizaruPage() {
             <p className="leading-loose mb-4 text-slate-700">本記事の事実情報・口コミの傾向は、以下の公式サイトおよび口コミ・比較サイトを参照し、編集部が確認・要約しています（確認日：{UPDATED}）。</p>
             <ul className="space-y-2 text-sm">
               <li><a href="https://sls.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">鍵猿 公式（SLS株式会社）</a></li>
+              <li><a href="https://sls.co.jp/kagizaru/price/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">鍵猿 料金ページ（公式）</a></li>
+              <li><a href="https://sls.co.jp/kagizaru/faq/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">鍵猿 よくある質問（公式）</a></li>
               <li><a href="https://minhyo.jp/kagizaru" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">鍵猿 口コミ・評判（みん評）</a></li>
               <li><a href="https://safely.co.jp/ky/vendor/slskagizaru/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">鍵猿 口コミ・料金（セーフリー）</a></li>
               <li><a href="https://www.sodanshitsu.co.jp/kagizaru/" target="_blank" rel="noopener noreferrer" className="text-amber-700 underline break-all">鍵猿 利用者の口コミ（専門家の相談室）</a></li>
