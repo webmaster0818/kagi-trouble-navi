@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/kobe/";
-const UPDATED = "2026年11月4日";
-const UPDATED_ISO = "2026-11-04";
+const UPDATED = "2026年11月23日";
+const UPDATED_ISO = "2026-11-23";
 
 export const metadata: Metadata = {
   title: {
@@ -443,6 +443,16 @@ export default function AreaKobePage() {
 
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
+            <p className="mb-4">
+              神戸で鍵交換を考えている場合は、兵庫県警察が公表している数字と防犯の案内が判断の材料になります。兵庫県警察の「市区町別主な刑法犯認知状況」によると、令和7年中の神戸市の認知件数は空き巣69件・忍込み14件でした（兵庫県全体では空き巣318件・忍込み108件）。兵庫県警察は、犯人は無施錠の玄関などから侵入するとして、短時間の外出や在宅中も施錠すること、防犯性能の高い建物部品（ドア・錠など）や補助錠を取り付けることを防犯ポイントに挙げています。業者に鍵交換を頼むときは、交換後のシリンダーが<Link href="/cp-nintei-jou/" className="text-primary underline">CP部品</Link>かどうかを見積もりの段階で確認すると、県警の案内に沿った選び方になります。
+            </p>
+            <p className="mb-4 text-xs text-text-muted leading-relaxed">
+              出典：
+              <a href="https://www.police.pref.hyogo.lg.jp/seikatu/gaitou/statis/index.htm" className="underline" target="_blank" rel="noopener noreferrer">兵庫県警察「地域の犯罪情勢（市区町別刑法犯認知状況）」令和7年中（生活安全企画課調べ）</a>
+              ／
+              <a href="https://www.police.pref.hyogo.lg.jp/seikatu/akisu/index.htm" className="underline" target="_blank" rel="noopener noreferrer">兵庫県警察「泥棒や強盗などの侵入を防ぎましょう！」</a>
+              。2026年11月23日確認。
+            </p>
             <p className="mb-4">
               マンションのオートロックの外で鍵がないことに気づいた場合や、引っ越しを機に鍵を交換したい場合など、神戸で鍵トラブルにあったときに、どの業者に依頼すればよいか迷う方は少なくありません。神戸は大阪と同様に、全国展開の鍵業者に加えて大阪に本社を置く自社施工の業者（鍵猿）も選択肢に入るエリアです。また、オートロック付きマンションの締め出しでは、鍵業者に依頼する前に、業者が対応できる範囲を把握しておくことが大切です。
             </p>
