@@ -687,6 +687,7 @@ export default function AreaPageTakasaki() {
             <ul className="grid gap-3 md:grid-cols-3">
               {[
                 { href: "/area/isesaki/", label: "伊勢崎市の鍵開け・鍵交換業者おすすめ3選" },
+                { href: "/area/kiryu/", label: "桐生市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/oyama/", label: "小山市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/maebashi/", label: "前橋の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/gunma/", label: "群馬県の鍵開け・鍵交換業者おすすめ3選" },

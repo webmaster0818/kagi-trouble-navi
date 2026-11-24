@@ -703,6 +703,7 @@ export default function AreaPageKishiwada() {
                 { href: "/area/nara/", label: "奈良の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kobe/", label: "神戸の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/izumi/", label: "和泉市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/sennan/", label: "泉南市の鍵開け・鍵交換業者おすすめ3選" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
