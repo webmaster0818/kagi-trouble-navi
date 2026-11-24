@@ -691,6 +691,7 @@ export default function AreaPageHimeji() {
             <ul className="grid gap-3 md:grid-cols-3">
               {[
                 { href: "/area/kakogawa/", label: "加古川市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/toyooka/", label: "豊岡市の鍵開け・鍵交換業者おすすめ2選" },
                 { href: "/area/kobe/", label: "神戸の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kobe-chuo/", label: "神戸市中央区の鍵開け・鍵交換業者おすすめ5選" },
                 { href: "/area/kobe-nada/", label: "神戸市灘区の鍵開け・鍵交換業者おすすめ5選" },

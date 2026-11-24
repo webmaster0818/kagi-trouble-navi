@@ -688,6 +688,7 @@ export default function AreaPageTakasaki() {
               {[
                 { href: "/area/isesaki/", label: "伊勢崎市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/kiryu/", label: "桐生市の鍵開け・鍵交換業者おすすめ3選" },
+                { href: "/area/fujioka/", label: "藤岡市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/oyama/", label: "小山市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/maebashi/", label: "前橋の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/gunma/", label: "群馬県の鍵開け・鍵交換業者おすすめ3選" },

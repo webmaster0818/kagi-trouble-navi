@@ -691,6 +691,7 @@ export default function AreaPageKumagaya() {
                 { href: "/area/saitama-omiya/", label: "さいたま市大宮区の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/kawagoe/", label: "川越市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/fukaya/", label: "深谷市の鍵開け・鍵交換業者おすすめ3選" },
+                { href: "/area/gyoda/", label: "行田市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/kawaguchi/", label: "川口市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/ageo/", label: "上尾市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/koshigaya/", label: "越谷市の鍵開け・鍵交換業者おすすめ4選" },
