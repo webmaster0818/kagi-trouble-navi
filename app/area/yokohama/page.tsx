@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/yokohama/";
-const UPDATED = "2026年11月4日";
-const UPDATED_ISO = "2026-11-04";
+const UPDATED = "2026年11月24日";
+const UPDATED_ISO = "2026-11-24";
 
 export const metadata: Metadata = {
   title: {
@@ -386,6 +386,19 @@ export default function AreaYokohamaPage() {
 
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
+            <p className="mb-4">
+              横浜で鍵交換を考えている場合は、神奈川県警察が公表している空き巣の発生状況と防犯の案内が判断の材料になります。神奈川県警察の「空き巣・忍込み・居空きの発生状況」によると、県内の空き巣は令和8年10月末現在で396件（暫定値）、令和7年は1年間で678件でした。同ページの集計では、侵入口は窓（居室等）が49.1%、表出入口が27.7%、侵入手口はガラス破りが39.4%、無締り（鍵の掛け忘れ）が34.8%、合かぎが7.9%です。横浜市内の警察署ごとの件数も同ページで確認できます。
+            </p>
+            <p className="mb-4">
+              神奈川県警察は玄関・勝手口の対策として、ドアの錠や扉を破壊が困難なもの（防犯建物部品）と交換すること、主錠のほかに補助錠を設置することを挙げています。業者に鍵交換を頼むときは、交換後のシリンダーが<Link href="/cp-nintei-jou/" className="text-primary underline">CP部品</Link>かどうかを見積もりの段階で確認すると、県警の案内に沿った選び方になります。
+            </p>
+            <p className="mb-4 text-xs text-text-muted leading-relaxed">
+              出典：
+              <a href="https://www.police.pref.kanagawa.jp/kurashi/gaito_hanzai/mesd0065.html" className="underline" target="_blank" rel="noopener noreferrer">神奈川県警察「空き巣・忍込み・居空きの発生状況」（2026年11月18日更新・令和8年の数値は暫定値）</a>
+              ／
+              <a href="https://www.police.pref.kanagawa.jp/kurashi/anzen_machi/mesd0095.html" className="underline" target="_blank" rel="noopener noreferrer">神奈川県警察「防犯のポイント」侵入盗</a>
+              。2026年11月24日確認。
+            </p>
             <p className="mb-4">
               「マンションのオートロックの外で鍵がないことに気づいた」「引っ越してきたばかりで鍵を交換したい」など、横浜で鍵トラブルに遭った際に、どの業者に依頼すればよいか迷う方は少なくありません。横浜は駅周辺のマンションから郊外の戸建てまで住まいのかたちが幅広く、同じ「鍵開け」でも建物のタイプによって確認すべきことが変わります。また、鍵業者は料金体系や運営形態（自社対応か加盟店手配か）が各社で異なり、名前のよく似たサービスも複数あります。
             </p>
