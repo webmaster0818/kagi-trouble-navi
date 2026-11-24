@@ -211,6 +211,7 @@ export default function AreaMatsubaraPage() {
         { href: "/area/sakai/", label: "堺の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/yao/", label: "八尾市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ5選" },
+        { href: "/area/habikino/", label: "羽曳野市の鍵開け・鍵交換業者おすすめ3選" },
       ]}
       related={[
         { href: "/akisu-shinnyu-teguchi/", label: "空き巣の侵入手口と対策" },

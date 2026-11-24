@@ -210,6 +210,7 @@ export default function AreaTamaPage() {
         { href: "/area/hino/", label: "日野市の鍵開け・鍵交換業者おすすめ5選" },
         { href: "/area/fuchu/", label: "府中市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/machida/", label: "町田市の鍵開け・鍵交換業者おすすめ4選" },
+        { href: "/area/inagi/", label: "稲城市の鍵開け・鍵交換業者おすすめ3選" },
       ]}
       related={[
         { href: "/akisu-shinnyu-teguchi/", label: "空き巣の侵入手口と対策" },

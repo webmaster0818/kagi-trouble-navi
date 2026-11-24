@@ -206,6 +206,7 @@ export default function AreaYachiyoPage() {
         { href: "/area/funabashi/", label: "船橋市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/sakura/", label: "佐倉市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/chiba/", label: "千葉の鍵開け・鍵交換業者おすすめ4選" },
+        { href: "/area/narashino/", label: "習志野市の鍵開け・鍵交換業者おすすめ3選" },
       ]}
       related={[
         { href: "/thumb-turn-taisaku/", label: "サムターン回し対策" },
