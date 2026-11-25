@@ -182,6 +182,7 @@ export default function AreaHigashiomiPage() {
       ]}
       nearby={[
         { href: "/area/shiga/", label: "滋賀県の鍵開け・鍵交換業者おすすめ3選" },
+        { href: "/area/nagahama/", label: "長浜市の鍵開け・鍵交換業者おすすめ2選" },
         { href: "/area/otsu/", label: "大津市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/kusatsu/", label: "草津市の鍵開け・鍵交換業者おすすめ4選" },
       ]}

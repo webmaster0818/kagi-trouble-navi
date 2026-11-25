@@ -687,6 +687,7 @@ export default function AreaPageFujisawa() {
             <ul className="grid gap-3 md:grid-cols-3">
               {[
                 { href: "/area/yokosuka/", label: "横須賀市の鍵開け・鍵交換業者おすすめ4選" },
+                { href: "/area/kamakura/", label: "鎌倉市の鍵開け・鍵交換業者おすすめ3選" },
                 { href: "/area/atsugi/", label: "厚木市の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/yokohama/", label: "横浜の鍵開け・鍵交換業者おすすめ4選" },
                 { href: "/area/yokohama-totsuka/", label: "横浜市戸塚区の鍵開け・鍵交換業者おすすめ4選" },

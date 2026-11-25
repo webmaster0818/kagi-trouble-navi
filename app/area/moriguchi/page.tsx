@@ -209,6 +209,7 @@ export default function AreaMoriguchiPage() {
       ]}
       nearby={[
         { href: "/area/neyagawa/", label: "寝屋川市の鍵開け・鍵交換業者おすすめ4選" },
+        { href: "/area/kadoma/", label: "門真市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/daito/", label: "大東市の鍵開け・鍵交換業者おすすめ5選" },
         { href: "/area/osaka/", label: "大阪の鍵開け・鍵交換業者おすすめ5選" },
       ]}

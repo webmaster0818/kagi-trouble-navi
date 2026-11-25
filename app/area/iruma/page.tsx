@@ -222,6 +222,7 @@ export default function AreaIrumaPage() {
       ]}
       nearby={[
         { href: "/area/sayama/", label: "狭山市の鍵開け・鍵交換業者おすすめ4選" },
+        { href: "/area/hanno/", label: "飯能市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/tokorozawa/", label: "所沢市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ4選" },
       ]}
