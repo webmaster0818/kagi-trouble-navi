@@ -112,7 +112,7 @@ const articleLd = {
   author: { "@type": "Organization", name: "鍵トラブルナビ編集部" },
   publisher: { "@type": "Organization", name: "鍵トラブルナビ" },
   datePublished: "2026-08-10",
-  dateModified: "2026-08-10",
+  dateModified: "2026-11-25",
 };
 
 export default function HikidoKagiPage() {
@@ -137,13 +137,22 @@ export default function HikidoKagiPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4 leading-snug">
             引き戸（玄関）の鍵交換・後付けの基礎知識｜引違い戸錠・召合せ錠・戸先錠の違い
           </h1>
-          <p className="text-sm text-text-muted mb-6">最終更新日：2026年8月10日</p>
+          <p className="text-sm text-text-muted mb-6">最終更新日：2026年11月25日</p>
 
           {/* AEO 即答 */}
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 sm:p-6 mb-10">
-            <p className="font-bold text-primary mb-2">引き戸の鍵の要点</p>
-            <p className="text-text-secondary leading-relaxed text-sm sm:text-base">
-              玄関引き戸の鍵は、2枚の戸が重なる中央の<strong>召合せ錠</strong>と、戸の端の<strong>戸先錠</strong>が基本で、施錠には鎌形のフックを受けに掛ける<strong>鎌錠</strong>の機構が広く使われています。開き戸用の錠は流用できないため、交換は必ず引き戸専用品の中から、<strong>戸の厚み・ビスピッチ・型番を確認して</strong>選びます。長年使った引き戸の錠は防犯性能が現行水準に達していないことが多く、<strong>召合せ錠の現行品への交換＋補助錠の後付けで2か所施錠</strong>にすることが、防犯強化の基本的な考え方です。
+            <p className="font-bold text-primary mb-2">引き戸の鍵は、鎌（かま）の形をしたかんぬきを受けに引っ掛けて、戸がスライドしないように固定する仕組みです。</p>
+            <p className="text-text-secondary leading-relaxed text-sm sm:text-base mb-3">
+              錠前メーカーの美和ロックは用語集で、デッドボルト（本締）を「シリンダーまたはサムターンの回転に連動してケースから突き出す」締まり機構と説明し、<strong>「引き違い戸の鎌もデッドボルトの一種」</strong>としています。いわゆる鎌錠（鎌形錠）は、この鎌が受けに掛かることで施錠されます。
+            </p>
+            <p className="text-text-secondary leading-relaxed text-sm sm:text-base mb-3">
+              鍵が付く場所は、戸の端の<strong>戸先錠</strong>と、2枚の戸が重なる中央の<strong>召合せ錠</strong>（4枚建ての中央は合掌錠）です。LIXILの引戸の戸先錠の取付け調整説明書は、<strong>まず戸車で建付けを調整し、それでも戸を閉めた状態で鍵が掛からない場合に、錠受けを上下に、錠本体を左右にずらして掛かりを調整する</strong>手順を示し、防犯性を維持するために錠の作動確認と掛かり調整を必ず行うよう求めています。鍵が掛かりにくいときは、錠の故障と決める前に建付けを確かめてください。
+            </p>
+            <p className="text-text-secondary leading-relaxed text-sm sm:text-base mb-3">
+              開き戸用の錠は引き戸には使えないため、交換は引き戸用の製品から、戸の厚み・ビスピッチ・型番を確認して選びます。補助錠を足して2か所で施錠する考え方は、下の「基礎3」と「手順4」で説明しています。
+            </p>
+            <p className="text-xs text-text-muted">
+              出典：<a href="https://www.miwa-lock.co.jp/tec/support/glossary/lock/7.html" target="_blank" rel="noopener noreferrer" className="underline">美和ロック「錠と防犯の用語集：デッドボルト（本締）」</a>／<a href="https://assets.lixil.com/content/dam/lixil-assets/manual/oldmpi/2016/MDD_876642.pdf" target="_blank" rel="noopener noreferrer" className="underline">LIXIL「戸先錠・障子建付け 取付け調整説明書」（MAK-373D・2016年4月1日発行）</a>（いずれも2026年11月25日確認）
             </p>
           </div>
 
