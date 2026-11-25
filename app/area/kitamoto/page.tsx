@@ -202,6 +202,7 @@ export default function AreaKitamotoPage() {
         { href: "/area/ageo/", label: "上尾市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/kumagaya/", label: "熊谷市の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/saitama/", label: "さいたま・埼玉の鍵開け・鍵交換業者おすすめ4選" },
+        { href: "/area/konosu/", label: "鴻巣市の鍵開け・鍵交換業者おすすめ3選" },
       ]}
       related={[
         { href: "/akisu-shinnyu-teguchi/", label: "空き巣の侵入手口と対策" },

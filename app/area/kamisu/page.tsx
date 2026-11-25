@@ -207,6 +207,7 @@ export default function AreaKamisuPage() {
         { href: "/area/tsuchiura/", label: "土浦市の鍵開け・鍵交換業者おすすめ3選" },
         { href: "/area/mito/", label: "水戸の鍵開け・鍵交換業者おすすめ4選" },
         { href: "/area/tsukuba/", label: "つくば市の鍵開け・鍵交換業者おすすめ4選" },
+        { href: "/area/kashima/", label: "鹿嶋市の鍵開け・鍵交換業者おすすめ3選" },
       ]}
       related={[
         { href: "/akisu-shinnyu-teguchi/", label: "空き巣の侵入手口と対策" },
