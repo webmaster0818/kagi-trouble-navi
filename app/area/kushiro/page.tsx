@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/kushiro/";
-const UPDATED = "2026年11月4日";
-const UPDATED_ISO = "2026-11-04";
+const UPDATED = "2026年11月26日";
+const UPDATED_ISO = "2026-11-26";
 
 export const metadata: Metadata = {
   title: {
@@ -401,6 +401,17 @@ export default function AreaPageKushiro() {
 
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
+            <p className="mb-4">
+              釧路市で鍵交換を考えている場合は、北海道警察が公表している侵入犯罪の傾向と防犯の案内が判断の材料になります。北海道警察「令和8年版 北斗の安全」によると、令和7年中に道内で住宅を対象とした侵入強盗・侵入窃盗（空き巣、忍込み、居空き等）のうち、玄関や窓の無締りの被害が最も多く約59%、住宅を対象とした侵入窃盗のうち空き巣が約87%でした。
+            </p>
+            <p className="mb-4">
+              北海道警察は被害防止のポイントとして、わずかな時間の外出でも玄関・窓を確実に施錠すること、在宅時も玄関を施錠すること、防犯性能の高い建物部品やガラス用防犯フィルム等を活用することを挙げています。業者に鍵交換を頼むときは、交換後のシリンダーが<Link href="/cp-nintei-jou/" className="text-primary underline">CP部品</Link>かどうかを見積もりの段階で確認すると、道警の案内に沿った選び方になります。釧路市内から依頼できる業者4社は、下の比較表にまとめています。
+            </p>
+            <p className="mb-4 text-xs text-text-muted leading-relaxed">
+              出典：
+              <a href="https://www.police.pref.hokkaido.lg.jp/statis/hokuto_anzen/03.pdf" className="underline" target="_blank" rel="noopener noreferrer">北海道警察「令和8年版 北斗の安全」第3 身近な犯罪・事故の特徴と対策（令和7年中の犯罪情勢）</a>
+              。2026年11月26日確認。
+            </p>
             <p className="mb-4">
               釧路市は北海道の東部にあり、市街地が海沿いから内陸へ広がるまちです。鍵が急に重くなった、差し込んでも動かないといった状態で力を入れて回すと、鍵が根元から折れて鍵穴の中に残ってしまうことがあります。この場合、玄関が開かないことに加えて、鍵穴の中に異物がある状態になります。
             </p>
