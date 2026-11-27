@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/fukuoka-hakata/";
-const UPDATED = "2026年11月4日";
-const UPDATED_ISO = "2026-11-04";
+const UPDATED = "2026年11月27日";
+const UPDATED_ISO = "2026-11-27";
 
 export const metadata: Metadata = {
   title: {
@@ -403,6 +403,19 @@ export default function AreaFukuokaHakataPage() {
 
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
+            <p className="mb-4">
+              福岡市博多区で鍵交換を考えている場合は、福岡県警察が公表している区ごとの被害件数と、警察が案内している相談先が判断の材料になります。福岡県警察「福岡県 刑法犯 市区町村別 認知件数（令和7年中）［確定値］」によると、令和7年中の博多区の認知件数は、空き巣が25件、忍込みが1件、居空きが2件でした。
+            </p>
+            <p className="mb-4">
+              福岡県警察は、丈夫な鍵をつけたいといった錠前に関する相談の窓口として、警察の協力団体である福岡県防犯設備士協会（TEL 092-718-3990）を案内しています。業者に鍵交換を頼むときは、交換後のシリンダーが<Link href="/cp-nintei-jou/" className="text-primary underline">CP部品</Link>かどうかを見積もりの段階で確認してください。博多区内から依頼できる業者4社は、下の比較表にまとめています。
+            </p>
+            <p className="mb-4 text-xs text-text-muted leading-relaxed">
+              出典：
+              <a href="https://www.police.pref.fukuoka.jp/data/open/cnt/3/183/1/R07kakuteiCIty.pdf" className="underline" target="_blank" rel="noopener noreferrer">福岡県警察「福岡県 刑法犯 市区町村別 認知件数（令和7年中）［確定値］」（PDF）</a>
+              ／
+              <a href="https://www.police.pref.fukuoka.jp/seian/seian/017.html" className="underline" target="_blank" rel="noopener noreferrer">福岡県警察「防犯設備に関する相談・問い合わせ（防犯機器及び錠前等）」</a>
+              。いずれも2026年11月27日確認。
+            </p>
             <p className="mb-4">
               新幹線の発着と空港へのアクセスが集まる福岡市博多区では、移動の途中で鍵が見当たらなくなる場面が起こります。このとき見落とされやすいのが、「なくした」のではなく<Hl>荷物のどこかに入ったまま取り出せない状態</Hl>というケースです。預けたスーツケース、コインロッカーの中、宅配便で送った荷物など、鍵そのものは失われていないのに手元にないという状況は、移動中に特有です。落とした前提で対応を始めると、解決が遅れることがあります。
             </p>
