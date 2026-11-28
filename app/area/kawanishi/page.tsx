@@ -6,8 +6,8 @@ import { AffBanner, AffText, hasAff } from "@/components/AffLink";
 
 const SITE = "https://kagi-trouble-navi.com";
 const PATH = "/area/kawanishi/";
-const UPDATED = "2026年11月4日";
-const UPDATED_ISO = "2026-11-04";
+const UPDATED = "2026年11月28日";
+const UPDATED_ISO = "2026-11-28";
 
 export const metadata: Metadata = {
   title: {
@@ -419,6 +419,19 @@ export default function AreaPageKawanishi() {
 
           {/* 導入文 */}
           <div className="mt-6 leading-loose text-foreground">
+            <p className="mb-4">
+              川西市で鍵交換を考えている場合は、兵庫県警察が公表している市ごとの被害件数と、警察が挙げている玄関の防犯対策が判断の材料になります。兵庫県警察「市区町別主な刑法犯認知状況（令和7年中・生活安全企画課調べ）」によると、令和7年中の川西市の認知件数は、空き巣が10件、忍込みが2件でした。
+            </p>
+            <p className="mb-4">
+              兵庫県警察は、犯人は無施錠の玄関などから侵入したり、窓ガラスを割って侵入したりするとして、玄関などの出入り口の対策に、確実な戸締りと、防犯性能の高い建物部品（ドア、錠など）や補助錠の取り付けを挙げています。業者に鍵交換を頼むときは、交換後のシリンダーが<Link href="/cp-nintei-jou/" className="text-primary underline">CP部品</Link>かどうかを見積もりの段階で確認してください。川西市内から依頼できる業者4社は、下の比較表にまとめています。
+            </p>
+            <p className="mb-4 text-xs text-text-muted leading-relaxed">
+              出典：
+              <a href="https://www.police.pref.hyogo.lg.jp/seikatu/gaitou/statis/data/R07.pdf" className="underline" target="_blank" rel="noopener noreferrer">兵庫県警察「市区町別主な刑法犯認知状況（令和7年中）」（PDF）</a>
+              ／
+              <a href="https://www.police.pref.hyogo.lg.jp/seikatu/akisu/index.htm" className="underline" target="_blank" rel="noopener noreferrer">兵庫県警察「泥棒や強盗などの侵入を防ぎましょう！」</a>
+              。いずれも2026年11月28日確認。
+            </p>
             <p className="mb-4">
               川西市は兵庫県の南東部にあり、能勢電鉄と阪急・JRの沿線に住宅地が広がるまちです。建築年代の異なる住宅が並び、玄関に付いている錠の形もさまざまです。防犯性を上げたい、動きが悪いため交換したいといった理由で業者に相談すると、最初に、今の錠と同じ寸法で収まる製品を探すよう案内されることが一般的です。
             </p>
